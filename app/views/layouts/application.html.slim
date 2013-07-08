@@ -1,9 +1,16 @@
 doctype 5
-html
+html(lang='ja' itemscope itemtype='http://schema.org/BlogPosting')
   head
-    title Daplog
+    title = blog_title(@article_title)
     == stylesheet_link_tag 'application', media: 'all'
     == javascript_include_tag 'application'
     == csrf_meta_tags
   body
-    == yield
+    header role='banner'
+      h1
+        a href='/'
+          span = blog_title
+    main role='main'
+      == yield
+    footer role='contentinfo'
+      a href='http://ruedap.com' ルエダップコム
