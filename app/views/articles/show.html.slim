@@ -2,3 +2,5 @@ article
   time datetime=(@article_data[:time]) itemprop='datePublished' = @article_data[:date]
   h1 itemprop='name' = @article_data[:title]
   section itemprop='articleBody' == @article_data[:body]
+nav role='navigation'
+  = link_to 'home', root_path
