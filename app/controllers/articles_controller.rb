@@ -8,11 +8,12 @@ class ArticlesController < ApplicationController
   end
 
   def show
-    year  = params[:year]
-    month = params[:month]
-    day   = params[:day]
-    title = params[:title]
-    path = "#{Rails.root}/app/articles/#{year}-#{month}-#{day}-#{title}.md"
+    parse_hatena_blog_url(params) if params[:datetime]
+    year   = params[:year]
+    month  = params[:month]
+    day    = params[:day]
+    title  = params[:title]
+    path   = "#{Rails.root}/app/articles/#{year}-#{month}-#{day}-#{title}.md"
     @article_data = parse_article(path)
   rescue
     raise ActionController::RoutingError.new('Not Found')
@@ -38,5 +39,13 @@ class ArticlesController < ApplicationController
     article_data[:time]  = front_matter['date'].to_time.iso8601
     article_data[:body]  = Kramdown::Document.new(md.last).to_html
     article_data
+  end
+
+  def parse_hatena_blog_url(params)
+    datetime = params[:datetime]
+    params[:year]  = datetime[0..3]
+    params[:month] = datetime[4..5]
+    params[:day]   = datetime[6..7]
+    params[:title] = params[:title].gsub('_', '-')
   end
 end
