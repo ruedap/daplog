@@ -5,6 +5,7 @@ class ArticlesController < ApplicationController
     Dir.glob(path).each do |p|
       @article_data_array << parse_article(p)
     end
+    @article_data_array.sort! {|a,b| b[:time] <=> a[:time] }
   end
 
   def show
