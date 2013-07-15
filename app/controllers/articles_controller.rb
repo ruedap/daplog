@@ -1,4 +1,6 @@
 class ArticlesController < ApplicationController
+  before_action :set_hue
+
   def index
     path = "#{Rails.root}/app/articles/*.md"
     @article_data_array = []
@@ -22,6 +24,10 @@ class ArticlesController < ApplicationController
 
   private
 
+  def set_hue
+    @hue = "%03d" % (rand(18) * 20)
+  end
+
   def read_file(path)
     File.open(path) {|f| f.read }
   end
@@ -38,7 +44,8 @@ class ArticlesController < ApplicationController
     article_data[:title] = front_matter['title']
     article_data[:date]  = front_matter['date'].iso8601.gsub('-', '.')
     article_data[:time]  = front_matter['date'].to_time.iso8601
-    article_data[:body]  = Kramdown::Document.new(md.last).to_html
+    coderay_options = { coderay_css: :class, coderay_line_numbers: nil, coderay_wrap: :div }
+    article_data[:body]  = Kramdown::Document.new(md.last, coderay_options).to_html
     article_data
   end
 

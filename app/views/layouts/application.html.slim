@@ -1,16 +1,24 @@
 doctype 5
-html(lang='ja' itemscope itemtype='http://schema.org/BlogPosting')
+html(lang='ja' itemscope itemtype="#{yield :itemtype}")
   head
-    title = blog_title(@article_title)
+    meta charset='utf-8'
+    meta name='viewport' content='width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no'
+    - article_title = strip_tags(@article_data[:title]) if @article_data
+    title = blog_title(article_title)
     == stylesheet_link_tag 'application', media: 'all'
+    == stylesheet_link_tag "fibonacci-#{@hue}", media: 'all'
+    - if content_for? :gradient
+      = yield :gradient
     == javascript_include_tag 'application'
     == csrf_meta_tags
   body
-    header role='banner'
-      h1
-        a href='/'
-          span = blog_title
-    main role='main'
-      == yield
-    footer role='contentinfo'
-      a href='http://ruedap.com' ルエダップコム
+    .body-inner
+      header role='banner'
+        h1
+          a href='/'
+            = image_tag('logo.svg', alt: blog_title, title: blog_title, class: 'logo')
+            span = blog_title
+      main role='main'
+        == yield
+      footer role='contentinfo'
+        a href='http://ruedap.com' ルエダップコム
