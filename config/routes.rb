@@ -4,7 +4,7 @@ Daplog::Application.routes.draw do
 
   # hatena-blog url
   get 'entry/:datetime/:title/' => 'articles#show',
-      constraints: { datetime: /20\d{2}[01]\d[0-3]\d/ }
+      constraints: { hatena_datetime: /20\d{2}[01]\d[0-3]\d/ }
 
   root 'articles#index'
 end
