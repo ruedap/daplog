@@ -6,7 +6,7 @@ class ArticlesController < ApplicationController
   end
 
   def show
-    parse_hatena_blog_url(params) if params[:hatena_datetime]
+    parse_hatena_blog_url(params) if params[:date]
     year   = params[:year]
     month  = params[:month]
     day    = params[:day]
@@ -57,8 +57,7 @@ class ArticlesController < ApplicationController
 
   def redis_set(key, value)
     REDIS.set(key, value.to_json)
-    expire_time = Rails.env.development? ? 10.seconds : 1.hour
-    REDIS.expireat(key, (Time.now + expire_time).to_i)
+    REDIS.expire(key, 10.seconds) if Rails.env.development?
   end
 
   def read_file(path)
@@ -82,16 +81,18 @@ class ArticlesController < ApplicationController
                   coderay_line_numbers: nil,
                   coderay_wrap: :div }
       article[:body] = Kramdown::Document.new(md.last, options).to_html
+      redis_set(article[:path], article)
     end
-    redis_set(article[:path], article)
     article
   end
 
   def parse_hatena_blog_url(params)
-    datetime = params[:hatena_datetime]
-    params[:year]  = datetime[0..3]
-    params[:month] = datetime[4..5]
-    params[:day]   = datetime[6..7]
+    date = params[:date]
+    params[:year]  = date[0..3]
+    params[:month] = date[4..5]
+    params[:day]   = date[6..7]
     params[:title] = params[:title].gsub('_', '-')
+    @canonical = "#{root_url}#{params[:year]}/#{params[:month]}/#{params[:day]}/#{params[:title]}/"
+    params
   end
 end

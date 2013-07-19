@@ -11,6 +11,8 @@ html(lang='ja' itemscope itemtype="#{yield :itemtype}")
       = yield :gradient
     == javascript_include_tag 'application'
     == csrf_meta_tags
+    - if content_for? :canonical
+      = yield :canonical
   body
     .body-inner
       header role='banner'
