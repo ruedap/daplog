@@ -20,6 +20,7 @@ Daplog::Application.configure do
   # config.action_dispatch.rack_cache = true
 
   # Disable Rails's static asset server (Apache or nginx will already do this).
+  # https://devcenter.heroku.com/articles/rails-integration-gems
   config.serve_static_assets = true
 
   # Compress JavaScripts and CSS.
@@ -27,7 +28,7 @@ Daplog::Application.configure do
   # config.assets.css_compressor = :sass
 
   # Do not fallback to assets pipeline if a precompiled asset is missed.
-  config.assets.compile = false
+  config.assets.compile = true
 
   # Generate digests for assets URLs.
   config.assets.digest = true
@@ -59,8 +60,9 @@ Daplog::Application.configure do
 
   # Precompile additional assets.
   # application.js, application.css, and all non-JS/CSS in app/assets folder are already added.
-  config.assets.paths << Rails.root.join('app', 'assets', 'fonts')
   config.assets.precompile += %w( .svg .eot .woff .ttf )
+  config.assets.precompile += %w( fibonacci-000.css fibonacci-020.css fibonacci-040.css fibonacci-060.css fibonacci-080.css fibonacci-100.css fibonacci-120.css fibonacci-140.css fibonacci-160.css fibonacci-180.css fibonacci-200.css fibonacci-220.css fibonacci-240.css fibonacci-260.css fibonacci-280.css fibonacci-300.css fibonacci-320.css fibonacci-340.css )
+  config.assets.precompile += %w( gradient-000.css gradient-020.css gradient-040.css gradient-060.css gradient-080.css gradient-100.css gradient-120.css gradient-140.css gradient-160.css gradient-180.css gradient-200.css gradient-220.css gradient-240.css gradient-260.css gradient-280.css gradient-300.css gradient-320.css gradient-340.css )
 
   # Ignore bad email addresses and do not raise email delivery errors.
   # Set this to true and configure the email server for immediate delivery to raise delivery errors.
