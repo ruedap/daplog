@@ -3,7 +3,7 @@ html(lang='ja' itemscope itemtype="#{yield :itemtype}")
   head
     meta charset='utf-8'
     meta name='viewport' content='width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no'
-    - article_title = strip_tags(@article_data[:title]) if @article_data
+    - article_title = strip_tags(@article[:title]) if @article
     title = blog_title(article_title)
     == stylesheet_link_tag 'application', media: 'all'
     == stylesheet_link_tag "fibonacci-#{@hue}", media: 'all'
@@ -11,6 +11,8 @@ html(lang='ja' itemscope itemtype="#{yield :itemtype}")
       = yield :gradient
     == javascript_include_tag 'application'
     == csrf_meta_tags
+    - if content_for? :canonical
+      = yield :canonical
   body
     .body-inner
       header role='banner'

@@ -1,9 +1,12 @@
 = content_for :itemtype
   = 'http://schema.org/BlogPosting'
+- if @canonical
+  = content_for :canonical
+    == tag :link, rel: 'canonical', href: @canonical
 
 article
-  time datetime=(@article_data[:time]) itemprop='datePublished' = @article_data[:date]
-  h1 itemprop='name' == @article_data[:title]
-  section itemprop='articleBody' == @article_data[:body]
+  time datetime=(@article[:time]) itemprop='datePublished' = @article[:date]
+  h1 itemprop='name' == @article[:title]
+  section itemprop='articleBody' == @article[:body]
 nav role='navigation'
   = link_to 'home', root_path
