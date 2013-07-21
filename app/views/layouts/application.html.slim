@@ -3,6 +3,10 @@ html(lang='ja' itemscope itemtype="#{yield :itemtype}")
   head
     meta charset='utf-8'
     meta name='viewport' content='width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no'
+    meta name='author' content="#{blog_author}"
+    meta name='robots' content='index,follow'
+    - article_body = @article[:body] if @article
+    meta name='description' content="#{blog_description(article_body)}"
     - article_title = strip_tags(@article[:title]) if @article
     title = blog_title(article_title)
     == stylesheet_link_tag 'application', media: 'all'

@@ -7,6 +7,18 @@ module ApplicationHelper
     end
   end
 
+  def blog_description(description = nil)
+    if description
+      truncate(strip_tags(description).strip.gsub(/\n/, ''), length: 130)
+    else
+      'できればググってもでてこないようなことだけをかきたいけれど'
+    end
+  end
+
+  def blog_author
+    'ruedap'
+  end
+
   private
 
   def blog_name
