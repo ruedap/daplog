@@ -92,7 +92,7 @@ class ArticlesController < ApplicationController
     params[:month] = date[4..5]
     params[:day]   = date[6..7]
     params[:title] = params[:title].gsub('_', '-')
-    @canonical = "#{root_url}#{params[:year]}/#{params[:month]}/#{params[:day]}/#{params[:title]}/"
+    @canonical = "#{root_url}#{params[:year]}/#{params[:month]}/#{params[:day]}/#{params[:title]}"
     params
   end
 end

@@ -3,7 +3,7 @@ module ArticlesHelper
     content_tag :ul, class: 'article-list' do
       article_year = ''
       article_data_array.each do |d|
-        path = d[:path].sub(/.+?(\d{4})-(\d{2})-(\d{2})-(.+?)\.md/, "\/\\1\/\\2\/\\3\/\\4\/")
+        path = d[:path].sub(/.+?(\d{4})-(\d{2})-(\d{2})-(.+?)\.md/, "\/\\1\/\\2\/\\3\/\\4")
         year = d[:date][0..3]
         html = ''
         unless article_year == year
