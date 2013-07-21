@@ -1,6 +1,6 @@
 module ApplicationHelper
   def blog_title(article_title = nil)
-    if article_title
+    if article_title.present?
       "#{article_title} - #{blog_name}"
     else
       blog_name
@@ -17,6 +17,10 @@ module ApplicationHelper
 
   def blog_author
     'ruedap'
+  end
+
+  def blog_ogp_image
+    image_url("ogp-#{@hue}.png")
   end
 
   private
