@@ -28,9 +28,6 @@ module Daplog
     # Set to .sass as default for stylesheets
     config.sass.preferred_syntax = :sass
 
-    # Enable trailing slash option
-    config.action_controller.default_url_options = { trailing_slash: true }
-
     # dapicons
     config.assets.paths << Rails.root.join('app', 'assets', 'fonts', 'dapicons')
   end
