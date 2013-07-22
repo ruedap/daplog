@@ -1,0 +1,31 @@
+doctype 5
+html(lang='ja' itemscope itemtype="#{yield :itemtype}")
+  head
+    meta charset='utf-8'
+    meta name='viewport' content='width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no'
+    meta name='author' content="#{blog_author}"
+    meta name='robots' content='index,follow'
+    meta name='description' content="#{blog_description(article_body(@article))}"
+    == render 'layouts/ogp'
+    == render 'layouts/twitter_cards'
+    title = blog_title(article_title(@article))
+    == stylesheet_link_tag 'application', media: 'all'
+    == stylesheet_link_tag "fibonacci-#{@hue}", media: 'all'
+    - if content_for? :gradient
+      = yield :gradient
+    == javascript_include_tag 'application'
+    == csrf_meta_tags
+    - if content_for? :canonical
+      = yield :canonical
+  body
+    .body-inner
+      header role='banner'
+        h1
+          a href='/'
+            = image_tag('logo.svg', alt: blog_title, title: blog_title, class: 'logo')
+            span = blog_title
+      main role='main'
+        == yield
+      footer role='contentinfo'
+        a href='http://ruedap.com' ルエダップコム
+    == render 'shared/google_analytics'

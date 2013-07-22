@@ -1,0 +1,3 @@
+[submodule "app/assets/fonts/dapicons"]
+	path = app/assets/fonts/dapicons
+	url = https://github.com/ruedap/dapicons.git

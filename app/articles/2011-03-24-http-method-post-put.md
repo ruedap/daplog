@@ -1,0 +1,46 @@
+---
+layout: article
+title: "HTTPメソッドのPOSTとPUTの使い分け"
+date: 2011-03-24
+comments: true
+categories: web
+tags: web
+published: true
+---
+
+どこで見たか忘れたけど、POSTはURLが変わる場合に使用して、PUTはURLが変わらない場合に使用する、と書かれたページを読んだことがあって、POSTとPUTの使い分けはそうするものだと思ってた。が、これは間違い[^1]っぽい。Webアプリ制作におけるバイブルとも言える[Webを支える技術](http://www.amazon.co.jp/dp/4774142042/ruedap-22)を読み返していたら、これらの使い分けの指針が載っていて、それは自分が覚えてた使い方と逆だった。
+
+<!-- READMORE -->
+
+
+## POSTとPUTを使い分ける指針
+
+POSTとPUTを使い分けるのに明確な答えはないみたいだけど、Webを支える技術では以下のような設計上の指針を紹介されていた。
+
+> これには正解は存在しませんが、設計上の指針として次の事実があります。
+POSTでリソースを作成する場合、クライアントはリソースのURIを指定できません。URIの決定権はサーバ側にあります。逆にPUTでリソースを作成する場合、リソースのURIはクライアントが決定します。
+> （中略）
+> 一般的に、クライアントがリソースのURIを決定できるということは、クライアントを作るプログラマがサーバの内部実装（URIにどの文字を許すのか、長さの制限はどれくらいかなど）を熟知していなければなりません。
+そのため、PUTのほうがどうしてもサーバとの結合が密になります。特別な理由がない限りは、リソースの作成はPOSTで行いURIもサーバ側で決定する、という設計が望ましいでしょう。
+>
+> <cite>[Webを支える技術 -HTTP、URI、HTML、そしてREST](http://www.amazon.co.jp/dp/4774142042/ruedap-22)</cite>
+
+これを読む限り、特別な理由がない限りは常にPOSTで良いと言えそう。そして、最近作った[Nekostagram](http://nekostagram.heroku.com/)では特別な理由がないので、PUTではなくPOSTで良かったことが判明した。というわけで、最初はPUTで作っていたけど、現在公開しているバージョンではPOSTに修正した。
+
+<ins>この件についてアドバイスを頂いたので[別の記事](/2011/03/25/http-method-post-put-idempotence)でフォローアップしました。</ins>
+
+
+## SinatraでのPUT
+
+ちなみに、SinatraでPUTにしたい場合は、HTMLでフォーム送信時に`_method`要素に値`put`を入れて送信する。
+
+
+~~~ slim
+input type='hidden' name='_method' value='put'
+~~~
+
+* * *
+
+<cite>[Design Recipe 別館 Blog - Sinatra - 軽量だが拡張性の高い Ruby の Web App フレームワーク](http://blog.designrecipe.jp/2009/7/10/sinatra-memo/)</cite>
+
+[^1]: 正解のないことなので、必ずしも間違いとは言い切れないんだけど

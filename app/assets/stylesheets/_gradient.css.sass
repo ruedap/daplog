@@ -1,0 +1,31 @@
+$HUE: 220 !default
+
+@import bourbon
+@import functions
+@import variables
+
+.L
+  // TODO: magic number (article count + year count)
+  $_max: 188
+  @for $i from 1 through $_max
+    &:nth-child(#{$_max - 1}n+#{$i})
+      &.Y
+        background: adjust_hue(fiboco(.35, true), $i * (360 / $_max))
+        color: adjust_hue(fiboco(1), $i * (360 / $_max))
+      .T
+        background: adjust_hue(fiboco(.45, true), $i * (360 / $_max))
+      .D
+        background: adjust_hue(fiboco(.42, true), $i * (360 / $_max))
+      .M
+        background: adjust_hue(fiboco(.39, true), $i * (360 / $_max))
+      a:hover
+        .T
+          background: adjust_hue(fiboco(.35, true), $i * (360 / $_max))
+        .D
+          background: adjust_hue(fiboco(.32, true), $i * (360 / $_max))
+        .M
+          background: adjust_hue(fiboco(.29, true), $i * (360 / $_max))
+      a:visited
+        // TODO: alpha bug
+        color: adjust_hue(fiboco(1), $i * (360 / $_max))
+
