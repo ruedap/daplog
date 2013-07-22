@@ -1,6 +1,6 @@
 ---
 layout: article
-title: "<span>CSSのインデントを綺麗にするサービス</span>「SASSIENCE」を作ってみた"
+title: "<span>CSSのインデントを綺麗にするサービス</span><span>「SASSIENCE」を作ってみた</span>"
 date: 2011-05-26
 comments: true
 categories: sass
@@ -25,7 +25,7 @@ published: true
 
 [SASSIENCE](http://sassience.com/)内の紹介文でも触れていますが、このサービスは、HTMLのインデントを綺麗にするサービス[Ham Cutlet](http://hamcutlet.fjord.jp/)（通称ハムカツ）を参考にして作りました。ぶっちゃけ参考にしたというレベルではなく、パクリという名のオマージュです。 &copy;日常第5話
 
-[以前の記事](/2011/05/06/ruby-heroku-web-app-development-tips-8)でも触れていますが、このハムカツを作った[フィヨルド](http://fjord.jp/love/534.html)という会社は自社開発のWebアプリをオープンソースにしてくれていて、今回参考にさせてもらったハムカツも例外ではなく[ソースコード](https://github.com/komagata/hamcutlet)が公開されています。このソースコードを読ませてもらって、どういう仕組みで動いているのかを知ることで、今回のSASSIENCEを思いつき、制作してみました。
+[以前の記事](/2011/05/06/ruby-heroku-web-app-development-tips-8)でも触れていますが、このハムカツを作った[フィヨルド](http://fjord.jp/love/534.html)という会社は自社開発のWebアプリをオープンソースにしていて、今回参考にさせてもらったハムカツも例外ではなく[ソースコード](https://github.com/komagata/hamcutlet)が公開されています。このソースコードを読ませてもらって、どういう仕組みで動いているのかを知ることで、今回のSASSIENCEを思いつき、制作してみました。
 
 また完成前には、ハムカツ作者の[@machida](http://twitter.com/#!/machida)さん、[@komagata](http://twitter.com/#!/komagata)さんのお二人に「こんなにパクッちゃいましたけど大丈夫ですか？」的なニュアンスでSASSIENCEを見て頂きましたが、とても好意的な感想をいただけて本当に嬉しかったです。というわけで、SASSIENCEはハムカツおよびフィヨルドのオープンソース無くしては生まれなかったサービスです。この場を借りてお礼申し上げます。
 

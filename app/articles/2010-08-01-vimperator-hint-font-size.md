@@ -1,6 +1,6 @@
 ---
 layout: article
-title: "<span>Vimperatorのfで表示する</span>ヒントのフォントサイズを大きくする"
+title: "<span>Vimperatorのfで表示するヒントの</span>フォントサイズを大きくする"
 date: 2010-08-01
 comments: true
 categories: vimperator

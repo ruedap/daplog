@@ -1,6 +1,6 @@
 ---
 layout: article
-title: "<span>ねこ、カレー、色、美女…つぎは何スタグラム？</span> ジャンル特化型Instagramビューアーまとめ"
+title: "<span>ねこ、カレー、色、美女…つぎは何スタグラム？</span><span> ジャンル特化型Instagramビューアーまとめ</span>"
 date: 2011-03-10
 comments: true
 categories: web
@@ -38,7 +38,7 @@ published: true
 
 ## うさぎ
 
-うさぎって寂しいと・・・でお馴染みのかわいい小動物代表。モフモフ度高し。
+うさぎって寂しいと…でお馴染みのかわいい小動物代表。モフモフ度高し。
 
 [![Usastagram（うさすたぐらむ） Beta - Instagram popular Rabbit photos!](/assets/2011/03/10/specialize-instagram-viewer-matome-03.png)](http://tocociel.tk/usastagram/)
 
@@ -86,7 +86,7 @@ published: true
 
 ## いぬ
 
-ねこを作ったときに「いぬまだー？」の声が多かったので作ってみました。
+Nekostagramを作ったときに「いぬまだー？」の声が多かったので作ってみました。
 
 [![Inustagram - いぬ大好き専用Instagram](/assets/2011/03/10/specialize-instagram-viewer-matome-07.png)](http://inustagram.heroku.com/)
 

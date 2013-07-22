@@ -1,6 +1,6 @@
 ---
 layout: article
-title: "MacVimを7.2から7.3にバージョンアップする"
+title: "<span>MacVimを7.2から7.3に</span><span>バージョンアップする</span>"
 date: 2011-01-23
 comments: true
 categories: vim

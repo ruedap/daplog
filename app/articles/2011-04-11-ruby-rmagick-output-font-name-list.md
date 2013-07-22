@@ -1,6 +1,6 @@
 ---
 layout: article
-title: "RMagickで使用可能なフォント名の一覧を出力する"
+title: "<span>RMagickで使用可能な</span><span>フォント名の一覧を出力する</span>"
 date: 2011-04-11
 comments: true
 categories: ruby

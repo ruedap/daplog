@@ -1,6 +1,6 @@
 ---
 layout: article
-title: "<span>二匹目のどじょうを狙って</span>いぬ大好き専用の「Inustagram」を作ってみた"
+title: "<span>二匹目のどじょうを狙って</span><span>いぬ大好き専用の「Inustagram」を作ってみた</span>"
 date: 2011-03-05
 comments: true
 categories: ruby
@@ -10,7 +10,7 @@ published: true
 
 [![Inustagram - いぬ大好き専用Instagram](/assets/2011/03/05/instagram-api-of-exclusive-use-for-dog-lovers-inustagram-01.png)](/assets/2011/03/05/instagram-api-of-exclusive-use-for-dog-lovers-inustagram-01.png)
 
-本家Instagramと一瞬見分けのつかないちょっとグレーな名前な上に、前作[Nekostagram](http://nekostagram.heroku.com/)の検索対象を`cat`から`dog`に変えただけのかんたん複製アプリでございます。
+本家と一瞬見分けのつかないちょっとグレーな名前な上に、前作[Nekostagram](http://nekostagram.heroku.com/)の検索対象を`cat`から`dog`に変えただけのかんたん複製アプリでございます。
 <!-- READMORE -->
 
 

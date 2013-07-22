@@ -1,6 +1,6 @@
 ---
 layout: article
-title: "<span>HerokuでWebアプリ開発を始めるなら</span>知っておきたい10のこと"
+title: "<span>HerokuでWebアプリ開発を始めるなら</span><span>知っておきたい10のこと</span>"
 date: 2011-05-09
 comments: true
 categories: ruby

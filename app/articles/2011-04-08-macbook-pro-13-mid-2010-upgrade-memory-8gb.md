@@ -1,6 +1,6 @@
 ---
 layout: article
-title: "<span>MacBook Pro (13-inch, Mid 2010)のメモリーを</span>8GBに増設する"
+title: "<span>MacBook Pro (13-inch, Mid 2010)の</span>メモリーを8GBに増設する"
 date: 2011-04-08
 comments: true
 categories: mac

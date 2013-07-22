@@ -1,6 +1,6 @@
 ---
 layout: article
-title: "<span>RubyでTwitterのOAuth認証に必要な</span>トークンを取得する"
+title: "<span>RubyでTwitterのOAuth認証に必要な</span><span>トークンを取得する</span>"
 date: 2011-01-26
 comments: true
 categories: ruby
@@ -8,7 +8,7 @@ tags: ruby
 published: true
 ---
 
-Twitter関連のWebアプリを作る際に、OAuth認証で必要になるトークンやらシークレットやらを取得する手順の備忘録。最近Rubyライブラリ側の仕様変更があったみたいで結構ハマった。
+Twitter関連のWebアプリを作る際に、OAuth認証で必要になるトークンを取得する手順の備忘録。最近Rubyライブラリ側の仕様変更があったみたいで結構ハマった。
 
 <!-- READMORE -->
 

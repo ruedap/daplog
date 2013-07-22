@@ -1,6 +1,6 @@
 ---
 layout: article
-title: "<span>ブログを134日連続更新して</span>1つの記事がホッテントリに入るまで"
+title: "<span>ブログを134日連続更新して</span><span>1つの記事がホッテントリに入るまで</span>"
 date: 2011-05-20
 comments: true
 categories: blog

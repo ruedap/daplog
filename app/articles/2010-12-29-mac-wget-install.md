@@ -1,6 +1,6 @@
 ---
 layout: article
-title: "Macにwgetをインストール"
+title: "Macにwgetをインストールする"
 date: 2010-12-29
 comments: true
 categories: mac

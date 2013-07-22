@@ -1,6 +1,6 @@
 ---
 layout: article
-title: "<span>はてなスターカウンターのソースコードを</span>GitHubに公開してみた"
+title: "<span>はてなスターカウンターのソースコードを</span><span>GitHubに公開してみた</span>"
 date: 2011-05-23
 comments: true
 categories: ruby
@@ -19,7 +19,7 @@ published: true
 
 <cite>[ruedap/hatenastar-counter - GitHub](https://github.com/ruedap/hatenastar-counter)</cite>
 
-今回も過去の自作Webアプリと同じで、[Heroku](http://www.heroku.com/)、[Sinatra](http://www.sinatrarb.com/)、[Slim](http://slim-lang.com/)、[Sass](http://sass-lang.com/)の組み合わせで作っている。
+今回も過去のものと同じで、[Heroku](http://www.heroku.com/), [Sinatra](http://www.sinatrarb.com/), [Slim](http://slim-lang.com/), [Sass](http://sass-lang.com/)の組み合わせで作っている。
 
 自分の中ではこの組み合わせはほぼ鉄板となりつつあって、よほどの理由が無い限りはまずこのセットでどう作るかを考え始める。この前の[Herokuの大規模障害](/2011/05/07/ruby-heroku-web-app-development-tips-9)によって、Heroku以外の代替プラットフォームを探したりしてみたけど、今のところHerokuより便利そうなのは見つけられていない。
 
@@ -28,7 +28,7 @@ published: true
 
 ## RMagickとActiveRecord 3
 
-[はてなスターカウンター](http://hatenastar.heroku.com/)で新しく挑戦したことは、画像処理のRMagickと、O/RマッパーのActiveRecord 3を使ったこと。そこらへんの試行錯誤については、以下の記事にまとめてあるけど、感想をざっくり一言でいうと*RMagick(ImageMagick)は使うまでのセッティングの方が難しい*、*ActiveRecord 3は以前触ったDataMapperにそっくり*という印象だった。
+[はてなスターカウンター](http://hatenastar.heroku.com/)で新しく挑戦したことは、画像処理のRMagickと、O/RマッパーのActiveRecord 3を使ったこと。そこらへんの試行錯誤については、以下の記事にまとめてあるけど、感想をざっくり一言でいうと*RMagick(ImageMagick)は使うまでのセッティングの方が難しい*、*ActiveRecord 3は以前触ったDataMapperに似てる*という印象だった。
 
 
 ### RMagick
@@ -60,7 +60,7 @@ published: true
 
 [Nekostagram](http://nekostagram.heroku.com/)や[Inustagram](http://inustagram.heroku.com/)でほとんど同じコードを使っているにも関わらず、はてなスターカウンターだけこの現象はおきているっぽい。はてなスターカウンターとネコスタでのコードの違いは、[OGPタグ](http://d.hatena.ne.jp/amachang/20110117/1295233078)をはてなスターカウンターの方では埋め込んでみているんだけど、これが原因かと考えてすべて消して試してみたけど結果は同じだった。
 
-はてなスターカウンターとNekostagram、どちらも[jQuery.socialbuttonプラグイン](http://itra.jp/jquery_socialbutton_plugin/)を使わせてもらっているけど、これを使わずに[Facebook公式のコードジェネレータ](http://developers.facebook.com/docs/reference/plugins/like/)を使って生成したiframeコードを埋めこんでみても、この現象は解消されなかった。普段Facebookを使ってないのもあって原因がよくわからず…。詳しい人や解決方法をご存じの方がいたら教えてくださいませ。
+はてなスターカウンターとNekostagram、どちらも[jQuery.socialbuttonプラグイン](http://itra.jp/jquery_socialbutton_plugin/)を使わせてもらっているけど、これを使わずに[Facebook公式のコードジェネレータ](http://developers.facebook.com/docs/reference/plugins/like/)を使って生成したiframeコードを埋めこんでみても、この現象は解消されなかった。普段Facebookを使ってないのもあって原因がよくわからず…。
 
 * * *
 

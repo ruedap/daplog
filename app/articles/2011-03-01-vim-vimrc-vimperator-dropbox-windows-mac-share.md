@@ -1,6 +1,6 @@
 ---
 layout: article
-title: "<span>Vimの.vimrcと.vimフォルダを</span>Dropboxを使ってWin/Macで共有する"
+title: "<span>Vimの.vimrcと.vimフォルダを</span><span>Dropboxを使ってWin/Macで共有する</span>"
 date: 2011-03-01
 comments: true
 categories: vim

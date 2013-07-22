@@ -82,7 +82,7 @@ margin: 0;
 Fatal error: Smarty error: [in index.tpl line 16]: syntax error: unrecognized tag: margin: 0;
 ~~~
 
-これを回避するための[専用のタグ](http://www.smarty.net/docs/ja/language.function.literal.tpl)が用意されていて、それが`{literal}{/literal}`とのこと。このリテラルタグで囲ってあげたゾーンは、PHPコード用の波括弧とは認識しなくなる。
+これを回避するための[専用のタグ](http://www.smarty.net/docs/ja/language.function.literal.tpl)が用意されていて、それが`{literal}{/literal}`とのこと。このリテラルタグで囲ったゾーンは、PHPコード用の波括弧とは認識しなくなる。
 
 ~~~ php
 <style type="text/css">

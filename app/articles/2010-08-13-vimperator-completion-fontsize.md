@@ -1,6 +1,6 @@
 ---
 layout: article
-title: "Vimperatorの補完リストの文字が小さいので直す"
+title: "<span>Vimperatorの補完リストの</span><span>文字が小さいので直す</span>"
 date: 2010-08-13
 comments: true
 categories: vimperator
@@ -10,7 +10,7 @@ published: true
 
 [前回](/2010/08/12/vimperator-statusbar-fontsize)の時に変更できなかった以下の部分をカスタマイズ出来るようになったのでメモ。
 
-コマンドラインの表示時（\-\- CARET \-\-とか）や補完時（検索エンジンのリスト表示とか）のフォントは小さいままで、ここを変える方法がまだわかっていない。
+コマンドラインの表示時（`-- CARET --`とか）や補完時（検索エンジンのリスト表示とか）のフォントは小さいままで、ここを変える方法がまだわかっていない。
 
 あと、指定の仕方も前回より若干スマートに書けたっぽいけど、statuslineのフォント指定だけstyleコマンドの方法でしかうまく書けなかったので、全highlightコマンド化は力及ばず出来なかった。残念。
 

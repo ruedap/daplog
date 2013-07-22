@@ -1,6 +1,6 @@
 ---
 layout: article
-title: "<span>Vimperator 3のヒントモードで</span>アルファベットを使う"
+title: "<span>Vimperator 3のヒントモードで</span><span>アルファベットを使う</span>"
 date: 2011-03-27
 comments: true
 categories: vimperator

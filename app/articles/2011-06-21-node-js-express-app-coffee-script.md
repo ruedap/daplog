@@ -36,7 +36,7 @@ destination is not empty, continue? y
    create : ./logs
 ~~~
 
-既にExpress, Jade, Sassはグローバルインストール済みなので、それらへのリンクを貼る。
+既にExpress, Jade, Sassはインストール済みなので、それらへのリンクを貼る。
 
 ~~~ sh
 $ npm link express jade sass
@@ -82,7 +82,7 @@ CoffeeScript version 1.1.1
 
 ### app.jsをapp.coffeeに変換
 
-次に、*既存のJavaScriptコードをCoffeeScriptのコードに自動変換*できるツール`js2coffee`をインストールする。これは、先ほどexpressコマンドを使って自動生成したapp.jsを、わざわざ手書きでCoffeeScriptに書き直すのではなく、機械的に一発変換するため。
+次に、*既存のJavaScriptをCoffeeScriptのコードに自動変換*できるツール`js2coffee`をインストールする。これは、先ほどexpressコマンドを使って自動生成したapp.jsを、わざわざ手書きでCoffeeScriptに書き直すのではなく、機械的に一発変換するため。
 
 ~~~ sh
 $ npm install -g js2coffee
@@ -152,7 +152,8 @@ HTMLをJadeで記述するのと、CSSをSassで記述するのは、expressコ�
 - views/layout.jade と views/index.jade
 - public/stylesheets/style.sass
 
-のそれぞれ.jadeファイルと.sassファイルを適当に編集していけば良さそう。…と思ったら！ *なんとExpressで使えるSassは、Sinatraで使えるSassとは違うシロモノだった！* 以降、次回に続く。
+それぞれjadeファイルとsassファイルを適当に編集していけば良さそう。…と思ったら！ *なんとExpressで使えるSassは、Sinatraで使えるSassとは違うシロモノだった！*  
+以降、[次回](/2011/06/22/node-js-express-app-css-template-stylus)に続く。
 
 * * *
 

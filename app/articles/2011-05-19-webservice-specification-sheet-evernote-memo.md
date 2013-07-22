@@ -1,6 +1,6 @@
 ---
 layout: article
-title: "<span>個人で作ったWebサービスの</span>仕様書（Evernoteのメモ）を2つ公開してみる"
+title: "<span>個人で作ったWebサービスの</span><span>仕様書（Evernoteのメモ）を2つ公開してみる</span>"
 date: 2011-05-19
 comments: true
 categories: development

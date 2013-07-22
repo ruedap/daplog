@@ -1,6 +1,6 @@
 ---
 layout: article
-title: "SASSIENCEの仕様書（Evernoteのメモ）を公開してみる"
+title: "<span>SASSIENCEの仕様書（Evernoteのメモ）を</span><span>公開してみる</span>"
 date: 2011-06-02
 comments: true
 categories: development

@@ -1,6 +1,6 @@
 ---
 layout: article
-title: "<span>SinatraからDataMapperを使う(4)</span> シャッフルツイート機能"
+title: "<span>SinatraからDataMapperを使う(4)</span><span> シャッフルツイート機能</span>"
 date: 2011-02-15
 comments: true
 categories: ruby

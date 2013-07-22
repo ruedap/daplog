@@ -1,6 +1,6 @@
 ---
 layout: article
-title: "<span>RubyのRMagickで縦横比固定で</span>リサイズしたり切り抜いたり"
+title: "<span>RubyのRMagickで</span><span>縦横比固定でリサイズしたり切り抜いたり</span>"
 date: 2011-03-22
 comments: true
 categories: ruby
@@ -8,13 +8,13 @@ tags: ruby
 published: true
 ---
 
-今回も[前回](/2011/03/21/ruby-rmagick-imagemagick-resize-scale-thumbnail-sample)に引き続き、[この記事](http://gihyo.jp/dev/serial/01/ruby/0026?page=2)を参考にRMagickでリサイズや切り抜きをしてみるテスト。
+今回も[前回](/2011/03/21/ruby-rmagick-imagemagick-resize-scale-thumbnail-sample)に引き続き、[この記事](http://gihyo.jp/dev/serial/01/ruby/0026?page=2)を参考にRMagickでリサイズや切り抜きをしてみる。
 
 <!-- READMORE -->
 
 ## 縦横比固定でリサイズ
 
-縦横比固定でリサイズする場合は、[resize\_to\_fit](http://studio.imagemagick.org/RMagick/doc/image3.html#resize_to_fit)メソッドを使う。縦か横のどちらか小さい方のサイズでリサイズされる。残ったもう一方は、比率を保ったままリサイズされたサイズとなる。
+縦横比固定でリサイズする場合は、[resize\_to\_fit](http://studio.imagemagick.org/RMagick/doc/image3.html#resize_to_fit)メソッドを使う。縦か横のどちらか小さい方のサイズでリサイズされる。残ったもう一方は、比率を保ったままリサイズされる。
 
 ~~~ ruby
 require 'rubygems'
@@ -60,4 +60,4 @@ image.write('resize_to_fill2.jpg')  #=> 幅500でリサイズし、左上を起�
 
 * * *
 
-<cite>[Ruby Freaks Lounge：第26回　RMagickを用いた画像処理（1）リサイズ｜gihyo.jp … 技術評論社](http://gihyo.jp/dev/serial/01/ruby/0026?page=2)</cite>
+<cite>[Ruby Freaks Lounge：第26回　RMagickを用いた画像処理（1）リサイズ](http://gihyo.jp/dev/serial/01/ruby/0026?page=2)</cite>

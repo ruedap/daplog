@@ -1,6 +1,6 @@
 ---
 layout: article
-title: "<span>HerokuでWebアプリ開発を始めるなら</span>知っておきたいこと(10) 参考リンク集"
+title: "<span>HerokuでWebアプリ開発を始めるなら</span><span>知っておきたいこと(10) 参考リンク集</span>"
 date: 2011-05-08
 comments: true
 categories: ruby
@@ -110,10 +110,10 @@ published: true
 
 ### Herokuに関するチュートリアル記事
 
-- [Rails Hub情報局: Ruby on Rails向けPaaS「Heroku」って、こんな感じです（スクリーンキャスト）](http://el.jibun.atmarkit.co.jp/rails/2010/12/rubypaasheroku-.html)
+- [Ruby on Rails向けPaaS「Heroku」って、こんな感じです（スクリーンキャスト）](http://el.jibun.atmarkit.co.jp/rails/2010/12/rubypaasheroku-.html)
 - [１時間でツイッターサービスを作ろう！ \| KRAY Inc](http://kray.jp/blog/twitter_service_in_1hours/)
 - [デザイナーも１時間でツイッターサービスを作ろう！（準備編） - KUROIGAMEN(黒い画面)](http://kuroigamen.com/34)
-- [デザイナーもHerokuを使ってみよう！Herokuを使って静的ページを無料で作る - KUROIGAMEN(黒い画面)](http://kuroigamen.com/22)
+- [デザイナーもHerokuを使ってみよう！Herokuを使って静的ページを無料で作る](http://kuroigamen.com/22)
 - [Padrino＋MongoDB＋Herokuを使って、5分でWikiアプリ作成する &#171; blog.udzura.jp](http://blog.udzura.jp/2011/02/23/app-in-5-min-with-padrino-mongodb-heroku/)
 - [10分でできるPadrinoとMongoDBを使ったAPI作成 - Meltdown Countdown](http://d.hatena.ne.jp/marutanm/20110416/p1)
 - [HerokuでRuby1.9とRails3を使う - それはBooks](http://hamasyou.com/archives/000348)
@@ -135,10 +135,10 @@ published: true
 - [Heroku + MongoHQ が素晴らしい - Masatomo Nakano Blog](http://blog.madoro.org/mn/86)
 - [HerokuにRailsアプリを上げるメモ - modkaの日記](http://d.hatena.ne.jp/modka/20101205/1291562055)
 - [in a state of ease: Herokuに画像をアップロードする Rails 3 + Paperclip + Amazon S3](http://wine4u.seesaa.net/post/170193214.html)
-- [Route 477 - 無料から始められるRailsのホスティングサービス「Heroku」の記事をWEB+DBに書きました](http://route477.net/d/?date=20101024)
+- [無料から始められるRailsのホスティングサービス「Heroku」の記事をWEB+DBに書きました](http://route477.net/d/?date=20101024)
 - [［Heroku］タイムゾーンを設定する - func09](http://www.func09.com/wordpress/archives/951)
 - [Heroku を使い倒す(バックアップ編) \| つくる社LLC](http://tsukurusha.com/2010/07/heroku-%E3%82%92%E4%BD%BF%E3%81%84%E5%80%92%E3%81%99%E3%83%90%E3%83%83%E3%82%AF%E3%82%A2%E3%83%83%E3%83%97%E7%B7%A8/)
-- [HerokuにあるLokkaのDBをローカルに持ってくる方法（LokkaのDBのバックアップ） - KUROIGAMEN(黒い画面)](http://kuroigamen.com/31)
+- [HerokuにあるLokkaのDBをローカルに持ってくる方法（LokkaのDBのバックアップ）](http://kuroigamen.com/31)
 - [Rubyでtempfileのエンコーディングを指定する。 - このブログは証明できない。](http://d.hatena.ne.jp/shunsuk/20110320/1300610643)
 - [heroku consoleが原因でブラウザからのアクセスがブロックされる場合がある。 - Sooey](http://journal.sooey.com/99)
 - [herokuのデータベースインポート/エクスポートツール Taps - 森薫の日記](http://d.hatena.ne.jp/kaorumori/20090831/1251766159)
@@ -147,12 +147,12 @@ published: true
 ### Herokuに関するニュース・インタビュー
 
 - [なぜSalesforceはHerokuを買収したのか？ － ＠IT](http://www.atmarkit.co.jp/news/201103/03/heroku.html)
-- [【レポート】Heroku元CEO現Salesforce VPのSebastian氏、プラットフォーム戦略を説明 \| 経営 \| マイコミジャーナル](http://journal.mycom.co.jp/posts/2011/03/01/salesforce/index.html)
+- [【レポート】Heroku元CEO現Salesforce VPのSebastian氏、プラットフォーム戦略を説明](http://journal.mycom.co.jp/posts/2011/03/01/salesforce/index.html)
 - [Rubyの開発者を「ヒーロー」にしたい、「Heroku」責任者が語る - インタビュー：ITpro](http://itpro.nikkeibp.co.jp/post/Interview/20110302/357882/)
 - [Google App Engineは敷居が高いのがメリット？ セールスフォースは開発生産性が高いが制限にも苦しむ ～ クラウドごった煮パネルディスカッション（PaaS編 前編） － Publickey](http://www.publickey1.jp/blog/11/google_app_engine_paas.html)
 - [共同購入型クーポンサービス、RailsのPaaS「Heroku」上に構築 － ＠IT](http://www.atmarkit.co.jp/news/201006/21/minawari.html)
 - [グルーポン系サービスをRoRのPaaS「Heroku」で開発した「ミナワリ」。開発者に利点と使い勝手をインタビュー － Publickey](http://www.publickey1.jp/blog/10/rorpaasheroku.html)
-- [RubyフレームワークSinatra の作者 Blake Mizerany氏のインタビューを翻訳してみた。 - u16suzuの日記](http://d.hatena.ne.jp/u16s/20110430/1304158119)
+- [RubyフレームワークSinatra の作者 Blake Mizerany氏のインタビューを翻訳してみた。](http://d.hatena.ne.jp/u16s/20110430/1304158119)
 
 
 ### AWS大規模障害に関する記事

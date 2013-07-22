@@ -1,6 +1,6 @@
 ---
 layout: article
-title: "<span>今すぐフォローすべき</span>各界のスーパーエンジニアまとめ"
+title: "<span>今すぐフォローすべき</span><span>各界のスーパーエンジニアまとめ</span>"
 date: 2011-06-17
 comments: true
 categories: development

@@ -1,6 +1,6 @@
 ---
 layout: article
-title: "<span>SinatraからActiveRecord 3を使う(3)</span> バリデーション"
+title: "<span>SinatraからActiveRecord 3を使う(3)</span><span> バリデーション</span>"
 date: 2011-04-18
 comments: true
 categories: ruby
@@ -80,7 +80,7 @@ Validation failed: User is too long (maximum is 7 characters)
 
 ### valid?メソッド
 
-純粋にバリデーションだけを実行したい場合は、`valid?`メソッドがある。これは保存などのDB操作はせず、*バリデーションに成功するかどうかだけを実行*し、結果をBooleanで返す。
+純粋にバリデーションだけを実行したい場合は、`valid?`メソッドがある。これは保存等のDB操作はせず、*バリデーションに成功するかどうかだけを実行*し結果をBooleanで返す。
 
 ~~~ ruby
 get '/validate3' do

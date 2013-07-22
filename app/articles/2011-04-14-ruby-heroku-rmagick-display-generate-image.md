@@ -1,6 +1,6 @@
 ---
 layout: article
-title: "<span>RMagickを使って生成した画像を</span>Herokuで表示する2つの方法"
+title: "<span>RMagickを使って生成した画像を</span><span>Herokuで表示する2つの方法</span>"
 date: 2011-04-14
 comments: true
 categories: ruby

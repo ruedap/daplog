@@ -1,6 +1,6 @@
 ---
 layout: article
-title: "HerokuでDBのデータをバックアップする"
+title: "<span>HerokuでDBのデータを</span><span>バックアップする</span>"
 date: 2011-02-23
 comments: true
 categories: ruby
@@ -32,7 +32,7 @@ $ heroku addons:add pgbackups:basic --app heroku-hello-world
 
 ## バックアップ
 
-Heroku(Amazon S3)のサーバー上にバックアップするには以下のようにコマンドを実行する。
+Heroku(Amazon S3)上にバックアップするには以下のようにコマンドを実行する。
 
 ~~~ sh
 $ heroku pgbackups:capture --app heroku-hello-world
@@ -129,7 +129,7 @@ $ curl "http://s3.amazonaws.com/hkpgbackups/..." -o b004.dump
 $ pg_restore --verbose --clean --no-acl --no-owner -h localhost -U ruedap -d mydb b004.dump
 ~~~
 
-`-h`でホスト名（通常はlocalhost）、`-U`でユーザー名、`-d`でDB名を指定して、最後にリストアしたいダンプファイルを指定する。Railsアプリであれば、`config/database.yml`にユーザー名やDB名は指定してあるはず。
+`-h`でホスト名、`-U`でユーザー名、`-d`でDB名を指定して、最後にリストアしたいダンプファイルを指定する。Railsアプリであれば、`config/database.yml`にユーザー名やDB名は指定してあるはず。
 
 * * *
 

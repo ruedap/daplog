@@ -1,6 +1,6 @@
 ---
 layout: article
-title: "<span>はてブのページに表示される</span>サムネイル画像を変更する"
+title: "<span>はてブのページに表示される</span><span>サムネイル画像を変更する</span>"
 date: 2011-03-06
 comments: true
 categories: web

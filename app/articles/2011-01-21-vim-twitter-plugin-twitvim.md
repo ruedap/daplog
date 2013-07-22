@@ -1,6 +1,6 @@
 ---
 layout: article
-title: "<span>VimがTwitterクライアントになる</span>TwitVimプラグインを使う"
+title: "<span>VimがTwitterクライアントになる</span><span>TwitVimプラグインを使う</span>"
 date: 2011-01-21
 comments: true
 categories: vim

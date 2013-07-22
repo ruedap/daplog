@@ -1,6 +1,6 @@
 ---
 layout: article
-title: "<span>Rubyでrbファイルをrequireするときは</span>ドットを打つと良さそう"
+title: "<span>Rubyでrbファイルをrequireするときは</span><span>ドットを打つと良さそう</span>"
 date: 2011-05-31
 comments: true
 categories: ruby

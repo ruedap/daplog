@@ -1,6 +1,6 @@
 ---
 layout: article
-title: "<span>Vimperatorで</span>MacVimをset editorするためにmvimを導入"
+title: "<span>VimperatorでMacVimを</span><span>set editorするためにmvimを導入</span>"
 date: 2010-08-10
 comments: true
 categories: vimperator

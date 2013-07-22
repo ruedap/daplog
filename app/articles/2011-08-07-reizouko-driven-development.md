@@ -1,6 +1,6 @@
 ---
 layout: article
-title: "<span>冷蔵庫の前面をホワイトボード替わりにして設計した</span>Webサービスを今夜リリースします"
+title: "<span>冷蔵庫の前面をホワイトボード替わりにして設計した</span><span>Webサービスを今夜リリースします</span>"
 date: 2011-08-07
 comments: true
 categories: development

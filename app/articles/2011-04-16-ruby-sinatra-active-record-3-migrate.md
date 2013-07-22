@@ -1,6 +1,6 @@
 ---
 layout: article
-title: "<span>SinatraからActiveRecord 3を使う(1)</span> マイグレーション"
+title: "<span>SinatraからActiveRecord 3を使う(1)</span><span> マイグレーション</span>"
 date: 2011-04-16
 comments: true
 categories: ruby
@@ -15,7 +15,7 @@ published: true
 
 ## Sinatraアプリに必要なファイルを用意する
 
-まずは、Sinatraアプリを実行するのに必要な最低限のファイル群（`Gemfile`と`config.ru`と`app.rb`）を作成する。今回は基本的にすべてBundler経由で操作するので、システム側にBundlerのgemがインストールされている必要がある。
+まずは、Sinatraアプリを実行するのに必要な最低限のファイル群(`Gemfile`, `config.ru`, `app.rb`)を作成する。今回は基本的にすべてBundler経由で操作するので、システム側にBundlerのgemがインストールされている必要がある。
 
 ### Gemfile
 
@@ -38,7 +38,7 @@ gem 'rake'
 $ bundle install --path vendor/bundle
 ~~~
 
-`vendor/bundle`フォルダに指定したgemがインストールされて、`Gemfile.lock`が生成される。
+`vendor/bundle`フォルダにgemがインストールされて、`Gemfile.lock`が生成される。
 
 
 ### config.ru
@@ -121,7 +121,7 @@ class CreateCounts < ActiveRecord::Migration
 end
 ~~~
 
-このファイルをベースに、次のように`self.up`メソッド内に必要なカラムを書き足していく。
+これをベースに、次のように`self.up`メソッド内に必要なカラムを書き足していく。
 
 ~~~ ruby
 class CreateCounts < ActiveRecord::Migration

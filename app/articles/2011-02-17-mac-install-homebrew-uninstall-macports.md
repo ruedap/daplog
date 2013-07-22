@@ -1,6 +1,6 @@
 ---
 layout: article
-title: "<span>Homebrewをインストールして</span>MacPortsをアンインストールする"
+title: "<span>Homebrewをインストールして</span><span>MacPortsをアンインストールする</span>"
 date: 2011-02-17
 comments: true
 categories: mac

@@ -1,6 +1,6 @@
 ---
 layout: article
-title: "<span>Vimでref.vimを使って</span>PHPのリファレンスをただちに検索する"
+title: "<span>Vimでref.vimを使って</span><span>PHPのリファレンスをただちに検索する</span>"
 date: 2011-04-28
 comments: true
 categories: vim
@@ -23,15 +23,13 @@ published: true
 
 [![PHPのref.vim実行結果](/assets/2011/04/28/vim-ref-plugin-php-reference-search-02.png)](/assets/2011/04/28/vim-ref-plugin-php-reference-search-02.png)
 
-ブラウザーのアドレスバーに`php.net/mb_`と入力してネットで検索しても似たようなことができるけど、ref.vimならVimで完結できることと、オフラインでも使えるのが大きなメリット。
-
-今回も[前回](/2011/04/27/vim-ref-plugin-alc-eijiro-english-dictionary-search)・[前々回](/2011/04/26/vim-ref-plugin-ruby-reference-search-tool-refe2)と同様に、下記のPHPリファレンス導入前にVim側ではref.vimが使用可能な状態になっていることが前提。
+ブラウザーのアドレスバーに`php.net/mb_`と入力してネットで検索しても似たようなことができるけど、ref.vimならVimで完結できることと、オフラインでも使えるのが大きなメリット。今回も[前回](/2011/04/27/vim-ref-plugin-alc-eijiro-english-dictionary-search)・[前々回](/2011/04/26/vim-ref-plugin-ruby-reference-search-tool-refe2)と同様に、下記のPHPリファレンス導入前にVim側ではref.vimが使用可能な状態になっていることが前提。
 
 
 ## PHPリファレンスの導入（Mac/Windowsでほぼ共通）
 
 - PHPリファレンスを検索する場合もテキストブラウザーの導入が必要なので、[英辞郎で英単語を検索する記事](/2011/04/27/vim-ref-plugin-alc-eijiro-english-dictionary-search)を参考にテキストブラウザーをインストールする
-- [ここ](http://jp.php.net/download-docs.php)から「Japanese」の「Many HTML files」のtar.gzファイル（PHPリファレンスのHTML群を圧縮したもの）をダウンロードして解凍[^2]する
+- [ここ](http://jp.php.net/download-docs.php)から「Japanese」の「Many HTML files」のtar.gzファイル（PHPリファレンスのHTML群を圧縮したもの）をダウンロードして解凍する
 - 適当な場所に配置する（例: `D:\Documents\phpmanual`）
     - 配置するパスには、空白や日本語が含まれないのが（試してないけど）たぶん好ましい
 - .vimrcで、その配置した場所を指定する

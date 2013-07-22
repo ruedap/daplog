@@ -1,6 +1,6 @@
 ---
 layout: article
-title: "<span>はてなブックマークFirefox拡張を</span>Vimperatorで操作する"
+title: "<span>はてなブックマークFirefox拡張を</span><span>Vimperatorで操作する</span>"
 date: 2011-04-07
 comments: true
 categories: vimperator

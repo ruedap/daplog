@@ -1,6 +1,6 @@
 ---
 layout: article
-title: "<span>はてなスターカウンターのランキングに登録された</span>ブログ名を変更するには"
+title: "<span>はてなスターカウンターのランキングに</span><span>登録されたブログ名を変更するには</span>"
 date: 2011-04-24
 comments: true
 categories: web

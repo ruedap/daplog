@@ -1,6 +1,6 @@
 ---
 layout: article
-title: "<span>Twittperatorで今見てるページを</span>短縮URLに変換してツイートする"
+title: "<span>Twittperatorで今見てるページを</span><span>短縮URLに変換してツイートする</span>"
 date: 2011-02-05
 comments: true
 categories: vimperator

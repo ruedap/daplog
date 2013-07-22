@@ -1,6 +1,6 @@
 ---
 layout: article
-title: "<span>ターミナルからアプリを起動する</span>エイリアスを設定する"
+title: "<span>ターミナルからアプリを起動する</span><span>エイリアスを設定する</span>"
 date: 2011-01-08
 comments: true
 categories: mac

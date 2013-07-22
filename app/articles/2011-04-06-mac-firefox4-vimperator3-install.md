@@ -1,6 +1,6 @@
 ---
 layout: article
-title: "MacでFirefox 4とVimperator 3をインストールする"
+title: "<span>MacでFirefox 4とVimperator 3を</span><span>インストールする</span>"
 date: 2011-04-06
 comments: true
 categories: vimperator

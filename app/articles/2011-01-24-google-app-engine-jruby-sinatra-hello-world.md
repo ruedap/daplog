@@ -1,6 +1,6 @@
 ---
 layout: article
-title: "<span>Google App EngineのJRubyで</span>Sinatraを使ってHello worldする"
+title: "<span>Google App EngineのJRubyで</span><span>Sinatraを使ってHello worldする</span>"
 date: 2011-01-24
 comments: true
 categories: ruby

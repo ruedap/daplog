@@ -1,6 +1,6 @@
 ---
 layout: article
-title: "<span>ターミナルから</span>MacVimを起動するときはタブで開く"
+title: "<span>ターミナルから</span><span>MacVimを起動するときはタブで開く</span>"
 date: 2011-01-09
 comments: true
 categories: vim

@@ -1,6 +1,6 @@
 ---
 layout: article
-title: "RMagickでフォント名を指定して文字列を描画する"
+title: "<span>RMagickでフォント名を指定して</span><span>文字列を描画する</span>"
 date: 2011-04-13
 comments: true
 categories: ruby
@@ -8,7 +8,7 @@ tags: ruby
 published: true
 ---
 
-RMagickで、何も無い状態から、ベースとなる画像を生成し、その上にフォント名を指定した文字列を描画する方法について調べた。ActionScript 3.0で例えると、RMagickのDrawクラスがBitmapDataクラス相当、RMagickのImageクラスがBitmapクラス相当になるのかな。
+RMagickで、何も無い状態からベースとなる画像を生成し、その上にフォント名を指定した文字列を描画する方法について調べた。ActionScript 3.0で例えると、RMagickのDrawクラスがBitmapDataクラス相当、RMagickのImageクラスがBitmapクラス相当になるかな。
 
 <!-- READMORE -->
 

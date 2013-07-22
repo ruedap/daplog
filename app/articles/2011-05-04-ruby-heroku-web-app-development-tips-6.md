@@ -1,6 +1,6 @@
 ---
 layout: article
-title: "<span>HerokuでWebアプリ開発を始めるなら</span>知っておきたいこと(6) ステージング環境"
+title: "<span>HerokuでWebアプリ開発を始めるなら</span><span>知っておきたいこと(6) ステージング環境</span>"
 date: 2011-05-04
 comments: true
 categories: ruby
@@ -25,14 +25,14 @@ Herokuは、この“限りなく本番に近い”動作チェック用の別�
 2. [第5回](/2011/05/03/ruby-heroku-web-app-development-tips-5)で紹介した、「環境変数ENV」を利用すると本番環境・ステージング環境それぞれへRubyコード内で容易に分岐できる
 3. [第3回](/2011/05/01/ruby-heroku-web-app-development-tips-3)で紹介した、Gitによるデプロイの簡単さにより、本番環境・ステージング環境それぞれへのリモート先を追加しておいて個別にプッシュするだけで済む
 
-あと、作成できるアプリ数に（おそらく）制限が無いこともステージング環境の作成を容易にしてくれています。では、具体的にステージング環境がどういうものかを以下で説明します。
+あと、作成できるアプリ数におそらく制限が無いこともステージング環境の作成を容易にしてくれています。では、具体的にステージング環境がどういうものかを以下で説明します。
 
 
 ## ステージング環境の具体例
 
 [![chaplinアプリとchaplin-stagingアプリ](/assets/2011/05/04/ruby-heroku-web-app-development-tips-6-01.png)](/assets/2011/05/04/ruby-heroku-web-app-development-tips-6-01.png)
 
-ここでも[拙作のHerokuアプリ](http://twitter.com/chaplin_bot)でステージング環境の具体例を示します。このアプリは、チャップリンの名言をツイートするTwitter Botで、その制作行程はこちらにまとめてあります。
+ここでも[拙作のHerokuアプリ](http://twitter.com/chaplin_bot)でステージング環境の具体例を示します。このアプリは、名言をツイートするTwitter Botで、その制作行程はこちらにまとめてあります。
 
 <cite>[Herokuを使って1日1回名言をツイートするTwitter Botの作り方](/2011/02/09/ruby-heroku-twitter-bot)</cite>
 
@@ -56,5 +56,5 @@ Herokuは、この“限りなく本番に近い”動作チェック用の別�
 * * *
 
 今回は、動作チェック用の別サイト「ステージング環境」について書きました。
-次回は、[Herokuにブログを楽々設置できるRuby純正クラウド用CMS「Lokka」](/2011/05/05/ruby-heroku-web-app-development-tips-7)について書きます。
+次回は、[Herokuにブログを楽々設置できるクラウド用CMS「Lokka」](/2011/05/05/ruby-heroku-web-app-development-tips-7)について書きます。
 

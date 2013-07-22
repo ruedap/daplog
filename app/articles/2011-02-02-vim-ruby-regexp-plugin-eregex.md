@@ -1,6 +1,6 @@
 ---
 layout: article
-title: "<span>Vimで正規表現をRubyっぽく書ける</span>eregex.vimプラグインを使う"
+title: "<span>Vimで正規表現をRubyっぽく書ける</span><span>eregex.vimプラグインを使う</span>"
 date: 2011-02-02
 comments: true
 categories: vim

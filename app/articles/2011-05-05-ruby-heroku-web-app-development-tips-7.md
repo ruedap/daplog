@@ -1,6 +1,6 @@
 ---
 layout: article
-title: "<span>HerokuでWebアプリ開発を始めるなら</span>知っておきたいこと(7) ブログならLokka"
+title: "<span>HerokuでWebアプリ開発を始めるなら</span><span>知っておきたいこと(7) ブログならLokka</span>"
 date: 2011-05-05
 comments: true
 categories: ruby
@@ -15,7 +15,7 @@ published: true
 
 ## Herokuにブログを設置するならLokka
 
-ある程度Herokuの基本操作に慣れてきたら、いきなりWebアプリ開発はなかなかハードルが高いので、まずはブログあたりをHeroku上に設置してみたくなると思います。Herokuに対応したアプリケーション、ツール、ライブラリは存在し、いくつか便利に使わせてもらっているのですが、ブログ／CMSの作成であれば[Lokka](http://lokka.org/)（ロッカ）をオススメします。
+ある程度Herokuの基本操作に慣れてきたら、いきなりWebアプリ開発はなかなかハードルが高いので、まずはブログあたりをHeroku上に設置してみたくなると思います。Herokuに対応したアプリケーション、ツール、ライブラリは存在し、いくつか便利に使わせてもらっているのですが、ブログ／CMSの作成であれば[Lokka](http://lokka.org/)をオススメします。
 
 
 ## Lokkaの要チェックな3つのポイント

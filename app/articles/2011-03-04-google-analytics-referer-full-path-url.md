@@ -1,6 +1,6 @@
 ---
 layout: article
-title: "<span>Google Analyticsで参照元サイトのURLを</span>フルパスで表示する"
+title: "<span>Google Analyticsで参照元サイトのURLを</span><span>フルパスで表示する</span>"
 date: 2011-03-04
 comments: true
 categories: web

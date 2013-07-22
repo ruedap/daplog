@@ -1,6 +1,6 @@
 ---
 layout: article
-title: "HerokuでRMagickを使おうとしてrequireでハマった"
+title: "<span>HerokuでRMagickを使おうとして</span><span>requireでハマった</span>"
 date: 2011-04-10
 comments: true
 categories: ruby
@@ -21,7 +21,7 @@ require 'rmagick'  #=> 不正解
 require 'RMagick'  #=> 正解
 ~~~
 
-前者だとHerokuではApplication Errorになる。エラー時のHerokuのログの該当箇所を抜粋。
+前者だとHerokuではApplication Errorになる。エラー時のログの該当箇所を抜粋。
 
 ~~~ sh
 [2011-04-07T02:35:04+00:00 app[web.1]: [/usr/ruby1.8.7/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require': no such file to load -- rmagick (LoadError)

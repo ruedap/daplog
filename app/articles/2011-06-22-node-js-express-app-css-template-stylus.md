@@ -1,6 +1,6 @@
 ---
 layout: article
-title: "Node.jsアプリでCSSテンプレートにStylusを使う"
+title: "<span>Node.jsアプリで</span><span>CSSテンプレートにStylusを使う</span>"
 date: 2011-06-22
 comments: true
 categories: node.js
@@ -34,7 +34,7 @@ a
   color: #00B7FF
 ~~~
 
-上記で比較すると、コロンの位置しか違わないけど、他にも細かいところで違うっぽい。「っぽい」というのは自分は新しいバージョン3からSassを使い始めたので、古いほうの書き方を知らないから。で、*Expressで使えるSassは旧型の方のみ*。 個人的にこれは困った。
+上記で比較すると、コロンの位置しか違わないけど、他にも細かいところで違うっぽい。「っぽい」というのは自分は新しいバージョン3からSassを使い始めたので、古いほうの書き方を知らないから。で、*Expressで使えるSassは旧型の方のみ*。 これは困った。
 
 
 ## 新星Stylus
@@ -97,9 +97,8 @@ app.use(require('stylus').middleware({ src: __dirname + '/public' }));
 
 ## 現在の開発環境
 
-昨日、自分がNode.jsに興味を持った開発環境周りについて、
-<i>普段自分がRubyで使っているSinatra+Slim+Sassと似たような開発環境を、Node.jsでもExpress(CoffeeScript)+Jade+Sassを使えば実現できるかも？</i>
-と思っていたのが、今回のStylusさんの参入で、<i>Express(CoffeeScript)+Jade+*Stylus*を使えば、Sinatra+Slim+Sassにかなり近い環境になるかも？</i> に一歩前進したのでした。めでたし。
+昨日、自分がNode.jsに興味を持った開発環境周りについて、<i>普段自分がRubyで使っているSinatra, Slim, Sassと似たような開発環境を、Node.jsでもExpress(CoffeeScript), Jade, Sassを使えば実現できるかも？</i>
+と思っていたのが、今回のStylusさんの参入で、<i>Express(CoffeeScript), Jade, *Stylus*を使えば、Sinatra, Slim, Sassにかなり近い環境になるかも？</i> に一歩前進したのでした。めでたし。
 
 というわけでかなり理想に近い環境が整ったっぽいので、手始めに小さなNode.jsアプリとかつくってみたいところ。ただ、そもそも言語が違ったりするので、いつも使ってるRubyに比べたらやっぱ難しいし、色々ハマったりしてるけど、新しい環境でやるのは学ぶことが多くて楽しい。以降、次回に続くかも。
 

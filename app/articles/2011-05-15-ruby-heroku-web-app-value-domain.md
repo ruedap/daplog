@@ -1,6 +1,6 @@
 ---
 layout: article
-title: "<span>Herokuアプリに独自ドメインを割り当てる</span>（バリュードメインの場合）"
+title: "<span>Herokuアプリに独自ドメインを割り当てる</span><span>（バリュードメインの場合）</span>"
 date: 2011-05-15
 comments: true
 categories: ruby

@@ -1,6 +1,6 @@
 ---
 layout: article
-title: "<span>複数のRuby環境を共存させられる</span>RVM(Ruby Version Manager)を使う"
+title: "<span>複数のRuby環境を共存させられる</span><span>RVM(Ruby Version Manager)を使う</span>"
 date: 2011-01-12
 comments: true
 categories: ruby

@@ -1,6 +1,6 @@
 ---
 layout: article
-title: "<span>SinatraからDataMapperを使う(3)</span> バリデーション"
+title: "<span>SinatraからDataMapperを使う(3)</span><span> バリデーション</span>"
 date: 2011-02-14
 comments: true
 categories: ruby

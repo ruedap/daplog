@@ -1,6 +1,6 @@
 ---
 layout: article
-title: "<span>HerokuでSinatraを使って</span>RMagickの使用可能フォント名を出力する"
+title: "<span>HerokuでSinatraを使って</span><span>RMagickの使用可能フォント名を出力する</span>"
 date: 2011-04-12
 comments: true
 categories: ruby

@@ -1,6 +1,6 @@
 ---
 layout: article
-title: "WindowsでImageMagickとRMagickをインストールする"
+title: "<span>WindowsでImageMagickとRMagickを</span><span>インストールする</span>"
 date: 2011-04-09
 comments: true
 categories: ruby

@@ -1,6 +1,6 @@
 ---
 layout: article
-title: "BetweenAS3のトゥイーンの再生時間を調べる"
+title: "<span>BetweenAS3の</span><span>トゥイーンの再生時間を調べる</span>"
 date: 2011-03-28
 comments: true
 categories: as3
