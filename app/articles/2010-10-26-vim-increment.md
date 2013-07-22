@@ -1,0 +1,28 @@
+---
+layout: article
+title: "Vimでゼロパディングのインクリメント"
+date: 2010-10-26
+comments: true
+categories: vim
+tags: vim
+published: true
+---
+
+Vimでゼロパディングされた数値をインクリメント（<kbd>C+a</kbd>）するときに、「001」とかの数値は8進数になるらしく、デフォルトでは「007」の次が「010」になってしまって困った。で、Google先生に聞いたら解決方法があった。
+
+<!-- READMORE -->
+
+
+## 8進数を除去
+
+nrformats(nf)で、インクリメントで使用するフォーマットを指定できる模様。アルファベットのインクリメントもできるみたい。
+
+~~~ vim
+set nf=alpha,hex                 " インクリメント対象から8進数を除去
+~~~
+
+普段8進数なんて全く使わないので、アルファベットと16進数（と10進数）だけ指定して.vimrcに書いとこう。
+
+* * *
+
+<cite>[vimで&lt;Ctrl-A&gt;や&lt;Ctrl-X&gt;を使って数値をインクルメントする時に陥りがちな罠 - Guyon Diary](http://d.hatena.ne.jp/guyon/20080306/1204792668)</cite>
