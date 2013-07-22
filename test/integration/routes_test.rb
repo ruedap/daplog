@@ -30,6 +30,12 @@ class RoutesTest < ActionDispatch::IntegrationTest
     end
   end
 
+  test 'はてなブログの記事URLから変更したURLが301リダイレクトされること' do
+    get 'entry/20110106/windowx_postgresql_xampp_php'
+    assert_redirected_to '/2011/01/06/windows-postgresql-xampp-php'
+    assert_response 301
+  end
+
   test '不正な記事URLにアクセスすると`ActionController::RoutingError`であること' do
     invalid_article_paths.each do |path|
       assert_raise(ActionController::RoutingError) do
