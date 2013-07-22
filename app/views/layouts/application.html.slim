@@ -7,6 +7,7 @@ html(lang='ja' itemscope itemtype="#{yield :itemtype}")
     meta name='robots' content='index,follow'
     meta name='description' content="#{blog_description(article_body(@article))}"
     == render 'layouts/ogp'
+    == render 'layouts/twitter_cards'
     title = blog_title(article_title(@article))
     == stylesheet_link_tag 'application', media: 'all'
     == stylesheet_link_tag "fibonacci-#{@hue}", media: 'all'
