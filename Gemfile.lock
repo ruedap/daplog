@@ -48,6 +48,9 @@ GEM
     erubis (2.7.0)
     execjs (1.4.0)
       multi_json (~> 1.0)
+    figaro (0.7.0)
+      bundler (~> 1.0)
+      rails (>= 3, < 5)
     hike (1.2.3)
     i18n (0.6.4)
     jbuilder (1.4.2)
@@ -143,6 +146,7 @@ DEPENDENCIES
   binding_of_caller (~> 0.7.2)
   bourbon (~> 3.1.8)
   coffee-rails (~> 4.0.0)
+  figaro (~> 0.7.0)
   jbuilder (~> 1.2)
   jquery-rails
   kramdown (~> 1.1.0)
