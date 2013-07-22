@@ -27,4 +27,20 @@ module ArticlesHelper
     html << content_tag(:span, day, class: 'D')
     content_tag(:time, html, datetime: article_data[:time])
   end
+
+  def article_title(article)
+    if article.present?
+      strip_tags(article[:title])
+    else
+      nil
+    end
+  end
+
+  def article_body(article)
+    if article.present?
+      article[:body]
+    else
+      nil
+    end
+  end
 end
