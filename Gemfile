@@ -21,6 +21,7 @@ gem 'coderay', '~> 1.0.9'
 
 group :production, :staging do
   gem 'rails_12factor' # for Heroku assets precompile
+  gem 'newrelic_rpm'
 end
 
 group :development do
