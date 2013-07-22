@@ -16,6 +16,7 @@ gem 'bourbon', '~> 3.1.8'
 gem 'neat', '~> 1.3.0'
 gem 'redis', '~> 3.0.4'
 gem 'rack-rewrite', '~> 1.3.3'
+gem 'sentry-raven'
 
 group :production, :staging do
   gem 'rails_12factor' # for Heroku assets precompile
