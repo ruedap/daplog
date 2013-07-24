@@ -346,6 +346,7 @@ main > article
     > ul > li,
     > ol > li,
     > blockquote,
+    > p > small,
     > p > ins
       font-size: $font-size_article__ins
     > p > sup
@@ -357,6 +358,7 @@ main > article
       line-height: $ratio_golden
       p
         margin: 0.5em 0
+    > p > small,
     > p > ins
       +inline-block
       color: fiboco(1)
@@ -364,6 +366,8 @@ main > article
       &::before
         content: '※'
         margin-right: 0.3em
+    > p > small
+      color: $color_body__text--light
     strong, em
       font-weight: normal
       font-style: normal
