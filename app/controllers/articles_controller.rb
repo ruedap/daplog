@@ -64,23 +64,28 @@ class ArticlesController < ApplicationController
     File.open(path) {|f| f.read }
   end
 
-  def parse_markdown(markdown)
+  def parse_frontmatter(markdown)
     RubyFrontMatter::Parser.new.parse(markdown)
+  end
+
+  def parse_markdown(markdown)
+    options = { auto_ids: false,
+                coderay_css: :class,
+                coderay_line_numbers: nil,
+                coderay_wrap: :div }
+    Kramdown::Document.new(markdown, options).to_html
   end
 
   def read_article(path, is_body = true)
     article = {}
-    md = parse_markdown(read_file(path))
+    md = parse_frontmatter(read_file(path))
     front_matter = md.first
     article[:path]  = path
     article[:title] = front_matter['title']
     article[:date]  = front_matter['date'].iso8601.gsub('-', '.')
     article[:time]  = front_matter['date'].to_time.iso8601
     if is_body
-      options = { coderay_css: :class,
-                  coderay_line_numbers: nil,
-                  coderay_wrap: :div }
-      article[:body] = Kramdown::Document.new(md.last, options).to_html
+      article[:body] = parse_markdown(md.last)
       redis_set(article[:path], article)
     end
     article
