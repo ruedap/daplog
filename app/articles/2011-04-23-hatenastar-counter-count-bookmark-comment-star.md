@@ -1,6 +1,6 @@
 ---
 layout: article
-title: "<span>はてなスターカウンターは</span>「はてブコメントに付いたスター」もカウントできた"
+title: "<span>はてなスターカウンターは</span><span>「はてブコメントに付いたスター」もカウントできた</span>"
 date: 2011-04-23
 comments: true
 categories: web

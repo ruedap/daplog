@@ -1,6 +1,6 @@
 ---
 layout: article
-title: "Vimでunite.vimプラグインを使い始めて一週間"
+title: "<span>Vimでunite.vimプラグインを</span><span>使い始めて一週間</span>"
 date: 2011-01-17
 comments: true
 categories: vim

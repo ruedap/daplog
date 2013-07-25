@@ -1,6 +1,6 @@
 ---
 layout: article
-title: "<span>PHPでフォームのチェックボックスの値を</span>配列で受け取る"
+title: "<span>PHPでフォームのチェックボックスの値を</span><span>配列で受け取る</span>"
 date: 2011-03-17
 comments: true
 categories: php
@@ -81,7 +81,7 @@ html
 
 <cite>[フォームのデータを取得する at wonder on server side](http://perl.wonder-boys.net/?p=151)</cite>
 
-必ずしもこういう命名にすれば配列で受け取れる、というわけでは無いみたい。勉強になった。
+必ずしもこういう命名にすれば配列で受け取れる、というわけでは無いみたい。
 
 * * *
 

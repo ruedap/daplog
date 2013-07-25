@@ -1,6 +1,6 @@
 ---
 layout: article
-title: "MacにPHPUnitをインストール"
+title: "MacにPHPUnitをインストールする"
 date: 2010-12-28
 comments: true
 categories: php

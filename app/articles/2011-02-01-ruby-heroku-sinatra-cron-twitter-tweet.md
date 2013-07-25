@@ -1,6 +1,6 @@
 ---
 layout: article
-title: "Herokuのcronを使って自動でTwitterにつぶやく"
+title: "<span>Herokuのcronを使って</span><span>自動でTwitterにつぶやく</span>"
 date: 2011-02-01
 comments: true
 categories: ruby
@@ -64,7 +64,7 @@ end
 ## Herokuでcronを有効化
 
 [Herokuのアドオンページ](http://addons.heroku.com/cron)から、cronのアドオンを有効にする。1日単位のcronなら無料で利用できるが、無料利用でもクレジットカード情報の登録が必要。
-クレジットカード番号や住所・電話番号などの個人情報入力が終わって、Account verified.となったらおｋ
+クレジットカード番号や住所・電話番号などの個人情報入力が終わって、Account verified.となったらおｋ。
 
 もういちど[cronアドオンのページ](http://addons.heroku.com/cron)に行き、Daily Cronの方のAddボタンを押す。Herokuアプリの選択画面になるので、heroku-hello-worldを選択してSelectボタンを押す。実は、このSelectボタンを押してcronアドオンを追加した時の時間が、cronが発動する時間になる。詳しくは後述。
 
@@ -77,7 +77,7 @@ $ heroku addons:add cron:daily
 
 ## cron指示書を作成
 
-プロジェクトディレクトリ直下に、cronの指定をする`Rakefile`を作成する
+プロジェクトディレクトリ直下に、cronの指定をする`Rakefile`を作成する。
 
 ~~~ ruby
 require 'tweet.rb'

@@ -1,6 +1,6 @@
 ---
 layout: article
-title: "<span>MacでSSH公開鍵・秘密鍵ファイルを</span>コピーして使ったら警告がでた"
+title: "<span>MacでSSH公開鍵・秘密鍵ファイルを</span><span>コピーして使ったら警告がでた</span>"
 date: 2011-04-04
 comments: true
 categories: mac

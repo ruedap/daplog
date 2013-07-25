@@ -1,6 +1,6 @@
 ---
 layout: article
-title: "Rubyの正規表現で使える組み込み変数"
+title: "<span>Rubyの正規表現で使える</span><span>組み込み変数</span>"
 date: 2011-03-19
 comments: true
 categories: ruby

@@ -1,6 +1,6 @@
 ---
 layout: article
-title: "<span>Duostackで使用するRubyのバージョンを</span>1.9.2に変更する"
+title: "<span>Duostackで使用するRubyのバージョンを</span><span>1.9.2に変更する</span>"
 date: 2011-05-13
 comments: true
 categories: ruby
@@ -56,7 +56,7 @@ get '/ruby_version' do
 end
 ~~~
 
-1行目にマジックコメントを追加して、あとは利用しているRubyのバージョンを返す組み込み定数を表示するためのパスを追加する。これでデプロイして、<http://duohelloworld.duostack.net/ruby_version>にアクセスすると、1.9.2にちゃんと変わっているのがわかる。
+利用しているRubyのバージョンを返す組み込み定数を表示するためのパスを追加する。これでデプロイして、<http://duohelloworld.duostack.net/ruby_version>にアクセスすると、1.9.2にちゃんと変わっているのがわかる。
 
 * * *
 

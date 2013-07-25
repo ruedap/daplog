@@ -1,6 +1,6 @@
 ---
 layout: article
-title: "<span>Vimでref.vimを使って</span>Rubyのリファレンスをただちに検索する"
+title: "<span>Vimでref.vimを使って</span><span>Rubyのリファレンスをただちに検索する</span>"
 date: 2011-04-26
 comments: true
 categories: vim
@@ -10,7 +10,7 @@ published: true
 
 [![](/assets/2011/04/26/vim-ref-plugin-ruby-reference-search-tool-refe2-01.png)](/assets/2011/04/26/vim-ref-plugin-ruby-reference-search-tool-refe2-01.png)
 
-Vimで書いたコードを速攻実行できる[quickrun](http://phpspot.org/blog/archives/2011/04/vimquickrun.html)プラグインがホッテントリで話題になってて、自分もこのプラグインを愛用させてもらってるんだけど、同じ作者さんの[ref.vim](http://d.hatena.ne.jp/thinca/20090809/1249829893)プラグインもコーディングするときにquickrunと同様に超絶便利なのでおすすめ。このプラグインは、Vim上からリファレンスやドキュメントをただちに検索できるプラグイン。調べたいクラス名やメソッド名にカーソルを当ててShift+Kを押すだけ。こちらもquickrunと同様に[様々な言語やドキュメントをカバー](https://github.com/thinca/vim-ref/tree/master/doc)している。
+Vimで書いたコードを速攻実行できる[quickrun](http://phpspot.org/blog/archives/2011/04/vimquickrun.html)プラグインがホッテントリで話題になってて、自分もこのプラグインを愛用させてもらってるんだけど、同じ作者さんの[ref.vim](http://d.hatena.ne.jp/thinca/20090809/1249829893)プラグインもコーディングするときにquickrunと同様に超絶便利なのでおすすめ。このプラグインは、Vim上からリファレンスやドキュメントをただちに検索できるプラグイン。調べたいクラス名やメソッド名にカーソルを当てて<kbd>Shift+K</kbd>を押すだけ。こちらもquickrunと同様に[様々な言語やドキュメントをカバー](https://github.com/thinca/vim-ref/tree/master/doc)している。
 
 <!-- READMORE -->
 
@@ -56,7 +56,7 @@ srand()が有効です。
 ~~~
 
 - Vimのコマンドラインモードで`:Ref refe Array shuffle`を実行して、上のターミナルの時と同じ内容が表示されることを確認してセットアップ完了！
-- ref.vimなら、VimでRubyコードを開いて、*調べたいメソッド名などの上でShift+K*を押せばオッケー。これ超便利!!
+- ref.vimなら、VimでRubyコードを開いて、*調べたいメソッド名などの上で<kbd>Shift+K</kbd>*を押せばオッケー。
 
 
 ## Windowsの場合
@@ -83,12 +83,12 @@ D:\Documents\Reference\rubyrefm\refe-1_8_7-utf.cmd  %*
 - コマンドプロンプトで`refe --version`で*ReFe version 2*と表示されれば準備オッケー
 - コマンドプロンプトで`refe Array shuffle`すると文字化けした情報が表示されるがこれでおｋ[^2]
 - Vimのコマンドラインモードで`:Ref refe Array shuffle`[^3]を実行して、リファレンスマニュアルが正常に表示されることを確認してセットアップ完了！
-- ref.vimなら、VimでRubyコードを開いて、*調べたいメソッド名などの上でShift+K*を押せばオッケー。これ超便利!!
+- ref.vimなら、VimでRubyコードを開いて、*調べたいメソッド名などの上で<kbd>Shift+K</kbd>*を押せばオッケー。
 
 
 ## .vimrc
 
-上述のようにセットアップが完了すれば、クラス名やメソッド名に*カーソルが乗っている状態でShift+K*を押したり、コマンドラインモードから`:Ref refe Array shuffle`のように入力すれば、ただちにリファレンスを検索できるようになる。ショートカットキーを割り当てればもっと早く検索できるので、自分の場合の.vimrcでのref.vimの設定を参考までに。
+上述のようにセットアップが完了すれば、クラス名やメソッド名に*カーソルが乗っている状態で<kbd>Shift+K</kbd>*を押したり、コマンドラインモードから`:Ref refe Array shuffle`のように入力すれば、ただちにリファレンスを検索できるようになる。ショートカットキーを割り当てればもっと早く検索できるので、自分の場合の.vimrcでのref.vimの設定を参考までに。
 
 ~~~ vim
 """ ref.vim

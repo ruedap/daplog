@@ -1,6 +1,6 @@
 ---
 layout: article
-title: "MacのFinderで不可視ファイルを見えるようにする"
+title: "<span>MacのFinderで</span><span>不可視ファイルを見えるようにする</span>"
 date: 2011-04-03
 comments: true
 categories: mac
@@ -8,7 +8,7 @@ tags: mac
 published: true
 ---
 
-Mac OS Xを再インストールして、Finderでドットファイルが見えなくなっているのに気づいて、どうやって表示させたか思い出せなくてググった。てっきりFinderのメニューとかから表示させられるのかと思ってたけど、ターミナルからコマンド打たないとできないんだね…。
+Mac OS Xを再インストールして、Finderでドットファイルが見えなくなっているのに気づいて、どうやって表示させたか思い出せなくてググった。てっきりFinderのメニューから表示させられるのかと思ってたけど、ターミナルからコマンド打たないとできないんだね…。
 
 <!-- READMORE -->
 

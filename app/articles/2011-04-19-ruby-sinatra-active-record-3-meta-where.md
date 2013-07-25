@@ -1,6 +1,6 @@
 ---
 layout: article
-title: "<span>SinatraからActiveRecord 3を使う(4)</span> 比較演算が簡単になるMetaWhere"
+title: "<span>SinatraからActiveRecord 3を使う(4)</span><span> 比較演算が簡単になるMetaWhere</span>"
 date: 2011-04-19
 comments: true
 categories: ruby

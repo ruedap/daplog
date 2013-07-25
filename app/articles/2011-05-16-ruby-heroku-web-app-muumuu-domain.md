@@ -1,6 +1,6 @@
 ---
 layout: article
-title: "<span>Herokuアプリに独自ドメインを割り当てる</span>（ムームードメインの場合）"
+title: "<span>Herokuアプリに独自ドメインを割り当てる</span><span>（ムームードメインの場合）</span>"
 date: 2011-05-16
 comments: true
 categories: ruby

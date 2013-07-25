@@ -1,6 +1,6 @@
 ---
 layout: article
-title: "MacでImageMagickとRMagickをインストールする"
+title: "<span>MacでImageMagickとRMagickを</span><span>インストールする</span>"
 date: 2011-03-20
 comments: true
 categories: ruby

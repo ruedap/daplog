@@ -1,6 +1,6 @@
 ---
 layout: article
-title: "<span>AS3でサウンドを簡単に扱うための</span>Soundラッパークラス"
+title: "<span>AS3でサウンドを簡単に扱うための</span><span>Soundラッパークラス</span>"
 date: 2011-03-29
 comments: true
 categories: as3
@@ -205,8 +205,6 @@ package
 }
 ~~~
 
-ところで、はてダの[ASのシンタックスハイライト](http://hatenadiary.g.hatena.ne.jp/keyword/%E3%82%BD%E3%83%BC%E3%82%B9%E3%82%B3%E3%83%BC%E3%83%89%E3%82%92%E8%89%B2%E4%BB%98%E3%81%91%E3%81%97%E3%81%A6%E8%A8%98%E8%BF%B0%E3%81%99%E3%82%8B%EF%BC%88%E3%82%B7%E3%83%B3%E3%82%BF%E3%83%83%E3%82%AF%E3%82%B9%E3%83%BB%E3%83%8F%E3%82%A4%E3%83%A9%E3%82%A4%E3%83%88%EF%BC%89)ってなんかおかしい。もしかしてAS2? でもないような・・・。
-
 * * *
 
-<cite>[サウンドまわりの扱いがめんどくさいので。 \| エントリー \| _level0.KAYAC \| flash ActionScript blog](http://level0.kayac.com/2009/01/post_10.php)</cite>
+<cite>[サウンドまわりの扱いがめんどくさいので。](http://level0.kayac.com/2009/01/post_10.php)</cite>

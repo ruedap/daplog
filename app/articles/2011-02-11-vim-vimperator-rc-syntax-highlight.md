@@ -1,6 +1,6 @@
 ---
 layout: article
-title: "<span>Vimで.vimperatorrcファイルを</span>シンタックスハイライトする"
+title: "<span>Vimで.vimperatorrcファイルを</span><span>シンタックスハイライトする</span>"
 date: 2011-02-11
 comments: true
 categories: vim
@@ -35,7 +35,7 @@ Makefile	ftdetect	mkvimball.txt	syntax		vimperator.vba
 
 Mercurialが入ってない場合は、以下の`vimperator.vba`をダウンロードする。
 
-<cite>[Issue 7 - vimperator-labs - Vim runtime files for the Vimperator filetype - Project Hosting on Google Code](http://code.google.com/p/vimperator-labs/issues/detail?id=7&q=project%3ALiberator%2CVimperator%20type%3Aplugin&colspec=ID%20Summary%20Project%20Type%20Status%20Priority%20Stars%20Owner)</cite>
+<cite>[Issue 7 - vimperator-labs - Vim runtime files for the Vimperator filetype](http://code.google.com/p/vimperator-labs/issues/detail?id=7&q=project%3ALiberator%2CVimperator%20type%3Aplugin&colspec=ID%20Summary%20Project%20Type%20Status%20Priority%20Stars%20Owner)</cite>
 
 んで、`vimperator.vba`をVimで開いて、`:so %`を実行してインストールして完了。
 

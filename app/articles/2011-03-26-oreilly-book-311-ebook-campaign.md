@@ -1,6 +1,6 @@
 ---
 layout: article
-title: "オライリーの電子書籍買い占め運動に参加してみた"
+title: "<span>オライリーの電子書籍買い占め運動に</span><span>参加してみた</span>"
 date: 2011-03-26
 comments: true
 categories: book

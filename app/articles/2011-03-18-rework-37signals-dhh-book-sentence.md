@@ -1,6 +1,6 @@
 ---
 layout: article
-title: "<span>「小さなチーム、大きな仕事: </span>37シグナルズ成功の法則」を読み終えて"
+title: "<span>「小さなチーム、大きな仕事: </span><span>37シグナルズ成功の法則」を読み終えて</span>"
 date: 2011-03-18
 comments: true
 categories: book

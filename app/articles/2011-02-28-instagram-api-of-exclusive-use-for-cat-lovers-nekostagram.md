@@ -1,6 +1,6 @@
 ---
 layout: article
-title: "<span>Instagram APIを使って</span>ねこ大好き専用の「Nekostagram」を作ってみた"
+title: "<span>Instagram APIを使って</span><span>ねこ大好き専用の「Nekostagram」を作ってみた</span>"
 date: 2011-02-28
 comments: true
 categories: ruby

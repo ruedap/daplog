@@ -1,6 +1,6 @@
 ---
 layout: article
-title: "<span>VimperatorがTwitterクライアントになる</span>Twittperatorプラグインを使う"
+title: "<span>VimperatorがTwitterクライアントになる</span><span>Twittperatorプラグインを使う</span>"
 date: 2011-01-22
 comments: true
 categories: vimperator

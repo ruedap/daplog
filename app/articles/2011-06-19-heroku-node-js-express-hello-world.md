@@ -1,6 +1,6 @@
 ---
 layout: article
-title: "HerokuでNode.jsとExpressを使ってHello worldする"
+title: "<span>HerokuでNode.jsとExpressを使って</span><span>Hello worldする</span>"
 date: 2011-06-19
 comments: true
 categories: node.js
@@ -8,7 +8,7 @@ tags: node.js
 published: true
 ---
 
-普段自分は[Heroku+Sinatra+Slim+Sass](/2011/06/09/sassience-ruby-source-code-push-github)でWebアプリを作っているんだけど、Node.jsやCoffeeScriptについてちょっと調べてたら、Herokuを使う前提で、Node.js(Express)+Jade+Sassという組み合わせでCoffeeScriptで書けば、前述のSinatraアプリとほぼ同じような感覚で書けそうなことに気づいて、ぐっとNode.jsに興味が沸いた。
+普段自分は[Heroku+Sinatra+Slim+Sass](/2011/06/09/sassience-ruby-source-code-push-github)でWebアプリを作っているんだけど、Node.jsやCoffeeScriptについてちょっと調べてたら、Herokuを使う前提で、Node.js(Express), Jade, Sassという組み合わせでCoffeeScriptで書けば、前述のSinatraアプリとほぼ同じような感覚で書けそうなことに気づいて、ぐっとNode.jsに興味が沸いた。
 
 ということで、さっそくHerokuを使ってNode.jsアプリを作ってHello worldしてみた。今回の記事を最後まで行くと、[これ](http://node-hello-world.herokuapp.com/)が出来上がる。ソースコードは[GitHub](https://github.com/ruedap/node-hello-world/tree/0.0.1)に。
 
@@ -42,7 +42,7 @@ npmはNode.js関連のパッケージマネージャで、RubyでいうRubyGems�
 $ sudo curl [http://npmjs.org/install.sh](http://npmjs.org/install.sh) | sh
 ~~~
 
-途中でYes/Noと聞かれるので、Yesと答えたらなんか色々削除された。よくわからず。正常にインストールされれば、npmコマンドが利用可能になる。バージョンは1.0.13だった。
+途中でYes/Noと聞かれるので、Yesと答えたらなんか色々削除された。正常にインストールされれば、npmコマンドが利用可能になる。バージョンは1.0.13だった。
 
 ~~~ sh
 $ npm -v
@@ -52,7 +52,7 @@ $ npm -v
 
 ### expressのインストール
 
-んで、フレームワークの[express](http://expressjs.com/)をインストールする。RubyでいうSinatraに相当する。というか、Sinatraに影響を受けたフレームワーク。npmコマンドを使うと、パッケージはプロジェクトフォルダごとにインストールされるっぽい(?)ので、まずプロジェクトフォルダ`node-hello-world`を作って、そこでインストールコマンドを実行する。バージョンは2.3.11だった。
+んで、[express](http://expressjs.com/)をインストールする。RubyでいうSinatraに相当する。というか、Sinatraに影響を受けたフレームワーク。npmコマンドを使うと、パッケージはプロジェクトフォルダごとにインストールされるっぽい(?)ので、まず`node-hello-world`フォルダを作って、そこでインストールコマンドを実行する。バージョンは2.3.11だった。
 
 ~~~ sh
 $ mkdir node-hello-world
@@ -157,7 +157,7 @@ $ foreman start
 
 ## Herokuへデプロイ
 
-最後にHerokuへNode.jsアプリをデプロイするけど、*従来のようにHerokuアプリを新規作成してはNode.jsアプリを動かすことはできないので注意。* 新しいStackで作る必要がある。さらに、*heroku gemのバージョンが古いと新しいStackのHerokuアプリを新規作成できないので要注意。* これでちょっとハマった。まずはheroku gemのアップデートをしておこう。
+最後にHerokuへデプロイするけど、*従来のようにHerokuアプリを新規作成してはNode.jsを動かすことはできないので注意。* 新しいStackで作る必要がある。さらに、*heroku gemのバージョンが古いと新しいStackのHerokuアプリを新規作成できないので要注意。* これでちょっとハマった。まずはheroku gemのアップデートをしておこう。
 
 ~~~ sh
 $ gem update heroku
@@ -167,7 +167,7 @@ $ gem list heroku
 heroku (2.3.3)
 ~~~
 
-heroku gemをアップデートしたら、新しいCedarスタックでHerokuアプリを新規作成する。
+gemをアップデートしたら、新しいCedarスタックでHerokuアプリを新規作成する。
 
 ~~~ sh
 $ heroku create node-hello-world --stack cedar
@@ -175,7 +175,7 @@ Creating node-hello-world... done, stack is cedar
 [http://node-hello-world.herokuapp.com/](http://node-hello-world.herokuapp.com/) | git@heroku.com:node-hello-world.git
 ~~~
 
-このように`--stack cedar`と新しいStackを指定して作成する必要があり、Cedarスタックを指定して作ったHerokuアプリは、従来の「アプリ名.heroku.com」というドメインではなく、「アプリ名.herokuapp.com」のドメインで作成される。heroku.comとherokuapp.comの違いは[ここ](http://devcenter.heroku.com/posts/http-routing)に書いてあるっぽいけど英語よくわからん。良くなってる感はなんとなく伝わってくる。以降の部分は、従来のデプロイと同じ手順。
+このように`--stack cedar`と新しいStackを指定して作成する必要があり、Cedarスタックを指定して作ったHerokuアプリは、従来の「アプリ名.heroku.com」というドメインではなく、「アプリ名.herokuapp.com」で作成される。heroku.comとherokuapp.comの違いは[ここ](http://devcenter.heroku.com/posts/http-routing)に書いてあるっぽいけど英語よくわからん。良くなってる感はなんとなく伝わってくる。以降の部分は、従来のデプロイと同じ手順。
 
 ~~~ sh
 $ git add .

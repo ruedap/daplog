@@ -1,6 +1,6 @@
 ---
 layout: article
-title: "<span>HerokuでWebアプリ開発を始めるなら</span>知っておきたいこと(5) 環境変数ENV"
+title: "<span>HerokuでWebアプリ開発を始めるなら</span><span>知っておきたいこと(5) 環境変数ENV</span>"
 date: 2011-05-03
 comments: true
 categories: ruby

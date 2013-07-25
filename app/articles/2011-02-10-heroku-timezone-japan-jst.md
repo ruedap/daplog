@@ -1,6 +1,6 @@
 ---
 layout: article
-title: "Herokuのタイムゾーンを日本時間に設定する"
+title: "<span>Herokuのタイムゾーンを</span><span>日本時間に設定する</span>"
 date: 2011-02-10
 comments: true
 categories: ruby

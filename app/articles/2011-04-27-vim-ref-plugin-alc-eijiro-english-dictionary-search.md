@@ -1,6 +1,6 @@
 ---
 layout: article
-title: "<span>Vimでref.vimを使って</span>英辞郎で英単語をただちに検索する"
+title: "<span>Vimでref.vimを使って</span><span>英辞郎で英単語をただちに検索する</span>"
 date: 2011-04-27
 comments: true
 categories: vim
@@ -23,7 +23,7 @@ published: true
 
 - MacPortsやHomebrewを使って、[elinks](http://ja.wikipedia.org/wiki/ELinks)、[w3m](http://ja.wikipedia.org/wiki/W3m)、[links](http://ja.wikipedia.org/wiki/Links)、[lynx](http://ja.wikipedia.org/wiki/Lynx_(%E3%82%A6%E3%82%A7%E3%83%96%E3%83%96%E3%83%A9%E3%82%A6%E3%82%B6))いずれかのテキストブラウザーをインストールする[^1]
 - 今回は、Homebrewを使ってw3mをインストールした `$ brew install w3m`
-- Vimから適当に英単語を検索`:Ref alc hello`してみて、それっぽいページが出てきたら設定完了!!
+- Vimから適当に英単語を検索`:Ref alc hello`してみて検索結果が出てきたら設定完了!!
 
 ## Windowsの場合
 - [Lynx for Win32](http://lynx-win32-pata.sourceforge.jp/index-ja.html)から「Lynx286rel4THjp.exe 日本語環境用設定版 インストーラ」をダウンロードして、適当なディレクトリにインストールする
@@ -31,12 +31,12 @@ published: true
 - インストール完了後、一度Lynxを起動して、正常に起動することを確認する
     - この初回起動時に、Lynxの設定ファイル`lynx.cfg`が同一ディレクトリ内に自動生成される
 - インストールしたディレクトリ[^2]から`lynx.exe`と`lynx.cfg`の2ファイルをコピーして、Vimのディレクトリ[^3]にペーストする
-- Vimから適当に英単語を検索`:Ref alc hello`してみて、それっぽいページが出てきたら設定完了!!
+- Vimから適当に英単語を検索`:Ref alc hello`してみて検索結果が出てきたら設定完了!!
 
 
 ## .vimrcでの設定
 
-.vimrcでは、表示する行数（位置）や文字コードなどを設定できる。表示する行数は、自分の場合は39行目あたりが丁度よかった。文字コードは、自分の環境の場合はUTF-8をデフォルト値[^4]に設定している影響（たぶん）で、WindowsではShift-JISを指定しないと文字化けする。
+`.vimrc`では、表示する行数や文字コードなどを設定できる。表示する行数は、自分の場合は39行目あたりが丁度よかった。文字コードは、自分の環境の場合はUTF-8をデフォルト値[^4]に設定している影響で、WindowsではShift-JISを指定しないと文字化けする。
 
 ~~~ vim
 """ ref.vim

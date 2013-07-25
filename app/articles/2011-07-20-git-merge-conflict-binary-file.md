@@ -1,6 +1,6 @@
 ---
 layout: article
-title: "<span>マージでバイナリファイルがコンフリクトした場合の</span>Gitの動作と対処方法"
+title: "<span>マージでバイナリファイルがコンフリクトした場合の</span><span>Gitの動作と対処方法</span>"
 date: 2011-07-20
 comments: true
 categories: git
@@ -26,19 +26,19 @@ CONFLICT (content): Merge conflict in hoge.swf
 Automatic merge failed; fix conflicts and then commit the result.
 ~~~
 
-その際、マージ後のmasterブランチのワークツリーにあるhoge.swfは、
+その際、マージ後のmasterブランチのワークツリーにある`hoge.swf`は、
 
-1. マージ前のmasterブランチのhoge.swfなのか
-2. マージ前のdevelopブランチのhoge.swfなのか
+1. マージ前のmasterブランチの`hoge.swf`なのか
+2. マージ前のdevelopブランチの`hoge.swf`なのか
 3. それともそれ以外の何かなのか（新たに生成されたファイルなのか）
 
 どれだろう？という疑問が浮かんだ。また、それがどれにせよ、その後の対処方法もわからなかった。
 
-先に結果を書くと、**今居るブランチ（master）のhoge.swfがそのまま残っている状態**になっていた。なので、その後の対処として、今居るブランチ（master）のバイナリファイル（hoge.swf）を採用したいなら、特に何もせず普通にそのままコミットすれば良い。はず。
+先に結果を書くと、**今居るブランチ(master)の`hoge.swf`がそのまま残っている状態**になっていた。なので、その後の対処として、今居るブランチ(master)のバイナリファイル(`hoge.swf`)を採用したいなら、特に何もせず普通にそのままコミットすれば良い。
 
 ## 今居ないブランチ側のバイナリファイルを採用したい場合
 
-逆に、今居ない方の**developブランチのバイナリファイル（hoge.swf）を採用したい**場合は、それを今のワークツリーに引っ張ってくるコマンドを打つ必要がある。ということを、[こちらの記事](http://blog.digital-squad.net/post/151034635.html)で知った。
+逆に、今居ない方の**developブランチのバイナリファイル(`hoge.swf`)を採用したい**場合は、それを今のワークツリーに引っ張ってくるコマンドを打つ必要がある。ということを、[こちらの記事](http://blog.digital-squad.net/post/151034635.html)で知った。
 
 というわけで、今回の場合で言うと、今居るのは`master`ブランチで、今居ないのは`develop`ブランチで、`$ git merge develop`で`hoge.swf`がコンフリクトしたけど、**`develop`ブランチ側の`hoge.swf`を採用したい**ということなら以下のようにする。`--theirs`オプションをつけて対象バイナリファイルをチェックアウトする。
 

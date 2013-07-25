@@ -1,6 +1,6 @@
 ---
 layout: article
-title: "<span>東北地方太平洋沖地震の</span>翌々日に見かけたor自分のツイート"
+title: "<span>東北地方太平洋沖地震の</span><span>翌々日に見かけたor自分のツイート</span>"
 date: 2011-03-13
 comments: true
 categories: web

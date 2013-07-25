@@ -1,6 +1,6 @@
 ---
 layout: article
-title: "<span>Vimperatorのfで表示するヒントを</span>アルファベットに変更する"
+title: "<span>Vimperatorのfで表示するヒントを</span><span>アルファベットに変更する</span>"
 date: 2010-08-15
 comments: true
 categories: vimperator

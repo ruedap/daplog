@@ -1,6 +1,6 @@
 ---
 layout: article
-title: "<span>WindowsでFirefox 4 Portable EditionとVimperator 3を</span>インストールする"
+title: "<span>WindowsでFirefox 4 Portable EditionとVimperator 3を</span><span>インストールする</span>"
 date: 2011-04-05
 comments: true
 categories: vimperator

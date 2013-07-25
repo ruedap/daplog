@@ -1,6 +1,6 @@
 ---
 layout: article
-title: "<span>モテるCSS女子力を磨くための</span>4つの心得と1つのサービス「SASSIENCE」等"
+title: "<span>モテるCSS女子力を磨くための</span><span>4つの心得と1つのサービス「SASSIENCE」等</span>"
 date: 2011-05-25
 comments: true
 categories: css

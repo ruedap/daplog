@@ -1,6 +1,6 @@
 ---
 layout: article
-title: "<span>HerokuでWebアプリ開発を始めるなら</span>知っておきたいこと(8) 最新技術に触れる"
+title: "<span>HerokuでWebアプリ開発を始めるなら</span><span>知っておきたいこと(8) 最新技術に触れる</span>"
 date: 2011-05-06
 comments: true
 categories: ruby

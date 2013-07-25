@@ -1,6 +1,6 @@
 ---
 layout: article
-title: "<span>SinatraからActiveRecord 3を使う(2)</span> CRUD操作"
+title: "<span>SinatraからActiveRecord 3を使う(2)</span><span> CRUD操作</span>"
 date: 2011-04-17
 comments: true
 categories: ruby

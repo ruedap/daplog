@@ -1,6 +1,6 @@
 ---
 layout: article
-title: "<span>Herokuそっくり！</span>DuostackでSinatraを使ってHello worldする"
+title: "<span>Herokuそっくり！</span><span>DuostackでSinatraを使ってHello worldする</span>"
 date: 2011-05-12
 comments: true
 categories: ruby
@@ -8,9 +8,7 @@ tags: ruby
 published: true
 ---
 
-RubyとNode.jsが使えるPaaSという触れ込みの「[Duostack](http://www.duostack.com/)」をRubyのSinatraで使ってみた。操作体系が驚くほどHerokuにそっくりで、今回の記事は以前Heroku用に書いた[HerokuでSinatraを使ってHello worldする](/2011/01/28/ruby-heroku-sinatra-hello-world)をベースにしていて、この記事の中に出てくる`heroku`コマンドのところを`duostack`コマンドに置き換えるだけでだいたい使えるようになってしまうくらいのレベル。今回の完成品は[こちら](http://duohelloworld.duostack.net/)。
-
-ちなみに、DuostackをNode.jsで使うチュートリアル記事は[こちら](http://ukstudio.jp/2011/05/10/duostack_nodejs/)が詳しくてわかりやすかった。
+RubyとNode.jsが使えるPaaSという触れ込みの「[Duostack](http://www.duostack.com/)」をRubyのSinatraで使ってみた。操作体系が驚くほどHerokuにそっくりで、今回の記事は以前Heroku用に書いた[HerokuでSinatraを使ってHello worldする](/2011/01/28/ruby-heroku-sinatra-hello-world)をベースにしていて、この記事の中に出てくる`heroku`コマンドのところを`duostack`コマンドに置き換えるだけでだいたい使えるようになってしまうくらいのレベル。今回の完成品は[こちら](http://duohelloworld.duostack.net/)。ちなみに、DuostackをNode.jsで使うチュートリアル記事は[こちら](http://ukstudio.jp/2011/05/10/duostack_nodejs/)が詳しくてわかりやすかった。
 
 <!-- READMORE -->
 
@@ -88,7 +86,7 @@ $ duostack create duostack-hello-world
 duostack: invalid app name, see app name restrictions in help docs
 ~~~
 
-仕方ないので、アプリ名を `duohelloworld` にして、再度Duostackアプリの作成を試みる。
+仕方ないのでアプリ名を`duohelloworld` にして、再度Duostackアプリの作成を試みる。
 
 ~~~ sh
 $ duostack create duohelloworld
@@ -125,14 +123,14 @@ Duostack上にアプリのスペースを確保したので、そこにアップ
 
 ### 1. Gemfile
 
-まず、Bundler用の`Gemfile`ファイルを作成する。Sinatraが必要なので、その指定を記述する。
+まず、`Gemfile`ファイルを作成する。Sinatraが必要なので、その指定を記述する。
 
 ~~~ ruby
 source :rubygems
 gem 'sinatra'
 ~~~
 
-でbundle installする。
+で`bundle install`する。
 
 ~~~ sh
 $ bundle install --path vendor/bundle
@@ -144,7 +142,7 @@ Using bundler (1.0.13)
 Your bundle is complete! It was installed into ./vendor/bundle
 ~~~
 
-vendor/bundleフォルダに指定したgemがインストールされて、`Gemfile.lock`が生成される。
+`vendor/bundle`フォルダにgemがインストールされて、`Gemfile.lock`が生成される。
 
 
 ### 2. config.ru
@@ -186,7 +184,7 @@ Bundler関連のファイルはgitリポジトリに含めなくて良いので�
 
 ## ローカルでプレビュー
 
-上記で作成したデプロイ予定のSinatraアプリを、まずはBundler経由でローカルでプレビューしてみる。ローカルでアプリを起動するには、Bundler経由で`rackup`コマンドを実行する。
+上記で作成したデプロイ予定のSinatraアプリを、まずはローカルでプレビューしてみる。ローカルでアプリを起動するには、Bundler経由で`rackup`コマンドを実行する。
 
 ~~~ sh
 $ bundle exec rackup
@@ -200,7 +198,7 @@ $ bundle exec rackup
 
 ## デプロイ
 
-それでは今回のメインイベント、Duostack上に作ったアプリのスペース<http://duohelloworld.duostack.net/>に向けてデプロイする。まずは今まで作ったファイルを全部、gitリポジトリにコミットする。
+それではDuostack上に作ったアプリの<http://duohelloworld.duostack.net/>に向けてデプロイする。まずは今まで作ったファイルを全部、gitリポジトリにコミットする。
 
 ~~~ sh
 $ git add .
@@ -247,7 +245,7 @@ To git@duostack.net:duohelloworld.git
 
 ほんとにおそろしいほどHerokuにソックリでビックリする。既にHerokuを使っている人なら、ほとんど学習コストも無くDuostackを利用できるのではないだろうか。まだHello worldしかしてないけど、Herokuと比較した場合、Herokuのほうが高機能・便利な印象を受けた。Duostackは新しくできたばっかりなので今後に期待。
 
-また、以前の記事で触れている[AWS障害対策という意味でのHerokuの代替PaaS](/2011/05/07/ruby-heroku-web-app-development-tips-9)としては、Duostackも裏側でAWSを利用しているらしいので対策にならないかも。AWS以外の障害・バックアップ対策のHeroku代替としては、操作体系がクリソツなのでかなり有力だと思った。
+また、以前の記事で触れている[AWS障害対策という意味でのHerokuの代替PaaS](/2011/05/07/ruby-heroku-web-app-development-tips-9)としては、Duostackも裏側でAWSを利用しているので対策にならない。AWS以外の障害・バックアップ対策のHeroku代替としては、操作体系がクリソツなのでかなり有力だと思った。
 
 * * *
 

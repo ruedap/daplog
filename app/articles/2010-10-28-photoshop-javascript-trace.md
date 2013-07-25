@@ -1,6 +1,6 @@
 ---
 layout: article
-title: "<span>Photoshop上の操作をJavaScriptコードに書き出す</span>プラグインを有効にする"
+title: "<span>Photoshop上の操作をJavaScriptコードに書き出す</span><span>プラグインを有効にする</span>"
 date: 2010-10-28
 comments: true
 categories: javascript

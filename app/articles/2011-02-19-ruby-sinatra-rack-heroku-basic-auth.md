@@ -1,6 +1,6 @@
 ---
 layout: article
-title: "<span>HerokuのSinatraで</span>Basic認証を使ってアクセス制限をかける"
+title: "<span>HerokuのSinatraで</span><span>Basic認証を使ってアクセス制限をかける</span>"
 date: 2011-02-19
 comments: true
 categories: ruby

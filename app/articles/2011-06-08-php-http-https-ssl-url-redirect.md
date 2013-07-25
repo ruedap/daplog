@@ -1,6 +1,6 @@
 ---
 layout: article
-title: "<span>PHPでHTTPS(SSL)接続じゃなかったら</span>HTTPSのURLにリダイレクトする"
+title: "<span>PHPでHTTPS(SSL)接続じゃなかったら</span><span>HTTPSのURLにリダイレクトする</span>"
 date: 2011-06-08
 comments: true
 categories: php

@@ -1,6 +1,6 @@
 ---
 layout: article
-title: "<span>HerokuとGitHubの両方にプッシュする時の</span>秘密にしたい値の扱い"
+title: "<span>HerokuとGitHubの両方にプッシュする時の</span><span>秘密にしたい値の扱い</span>"
 date: 2011-01-30
 comments: true
 categories: git

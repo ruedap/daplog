@@ -1,6 +1,6 @@
 ---
 layout: article
-title: "<span>Herokuを使って1日1回名言をツイートする</span>Twitter Botの作り方"
+title: "<span>Herokuを使って1日1回名言をツイートする</span><span>Twitter Botの作り方</span>"
 date: 2011-02-09
 comments: true
 categories: ruby
@@ -141,7 +141,7 @@ Bot用Twitterアカウントにログインして、[Twitterのアプリケー�
 |アプリケーションの種類|ブラウザアプリケーション|
 |標準のアクセスタイプ|Read & Write|
 
-でアプリを作成すると、*Consumer key*と*Consumer secret*が表示されるので2つともメモる。
+で作成すると*Consumer key*と*Consumer secret*が表示されるので2つともメモる。
 
 
 ### TwitterのOAuth認証に必要なトークンを取得

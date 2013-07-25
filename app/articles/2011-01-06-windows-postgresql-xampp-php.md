@@ -1,6 +1,6 @@
 ---
 layout: article
-title: "WindowsでPostgreSQLをXAMPPのPHPから使う"
+title: "<span>WindowsでPostgreSQLを</span><span>XAMPPのPHPから使う</span>"
 date: 2011-01-06
 comments: true
 categories: php

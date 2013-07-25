@@ -1,6 +1,6 @@
 ---
 layout: article
-title: "<span>はてブページのタイトルが</span>英語版タイトルになってしまって直せない"
+title: "<span>はてブページのタイトルが</span><span>英語版タイトルになってしまって直せない</span>"
 date: 2011-03-08
 comments: true
 categories: web

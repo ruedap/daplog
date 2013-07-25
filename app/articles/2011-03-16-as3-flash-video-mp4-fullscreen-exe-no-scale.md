@@ -1,6 +1,6 @@
 ---
 layout: article
-title: "<span>EXE化したFlashでフルスクリーン時に</span>外部ビデオを拡大しない"
+title: "<span>EXE化したFlashでフルスクリーン時に</span><span>外部ビデオを拡大しない</span>"
 date: 2011-03-16
 comments: true
 categories: as3

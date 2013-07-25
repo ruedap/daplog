@@ -1,6 +1,6 @@
 ---
 layout: article
-title: "<span>SinatraからDataMapperを使う(1)</span> 動作チェック用のコード"
+title: "<span>SinatraからDataMapperを使う(1)</span><span> 動作チェック用のコード</span>"
 date: 2011-02-12
 comments: true
 categories: ruby
@@ -81,6 +81,6 @@ Postクラスがテーブル定義。`DataMapper::Resource`をインクルード
 
 * * *
 
-(via) [DataMapper - Getting started with DataMapper](http://datamapper.org/getting-started)
+<cite>[DataMapper - Getting started with DataMapper](http://datamapper.org/getting-started)</cite>
 
 [^1]: URLはshotgunで起動した場合

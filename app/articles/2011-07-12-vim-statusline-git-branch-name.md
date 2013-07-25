@@ -1,6 +1,6 @@
 ---
 layout: article
-title: "<span>Vimのステータスラインに</span>Gitのブランチ名を表示する（右側に）"
+title: "<span>Vimのステータスラインに</span><span>Gitのブランチ名を表示する（右側に）</span>"
 date: 2011-07-12
 comments: true
 categories: vim

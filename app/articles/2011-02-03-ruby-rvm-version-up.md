@@ -1,6 +1,6 @@
 ---
 layout: article
-title: "<span>RVMでRuby 1.8.7を</span>p302からp330にバージョンアップする"
+title: "<span>RVMでRuby 1.8.7を</span><span>p302からp330にバージョンアップする</span>"
 date: 2011-02-03
 comments: true
 categories: ruby

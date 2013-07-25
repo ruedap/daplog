@@ -1,6 +1,6 @@
 ---
 layout: article
-title: "<span>Vimperatorのビジュアルモードで</span>選択した文字列をGoogle検索する"
+title: "<span>Vimperatorのビジュアルモードで</span><span>選択した文字列をGoogle検索する</span>"
 date: 2010-12-31
 comments: true
 categories: vimperator

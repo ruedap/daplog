@@ -1,6 +1,6 @@
 ---
 layout: article
-title: "<span>Sinatraを使って</span>Instagram APIのアクセストークンを取得する"
+title: "<span>Sinatraを使って</span><span>Instagram APIのアクセストークンを取得する</span>"
 date: 2011-03-03
 comments: true
 categories: ruby

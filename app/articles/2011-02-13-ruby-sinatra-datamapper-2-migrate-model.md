@@ -1,6 +1,6 @@
 ---
 layout: article
-title: "<span>SinatraからDataMapperを使う(2)</span> マイグレーションとモデルの分離"
+title: "<span>SinatraからDataMapperを使う(2)</span><span> マイグレーションとモデルの分離</span>"
 date: 2011-02-13
 comments: true
 categories: ruby

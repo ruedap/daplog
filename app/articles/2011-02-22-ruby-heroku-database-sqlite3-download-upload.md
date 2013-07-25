@@ -1,6 +1,6 @@
 ---
 layout: article
-title: "<span>HerokuでDBのデータを</span>ダウンロードしたりアップロードしたり"
+title: "<span>HerokuでDBのデータを</span><span>ダウンロードしたりアップロードしたり</span>"
 date: 2011-02-22
 comments: true
 categories: ruby
@@ -38,7 +38,7 @@ $ heroku db:pull sqlite://保存したいファイル名 --app Herokuアプリ�
 $ heroku db:pull sqlite://dump.sqlite3 --app heroku-hello-world
 ~~~
 
-すると、Herokuさんが「マジで実行するならアプリ名もっかい入力して？」と聞いてくるので、もう一度Herokuアプリ名をタイプしてエンターを押すと、ダウンロードが開始される。で、ローカルのカレントディレクトリに`dump.sqlite3`が生成される。
+すると、Herokuが「マジで実行するならアプリ名もっかい入力して？」と聞いてくるので、もう一度Herokuアプリ名をタイプしてエンターを押すと、ダウンロードが開始される。で、ローカルのカレントディレクトリに`dump.sqlite3`が生成される。
 
 
 ## アップロード
@@ -50,7 +50,7 @@ $ heroku db:push sqlite://現在のディレクトリからのDBファイルへ�
 $ heroku db:push sqlite://db/development.sqlite3 --app heroku-hello-world
 ~~~
 
-すると、Herokuさんが「マジで実行するならアプリ名もっかい入力して？」と聞いてくるので、もう一度Herokuアプリ名をタイプしてエンターを押すと、アップロードが開始される。
+すると、Herokuが「マジで実行するならアプリ名もっかい入力して？」と聞いてくるので、もう一度Herokuアプリ名を入力すると、アップロードが開始される。
 
 * * *
 

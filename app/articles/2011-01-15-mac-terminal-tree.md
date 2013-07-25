@@ -1,6 +1,6 @@
 ---
 layout: article
-title: "<span>ターミナルでディレクトリやファイルの構造を</span>ツリー表示する"
+title: "<span>ターミナルでディレクトリやファイルの構造を</span><span>ツリー表示する</span>"
 date: 2011-01-15
 comments: true
 categories: mac

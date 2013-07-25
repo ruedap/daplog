@@ -1,6 +1,6 @@
 ---
 layout: article
-title: "<span>東北地方太平洋沖地震の</span>当日に見かけた参考・教訓となるツイート"
+title: "<span>東北地方太平洋沖地震の</span><span>当日に見かけた参考・教訓となるツイート</span>"
 date: 2011-03-11
 comments: true
 categories: web

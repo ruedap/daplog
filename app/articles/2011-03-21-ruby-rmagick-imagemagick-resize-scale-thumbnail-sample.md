@@ -1,6 +1,6 @@
 ---
 layout: article
-title: "RubyのRMagickで画像をリサイズする"
+title: "<span>RubyのRMagickで</span><span>画像をリサイズする</span>"
 date: 2011-03-21
 comments: true
 categories: ruby
@@ -78,5 +78,5 @@ image.write('sample.png')
 
 * * *
 
-<cite>[Ruby Freaks Lounge：第26回　RMagickを用いた画像処理（1）リサイズ｜gihyo.jp … 技術評論社](http://gihyo.jp/dev/serial/01/ruby/0026)</cite>
+<cite>[Ruby Freaks Lounge：第26回　RMagickを用いた画像処理（1）リサイズ](http://gihyo.jp/dev/serial/01/ruby/0026)</cite>
 <cite>[RMagick 2.12.0 User's Guide and Reference](http://studio.imagemagick.org/RMagick/doc/)</cite>

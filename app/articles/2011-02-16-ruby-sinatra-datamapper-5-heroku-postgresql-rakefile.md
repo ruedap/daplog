@@ -1,6 +1,6 @@
 ---
 layout: article
-title: "<span>SinatraからDataMapperを使う(5)</span> HerokuのPostgreSQLで使う"
+title: "<span>SinatraからDataMapperを使う(5)</span><span> HerokuのPostgreSQLで使う</span>"
 date: 2011-02-16
 comments: true
 categories: ruby

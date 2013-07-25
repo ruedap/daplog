@@ -1,6 +1,6 @@
 ---
 layout: article
-title: "<span>WindowsのMS-IMEやGoogle日本語入力で</span>英数／かなキーを使ってIMEの状態を切り替える"
+title: "<span>WindowsのMS-IMEやGoogle日本語入力で</span><span>英数／かなキーを使ってIMEの状態を切り替える</span>"
 date: 2011-03-23
 comments: true
 categories: mac

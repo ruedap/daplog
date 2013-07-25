@@ -1,6 +1,6 @@
 ---
 layout: article
-title: "<span>Vimでファイラー兼ランチャーな</span>unite.vimプラグインを使う"
+title: "<span>Vimでファイラー兼ランチャーな</span><span>unite.vimプラグインを使う</span>"
 date: 2011-01-10
 comments: true
 categories: vim

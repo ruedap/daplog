@@ -1,6 +1,6 @@
 ---
 layout: article
-title: "RailsのActionMailerを使ってメールを送信する"
+title: "<span>RailsのActionMailerを使って</span><span>メールを送信する</span>"
 date: 2010-10-18
 comments: true
 categories: ruby

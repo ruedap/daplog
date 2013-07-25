@@ -1,6 +1,6 @@
 ---
 layout: article
-title: "<span>Google App EngineのJRubyで</span>SinatraからTwitterにつぶやけなかった"
+title: "<span>Google App EngineのJRubyで</span><span>SinatraからTwitterにつぶやけなかった</span>"
 date: 2011-01-27
 comments: true
 categories: ruby

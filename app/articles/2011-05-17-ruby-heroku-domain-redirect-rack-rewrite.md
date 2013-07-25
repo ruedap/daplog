@@ -1,6 +1,6 @@
 ---
 layout: article
-title: "<span>Herokuアプリで</span>ドメイン単位のリダイレクトをするには"
+title: "<span>Herokuアプリで</span><span>ドメイン単位のリダイレクトをするには</span>"
 date: 2011-05-17
 comments: true
 categories: ruby
@@ -22,11 +22,11 @@ published: true
 2. 独自ドメイン設定後は、`ruedap.heroku.com` にアクセスしたら、`ruedap.com` に転送するようにしたい
     - このLokka用プラグイン[Redirect_if_heroku](http://blog.champierre.com/archives/911)のRubyコードが参考になりそう
 
-これについて、記事のコメント欄にて[@uzdura](http://twitter.com/#!/udzura)さんがアドバイスしてくれて「rack-rewriteというgemを使うと簡単に解決できるよ」と教えてもらった。さらに、そのrack-rewriteのreadmeを日本語訳した記事まで書いてくれているので、このgemを使うなら必見。
+これについて、[@uzdura](http://twitter.com/#!/udzura)さんがアドバイスしてくれて「rack-rewriteというgemを使うと簡単に解決できるよ」と教えてもらった。さらに、そのrack-rewriteのreadmeを日本語訳した記事まで書いてくれているので、このgemを使うなら必見。
 
 <cite>[Rack::Rewrite の README を超訳してみました &#171; blog.udzura.jp](http://blog.udzura.jp/2011/05/15/rack-rewrite-readme-in-japanese/)</cite>
 
-で、さっそくrack-rewriteを使って試してみたところ、上記の疑問点2つともサクっと解決できた。
+で、rack-rewriteを使って試してみたところ、上記の疑問点2つともサクっと解決できた。
 
 
 ## Rack::Rewriteを使う
@@ -128,7 +128,7 @@ Added www.ruedap.com as a custom domain name to ruedap.heroku.com
 2. Sinatraより一段低いレイヤーであるRack層で処理したほうが良い気がする
 3. Rack::Rewriteのreadmeには「rackupファイル（config.ru）にこうやって書くよ」と書かれているので、このライブラリを利用する人の多くは同じ場所に書きそう＝config.ruを見ればrewriteルールが集まってると期待できそう
 
-などの理由（妄想）により、このライブラリを使ったほうが良いかなーと思ったけど、どうなんだろう？ こういう時Railsなら、やり方が決まってて悩まなくても良いんだろうか。ということを、Railsを知らずにSinatraを使っていると良く思う。 Railsも使えるようにならねば…。
+などの理由により、このライブラリを使ったほうが良いかなーと思ったけど、どうなんだろう？ こういう時Railsなら、やり方が決まってて悩まなくても良いんだろうか。ということを、Railsを知らずにSinatraを使っていると良く思う。 Railsも使えるようにならねば…。
 
 * * *
 

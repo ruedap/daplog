@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "<span>HerokuでWebアプリ開発を始めるなら</span>知っておきたいこと(4) Sinatraも使える"
+title: "<span>HerokuでWebアプリ開発を始めるなら</span><span>知っておきたいこと(4) Sinatraも使える</span>"
 date: 2011-05-02
 comments: true
 categories: ruby
@@ -58,25 +58,25 @@ SinatraはRubyのためのWebフレームワークですが、その簡潔な設
 
 <cite>[Sinatra風PHPマイクロフレームワーク5つ - ttaka/tmp](http://d.hatena.ne.jp/ttaka_tmp/20110428/1303973792)</cite>
 
-SinatraはRailsほどの圧倒的な知名度・情報量では無いものの、マイナー過ぎて使う人の少ないWebフレームワークでも無いので、これからさらに情報が増えることが期待でき、個人的には今後は**まずSinatraで入門し、さらに大きなアプリや複数人で開発する時にRailsやPadrinoを選ぶ**というのが初心者向けの定番ルートになるのではないのかな、と思っています。もちろん、Sinatraをそのまま使い続けることも選択肢のひとつとしてあると思います。
+SinatraはRailsほどの圧倒的な知名度・情報量では無いものの、マイナー過ぎて使う人の少ないWebフレームワークでも無いので、これから情報が増えることに期待でき、個人的には今後は**まずSinatraで入門し、さらに大きなアプリや複数人で開発する時にRailsやPadrinoを選ぶ**というのが初心者向けの定番ルートになるのではないのかな、と思っています。もちろん、Sinatraをそのまま使い続けることも選択肢のひとつとしてあると思います。
 
 
 ## 参考リンク
 
 - [Sinatra: README (Japanese)](http://www.sinatrarb.com/intro-jp.html)
 - [FLASHer のためのSinatra入門 ［導入編］ - func09](http://www.func09.com/wordpress/archives/764)
-- [Ruby Freaks Lounge：第7回　小規模Webアプリのためのフレームワーク，Sinatra｜gihyo.jp … 技術評論社](http://gihyo.jp/dev/serial/01/ruby/0007)
-- [Ruby Freaks Lounge：第9回　SinatraとSequel・Hamlで掲示板アプリを作る｜gihyo.jp … 技術評論社](http://gihyo.jp/dev/serial/01/ruby/0009)
-- [Ruby Freaks Lounge：第41回　Sinatra 1.0の世界にようこそ｜gihyo.jp … 技術評論社](http://gihyo.jp/dev/serial/01/ruby/0041)
-- [Ruby Freaks Lounge：第42回　実世界のSinatra｜gihyo.jp … 技術評論社](http://gihyo.jp/dev/serial/01/ruby/0042)
-- [Sinatra と OAuth を使って Twitter のタイムラインを取得してみた - まちゅダイアリー(2009-08-18)](http://www.machu.jp/diary/20090818.html#p01)
-- [GoogleAppEngine + JRubyでクリスマスまでに彼女をつくる方法 \| tech.kayac.com - KAYAC engineers' blog](http://tech.kayac.com/archive/gae-jruby-twitter-bot.html)
+- [Ruby Freaks Lounge：第7回　小規模Webアプリのためのフレームワーク，Sinatra](http://gihyo.jp/dev/serial/01/ruby/0007)
+- [Ruby Freaks Lounge：第9回　SinatraとSequel・Hamlで掲示板アプリを作る](http://gihyo.jp/dev/serial/01/ruby/0009)
+- [Ruby Freaks Lounge：第41回　Sinatra 1.0の世界にようこそ](http://gihyo.jp/dev/serial/01/ruby/0041)
+- [Ruby Freaks Lounge：第42回　実世界のSinatra](http://gihyo.jp/dev/serial/01/ruby/0042)
+- [Sinatra と OAuth を使って Twitter のタイムラインを取得してみた](http://www.machu.jp/diary/20090818.html#p01)
+- [GoogleAppEngine + JRubyでクリスマスまでに彼女をつくる方法](http://tech.kayac.com/archive/gae-jruby-twitter-bot.html)
 - [text.ssig33.com - このサイトを Sinatra で書き直した。](http://text.ssig33.com/19)
 - [System.Exit &#8211; GAE で Sinatra を使って “foo” を表示する最速の方法](http://jugyo.org/blog/3760)
 - [GAE + JRuby + Sinatra + Ruby Twitter GemでTwitterのBotを作成する - 愛と勇気と缶ビール](http://d.hatena.ne.jp/zentoo/20090928/1254156587)
-- [自己流でSinatraとRSpecとWebratとCucumber使ってみた。あとDataMapperも - MothProgのうしろがわ](http://d.hatena.ne.jp/mothprog/20090706/1246897103)
+- [自己流でSinatraとRSpecとWebratとCucumber使ってみた。あとDataMapperも](http://d.hatena.ne.jp/mothprog/20090706/1246897103)
 - [広告系エンジニア &#187; Blog Archive &#187; Ruby のフレームワークSinatraとデータベースPOSTGISによる小規模なアプリケーションの例](http://techknowledge.ngigroup.com/20100409/621)
-- [RubyフレームワークSinatra の作者 Blake Mizerany氏のインタビューを翻訳してみた。 - u16suzuの日記](http://d.hatena.ne.jp/u16s/20110430/1304158119)
+- [RubyフレームワークSinatra の作者 Blake Mizerany氏のインタビューを翻訳してみた。](http://d.hatena.ne.jp/u16s/20110430/1304158119)
 
 
 * * *

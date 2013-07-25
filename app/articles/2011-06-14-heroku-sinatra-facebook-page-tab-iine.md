@@ -1,6 +1,6 @@
 ---
 layout: article
-title: "<span>Facebookページのいいね！ボタンが</span>押されているかをSinatraで判定する"
+title: "<span>Facebookページのいいね！ボタンが</span><span>押されているかをSinatraで判定する</span>"
 date: 2011-06-14
 comments: true
 categories: ruby

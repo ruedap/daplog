@@ -1,6 +1,6 @@
 ---
 layout: article
-title: "<span>Vimでヤンクした文字列と対象を簡単に入れ替える</span>operator-replaceプラグインを使う"
+title: "<span>Vimでヤンクした文字列と対象を簡単に入れ替える</span><span>operator-replaceプラグインを使う</span>"
 date: 2011-02-06
 comments: true
 categories: vim

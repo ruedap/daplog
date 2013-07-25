@@ -1,6 +1,6 @@
 ---
 layout: article
-title: "<span>RubyGemsのバージョンを</span>ダウンしたりアップしたり"
+title: "<span>RubyGemsのバージョンを</span><span>ダウンしたりアップしたり</span>"
 date: 2011-02-21
 comments: true
 categories: ruby

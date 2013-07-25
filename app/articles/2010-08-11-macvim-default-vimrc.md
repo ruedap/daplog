@@ -1,6 +1,6 @@
 ---
 layout: article
-title: "<span>MacVimで</span>デフォルトのvimrcとgvimrcを読み込まない"
+title: "<span>MacVimでデフォルトの</span><span>vimrcとgvimrcを読み込まない</span>"
 date: 2010-08-11
 comments: true
 categories: vim

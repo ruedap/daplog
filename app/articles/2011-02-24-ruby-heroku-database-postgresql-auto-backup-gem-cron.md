@@ -1,6 +1,6 @@
 ---
 layout: article
-title: "HerokuでDBのデータを自動でバックアップする"
+title: "<span>HerokuでDBのデータを</span><span>自動でバックアップする</span>"
 date: 2011-02-24
 comments: true
 categories: ruby
@@ -20,11 +20,11 @@ published: true
 $ heroku addons:add cron:daily
 ~~~
 
-そして、以下のgemを使うと、HerokuのcronでDBのバックアップを自動化してくれるみたい。
+そして、以下のgemを使うと、HerokuのcronでDBのバックアップを自動化してくれる。
 
 <cite>[ddollar/heroku\_backup\_task - GitHub](https://github.com/ddollar/heroku_backup_task)</cite>
 
-まず、`Gemfile` に上記のgemを追加して、`bundle install`する
+まず、`Gemfile` に上記のgemを追加して、`bundle install`する。
 
 ~~~ ruby
 gem 'heroku_backup_task'

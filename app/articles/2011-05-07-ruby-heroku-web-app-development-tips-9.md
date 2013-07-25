@@ -1,6 +1,6 @@
 ---
 layout: article
-title: "<span>HerokuでWebアプリ開発を始めるなら</span>知っておきたいこと(9) Heroku以外の選択肢"
+title: "<span>HerokuでWebアプリ開発を始めるなら</span><span>知っておきたいこと(9) Heroku以外の選択肢</span>"
 date: 2011-05-07
 comments: true
 categories: ruby
@@ -19,7 +19,7 @@ published: true
 
 <cite>[Amazon Web Servicesの障害はなぜ起こったのか － ＠IT](http://www.atmarkit.co.jp/news/201104/30/aws.html)</cite>
 <cite>[Amazonクラウドの大規模障害を経て、これからは「データセンターはいつか落ちる」ことがサービス設計の前提となる － Publickey](http://www.publickey1.jp/blog/11/amazon_10.html)</cite>
-<cite>[Amazon、EC2の大規模障害について正式に謝罪　10日分のサービスクレジットを提供 - ITmedia ニュース](http://www.itmedia.co.jp/news/posts/1104/30/news001.html)</cite>
+<cite>[Amazon、EC2の大規模障害について正式に謝罪　10日分のサービスクレジットを提供](http://www.itmedia.co.jp/news/posts/1104/30/news001.html)</cite>
 
 Herokuのプラットフォームは、AWSのEC2およびEBSを利用したサービスだったため、この大規模障害の影響をモロに食らってしまいました。以下はHerokuが公開した障害についてのレポートの[@junya](http://twitter.com/#!/junya)さんによる日本語訳です。
 

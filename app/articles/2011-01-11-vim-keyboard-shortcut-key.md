@@ -1,6 +1,6 @@
 ---
 layout: article
-title: "<span>Vimで現在割り当てられている</span>ショートカットキーの一覧を見る"
+title: "<span>Vimで現在割り当てられている</span><span>ショートカットキーの一覧を見る</span>"
 date: 2011-01-11
 comments: true
 categories: vim

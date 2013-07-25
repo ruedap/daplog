@@ -1,6 +1,6 @@
 ---
 layout: article
-title: "ターミナル起動時に.bashrcを読み込むようにする"
+title: "<span>ターミナル起動時に</span><span>.bashrcを読み込むようにする</span>"
 date: 2010-09-13
 comments: true
 categories: mac
