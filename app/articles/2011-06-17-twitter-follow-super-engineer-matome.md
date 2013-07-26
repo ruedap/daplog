@@ -8,7 +8,7 @@ tags: development
 published: true
 ---
 
-最近流行ってる<span class="deco" style="font-weight:bold;">今すぐフォローすべきスーパーエンジニア</span>の各界(Node.js, Perl, Python, PHP, Ruby)のリストを勝手にまとめてみた。
+最近流行ってる*今すぐフォローすべきスーパーエンジニア*の各界(Node.js, Perl, Python, PHP, Ruby)のリストを勝手にまとめてみた。
 
 <!-- READMORE -->
 
@@ -28,7 +28,7 @@ published: true
 ## Node.js
 
 - [今すぐフォローすべきnode.js界のスーパーエンジニア - 大人になったら肺呼吸](http://d.hatena.ne.jp/replication/20110615/1308063792)
-    - <div style="margin-top: 5px">この記事＆リストの作者：<a href="http://twitter.com/id_replication" class="twitter-follow-button">@id\_replication</a></div>
+    - <div style="margin-top: 5px">この記事＆リストの作者：<a href="http://twitter.com/id_replication" class="twitter-follow-button">@id_replication</a></div>
     - <a href="http://twitter.com/meso" class="twitter-follow-button">@meso</a>
     - <a href="http://twitter.com/sugyan" class="twitter-follow-button">@sugyan</a>
     - <a href="http://twitter.com/dameninngenn" class="twitter-follow-button">@dameninngenn</a>
