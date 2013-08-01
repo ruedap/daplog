@@ -22,7 +22,7 @@ class ArticlesController < ApplicationController
   end
 
   def fetch_articles
-    articles = REDIS.get('articles')
+    articles = Redis.current.get('articles')
     if articles.present?
       result = []
       JSON.parse(articles).each do |hash|
@@ -46,7 +46,7 @@ class ArticlesController < ApplicationController
   end
 
   def fetch_article(path)
-    article = REDIS.get(path)
+    article = Redis.current.get(path)
     if article.present?
       result = JSON.parse(article).symbolize_keys
       return result
@@ -56,8 +56,8 @@ class ArticlesController < ApplicationController
   end
 
   def redis_set(key, value)
-    REDIS.set(key, value.to_json)
-    REDIS.expire(key, 10.seconds) if Rails.env.development?
+    Redis.current.set(key, value.to_json)
+    Redis.current.expire(key, 10.seconds) if Rails.env.development?
   end
 
   def read_file(path)
