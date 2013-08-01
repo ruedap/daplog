@@ -3,7 +3,6 @@ source 'https://rubygems.org'
 ruby '2.0.0'
 
 gem 'unicorn'
-gem 'foreman'
 
 gem 'rails', '4.0.0'
 gem 'sass-rails', '~> 4.0.0'
@@ -32,4 +31,5 @@ group :development do
   gem 'binding_of_caller', '~> 0.7.2'
   gem 'pry-rails', '~> 0.3.1'
   gem 'figaro', '~> 0.7.0'
+  gem 'foreman'
 end
