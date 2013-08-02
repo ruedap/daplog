@@ -35,6 +35,7 @@ GEM
     bourbon (3.1.8)
       sass (>= 3.2.0)
       thor
+    browser (0.2.0)
     builder (3.1.4)
     coderay (1.0.9)
     coffee-rails (4.0.0)
@@ -165,6 +166,7 @@ DEPENDENCIES
   better_errors (~> 0.9.0)
   binding_of_caller (~> 0.7.2)
   bourbon (~> 3.1.8)
+  browser (~> 0.2.0)
   coderay (~> 1.0.9)
   coffee-rails (~> 4.0.0)
   figaro (~> 0.7.0)
