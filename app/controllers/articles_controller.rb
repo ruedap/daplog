@@ -15,8 +15,15 @@ class ArticlesController < ApplicationController
     @article = fetch_article(path)
   end
 
-  private
+  def feed
+    @recent_entries = []
+    fetch_articles.first(10).each do |article|
+      @recent_entries << fetch_article(article[:path])
+    end
+    render :feed, handlers: :builder, formats: :xml
+  end
 
+  private
   def set_hue
     @hue = "%03d" % (rand(18) * 20)
   end
@@ -81,6 +88,7 @@ class ArticlesController < ApplicationController
     md = parse_frontmatter(read_file(path))
     front_matter = md.first
     article[:path]  = path
+    article[:url]  = generate_article_url(path)
     article[:title] = front_matter['title']
     article[:date]  = front_matter['date'].iso8601.gsub('-', '.')
     article[:time]  = front_matter['date'].to_time.iso8601
@@ -99,5 +107,10 @@ class ArticlesController < ApplicationController
     params[:title] = params[:title].gsub('_', '-')
     @canonical = "#{root_url}#{params[:year]}/#{params[:month]}/#{params[:day]}/#{params[:title]}"
     params
+  end
+
+  def generate_article_url(path)
+    md = /\/(20\d{2})-([01]\d)-([0-3]\d)-(.+)\.md/.match(path)
+    "#{root_url}#{md[1]}/#{md[2]}/#{md[3]}/#{md[4]}"
   end
 end
