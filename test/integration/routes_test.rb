@@ -44,6 +44,16 @@ class RoutesTest < ActionDispatch::IntegrationTest
     end
   end
 
+  test '`/feed`のレスポンスが200であること' do
+    get '/feed'
+    assert_response 200
+  end
+
+  test '`/rss`のレスポンスが301であること' do
+    get '/rss'
+    assert_response 301
+  end
+
   private
 
   def article_paths
