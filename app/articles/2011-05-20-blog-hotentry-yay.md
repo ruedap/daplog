@@ -36,7 +36,6 @@ published: true
 - [MacBook Pro (13-inch, Mid 2010)のメモリーを8GBに増設する](/2011/04/08/macbook-pro-13-mid-2010-upgrade-memory-8gb)
 - [PowをSinatraアプリで使う](/2011/04/20/ruby-pow-sinatra-rack-app)
 - [はてなスターの総数を表示できる「はてなスターカウンター」を作ってみた](/2011/04/21/hatenastar-counter)
-- [PowをSinatraアプリで使う](/2011/04/20/ruby-pow-sinatra-rack-app)
 - [Vimでref.vimを使ってRubyのリファレンスをただちに検索する](/2011/04/26/vim-ref-plugin-ruby-reference-search-tool-refe2)
 - [HerokuでWebアプリ開発を始めるなら知っておきたいこと(1) 無料のスペック](/2011/04/29/ruby-heroku-web-app-development-tips-1)
 - [HerokuでWebアプリ開発を始めるなら知っておきたい10のこと](/2011/05/09/ruby-heroku-web-app-development-tips-matome)
