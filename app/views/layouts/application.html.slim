@@ -18,6 +18,7 @@ html(lang='ja' itemscope itemtype="#{yield :itemtype}")
     == javascript_include_tag 'application'
     == csrf_meta_tags
     == favicon_link_tag "favicon-#{@hue}.ico"
+    link rel='apple-touch-icon-precomposed' href="#{blog_ogp_image}"
     - if content_for? :canonical
       = yield :canonical
   body
