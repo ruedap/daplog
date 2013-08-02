@@ -319,7 +319,7 @@ main > article
       margin-top: fibo(0, 'px')
       font-size: $font-size_article__h2
       +media($break_tablets-and-above)
-        font-size: $font-size_article__h2_tablets-and-above
+        font-size: $font-size_article__h2--tablets-and-above
         margin-top: fibo(2, 'px')
         margin-bottom: (fibo(1) / 2) + 0px
         $_break-mark-size: -2
@@ -425,7 +425,7 @@ main > nav
   max-width: 699px
   margin: fibo(1, 'px') auto
   +media($break_tablets-and-above)
-    margin: fibo(2, 'px') auto
+    margin: fibo(3, 'px') auto
   > a
     @extend %dapicons
     +border-circle-raidus
@@ -443,21 +443,21 @@ main > nav
     font-size: 2.6rem
 
 .body-inner > footer
-  $_desktop-height: 1131px
-  $_desktop-top: 699px
+  $_height--tablets-and-above: 1131px
+  $_top--tablets-and-above: 699px
   text-align: center
   position: relative
   max-width: fibo(6, 'px')
   background-color: fiboco(0)
-  height: $_desktop-height / 2
+  height: $_height--tablets-and-above / 2
   +media($break_tablets-and-above)
-    height: $_desktop-height
+    height: $_height--tablets-and-above
   > a
     +border-circle-raidus
     +hide-text
     display: block
     position: absolute
-    top: $_desktop-top / 2
+    top: $_top--tablets-and-above / 2
     left: 50%
     +transform(translate(-50%, -50%))
     width: fibo(3, 'px')
@@ -469,7 +469,7 @@ main > nav
     background-repeat: no-repeat
     background-position: center center
     +media($break_tablets-and-above)
-      top: $_desktop-top
+      top: $_top--tablets-and-above
       width: fibo(4, 'px')
       height: fibo(4, 'px')
       line-height: fibo(4, 'px')
