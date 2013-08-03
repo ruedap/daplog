@@ -101,6 +101,21 @@ class RoutesTest < ActionDispatch::IntegrationTest
     assert_response 301
   end
 
+  test '`/rss/category/vimperator`のレスポンスが301であること' do
+    get '/rss/category/vimperator'
+    assert_response 301
+  end
+
+  test '`/apple-touch-icon.png`のレスポンスが200であること' do
+    get '/apple-touch-icon.png'
+    assert_response 200
+  end
+
+  test '`/apple-touch-icon-precomposed.png`のレスポンスが200であること' do
+    get '/apple-touch-icon-precomposed.png'
+    assert_response 200
+  end
+
   private
   def article_paths
     path = "#{Rails.root}/app/articles/*.md"
