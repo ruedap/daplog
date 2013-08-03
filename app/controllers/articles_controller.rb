@@ -6,7 +6,8 @@ class ArticlesController < ApplicationController
   end
 
   def show
-    parse_hatena_blog_url(params) if params[:date]
+    parse_hatena_blog_entry_url(params) if params[:yyyymmdd]
+    redirect_hatena_blog_entries_url(params) if params[:entries]
     year   = params[:year]
     month  = params[:month]
     day    = params[:day]
@@ -99,14 +100,32 @@ class ArticlesController < ApplicationController
     article
   end
 
-  def parse_hatena_blog_url(params)
-    date = params[:date]
-    params[:year]  = date[0..3]
-    params[:month] = date[4..5]
-    params[:day]   = date[6..7]
+  def parse_hatena_blog_entry_url(params)
+    yyyymmdd = params[:yyyymmdd]
+    params[:year]  = yyyymmdd[0..3]
+    params[:month] = yyyymmdd[4..5]
+    params[:day]   = yyyymmdd[6..7]
     params[:title] = params[:title].gsub('_', '-')
     @canonical = "#{root_url}#{params[:year]}/#{params[:month]}/#{params[:day]}/#{params[:title]}"
     params
+  end
+
+  def redirect_hatena_blog_entries_url(params)
+    md = nil
+    fetch_articles.each do |article|
+      md = /#{params[:year]}-#{params[:month]}-#{params[:day]}-(.+)\.md/.match(
+        article[:path]
+      )
+      break if md && md[1]
+    end
+
+    raise ActionController::RoutingError unless md || md[1]
+
+    params[:title] = md[1]
+    redirect_to(
+      "/#{params[:year]}/#{params[:month]}/#{params[:day]}/#{params[:title]}",
+      status: 301
+    )
   end
 
   def generate_article_url(path)
