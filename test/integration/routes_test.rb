@@ -116,6 +116,11 @@ class RoutesTest < ActionDispatch::IntegrationTest
     assert_response 200
   end
 
+  test '`/favicon.ico`のレスポンスが200であること' do
+    get '/favicon.ico'
+    assert_response 200
+  end
+
   private
   def article_paths
     path = "#{Rails.root}/app/articles/*.md"
