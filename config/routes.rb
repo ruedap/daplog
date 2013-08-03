@@ -11,7 +11,9 @@ Daplog::Application.routes.draw do
 
   # feed
   get '/feed', to: 'articles#feed'
+  get '/feed/category/*path', to: redirect('/feed')
   get '/rss', to: redirect('/feed')
+  get '/rss/category/*path', to: redirect('/feed')
 
   # はてなブログの旧URLの中でファイル名を変更した記事URLへの対応
   get '/entry/20110106/windowx_postgresql_xampp_php',

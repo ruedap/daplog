@@ -91,6 +91,11 @@ class RoutesTest < ActionDispatch::IntegrationTest
     assert_response 200
   end
 
+  test '`/feed/category/mac`のレスポンスが301であること' do
+    get '/feed/category/mac'
+    assert_response 301
+  end
+
   test '`/rss`のレスポンスが301であること' do
     get '/rss'
     assert_response 301
@@ -100,7 +105,7 @@ class RoutesTest < ActionDispatch::IntegrationTest
   def article_paths
     path = "#{Rails.root}/app/articles/*.md"
     paths = Dir.glob(path)
-    paths.map do |p|
+    paths.first(30).map do |p|
       result = p.scan(/(\/20\d{2}\-[01]\d\-[0-3]\d\-.+?)\.md/).flatten.shift
       result.sub(/(\d{4})-(\d{2})-(\d{2})-(.+?)/, "\\1\/\\2\/\\3\/\\4")
     end
@@ -115,6 +120,8 @@ class RoutesTest < ActionDispatch::IntegrationTest
       /post/20110811/uhloop
       /iphone/entry/20110811/uhloop
       /comment/20110811/uhloop
+      /feed/tags/mac
+      /rss/tags/vimperator
     )
   end
 end
