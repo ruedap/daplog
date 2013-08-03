@@ -125,7 +125,7 @@ class RoutesTest < ActionDispatch::IntegrationTest
   def article_paths
     path = "#{Rails.root}/app/articles/*.md"
     paths = Dir.glob(path)
-    paths.first(30).map do |p|
+    paths.sort.last(30).map do |p|
       result = p.scan(/(\/20\d{2}\-[01]\d\-[0-3]\d\-.+?)\.md/).flatten.shift
       result.sub(/(\d{4})-(\d{2})-(\d{2})-(.+?)/, "\\1\/\\2\/\\3\/\\4")
     end
