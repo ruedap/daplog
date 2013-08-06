@@ -33,4 +33,5 @@ group :development do
   gem 'pry-rails', '~> 0.3.1'
   gem 'figaro', '~> 0.7.0'
   gem 'foreman'
+  gem 'guard-livereload'
 end
