@@ -23,7 +23,7 @@ published: true
 </figure>
 
 
-前から欲しいとは思ってたんだけど重い腰があがらなくて、でも先週、エンジニア界隈で人気のポッドキャスト[Rebuild.fm #16](http://rebuild.fm/16/)を聴いていたら「Font Awesomeって便利だよね〜」という話が出てきて、「んだんだ」と同感しつつ欲しかったのを思い出したのでｶｶッっと。
+前から欲しいとは思ってたんだけど重い腰があがらなくて、でも先週、エンジニア界隈で人気のポッドキャスト[Rebuild.fm #16](http://rebuild.fm/16/)を聴いていたら「Font Awesomeって便利だよね〜」という話が出てきて、「んだんだ」と同意しつつ欲しかったのを思い出したのでｶｶッっと。
 
 この[@miyagawa](https://twitter.com/miyagawa)さんの[ポッドキャスト](http://rebuild.fm/)はエンジニアの人はもちろん、Webに携わる人なら役立つ内容の話が多くて、且つ、毎回その時のWeb界隈でホットな話題を扱ってて、トーク自体もまったりしつつ面白くて、前述の第16回などはデザイン寄りの話だったりもして、個人的に今一番楽しみなポッドキャスト。おすすめ。
 
@@ -101,6 +101,6 @@ Workflowで便利なのはほとんどがこのタイプで、今までわざわ
 
 * * *
 
-ド定番な有名どころの紹介になっちゃたけど、他にもWorkflowは結構いろいろと作られているので、[ここ](http://veadardiary.blog29.fc2.com/blog-entry-4425.html)とか[ここ](http://www.alfredworkflow.com/)あたりから自分の欲しいWorkflowを探すと良さそう。そして、プログラミングがちょっと出来るなら作ることも難しくはないので、自分の欲しいものがなければ作ってみるのも面白いかも。もし他におすすめのWorkflowや自作のWorkflowがあったりしたら、ブコメ欄や[@ruedap](https://twitter.com/ruedap)宛でもいいので教えてもらえると嬉しいっす。
+ド定番な有名どころの紹介になっちゃたけど、他にもWorkflowは結構いろいろと作られているので、[ここ](http://veadardiary.blog29.fc2.com/blog-entry-4425.html)とか[ここ](http://www.alfredworkflow.com/)あたりから自分の欲しいWorkflowを探すと良さそう。そして、プログラミングがちょっと出来るなら作ることも難しくはないので、自分の欲しいものがなければ作ってみるのも面白いかも。
 
 <cite>[ruedap/alfred2-font-awesome-workflow · GitHub](https://github.com/ruedap/alfred2-font-awesome-workflow)</cite>
