@@ -474,7 +474,7 @@ main > nav
     height: fibo(3, 'px')
     line-height: fibo(3, 'px')
     text-align: center
-    background-color: $color_circle__text
+    background-color: rgba($color_circle__text, fibo(0, '.'))
     background-image: image-url('ruedapcom-logo.svg')
     background-repeat: no-repeat
     background-position: center center
@@ -483,9 +483,9 @@ main > nav
       width: fibo(4, 'px')
       height: fibo(4, 'px')
       line-height: fibo(4, 'px')
-    +transition(background-color 0.6s ease-in)
+    +transition(background-color 0.3s linear)
     &:hover
-      background-color: transparent
+      background-color: rgba($color_circle__text, fibo(1, '.'))
   &::before
     $_desktop-avator-top: 355px
     @extend %dapicons
