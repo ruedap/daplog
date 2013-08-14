@@ -8,7 +8,7 @@ tags: ruby
 published: true
 ---
 
-[前回のバリデーション](/2011/04/17/ruby-sinatra-active-record-3-validate)に引き続き、今回はActiveRecord 3を使った際の`where`メソッド内での比較演算が簡単になるgemの[MetaWhere](http://metautonomo.us/projects/metawhere/)について調べたのでメモ。ぶっちゃけ今回はSinatraはあんまり関係なくて、ActiveRecord 3の使い方が便利になる話。
+[前回のバリデーション](/2011/04/18/ruby-sinatra-active-record-3-validate)に引き続き、今回はActiveRecord 3を使った際の`where`メソッド内での比較演算が簡単になるgemの[MetaWhere](http://metautonomo.us/projects/metawhere/)について調べたのでメモ。ぶっちゃけ今回はSinatraはあんまり関係なくて、ActiveRecord 3の使い方が便利になる話。
 
 <!-- READMORE -->
 

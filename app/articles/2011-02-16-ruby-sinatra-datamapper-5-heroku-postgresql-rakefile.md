@@ -17,7 +17,7 @@ published: true
 
 まず、前提として使ってるマシンにPosgreSQL自体が入ってないとダメっぽい。自分の環境では、PostgreSQLが入ってないと、DataMapperのPostgreSQL用アダプターをインストールする時にコケた。PostgreSQLのインストールはWin/Macそれぞれ以下のような感じで。
 
-<cite>[WindowsでPostgreSQLをXAMPPのPHPから使う](/2011/01/06/windowx-postgresql-xampp-php)</cite>
+<cite>[WindowsでPostgreSQLをXAMPPのPHPから使う](/2011/01/06/windows-postgresql-xampp-php)</cite>
 <cite>[HomebrewをインストールしてMacPortsをアンインストールする](/2011/02/17/mac-install-homebrew-uninstall-macports)</cite>
 
 

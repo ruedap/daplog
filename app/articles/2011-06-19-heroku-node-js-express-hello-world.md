@@ -24,7 +24,7 @@ published: true
 
 Node.jsは、以前Powを使うためにインストールしたので既に入ってた。
 
-<cite>[PowをSinatraアプリで使う](/20110420/ruby-pow-sinatra-rack-app/)</cite>
+<cite>[PowをSinatraアプリで使う](/2011/04/20/ruby-pow-sinatra-rack-app/)</cite>
 
 上記の方法でインストールした状態のままで、バージョンは0.4.5だった。
 
