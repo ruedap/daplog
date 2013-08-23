@@ -15,7 +15,7 @@ published: true
 
 ## まえがき
 
-今年のはじめから2011年8月8日までで、個人で作ったWebアプリを6つリリースしていて、その*すべてのWebアプリのプラットフォームとしてHerokuを利用*しています。
+今年のはじめから8月までの間で、個人で作ったWebアプリを6つリリースしていて、その*すべてのプラットフォームとしてHerokuを利用*しています。
 
 1. [チャップリン名言Twitter Bot](http://twitter.com/#!/chaplin_bot)
     - [Herokuを使って1日1回名言をツイートするTwitter Botの作り方](/2011/02/09/ruby-heroku-twitter-bot)
