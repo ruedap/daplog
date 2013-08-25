@@ -155,7 +155,7 @@ $ open https://coveralls.io/r/ruedap/alfred2-font-awesome-workflow
 
 [Gemnasium](https://gemnasium.com)は、使用しているgemのバージョンが最新の状態を保てているかをチェックしてくれるRuby専用のサービス。今回これは使用してないけど、GitHubでのバッジとして、前述の3つのサービスとセットでよく見かける。これもオープンソースなら無料。
 
-Code Climate同様、チェック対象のGitHubリポジトリを指定するだけなので設定は簡単。今回このサービスを使用してない理由は、プロジェクトルートにGemfileが配置されてないとそもそも使えないようで、使いたくても使えなかった。[^3] 設定画面等でGemfileの場所を指定できようになると嬉しいんだけど…。
+Code Climate同様、チェック対象のGitHubリポジトリを指定するだけなので設定は簡単。今回このサービスを使用してない理由は、プロジェクトルートにGemfileが配置されてないとそもそも使えないようで、使いたくても使えなかった…。[^3] 設定画面でGemfileの場所を指定できようになると嬉しいんだけど。
 
 [^3]: 今回このバッジを設置したかったリポジトリでは、[workflowディレクトリにGemfileを配置している](https://github.com/ruedap/alfred2-font-awesome-workflow/tree/master/workflow)ため、Gemnasiumで設定してみたけど認識できなかった
 
