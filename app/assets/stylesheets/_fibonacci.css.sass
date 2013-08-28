@@ -334,15 +334,22 @@ main > article
       +media($break_tablets-and-above)
         height: fibo(0, 'px')
         line-height: fibo(0, 'px')
+    > p.center
+      text-align: center
     > p > a
       word-wrap: break-word
-    > p > img,
-    > p > a > img
-      max-width: 100%
-      display: block
-      margin: fibomo(-1, 'px') auto
-      +media($break_desktop-and-above)
-        margin: fibo(-1, 'px') auto
+    > p
+      > img,
+      > a > img
+        max-width: 100%
+        display: block
+        margin: fibomo(-1, 'px') auto
+        +media($break_desktop-and-above)
+          margin: fibo(-1, 'px') auto
+      &.inline
+        > img,
+        > a > img
+          display: inline
     > ul > li,
     > ol > li,
     > blockquote,
