@@ -245,19 +245,20 @@ a
       background-color: fiboco(-2)
       +background-image(linear-gradient(fiboco(-2) 0, fiboco(-4) 100%))
     +media($break_desktop-and-above)
+      position: relative
       padding-bottom: 0
       margin-bottom: 0
-      background-color: fiboco(-2)
-      +radial-gradient(fiboco(-3), fiboco(-1))
-      +border-circle-raidus
-      position: absolute
-      width: fibo(6, 'px')
-      height: fibo(6, 'px')
-      +transform-origin(center middle)
-      +transform(translate(0, -50%))
+      .logo-bg
+        position: absolute
+        background-color: fiboco(-2)
+        +radial-gradient(fiboco(-3), fiboco(-1))
+        +border-circle-raidus
+        width: fibo(6, 'px')
+        height: fibo(6, 'px')
+        top: -(fibo(6) / 2) + 0px
       .logo
         position: absolute
-        top: (fibo(6) / 2) + 0px
+        top: 0px
         // TODO: magic number
         left: 289px
 
