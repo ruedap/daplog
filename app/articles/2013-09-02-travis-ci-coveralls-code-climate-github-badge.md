@@ -28,6 +28,7 @@ published: true
 $ ruby -v
 ruby 2.0.0p247 (2013-06-27 revision 41674) [x86_64-darwin12.4.0]
 $ gem install travis
+$ cd [PROJECT ROOT]
 $ travis init ruby --rvm 1.8.7 --rvm 2.0.0
 .travis.yml file created!
 ruedap/alfred2-font-awesome-workflow: enabled :)
@@ -78,7 +79,7 @@ $ travis open
 
 [Coveralls](https://coveralls.io/)は、*コードカバレッジ*と呼ばれる[テストのカバー率](http://ja.wikipedia.org/wiki/%E3%82%B3%E3%83%BC%E3%83%89%E7%B6%B2%E7%BE%85%E7%8E%87)を計測してくれるサービス。これを利用することで、まだテストを書いていないコードの場所が明確になる。
 
-まずは最初に、Coverallsのサイトで対象のGitHubリポジトリを有効化しておく。そして `.coveralls.yml`をルートディレクトリに作成して、サービス名にTravis CIを指定する。[^1]
+まずは最初に、Coverallsのサイトで対象のGitHubリポジトリを有効化しておく。そして `.coveralls.yml`をプロジェクトルートに作成して、サービス名にTravis CIを指定する。[^1]
 
 [^1]: 試してみたところ`.coveralls.yml`は無くても動くみたいなんだけど、[ドキュメント](https://coveralls.io/docs/ruby)には置いておいたほうが良いような書き方がされていたので一応
 
@@ -144,19 +145,17 @@ $ open https://coveralls.io/r/ruedap/alfred2-font-awesome-workflow
 
 [^2]: 近日中に[JavaScript対応バージョンがリリース](https://codeclimate.com/js)される模様
 
-このサービスは、公開されているGitHubリポジトリのRubyコードを解析するだけなので、前述の2つのサービスのように新たにコード等を追加する必要は無くて、Code Climateのサイトにログインして自分のGitHubアカウントと連携させてから、[チェック対象にしたいGitHubリポジトリを登録する](https://codeclimate.com/github/signup)だけで準備が完了する。対象のリポジトリを登録できたら、[右上に表示されているバッジ](https://codeclimate.com/github/ruedap/alfred2-font-awesome-workflow)をクリックすれば、バッジ用のコードを取得できる。この数値は*4.0*が最も良い状態で、コードの臭いに関する兆候が増えると数値が下がっていく。
+このサービスは、公開されているGitHubリポジトリのRubyコードを解析するだけなので、前述の2つのサービスのように新たにコード等を追加する必要は無くて、Code Climateのサイトにログインして自分のGitHubアカウントと連携させてから、[チェック対象にしたいGitHubリポジトリを登録する](https://codeclimate.com/github/signup)だけで準備が完了する。対象のリポジトリを登録できたら、[右上に表示されているバッジ](https://codeclimate.com/github/ruedap/alfred2-font-awesome-workflow)をクリックすれば、バッジ用のコードを取得できる。
 
 [![Code Climate](https://codeclimate.com/github/ruedap/alfred2-font-awesome-workflow.png)](https://codeclimate.com/github/ruedap/alfred2-font-awesome-workflow)
 
-
-これもオープンソースであれば無料で使わせてもらえるのだけど、無料版はコードに変更が加わっても[自動更新はしてくれない](https://codeclimate.com/docs#github-integration)ようで、手動で更新しないといけないのがちょっと残念なところ。気が向いた時にでもページの右上にあるリフレッシュボタンで更新する。
-
+この数値は*4.0*が最も良い状態で、コードの臭いの兆候が増えると数値が下がっていく。
 
 ## Gemnasium
 
 [Gemnasium](https://gemnasium.com)は、使用しているgemのバージョンが最新の状態を保てているかをチェックしてくれるRuby専用のサービス。今回これは使用してないけど、GitHubでのバッジとして、前述の3つのサービスとセットでよく見かける。これもオープンソースなら無料。
 
-Code Climate同様、チェック対象のGitHubリポジトリを指定するだけなので設定は簡単。今回このサービスを使用してない理由は、ルートディレクトリにGemfileが配置されてないとそもそも使えないようで、使いたくても使えなかった。[^3] 設定画面等でGemfileの場所を指定できようになると嬉しいんだけど…。
+Code Climate同様、チェック対象のGitHubリポジトリを指定するだけなので設定は簡単。今回このサービスを使用してない理由は、プロジェクトルートにGemfileが配置されてないとそもそも使えないようで、使いたくても使えなかった。[^3] 設定画面等でGemfileの場所を指定できようになると嬉しいんだけど…。
 
 [^3]: 今回このバッジを設置したかったリポジトリでは、[workflowディレクトリにGemfileを配置している](https://github.com/ruedap/alfred2-font-awesome-workflow/tree/master/workflow)ため、Gemnasiumで設定してみたけど認識できなかった
 
