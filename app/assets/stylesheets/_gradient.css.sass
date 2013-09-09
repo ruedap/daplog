@@ -5,11 +5,7 @@ $HUE: 220 !default
 @import variables
 
 .L
-  // TODO: magic number (article count + year count)
-  $_article_2010: 28 + 1
-  $_article_2011: 154 + 1
-  $_article_2013: 4 + 1
-  $_max: $_article_2010 + $_article_2011 + $_article_2013
+  $_max: gradient_count()
   @for $i from 1 through $_max
     &:nth-child(#{$_max - 1}n+#{$i})
       &.Y
