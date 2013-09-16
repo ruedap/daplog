@@ -12,6 +12,7 @@ class ArticlesController < ApplicationController
     month  = params[:month]
     day    = params[:day]
     title  = params[:title]
+    set_canonical(params[:year], params[:month], params[:day], params[:title])
     path   = "#{Rails.root}/app/articles/#{year}-#{month}-#{day}-#{title}.md"
     @article = fetch_article(path)
   end
@@ -106,8 +107,11 @@ class ArticlesController < ApplicationController
     params[:month] = yyyymmdd[4..5]
     params[:day]   = yyyymmdd[6..7]
     params[:title] = params[:title].gsub('_', '-')
-    @canonical = "#{root_url}#{params[:year]}/#{params[:month]}/#{params[:day]}/#{params[:title]}"
     params
+  end
+
+  def set_canonical(year, month, day, title)
+    @canonical = "#{root_url}#{year}/#{month}/#{day}/#{title}"
   end
 
   def redirect_hatena_blog_entries_url(params)
