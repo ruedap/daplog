@@ -26,7 +26,7 @@ published: true
 <p class="dapicons">ruedap</p>
 ~~~
 
-`dapicons`というCSSクラスにリガチャで必要なスタイル設定が記述されているんだけど、IcoMoonがリガチャなフォントファイルの生成に加えて、それらも自動でやってくれる。
+`dapicons`というCSSクラスにリガチャで必要なスタイル設定が記述されているんだけど、IcoMoonがリガチャなフォントファイルの生成に加えて、それらも自動で作ってくれる。
 
 <p class="dapicons" style="display: block; text-align: center; font-size: 3em; margin: 1.3em 0; color: #777;">home</p>
 
@@ -38,7 +38,7 @@ published: true
 </nav>
 ~~~
 
-ただ、リガチャなアイコンフォントは**IE9以下が非対応という大きなデメリット**があって、現在主流なCSSの::before擬似要素を使ったアイコンフォントに比べるとマイナーだけど、このリガチャを使う仕組み自体が面白く、HTMLの記述もシンプルになりやすく意味的にも素直に書ける。自分で専用のリガチャを作ってみたいと思っていたので、前述のサービスのリガチャ作成機能はそれにうってつけだった。 [^3] 以下ではその作成手順を簡単に解説。
+ただ、リガチャなアイコンフォントは**IE9以下が非対応という大きなデメリット**があって、現在主流なCSSの::before擬似要素を使ったアイコンフォントに比べるとマイナーだけど、このリガチャを使う仕組み自体が面白く、HTMLの記述もシンプルになりやすく意味的にも素直に書ける。自分で専用のリガチャを作ってみたいと思っていたので、前述のサービスのリガチャ作成機能はそれにうってつけだった。[^3] 以下ではその作成手順を簡単に解説。
 
 [^3]: それで実際に作ってこのブログでも使っているアイコンフォントは[GitHubで公開](https://github.com/ruedap/dapicons)しているけど、自分以外の人が使うものではなさそう。公開しているのは、主に自分の複数プロジェクト間でgit submoduleを使って共有するため
 
@@ -83,7 +83,7 @@ published: true
 
 [![dapicons](/assets/2013/09/17/ligature-icon-fonts-07.png)](/assets/2013/09/17/ligature-icon-fonts-07.png)
 
-IcoMoonでは設定をブラウザが記憶しててくれるし、必要ならその情報を.jsonファイルにエクスポートすることも可能なので、**アイコンの数を最小限に留めておいて、必要になってから追加する**というやり方もしやすい。あと、[Chrome拡張機能](https://chrome.google.com/webstore/detail/icomoon/kppingdhhalimbaehfmhldppemnmlcjd)とかもある。
+IcoMoonでは設定をブラウザが記憶しててくれるし、必要ならその情報を.jsonファイルにエクスポートすることも可能なので、**アイコンの数を最小限に留めておいて、必要になってから追加する**というやり方もしやすい。あと、[Chromeの拡張機能](https://chrome.google.com/webstore/detail/icomoon/kppingdhhalimbaehfmhldppemnmlcjd)とかもある。
 
 
 というような感じで、専用のアプリも専門の知識もほとんど必要なくポチポチとするだけでリガチャなアイコンフォントをお手軽に作成できるIcoMoonが素晴らしいって話でした。
