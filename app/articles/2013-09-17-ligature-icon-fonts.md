@@ -61,7 +61,7 @@ published: true
 
 * * *
 
-ここからはリガチャの設定をした上でフォントを生成する手順。まず、モードを矢印マークの*Selectモード*に切り替えて、*Your Custom Icons*にある自作のSVGアイコンを選択し、ページ下部にある*Fontボタン*を押す。
+ここからがリガチャの設定をした上でフォントを生成する手順。まず、モードを矢印マークの*Selectモード*に切り替えて、*Your Custom Icons*にある自作のSVGアイコンを選択し、ページ下部にある*Fontボタン*を押す。
 
 [![IcoMoon](/assets/2013/09/17/ligature-icon-fonts-04.png)](/assets/2013/09/17/ligature-icon-fonts-04.png)
 
@@ -83,7 +83,7 @@ published: true
 
 [![dapicons](/assets/2013/09/17/ligature-icon-fonts-07.png)](/assets/2013/09/17/ligature-icon-fonts-07.png)
 
-IcoMoonでは設定をブラウザが記憶しててくれるし、必要ならその情報を.jsonファイルでエクスポートすることも可能なので、**アイコンの数を最小限に留めておいて、必要になってから追加する**というやり方もしやすい。あと、[Chrome拡張機能](https://chrome.google.com/webstore/detail/icomoon/kppingdhhalimbaehfmhldppemnmlcjd)とかもある。
+IcoMoonでは設定をブラウザが記憶しててくれるし、必要ならその情報を.jsonファイルにエクスポートすることも可能なので、**アイコンの数を最小限に留めておいて、必要になってから追加する**というやり方もしやすい。あと、[Chrome拡張機能](https://chrome.google.com/webstore/detail/icomoon/kppingdhhalimbaehfmhldppemnmlcjd)とかもある。
 
 
 というような感じで、専用のアプリも専門の知識もほとんど必要なくポチポチとするだけでリガチャなアイコンフォントをお手軽に作成できるIcoMoonが素晴らしいって話でした。
