@@ -37,4 +37,5 @@ group :development do
   gem 'figaro', '~> 0.7.0'
   gem 'foreman'
   gem 'guard-livereload'
+  gem 'rspec-rails'
 end
