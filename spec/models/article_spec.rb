@@ -51,7 +51,7 @@ describe Article do
 
   describe '.list' do
     it 'ソートされた日付が正しいこと' do
-      list = Article.list
+      list = Article.list.reverse
       expect(list.first.published_at).to eq(DateTime.new(2010, 8, 1))
       expect(list[100].published_at).to eq(DateTime.new(2011, 3, 19))
       expect(list[187].published_at).to eq(DateTime.new(2013, 9, 17))
@@ -60,7 +60,7 @@ describe Article do
 
   describe '#date' do
     it '年月日がドット区切りのフォーマットに変換されていること' do
-      list = Article.list
+      list = Article.list.reverse
       expect(list.first.date).to eq('2010.08.01')
       expect(list[100].date).to eq('2011.03.19')
       expect(list[187].date).to eq('2013.09.17')
@@ -72,9 +72,7 @@ describe Article do
   def glob_articles
     result = []
     path = "#{Rails.root}/app/articles/*.md"
-    Dir.glob(path).each do |p|
-      result << File.open(p) {|f| f.read }
-    end
+    Dir.glob(path).each { |p| result << p }
     result
   end
 end

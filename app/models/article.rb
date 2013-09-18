@@ -45,11 +45,11 @@ class Article
     load_articles
   end
 
-  # Public: 日付の昇順に並べ替えて全記事を返します。
+  # Public: 日付の降順に並べ替えて全記事を返します。
   #
   # 全記事を含むDataMapper::Collectionを返します。
   def self.list
-    Article.all(order: [:published_at.asc])
+    Article.all(order: [:published_at.desc])
   end
 
   # Public: 年月日をドット区切りのフォーマットに変換して返します。
