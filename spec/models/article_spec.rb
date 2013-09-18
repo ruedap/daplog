@@ -49,21 +49,21 @@ describe Article do
     end
   end
 
-  describe '.list' do
+  describe '.index' do
     it 'ソートされた日付が正しいこと' do
-      list = Article.list.reverse
-      expect(list.first.published_at).to eq(DateTime.new(2010, 8, 1))
-      expect(list[100].published_at).to eq(DateTime.new(2011, 3, 19))
-      expect(list[187].published_at).to eq(DateTime.new(2013, 9, 17))
+      index = Article.index.reverse
+      expect(index.first.published_at).to eq(DateTime.new(2010, 8, 1))
+      expect(index[100].published_at).to eq(DateTime.new(2011, 3, 19))
+      expect(index[187].published_at).to eq(DateTime.new(2013, 9, 17))
     end
   end
 
   describe '#date' do
     it '年月日がドット区切りのフォーマットに変換されていること' do
-      list = Article.list.reverse
-      expect(list.first.date).to eq('2010.08.01')
-      expect(list[100].date).to eq('2011.03.19')
-      expect(list[187].date).to eq('2013.09.17')
+      index = Article.index.reverse
+      expect(index.first.date).to eq('2010.08.01')
+      expect(index[100].date).to eq('2011.03.19')
+      expect(index[187].date).to eq('2013.09.17')
     end
   end
 

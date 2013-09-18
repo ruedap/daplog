@@ -48,7 +48,7 @@ class Article
   # Public: 日付の降順に並べ替えて全記事を返します。
   #
   # 全記事を含むDataMapper::Collectionを返します。
-  def self.list
+  def self.index
     Article.all(order: [:published_at.desc])
   end
 
