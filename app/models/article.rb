@@ -52,9 +52,11 @@ class Article
     Article.all(order: [:published_at.asc])
   end
 
+  # Public: 年月日をドット区切りのフォーマットに変換して返します。
+  #
+  # 日付のStringを返します。
   def date
-    # TODO
-    # article[:date]  = front_matter['date'].iso8601.gsub('-', '.')
+    self.published_at.iso8601.gsub('-', '.')[0..9]
   end
 
   private

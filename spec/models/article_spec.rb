@@ -58,6 +58,15 @@ describe Article do
     end
   end
 
+  describe '#date' do
+    it '年月日がドット区切りのフォーマットに変換されていること' do
+      list = Article.list
+      expect(list.first.date).to eq('2010.08.01')
+      expect(list[100].date).to eq('2011.03.19')
+      expect(list[187].date).to eq('2013.09.17')
+    end
+  end
+
   private
 
   def glob_articles
