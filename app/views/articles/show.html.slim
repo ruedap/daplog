@@ -5,8 +5,8 @@
     == tag :link, rel: 'canonical', href: @canonical
 
 article
-  time datetime=(@article[:time]) itemprop='datePublished' = @article[:date]
-  h1 itemprop='name' == @article[:title]
-  section.article-body itemprop='articleBody' == @article[:body]
+  time datetime=(@article.published_at) itemprop='datePublished' = @article.date
+  h1 itemprop='name' == @article.title
+  section.article-body itemprop='articleBody' == @article.body.value
 nav role='navigation'
   = link_to 'home', root_path
