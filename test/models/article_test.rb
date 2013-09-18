@@ -1,7 +1,11 @@
 require 'test_helper'
 
 describe Article do
-  describe '.clear!' do
+  before do
+    Article.flushdb!
+  end
+
+  describe '.flushdb!' do
     before do
       @redis = Article.redis
       @redis.set('hoge', 'fuga')
@@ -9,7 +13,7 @@ describe Article do
 
     it 'Redis.currentが空であること' do
       @redis.keys.wont_be_empty
-      Article.clear!
+      Article.flushdb!
       @redis.keys.must_be_empty
     end
   end
