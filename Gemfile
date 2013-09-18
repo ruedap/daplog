@@ -21,6 +21,7 @@ gem 'rack-rewrite', '~> 1.3.3'
 gem 'sentry-raven'
 gem 'coderay', '~> 1.0.9'
 gem 'browser', '~> 0.2.0'
+gem 'redis-objects', '0.7.0'
 
 group :production, :staging do
   gem 'rails_12factor' # for Heroku assets precompile
