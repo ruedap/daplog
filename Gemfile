@@ -38,4 +38,6 @@ group :development do
   gem 'foreman'
   gem 'guard-livereload'
   gem 'rspec-rails'
+  gem 'guard-rspec'
+  gem 'spring'
 end
