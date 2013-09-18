@@ -4,7 +4,6 @@ class Article
 
   # datamapper fields, just used for .create
   property :id, Serial
-  property :body, Text
   property :url, String
   property :path, String
   property :title, String
@@ -12,6 +11,7 @@ class Article
 
   # use redis-objects fields for everything else
   counter :view_count, start: 0  # TODO
+  value :body
 
   # Public: 選択されているRedis DBの全データを消去します。
   #
@@ -39,10 +39,11 @@ class Article
   # Public: 選択されているRedis DBの全データを消去した上で、全記事のデータを
   # 再読込みします。
   #
-  # 戻り値はありません。
+  # 実行結果をIntegerまたはStringで返します。
   def self.rebuild!
-    flushdb!
-    load_articles
+    str = flushdb!
+    articles = load_articles
+    (str == 'OK' && articles.present?) ? articles.size : 'NG'
   end
 
   # Public: 日付の降順に並べ替えて全記事を返します。
