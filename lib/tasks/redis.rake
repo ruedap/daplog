@@ -1,9 +1,8 @@
 
 namespace :redis do
-  desc 'Clear redis cache'
+  desc 'Delete all the keys of the currently selected DB.'
   task clear: :environment do
-    print 'Clear redis cache... '
-    Redis.current.flushdb
-    puts 'completed!'
+    print 'Delete all the keys of the currently selected DB... '
+    puts Article.clear!
   end
 end
