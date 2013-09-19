@@ -3,10 +3,11 @@ class Article
   include DataMapper::Resource
 
   # datamapper fields, just used for .create
+  # TODO: バリデーション
   property :id, Serial
   property :url, String
-  property :path, String
   property :title, String
+  property :filename, String
   property :published_at, DateTime
 
   # use redis-objects fields for everything else
@@ -30,7 +31,7 @@ class Article
     article.body         = parse_markdown(markdown.last)
     article.title        = front_matter['title']
     article.url          = parse_article_url(path)
-    article.path         = parse_article_path(path)
+    article.filename     = parse_article_filename(path)
     article.published_at = parse_article_date(path)
     article.save
     article
@@ -92,7 +93,7 @@ class Article
     "#{md[1]}/#{md[2]}/#{md[3]}/#{md[4]}"
   end
 
-  def self.parse_article_path(path)
+  def self.parse_article_filename(path)
     md = parse_path(path)
     "#{md[1]}-#{md[2]}-#{md[3]}-#{md[4]}"
   end

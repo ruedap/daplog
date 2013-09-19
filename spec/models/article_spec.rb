@@ -33,7 +33,7 @@ describe Article do
       expect(@article.body.lines.last).to eq("</div>\n")
       expect(@article.title).to eq("<span>宇多田ヒカル大好き専用</span><span>「ウタダヒカループ」を作ってみた</span>")
       expect(@article.url).to eq("2011/08/11/uhloop")
-      expect(@article.path).to eq("2011-08-11-uhloop")
+      expect(@article.filename).to eq("2011-08-11-uhloop")
       expect(@article.published_at).to eq(DateTime.new(2011, 8, 11))
       expect(@article.id).to eq(1)
     end

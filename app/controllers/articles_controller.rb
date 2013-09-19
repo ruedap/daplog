@@ -10,13 +10,13 @@ class ArticlesController < ApplicationController
     parse_hatena_blog_entry_url(params) if params[:yyyymmdd]
     redirect_hatena_blog_entries_url(params) if params[:entries]
 
-    year   = params[:year]
-    month  = params[:month]
-    day    = params[:day]
-    title  = params[:title]
-    path   = "#{year}-#{month}-#{day}-#{title}"
+    year     = params[:year]
+    month    = params[:month]
+    day      = params[:day]
+    title    = params[:title]
+    filename = "#{year}-#{month}-#{day}-#{title}"
     set_canonical(year, month, day, title)
-    @article = Article.first(path: path)
+    @article = Article.first(filename: filename)
   end
 
 #   def feed
