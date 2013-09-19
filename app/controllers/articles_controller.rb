@@ -19,13 +19,13 @@ class ArticlesController < ApplicationController
     @article = Article.first(filename: filename)
   end
 
-#   def feed
-#     @recent_entries = []
-#     Article.fetch_articles.first(10).each do |article|
-#       @recent_entries << Article.fetch_article(article[:path])
-#     end
-#     render :feed, handlers: :builder, formats: :xml
-#   end
+  def feed
+    @recent_entries = []
+    Article.index.first(10).each do |article|
+      @recent_entries << article
+    end
+    render :feed, handlers: :builder, formats: :xml
+  end
 
   private
   def set_hue

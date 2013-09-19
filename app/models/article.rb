@@ -12,7 +12,7 @@ class Article
 
   # use redis-objects fields for everything else
   counter :view_count, start: 0  # TODO
-  value :body
+  value :body_text
 
   # Public: 選択されているRedis DBの全データを消去します。
   #
@@ -59,6 +59,31 @@ class Article
   # 日付のStringを返します。
   def date
     self.published_at.iso8601.gsub('-', '.')[0..9]
+  end
+
+  # Public: 記事のURLを返します。引数にroot_urlがある場合はフルパスのURLを
+  # 返します。
+  #
+  # root_url - ルートURLのString。
+  #
+  # URLのStringを返します。
+  def url(root_url = nil)
+    return self[:url] unless root_url
+    "#{root_url}#{self[:url]}"
+  end
+
+  # Public: 記事の本文を返します。
+  #
+  # 本文のStringまたはnilを返します。
+  def body
+    self.body_text.try(:value)
+  end
+
+  # Public: 記事の本文を代入します。
+  #
+  # 本文のStringを返します。
+  def body=(arg)
+    self.body_text = arg
   end
 
   private

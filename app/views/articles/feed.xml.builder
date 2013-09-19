@@ -6,13 +6,13 @@ atom_feed(language: 'ja-JP') do |feed|
 
   @recent_entries.each do |article|
     feed.entry(article,
-               url:       article[:url],
-               id:        article[:url],
-               published: article[:time].to_datetime,
-               updated:   article[:time].to_datetime
+               url:       article.url(root_url),
+               id:        article.url(root_url),
+               published: article.published_at.to_datetime,
+               updated:   article.published_at.to_datetime
               ) do |item|
-      item.title(strip_tags(article[:title]))
-      item.content(article[:body], type: 'html')
+      item.title(article_title(article))
+      item.content(article.body, type: 'html')
       item.author { |author| author.name(blog_author) }
     end
   end
