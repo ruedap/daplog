@@ -1,5 +1,4 @@
-# redis_url = ENV['REDISCLOUD_URL']
-redis_url = ENV['REDISTOGO_URL']
+redis_url = ENV['REDISCLOUD_URL']
 
 if redis_url
   uri = URI.parse(redis_url)
