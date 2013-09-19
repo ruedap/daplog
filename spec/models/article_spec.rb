@@ -1,9 +1,8 @@
 require 'spec_helper'
 
 describe Article do
-  before(:all) do
-    Article.rebuild!
-    @glob_articles = glob_articles
+  before do
+    Redis.current.flushdb
   end
 
   describe '.flushdb!' do
@@ -17,60 +16,70 @@ describe Article do
       Article.flushdb!
       expect(@redis.keys).to be_empty
     end
-
-    after { Article.rebuild! }
   end
 
-  describe '.load_article' do
-    before do
-      Article.flushdb!
-      path = "#{Rails.root}/app/articles/2011-08-11-uhloop.md"
-      @article = Article.load_article(path)
+  describe '.create_article' do
+    context '引数が正常な場合' do
+      it '戻り値のArtcileオブジェクトに適切なデータが含まれている' do
+        article = Kazetachinu.create_article
+        uhloop  = Kazetachinu.create(:uhloop)
+        expect(article.body.lines.first).to eq(uhloop.body_first)
+        expect(article.body.lines.last).to eq(uhloop.body_last)
+        expect(article.title).to eq(uhloop.title)
+        expect(article.url).to eq(uhloop.url)
+        expect(article.filename).to eq(uhloop.filename)
+        expect(article.published_at).to eq(uhloop.published_at)
+        expect(article.id).to eq(uhloop.id)
+      end
     end
 
-    it '戻り値のArtcileオブジェクトに適切なデータが含まれている' do
-      expect(@article.body.lines.first).to eq("<p><a href=\"/2011/08/07/reizouko-driven-development\">冷蔵庫で設計</a>したWebサービス、宇多田ヒカル大好き専用「<a href=\"http://uhloop.com\">ウタダヒカループ</a>」を8月8日にリリースしました。</p>\n")
-      expect(@article.body.lines.last).to eq("</div>\n")
-      expect(@article.title).to eq("<span>宇多田ヒカル大好き専用</span><span>「ウタダヒカループ」を作ってみた</span>")
-      expect(@article.url).to eq("2011/08/11/uhloop")
-      expect(@article.filename).to eq("2011-08-11-uhloop")
-      expect(@article.published_at).to eq(DateTime.new(2011, 8, 11))
-      expect(@article.id).to eq(1)
+    context '引数が異常な場合' do
+      it '戻り値にnilが返る' do
+        path = "#{Rails.root}/app/articles/0000-00-00-invalid-filename.md"
+        expect(Article.create_article(path)).to be_nil
+      end
     end
-
-    after { Article.rebuild! }
   end
 
-  describe '.rebuild' do
-    it '複数回実行しても記事の全件数が変わらない' do
-      expect(Article.all.size).to eq(@glob_articles.size)
-      Article.rebuild!
-      expect(Article.all.size).to eq(@glob_articles.size)
+  describe '.rebuild!' do
+    xit '複数回実行しても記事の全件数が変わらない' do
+      expect(Article.all.size).to eq(0)
+      result = Article.rebuild!
+      expect(Article.all.size).to eq(GLOB_ARTICLE_PATHS.size)
+      expect(result).to eq(GLOB_ARTICLE_PATHS.size)
+      result = Article.rebuild!
+      expect(Article.all.size).to eq(GLOB_ARTICLE_PATHS.size)
+      expect(result).to eq(GLOB_ARTICLE_PATHS.size)
     end
   end
 
   describe '.index' do
+    before { Kazetachinu.create_articles(10) }
+
     it 'ソートされた日付が正しい' do
-      index = Article.index.reverse
-      expect(index.first.published_at).to eq(DateTime.new(2010, 8, 1))
-      expect(index[100].published_at).to eq(DateTime.new(2011, 3, 19))
-      expect(index[187].published_at).to eq(DateTime.new(2013, 9, 17))
+      index = Article.index
+      expect(index.size).to eq(10)
+      expect(index.first.published_at).to eq(DateTime.new(2010, 9, 13))
+      expect(index.last.published_at).to eq(DateTime.new(2010, 8, 1))
     end
   end
 
   describe '#date' do
+    before { Kazetachinu.create_articles(10) }
+
     it '年月日がドット区切りのフォーマットに変換されている' do
-      index = Article.index.reverse
-      expect(index.first.date).to eq('2010.08.01')
-      expect(index[100].date).to eq('2011.03.19')
-      expect(index[187].date).to eq('2013.09.17')
+      index = Article.index
+      expect(index.first.date).to eq('2010.09.13')
+      expect(index.last.date).to eq('2010.08.01')
     end
   end
 
   describe '#url' do
+    before { Kazetachinu.create_articles(1) }
+
     context '引数を付けない' do
       it 'root_urlを含まないパスが取得できる' do
-        actual = Article.index.last.url
+        actual = Article.index.first.url
         expect(actual).to eq('2010/08/01/vimperator-hint-font-size')
 
       end
@@ -78,35 +87,26 @@ describe Article do
 
     context '引数を付ける' do
       it 'root_urlを含むパスが取得できる' do
-        actual = Article.index.last.url('http://blog.ruedap.com/')
+        actual = Article.index.first.url('http://blog.ruedap.com/')
         expect(actual).to eq('http://blog.ruedap.com/2010/08/01/vimperator-hint-font-size')
       end
     end
   end
 
   describe '#body' do
-    # context '引数を付けない' do
-    #   it 'root_urlを含まないパスが取得できる' do
-    #     actual = Article.index.last.url
-    #     expect(actual).to eq('2010/08/01/vimperator-hint-font-size')
+    before do
+      @article = Article.create
+    end
 
-    #   end
-    # end
+    it 'プロパティに設定した文字列を取得できる' do
+      body = '風立ちぬ いざ生きめやも'
+      @article.body = body
+      expect(@article.body).to eq(body)
+    end
 
-    # context '引数を付ける' do
-    #   it 'root_urlを含むパスが取得できる' do
-    #     actual = Article.index.last.url('http://blog.ruedap.com/')
-    #     expect(actual).to eq('http://blog.ruedap.com/2010/08/01/vimperator-hint-font-size')
-    #   end
-    # end
-  end
-
-  private
-
-  def glob_articles
-    result = []
-    path = "#{Rails.root}/app/articles/*.md"
-    Dir.glob(path).each { |p| result << p }
-    result
+    it 'プロパティに設定したnilを取得できる' do
+      @article.body = nil
+      expect(@article.body).to eq(nil)
+    end
   end
 end

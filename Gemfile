@@ -30,7 +30,7 @@ group :production, :staging do
   gem 'newrelic_rpm'
 end
 
-group :development do
+group :development, :test do
   gem 'better_errors', '~> 0.9.0'
   gem 'binding_of_caller', '~> 0.7.2'
   gem 'pry-rails', '~> 0.3.1'

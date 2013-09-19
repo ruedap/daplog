@@ -24,7 +24,7 @@ class Article
   # Public: Markdownファイルの記事内容を読み込みます。
   #
   # 読み込んだ記事データを含んだArticleオブジェクトを返します。
-  def self.load_article(path)
+  def self.create_article(path)
     article = Article.create
     markdown = parse_front_matter(load_file(path))
     front_matter = markdown.first
@@ -35,6 +35,8 @@ class Article
     article.published_at = parse_article_date(path)
     article.save
     article
+  rescue Errno::ENOENT
+    nil
   end
 
   # Public: 選択されているRedis DBの全データを消去した上で、全記事のデータを
@@ -43,7 +45,7 @@ class Article
   # 実行結果をIntegerまたはStringで返します。
   def self.rebuild!
     str = flushdb!
-    articles = load_articles
+    articles = create_articles
     (str == 'OK' && articles.present?) ? articles.size : 'NG'
   end
 
@@ -92,9 +94,9 @@ class Article
   # Redisのarticlesキーに保存します。
   #
   # 戻り値はありません。
-  def self.load_articles
+  def self.create_articles
     path = "#{Rails.root}/app/articles/*.md"
-    Dir.glob(path).each { |p| load_article(p) }
+    Dir.glob(path).each { |p| create_article(p) }
   end
 
   def self.load_file(path)
