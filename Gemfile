@@ -37,8 +37,12 @@ group :development, :test do
   gem 'figaro', '~> 0.7.0'
   gem 'foreman'
   gem 'guard-livereload'
-  gem 'rspec-rails'
-  gem 'guard-rspec'
   gem 'spring'
+end
+
+group :test do
+  gem 'rspec-rails', '2.14.0'
+  gem 'capybara', '2.1.0'
+  gem 'guard-rspec'
   gem 'terminal-notifier-guard'
 end
