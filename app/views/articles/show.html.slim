@@ -7,6 +7,6 @@
 article
   time datetime=(@article.published_at) itemprop='datePublished' = @article.date
   h1 itemprop='name' == @article.title
-  section.article-body itemprop='articleBody' == @article.body.value
+  section.article-body itemprop='articleBody' == @article.body
 nav role='navigation'
   = link_to 'home', root_path
