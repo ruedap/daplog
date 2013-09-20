@@ -19,6 +19,20 @@ module Kazetachinu
     Article.create_article(path)
   end
 
+  def self.invalid_article_paths
+    %w(
+      /201/07/26/reboooot
+      /2013/7/26/reboooot
+      /2013/07/2/reboooot
+      /2013/07/26/reboooot/fuga
+      /post/20110811/uhloop
+      /iphone/entry/20110811/uhloop
+      /comment/20110811/uhloop
+      /feed/tags/mac
+      /rss/tags/vimperator
+    )
+  end
+
   private
 
   def self.glob_article_paths
