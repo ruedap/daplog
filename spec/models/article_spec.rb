@@ -21,7 +21,7 @@ describe Article do
   describe '.create_article' do
     context '引数が正常な場合' do
       it '戻り値のArtcileオブジェクトに適切なデータが含まれている' do
-        uhloop  = Kazetachinu.uhloop_attrs
+        uhloop  = Kazetachinu.attrs(:uhloop)
         path = "#{Rails.root}/app/articles/#{uhloop.filename}.md"
         article = Article.create_article(path)
         expect(article.body.lines.first).to eq(uhloop.body_first)
