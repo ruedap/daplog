@@ -28,8 +28,13 @@ class ArticlesController < ApplicationController
   end
 
   private
+
   def set_hue
     @hue = "%03d" % (rand(18) * 20)
+  end
+
+  def set_canonical(year, month, day, title)
+    @canonical = "#{root_url}#{year}/#{month}/#{day}/#{title}"
   end
 
   def parse_hatena_blog_entry_url(params)
@@ -39,10 +44,6 @@ class ArticlesController < ApplicationController
     params[:day]   = yyyymmdd[6..7]
     params[:title] = params[:title].gsub('_', '-')
     params
-  end
-
-  def set_canonical(year, month, day, title)
-    @canonical = "#{root_url}#{year}/#{month}/#{day}/#{title}"
   end
 
   def redirect_hatena_blog_entries_url(params)
