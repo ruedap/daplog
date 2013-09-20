@@ -1,9 +1,7 @@
 require 'spec_helper'
 
 describe Article do
-  before do
-    Redis.current.flushdb
-  end
+  before { Redis.current.flushdb }
 
   describe '.flushdb!' do
     before do

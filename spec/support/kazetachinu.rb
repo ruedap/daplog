@@ -10,7 +10,7 @@ module Kazetachinu
   end
 
   def self.create_articles(count)
-    Article.flushdb!
+    Redis.current.flushdb
     glob_article_paths.first(count).map { |p| Article.create_article(p) }
   end
 

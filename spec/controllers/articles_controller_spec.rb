@@ -1,9 +1,7 @@
 require 'spec_helper'
 
 describe ArticlesController do
-  before do
-    Redis.current.flushdb
-  end
+  before { Redis.current.flushdb }
 
   describe 'GET #index' do
     context 'データベースに記事データが1件も入ってない' do
