@@ -76,4 +76,36 @@ describe ArticlesController do
     end
   end
 
+  describe 'GET #feed' do
+    context 'データベースに記事データが1件も入ってない' do
+      it 'エラーが発生する'
+      it 'メンテナンス画面が表示される'
+    end
+
+    context 'データベースに記事データが1件入っている' do
+      before do
+        @articles = Kazetachinu.create_articles(11)
+      end
+
+      it 'ステータスコード200を返す' do
+        get :feed, {}
+        expect(response).to be_success
+        expect(response.status).to eq(200)
+      end
+
+      it 'feedテンプレートを描画する' do
+        get :feed, {}
+        expect(response).to render_template(:feed)
+      end
+
+      it '指定された記事データを含む配列の`@recent_articles`がアサインされる' do
+        get :feed, {}
+        articles = assigns(:recent_articles)
+        expect(articles).to be_kind_of(Array)
+        expect(articles.size).to eq(10)
+        expect(articles.first).to eq(@articles[-1])
+        expect(articles.last).to eq(@articles[-10])
+      end
+    end
+  end
 end

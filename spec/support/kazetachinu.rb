@@ -1,3 +1,4 @@
+# 風立ちぬ いざ生きめやも
 # なんちゃってFixture Replacement
 module Kazetachinu
   def self.create(symbol)
@@ -6,7 +7,7 @@ module Kazetachinu
 
   def self.create_articles(count)
     Article.flushdb!
-    glob_article_paths.first(count).each { |p| Article.create_article(p) }
+    glob_article_paths.first(count).map { |p| Article.create_article(p) }
   end
 
   def self.create_article(filename = '2011-08-11-uhloop')

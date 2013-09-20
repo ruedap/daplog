@@ -4,7 +4,7 @@ atom_feed(language: 'ja-JP') do |feed|
   feed.updated  Time.now
   feed.author { |author| author.name(blog_author) }
 
-  @recent_entries.each do |article|
+  @recent_articles.each do |article|
     feed.entry(article,
                url:       article.url(root_url),
                id:        article.url(root_url),

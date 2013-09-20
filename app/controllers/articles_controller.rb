@@ -20,9 +20,9 @@ class ArticlesController < ApplicationController
   end
 
   def feed
-    @recent_entries = []
+    @recent_articles = []
     Article.index.first(10).each do |article|
-      @recent_entries << article
+      @recent_articles << article
     end
     render :feed, handlers: :builder, formats: :xml
   end
