@@ -8,7 +8,8 @@ namespace :redis do
 
   desc 'Rebuild for all articles'
   task rebuild: :environment do
-    print 'Rebuild for all articles... '
-    puts Article.rebuild!
+    print 'Rebuilding... '
+    print  Article.rebuild!
+    puts ' articles completed!'
   end
 end
