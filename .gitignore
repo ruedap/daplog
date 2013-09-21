@@ -20,3 +20,6 @@
 
 # Ignore .env
 .env
+
+# Ignore .keep
+.keep
