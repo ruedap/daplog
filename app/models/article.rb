@@ -26,9 +26,9 @@ class Article
   # 読み込んだ記事データを含んだArticleオブジェクトを返します。
   def self.create_article(path)
     article = Article.create
-    markdown = parse_front_matter(load_file(path))
-    front_matter = markdown.first
-    article.body         = parse_markdown(markdown.last)
+    text = parse_front_matter(load_file(path))
+    front_matter = text.first
+    article.body         = parse_markdown(text.last)
     article.title        = front_matter['title']
     article.url          = parse_article_url(path)
     article.filename     = parse_article_filename(path)
@@ -103,16 +103,16 @@ class Article
     File.open(path) {|f| f.read }
   end
 
-  def self.parse_front_matter(markdown)
-    RubyFrontMatter::Parser.new.parse(markdown)
+  def self.parse_front_matter(text)
+    RubyFrontMatter::Parser.new.parse(text)
   end
 
-  def self.parse_markdown(markdown)
+  def self.parse_markdown(text)
     options = { auto_ids: false,
                 coderay_css: :class,
                 coderay_line_numbers: nil,
                 coderay_wrap: :div }
-    Kramdown::Document.new(markdown, options).to_html
+    Kramdown::Document.new(text).to_html
   end
 
   def self.parse_article_url(path)
