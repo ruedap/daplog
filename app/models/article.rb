@@ -2,6 +2,9 @@ class Article
   include Redis::Objects
   include DataMapper::Resource
 
+
+  GLOB_PATH = "#{Rails.root}/app/articles/*.md"
+
   # datamapper fields, just used for .create
   # TODO: バリデーション
   property :id, Serial
@@ -95,8 +98,7 @@ class Article
   #
   # 戻り値はありません。
   def self.create_articles
-    path = "#{Rails.root}/app/articles/*.md"
-    Dir.glob(path).each { |p| create_article(p) }
+    Dir.glob(GLOB_PATH).each { |p| create_article(p) }
   end
 
   def self.load_file(path)

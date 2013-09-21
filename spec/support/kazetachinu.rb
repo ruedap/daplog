@@ -36,10 +36,8 @@ module Kazetachinu
   private
 
   def self.glob_article_paths
-    result = []
     path = "#{Rails.root}/app/articles/*.md"
-    Dir.glob(path).each { |p| result << p }
-    result
+    Dir.glob(path).map { |p| p }
   end
 
   def self.uhloop
