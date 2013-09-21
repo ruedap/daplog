@@ -47,18 +47,12 @@ class ArticlesController < ApplicationController
   end
 
   def redirect_hatena_blog_entries_url(params)
-    md = nil
-    Article.fetch_articles.each do |article|
-      md = /#{params[:year]}-#{params[:month]}-#{params[:day]}-(.+)\.md/.match(
-        article[:path])
-      break if md && md[1]
-    end
+    filename = "#{params[:year]}-#{params[:month]}-#{params[:day]}"
+    article = Article.all.select { |a| a.filename.include?(filename) }.first
 
-    raise ActionController::RoutingError unless md || md[1]
+    redirect_to("/#{article.url}", status: 301) and return if article
 
-    params[:title] = md[1]
-    redirect_to(
-      "/#{params[:year]}/#{params[:month]}/#{params[:day]}/#{params[:title]}",
-      status: 301)
+    render file: "#{Rails.root}/public/404.html", status: 404, layout: false,
+      content_type: 'text/html'
   end
 end
