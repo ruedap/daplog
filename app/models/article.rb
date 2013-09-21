@@ -109,10 +109,8 @@ class Article
 
   def self.parse_markdown(text)
     options = { auto_ids: false,
-                coderay_css: :class,
-                coderay_line_numbers: nil,
-                coderay_wrap: :div }
-    Kramdown::Document.new(text).to_html
+                enable_coderay: false }
+    Kramdown::Document.new(text, options).to_html_with_rouge
   end
 
   def self.parse_article_url(path)
