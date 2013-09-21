@@ -14,6 +14,13 @@ module SassCustomFunctions
     size += articles.all.map { |a| a.published_at.year }.uniq.size
     Sass::Script::Number.new(size)
   end
+
+  # Public: 環境変数RAILS_ENVの値を文字列で返します。
+  #
+  # 文字列をSass::Script::Stringで返します。
+  def rails_env
+    Sass::Script::String.new(ENV['RAILS_ENV'])
+  end
 end
 
 module Sass::Script::Functions
