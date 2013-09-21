@@ -5,8 +5,8 @@ describe ArticlesController do
 
   describe 'GET #index' do
     context 'データベースに記事データが1件も入ってない' do
-      it 'エラーが発生する'
-      it 'メンテナンス画面が表示される'
+      xit 'エラーが発生する'
+      xit '404ページが表示される'
     end
 
     context 'データベースに記事データが1件入っている' do
@@ -32,43 +32,76 @@ describe ArticlesController do
   end
 
   describe 'GET #show' do
-    context 'パラメーターの指定がない' do
-      it 'エラーが発生する'
-      it 'メンテナンス画面が表示される'
-    end
-
-    context 'パラメーターの指定がある' do
-      context 'データベースに記事データが1件も入ってない' do
-        it 'エラーが発生する'
-        it 'メンテナンス画面が表示される'
+    context 'データベースに記事データが1件も入ってない' do
+      context 'パラメーターの指定がない' do
+        xit 'エラーが発生する'
+        xit '404ページが表示される'
       end
 
-      context 'データベースに記事データが1件入っている' do
-        before do
-          @article = Kazetachinu.create(:uhloop)
-          @params = { year: '2011', month: '08', day: '11', title: 'uhloop' }
+      context 'パラメーターの指定がある' do
+        xit 'エラーが発生する'
+        xit '404ページが表示される'
+      end
+    end
+
+    context 'データベースに記事データが1件入っている' do
+      before do
+        @article = Kazetachinu.create(:uhloop)
+      end
+
+      context 'パラメーターの指定がない' do
+        xit 'エラーが発生する'
+        xit '404ページが表示される'
+      end
+
+      context 'パラメーターの指定がある' do
+        context '不正な記事URL' do
+          xit 'エラーが発生する'
+          xit '404ページが表示される'
         end
 
-        it 'ステータスコード200を返す' do
-          get :show, @params
-          expect(response).to be_success
-          expect(response.status).to eq(200)
-        end
+        context '正常な記事URL' do
+          before do
+            @params = { year: '2011', month: '08', day: '11', title: 'uhloop' }
+          end
 
-        it 'showテンプレートを描画する' do
-          get :show, @params
-          expect(response).to render_template(:show)
-        end
+          it 'ステータスコード200を返す' do
+            get :show, @params
+            expect(response).to be_success
+            expect(response.status).to eq(200)
+          end
 
-        it '指定された記事データの`@article`がアサインされる' do
-          get :show, @params
-          article = assigns(:article)
-          expect(article).to be_kind_of(Article)
-          expect(article.published_at.year).to eq(@params[:year].to_i)
-          expect(article.published_at.month).to eq(@params[:month].to_i)
-          expect(article.published_at.day).to eq(@params[:day].to_i)
-          expect(article.url).to include(@params[:title])
-          expect(article.title).to eq(@article.title)
+          it 'showテンプレートを描画する' do
+            get :show, @params
+            expect(response).to render_template(:show)
+          end
+
+          it '指定された記事データの`@article`がアサインされる' do
+            get :show, @params
+            article = assigns(:article)
+            expect(article).to be_kind_of(Article)
+            expect(article.published_at.year).to eq(@params[:year].to_i)
+            expect(article.published_at.month).to eq(@params[:month].to_i)
+            expect(article.published_at.day).to eq(@params[:day].to_i)
+            expect(article.url).to include(@params[:title])
+            expect(article.title).to eq(@article.title)
+          end
+        end
+      end
+
+      context '異常なはてなブログ日付のURL' do
+        it 'ステータスコード404を返す' do
+          get :show, {
+            year: '2011', month: '08', day: '12', entries: 'entries' }
+          expect(response.status).to eq(404)
+        end
+      end
+
+      context '正常なはてなブログ日付のURL' do
+        it 'ステータスコード301を返す' do
+          get :show, {
+            year: '2011', month: '08', day: '11', entries: 'entries' }
+          expect(response.status).to eq(301)
         end
       end
     end
