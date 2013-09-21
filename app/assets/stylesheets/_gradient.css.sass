@@ -5,7 +5,7 @@ $HUE: 220 !default
 @import variables
 
 .L
-  $_max: gradient_count()
+  $_max: gradient_size()
   @for $i from 1 through $_max
     &:nth-child(#{$_max - 1}n+#{$i})
       &.Y

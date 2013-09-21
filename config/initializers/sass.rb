@@ -8,7 +8,7 @@ module SassCustomFunctions
   # デプロイかつ再構築後の総数より、1少ない数値になります。
   #
   # 数値をSass::Script::Numberで返します。
-  def gradient_count
+  def gradient_size
     articles = Article.all
     size = articles.size
     size += articles.all.map { |a| a.published_at.year }.uniq.size
