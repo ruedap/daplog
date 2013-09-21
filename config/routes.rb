@@ -31,11 +31,10 @@ Daplog::Application.routes.draw do
       constraints: { entries: /entries/, # コントローラー内でのフラグ用
                      year: regexp_year, month: regexp_month, day: regexp_day }
 
-  # はてなブログの旧URL（該当するページが無い場合はトップへリダイレクト）
+  # はてなブログの旧URL（該当ページが無い場合はルートへリダイレクト）
   get '/archive', to: redirect('/')
   get '/archive/*path/', to: redirect('/')
   get '/category', to: redirect('/')
   get '/category/*path/', to: redirect('/')
   get '/search', to: redirect('/')
-
 end
