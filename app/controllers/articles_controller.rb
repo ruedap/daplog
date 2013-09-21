@@ -50,8 +50,7 @@ class ArticlesController < ApplicationController
     md = nil
     Article.fetch_articles.each do |article|
       md = /#{params[:year]}-#{params[:month]}-#{params[:day]}-(.+)\.md/.match(
-        article[:path]
-      )
+        article[:path])
       break if md && md[1]
     end
 
@@ -60,7 +59,6 @@ class ArticlesController < ApplicationController
     params[:title] = md[1]
     redirect_to(
       "/#{params[:year]}/#{params[:month]}/#{params[:day]}/#{params[:title]}",
-      status: 301
-    )
+      status: 301)
   end
 end

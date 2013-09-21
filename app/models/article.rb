@@ -2,7 +2,6 @@ class Article
   include Redis::Objects
   include DataMapper::Resource
 
-
   GLOB_PATH = "#{Rails.root}/app/articles/*.md"
 
   # datamapper fields, just used for .create
