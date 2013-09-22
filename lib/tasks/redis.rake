@@ -9,7 +9,8 @@ namespace :redis do
   desc 'Rebuild for all articles'
   task rebuild: :environment do
     print 'Rebuilding... '
-    print  Article.rebuild!
-    puts ' articles completed!'
+    result =  Article.rebuild!
+    puts "#{result} articles completed!" unless result == 'NG'
+    puts result
   end
 end

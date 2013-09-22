@@ -1,5 +1,6 @@
-unless Rails.env.test?
+unless ENV['SENTRY_DSN'].nil?
   require 'raven'
+
   Raven.configure do |config|
     config.dsn = ENV['SENTRY_DSN']
 

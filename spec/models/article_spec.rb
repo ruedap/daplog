@@ -41,14 +41,15 @@ describe Article do
   end
 
   describe '.rebuild!' do
-    xit '複数回実行しても記事の全件数が変わらない' do
+    it '複数回実行しても記事の全件数が変わらない' do
       expect(Article.all.size).to eq(0)
+      glob_paths_size = Kazetachinu.create_articles.size
       result = Article.rebuild!
-      expect(Article.all.size).to eq(GLOB_ARTICLE_PATHS.size)
-      expect(result).to eq(GLOB_ARTICLE_PATHS.size)
+      expect(Article.all.size).to eq(glob_paths_size)
+      expect(result).to eq(glob_paths_size)
       result = Article.rebuild!
-      expect(Article.all.size).to eq(GLOB_ARTICLE_PATHS.size)
-      expect(result).to eq(GLOB_ARTICLE_PATHS.size)
+      expect(Article.all.size).to eq(glob_paths_size)
+      expect(result).to eq(glob_paths_size)
     end
   end
 

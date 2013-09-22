@@ -95,9 +95,9 @@ class Article
   # Private: Markdownファイルの内容を読み込んで全記事のデータを
   # Redisのarticlesキーに保存します。
   #
-  # 戻り値はありません。
+  # 全記事データのArticleオブジェクトを含んだ配列を返します。
   def self.create_articles
-    Dir.glob(GLOB_PATH).each { |p| create_article(p) }
+    Dir.glob(GLOB_PATH).sort.map { |p| create_article(p) }
   end
 
   def self.load_file(path)
