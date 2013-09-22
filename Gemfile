@@ -48,4 +48,5 @@ group :test do
   gem 'capybara', '2.1.0'
   gem 'guard-rspec'
   gem 'terminal-notifier-guard'
+  gem 'coveralls', :require => false
 end
