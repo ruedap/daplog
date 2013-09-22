@@ -1,0 +1,22 @@
+language: ruby
+rvm: 2.0.0
+services:
+- redis-server
+bundler_args: --without development production staging
+script:
+- bundle exec rake
+notifications:
+  hipchat:
+    rooms:
+      secure: kTwyp0NH+3fI8wfPs+xTcvgJpJeKb0QQESZF2iiK3RGxQESAyN7jgZedSVNi4e+HsPOUmtoT4PDnIsA7FeP1dHFYuq2GxNOGuiJahoYlttXoQnT2hcCmRRP+ftP0h6JTe4Ae0TYC/gvJxqOXUGa6LuW1u3Z+hIV/qSrRlC20ITc=
+deploy:
+  provider: heroku
+  api_key:
+    secure: ZW7A9RaBKxJcvcZy7gnEoBrCg4jpKcX/QRtG8wCuonfA97YCqof4XzbkedQrH4+uih3H+cpFf0VREVYda31lI3iivU0Xt66WSAZeXokwuNrieMT2IMkcpgRYx+PdAEzxajFiZxziO3vhWNd8ZnjBtCgrRmFWFbV7m9S4w0MDft8=
+  app:
+    master: daplog
+    staging: daplog-staging
+  on:
+    rvm: 2.0.0
+  run:
+  - rake redis:rebuild
