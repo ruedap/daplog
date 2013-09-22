@@ -19,7 +19,7 @@ gem 'bourbon', '~> 3.1.8'
 gem 'neat', '~> 1.3.0'
 gem 'redis', '~> 3.0.4'
 gem 'rack-rewrite', '~> 1.3.3'
-gem 'sentry-raven'
+gem 'sentry-raven', '0.6.0'
 gem 'coderay', '~> 1.0.9'
 gem 'browser', '~> 0.2.0'
 gem 'redis-objects', '0.7.0'
@@ -33,6 +33,9 @@ end
 
 group :development, :test do
   gem 'better_errors', '~> 0.9.0'
+end
+
+group :development do
   gem 'binding_of_caller', '~> 0.7.2'
   gem 'pry-rails', '~> 0.3.1'
   gem 'figaro', '~> 0.7.0'
