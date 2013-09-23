@@ -54,13 +54,20 @@ describe Article do
   end
 
   describe '.index' do
-    before { Kazetachinu.create_articles(10) }
-
     it 'ソートされた日付が正しい' do
+      Kazetachinu.create_articles(10)
       index = Article.index
       expect(index.size).to eq(10)
       expect(index.first.published_at).to eq(DateTime.new(2010, 9, 13))
       expect(index.last.published_at).to eq(DateTime.new(2010, 8, 1))
+    end
+  end
+
+  describe '.glob_article_years' do
+    it 'ローカルから取得した全記事の総数と西暦部分の抽出の総数が同じ' do
+      expectation = Kazetachinu.create_articles.size
+      actual = Article.glob_article_years.size
+      expect(actual).to eq(expectation)
     end
   end
 
