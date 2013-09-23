@@ -5,7 +5,9 @@ feature '記事一覧の表示' do
     Kazetachinu.create_articles(3)
     visit root_path
 
-    expect(page).to have_css('h1', text: 'アインシュタインの電話番号')
+    expect(page).to have_title(blog_title)
+
+    expect(page).to have_css('h1', text: blog_title)
     expect(page).to have_css('footer', text: 'ルエダップコム')
 
     expect(page).to have_css('li.article-list__year', text: '2010')
@@ -24,7 +26,9 @@ feature '記事一覧の表示' do
     Article.rebuild!
     visit root_path
 
-    expect(page).to have_css('h1', text: 'アインシュタインの電話番号')
+    expect(page).to have_title(blog_title)
+
+    expect(page).to have_css('h1', text: blog_title)
     expect(page).to have_css('footer', text: 'ルエダップコム')
 
     expect(page).to have_css('li.article-list__year', text: '2010')
@@ -48,7 +52,9 @@ feature '記事詳細の表示' do
     visit root_path
     click_link 'MacPortsのインストール'
 
-    expect(page).to have_css('h1', text: 'アインシュタインの電話番号')
+    expect(page).to have_title(blog_title)
+
+    expect(page).to have_css('h1', text: blog_title)
     expect(page).to have_css('footer', text: 'ルエダップコム')
     expect(page).not_to have_css('li.article-list__year', text: '2010')
 
@@ -62,9 +68,9 @@ feature 'フィードの表示' do
     articles = Kazetachinu.create_articles(11)
     visit '/feed'
 
-    expect(page).to have_css('feed > title', text: 'アインシュタインの電話番号')
-    expect(page).to have_css('feed > subtitle', text: 'できればググってもでてこないようなことだけをかきたいけれど')
-    expect(page).to have_css('author > name', text: 'ruedap')
+    expect(page).to have_css('feed > title', text: blog_title)
+    expect(page).to have_css('feed > subtitle', text: blog_description)
+    expect(page).to have_css('author > name', text: blog_author)
     expect(page).to have_css('entry > updated',
       text: articles.last.published_at.to_s)
     expect(page).to have_css('entry > published',
