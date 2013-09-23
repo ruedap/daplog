@@ -2,51 +2,51 @@ source 'https://rubygems.org'
 
 ruby '2.0.0'
 
-gem 'unicorn'
+gem 'unicorn', '4.6.3'
 
 gem 'rails', '4.0.0'
-gem 'sass-rails', '~> 4.0.0'
-gem 'uglifier', '>= 1.3.0'
-gem 'coffee-rails', '~> 4.0.0'
-gem 'jquery-rails'
-gem 'jbuilder', '~> 1.2'
-gem 'slim', '~> 2.0.0'
-gem 'slim-rails', '~> 2.0.1'
-gem 'kramdown', '~> 1.2.0'
-gem 'rouge', '~> 0.5.3'
-gem 'ruby_front_matter', '~> 0.0.1'
-gem 'bourbon', '~> 3.1.8'
-gem 'neat', '~> 1.3.0'
-gem 'redis', '~> 3.0.4'
-gem 'rack-rewrite', '~> 1.3.3'
-gem 'coderay', '~> 1.0.9'
-gem 'browser', '~> 0.2.0'
+gem 'sass-rails', '4.0.0'
+gem 'uglifier', '2.2.1'
+gem 'coffee-rails', '4.0.0'
+gem 'jquery-rails', '3.0.4'
+gem 'jbuilder', '1.2'
+gem 'slim', '2.0.0'
+gem 'slim-rails', '2.0.1'
+gem 'kramdown', '1.2.0'
+gem 'rouge', '0.5.4'
+gem 'ruby_front_matter', '0.0.1'
+gem 'bourbon', '3.1.8'
+gem 'neat', '1.4.0'
+gem 'redis', '3.0.4'
+gem 'rack-rewrite', '1.4.01'
+gem 'coderay', '1.0.9'
+gem 'browser', '0.2.0'
 gem 'redis-objects', '0.7.0'
 gem 'dm-core', '1.2.1'
 gem 'dm-redis-adapter', '0.8.3'
 
 group :production, :staging do
-  gem 'rails_12factor' # for Heroku assets precompile
-  gem 'newrelic_rpm'
+  gem 'rails_12factor', '0.0.2' # for Heroku assets precompile
+  gem 'newrelic_rpm', '3.6.7.152'
 end
 
 group :development, :test do
-  gem 'better_errors', '~> 0.9.0'
+  gem 'better_errors', '1.0.1'
 end
 
 group :development do
-  gem 'binding_of_caller', '~> 0.7.2'
-  gem 'pry-rails', '~> 0.3.1'
-  gem 'figaro', '~> 0.7.0'
-  gem 'foreman'
-  gem 'guard-livereload'
-  gem 'spring'
+  gem 'binding_of_caller', '0.7.2'
+  gem 'pry-rails', '0.3.1'
+  gem 'figaro', '0.7.0'
+  gem 'foreman', '0.63.0'
+  gem 'guard-livereload', '1.4.0'
+  gem 'spring', '0.0.10'
 end
 
 group :test do
   gem 'rspec-rails', '2.14.0'
   gem 'capybara', '2.1.0'
-  gem 'guard-rspec'
-  gem 'terminal-notifier-guard'
-  gem 'coveralls', :require => false
+  gem 'guard-rspec' # TODO: dm-redis-adapter
+  gem 'terminal-notifier-guard', '1.5.3'
+  gem 'coveralls', '0.7.0', require: false
 end
