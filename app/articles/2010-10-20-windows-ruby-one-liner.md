@@ -1,6 +1,6 @@
 ---
 layout: article
-title: "WindowsでのRubyワンライナーの注意点"
+title: "<span>Windowsでの</span><span>Rubyワンライナーの注意点</span>"
 date: 2010-10-20
 comments: true
 categories: ruby
