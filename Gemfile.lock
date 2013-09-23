@@ -97,9 +97,6 @@ GEM
       multipart-post (~> 1.2.0)
     fastercsv (1.5.5)
     ffi (1.9.0)
-    figaro (0.7.0)
-      bundler (~> 1.0)
-      rails (>= 3, < 5)
     foreman (0.63.0)
       dotenv (>= 0.7)
       thor (>= 0.13.6)
@@ -301,7 +298,6 @@ DEPENDENCIES
   coveralls (= 0.7.0)
   dm-core (= 1.2.1)
   dm-redis-adapter (= 0.8.3)
-  figaro (= 0.7.0)
   foreman (= 0.63.0)
   guard-livereload (= 1.4.0)
   guard-rspec

@@ -5,8 +5,8 @@ describe ArticlesController do
 
   describe 'GET #index' do
     context 'データベースに記事データが1件も入ってない' do
-      xit 'エラーが発生する'
-      xit '404ページが表示される'
+      xit 'ステータスコード200を返す'
+      xit 'メンテナンスページが表示される'
     end
 
     context 'データベースに記事データが1件入っている' do
@@ -34,13 +34,12 @@ describe ArticlesController do
   describe 'GET #show' do
     context 'データベースに記事データが1件も入ってない' do
       context 'パラメーターの指定がない' do
-        xit 'エラーが発生する'
-        xit '404ページが表示される'
+        xit 'ステータスコード404を返す'
       end
 
       context 'パラメーターの指定がある' do
-        xit 'エラーが発生する'
-        xit '404ページが表示される'
+        xit 'ステータスコード200を返す'
+        xit 'メンテナンスページが表示される'
       end
     end
 
@@ -50,14 +49,12 @@ describe ArticlesController do
       end
 
       context 'パラメーターの指定がない' do
-        xit 'エラーが発生する'
-        xit '404ページが表示される'
+        xit 'ステータスコード404を返す'
       end
 
       context 'パラメーターの指定がある' do
         context '不正な記事URL' do
-          xit 'エラーが発生する'
-          xit '404ページが表示される'
+          xit 'ステータスコード404を返す'
         end
 
         context '正常な記事URL' do
@@ -109,8 +106,9 @@ describe ArticlesController do
 
   describe 'GET #feed' do
     context 'データベースに記事データが1件も入ってない' do
-      it 'エラーが発生する'
-      it 'メンテナンス画面が表示される'
+      xit 'ステータスコード200を返す'
+      xit 'feedテンプレートを描画する'
+      xit '`@recent_articles`に何もアサインされない'
     end
 
     context 'データベースに記事データが1件入っている' do

@@ -37,7 +37,6 @@ end
 group :development do
   gem 'binding_of_caller', '0.7.2'
   gem 'pry-rails', '0.3.2'
-  gem 'figaro', '0.7.0'
   gem 'foreman', '0.63.0'
   gem 'guard-livereload', '1.4.0'
   gem 'spring', '0.0.10'
@@ -46,7 +45,7 @@ end
 group :test do
   gem 'rspec-rails', '2.14.0'
   gem 'capybara', '2.1.0'
-  gem 'guard-rspec' # TODO: dm-redis-adapter
+  gem 'guard-rspec' # TODO: dm-redis-adapter dependency
   gem 'terminal-notifier-guard', '1.5.3'
   gem 'coveralls', '0.7.0', require: false
 end
