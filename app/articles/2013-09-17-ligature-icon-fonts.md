@@ -1,12 +1,4 @@
----
-layout: article
-title: "<span>リガチャなアイコンフォントを</span><span>お手軽に作成する</span>"
-date: 2013-09-17
-comments: true
-categories: fonts
-tags: fonts
-published: true
----
+# <span>リガチャなアイコンフォントを</span><span>お手軽に作成する</span>
 
 [リガチャ](http://ja.wikipedia.org/wiki/%E5%90%88%E5%AD%97)なアイコンフォントを自作しようとするとけっこう大変そうで、そのためのアプリを揃えて操れるようになったり、リガチャの仕様を把握したり、専用のCSSを書いたりする必要がある。そういった正攻法のやり方としては、[このページ](http://kudakurage.hatenadiary.com/entry/20120720/1342749116)がとてもわかりやすかった。また、実際にそのページの方法によって制作された[Ligature Symbols](http://kudakurage.com/ligature_symbols/)も魅力的。
 

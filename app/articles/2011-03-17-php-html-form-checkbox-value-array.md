@@ -1,12 +1,4 @@
----
-layout: article
-title: "<span>PHPでフォームのチェックボックスの値を</span><span>配列で受け取る</span>"
-date: 2011-03-17
-comments: true
-categories: php
-tags: php
-published: true
----
+# <span>PHPでフォームのチェックボックスの値を</span><span>配列で受け取る</span>
 
 フォームのcheckboxで複数選択された状態を、PHP側でどうやって受け取るのか知らなくて調べたら、配列っぽい名前を付ければ良いらしい。
 

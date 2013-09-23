@@ -1,12 +1,4 @@
----
-layout: article
-title: "VirtualBoxの共有フォルダ設定"
-date: 2010-10-27
-comments: true
-categories: virtualbox
-tags: virtualbox
-published: true
----
+# VirtualBoxの共有フォルダ設定
 
 VirtualBoxでホストとゲスト間の共有フォルダを作る手順を毎回忘れるのでメモ。
 

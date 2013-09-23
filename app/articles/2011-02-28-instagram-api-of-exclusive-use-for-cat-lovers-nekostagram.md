@@ -1,12 +1,4 @@
----
-layout: article
-title: "<span>Instagram APIを使って</span><span>ねこ大好き専用の「Nekostagram」を作ってみた</span>"
-date: 2011-02-28
-comments: true
-categories: ruby
-tags: ruby
-published: true
----
+# <span>Instagram APIを使って</span><span>ねこ大好き専用の「Nekostagram」を作ってみた</span>
 
 [![Nekostagram - ねこ大好き専用Instagram](/assets/2011/02/28/instagram-api-of-exclusive-use-for-cat-lovers-nekostagram-01.png)](http://nekostagram.heroku.com/)
 

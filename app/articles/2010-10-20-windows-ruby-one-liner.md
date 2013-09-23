@@ -1,12 +1,4 @@
----
-layout: article
-title: "<span>Windowsでの</span><span>Rubyワンライナーの注意点</span>"
-date: 2010-10-20
-comments: true
-categories: ruby
-tags: ruby
-published: true
----
+# <span>Windowsでの</span><span>Rubyワンライナーの注意点</span>
 
 Windowsのコマンドプロンプトで、連番リネーム用に下のように書いて軽くハマった。
 

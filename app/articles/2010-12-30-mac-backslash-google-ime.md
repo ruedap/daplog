@@ -1,12 +1,4 @@
----
-layout: article
-title: "<span>Macでバックスラッシュを</span><span>Shiftを押さずに入力する</span>"
-date: 2010-12-30
-comments: true
-categories: mac
-tags: mac
-published: true
----
+# <span>Macでバックスラッシュを</span><span>Shiftを押さずに入力する</span>
 
 Vimの`<Leader>`やVimperatorのMigemo検索じゃないときの`/\ほげほげ`とか、Macってバックスラッシュ打ちづらいなーと思ってたけど、これでバックスラッシュのタイプ速度が通常の3倍になりそう。
 

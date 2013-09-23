@@ -1,12 +1,4 @@
----
-layout: article
-title: "Herokuでデータベースの接続情報を調べる"
-date: 2011-02-18
-comments: true
-categories: ruby
-tags: ruby
-published: true
----
+# Herokuでデータベースの接続情報を調べる
 
 Herokuでデータベースの接続情報は、アプリ作成時にHeroku上の環境変数`ENV`に自動で追加されるが、これを消しちゃうと復元不可能になるっぽい。なので、アプリ作成時に情報を取得してバックアップしておくのは良いことかもしれない。
 

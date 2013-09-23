@@ -1,12 +1,4 @@
----
-layout: article
-title: "<span>はてなスターの総数を表示できる</span><span>「はてなスターカウンター」を作ってみた</span>"
-date: 2011-04-21
-comments: true
-categories: web
-tags: web
-published: true
----
+# <span>はてなスターの総数を表示できる</span><span>「はてなスターカウンター」を作ってみた</span>
 
 <ins>4月21日23時頃から3日間ほど、利用している[Heroku(Amazon EC2)の障害](http://itpro.nikkeibp.co.jp/post/NEWS/20110421/359696/)により、はてなスターカウンターのトップページおよびカウンターにアクセスしづらい・できない状況が続いていました。利用してくださっている方にはご迷惑をおかけして申し訳ありません。</ins>
 

@@ -1,12 +1,4 @@
----
-layout: article
-title: "Sinatraでブラウザーのバージョン判定"
-date: 2011-04-22
-comments: true
-categories: ruby
-tags: ruby
-published: true
----
+# Sinatraでブラウザーのバージョン判定
 
 
 Sinatraでブラウザーのバージョンを判定する方法をメモ。最近公開した[はてなスターカウンター](http://hatenastar.heroku.com/)は、ある程度作った後にIE7以下で動かないことが発覚した。あるある。で、仕方ないので当面、IE7以下のブラウザーは対応してませんのメッセージをだそうと思って、そのやり方を調べた。

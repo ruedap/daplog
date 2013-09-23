@@ -1,12 +1,4 @@
----
-layout: article
-title: "<span>Google App EngineのJRubyで</span><span>Sinatraを使ってHello worldする</span>"
-date: 2011-01-24
-comments: true
-categories: ruby
-tags: ruby
-published: true
----
+# <span>Google App EngineのJRubyで</span><span>Sinatraを使ってHello worldする</span>
 
 Google App EngineのJRubyでSinatraを使って、Hello worldと表示するだけの準備～デプロイまでの最低限の流れをメモった。それでも結構長い工程になった。最終的にはTwitter Botとかを作りたいんだけど、けっこう難しそうだなあ。
 

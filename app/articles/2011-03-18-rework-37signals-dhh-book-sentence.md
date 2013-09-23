@@ -1,12 +1,4 @@
----
-layout: article
-title: "<span>「小さなチーム、大きな仕事: </span><span>37シグナルズ成功の法則」を読み終えて</span>"
-date: 2011-03-18
-comments: true
-categories: book
-tags: book
-published: true
----
+# <span>「小さなチーム、大きな仕事: </span><span>37シグナルズ成功の法則」を読み終えて</span>
 
 他の人がさんざん褒めているので自分が改めて言う必要は無いのだけど、これは素晴らしい良書。何度も読み返したい本。さすがDHH、さすが37signals。さすがRails。本書の中でRailsについてはほとんど触れられていないけど、この本に書かれている思想や行動によって作られたんだなぁと思えば納得がいく。
 

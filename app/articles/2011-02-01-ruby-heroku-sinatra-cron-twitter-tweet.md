@@ -1,12 +1,4 @@
----
-layout: article
-title: "<span>Herokuのcronを使って</span><span>自動でTwitterにつぶやく</span>"
-date: 2011-02-01
-comments: true
-categories: ruby
-tags: ruby
-published: true
----
+# <span>Herokuのcronを使って</span><span>自動でTwitterにつぶやく</span>
 
 [前回は手動でTwitterにつぶやく処理を書いた](/2011/01/31/ruby-heroku-sinatra-twitter-tweet)けど、今回はcronを使って自動でつぶやくようにする。これでやっとTwitter Botらしくなる。Herokuのcronは、無料で使えるのは1日1回発動のみ。月3ドル払うと、1時間1回発動を使えるようになるみたい。
 

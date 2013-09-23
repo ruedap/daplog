@@ -1,12 +1,4 @@
----
-layout: article
-title: "<span>Vimperator 3のヒントモードで</span><span>アルファベットを使う</span>"
-date: 2011-03-27
-comments: true
-categories: vimperator
-tags: vimperator
-published: true
----
+# <span>Vimperator 3のヒントモードで</span><span>アルファベットを使う</span>
 
 Vimperator 2系では、[char-hints-mod2.js](http://d.hatena.ne.jp/hogelog/20081219/p1)プラグインにお世話になっていた「ヒントモードでのアルファベット指定」が、Vimperator 3ではデフォルトのオプションで出来るようになったみたい。初期設定の数字指定はやっぱり使いづらかったのでアルファベットに変えた。その時に、指定した文字の*1文字目が無視される*挙動があったのと、*表示はアルファベットの大文字*にしたかったので、それぞれ解決してみた。
 

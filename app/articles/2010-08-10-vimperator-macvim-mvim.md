@@ -1,12 +1,4 @@
----
-layout: article
-title: "<span>VimperatorでMacVimを</span><span>set editorするためにmvimを導入</span>"
-date: 2010-08-10
-comments: true
-categories: vimperator
-tags: vimperator
-published: true
----
+# <span>VimperatorでMacVimを</span><span>set editorするためにmvimを導入</span>
 
 テキストエリアなどで<kbd>ctrl+i</kbd>するとMacVimで編集できるように。
 

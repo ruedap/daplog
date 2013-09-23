@@ -1,12 +1,4 @@
----
-layout: article
-title: "<span>SinatraからDataMapperを使う(3)</span><span> バリデーション</span>"
-date: 2011-02-14
-comments: true
-categories: ruby
-tags: ruby
-published: true
----
+# <span>SinatraからDataMapperを使う(3)</span><span> バリデーション</span>
 
 [前回の記事](/2011/02/13/ruby-sinatra-datamapper-2-migrate-model)では、モデルとマイグレーションのコードを別ファイルに分離した。今回は、レコードの追加を行うときに、そのデータが正しいか検証（バリデーション）するコードを追加してみる。
 

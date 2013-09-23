@@ -1,12 +1,4 @@
----
-layout: article
-title: "HerokuでSinatraを使ってHello worldする"
-date: 2011-01-28
-comments: true
-categories: ruby
-tags: ruby
-published: true
----
+# HerokuでSinatraを使ってHello worldする
 
 [Google App EngineのJRubyでTwitter Botを作る](/2011/01/24/google-app-engine-jruby-sinatra-hello-world)つもりだったんだけど、[Twitterライブラリ関連でうまくできなかった](/2011/01/27/ruby-goole-app-engine-jruby-sinatra-twitter-rubytter)ので、環境を変えてHerokuでやってみることにした。
 

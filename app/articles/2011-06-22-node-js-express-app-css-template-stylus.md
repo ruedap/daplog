@@ -1,12 +1,4 @@
----
-layout: article
-title: "<span>Node.jsアプリで</span><span>CSSテンプレートにStylusを使う</span>"
-date: 2011-06-22
-comments: true
-categories: node.js
-tags: node.js
-published: true
----
+# <span>Node.jsアプリで</span><span>CSSテンプレートにStylusを使う</span>
 
 [前回](/2011/06/21/node-js-express-app-coffee-script)のつづき。Node.js(Express)で使えるSassは、1つ前の旧型のSassシンタックスで、現在最新のバージョン3形式での記述が出来なかったという話。これを改善する情報をいろいろ探し回った末、[Stylus](http://learnboost.github.com/stylus/)という新しいCSSテンプレートに出会ったぁ（ウルルン風に）
 

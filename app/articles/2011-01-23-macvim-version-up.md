@@ -1,12 +1,4 @@
----
-layout: article
-title: "<span>MacVimを7.2から7.3に</span><span>バージョンアップする</span>"
-date: 2011-01-23
-comments: true
-categories: vim
-tags: vim
-published: true
----
+# <span>MacVimを7.2から7.3に</span><span>バージョンアップする</span>
 
 MacVimを7.3にバージョンアップしてみた。特に問題もなくあっさり移行できたっぽい。
 

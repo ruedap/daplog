@@ -1,12 +1,4 @@
----
-layout: article
-title: "<span>Vimでref.vimを使って</span><span>Rubyのリファレンスをただちに検索する</span>"
-date: 2011-04-26
-comments: true
-categories: vim
-tags: vim
-published: true
----
+# <span>Vimでref.vimを使って</span><span>Rubyのリファレンスをただちに検索する</span>
 
 [![](/assets/2011/04/26/vim-ref-plugin-ruby-reference-search-tool-refe2-01.png)](/assets/2011/04/26/vim-ref-plugin-ruby-reference-search-tool-refe2-01.png)
 

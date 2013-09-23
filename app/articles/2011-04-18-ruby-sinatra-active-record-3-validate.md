@@ -1,12 +1,4 @@
----
-layout: article
-title: "<span>SinatraからActiveRecord 3を使う(3)</span><span> バリデーション</span>"
-date: 2011-04-18
-comments: true
-categories: ruby
-tags: ruby
-published: true
----
+# <span>SinatraからActiveRecord 3を使う(3)</span><span> バリデーション</span>
 
 [前回のCRUD操作](/2011/04/17/ruby-sinatra-active-record-3-crud)に引き続き、今回はSinatraからActiveRecord 3を使った際の入力した値のバリデーション（検証）について調べたのでメモ。
 

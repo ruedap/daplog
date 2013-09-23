@@ -1,12 +1,4 @@
----
-layout: article
-title: "<span>SinatraからDataMapperを使う(1)</span><span> 動作チェック用のコード</span>"
-date: 2011-02-12
-comments: true
-categories: ruby
-tags: ruby
-published: true
----
+# <span>SinatraからDataMapperを使う(1)</span><span> 動作チェック用のコード</span>
 
 [Herokuで作った名言Twitter Bot](/2011/02/09/ruby-heroku-twitter-bot)で、名言を投稿するロジックがただの順番（iPodで言うところのリピート再生的なもの）なので、これをシャッフル再生的なものに変えたい。ランダムではなくシャッフル、という点が重要。1度発言した名言は、全名言が発言し終わるまで出てこない仕様にしたい。`rand`で生成してその都度乱数で選ぶと、確率的には同じものが連続してしまう可能性が十分あるので、ランダムはこの場合適さない。
 

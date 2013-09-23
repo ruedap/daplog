@@ -1,12 +1,4 @@
----
-layout: article
-title: "<span>Vimで正規表現をRubyっぽく書ける</span><span>eregex.vimプラグインを使う</span>"
-date: 2011-02-02
-comments: true
-categories: vim
-tags: vim
-published: true
----
+# <span>Vimで正規表現をRubyっぽく書ける</span><span>eregex.vimプラグインを使う</span>
 
 Vimデフォルトの正規表現はエスケープしまくらないといけないけど、それを軽減してRubyっぽい正規表現の書き方をできるようにしてくれるプラグイン。
 

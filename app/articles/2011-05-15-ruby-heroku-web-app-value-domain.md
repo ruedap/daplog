@@ -1,12 +1,4 @@
----
-layout: article
-title: "<span>Herokuアプリに独自ドメインを割り当てる</span><span>（バリュードメインの場合）</span>"
-date: 2011-05-15
-comments: true
-categories: ruby
-tags: ruby
-published: true
----
+# <span>Herokuアプリに独自ドメインを割り当てる</span><span>（バリュードメインの場合）</span>
 
 Herokuで作ったWebアプリに、*自分で取得した独自ドメインを割り当てる方法*について調べた。無料で可能。今回は[バリュードメイン](/2011/05/16/ruby-heroku-web-app-muumuu-domain)。
 

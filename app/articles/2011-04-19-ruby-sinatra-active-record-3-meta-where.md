@@ -1,12 +1,4 @@
----
-layout: article
-title: "<span>SinatraからActiveRecord 3を使う(4)</span><span> 比較演算が簡単になるMetaWhere</span>"
-date: 2011-04-19
-comments: true
-categories: ruby
-tags: ruby
-published: true
----
+# <span>SinatraからActiveRecord 3を使う(4)</span><span> 比較演算が簡単になるMetaWhere</span>
 
 [前回のバリデーション](/2011/04/18/ruby-sinatra-active-record-3-validate)に引き続き、今回はActiveRecord 3を使った際の`where`メソッド内での比較演算が簡単になるgemの[MetaWhere](http://metautonomo.us/projects/metawhere/)について調べたのでメモ。ぶっちゃけ今回はSinatraはあんまり関係なくて、ActiveRecord 3の使い方が便利になる話。
 

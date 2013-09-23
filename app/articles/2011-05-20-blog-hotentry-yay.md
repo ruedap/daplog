@@ -1,12 +1,4 @@
----
-layout: article
-title: "<span>ブログを134日連続更新して</span><span>1つの記事がホッテントリに入るまで</span>"
-date: 2011-05-20
-comments: true
-categories: blog
-tags: blog
-published: true
----
+# <span>ブログを134日連続更新して</span><span>1つの記事がホッテントリに入るまで</span>
 
 [昨日の記事](/2011/05/19/webservice-specification-sheet-evernote-memo)が、ありがたいことに念願のホッテントリ入りを果たし、2011年の個人的な目標の1つを達成することができた。ブクマってくれた人には心より感謝。これをひとつの区切りとする意味もあって、今日はこれまでの自分のブログ記事を振り返りつつ、ホッテントリ入りを狙って失敗した記事の紹介や、今後のブログ更新について書いてみたいと思う。
 

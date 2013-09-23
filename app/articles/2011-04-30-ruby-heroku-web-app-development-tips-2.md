@@ -1,12 +1,4 @@
----
-layout: article
-title: "<span>HerokuでWebアプリ開発を始めるなら</span><span>知っておきたいこと(2) アドオン</span>"
-date: 2011-04-30
-comments: true
-categories: ruby
-tags: ruby
-published: true
----
+# <span>HerokuでWebアプリ開発を始めるなら</span><span>知っておきたいこと(2) アドオン</span>
 
 「HerokuでWebアプリ開発を始めるなら知っておきたいこと」シリーズの第2回では、基本スペックのHerokuプラットフォームに機能を追加できる「アドオン」について書きます。このシリーズのまとめページは[こちら](/2011/05/09/ruby-heroku-web-app-development-tips-matome)。
 

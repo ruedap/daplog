@@ -1,12 +1,4 @@
----
-layout: article
-title: "<span>ブログ駆動開発のすすめ</span><span> ～連続更新100日目を迎えて～</span>"
-date: 2011-04-15
-comments: true
-categories: web
-tags: web
-published: true
----
+# <span>ブログ駆動開発のすすめ</span><span> ～連続更新100日目を迎えて～</span>
 
 **2011年は本気出す** そう思って（毎年思ってるけど）できるだけ多くアウトプットすることを目的に、今年のはじめから毎日ブログを書くことを決めて、いちおう三日坊主にはならずに今日で連続更新100日目を迎えた。
 

@@ -1,12 +1,4 @@
----
-layout: article
-title: "VimでGrepと一括置換"
-date: 2010-11-30
-comments: true
-categories: vim
-tags: vim
-published: true
----
+# VimでGrepと一括置換
 
 VimでGrepと一括置換するコマンドをすぐ忘れる。
 

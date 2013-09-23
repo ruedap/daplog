@@ -1,12 +1,4 @@
----
-layout: article
-title: "<span>EXE化したFlashでフルスクリーン時に</span><span>外部ビデオを拡大しない</span>"
-date: 2011-03-16
-comments: true
-categories: as3
-tags: as3
-published: true
----
+# <span>EXE化したFlashでフルスクリーン時に</span><span>外部ビデオを拡大しない</span>
 
 記事タイトル下手すぎわろた。えーっと、Flashでスタンドアローンな`.exe`を作って、なおかつ、それをフルスクリーンで再生するときに、デフォルトだとフルスクリーン時の画面サイズにムービーは自動で拡大される。それをさせずに、原寸で表示させたかった時に、Flashムービー部分は簡単にできたんだけど、[FLVPlayback](http://livedocs.adobe.com/flash/9.0_jp/ActionScriptLangRefV3/fl/video/FLVPlayback.html)を使った外部ビデオファイルを再生するシーンでは、うまく画面拡大を止められなかった。という話。
 

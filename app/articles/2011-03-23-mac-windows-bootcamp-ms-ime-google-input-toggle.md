@@ -1,12 +1,4 @@
----
-layout: article
-title: "<span>WindowsのMS-IMEやGoogle日本語入力で</span><span>英数／かなキーを使ってIMEの状態を切り替える</span>"
-date: 2011-03-23
-comments: true
-categories: mac
-tags: mac
-published: true
----
+# <span>WindowsのMS-IMEやGoogle日本語入力で</span><span>英数／かなキーを使ってIMEの状態を切り替える</span>
 
 Macの英数キーでIMEをOFF、かなキーでIMEをONに慣れてしまうと、WindowsでのAlt+半角キー（または半角キーのみ）でIMEのON/OFF状態をトグルするのはとても非効率だと感じるようになる。で、Boot Campや仮想マシン上のWindowsを触ったときに、英数キーを押すとカタカナとかになってイラッとする。これらの仮想環境のWindows上でも英数キーを押せばIMEがOFFになるように変更する方法を調べたので備忘録。使っているキーボードは、[Apple Wireless Keyboard (JIS) MC184J/A](http://store.apple.com/jp/product/MC184J/A)なので、Windows用キーボードだとキーの割当が違うかもしれない。Apple Wireless Keyboardの場合は、なぜか無変換キーを修正・割当することで変更できた。
 

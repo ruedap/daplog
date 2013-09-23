@@ -1,12 +1,4 @@
----
-layout: article
-title: "<span>VimperatorがTwitterクライアントになる</span><span>Twittperatorプラグインを使う</span>"
-date: 2011-01-22
-comments: true
-categories: vimperator
-tags: vimperator
-published: true
----
+# <span>VimperatorがTwitterクライアントになる</span><span>Twittperatorプラグインを使う</span>
 
 [世の中を変えるにはTwitterをやってちゃダメ](http://el.jibun.atmarkit.co.jp/rails/2011/01/twitter-c545.html)っぽいけど、ぼくはTwitterがけっこう好きなのでVimperatorからでもツイートできるプラグイン[Twittperator](http://vimperator.g.hatena.ne.jp/teramako/20100702/1278104239)を使ってみる。
 

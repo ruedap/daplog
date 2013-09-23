@@ -1,12 +1,4 @@
----
-layout: article
-title: "<span>Homebrewをインストールして</span><span>MacPortsをアンインストールする</span>"
-date: 2011-02-17
-comments: true
-categories: mac
-tags: mac
-published: true
----
+# <span>Homebrewをインストールして</span><span>MacPortsをアンインストールする</span>
 
 ちょっと前から時々[Homebrew](http://mxcl.github.com/homebrew/)の名前を見かけていて、MacPortsより速くインストールできるとか、Ruby製だとかで気になってた。ので、HomebrewをインストールしてMacPortsをアンインストールしてみた。
 

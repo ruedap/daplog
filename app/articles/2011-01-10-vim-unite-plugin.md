@@ -1,12 +1,4 @@
----
-layout: article
-title: "<span>Vimでファイラー兼ランチャーな</span><span>unite.vimプラグインを使う</span>"
-date: 2011-01-10
-comments: true
-categories: vim
-tags: vim
-published: true
----
+# <span>Vimでファイラー兼ランチャーな</span><span>unite.vimプラグインを使う</span>
 
 ちょっと前から名前は見かけていたんだけど、何をするプラグインなのかよく分からなくて見送っていた。[Twitterでもつぶやいた](http://twitter.com/#!/ruedap/status/23993031476645888)けど、もっと早く導入しておけば良かったと、ちょっと触ってみただけで思った。
 

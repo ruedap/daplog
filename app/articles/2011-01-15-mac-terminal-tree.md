@@ -1,12 +1,4 @@
----
-layout: article
-title: "<span>ターミナルでディレクトリやファイルの構造を</span><span>ツリー表示する</span>"
-date: 2011-01-15
-comments: true
-categories: mac
-tags: mac
-published: true
----
+# <span>ターミナルでディレクトリやファイルの構造を</span><span>ツリー表示する</span>
 
 そのまんまの名前で`tree`コマンド。表示したいカレントディレクトリでコマンドを打つとこんな感じに表示してくれる。
 

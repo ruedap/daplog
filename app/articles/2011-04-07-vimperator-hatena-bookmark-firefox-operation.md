@@ -1,12 +1,4 @@
----
-layout: article
-title: "<span>はてなブックマークFirefox拡張を</span><span>Vimperatorで操作する</span>"
-date: 2011-04-07
-comments: true
-categories: vimperator
-tags: vimperator
-published: true
----
+# <span>はてなブックマークFirefox拡張を</span><span>Vimperatorで操作する</span>
 
 [はてなブックマークFirefox拡張](http://b.hatena.ne.jp/guide/firefox_addon)にはデフォルトで[Vimperatorから操作するためのプラグイン](https://github.com/hatena/hatena-bookmark-xul/wiki/Vimperator-%E3%81%A7%E3%81%AF%E3%81%A6%E3%81%AA%E3%83%96%E3%83%83%E3%82%AF%E3%83%9E%E3%83%BC%E3%82%AF%E6%8B%A1%E5%BC%B5%E3%82%92%E4%BD%BF%E3%81%86)が同梱されていることを最近知った。なんてこった…今まではてブコメント見たりする時マウスで操作してた！ というわけで、その同梱プラグインを利用して、はてなブックマークFirefox拡張をキーボードから操作できるようにする。利用している環境はFirefox 4とVimperator 3の組み合わせ。
 

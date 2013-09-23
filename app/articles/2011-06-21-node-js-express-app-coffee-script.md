@@ -1,12 +1,4 @@
----
-layout: article
-title: "Node.jsアプリをCoffeeScriptで記述する"
-date: 2011-06-21
-comments: true
-categories: node.js
-tags: node.js
-published: true
----
+# Node.jsアプリをCoffeeScriptで記述する
 
 [Node.jsでのHello world](/2011/06/19/heroku-node-js-express-hello-world)を済ませて、[expressコマンドでアプリの雛形を自動生成](/2011/06/20/node-js-express-app-generate)できるようになったので、自分がNode.jsに興味を持った当初の目的である以下について実行してみる。 <i>普段自分がRubyで使っているSinatra+Slim+Sassと似たような開発環境を、Node.jsでも*Express(CoffeeScript)+Jade+Sass*を使えば実現できるかも？</i>
 

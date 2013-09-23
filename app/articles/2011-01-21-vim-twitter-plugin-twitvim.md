@@ -1,12 +1,4 @@
----
-layout: article
-title: "<span>VimがTwitterクライアントになる</span><span>TwitVimプラグインを使う</span>"
-date: 2011-01-21
-comments: true
-categories: vim
-tags: vim
-published: true
----
+# <span>VimがTwitterクライアントになる</span><span>TwitVimプラグインを使う</span>
 
 [世の中を変えるにはTwitterをやってちゃダメ](http://el.jibun.atmarkit.co.jp/rails/2011/01/twitter-c545.html)っぽいけど、ぼくはTwitterがけっこう好きなのでVimからでもツイートできるようにするためのプラグイン[TwitVim](http://www.vim.org/scripts/script.php?script_id=2204)を使ってみる。
 

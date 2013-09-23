@@ -1,12 +1,4 @@
----
-layout: article
-title: "<span>Vimperatorのfで</span><span>Migemo絞り込み</span>"
-date: 2010-08-04
-comments: true
-categories: vimperator
-tags: vimperator
-published: true
----
+# <span>Vimperatorのfで</span><span>Migemo絞り込み</span>
 
 - [XUL/Migemo](https://addons.mozilla.org/ja/firefox/addon/5239) の導入
 - [migemo\_hint.js](http://coderepos.org/share/browser/lang/javascript/vimperator-plugins/trunk/migemo_hint.js) の導入

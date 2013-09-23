@@ -1,12 +1,4 @@
----
-layout: article
-title: "<span>RubyのRMagickで</span><span>縦横比固定でリサイズしたり切り抜いたり</span>"
-date: 2011-03-22
-comments: true
-categories: ruby
-tags: ruby
-published: true
----
+# <span>RubyのRMagickで</span><span>縦横比固定でリサイズしたり切り抜いたり</span>
 
 今回も[前回](/2011/03/21/ruby-rmagick-imagemagick-resize-scale-thumbnail-sample)に引き続き、[この記事](http://gihyo.jp/dev/serial/01/ruby/0026?page=2)を参考にRMagickでリサイズや切り抜きをしてみる。
 

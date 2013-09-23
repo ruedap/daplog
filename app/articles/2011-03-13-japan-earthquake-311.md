@@ -1,12 +1,4 @@
----
-layout: article
-title: "<span>東北地方太平洋沖地震の</span><span>翌々日に見かけたor自分のツイート</span>"
-date: 2011-03-13
-comments: true
-categories: web
-tags: web
-published: true
----
+# <span>東北地方太平洋沖地震の</span><span>翌々日に見かけたor自分のツイート</span>
 
 [一昨日](/2011/03/11/japan-earthquake-311)、[昨日](/2011/03/12/japan-earthquake-311)に引き続き、Twitterの自分のタイムラインまとめ。
 <!-- READMORE -->

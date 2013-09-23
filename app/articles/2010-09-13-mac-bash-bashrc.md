@@ -1,12 +1,4 @@
----
-layout: article
-title: "<span>ターミナル起動時に</span><span>.bashrcを読み込むようにする</span>"
-date: 2010-09-13
-comments: true
-categories: mac
-tags: mac
-published: true
----
+# <span>ターミナル起動時に</span><span>.bashrcを読み込むようにする</span>
 
 Mac OS Xのデフォルトでは、HOMEに`.bashrc`を作成してもターミナル起動時に自動で読み込むようにはなっていないようなので、自動で読み込むように`.bash_profile`に記述すると良い模様。
 

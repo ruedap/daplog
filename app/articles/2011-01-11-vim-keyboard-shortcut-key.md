@@ -1,12 +1,4 @@
----
-layout: article
-title: "<span>Vimで現在割り当てられている</span><span>ショートカットキーの一覧を見る</span>"
-date: 2011-01-11
-comments: true
-categories: vim
-tags: vim
-published: true
----
+# <span>Vimで現在割り当てられている</span><span>ショートカットキーの一覧を見る</span>
 
 Vimでどのキーに既にショートカットキーが割り当てられていて、どのキーが空いてるのか、をどうやって調べるんだろうと疑問に思ってた。
 [昨日の記事](/2011/01/10/vim-unite-plugin)で、「Vimに割り当てられてるショートカットキーを調べる方法ってあるの？」と聞いてみたところ、[unite.vimの設定を参考](http://blog.remora.cx/2010/12/vim-ref-with-unite.html)にさせてもらった[delphinus35](http://blog.remora.cx/)さんに教えてもらえた。ので自分の備忘録と、同じ疑問を持ってる人がいるかも知れないのでエントリー化しておく。

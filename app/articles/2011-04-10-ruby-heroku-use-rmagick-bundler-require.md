@@ -1,12 +1,4 @@
----
-layout: article
-title: "<span>HerokuでRMagickを使おうとして</span><span>requireでハマった</span>"
-date: 2011-04-10
-comments: true
-categories: ruby
-tags: ruby
-published: true
----
+# <span>HerokuでRMagickを使おうとして</span><span>requireでハマった</span>
 
 HerokuでRMagickを使おうとしてハマった。結論を先に書くと、`require`するときは小文字の`rmagick`じゃダメで、ちゃんとキャピタライズされた`RMagick`じゃないといけなかったみたい。MacとWindowsでローカルで使ってたときは小文字で普通に使えてたので、原因に気づくまでちょっと時間が掛かった。あと、Bundlerで`Bundler.require`するときも、そのままでは同じところでハマるので注意が必要。
 

@@ -1,12 +1,4 @@
----
-layout: article
-title: "<span>RVMでRuby 1.8.7を</span><span>p302からp330にバージョンアップする</span>"
-date: 2011-02-03
-comments: true
-categories: ruby
-tags: ruby
-published: true
----
+# <span>RVMでRuby 1.8.7を</span><span>p302からp330にバージョンアップする</span>
 
 [RVMに脆弱性が発見](http://japan.cnet.com/news/business/20425220/)されたみたいなので、古いバージョンの場合はRVMをうｐする
 

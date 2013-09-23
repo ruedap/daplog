@@ -1,12 +1,4 @@
----
-layout: article
-title: "MacにPHPUnitをインストールする"
-date: 2010-12-28
-comments: true
-categories: php
-tags: php
-published: true
----
+# MacにPHPUnitをインストールする
 
 RSpecっぽいものを探したけど、良さそうなのがみつからなかったので、とりあえず一番メジャーそうなPHPUnitをインストールする。
 

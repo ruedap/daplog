@@ -1,12 +1,4 @@
----
-layout: article
-title: "<span>HerokuでWebアプリ開発を始めるなら</span><span>知っておきたいこと(9) Heroku以外の選択肢</span>"
-date: 2011-05-07
-comments: true
-categories: ruby
-tags: ruby
-published: true
----
+# <span>HerokuでWebアプリ開発を始めるなら</span><span>知っておきたいこと(9) Heroku以外の選択肢</span>
 
 「HerokuでWebアプリ開発を始めるなら知っておきたいこと」シリーズの第9回では、Herokuはとても便利だけど依存しすぎてしまうとちょっと危険だよ、という実体験について書きます。このシリーズのまとめページは[こちら](/2011/05/09/ruby-heroku-web-app-development-tips-matome)。
 

@@ -1,12 +1,4 @@
----
-layout: article
-title: "<span>NekostagramとInustagramで</span><span>個々の写真にツイートボタンを付けてみた</span>"
-date: 2011-03-07
-comments: true
-categories: web
-tags: web
-published: true
----
+# <span>NekostagramとInustagramで</span><span>個々の写真にツイートボタンを付けてみた</span>
 
 [Nekostagram](http://nekostagram.heroku.com/)と[Inustagram](http://inustagram.heroku.com/)に、個々の写真にツイートできるボタンを付けてみた。いまさら感が満載だけど、かわいい写真やおもしろい写真を見かけたらツイートしてみてね。
 

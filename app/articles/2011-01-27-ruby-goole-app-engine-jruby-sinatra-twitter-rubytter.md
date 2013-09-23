@@ -1,12 +1,4 @@
----
-layout: article
-title: "<span>Google App EngineのJRubyで</span><span>SinatraからTwitterにつぶやけなかった</span>"
-date: 2011-01-27
-comments: true
-categories: ruby
-tags: ruby
-published: true
----
+# <span>Google App EngineのJRubyで</span><span>SinatraからTwitterにつぶやけなかった</span>
 
 [Google App EngineのJRubyでSinatraを使ってHello world](/2011/01/24/google-app-engine-jruby-sinatra-hello-world)を済ませたので、目的のTwitter Botを作り始めようと、まず手始めに手動でGAE上からTwitterにつぶやいてみようとしたんだけど、結果的にそれすらできなかった。
 

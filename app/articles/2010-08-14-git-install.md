@@ -1,12 +1,4 @@
----
-layout: article
-title: "Gitのインストール"
-date: 2010-08-14
-comments: true
-categories: mac
-tags: mac
-published: true
----
+# Gitのインストール
 
 あとから知ったんだけど、MacPortsからインストールするほうが楽だった。
 

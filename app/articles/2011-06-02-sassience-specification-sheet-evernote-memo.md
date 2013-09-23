@@ -1,12 +1,4 @@
----
-layout: article
-title: "<span>SASSIENCEの仕様書（Evernoteのメモ）を</span><span>公開してみる</span>"
-date: 2011-06-02
-comments: true
-categories: development
-tags: development
-published: true
----
+# <span>SASSIENCEの仕様書（Evernoteのメモ）を</span><span>公開してみる</span>
 
 先月書いた以下の仕様書公開記事が好評だったので、先週リリースしたCSSのインデントを綺麗にするサービス[SASSIENCE](http://sassience.com/)の仕様書を公開してみる。
 

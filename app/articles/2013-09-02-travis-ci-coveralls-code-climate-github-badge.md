@@ -1,12 +1,4 @@
----
-layout: article
-title: "<span>Travis CIとCoverallsとCode Climateを使って</span><span>GitHubリポジトリにバッジを付ける</span>"
-date: 2013-09-02
-comments: true
-categories: ruby
-tags: ruby
-published: true
----
+# <span>Travis CIとCoverallsとCode Climateを使って</span><span>GitHubリポジトリにバッジを付ける</span>
 
 先月に公開した超ニッチなツール[Font Awesome Workflow for Alfred 2](https://github.com/ruedap/alfred2-font-awesome-workflow)が意外と好評で、そこにオクラホマ州から[これOS X Mavericksで動いとらんぜよ](https://github.com/ruedap/alfred2-font-awesome-workflow/issues/1)とお便りが届いたりして、そいやテスト書いてにゃ〜からレガシーだぎゃ〜えびふりゃ〜、と名古屋県の僕は思った。
 
