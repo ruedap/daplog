@@ -1,12 +1,9 @@
 class ArticlesController < ApplicationController
-  before_action :set_hue
-
   def index
     @articles = Article.index
   end
 
   def show
-    # TODO
     parse_hatena_blog_entry_url(params) if params[:yyyymmdd]
     redirect_hatena_blog_entries_url(params) if params[:entries]
 
@@ -29,10 +26,6 @@ class ArticlesController < ApplicationController
 
   private
 
-  def set_hue
-    @hue = "%03d" % (rand(18) * 20)
-  end
-
   def set_canonical(year, month, day, title)
     @canonical = "#{root_url}#{year}/#{month}/#{day}/#{title}"
   end
@@ -52,7 +45,7 @@ class ArticlesController < ApplicationController
 
     redirect_to("/#{article.url}", status: 301) and return if article
 
-    render file: "#{Rails.root}/public/404.html", status: 404, layout: false,
-      content_type: 'text/html'
+    render(file: "#{Rails.root}/public/404.html", status: 404, layout: false,
+      content_type: 'text/html')
   end
 end
