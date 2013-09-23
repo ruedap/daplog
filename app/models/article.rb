@@ -122,13 +122,16 @@ class Article
   end
 
   def self.parse_article_url(path)
-    md = parse_path(path)
-    "#{md[1]}/#{md[2]}/#{md[3]}/#{md[4]}"
+    build_pathname(path, '/')
   end
 
   def self.parse_article_filename(path)
+    build_pathname(path, '-')
+  end
+
+  def self.build_pathname(path, sep)
     md = parse_path(path)
-    "#{md[1]}-#{md[2]}-#{md[3]}-#{md[4]}"
+    "#{md[1]}#{sep}#{md[2]}#{sep}#{md[3]}#{sep}#{md[4]}"
   end
 
   def self.parse_article_date(path)
