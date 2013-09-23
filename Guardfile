@@ -32,5 +32,8 @@ guard 'rspec', :version => 2, spring: true do
   # Turnip features and steps
   watch(%r{^spec/acceptance/(.+)\.feature$})
   watch(%r{^spec/acceptance/steps/(.+)_steps\.rb$})   { |m| Dir[File.join("**/#{m[1]}.feature")][0] || 'spec/acceptance' }
+
+  # Gemfile.lock
+  watch(%r{^Gemfile\.lock$})                           { "spec" }
 end
 
