@@ -15,7 +15,10 @@ module SassCustomFunctions
   #
   # 文字列をSass::Script::Stringで返します。
   def rails_env
-    Sass::Script::String.new(ENV['RAILS_ENV'])
+    str = ENV['RAILS_ENV']
+    str = 'staging' if ENV['TRAVIS'] == 'true' && \
+      ENV['TRAVIS_BRANCH'] != 'master'
+    Sass::Script::String.new(str)
   end
 end
 
