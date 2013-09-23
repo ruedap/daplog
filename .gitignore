@@ -23,3 +23,6 @@
 
 # Ignore .keep
 .keep
+
+# Ignore a coverage reports.
+/coverage
