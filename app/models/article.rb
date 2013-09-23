@@ -142,9 +142,4 @@ class Article
   def self.parse_path(path)
     /\/(20\d{2})-([01]\d)-([0-3]\d)-(.+)\.md/.match(path)
   end
-
-  def self.redis_set(key, value)
-    redis.set(key, value.to_json)
-    redis.expire(key, 10.seconds) if Rails.env.development?
-  end
 end
