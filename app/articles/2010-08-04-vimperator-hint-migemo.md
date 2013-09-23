@@ -1,6 +1,6 @@
 ---
 layout: article
-title: "VimperatorのfでMigemo絞り込み"
+title: "<span>Vimperatorのfで</span><span>Migemo絞り込み</span>"
 date: 2010-08-04
 comments: true
 categories: vimperator
