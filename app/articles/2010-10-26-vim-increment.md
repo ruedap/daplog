@@ -1,12 +1,4 @@
----
-layout: article
-title: "Vimでゼロパディングのインクリメント"
-date: 2010-10-26
-comments: true
-categories: vim
-tags: vim
-published: true
----
+# Vimでゼロパディングのインクリメント
 
 Vimでゼロパディングされた数値をインクリメント（<kbd>C+a</kbd>）するときに、「001」とかの数値は8進数になるらしく、デフォルトでは「007」の次が「010」になってしまって困った。で、Google先生に聞いたら解決方法があった。
 

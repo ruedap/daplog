@@ -1,12 +1,4 @@
----
-layout: article
-title: "<span>RMagickで使用可能な</span><span>フォント名の一覧を出力する</span>"
-date: 2011-04-11
-comments: true
-categories: ruby
-tags: ruby
-published: true
----
+# <span>RMagickで使用可能な</span><span>フォント名の一覧を出力する</span>
 
 RMagickで使用可能なフォントの一覧を取得して、出力するスクリプトを備忘録。利用する環境でどんなフォントが使えるのか調べるのに使える。
 

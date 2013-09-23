@@ -1,12 +1,4 @@
----
-layout: article
-title: "<span>Rubyでrbファイルをrequireするときは</span><span>ドットを打つと良さそう</span>"
-date: 2011-05-31
-comments: true
-categories: ruby
-tags: ruby
-published: true
----
+# <span>Rubyでrbファイルをrequireするときは</span><span>ドットを打つと良さそう</span>
 
 記事タイトルがヘタなので、何言ってるのか伝わらなさそうだけど…。最近、Ruby 1.8.7で作ったWebアプリをRuby 1.9.2に移行させていて、その過程でつまずいて知ったことについて。Ruby 1.9.2からは、[ロードパスにカレントディレクトリが含まれなくなった](http://www.ruby-lang.org/ja/news/2010/08/18/ruby-1-9-2-is-released/#label-8)ので、それによって起こるエラーを回避するための方法として、*requireするパスにカレントディレクトリを示すドットを打つと良さそう*という話。
 

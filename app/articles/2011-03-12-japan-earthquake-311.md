@@ -1,12 +1,4 @@
----
-layout: article
-title: "<span>東北地方太平洋沖地震の</span><span>翌日に見かけたor自分のツイート</span>"
-date: 2011-03-12
-comments: true
-categories: web
-tags: web
-published: true
----
+# <span>東北地方太平洋沖地震の</span><span>翌日に見かけたor自分のツイート</span>
 
 [昨日は参考・教訓になったもの](/2011/03/11/japan-earthquake-311)をまとめたけど、今日は単に自分のタイムラインをまとめたような感じになった。自分以外のツイートはほとんどがリツイート[^1]したもの。相変わらず参考になるものや、感動させられるものが多い。今日は1日中Twitterを見ていた感じ。
 

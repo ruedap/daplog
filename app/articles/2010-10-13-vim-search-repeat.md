@@ -1,12 +1,4 @@
----
-layout: article
-title: "Vimでfやtを使った検索を繰り返す"
-date: 2010-10-13
-comments: true
-categories: vim
-tags: vim
-published: true
----
+# Vimでfやtを使った検索を繰り返す
 
 このコマンドをなぜか毎回忘れるので備忘録。<kbd>.</kbd>とよく間違える。
 

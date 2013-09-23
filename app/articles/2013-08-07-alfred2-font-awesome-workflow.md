@@ -1,12 +1,4 @@
----
-layout: article
-title: "<span>Font Awesomeのアイコンフォントを検索できる</span><span>Alfred 2のWorkflowを作ってみた</span>"
-date: 2013-08-07
-comments: true
-categories: ruby
-tags: ruby
-published: true
----
+# <span>Font Awesomeのアイコンフォントを検索できる</span><span>Alfred 2のWorkflowを作ってみた</span>
 
 [ブログの再開](/2013/07/26/reboooot)が2年ぶりだったけど、[作ってみたシリーズ](http://ruedap.com/)も同じく2年ぶり。お久しぶり。さて今回は、ものすっごくニッチなツールだけど、[Font Awesome](http://fontawesome.io/)を使ってる人で[Alfred](http://www.alfredapp.com/)を使ってる人には喜んでもらえる気がする。イコール自分のことなんですけどね。
 

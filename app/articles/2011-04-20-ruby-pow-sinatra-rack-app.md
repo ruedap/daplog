@@ -1,12 +1,4 @@
----
-layout: article
-title: "PowをSinatraアプリで使う"
-date: 2011-04-20
-comments: true
-categories: ruby
-tags: ruby
-published: true
----
+# PowをSinatraアプリで使う
 
 先日37signalsが公開したMac OS X専用の開発環境用Rackサーバー[Pow](http://pow.cx/)について、[この記事](http://d.hatena.ne.jp/marutanm/20110418/p1)の導入解説がわかりやすかったので自分もインストールして使ってみた。自分の場合、主にSinatraを使うので、Sinatraでサンプルを作って複数のアプリを同時に動かしてみた。
 

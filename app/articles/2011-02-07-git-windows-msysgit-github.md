@@ -1,12 +1,4 @@
----
-layout: article
-title: "WindowsでGitするためにmsysGitを使う"
-date: 2011-02-07
-comments: true
-categories: git
-tags: git
-published: true
----
+# WindowsでGitするためにmsysGitを使う
 
 [msysGit](http://code.google.com/p/msysgit/)のアイコンはなんとなく初音ミクに見える。
 

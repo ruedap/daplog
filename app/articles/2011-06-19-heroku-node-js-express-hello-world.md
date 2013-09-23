@@ -1,12 +1,4 @@
----
-layout: article
-title: "<span>HerokuでNode.jsとExpressを使って</span><span>Hello worldする</span>"
-date: 2011-06-19
-comments: true
-categories: node.js
-tags: node.js
-published: true
----
+# <span>HerokuでNode.jsとExpressを使って</span><span>Hello worldする</span>
 
 普段自分は[Heroku+Sinatra+Slim+Sass](/2011/06/09/sassience-ruby-source-code-push-github)でWebアプリを作っているんだけど、Node.jsやCoffeeScriptについてちょっと調べてたら、Herokuを使う前提で、Node.js(Express), Jade, Sassという組み合わせでCoffeeScriptで書けば、前述のSinatraアプリとほぼ同じような感覚で書けそうなことに気づいて、ぐっとNode.jsに興味が沸いた。
 

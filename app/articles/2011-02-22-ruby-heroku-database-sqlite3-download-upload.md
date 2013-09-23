@@ -1,12 +1,4 @@
----
-layout: article
-title: "<span>HerokuでDBのデータを</span><span>ダウンロードしたりアップロードしたり</span>"
-date: 2011-02-22
-comments: true
-categories: ruby
-tags: ruby
-published: true
----
+# <span>HerokuでDBのデータを</span><span>ダウンロードしたりアップロードしたり</span>
 
 Herokuでデータベース上のデータを、主にSQLite3を使用してダウンロードしたりアップロードする手順のメモ。
 

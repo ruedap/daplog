@@ -1,12 +1,4 @@
----
-layout: article
-title: "Macにwgetをインストールする"
-date: 2010-12-29
-comments: true
-categories: mac
-tags: mac
-published: true
----
+# Macにwgetをインストールする
 
 ~~~ sh
 $ curl -O ftp://ftp.gnu.org/pub/gnu/wget/wget-1.9.tar.gz

@@ -1,12 +1,4 @@
----
-layout: article
-title: "<span>CSSのインデントを綺麗にするサービス</span><span>「SASSIENCE」を作ってみた</span>"
-date: 2011-05-26
-comments: true
-categories: sass
-tags: sass
-published: true
----
+# <span>CSSのインデントを綺麗にするサービス</span><span>「SASSIENCE」を作ってみた</span>
 
 [昨日のパロディ記事](/2011/05/25/css-joshiryoku-web-service-sassience)は盛大にスベってしまったので、今日は真面目に[SASSIENCE ～ 世界が嫉妬するCSSへ](http://sassience.com/)の紹介記事を書きたいと思います。
 

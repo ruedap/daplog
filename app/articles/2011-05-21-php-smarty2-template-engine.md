@@ -1,12 +1,4 @@
----
-layout: article
-title: "PHPでSmartyを使う"
-date: 2011-05-21
-comments: true
-categories: php
-tags: php
-published: true
----
+# PHPでSmartyを使う
 
 PHP 5.1.xで[Smarty](http://www.smarty.net/)（テンプレートエンジン）を使う必要が出てきたので、使い方を調べてみた。Smartyの最新版である*バージョン3はPHP 5.2以上が必要*なので、今回は必然的にSmarty 2になった。バージョン2系の最新版であるSmarty 2.6.26を使う。
 

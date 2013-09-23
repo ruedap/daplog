@@ -1,12 +1,4 @@
----
-layout: article
-title: "<span>RubyGemsのバージョンを</span><span>ダウンしたりアップしたり</span>"
-date: 2011-02-21
-comments: true
-categories: ruby
-tags: ruby
-published: true
----
+# <span>RubyGemsのバージョンを</span><span>ダウンしたりアップしたり</span>
 
 ちょっとBundlerがらみでハマったときに「RubyGemsのバージョンが原因かな？」と思ったので、RubyGemsのバージョンを最新版から特定のバージョンに下げる方法と、また元に戻す方法について調べた。
 

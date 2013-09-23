@@ -1,12 +1,4 @@
----
-layout: article
-title: "Sinatraでi18nする"
-date: 2011-03-31
-comments: true
-categories: ruby
-tags: ruby
-published: true
----
+# Sinatraでi18nする
 
 [sinatra-r18n](http://r18n.rubyforge.org/sinatra.html)というgemを使うと、Sinatraアプリを簡単にi18n（国際化）できるようになるので、[Nekostagram](http://nekostagram.heroku.com/)と[Inustagram](http://inustagram.heroku.com/)に英語版のテキストも用意して、ブラウザーの言語設定で日本語or英語に分岐するようにした時の備忘録。ただし、このやり方だと後述するクローラー関連の問題がある。
 

@@ -1,12 +1,4 @@
----
-layout: article
-title: "<span>HerokuでWebアプリ開発を始めるなら</span><span>知っておきたい10のこと</span>"
-date: 2011-05-09
-comments: true
-categories: ruby
-tags: ruby
-published: true
----
+# <span>HerokuでWebアプリ開発を始めるなら</span><span>知っておきたい10のこと</span>
 
 [Heroku](http://www.heroku.com/)というPaaSについて、*これからWebアプリを作ってみたいと思っている人*に向けて、役に立ちそうな情報や入門記事をまとめてみました。
 

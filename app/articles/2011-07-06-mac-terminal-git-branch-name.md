@@ -1,12 +1,4 @@
----
-layout: article
-title: "<span>Macのターミナルで</span><span>Gitのブランチ名を表示する</span>"
-date: 2011-07-06
-comments: true
-categories: git
-tags: git
-published: true
----
+# <span>Macのターミナルで</span><span>Gitのブランチ名を表示する</span>
 
 VimのステータスラインにGitのブランチ名を表示させる、という記事で以下の一文が。
 

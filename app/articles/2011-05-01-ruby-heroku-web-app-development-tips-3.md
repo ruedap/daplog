@@ -1,12 +1,4 @@
----
-layout: article
-title: "<span>HerokuでWebアプリ開発を始めるなら</span><span>知っておきたいこと(3) デプロイが簡単</span>"
-date: 2011-05-01
-comments: true
-categories: ruby
-tags: ruby
-published: true
----
+# <span>HerokuでWebアプリ開発を始めるなら</span><span>知っておきたいこと(3) デプロイが簡単</span>
 
 「HerokuでWebアプリ開発を始めるなら知っておきたいこと」シリーズの第3回では、Webアプリを公開状態にする作業「デプロイ」の簡単さについて書きます。このシリーズのまとめページは[こちら](/2011/05/09/ruby-heroku-web-app-development-tips-matome)。
 

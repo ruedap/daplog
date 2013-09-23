@@ -1,12 +1,4 @@
----
-layout: article
-title: "<span>RubyGemsでgemのインストール時に</span><span>--no-ri --no-rdocをデフォルトにする</span>"
-date: 2011-05-14
-comments: true
-categories: ruby
-tags: ruby
-published: true
----
+# <span>RubyGemsでgemのインストール時に</span><span>--no-ri --no-rdocをデフォルトにする</span>
 
 Rubyでgemをインストールするときに、ドキュメントをインストールしないオプション`--no-ri --no-rdoc`をデフォルトで付けるようにする方法について。毎回手動でオプションを指定してたんだけど、忘れてしまうことが多くて、忘れた場合は実行した後にドキュメントのインストールが始まって気づくことになりウボァとなる。これを忘れるとインストール時間が倍くらいになるので、個人的には常に付けたい。
 

@@ -1,12 +1,4 @@
----
-layout: article
-title: "<span>HerokuでDBのデータを</span><span>バックアップする</span>"
-date: 2011-02-23
-comments: true
-categories: ruby
-tags: ruby
-published: true
----
+# <span>HerokuでDBのデータを</span><span>バックアップする</span>
 
 HerokuアプリのDBをバックアップするには[pgbackups](http://addons.heroku.com/pgbackups)というアドオンを利用する。[昨日書いた方法](/2011/02/22/ruby-heroku-database-sqlite3-download-upload)との主な違いは、今回のはHerokuのサーバー上にバックアップされることと、フォーマットの変換はできないこと、あたりかな。[バックアップ処理を自動化](/2011/02/24/ruby-heroku-database-postgresql-auto-backup-gem-cron)する場合は今回の方法が良いみたい。
 

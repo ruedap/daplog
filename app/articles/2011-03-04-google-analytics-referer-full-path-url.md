@@ -1,12 +1,4 @@
----
-layout: article
-title: "<span>Google Analyticsで参照元サイトのURLを</span><span>フルパスで表示する</span>"
-date: 2011-03-04
-comments: true
-categories: web
-tags: web
-published: true
----
+# <span>Google Analyticsで参照元サイトのURLを</span><span>フルパスで表示する</span>
 
 [Google Analytics](http://www.google.com/intl/ja/analytics/)の左メニューの「トラフィック」→「参照元サイト」で見られるURLはドメイン名をクリックしないとドメイン以下のパスを見られないけど、ユーザー定義なフィルタを作ることでフルパスなURLで表示できるように設定する方法があったのでメモ。
 

@@ -1,12 +1,4 @@
----
-layout: article
-title: "<span>SinatraからDataMapperを使う(5)</span><span> HerokuのPostgreSQLで使う</span>"
-date: 2011-02-16
-comments: true
-categories: ruby
-tags: ruby
-published: true
----
+# <span>SinatraからDataMapperを使う(5)</span><span> HerokuのPostgreSQLで使う</span>
 
 [前回](/2011/02/15/ruby-sinatra-datamapper-4-shuffle-tweet)までで、ローカルのSinatra＋DataMapper＋SQLite3の環境で、シャッフルツイート機能の実装が完了した。今回は、これを実際の運用サーバーであるHeroku上で動作させるためにコードを修正する。Herokuで使えるデフォルトのデータベースはPostgreSQLなので、ここでもPostgreSQLを使う。
 

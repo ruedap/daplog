@@ -17,6 +17,13 @@ describe Article do
   end
 
   describe '.create_article' do
+    context '引数が異常な場合' do
+      it '戻り値にnilが返る' do
+        path = "#{Rails.root}/app/articles/0000-00-00-invalid-filename.md"
+        expect(Article.create_article(path)).to be_nil
+      end
+    end
+
     context '引数が正常な場合' do
       it '戻り値のArtcileオブジェクトに適切なデータが含まれている' do
         uhloop  = Kazetachinu.attrs(:uhloop)
@@ -31,11 +38,65 @@ describe Article do
         expect(article.id).to eq(uhloop.id)
       end
     end
+  end
 
-    context '引数が異常な場合' do
-      it '戻り値にnilが返る' do
-        path = "#{Rails.root}/app/articles/0000-00-00-invalid-filename.md"
-        expect(Article.create_article(path)).to be_nil
+  describe '.create_from_markdown_and_path' do
+    before do
+      @markdown = "# 風立ちぬ\n\nいざ生きめやも"
+      @path = "#{Rails.root}/app/articles/2013-09-24-kazetachinu.md"
+    end
+
+    context 'Markdownデータのタイトル部分が正しくない場合' do
+      it 'Article::TitleIndexParseErrorが発生する' do
+        markdown = "風立ちぬ\n\nいざ生きめやも"
+        expect { Article.create_from_markdown_and_path(markdown, @path) }.to \
+          raise_error(Article::TitleIndexParseError)
+      end
+    end
+
+    context 'Markdownデータのタイトル部分が正しい場合' do
+      it 'タイトルと本文が正常にパースされる' do
+        markdown = "\n\n# 風立ちぬ\n\n\n\nいざ生きめやも\n\n\n"
+        article =  Article.create_from_markdown_and_path(markdown, @path)
+        expect(article.title).to eq('風立ちぬ')
+        expect(article.body).to eq('<p>いざ生きめやも</p>')
+      end
+    end
+
+    context 'Markdownのパス部分が正しくない場合' do
+      it 'Article::DateTimeParseErrorが発生する' do
+        path = "#{Rails.root}/app/articles/2010-07-31-kazetachinu.md"
+        expect { Article.create_from_markdown_and_path(@markdown, path) }.to \
+          raise_error(Article::DateTimeParseError)
+
+        path = "#{Rails.root}/app/articles/2010-07-32-kazetachinu.md"
+        expect { Article.create_from_markdown_and_path(@markdown, path) }.to \
+          raise_error(Article::DateTimeParseError)
+      end
+
+      it 'Article::PathParseErrorが発生する' do
+        path = "#{Rails.root}/app/articles/2010-7-31-kazetachinu.md"
+        expect { Article.create_from_markdown_and_path(@markdown, path) }.to \
+          raise_error(Article::PathParseError)
+
+        path = "#{Rails.root}/app/articles/2010-07-1-kazetachinu.md"
+        expect { Article.create_from_markdown_and_path(@markdown, path) }.to \
+          raise_error(Article::PathParseError)
+
+        path = "#{Rails.root}/app/articles/201-08-01-kazetachinu.md"
+        expect { Article.create_from_markdown_and_path(@markdown, path) }.to \
+          raise_error(Article::PathParseError)
+      end
+    end
+
+    context 'Markdownのパス部分が正しい場合' do
+      it 'urlとfilenameとpublished_atとdateが正常にパースされる' do
+        path = "#{Rails.root}/app/articles/2010-08-01-kazetachinu.md"
+        article =  Article.create_from_markdown_and_path(@markdown, path)
+        expect(article.url).to eq('2010/08/01/kazetachinu')
+        expect(article.filename).to eq('2010-08-01-kazetachinu')
+        expect(article.published_at).to eq(DateTime.new(2010, 8, 1))
+        expect(article.date).to eq('2010.08.01')
       end
     end
   end

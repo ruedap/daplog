@@ -1,12 +1,4 @@
----
-layout: article
-title: "<span>HerokuのSinatraで</span><span>Basic認証を使ってアクセス制限をかける</span>"
-date: 2011-02-19
-comments: true
-categories: ruby
-tags: ruby
-published: true
----
+# <span>HerokuのSinatraで</span><span>Basic認証を使ってアクセス制限をかける</span>
 
 Heroku上にデプロイするSinatraで、Basic認証を使ってアクセス制限をかける方法について調べたのでメモ。特にHerokuに限らない方法だとは思うけど。ここだけの秘密だけど、最初普通のウェブサイトのように`.htaccess`と`.htpasswd`を用意して、Herokuアプリ直下または`public`ディレクトリに入れればいけるんだろうと思って、`heroku console`から `pwd` とか実行してパスを取得して`.htaccess`に`.htpasswd`までのパスを書いて…とか壮大に明後日の方向な手順を踏んでた。
 

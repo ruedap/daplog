@@ -1,12 +1,4 @@
----
-layout: article
-title: "<span>Vimでref.vimを使って</span><span>英辞郎で英単語をただちに検索する</span>"
-date: 2011-04-27
-comments: true
-categories: vim
-tags: vim
-published: true
----
+# <span>Vimでref.vimを使って</span><span>英辞郎で英単語をただちに検索する</span>
 
 昨日、Vimの[ref.vim](/2011/04/26/vim-ref-plugin-ruby-reference-search-tool-refe2)を書いた。今日も同じくref.vimプラグインを使って、英和・和英辞書検索サービスの[英辞郎 on the Web](http://www.alc.co.jp/)を利用して、英単語をただちに検索（和英も可）するための導入手順を書いてみる。といっても、Vim上で使用するテキストブラウザーをインストールできれば、この辞書検索はすぐに使えるようになる。
 

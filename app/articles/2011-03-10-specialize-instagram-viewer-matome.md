@@ -1,12 +1,4 @@
----
-layout: article
-title: "<span>ねこ、カレー、色、美女…つぎは何スタグラム？</span><span> ジャンル特化型Instagramビューアーまとめ</span>"
-date: 2011-03-10
-comments: true
-categories: web
-tags: web
-published: true
----
+# <span>ねこ、カレー、色、美女…つぎは何スタグラム？</span><span> ジャンル特化型Instagramビューアーまとめ</span>
 
 ｶｶッっとまとめてみた。たぶんリリース順に並んでるはず。
 

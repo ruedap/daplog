@@ -1,12 +1,4 @@
----
-layout: article
-title: "<span>冷蔵庫の前面をホワイトボード替わりにして設計した</span><span>Webサービスを今夜リリースします</span>"
-date: 2011-08-07
-comments: true
-categories: development
-tags: development
-published: true
----
+# <span>冷蔵庫の前面をホワイトボード替わりにして設計した</span><span>Webサービスを今夜リリースします</span>
 
 宣伝です。
 前作「[SASSIENCE ～ 世界が嫉妬するCSSへ](http://sassience.com/)」を公開してから2ヶ月以上経ってしまいましたが、やっと新作が出来上がったので今夜（8日0時以降）リリースします。

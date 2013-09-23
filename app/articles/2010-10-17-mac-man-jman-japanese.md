@@ -1,12 +1,4 @@
----
-layout: article
-title: "Macのmanを日本語化"
-date: 2010-10-17
-comments: true
-categories: mac
-tags: mac
-published: true
----
+# Macのmanを日本語化
 
 [ここ](http://www.fan.gr.jp/~sakai/softwares/unix)から*jman*と*manページ集*をそれぞれダウンロードしてインストールするだけ。
 

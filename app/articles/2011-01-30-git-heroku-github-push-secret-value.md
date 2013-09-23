@@ -1,12 +1,4 @@
----
-layout: article
-title: "<span>HerokuとGitHubの両方にプッシュする時の</span><span>秘密にしたい値の扱い</span>"
-date: 2011-01-30
-comments: true
-categories: git
-tags: git
-published: true
----
+# <span>HerokuとGitHubの両方にプッシュする時の</span><span>秘密にしたい値の扱い</span>
 
 HerokuとGitHubの両方にプッシュできるようになったのはいいけど、例えばTwitterのOAuth認証用のトークンとか、何かのAPIを利用するためのAPIキーとか、あるいはもっと大事な何かのパスワードなど、秘密にしておきたい情報はGitHubにプッシュしてしまうと全世界に公開されるので非常にマズい。
 

@@ -1,12 +1,4 @@
----
-layout: article
-title: "Herokuで使用するRubyのバージョンを変更する"
-date: 2011-05-11
-comments: true
-categories: ruby
-tags: ruby
-published: true
----
+# Herokuで使用するRubyのバージョンを変更する
 
 Herokuは、[6月1日からRubyのバージョン1.9.2がデフォルトになる](http://blog.heroku.com/archives/2011/4/28/defaulting-to-ruby-192/)みたいなので、今から1.9.2に慣れる準備をしておこうかなと。現状HerokuでRuby 1.9.2を使うには、herokuコマンドを使って変更する必要がある。
 

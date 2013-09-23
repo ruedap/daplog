@@ -1,12 +1,4 @@
----
-layout: article
-title: "<span>Vimperatorのステータスバーの</span><span>文字が小さいので直す</span>"
-date: 2010-08-12
-comments: true
-categories: vimperator
-tags: vimperator
-published: true
----
+# <span>Vimperatorのステータスバーの</span><span>文字が小さいので直す</span>
 
 コメント欄でid:teramakoさんにアドバイスいただいた方法で調べてみたら、`.vimperatorrc`で設定できたっぽいのでそちらの方法をメモ。
 

@@ -1,12 +1,4 @@
----
-layout: article
-title: "<span>MacでFirefox 4とVimperator 3を</span><span>インストールする</span>"
-date: 2011-04-06
-comments: true
-categories: vimperator
-tags: vimperator
-published: true
----
+# <span>MacでFirefox 4とVimperator 3を</span><span>インストールする</span>
 
 Mac OS Xを再インストールしたので、Firefoxもバージョン4.0で環境を再構築した。また、Vimperatorも3.0にバージョンアップした。`.vimperatorrc`は昨日の[Windowsでの設定](/2011/04/05/windows-firefox4-portable-vimperator3-install)を[Dropboxで共有](/2011/03/01/vim-vimrc-vimperator-dropbox-windows-mac-share)してそのまま同じのを使っているので、3.0にしたことによるエラーなどはすでに回避済み。ほとんどWindowsでの手順と一緒かな。
 

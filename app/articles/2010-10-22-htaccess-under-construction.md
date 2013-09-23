@@ -1,12 +1,4 @@
----
-layout: article
-title: "工事中画面を.htaccessで出す時にハマった"
-date: 2010-10-22
-comments: true
-categories: web
-tags: web
-published: true
----
+# 工事中画面を.htaccessで出す時にハマった
 
 レベルの低いハマりなんだけど、工事中画面に`.htaccess`を使って飛ばすときに、トップディレクトリ以下全体を工事中にしたくてアクセス制限をかけたらハマったのでメモ。
 

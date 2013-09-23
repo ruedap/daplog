@@ -1,12 +1,4 @@
----
-layout: article
-title: "VimでPHPUnitをQuickRunする"
-date: 2011-02-25
-comments: true
-categories: vim
-tags: vim
-published: true
----
+# VimでPHPUnitをQuickRunする
 
 Vim-users.jpの[RSpecをquickrunする記事](http://vim-users.jp/2010/09/hack172/)を参考に、PHPUnit用に書き換えてみる。
 

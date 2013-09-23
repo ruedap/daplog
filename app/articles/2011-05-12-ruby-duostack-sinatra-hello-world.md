@@ -1,12 +1,4 @@
----
-layout: article
-title: "<span>Herokuそっくり！</span><span>DuostackでSinatraを使ってHello worldする</span>"
-date: 2011-05-12
-comments: true
-categories: ruby
-tags: ruby
-published: true
----
+# <span>Herokuそっくり！</span><span>DuostackでSinatraを使ってHello worldする</span>
 
 RubyとNode.jsが使えるPaaSという触れ込みの「[Duostack](http://www.duostack.com/)」をRubyのSinatraで使ってみた。操作体系が驚くほどHerokuにそっくりで、今回の記事は以前Heroku用に書いた[HerokuでSinatraを使ってHello worldする](/2011/01/28/ruby-heroku-sinatra-hello-world)をベースにしていて、この記事の中に出てくる`heroku`コマンドのところを`duostack`コマンドに置き換えるだけでだいたい使えるようになってしまうくらいのレベル。今回の完成品は[こちら](http://duohelloworld.duostack.net/)。ちなみに、DuostackをNode.jsで使うチュートリアル記事は[こちら](http://ukstudio.jp/2011/05/10/duostack_nodejs/)が詳しくてわかりやすかった。
 

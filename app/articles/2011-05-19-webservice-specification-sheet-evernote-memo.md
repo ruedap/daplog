@@ -1,12 +1,4 @@
----
-layout: article
-title: "<span>個人で作ったWebサービスの</span><span>仕様書（Evernoteのメモ）を2つ公開してみる</span>"
-date: 2011-05-19
-comments: true
-categories: development
-tags: development
-published: true
----
+# <span>個人で作ったWebサービスの</span><span>仕様書（Evernoteのメモ）を2つ公開してみる</span>
 
 個人でWebサービスを作る際の考察に関する以下の記事が、とても興味深く面白かった。ここに書いてあることはだいたい同意で、自分も実践したいと思うことばかり。
 

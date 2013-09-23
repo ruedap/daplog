@@ -1,12 +1,4 @@
----
-layout: article
-title: "<span>Herokuのタイムゾーンを</span><span>日本時間に設定する</span>"
-date: 2011-02-10
-comments: true
-categories: ruby
-tags: ruby
-published: true
----
+# <span>Herokuのタイムゾーンを</span><span>日本時間に設定する</span>
 
 Herokuのデフォルトのタイムゾーンは太平洋標準時(PST)なので、それを日本標準時(JST)に設定する。
 

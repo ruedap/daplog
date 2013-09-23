@@ -1,12 +1,4 @@
----
-layout: article
-title: "<span>RubyのRMagickで</span><span>画像をリサイズする</span>"
-date: 2011-03-21
-comments: true
-categories: ruby
-tags: ruby
-published: true
----
+# <span>RubyのRMagickで</span><span>画像をリサイズする</span>
 
 [前回の記事](/2011/03/20/mac-ruby-imagemagick-rmagick-install)でImageMagickとRMagickのインストールができたので、実際にRMagickを使って画像をリサイズしてみた。
 

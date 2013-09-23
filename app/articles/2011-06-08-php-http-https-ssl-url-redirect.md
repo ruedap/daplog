@@ -1,12 +1,4 @@
----
-layout: article
-title: "<span>PHPでHTTPS(SSL)接続じゃなかったら</span><span>HTTPSのURLにリダイレクトする</span>"
-date: 2011-06-08
-comments: true
-categories: php
-tags: php
-published: true
----
+# <span>PHPでHTTPS(SSL)接続じゃなかったら</span><span>HTTPSのURLにリダイレクトする</span>
 
 入力フォームなどのHTTPS(SSL)で接続して欲しいページにHTTPで接続があった場合に、HTTPSにリダイレクトする方法について調べた。PHPはググればそれっぽい日本語情報がすぐ引っかかるのがいいね。それがお作法として正しいかどうかまではわかんないけど…
 

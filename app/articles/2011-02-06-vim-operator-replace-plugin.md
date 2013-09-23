@@ -1,12 +1,4 @@
----
-layout: article
-title: "<span>Vimでヤンクした文字列と対象を簡単に入れ替える</span><span>operator-replaceプラグインを使う</span>"
-date: 2011-02-06
-comments: true
-categories: vim
-tags: vim
-published: true
----
+# <span>Vimでヤンクした文字列と対象を簡単に入れ替える</span><span>operator-replaceプラグインを使う</span>
 
 [参考にした記事](http://vim.g.hatena.ne.jp/yamazakiccs/20090913)でも書かれているけど、このプラグインは文章では説明しづらいけど、使ってみるととても便利だと納得できる系。おすすめ。
 大雑把に言うと、普段3ステップでやっているコピペ作業を、2ステップで出来るようにするプラグイン、という感じ。

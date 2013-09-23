@@ -1,12 +1,4 @@
----
-layout: article
-title: "<span>MacVimでデフォルトの</span><span>vimrcとgvimrcを読み込まない</span>"
-date: 2010-08-11
-comments: true
-categories: vim
-tags: vim
-published: true
----
+# <span>MacVimでデフォルトの</span><span>vimrcとgvimrcを読み込まない</span>
 
 `.vimrc`にほとんどの設定を記述するようにしておくと、優先順位的にデフォルトの`.gvimrc`が邪魔をしたりするので、あらかじめデフォルトの`.vimrc`と`.gvimrc`が読み込まないように設定しておく。
 

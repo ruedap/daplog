@@ -1,12 +1,4 @@
----
-layout: article
-title: "<span>Twittperatorで今見てるページを</span><span>短縮URLに変換してツイートする</span>"
-date: 2011-02-05
-comments: true
-categories: vimperator
-tags: vimperator
-published: true
----
+# <span>Twittperatorで今見てるページを</span><span>短縮URLに変換してツイートする</span>
 
 [以前書いたTwittperatorの記事](/2011/01/22/vimperator-twitter-plugin-twittperator)で、今見ているページのタイトルとURLを付けてツイートするやり方を書いたけど、URLを含めて140文字を超えるとつぶやけなかった（当たり前）。で、URLは短縮URLとかに変換してるわけじゃないので、ちょっと長めのURLのページだとほとんどつぶやけなかったんだけど、今回はそれを改善してみた。
 <!-- READMORE -->

@@ -1,12 +1,4 @@
----
-layout: article
-title: "<span>WindowsでCapsLockにCtrlを割り当てて</span><span>元のCtrlはそのままにする</span>"
-date: 2011-04-25
-comments: true
-categories: windows
-tags: windows
-published: true
----
+# <span>WindowsでCapsLockにCtrlを割り当てて</span><span>元のCtrlはそのままにする</span>
 
 Windowsを再インストールするたびに、毎回ググって調べてる気がするので備忘録。CapsLockと左Ctrlを「入れ替える」ってのは結構出てくるんだけど、タイトルの通り、*CapsLockにだけCtrlを割り当てて、元のCtrlはそのままを維持する*っていうページ（レジストリのコード）を見つけるのに毎回ちょっとだけ苦労するので。
 

@@ -1,12 +1,4 @@
----
-layout: article
-title: "Rails 2のルーティングが行っていること"
-date: 2011-04-02
-comments: true
-categories: rails
-tags: rails
-published: true
----
+# Rails 2のルーティングが行っていること
 
 ほんとはRails 3をやりたいところだけど、日本語での書籍はまだほとんどなく、とりあえずRailsの概念というかお作法を学ぶのなら2も3も大差ないと思って、Rails入門の良書として評判の高い[Head First Rails](http://www.amazon.co.jp/dp/4873114381/ruedap-22)を読んでRails 2を勉強中。
 

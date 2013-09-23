@@ -1,12 +1,4 @@
----
-layout: article
-title: "PHPでゼロパディング"
-date: 2011-01-18
-comments: true
-categories: php
-tags: php
-published: true
----
+# PHPでゼロパディング
 
 他の言語でも一般的なsprintf関数を使う。
 

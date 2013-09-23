@@ -1,12 +1,4 @@
----
-layout: article
-title: "<span>はてなスターカウンターのランキングに</span><span>登録されたブログ名を変更するには</span>"
-date: 2011-04-24
-comments: true
-categories: web
-tags: web
-published: true
----
+# <span>はてなスターカウンターのランキングに</span><span>登録されたブログ名を変更するには</span>
 
 [はてなスターカウンターのランキング](http://hatenastar.heroku.com/#ranking)のブログ名を見ていると*これは昔に登録したブログ名かも？*と思うようなタイトルがチラホラあって、なにより自分のブログタイトルも古いものが表示されたので、その変更方法を調べた。
 

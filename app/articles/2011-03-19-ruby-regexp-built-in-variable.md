@@ -1,12 +1,4 @@
----
-layout: article
-title: "<span>Rubyの正規表現で使える</span><span>組み込み変数</span>"
-date: 2011-03-19
-comments: true
-categories: ruby
-tags: ruby
-published: true
----
+# <span>Rubyの正規表現で使える</span><span>組み込み変数</span>
 
 似たような記号が多くて覚えづらいので書き出してみた。
 

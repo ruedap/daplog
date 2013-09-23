@@ -1,12 +1,4 @@
----
-layout: article
-title: "<span>ターミナルからアプリを起動する</span><span>エイリアスを設定する</span>"
-date: 2011-01-08
-comments: true
-categories: mac
-tags: mac
-published: true
----
+# <span>ターミナルからアプリを起動する</span><span>エイリアスを設定する</span>
 
 ターミナルから、希望のアプリでファイルを開くためのエイリアスを設定しておくと便利、というページを見てなるほどと思ったので真似してみた。
 

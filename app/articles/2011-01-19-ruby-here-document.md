@@ -1,12 +1,4 @@
----
-layout: article
-title: "Rubyのヒアドキュメントは高機能"
-date: 2011-01-19
-comments: true
-categories: ruby
-tags: ruby
-published: true
----
+# Rubyのヒアドキュメントは高機能
 
 YAMLについて調べてて[Rubyのリファレンスマニュアル](http://rurema.clear-code.com/1.8.7/method/YAML/s/load.html)を見たら、かっこいい記述がされててRubyのヒアドキュメントが高機能な事を知った。以下まとめ。
 

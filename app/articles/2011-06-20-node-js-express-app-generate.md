@@ -1,12 +1,4 @@
----
-layout: article
-title: "<span>Node.js(Express)アプリの雛形を</span><span>自動生成する</span>"
-date: 2011-06-20
-comments: true
-categories: node.js
-tags: node.js
-published: true
----
+# <span>Node.js(Express)アプリの雛形を</span><span>自動生成する</span>
 
 [昨日の記事](/2011/06/19/heroku-node-js-express-hello-world)では、Node.jsアプリでHello worldする際に、それに必要なファイル(web.js, package.json, Procfile, .gitignore)を1個ずつ新規作成してたけど、`express`コマンドを使えばその雛形を自動生成できることに後から気づいた。これを使うと、web.js(=app.js)とpackage.jsonの2つは自動生成できる。Sinatra単体には無い機能だね。
 

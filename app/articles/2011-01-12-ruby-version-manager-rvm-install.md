@@ -1,12 +1,4 @@
----
-layout: article
-title: "<span>複数のRuby環境を共存させられる</span><span>RVM(Ruby Version Manager)を使う</span>"
-date: 2011-01-12
-comments: true
-categories: ruby
-tags: ruby
-published: true
----
+# <span>複数のRuby環境を共存させられる</span><span>RVM(Ruby Version Manager)を使う</span>
 
 MacのSnow Leopardにデフォルトで入っているRubyは、irbで日本語を入力できない。
 

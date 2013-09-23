@@ -1,12 +1,4 @@
----
-layout: article
-title: "<span>WindowsでFirefox 4 Portable EditionとVimperator 3を</span><span>インストールする</span>"
-date: 2011-04-05
-comments: true
-categories: vimperator
-tags: vimperator
-published: true
----
+# <span>WindowsでFirefox 4 Portable EditionとVimperator 3を</span><span>インストールする</span>
 
 普段WindowsではFirefoxのPortable Editionを使っていて、それをまるごとDropboxにつっこんである。先日Firefox 4がリリースされたので、自分の環境でもWindowsでは、Firefox 4 Portable Editionを使って環境を再構築した。また、Vimperatorを3.0にバージョンアップしたことで、`.vimperatorrc`の古い設定の影響で起動時にエラーが出るようになったので修正した。その際の備忘録。ちなみにFirefoxはポータブル版でも通常版でもやることはまったく同じで、違いは無い。
 

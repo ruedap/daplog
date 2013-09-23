@@ -1,12 +1,4 @@
----
-layout: article
-title: "<span>HerokuでWebアプリ開発を始めるなら</span><span>知っておきたいこと(10) 参考リンク集</span>"
-date: 2011-05-08
-comments: true
-categories: ruby
-tags: ruby
-published: true
----
+# <span>HerokuでWebアプリ開発を始めるなら</span><span>知っておきたいこと(10) 参考リンク集</span>
 
 「HerokuでWebアプリ開発を始めるなら知っておきたいこと」シリーズの最終回である第10回では、自分がこれまでのHerokuアプリを作成する過程で書いた記事へのリンクと、参考にしたページのリンク集を載せます。
 このシリーズのまとめページは[こちら](/2011/05/09/ruby-heroku-web-app-development-tips-matome)。

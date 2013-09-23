@@ -1,12 +1,4 @@
----
-layout: article
-title: "<span>Herokuアプリで</span><span>ドメイン単位のリダイレクトをするには</span>"
-date: 2011-05-17
-comments: true
-categories: ruby
-tags: ruby
-published: true
----
+# <span>Herokuアプリで</span><span>ドメイン単位のリダイレクトをするには</span>
 
 以前の記事、[Herokuアプリに独自ドメインを割り当てる](/2011/05/15/ruby-heroku-web-app-value-domain)の最後に書いたHerokuでのドメイン単位の転送に関する疑問点2つについて、解決したので備忘録。
 

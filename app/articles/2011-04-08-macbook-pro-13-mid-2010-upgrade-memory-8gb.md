@@ -1,12 +1,4 @@
----
-layout: article
-title: "<span>MacBook Pro (13-inch, Mid 2010)の</span>メモリーを8GBに増設する"
-date: 2011-04-08
-comments: true
-categories: mac
-tags: mac
-published: true
----
+# <span>MacBook Pro (13-inch, Mid 2010)の</span><span>メモリーを8GBに増設する</span>
 
 *MacBook Proパワーアップ計画*の第1弾として、メモリーを標準の4GBから8GBに増設する。ちなみに第2弾ではHDDを、第3弾ではバッテリーをパワーアップさせる予定。自分が使っているMacBook Pro 13インチ (Mid 2010)は発売から約1年。購入したのは、何もカスタムしていない、いわゆる「吊るし」と呼ばれるデフォルトのスペックなので、購入当時から不満ではなかったものの快適でもなかった。
 

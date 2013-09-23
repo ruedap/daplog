@@ -1,12 +1,4 @@
----
-layout: article
-title: "Rubyでベンチマークをとる"
-date: 2011-01-20
-comments: true
-categories: ruby
-tags: ruby
-published: true
----
+# Rubyでベンチマークをとる
 
 CSVで標準のと[FasterCSV](http://fastercsv.rubyforge.org/)を比較したくてベンチマークを取ってみた。Rubyは1.8.7。
 

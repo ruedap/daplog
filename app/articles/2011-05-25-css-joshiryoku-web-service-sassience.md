@@ -1,12 +1,4 @@
----
-layout: article
-title: "<span>モテるCSS女子力を磨くための</span><span>4つの心得と1つのサービス「SASSIENCE」等</span>"
-date: 2011-05-25
-comments: true
-categories: css
-tags: css
-published: true
----
+# <span>モテるCSS女子力を磨くための</span><span>4つの心得と1つのサービス「SASSIENCE」等</span>
 
 こんにちは、[世界の嫉妬マネジメントを専攻しているルエダップ嬢です](http://kirei.biglobe.ne.jp/news/detail/20110426162331_pch19894)。私はHTML5やCSS3の知識もありませんし、30過ぎのおっさんですが、CSS変換に関してはSassがプロフェッショナル。今回は、モテるCSS女子力を磨くための4つの心得と1つのサービス「[SASSIENCE ～ 世界が嫉妬するCSSへ](http://sassience.com/)」を皆さんにお教えしたいと思います。
 

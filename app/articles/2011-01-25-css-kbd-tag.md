@@ -1,12 +1,4 @@
----
-layout: article
-title: "kbdタグを装飾するCSS"
-date: 2011-01-25
-comments: true
-categories: css
-tags: css
-published: true
----
+# kbdタグを装飾するCSS
 
 毎回ブログのテーマを変えるたびに消しちゃうのでメモっとく。
 

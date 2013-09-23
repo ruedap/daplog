@@ -1,12 +1,4 @@
----
-layout: article
-title: "HTTPメソッドのPOSTとPUTの冪等性"
-date: 2011-03-25
-comments: true
-categories: web
-tags: web
-published: true
----
+# HTTPメソッドのPOSTとPUTの冪等性
 
 [昨日の記事](/2011/03/24/http-method-post-put)のはてブコメントにて、POSTとPUTの使い分けには*冪等性が重要*ですよとのアドバイスをいただいた。ので、冪等性について調べてみた。
 

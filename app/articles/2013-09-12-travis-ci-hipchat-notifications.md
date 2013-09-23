@@ -1,12 +1,4 @@
----
-layout: article
-title: "<span>Travis CIのテスト結果を</span><span>HipChatに通知する</span>"
-date: 2013-09-12
-comments: true
-categories: development
-tags: development
-published: true
----
+# <span>Travis CIのテスト結果を</span><span>HipChatに通知する</span>
 
 [前回の記事](/2013/09/02/travis-ci-coveralls-code-climate-github-badge)に関連して、[このリポジトリ](https://github.com/ruedap/alfred2-font-awesome-workflow)で[Travis CI](http://travis-ci.com/)を使って継続的インテグレーションを行うようにしたので、そのテスト結果を[HipChat](https://www.hipchat.com/)にも通知されるようにした。こんな感じ。
 
