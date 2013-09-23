@@ -131,8 +131,9 @@ GEM
     http_parser.rb (0.5.3)
     httpauth (0.2.0)
     i18n (0.6.5)
-    jbuilder (1.2.0)
+    jbuilder (1.5.1)
       activesupport (>= 3.0.0)
+      multi_json (>= 1.2.0)
     jeweler (1.8.7)
       builder
       bundler (~> 1.0)
@@ -304,7 +305,7 @@ DEPENDENCIES
   foreman (= 0.63.0)
   guard-livereload (= 1.4.0)
   guard-rspec
-  jbuilder (= 1.2)
+  jbuilder (= 1.5.1)
   jquery-rails (= 3.0.4)
   kramdown (= 1.2.0)
   neat (= 1.4.0)
