@@ -36,7 +36,7 @@ end
 
 group :development do
   gem 'binding_of_caller', '0.7.2'
-  gem 'pry-rails', '0.3.1'
+  gem 'pry-rails', '0.3.2'
   gem 'figaro', '0.7.0'
   gem 'foreman', '0.63.0'
   gem 'guard-livereload', '1.4.0'
