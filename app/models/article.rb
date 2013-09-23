@@ -58,6 +58,13 @@ class Article
     Article.all(order: [:published_at.desc])
   end
 
+  # Public: ローカルから取得した全記事の西暦部分のみを返します。
+  #
+  # 全記事の西暦部分のみをArrayで返します。
+  def self.glob_article_years
+    Dir.glob(GLOB_PATH).map { |p| /(\d{4})-\d{2}-\d{2}-/.match(p)[1] }.compact
+  end
+
   # Public: 年月日をドット区切りのフォーマットに変換して返します。
   #
   # 日付のStringを返します。
@@ -95,9 +102,9 @@ class Article
   # Private: Markdownファイルの内容を読み込んで全記事のデータを
   # Redisのarticlesキーに保存します。
   #
-  # 戻り値はありません。
+  # 全記事データのArticleオブジェクトを含んだArrayを返します。
   def self.create_articles
-    Dir.glob(GLOB_PATH).each { |p| create_article(p) }
+    Dir.glob(GLOB_PATH).sort.map { |p| create_article(p) }
   end
 
   def self.load_file(path)

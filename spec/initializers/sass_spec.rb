@@ -5,7 +5,7 @@ describe SassCustomFunctions do
 
   describe '#gradient_size' do
     it '記事の総数と西暦の数の総数を取得できる' do
-      articles = Kazetachinu.create_articles(11)
+      articles = Kazetachinu.create_articles
       size = articles.size
       size += articles.map { |a| a.published_at.year }.uniq.size
       expectation = Sass::Script::Number.new(size)

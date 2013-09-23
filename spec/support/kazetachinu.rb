@@ -9,9 +9,10 @@ module Kazetachinu
     self.send("#{symbol}_attrs")
   end
 
-  def self.create_articles(count)
+  def self.create_articles(size = nil)
     Redis.current.flushdb
-    glob_article_paths.first(count).map { |p| Article.create_article(p) }
+    size = glob_article_paths.size unless size
+    glob_article_paths.first(size).map { |p| Article.create_article(p) }
   end
 
   def self.create_article(filename = '2011-08-11-uhloop')
@@ -37,7 +38,7 @@ module Kazetachinu
 
   def self.glob_article_paths
     path = "#{Rails.root}/app/articles/*.md"
-    Dir.glob(path).map { |p| p }
+    Dir.glob(path).sort.map { |p| p }
   end
 
   def self.uhloop
