@@ -1,4 +1,8 @@
 class Article
+  class TitleIndexParseError < StandardError; end
+  class DateTimeParseError < StandardError; end
+  class PathParseError < StandardError; end
+
   include Redis::Objects
   include DataMapper::Resource
 
@@ -23,12 +27,29 @@ class Article
     redis.flushdb
   end
 
-  # Public: Markdownファイルの記事内容を読み込みます。
+
+
+  # Public: 与えられたパスのMarkdownファイルを読み込んでArticleオブジェクトを
+  # 生成します。
+  #
+  # path - Markdownファイルのパス。
   #
   # 読み込んだ記事データを含んだArticleオブジェクトを返します。
   def self.create_article(path)
+    markdown = load_file(path)
+    create_from_markdown_and_path(markdown, path)
+  rescue Errno::ENOENT
+    nil
+  end
+
+  # Public: 与えられたMarkdownのデータとパスからArticleオブジェクトを生成します。
+  #
+  # markdown - MarkdownデータのString
+  # path - MarkdownファイルパスのString
+  #
+  # 読み込んだ記事データを含んだArticleオブジェクトを返します。
+  def self.create_from_markdown_and_path(markdown, path)
     article = Article.create
-    markdown = parse_markdown(load_file(path))
     article.body         = parse_article_body(markdown)
     article.title        = parse_article_title(markdown)
     article.url          = parse_article_url(path)
@@ -36,8 +57,6 @@ class Article
     article.published_at = parse_article_date(path)
     article.save
     article
-  rescue Errno::ENOENT
-    nil
   end
 
   # Public: 選択されているRedis DBの全データを消去した上で、全記事のデータを
@@ -110,20 +129,29 @@ class Article
     File.open(path) {|f| f.read }
   end
 
-  def self.parse_markdown(text)
+  def self.parse_markdown(markdown)
     options = { auto_ids: false,
                 enable_coderay: false }
-    Kramdown::Document.new(text, options).to_html_with_rouge
+    Kramdown::Document.new(markdown, options).to_html_with_rouge
   end
 
   # TODO
   def self.parse_article_body(markdown)
-    markdown
+    index = parse_article_title_index(markdown).succ
+    body_markdown = markdown.lines[index..-1].join
+    parse_markdown(body_markdown).strip
   end
 
-  # TODO
   def self.parse_article_title(markdown)
-    markdown.lines.first
+    index = parse_article_title_index(markdown)
+    markdown.lines[index].sub(/^#\s/, '').chomp
+  end
+
+  def self.parse_article_title_index(markdown)
+    lines = markdown.lines
+    index = lines.index { |v| v.match(/^#\s/) }
+    raise TitleIndexParseError unless index
+    index
   end
 
   def self.parse_article_url(path)
@@ -141,10 +169,16 @@ class Article
 
   def self.parse_article_date(path)
     md = parse_path(path)
-    DateTime.new(md[1].to_i, md[2].to_i, md[3].to_i)
+    dt = DateTime.new(md[1].to_i, md[2].to_i, md[3].to_i)
+    raise DateTimeParseError unless dt >= DateTime.new(2010, 8, 1)
+    dt
+  rescue
+    raise DateTimeParseError
   end
 
   def self.parse_path(path)
-    /\/(20\d{2})-([01]\d)-([0-3]\d)-(.+)\.md/.match(path)
+    md = /\/(20\d{2})-([01]\d)-([0-3]\d)-(.+)\.md/.match(path)
+    raise PathParseError unless md
+    md
   end
 end
