@@ -1,12 +1,4 @@
----
-layout: article
-title: "<span>Vimperatorのビジュアルモードで</span><span>選択した文字列をGoogle検索する</span>"
-date: 2010-12-31
-comments: true
-categories: vimperator
-tags: vimperator
-published: true
----
+# <span>Vimperatorのビジュアルモードで</span><span>選択した文字列をGoogle検索する</span>
 
 検索したい文字列の選択は[caret-hint.js](http://coderepos.org/share/browser/lang/javascript/vimperator-plugins/trunk/caret-hint.js?rev=36960)が便利過ぎるので必須。
 

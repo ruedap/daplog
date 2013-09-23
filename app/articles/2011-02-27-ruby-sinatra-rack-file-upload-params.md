@@ -1,12 +1,4 @@
----
-layout: article
-title: "Sinatraでファイルのアップロード"
-date: 2011-02-27
-comments: true
-categories: ruby
-tags: ruby
-published: true
----
+# Sinatraでファイルのアップロード
 
 Sinatraでファイルのアップロードをする場合、Rackのparamsを使って行うみたい。
 

@@ -1,12 +1,4 @@
----
-layout: article
-title: "HTTPメソッドのPOSTとPUTの使い分け"
-date: 2011-03-24
-comments: true
-categories: web
-tags: web
-published: true
----
+# HTTPメソッドのPOSTとPUTの使い分け
 
 どこで見たか忘れたけど、POSTはURLが変わる場合に使用して、PUTはURLが変わらない場合に使用する、と書かれたページを読んだことがあって、POSTとPUTの使い分けはそうするものだと思ってた。が、これは間違い[^1]っぽい。Webアプリ制作におけるバイブルとも言える[Webを支える技術](http://www.amazon.co.jp/dp/4774142042/ruedap-22)を読み返していたら、これらの使い分けの指針が載っていて、それは自分が覚えてた使い方と逆だった。
 

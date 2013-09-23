@@ -1,12 +1,4 @@
----
-layout: article
-title: "<span>Sinatraを使って</span><span>Instagram APIのアクセストークンを取得する</span>"
-date: 2011-03-03
-comments: true
-categories: ruby
-tags: ruby
-published: true
----
+# <span>Sinatraを使って</span><span>Instagram APIのアクセストークンを取得する</span>
 
 [Instagram API](http://instagr.am/developer/)に関する日本語情報は、現時点では[このページ](http://tech.kayac.com/archive/instagramapi.html)が一番良くまとまっていて素晴らしい。ただ、アクセストークンを取得する具体的な例は載っていなかったので（記事を読む限りPHPを使って取ってるっぽい？）、自分が取得した方法を備忘録がてらにまとめてみた。Instagram公式の[Ruby用APIラッパーライブラリ](https://github.com/Instagram/instagram-ruby-gem)を使って、さらにSinatraで記述するととても簡単にOAuth認証できる例が載っているので、これを少し書き換えて、アクセストークンを表示するようにした。
 

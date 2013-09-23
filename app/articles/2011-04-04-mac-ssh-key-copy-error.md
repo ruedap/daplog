@@ -1,12 +1,4 @@
----
-layout: article
-title: "<span>MacでSSH公開鍵・秘密鍵ファイルを</span><span>コピーして使ったら警告がでた</span>"
-date: 2011-04-04
-comments: true
-categories: mac
-tags: mac
-published: true
----
+# <span>MacでSSH公開鍵・秘密鍵ファイルを</span><span>コピーして使ったら警告がでた</span>
 
 Mac OS Xの再インストール後、元々使っていたSSH公開鍵・秘密鍵ファイルの入った`.ssh`フォルダを、ホームディレクトリにコピペして、`git push`しようとしたら警告が出て実行できなかった。コピペしただけでは、秘密鍵の方のファイルパーミッションがオープンすぎるからダメみたい。
 

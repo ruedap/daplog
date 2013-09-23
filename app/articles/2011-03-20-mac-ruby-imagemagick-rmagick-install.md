@@ -1,12 +1,4 @@
----
-layout: article
-title: "<span>MacでImageMagickとRMagickを</span><span>インストールする</span>"
-date: 2011-03-20
-comments: true
-categories: ruby
-tags: ruby
-published: true
----
+# <span>MacでImageMagickとRMagickを</span><span>インストールする</span>
 
 Rubyで画像を扱う必要があったので、MacのHomebrewでImageMagickをインストールして、それからRMagickをインストールした。
 
@@ -73,3 +65,4 @@ rmagick (2.13.1)
 * * *
 
 <cite>[Rubyで画像フォーマットを変換するスクリプトを作ろう &#187; 寺子屋未満](http://terakonya.sarm.net/wordpress/2010/12/20/rmagick/)</cite>
+

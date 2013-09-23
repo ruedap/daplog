@@ -1,12 +1,4 @@
----
-layout: article
-title: "<span>Duostackで使用するRubyのバージョンを</span><span>1.9.2に変更する</span>"
-date: 2011-05-13
-comments: true
-categories: ruby
-tags: ruby
-published: true
----
+# <span>Duostackで使用するRubyのバージョンを</span><span>1.9.2に変更する</span>
 
 昨日の[DuostackでHello world記事](/2011/05/12/ruby-duostack-sinatra-hello-world)で、初出時に間違って「DuostackはRuby 1.8系しか使えない」と書いてしまったけど、その後Duostackのドキュメントを見てたら[バージョンを変更する方法](http://docs.duostack.com/ruby/config-options#command-line-client-examples)の記述を見つけて、試してみたらちゃんとRuby 1.9.2も使えた。今回は備忘録がてらその方法を記事に。これまた[HerokuでRubyのバージョンを変更する手順](/2011/05/11/ruby-heroku-version-change)と良く似てるけど、微妙に違う。
 

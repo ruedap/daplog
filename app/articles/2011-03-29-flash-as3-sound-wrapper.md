@@ -1,12 +1,4 @@
----
-layout: article
-title: "<span>AS3でサウンドを簡単に扱うための</span><span>Soundラッパークラス</span>"
-date: 2011-03-29
-comments: true
-categories: as3
-tags: as3
-published: true
----
+# <span>AS3でサウンドを簡単に扱うための</span><span>Soundラッパークラス</span>
 
 AS3でサウンドを扱う場合、Sound、SoundChannel、SoundTransformなどやたらクラスが多くて結構ややこしい。んで、[こちらの記事](http://level0.kayac.com/2009/01/post_10.php)に載っているサウンドを簡単に扱うためのラッパークラスが結構便利なのでたまに使っていたんだけど、そのまま使うとFlex SDKでは警告が出まくるので直したり、使っているうちに足りない機能を付け足したりしていたので、その自分用のSoundWrapperクラスを備忘録。
 

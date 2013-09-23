@@ -1,12 +1,4 @@
----
-layout: article
-title: "Herokuでステージング環境を作る"
-date: 2011-02-20
-comments: true
-categories: ruby
-tags: ruby
-published: true
----
+# Herokuでステージング環境を作る
 
 [![プロダクションとステージングのHerokuアプリ](/assets/2011/02/20/ruby-heroku-staging-enviroment-01.png)](/assets/2011/02/20/ruby-heroku-staging-enviroment-01.png)
 

@@ -1,12 +1,4 @@
----
-layout: article
-title: "<span>HerokuでWebアプリ開発を始めるなら</span><span>知っておきたいこと(7) ブログならLokka</span>"
-date: 2011-05-05
-comments: true
-categories: ruby
-tags: ruby
-published: true
----
+# <span>HerokuでWebアプリ開発を始めるなら</span><span>知っておきたいこと(7) ブログならLokka</span>
 
 「HerokuでWebアプリ開発を始めるなら知っておきたいこと」シリーズの第7回では、ブログを簡単に設置できるRuby純正クラウド用CMS「Lokka」について書きます。このシリーズのまとめページは[こちら](/2011/05/09/ruby-heroku-web-app-development-tips-matome)。
 

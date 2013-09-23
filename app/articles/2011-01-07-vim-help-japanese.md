@@ -1,12 +1,4 @@
----
-layout: article
-title: "Vimのヘルプを日本語にする"
-date: 2011-01-07
-comments: true
-categories: vim
-tags: vim
-published: true
----
+# Vimのヘルプを日本語にする
 
 1. [Vim Documents in Japanese](http://www.kaoriya.net/vimdoc_j/) から「Vim日本語ドキュメント」のスナップショット版（vimdoc_ja-snapshot.tar.bz2）をダウンロードする
 2. 解凍してできた`doc`フォルダと`syntax`フォルダを、`.vim`内[^1]にコピーする（Macの場合はペーストで置き換えにならないように注意）

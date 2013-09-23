@@ -1,12 +1,4 @@
----
-layout: article
-title: "<span>SinatraからActiveRecord 3を使う(1)</span><span> マイグレーション</span>"
-date: 2011-04-16
-comments: true
-categories: ruby
-tags: ruby
-published: true
----
+# <span>SinatraからActiveRecord 3を使う(1)</span><span> マイグレーション</span>
 
 以前[SinatraからDataMapperを使う記事](/2011/02/12/ruby-sinatra-datamapper-1-orm-sqlite)を書いたけど、今回はSinatraのO/Rマッパー部分にActiveRecord 3を使ってみる。ActiveRecord 3自体の使い方については、[この記事](http://www.atmarkit.co.jp/fcoding/rails/posts/rails3/03/rails303a.html)がすごくわかりやすかった。
 

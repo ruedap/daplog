@@ -1,12 +1,4 @@
----
-layout: article
-title: "<span>HerokuでSinatraを使って</span><span>RMagickの使用可能フォント名を出力する</span>"
-date: 2011-04-12
-comments: true
-categories: ruby
-tags: ruby
-published: true
----
+# <span>HerokuでSinatraを使って</span><span>RMagickの使用可能フォント名を出力する</span>
 
 昨日の[RMagickで使用可能なフォント名の一覧を出力する](/2011/04/11/ruby-rmagick-output-font-name-list)と同じように、Herokuのサーバー上でSinatraを使ってRMagickで使用可能なフォント名のリストを出力してみた。それほど種類は多くないものの、意外にも[Helvetica](http://ja.wikipedia.org/wiki/%E3%83%98%E3%83%AB%E3%83%99%E3%83%81%E3%82%AB)や[Palatino](http://ja.wikipedia.org/wiki/%E3%83%91%E3%83%A9%E3%83%86%E3%82%A3%E3%83%BC%E3%83%8E_(%E6%9B%B8%E4%BD%93))などが入っていたり、多くの文字数をカバーする[DejaVu](http://ja.wikipedia.org/wiki/DejaVu%E3%83%95%E3%82%A9%E3%83%B3%E3%83%88)のSansとSerifなどが入っていた。個人的に好きな[Verdana](http://ja.wikipedia.org/wiki/Verdana)や[Georgia](http://en.wikipedia.org/wiki/Georgia_(typeface))が入っているのも嬉しい。
 今回使用した、実際にフォント名のリストを出力しているURLは[こちら](http://heroku-hello-world.heroku.com/font_list)。

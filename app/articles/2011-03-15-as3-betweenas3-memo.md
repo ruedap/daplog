@@ -1,12 +1,4 @@
----
-layout: article
-title: "AS3でBetweenAS3を使うときの備忘録"
-date: 2011-03-15
-comments: true
-categories: as3
-tags: as3
-published: true
----
+# AS3でBetweenAS3を使うときの備忘録
 
 備忘録。たいしたことは書いてない。100から先は覚えてない。最近AS3をそれなりに書いてる。かなり忘れかけている。`ITween`を使うことと、基本的に何やるにしてもクラスメソッドなことがポイントだろうか。`delay`, `serial`, `parallel`が便利。後述のプレゼン資料がとても良くまとまっている。
 

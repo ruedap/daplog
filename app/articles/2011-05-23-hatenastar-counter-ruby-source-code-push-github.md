@@ -1,12 +1,4 @@
----
-layout: article
-title: "<span>はてなスターカウンターのソースコードを</span><span>GitHubに公開してみた</span>"
-date: 2011-05-23
-comments: true
-categories: ruby
-tags: ruby
-published: true
----
+# <span>はてなスターカウンターのソースコードを</span><span>GitHubに公開してみた</span>
 
 [はてなスターカウンターの公開](/2011/04/21/hatenastar-counter)から既に1ヶ月以上が経過しているので今更感はあるけれど、はてなスターカウンターのソースコードを[GitHubに公開](https://github.com/ruedap/hatenastar-counter)してみた。
 

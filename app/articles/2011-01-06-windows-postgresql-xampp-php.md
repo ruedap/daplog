@@ -1,12 +1,4 @@
----
-layout: article
-title: "<span>WindowsでPostgreSQLを</span><span>XAMPPのPHPから使う</span>"
-date: 2011-01-06
-comments: true
-categories: php
-tags: php
-published: true
----
+# <span>WindowsでPostgreSQLを</span><span>XAMPPのPHPから使う</span>
 
 XAMPPは、デフォルトではPostgreSQLが有効にはなっていないので、手動で有効にしてあげる必要がある。というのに気づくまでちょっと時間がかかったのでメモ。
 

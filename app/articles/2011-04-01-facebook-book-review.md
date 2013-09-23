@@ -1,12 +1,4 @@
----
-layout: article
-title: "<span>「facebook 世界最大のSNSでビル・ゲイツに迫る男」</span><span>を読み終えて</span>"
-date: 2011-04-01
-comments: true
-categories: book
-tags: book
-published: true
----
+# <span>「facebook 世界最大のSNSでビル・ゲイツに迫る男」</span><span>を読み終えて</span>
 
 映画[ソーシャル・ネットワーク](http://www.socialnetwork-movie.jp/)の[原作になった方のフェイスブック本](http://www.amazon.co.jp/dp/4903853853/ruedap-22)を読み終えた。章が細かく区切ってあり、登場人物も少なく、とても読みやすく、後半は一気に読みきった。個人的にはFacebookにあまり興味はなく、今のところ利用もしていないんだけど、それを作った[マーク・ザッカーバーグ](http://ja.wikipedia.org/wiki/%E3%83%9E%E3%83%BC%E3%82%AF%E3%83%BB%E3%82%B6%E3%83%83%E3%82%AB%E3%83%BC%E3%83%90%E3%83%BC%E3%82%B0)という人物には以前から興味があり、その人物像を掴みたくて読んでみた。けど全然わかんなかった。以下ネタバレ注意。
 

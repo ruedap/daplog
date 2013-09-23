@@ -1,12 +1,5 @@
----
 layout: post
-title: "<span>HerokuでWebアプリ開発を始めるなら</span><span>知っておきたいこと(4) Sinatraも使える</span>"
-date: 2011-05-02
-comments: true
-categories: ruby
-tags: ruby
-published: true
----
+# <span>HerokuでWebアプリ開発を始めるなら</span><span>知っておきたいこと(4) Sinatraも使える</span>
 
 「HerokuでWebアプリ開発を始めるなら知っておきたいこと」シリーズの第4回では、Herokuで使えるWebフレームワーク「Sinatra」について書きます。このシリーズのまとめページは[こちら](/2011/05/09/ruby-heroku-web-app-development-tips-matome)。
 

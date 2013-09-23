@@ -1,12 +1,4 @@
----
-layout: article
-title: "<span>Herokuを使って1日1回名言をツイートする</span><span>Twitter Botの作り方</span>"
-date: 2011-02-09
-comments: true
-categories: ruby
-tags: ruby
-published: true
----
+# <span>Herokuを使って1日1回名言をツイートする</span><span>Twitter Botの作り方</span>
 
 ここ最近、[Google App Engine](https://appengine.google.com/)や[Heroku](http://heroku.com/)を使ってTwitter Botを作ろうと、いろいろ実験していた。以下はその関連記事。
 

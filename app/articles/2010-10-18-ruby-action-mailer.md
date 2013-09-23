@@ -1,12 +1,4 @@
----
-layout: article
-title: "<span>RailsのActionMailerを使って</span><span>メールを送信する</span>"
-date: 2010-10-18
-comments: true
-categories: ruby
-tags: ruby
-published: true
----
+# <span>RailsのActionMailerを使って</span><span>メールを送信する</span>
 
 Rails 2.3.5でとりあえず送信はできたのでメモっとく。
 

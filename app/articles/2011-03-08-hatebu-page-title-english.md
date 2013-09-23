@@ -1,12 +1,4 @@
----
-layout: article
-title: "<span>はてブページのタイトルが</span><span>英語版タイトルになってしまって直せない</span>"
-date: 2011-03-08
-comments: true
-categories: web
-tags: web
-published: true
----
+# <span>はてブページのタイトルが</span><span>英語版タイトルになってしまって直せない</span>
 
 下のキャプチャ画像のとおり。はてブプラグインのタイトル編集機能を使って日本語タイトルに戻しても、すぐ英語版の方に戻ってしまう。Sinatraのi18n用ライブラリ[sinatra-r18n](http://r18n.rubyforge.org/sinatra.html)を今回から使い始めたのが関係していると思うけどよくわからず。
 

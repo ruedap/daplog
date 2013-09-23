@@ -1,12 +1,4 @@
----
-layout: article
-title: "<span>SinatraからActiveRecord 3を使う(2)</span><span> CRUD操作</span>"
-date: 2011-04-17
-comments: true
-categories: ruby
-tags: ruby
-published: true
----
+# <span>SinatraからActiveRecord 3を使う(2)</span><span> CRUD操作</span>
 
 
 [前回のマイグレーション](/2011/04/16/ruby-sinatra-active-record-3-migrate)からの続きで、今回はSinatraからActiveRecord 3を使ってCRUD操作をしてみる。といっても、おそらくCRUD操作についてはRailsで使う場合とSinatraとではほとんど違いはないと思われる。前回同様、ActiveRecord 3自体の使い方は[この記事](http://www.atmarkit.co.jp/fcoding/rails/posts/rails3/03/rails303a.html)がとてもわかりやすかったので全面的に参考にしている。

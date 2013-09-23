@@ -1,12 +1,4 @@
----
-layout: article
-title: "<span>RMagickを使って生成した画像を</span><span>Herokuで表示する2つの方法</span>"
-date: 2011-04-14
-comments: true
-categories: ruby
-tags: ruby
-published: true
----
+# <span>RMagickを使って生成した画像を</span><span>Herokuで表示する2つの方法</span>
 
 Herokuは、単体ではファイルをサーバー上に*永続的に保存することはできない*[^1]ので、RMagickを使って画像を生成してもそれを保存することはできない。ただし、*生成した画像をその場で単に表示するだけの目的*であれば、永続的に保存する必要はないので、次の2つの方法でRMagickで生成した画像を利用できる。
 

@@ -1,12 +1,4 @@
----
-layout: article
-title: "<span>NekostagramとInustagramのソースコードを</span><span>GitHubに公開してみた</span>"
-date: 2011-03-09
-comments: true
-categories: ruby
-tags: ruby
-published: true
----
+# <span>NekostagramとInustagramのソースコードを</span><span>GitHubに公開してみた</span>
 
 [Nekostagram](http://nekostagram.heroku.com/)と[Inustagram](http://inustagram.heroku.com/)で使用しているファイル一式を[GitHub](https://github.com/ruedap/nekostagram)に公開してみた。技術的にはなんにもすごいことはしてなくて、さらにSassとか初めて使ってみたので、いろいろとツッコミどころ満載かもしれない。
 

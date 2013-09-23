@@ -1,12 +1,4 @@
----
-layout: article
-title: "HTTPのステータスコードの分類と意味"
-date: 2010-10-19
-comments: true
-categories: web
-tags: web
-published: true
----
+# HTTPのステータスコードの分類と意味
 
 - HTTP1.1のステータスコードはRFC2616の6.1.1節で定義されている
 - その定義には、ステータスコードは3桁の数字であり、先頭の数字によって次の5つに分類すると書かれている

@@ -1,12 +1,4 @@
----
-layout: article
-title: "<span>BetweenAS3の</span><span>トゥイーンの再生時間を調べる</span>"
-date: 2011-03-28
-comments: true
-categories: as3
-tags: as3
-published: true
----
+# <span>BetweenAS3の</span><span>トゥイーンの再生時間を調べる</span>
 
 単にBetweenAS3#durationメソッドの存在に今日気づいたというだけの話なんだけども。これに気づくまで、TweenEvent.COMPLETEとTimerとか使って時間測ってたはずかし。
 

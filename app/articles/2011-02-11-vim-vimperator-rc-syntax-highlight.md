@@ -1,12 +1,4 @@
----
-layout: article
-title: "<span>Vimで.vimperatorrcファイルを</span><span>シンタックスハイライトする</span>"
-date: 2011-02-11
-comments: true
-categories: vim
-tags: vim
-published: true
----
+# <span>Vimで.vimperatorrcファイルを</span><span>シンタックスハイライトする</span>
 
 デフォルトの状態では、Vimperatorの設定ファイル`.vimperatorrc`をVimで開いてもシンタックスハイライトしないので、毎回とりあえず`:set ft=vim`としてシンタックスハイライトさせていた。
 

@@ -1,12 +1,4 @@
----
-layout: article
-title: "<span>Vimでref.vimを使って</span><span>PHPのリファレンスをただちに検索する</span>"
-date: 2011-04-28
-comments: true
-categories: vim
-tags: vim
-published: true
----
+# <span>Vimでref.vimを使って</span><span>PHPのリファレンスをただちに検索する</span>
 
 前回、前々回で[Rubyのリファレンス](/2011/04/26/vim-ref-plugin-ruby-reference-search-tool-refe2)と、[英辞郎 on the Webで英単語](/2011/04/27/vim-ref-plugin-alc-eijiro-english-dictionary-search)を検索する方法を書いたので、今回は自分がref.vimで使っている3つ目（最後）の検索ソース、PHPリファレンスの導入手順も備忘録。
 

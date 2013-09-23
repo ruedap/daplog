@@ -1,12 +1,4 @@
----
-layout: article
-title: "<span>Vimの.vimrcと.vimフォルダを</span><span>Dropboxを使ってWin/Macで共有する</span>"
-date: 2011-03-01
-comments: true
-categories: vim
-tags: vim
-published: true
----
+# <span>Vimの.vimrcと.vimフォルダを</span><span>Dropboxを使ってWin/Macで共有する</span>
 
 Vimの`.vimrc`と`.vim`フォルダを、Dropboxを使ってWindowsとMacで共有するための手順メモ。主にシンボリックリンクを使ってDropboxに置いたファイル／フォルダへ飛ばす方法だけど、
 

@@ -1,12 +1,4 @@
----
-layout: article
-title: "<span>SASSIENCEのソースコードを</span><span>GitHubに公開してみた</span>"
-date: 2011-06-09
-comments: true
-categories: ruby
-tags: ruby
-published: true
----
+# <span>SASSIENCEのソースコードを</span><span>GitHubに公開してみた</span>
 
 CSSのインデントを綺麗にするサービス[SASSIENCE](http://sassience.com/)のコードを[GitHubに公開](https://github.com/ruedap/sassience)してみた。
 

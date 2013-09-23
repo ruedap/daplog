@@ -1,12 +1,4 @@
----
-layout: article
-title: "GitHubで付けたタグを削除する"
-date: 2011-02-08
-comments: true
-categories: git
-tags: git
-published: true
----
+# GitHubで付けたタグを削除する
 
 タグの付け方については、[この記事](/2011/01/31/ruby-heroku-sinatra-twitter-tweet)の最後の方でちょろっと書いたけど、間違って付けちゃったりしたタグを消す方法がわからなくて調べたのでメモ。
 

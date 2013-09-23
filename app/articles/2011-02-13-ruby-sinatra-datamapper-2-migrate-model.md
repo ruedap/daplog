@@ -1,12 +1,4 @@
----
-layout: article
-title: "<span>SinatraからDataMapperを使う(2)</span><span> マイグレーションとモデルの分離</span>"
-date: 2011-02-13
-comments: true
-categories: ruby
-tags: ruby
-published: true
----
+# <span>SinatraからDataMapperを使う(2)</span><span> マイグレーションとモデルの分離</span>
 
 [前回](/2011/02/12/ruby-sinatra-datamapper-1-orm-sqlite)は`app.rb`ファイルに全部詰め込んで動作チェックしたけど、今回はそれを分離する。特に、DB接続とテーブル定義を行うマイグレーション部分と、プロパティ情報を定義するモデル部分を`app.rb`から分離し、そのファイルを実行することでテーブル定義と初期レコードの追加だけを行えるようにする。
 

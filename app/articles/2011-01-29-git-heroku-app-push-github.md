@@ -1,12 +1,4 @@
----
-layout: article
-title: "HerokuアプリをGitHubにもプッシュする"
-date: 2011-01-29
-comments: true
-categories: git
-tags: git
-published: true
----
+# HerokuアプリをGitHubにもプッシュする
 
 とりあえず[HerokuでHello worldができた](/2011/01/28/ruby-heroku-sinatra-hello-world)ので、GitHubにもプッシュしてHerokuアプリをネットに保存・公開してみたいなと思ったので手順を調べた。意外と簡単だった。
 

@@ -1,12 +1,4 @@
----
-layout: article
-title: "msysGitの文字化けを一部解消する"
-date: 2011-02-26
-comments: true
-categories: git
-tags: git
-published: true
----
+# msysGitの文字化けを一部解消する
 
 [msysGitをインストール](/2011/02/07/git-windows-msysgit-github)してデフォルト状態のままだと、`git diff`や`git add -p`した時に日本語が含まれているとコマンドプロンプト上の表示が文字化けする。コマンドプロンプトの出力の文字コードがShift\_JISだからだと思う。厳密にはCP932とかだっけ。それで[このページ](http://sourceforge.jp/magazine/09/02/12/0530242/3)を参考に以下の修正を加えると、`git diff`の文字化けの方は解消できるようになる。`git add -p`の方は相変わらず文字化けする。
 

@@ -1,12 +1,4 @@
----
-layout: article
-title: "AS3でBulkLoaderを使うときの最小構成"
-date: 2011-03-14
-comments: true
-categories: as3
-tags: as3
-published: true
----
+# AS3でBulkLoaderを使うときの最小構成
 
 最近AS3を使うことが稀になってるんだけど、使うときにたまに[BulkLoader](http://code.google.com/p/bulk-loader/)を使う。で、使うたびに使い方をググってるので、よく使う`swf`, `png`, `txt`, `mp3`あたりを読み込む最小コードをメモっておく。コピペ用。
 

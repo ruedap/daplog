@@ -1,12 +1,4 @@
----
-layout: article
-title: "はてなスターカウンターのボツネタ2つ"
-date: 2011-05-10
-comments: true
-categories: web
-tags: web
-published: true
----
+# はてなスターカウンターのボツネタ2つ
 
 [昨日までの連載企画](/2011/05/09/ruby-heroku-web-app-development-tips-matome)では、読者に向けてHerokuを紹介するというスタンスだったので「ですます調」で書いてたけど、今日からはいつもどおりの自分用備忘録というスタンスに戻る、ので文体もいままでどおりに戻る。エル・プサイ・コングルゥ。
 

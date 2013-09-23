@@ -1,12 +1,4 @@
----
-layout: article
-title: "<span>Photoshop上の操作をJavaScriptコードに書き出す</span><span>プラグインを有効にする</span>"
-date: 2010-10-28
-comments: true
-categories: javascript
-tags: javascript
-published: true
----
+# <span>Photoshop上の操作をJavaScriptコードに書き出す</span><span>プラグインを有効にする</span>
 
 Photoshop上の操作をJavaScriptコードに書き出すプラグイン「ScriptListener.8li」を有効にする手順をメモ。
 

@@ -1,12 +1,4 @@
----
-layout: article
-title: "<span>HerokuでWebアプリ開発を始めるなら</span><span>知っておきたいこと(1) 無料のスペック</span>"
-date: 2011-04-29
-comments: true
-categories: ruby
-tags: ruby
-published: true
----
+# <span>HerokuでWebアプリ開発を始めるなら</span><span>知っておきたいこと(1) 無料のスペック</span>
 
 「HerokuでWebアプリ開発を始めるなら知っておきたいこと」シリーズの第1回では、無料の範囲で使えるHerokuの基本スペックについて書きます。このシリーズのまとめページは[こちら](/2011/05/09/ruby-heroku-web-app-development-tips-matome)。
 

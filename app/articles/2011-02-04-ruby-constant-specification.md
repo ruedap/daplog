@@ -1,12 +1,4 @@
----
-layout: article
-title: "Rubyの定数、もうひとつの意外な仕様"
-date: 2011-02-04
-comments: true
-categories: ruby
-tags: ruby
-published: true
----
+# Rubyの定数、もうひとつの意外な仕様
 
 Rubyの定数が、他の言語の定数とはちょっと違う意外な仕様なのは理解していたが、もうひとつ意外な仕様があることを最近知った。なんかちょっと釣りっぽいタイトルになっちゃったけど。
 

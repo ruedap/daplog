@@ -1,12 +1,4 @@
----
-layout: article
-title: "<span>オライリーの電子書籍買い占め運動に</span><span>参加してみた</span>"
-date: 2011-03-26
-comments: true
-categories: book
-tags: book
-published: true
----
+# <span>オライリーの電子書籍買い占め運動に</span><span>参加してみた</span>
 
 オライリー・ジャパンが3月26日0時までの期間限定で、[被災者支援キャンペーン](http://www.oreilly.co.jp/editors/archives/2011/03/deal-of-the-days-support-disater-relief.html)をやっていたので出来るだけ参加してみた。興味ある本の書評をネットで読んだりして何回かに分けて注文していたのだけど、合計で17冊買った。支払いも既に済んでいるんだけど、デジタルなくせに書籍はまだ1冊も手元に無い。処理が追いつかないくらいの人気らしい。
 

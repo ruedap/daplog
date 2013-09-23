@@ -1,12 +1,4 @@
----
-layout: article
-title: "SinatraとSlimの組み合わせでPartialする"
-date: 2011-05-18
-comments: true
-categories: ruby
-tags: ruby
-published: true
----
+# SinatraとSlimの組み合わせでPartialする
 
 Sinatraで[Slim](http://slim-lang.com/)というテンプレートエンジンを利用した場合にPartialする方法について。前からやりたかったんだけど、やり方がわからなくて、過去に自分で作ったWebアプリは結構HTMLコードを重複させていた。今回やっとやり方がわかったので、今後はちょっと重複を減らせるかも。[Sinatraのバージョン1.1でパーシャル機能が追加された](http://www.sinatrarb.com/faq.html#partials)ようで、結構シンプルな方法で使える模様。昔（ver.1.1より前）はこの機能は無かったので、自分でヘルパーメソッドを定義する必要があったみたい。
 

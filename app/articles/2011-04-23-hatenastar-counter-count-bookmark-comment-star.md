@@ -1,12 +1,4 @@
----
-layout: article
-title: "<span>はてなスターカウンターは</span><span>「はてブコメントに付いたスター」もカウントできた</span>"
-date: 2011-04-23
-comments: true
-categories: web
-tags: web
-published: true
----
+# <span>はてなスターカウンターは</span><span>「はてブコメントに付いたスター」もカウントできた</span>
 
 先日公開した「[はてなスターカウンター](http://hatenastar.heroku.com/)」は、既に多くの人に使ってもらえて、[スター数ランキング](http://hatenastar.heroku.com/#ranking)も有名ななブロガーの人たちで埋まっている。はてなスター数100個程度の自分のブログでは全然レベルが違いすぎる件。
 

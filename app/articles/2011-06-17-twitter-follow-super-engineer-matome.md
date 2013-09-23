@@ -1,12 +1,4 @@
----
-layout: article
-title: "<span>今すぐフォローすべき</span><span>各界のスーパーエンジニアまとめ</span>"
-date: 2011-06-17
-comments: true
-categories: development
-tags: development
-published: true
----
+# <span>今すぐフォローすべき</span><span>各界のスーパーエンジニアまとめ</span>
 
 最近流行ってる*今すぐフォローすべきスーパーエンジニア*の各界(Node.js, Perl, Python, PHP, Ruby)のリストを勝手にまとめてみた。
 

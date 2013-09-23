@@ -1,12 +1,4 @@
----
-layout: article
-title: "MacPortsのインストール"
-date: 2010-08-08
-comments: true
-categories: mac
-tags: mac
-published: true
----
+# MacPortsのインストール
 
 いろいろインストールするのに便利なMacPortsをインストールする。
 

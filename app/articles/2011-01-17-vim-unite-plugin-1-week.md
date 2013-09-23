@@ -1,12 +1,4 @@
----
-layout: article
-title: "<span>Vimでunite.vimプラグインを</span><span>使い始めて一週間</span>"
-date: 2011-01-17
-comments: true
-categories: vim
-tags: vim
-published: true
----
+# <span>Vimでunite.vimプラグインを</span><span>使い始めて一週間</span>
 
 [unite.vim](/2011/01/10/vim-unite-plugin)には気付かなかったことや使い方が変わったところなどがちらほらあったので備忘録。以下要点。
 

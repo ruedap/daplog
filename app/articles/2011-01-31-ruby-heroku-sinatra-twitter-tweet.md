@@ -1,12 +1,4 @@
----
-layout: article
-title: "HerokuのSinatraでTwitterにつぶやく"
-date: 2011-01-31
-comments: true
-categories: ruby
-tags: ruby
-published: true
----
+# HerokuのSinatraでTwitterにつぶやく
 
 過去記事をベースに、今回はHerokuのSinatraからTwitterに手動でつぶやく処理を書く。
 

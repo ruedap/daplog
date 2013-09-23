@@ -52,7 +52,7 @@ module Kazetachinu
       url: "2011/08/11/uhloop",
       filename: "2011-08-11-uhloop",
       body_first: "<p><a href=\"/2011/08/07/reizouko-driven-development\">冷蔵庫で設計</a>したWebサービス、宇多田ヒカル大好き専用「<a href=\"http://uhloop.com\">ウタダヒカループ</a>」を8月8日にリリースしました。</p>\n",
-      body_last: "</div>\n",
+      body_last: "</div>",
       published_at: DateTime.new(2011, 8, 11),
     })
   end

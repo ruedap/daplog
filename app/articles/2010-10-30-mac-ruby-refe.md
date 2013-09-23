@@ -1,12 +1,4 @@
----
-layout: article
-title: "MacでRubyのRefeを文字化け解消する"
-date: 2010-10-30
-comments: true
-categories: ruby
-tags: ruby
-published: true
----
+# MacでRubyのRefeを文字化け解消する
 
 普通にインストールした状態ではRefeが文字化けするので、ググってみたら、UTF-8で出力するように書き換えることで解消できるみたい。
 

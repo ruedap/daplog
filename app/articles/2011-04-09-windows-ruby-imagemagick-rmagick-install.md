@@ -1,12 +1,4 @@
----
-layout: article
-title: "<span>WindowsでImageMagickとRMagickを</span><span>インストールする</span>"
-date: 2011-04-09
-comments: true
-categories: ruby
-tags: ruby
-published: true
----
+# <span>WindowsでImageMagickとRMagickを</span><span>インストールする</span>
 
 WindowsでImageMagickとRMagickをセットアップするのは、[Macの時](/2011/03/20/mac-ruby-imagemagick-rmagick-install)ほど簡単では無い模様。最初はとりあえず、普通にImageMagickの公式サイトから、[最新のWindows用バイナリ](http://www.imagemagick.org/script/binary-releases.php?ImageMagick=5nioftjq617mksng50o7so6an4#windows)を落としてきてインストールして、`gem install rmagick`してみたらエラーが出て失敗した。なのでググッて調べて、若干古いもののRuby 1.8.6用としてImageMagickとRMagickのセットで公開されているファイルを[RubyForge](http://rubyforge.org/frs/?group_id=12&release_id=39888)からダウンロードしてインストールしてみたら、いちおううまくいったっぽい。このバージョンのImageMagickとRmagickを試した環境は以下の2つ。
 

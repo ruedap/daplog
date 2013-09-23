@@ -1,12 +1,4 @@
----
-layout: article
-title: "<span>HerokuでWebアプリ開発を始めるなら</span><span>知っておきたいこと(6) ステージング環境</span>"
-date: 2011-05-04
-comments: true
-categories: ruby
-tags: ruby
-published: true
----
+# <span>HerokuでWebアプリ開発を始めるなら</span><span>知っておきたいこと(6) ステージング環境</span>
 
 「HerokuでWebアプリ開発を始めるなら知っておきたいこと」シリーズの第6回では、Herokuなら簡単に作れる動作チェック用のサイト「ステージング環境」について書きます。このシリーズのまとめページは[こちら](/2011/05/09/ruby-heroku-web-app-development-tips-matome)。
 

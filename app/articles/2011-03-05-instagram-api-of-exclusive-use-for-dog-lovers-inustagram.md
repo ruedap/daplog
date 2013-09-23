@@ -1,12 +1,4 @@
----
-layout: article
-title: "<span>二匹目のどじょうを狙って</span><span>いぬ大好き専用の「Inustagram」を作ってみた</span>"
-date: 2011-03-05
-comments: true
-categories: ruby
-tags: ruby
-published: true
----
+# <span>二匹目のどじょうを狙って</span><span>いぬ大好き専用の「Inustagram」を作ってみた</span>
 
 [![Inustagram - いぬ大好き専用Instagram](/assets/2011/03/05/instagram-api-of-exclusive-use-for-dog-lovers-inustagram-01.png)](/assets/2011/03/05/instagram-api-of-exclusive-use-for-dog-lovers-inustagram-01.png)
 

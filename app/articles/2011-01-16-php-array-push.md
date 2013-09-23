@@ -1,12 +1,4 @@
----
-layout: article
-title: "PHPで配列のpush"
-date: 2011-01-16
-comments: true
-categories: php
-tags: php
-published: true
----
+# PHPで配列のpush
 
 PHPerな人には当たり前なんだろうけど、配列要素の追加（push）にこういう（[]=）シンタックスシュガーがあるとは知らなくて、PHPのマニュアルで関数探して、
 

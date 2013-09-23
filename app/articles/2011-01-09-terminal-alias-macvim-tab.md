@@ -1,12 +1,4 @@
----
-layout: article
-title: "<span>ターミナルから</span><span>MacVimを起動するときはタブで開く</span>"
-date: 2011-01-09
-comments: true
-categories: vim
-tags: vim
-published: true
----
+# <span>ターミナルから</span><span>MacVimを起動するときはタブで開く</span>
 
 [以前Vimperator用にmvimコマンドを入れた](/2010/08/10/vimperator-macvim-mvim)けど、これはMacVimの環境設定で「外部からファイルを開くときにはタブで開く」の設定にしておいても、mvimコマンドからだと新規ウィンドウで開いてしまう。すでにMacVimのウィンドウが開かれている場合はウィンドウが2個になる。これの解決方法について。
 

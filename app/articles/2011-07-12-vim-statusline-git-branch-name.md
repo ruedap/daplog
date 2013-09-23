@@ -1,12 +1,4 @@
----
-layout: article
-title: "<span>Vimのステータスラインに</span><span>Gitのブランチ名を表示する（右側に）</span>"
-date: 2011-07-12
-comments: true
-categories: vim
-tags: vim
-published: true
----
+# <span>Vimのステータスラインに</span><span>Gitのブランチ名を表示する（右側に）</span>
 
 [前回の記事](/2011/07/06/mac-terminal-git-branch-name)で、とりあえず*MacのターミナルでGitのブランチ名を表示*できたので、そのきっかけの元記事[VimのステータスラインにGitのブランチ名を表示する](http://d.hatena.ne.jp/marutanm/20110706/p1)を実行してみた。
 

@@ -1,12 +1,4 @@
----
-layout: article
-title: "<span>Vimperatorの補完リストの</span><span>文字が小さいので直す</span>"
-date: 2010-08-13
-comments: true
-categories: vimperator
-tags: vimperator
-published: true
----
+# <span>Vimperatorの補完リストの</span><span>文字が小さいので直す</span>
 
 [前回](/2010/08/12/vimperator-statusbar-fontsize)の時に変更できなかった以下の部分をカスタマイズ出来るようになったのでメモ。
 

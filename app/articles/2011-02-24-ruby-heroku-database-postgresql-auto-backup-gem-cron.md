@@ -1,12 +1,4 @@
----
-layout: article
-title: "<span>HerokuでDBのデータを</span><span>自動でバックアップする</span>"
-date: 2011-02-24
-comments: true
-categories: ruby
-tags: ruby
-published: true
----
+# <span>HerokuでDBのデータを</span><span>自動でバックアップする</span>
 
 [昨日のHerokuのDBバックアップ記事](/2011/02/23/ruby-heroku-database-postgresql-backup)をベースに、Herokuのcronを使って自動でバックアップを取る方法(gem)があるので試してみる。
 

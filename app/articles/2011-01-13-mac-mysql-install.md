@@ -1,12 +1,4 @@
----
-layout: article
-title: "MacにMySQLをインストールする"
-date: 2011-01-13
-comments: true
-categories: mac
-tags: mac
-published: true
----
+# MacにMySQLをインストールする
 
 いつもどおりMacPortsを使ってインストールしたけどすごく時間かかった。最近評判の良いHomebrewだともっと速かったりするのかな？
 

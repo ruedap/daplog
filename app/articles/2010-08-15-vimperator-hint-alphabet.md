@@ -1,12 +1,4 @@
----
-layout: article
-title: "<span>Vimperatorのfで表示するヒントを</span><span>アルファベットに変更する</span>"
-date: 2010-08-15
-comments: true
-categories: vimperator
-tags: vimperator
-published: true
----
+# <span>Vimperatorのfで表示するヒントを</span><span>アルファベットに変更する</span>
 
 [char-hints-mod2.js](http://coderepos.org/share/browser/lang/javascript/vimperator-plugins/trunk/char-hints-mod2.js)をダウンロードして、`~/.vimperatorrc/plugin`に配置した上で、`.vimperatorrc`で以下のように設定する。
 

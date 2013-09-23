@@ -1,12 +1,4 @@
----
-layout: article
-title: "<span>過去のブックマークを検索結果に表示できる</span><span>「Googleブックマーク」が便利</span>"
-date: 2011-03-30
-comments: true
-categories: web
-tags: web
-published: true
----
+# <span>過去のブックマークを検索結果に表示できる</span><span>「Googleブックマーク」が便利</span>
 
 <ins>この記事を書いた翌日に[Google +1ボタン](http://www.google.com/+1/button/)というのが発表されました。また、はてブコメントでid:mame-tanukiさんに教えてもらったところによると、最近Googleブックマークしたブクマは[スター検索結果としては表示されない](http://d.hatena.ne.jp/amatanoyo/20110316/1300275726)ようになっており、今後Google +1ボタンの方にこの機能は集約されていくのではないかとのことです。情報ありがとうございます。確かにそんな流れになりそうですので、この記事に書いてある「過去のブックマークを検索結果に表示」の利用は期待できなさそうなのでご注意ください。</ins>
 

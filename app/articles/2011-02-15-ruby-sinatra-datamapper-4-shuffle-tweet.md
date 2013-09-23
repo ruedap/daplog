@@ -1,12 +1,4 @@
----
-layout: article
-title: "<span>SinatraからDataMapperを使う(4)</span><span> シャッフルツイート機能</span>"
-date: 2011-02-15
-comments: true
-categories: ruby
-tags: ruby
-published: true
----
+# <span>SinatraからDataMapperを使う(4)</span><span> シャッフルツイート機能</span>
 
 [前回](/2011/02/14/ruby-sinatra-datamapper-3-validation)までで、DataMappterを使う上での基本的なポイントは抑えたので、今回は本来の目的であるTwitter Botでのシャッフルツイート機能のロジック部分に着手する。
 

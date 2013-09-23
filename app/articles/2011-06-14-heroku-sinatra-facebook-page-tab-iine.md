@@ -1,12 +1,4 @@
----
-layout: article
-title: "<span>Facebookページのいいね！ボタンが</span><span>押されているかをSinatraで判定する</span>"
-date: 2011-06-14
-comments: true
-categories: ruby
-tags: ruby
-published: true
----
+# <span>Facebookページのいいね！ボタンが</span><span>押されているかをSinatraで判定する</span>
 
 例えばFacebook上でのキャンペーンで、「Facebookページのいいね！ボタンを押してくれた方全員にもれなく壁紙プレゼント」などを行う場合に、*いいね！ボタンが押されたかどうかを取得して、その値でページを振り分ける*必要がある。そのやり方についてのメモ。
 
