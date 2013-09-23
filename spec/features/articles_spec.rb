@@ -82,7 +82,7 @@ feature 'フィードの表示' do
 end
 
 feature '存在しないページにアクセスする' do
-  scenario '500エラーが返る' do
+  scenario 'ステータスコード500が返る' do
     visit '/2013/01/01/invalid_url'
     # TODO: 404が返るように
     expect(page.status_code).to eq(500)
