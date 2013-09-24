@@ -8,7 +8,7 @@
 
 <cite>[The Travis CI Blog: Introducing Continuous Deployment to Heroku](http://about.travis-ci.org/blog/2013-07-09-introducing-continuous-deployment-to-heroku/)</cite>
 
-[HipChatに通知を送る](/2013/09/12/travis-ci-hipchat-notifications)時にも使った[travis gem](https://rubygems.org/gems/travis)からその設定を行える。
+[HipChatに通知を送る時](/2013/09/12/travis-ci-hipchat-notifications)にも使った[travis gem](https://rubygems.org/gems/travis)からその設定を行える。
 
 ~~~ sh
 $ travis setup heroku
@@ -16,18 +16,18 @@ Deploy only from ruedap/daplog? |yes| yes
 Encrypt API key? |yes| yes
 ~~~
 
-`travis setup heroku`を実行すると色々質問されるので適当に答えておけば設定が完了する。設定が追加されて更新された`.travis.yml`をプッシュするだけでデプロイまで行ってくれるようになる。さらに複雑な設定を行いたい場合は以下のドキュメントに色々と書かれている。
+`travis setup heroku`を実行すると色々質問されるので、適当に答えれば設定が完了する。設定の追加で更新された`.travis.yml`をプッシュするだけでデプロイまで行ってくれるようになる。さらに複雑な設定を行いたい場合は以下のドキュメントに色々と書かれている。
 
 <cite>[Travis CI: Heroku Deployment](http://about.travis-ci.org/docs/user/deployment/heroku/)</cite>
 
-自分の場合は、このブログもHerokuで運用していて、実際に上記の継続的デプロイな方法を使っているんだけど、デフォルトの設定から少し付け足して、以下のように2つのブランチを使って本番環境とステージング環境それぞれに自動でデプロイするように設定している。
+自分の場合は、このブログもHerokuで運用していて、実際に上記の継続的デプロイな方法を使っているけど、デフォルトの設定から少し付け足して、以下のように2つのブランチを使って本番環境とステージング環境それぞれに自動でデプロイするように設定している。
 
 1. stagingブランチからPull Requestを送った時は、Herokuのステージング環境にデプロイする
 2. masterブランチにマージ（コミット）した時は、Herokuの本番環境にデプロイする
 3. 上記以外のブランチをリモートにプッシュした時は、デプロイは行わない
 4. デプロイを行った時は、その後に指定のRakeタスクを実行する
 
-上記の方針を設定した`.travis.yml`のデプロイ部分は以下のような感じ。
+これらの方針を設定した`.travis.yml`のデプロイ部分は以下のような感じ。
 
 ~~~ yml
 deploy:
@@ -43,7 +43,7 @@ deploy:
   - rake redis:rebuild
 ~~~
 
-このYAMLファイルの全体は[ここ](https://github.com/ruedap/daplog/blob/f6e123747957c9bec2e11e4d051654e03c3401e2/.travis.yml)にあるけど、このように設定することで、ヒューマンによる手動オペレーションは基本的にはリモート(GitHub)にPull Requestを送る部分だけで、あとはTravis CIが自動でテストと、ブランチがstagingならステージング環境へのデプロイもやってくれる。そのステージング環境を目視でひと通りチェックして問題が無ければ、GitHub上のマージボタンをポチッと押してmasterにマージすれば再度テストが走り、無事に通過すればそのまま本番環境へのデプロイまでが自動で行われる。Oh..fantastic!
+上記のYAMLファイルの全体は[ここ](https://github.com/ruedap/daplog/blob/f6e123747957c9bec2e11e4d051654e03c3401e2/.travis.yml)にあるけど、このように設定することで、ヒューマンによる手動オペレーションは基本的にはリモート(GitHub)にPull Requestを送る部分だけで、あとはTravis CIが自動でテストと、ブランチがstagingならステージング環境へのデプロイもやってくれる。そのステージング環境を目視でひと通りチェックして問題が無ければ、GitHub上のマージボタンをポチッと押してmasterにマージすれば再度テストが走り、無事に通過すればそのまま本番環境へのデプロイまでが自動で行われる。Oh..fantastic!
 
 個人レベルのアプリ開発で、こんなハイテクな環境を無料でしかも超簡単な設定だけで使わせてもらえるとは、うっかり土下座しちゃいそうな嬉しさですね。
 
@@ -54,10 +54,10 @@ deploy:
 
 今まで手動で直接Herokuに向けて`git push heroku master`していた時は動いていたのに、Travisからの自動デプロイに切り替えたら動かなくなった部分がチラホラあって、そのほとんどがassets precompile時の環境変数がらみっぽい。
 
-まず、[Sentry](https://getsentry.com/)というアプリのエラーを検知して通知してくれるサービスがあって、[Herokuのアドオン](https://addons.heroku.com/sentry)にもなっていてこれを利用してて、導入すると環境変数`SENTRY_DSN`にURLが入って、initializerでそれを参照して設定するようになっているんだけど、Travis CI上ではこれが空になってることによってデプロイが失敗する模様。
+まず、[Sentry](https://getsentry.com/)というアプリのエラーを検知して通知してくれるサービスがあって、[Herokuのアドオン](https://addons.heroku.com/sentry)にもなっていてこれを利用してて、導入すると環境変数`SENTRY_DSN`にURLが入って、initializerでそれを参照して設定するようになっているんだけど、Travis CI上ではこれが空になってしまっていてデプロイが失敗する模様。
 
-[このあたりのTravisのログ](https://travis-ci.org/ruedap/daplog/builds/11662127#L391)が該当部分で、じゃあ同じ環境変数をTravis上でも設定してあげればいいのかなと、`travis encrypt`コマンドを使って[前述の環境変数とその値を暗号化した上で`.travis.yml`に設定してみた](https://github.com/ruedap/daplog/blob/7b6ae0eed577739cb9785cb664947d4f461aca3f/.travis.yml#L23-L25)けど、ここで設定した環境変数は[テスト実行時は参照できる](https://travis-ci.org/ruedap/daplog/builds/11662127#L3)けど、デプロイ時はできない(?)みたいで、何度か設定の仕方を変えてやってみたけどうまく受け渡せなくてこの方法では改善できなかった。かといって、他にどうすればいいか思いつかなくて、剣道をしながら考え中。
+[このあたりのTravisのログ](https://travis-ci.org/ruedap/daplog/builds/11662127#L391)が該当部分で、じゃあ同じ環境変数をTravis上でも設定してあげればいいのかなと、`travis encrypt`コマンドを使って[前述の環境変数とその値を暗号化した上で`.travis.yml`に設定してみた](https://github.com/ruedap/daplog/blob/7b6ae0eed577739cb9785cb664947d4f461aca3f/.travis.yml#L23-L25)けど、ここで設定した環境変数は[テスト実行時は参照できる](https://travis-ci.org/ruedap/daplog/builds/11662127#L3)けど、デプロイ時はできない(?)みたいで、何度か設定の仕方を変えてやってみたけどうまく受け渡せなくてこの方法では改善できなかった。かといって、他にどうすればいいか思いつかなくて、剣道で汗を流しながら考え中。
 
-似たような問題として、precompile時に環境変数`RAILS_ENV`を参照して分岐する処理を書いている部分があって、デプロイ時はテスト時と違ってこの値には`production`が入っているようで（当たり前か）、前述のように自分はstaging環境にもデプロイしているので、その時はこの環境変数には`staging`が入ってて欲しくて、どうにかしようとしたんだけど、これもちょっと試行錯誤してみたけど同じようにうまく出来なかったので剣道(ry
+似たような問題として、precompile時に環境変数`RAILS_ENV`を参照して分岐する処理を書いている部分があって、デプロイ時はテスト時と違ってこの値には`production`が入っているようで、前述のように自分はstaging環境にもデプロイしているので、その時はこの環境変数には`staging`が入ってて欲しくて、どうにかしようとしたんだけど、これもちょっと試行錯誤してみたけど同じようにうまく出来なかったので剣道(ry
 
-今はどちらも、Travisからデプロイするようになってからはうまく動作させれてないので外してあるけど、このあたりの設定や対応方法がわかれば元に戻したいところ。もしこれについて何か知ってる人がいればぜひ情報求む、大和田常務。
+今はどちらも、Travisからデプロイするようになってからはうまく動作させられてないので外してあるけど、このあたりの設定や対応方法がわかれば元に戻したいところ。もしこれについて何か知ってる人がいればぜひ情報求む、大和田常務。
