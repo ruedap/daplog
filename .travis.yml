@@ -20,3 +20,6 @@ deploy:
     rvm: 2.0.0
   run:
   - rake redis:rebuild
+env:
+  global:
+    secure: j+f7inl/hbLuggiwUdNuFAOkrgRp8anFpFUT3nFbLLKOg3VIDQUOCeBwO2kBghVHs75NaFsFc7XqwwT40QqtqVwIVpHnxSylsgeAA9zFf/aWUX0ggy3KVtQ3bfTtJqX/xHwJSOg48Pao26PIeDNbb7wd3vTBlzD91bMrf6Ofi70=
