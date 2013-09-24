@@ -17,7 +17,7 @@ class Article
   property :published_at, DateTime
 
   # use redis-objects fields for everything else
-  counter :view_count, start: 0  # TODO
+  counter :view_count, start: 0  # TODO: unused property
   value :body_text
 
   # Public: 選択されているRedis DBの全データを消去します。
@@ -27,12 +27,10 @@ class Article
     redis.flushdb
   end
 
-
-
   # Public: 与えられたパスのMarkdownファイルを読み込んでArticleオブジェクトを
   # 生成します。
   #
-  # path - Markdownファイルのパス。
+  # path - Markdownファイルのパス
   #
   # 読み込んだ記事データを含んだArticleオブジェクトを返します。
   def self.create_article(path)
@@ -93,7 +91,7 @@ class Article
   # Public: 記事のURLを返します。引数にroot_urlがある場合はフルパスのURLを
   # 返します。
   #
-  # root_url - ルートURLのString。
+  # root_url - ルートURLのString
   #
   # URLのStringを返します。
   def url(root_url = nil)
@@ -135,18 +133,36 @@ class Article
     Kramdown::Document.new(markdown, options).to_html_with_rouge
   end
 
-  # TODO
+  # Private: 与えられたMarkdownデータの1行目から記事タイトルまでの行数を除いた
+  # 本文部分をHTMLに変換して返します。
+  #
+  # markdown -　MarkdownのString
+  #
+  # 本文部分のHTMLをStringで返します。
   def self.parse_article_body(markdown)
     index = parse_article_title_index(markdown).succ
     body_markdown = markdown.lines[index..-1].join
     parse_markdown(body_markdown).strip
   end
 
+  # Private: 与えられたMarkdownデータの記事タイトル部分を抽出して返します。
+  # 記事タイトルは、最初に現れたMarkdownのH1要素(`# `で始まる行)が使われます。
+  # 記事タイトルにはHTMLのspanタグが含まれていることがあります。
+  # 戻り値ではMarkdownのH1要素(`# `)は削除されます。
+  #
+  # markdown -　MarkdownのString
+  #
+  # 記事タイトル部分のHTMLをStringで返します。
   def self.parse_article_title(markdown)
     index = parse_article_title_index(markdown)
     markdown.lines[index].sub(/^#\s/, '').chomp
   end
 
+  # Private: 与えられたMarkdownデータの記事タイトル部分の行数を返します。
+  #
+  # markdown -　MarkdownのString
+  #
+  # 記事タイトル部分の行数をIntegerで返します。
   def self.parse_article_title_index(markdown)
     lines = markdown.lines
     index = lines.index { |v| v.match(/^#\s/) }
