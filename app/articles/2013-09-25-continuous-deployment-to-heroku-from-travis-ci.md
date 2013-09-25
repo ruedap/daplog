@@ -52,12 +52,12 @@ deploy:
 
 そんな感じで未来感を味わえるTravis & Herokuの素敵な継続的デプロイ機能なんだけど、まだよく分かってないところがあっていくつかハマり中。
 
-今まで手動で直接Herokuに向けて`git push heroku master`していた時は動いていたのに、Travisからの自動デプロイに切り替えたら動かなくなった部分がチラホラあって、そのほとんどがassets precompile時の環境変数がらみっぽい。
+今まで手動で直接Herokuに向けて`git push heroku master`していた時は動いていたのに、Travis CIからの自動デプロイに切り替えたら動かなくなった部分がチラホラあって、そのほとんどがassets precompile時の環境変数がらみっぽい。
 
-まず、[Sentry](https://getsentry.com/)というアプリのエラーを検知して通知してくれるサービスがあって、[Herokuのアドオン](https://addons.heroku.com/sentry)にもなっていてこれを利用してて、導入すると環境変数の`SENTRY_DSN`にURLが入って、initializerでそれを参照して設定するようになっているんだけど、Travis CI上ではこれが空になってしまっていてデプロイが失敗する模様。
+まず、[Sentry](https://getsentry.com/)というアプリのエラーを検知して通知してくれるサービスがあり、[Herokuのアドオン](https://addons.heroku.com/sentry)にもなっているので利用してて、導入すると環境変数の`SENTRY_DSN`にURLが入って、initializerでそれを参照して設定するようになっているんだけど、Travis CI上ではこれが空になってしまっていてデプロイが失敗する模様。
 
-[このあたりのTravisのログ](https://travis-ci.org/ruedap/daplog/builds/11662127#L391)が該当部分で、じゃあ同じ環境変数をTravis上でも設定してあげればいいのかなと、`travis encrypt`コマンドを使って[前述の環境変数とその値を暗号化した上で`.travis.yml`に設定してみた](https://github.com/ruedap/daplog/blob/7b6ae0eed577739cb9785cb664947d4f461aca3f/.travis.yml#L23-L25)けど、ここで設定した環境変数は[テスト実行時は参照できる](https://travis-ci.org/ruedap/daplog/builds/11662127#L3)けど、デプロイ時はできない(?)みたいで、何度か設定の仕方を変えてやってみたけどうまく受け渡せなくてこの方法では改善できなかった。かといって、他にどうすればいいか思いつかなくて、剣道で汗を流しながら考え中。
+[このあたりのTravisのログ](https://travis-ci.org/ruedap/daplog/builds/11662127#L391)が該当部分で、じゃあ同じ環境変数をTravis上でも設定してあげればいいのかなと、`travis encrypt`コマンドを使って[前述の環境変数とその値を暗号化した上で`.travis.yml`に設定してみた](https://github.com/ruedap/daplog/blob/7b6ae0eed577739cb9785cb664947d4f461aca3f/.travis.yml#L23-L25)けど、ここで設定した環境変数は[テスト実行時は参照できる](https://travis-ci.org/ruedap/daplog/builds/11662127#L3)けど、デプロイ時はできない(?)みたいで、何度か設定の仕方を変えてやってみたけどうまく受け渡せなくてこの方法では改善できなかった。かといって、他にどうすればいいか思いつかなくて、剣道場で汗を流しながら考え中。
 
-似たような問題として、precompile時に環境変数`RAILS_ENV`を参照して分岐する処理を書いている部分があって、デプロイ時はテスト時と違ってこの値には`production`が入っているようで、前述のように自分はstaging環境にもデプロイしているので、その時はこの環境変数には`staging`が入ってて欲しくて、どうにかしようとしたんだけど、これもちょっと試行錯誤してみたけど同じようにうまく出来なかったので剣道(ry
+似たような問題として、precompile時に環境変数`RAILS_ENV`を参照して分岐する処理を書いている部分があって、デプロイ時はテスト時と違ってこの値には`production`が入っているようで、前述のように自分はstaging環境にもデプロイしているので、その時はこの環境変数には`staging`が入ってて欲しくて、どうにかしようとしたんだけど、これもちょっと試行錯誤してみたけど同じようにうまく出来なかったので剣道場(ry
 
 今はどちらも、Travisからデプロイするようになってからは正常に動作させられてないので外してあるけど、このあたりの設定や対応方法がわかれば元に戻したいところ。もしこれについて何か知ってる人がいればぜひ情報求む、大和田常務。
