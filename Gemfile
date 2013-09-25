@@ -22,7 +22,7 @@ gem 'coderay', '1.0.9'
 gem 'browser', '0.2.1'
 gem 'redis-objects', '0.7.0'
 gem 'dm-core', '1.2.1'
-gem 'dm-redis-adapter', '0.8.3'
+gem 'dm-redis-adapter', '0.8.4'
 
 group :production, :staging do
   gem 'rails_12factor', '0.0.2' # for Heroku assets precompile
