@@ -1,0 +1,19 @@
+# humanstxt.org/
+# The humans responsible & technology colophon
+
+# TEAM
+
+    ruedap -- @ruedap
+
+# THANKS
+
+    GitHub
+    Heroku
+    Travis CI
+
+# TECHNOLOGY COLOPHON
+
+    Ruby on Rails, RSpec, Capybara
+    Slim, Sass, CoffeeScript, Kramdown
+
+    Source: https://github.com/ruedap/daplog
