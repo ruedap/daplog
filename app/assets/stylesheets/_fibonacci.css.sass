@@ -10,13 +10,11 @@ $HUE: 220 !default
 
 @import functions
 
-
 // -----------------------------------------------------------------------------
 // variables
 // -----------------------------------------------------------------------------
 
 @import variables
-
 
 // -----------------------------------------------------------------------------
 // base
@@ -51,13 +49,11 @@ a
   background-color: fiboco(-1)
   color: $color_circle__text
 
-::selection
+\::selection
   +selection
 
-::-moz-selection
+\::-moz-selection
   +selection
-
-
 
 // -----------------------------------------------------------------------------
 // module
@@ -80,19 +76,19 @@ a
   &::before, &::after
     +border-circle-raidus
     position: absolute
-    content: ''
+    content: ""
     background-color: fiboco(-2)
-    width: fibo($increment, 'px')
-    height: fibo($increment, 'px')
+    width: fibo($increment, "px")
+    height: fibo($increment, "px")
     margin: 0
     padding: 0
     +transform-origin(center middle)
     +transform(translate(-50%, 0))
-  $_center: (round(fibo($increment) / 3)) + 0px
+  $_center: round(fibo($increment) / 3) + 0px
   &::before
     margin-left: $_center
   &::after
-    margin-left: -($_center)
+    margin-left: -$_center
 
 %ellipsis
   white-space: nowrap
@@ -111,9 +107,9 @@ a
     text-align: left
 
 =style_article__time-circle($font-size, $fibo-size)
-  width: fibo($fibo-size, 'px')
-  height: fibo($fibo-size, 'px')
-  line-height: fibo($fibo-size, 'px')
+  width: fibo($fibo-size, "px")
+  height: fibo($fibo-size, "px")
+  line-height: fibo($fibo-size, "px")
   top: -(fibo($fibo-size) / 2) + 0px
   left: 50%
   margin-left: -(fibo($fibo-size) / 2) + 0px
@@ -131,21 +127,23 @@ a
   background-color: fiboco(-2)
   +radial-gradient(fiboco(-3), fiboco(-2))
   +media($break_all)
-    +style_article__time-circle(fibo(-2, 'rem') - 0.7rem, 1)
+    +style_article__time-circle(fibo(-2, "rem") - 0.7rem, 1)
+
   +media($break_tablets-and-above)
-    +style_article__time-circle(fibo(-2, 'rem') - 0.3rem, 2)
+    +style_article__time-circle(fibo(-2, "rem") - 0.3rem, 2)
+
   +media($break_desktop-and-above)
-    +style_article__time-circle(fibo(-2, 'rem'), 3)
+    +style_article__time-circle(fibo(-2, "rem"), 3)
     // TODO: magic number
     top: -350px
     margin-left: 0
-    left: (fibo(3) / 4) + 0px
+    left: fibo(3) / 4 + 0px
 
 %style_article__cite__icon
   @extend %dapicons
   color: fiboco(0)
   font-size: 89%
-  content: 'cite'
+  content: "cite"
   margin-right: 0.6em
 
 %style_article__code
@@ -174,7 +172,7 @@ a
 
 %style_article__table
   $_border-color: fiboco(-3)
-  margin: fibo(-1, 'px') auto
+  margin: fibo(-1, "px") auto
   width: 100%
   background-color: white
   border-spacing: 0
@@ -202,13 +200,9 @@ a
   tbody:first-child tr:first-child td
     border-top: 0
 
-
-
 // -----------------------------------------------------------------------------
 // layout
 // -----------------------------------------------------------------------------
-
-
 
 // -----------------------------------------------------------------------------
 // style
@@ -217,7 +211,7 @@ a
 .body-inner
   +outer-container
   background-color: $color_body-inner__background
-  max-width: fibo(6, 'px')
+  max-width: fibo(6, "px")
 
 .body-inner
   > header,
@@ -236,14 +230,16 @@ a
       width: 90%
       max-width: 584px
     +media($break_all)
-      padding-bottom: (fibo(1) / 2) + 0px
+      padding-bottom: fibo(1) / 2 + 0px
       margin-bottom: 1px
       background-color: fiboco(-1)
       +background-image(linear-gradient(fiboco(-1) 0, fiboco(-3) 100%))
+
     +media($break_tablets-and-above)
-      padding-bottom: (fibo(3) / 2) + 0px
+      padding-bottom: fibo(3) / 2 + 0px
       background-color: fiboco(-2)
       +background-image(linear-gradient(fiboco(-2) 0, fiboco(-4) 100%))
+
     +media($break_desktop-and-above)
       position: relative
       padding-bottom: 0
@@ -253,8 +249,8 @@ a
         background-color: fiboco(-2)
         +radial-gradient(fiboco(-3), fiboco(-1))
         +border-circle-raidus
-        width: fibo(6, 'px')
-        height: fibo(6, 'px')
+        width: fibo(6, "px")
+        height: fibo(6, "px")
         top: -(fibo(6) / 2) + 0px
       .logo
         position: absolute
@@ -264,14 +260,14 @@ a
 
 main
   +media($break_desktop-and-above)
-    margin-top: fibo(5, 'px')
+    margin-top: fibo(5, "px")
 
 main > article
   position: relative
   color: $color_body__text
   a
     &:visited
-      color: rgba($color_body__text, fibo(0, '.'))
+      color: rgba($color_body__text, fibo(0, "."))
   > time
     @extend %style_article__time
   > h1
@@ -281,17 +277,19 @@ main > article
     text-align: center
     margin-left: auto
     margin-right: auto
-    margin-bottom: fibomo(0, 'px')
+    margin-bottom: fibomo(0, "px")
     width: 90%
     +media($break_all)
-      font-size: fibomo(-1, 'rem') - 0.4rem
+      font-size: fibomo(-1, "rem") - 0.4rem
       padding-top: 3em
+
     +media($break_tablets-and-above)
-      font-size: fibo(-1, 'rem') - 0.4rem
+      font-size: fibo(-1, "rem") - 0.4rem
       padding-top: 4em
+
     +media($break_desktop-and-above)
       padding-top: 0
-      font-size: fibo(-1, 'rem')
+      font-size: fibo(-1, "rem")
       $_tolerance: 10px
       margin-bottom: fibo(2) + $_tolerance
       max-width: 877px
@@ -302,8 +300,7 @@ main > article
       &::before, &::after
         top: 100%
         left: 50%
-        margin-top: (fibo(2) / 2) - (fibo(-1) / 2) + 0px
-
+        margin-top: fibo(2) / 2 - fibo(-1) / 2 + 0px
   .article-body
     @extend %style_article_text-justify
     margin: 0 auto
@@ -311,30 +308,31 @@ main > article
     max-width: 699px
     width: 90%
     +media($break_tablets-and-above)
-      line-height: 2.0
+      line-height: 2
+
     > h2, h3
       color: fiboco(1)
       text-align: center
       position: relative
     > h2
-      margin-top: fibo(0, 'px')
+      margin-top: fibo(0, "px")
       font-size: $font-size_article__h2
       +media($break_tablets-and-above)
         font-size: $font-size_article__h2--tablets-and-above
-        margin-top: fibo(2, 'px')
-        margin-bottom: (fibo(1) / 2) + 0px
+        margin-top: fibo(2, "px")
+        margin-bottom: fibo(1) / 2 + 0px
         $_break-mark-size: -2
         +article-break-mark($_break-mark-size)
         &::before, &::after
-          top: -((fibo(2) / 2) + (fibo($_break-mark-size) / 2)) + 0px
+          top: -(fibo(2) / 2 + fibo($_break-mark-size) / 2) + 0px
           left: 50%
     > h3
       font-size: $font-size_article__h3
-      height: fibo(-1, 'px')
-      line-height: fibo(-1, 'px')
+      height: fibo(-1, "px")
+      line-height: fibo(-1, "px")
       +media($break_tablets-and-above)
-        height: fibo(0, 'px')
-        line-height: fibo(0, 'px')
+        height: fibo(0, "px")
+        line-height: fibo(0, "px")
     > p.center
       text-align: center
     > p > a
@@ -344,9 +342,9 @@ main > article
       > a > img
         max-width: 100%
         display: block
-        margin: fibomo(-1, 'px') auto
+        margin: fibomo(-1, "px") auto
         +media($break_desktop-and-above)
-          margin: fibo(-1, 'px') auto
+          margin: fibo(-1, "px") auto
       &.inline
         > img,
         > a > img
@@ -362,7 +360,7 @@ main > article
     > .footnotes
       color: $color_body__text--light
       font-size: $font-size_article__footnotes
-      margin-top: fibo(0, 'px')
+      margin-top: fibo(0, "px")
       line-height: $ratio_golden
       p
         margin: 0.5em 0
@@ -372,7 +370,7 @@ main > article
       color: fiboco(1)
       text-decoration: none
       &::before
-        content: '※'
+        content: "※"
         margin-right: 0.3em
     > p > small
       color: $color_body__text--light
@@ -410,25 +408,25 @@ main > article
         display: block
         margin: 0 auto
       figcaption
-        font-size : $font-size_article__figcaption
+        font-size: $font-size_article__figcaption
         margin: 0.5em 0
     hr
       position: relative
       border: none
       display: block
       width: 100%
-      height: fibo(0, 'px')
+      height: fibo(0, "px")
       $_break-mark-size: -3
       +article-break-mark($_break-mark-size)
       &::before, &::after
-        top: ((fibo(0) / 2) - (fibo($_break-mark-size) / 2)) + 0px
+        top: fibo(0) / 2 - fibo($_break-mark-size) / 2 + 0px
         left: 50%
     > p > cite
       font-weight: normal
       font-style: normal
       display: block
       font-size: $font-size_article__cite
-      margin-left: 1.0em
+      margin-left: 1em
       &::before
         @extend %style_article__cite__icon
     .CodeRay
@@ -438,26 +436,27 @@ main > article
     > pre.highlight
       display: block
       padding: 13px
-      border: 3px solid #eee
-      background-color: #fff
-      +box-shadow(inset 0 0 0 1px #ccc)
+      border: 3px solid #eeeeee
+      background-color: white
+      +box-shadow(inset 0 0 0 1px #cccccc)
       @extend %style_article__pre
 
 main > nav
   max-width: 699px
-  margin: fibo(1, 'px') auto
+  margin: fibo(1, "px") auto
   +media($break_tablets-and-above)
-    margin: fibo(3, 'px') auto
+    margin: fibo(3, "px") auto
+
   > a
     @extend %dapicons
     +border-circle-raidus
     +user-select(none)
     display: block
-    $_margin: ((fibo(1) - fibo(0)) / 2) + 0px
+    $_margin: (fibo(1) - fibo(0)) / 2 + 0px
     margin: $_margin auto
-    width: fibo(0, 'px')
-    height: fibo(0, 'px')
-    line-height: fibo(0, 'px')
+    width: fibo(0, "px")
+    height: fibo(0, "px")
+    line-height: fibo(0, "px")
     text-align: center
     background-color: fiboco(-2)
     color: $color_circle__text
@@ -469,11 +468,12 @@ main > nav
   $_top--tablets-and-above: 699px
   text-align: center
   position: relative
-  max-width: fibo(6, 'px')
-  +background-image(linear-gradient(fiboco(.45, true) 0, fiboco(0) 100%))
+  max-width: fibo(6, "px")
+  +background-image(linear-gradient(fiboco(0.45, true) 0, fiboco(0) 100%))
   height: $_height--tablets-and-above / 2
   +media($break_tablets-and-above)
     height: $_height--tablets-and-above
+
   > a
     +border-circle-raidus
     +hide-text
@@ -482,29 +482,30 @@ main > nav
     top: $_top--tablets-and-above / 2
     left: 50%
     +transform(translate(-50%, -50%))
-    width: fibo(3, 'px')
-    height: fibo(3, 'px')
-    line-height: fibo(3, 'px')
+    width: fibo(3, "px")
+    height: fibo(3, "px")
+    line-height: fibo(3, "px")
     text-align: center
-    background-color: rgba($color_circle__text, fibo(0, '.'))
-    background-image: image-url('ruedapcom-logo.svg')
+    background-color: rgba($color_circle__text, fibo(0, "."))
+    background-image: image-url("ruedapcom-logo.svg")
     background-repeat: no-repeat
     background-position: center center
     +media($break_tablets-and-above)
       top: $_top--tablets-and-above
-      width: fibo(4, 'px')
-      height: fibo(4, 'px')
-      line-height: fibo(4, 'px')
+      width: fibo(4, "px")
+      height: fibo(4, "px")
+      line-height: fibo(4, "px")
+
     +transition(background-color 0.3s linear)
     &:hover
-      background-color: rgba($color_circle__text, fibo(1, '.'))
+      background-color: rgba($color_circle__text, fibo(1, "."))
   &::before
     $_desktop-avator-top: 355px
     @extend %dapicons
-    content: 'ruedap'
+    content: "ruedap"
     position: absolute
     top: $_desktop-avator-top / 3
-    font-size: fibo(0, 'rem')
+    font-size: fibo(0, "rem")
     color: fiboco(-2)
     left: 50%
     +transform(translate(-50%, -50%))
@@ -514,21 +515,21 @@ main > nav
 // gradient fallback
 .L
   &.Y
-    background: fiboco(.35, true)
+    background: fiboco(0.35, true)
     color: fiboco(1)
   .T
-    background: fiboco(.45, true)
+    background: fiboco(0.45, true)
   .D
-    background: fiboco(.42, true)
+    background: fiboco(0.42, true)
   .M
-    background: fiboco(.39, true)
+    background: fiboco(0.39, true)
   a:hover
     .T
-      background: fiboco(.35, true)
+      background: fiboco(0.35, true)
     .D
-      background: fiboco(.32, true)
+      background: fiboco(0.32, true)
     .M
-      background: fiboco(.29, true)
+      background: fiboco(0.29, true)
   a:visited
     color: fiboco(1)
 
@@ -537,8 +538,8 @@ main > nav
   $_fibo-size: 0
   li
     display: block
-    height: fibo($_fibo-size - 1, 'px')
-    line-height: fibo($_fibo-size - 1, 'px')
+    height: fibo($_fibo-size - 1, "px")
+    line-height: fibo($_fibo-size - 1, "px")
     font-size: $_font-size - 0.4rem
     font-weight: normal
     margin-bottom: 1px
@@ -551,7 +552,7 @@ main > nav
       @extend %ellipsis
       display: block
       font-weight: normal
-      padding: 0 fibo($_fibo-size - 3, 'px')
+      padding: 0 fibo($_fibo-size - 3, "px")
   li.article-list__year
     text-align: center
     font-family: $font-family_article__time
@@ -559,8 +560,8 @@ main > nav
   +media($break_tablets-and-above)
     li
       font-size: $_font-size
-      height: fibo($_fibo-size, 'px')
-      line-height: fibo($_fibo-size, 'px')
+      height: fibo($_fibo-size, "px")
+      line-height: fibo($_fibo-size, "px")
       a
         +clearfix
         time
@@ -571,23 +572,23 @@ main > nav
           letter-spacing: 0.1em
           span
             +inline-block
-            width: fibo($_fibo-size, 'px')
+            width: fibo($_fibo-size, "px")
             text-align: center
       b
-        margin-left: (fibo($_fibo-size) * 2) + 0px
-        padding: 0 fibo($_fibo-size - 2, 'px')
+        margin-left: fibo($_fibo-size) * 2 + 0px
+        padding: 0 fibo($_fibo-size - 2, "px")
 
 .article-list
   @extend %style_article-list
   +no-bullets
-  color: #fff
+  color: white
   ul
     +no-bullets
   a
-    color: #fff
+    color: white
     outline: none
   time
-    background-color: #fff
+    background-color: white
 
 // embed
 .twitter-tweet,
