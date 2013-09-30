@@ -1,45 +1,44 @@
 // ratio
-$ratio_golden : 1.618
-$ratio_mobile : 0.8
+$ratio_golden: 1.618
+$ratio_mobile: 0.8
 
 // font-family
-$font-family_base          : 'Lucida Sans Unicode', 'Lucida Grande', 'Avenir Next', 'Hiragino Kaku Gothic ProN', Meiryo, $helvetica
-$font-family_article__h1   : 'Crimson Text', 'Hiragino Mincho ProN', 'MS PMincho', $georgia
-$font-family_article__time : 'Fjalla One', $helvetica
-$font-family_article__code : Consolas, 'Liberation Mono', Courier, monospace
+$font-family_base: "Lucida Sans Unicode", "Lucida Grande", "Avenir Next", "Hiragino Kaku Gothic ProN", Meiryo, $helvetica
+$font-family_article__h1: "Crimson Text", "Hiragino Mincho ProN", "MS PMincho", $georgia
+$font-family_article__time: "Fjalla One", $helvetica
+$font-family_article__code: Consolas, "Liberation Mono", Courier, monospace
 
 // font-size
-$font-size_base                           : 62.5%
-$font-size_body                           : 1.7rem
-$font-size_body--phones-and-below         : $font-size_body - 0.2rem
-$font-size_article                        : $font-size_body
-$font-size_article__h2                    : $font-size_article + 0.4rem
-$font-size_article__h2--tablets-and-above : $font-size_article + 0.6rem
-$font-size_article__h3                    : $font-size_article
-$font-size_article__ins                   : $font-size_article - 0.2rem
-$font-size_article__sup                   : $font-size_article - 0.5rem
-$font-size_article__footnotes             : $font-size_article - 0.5rem
-$font-size_article__cite                  : $font-size_article - 0.2rem
-$font-size_article__figcaption            : $font-size_article - 0.5rem
+$font-size_base: 62.5%
+$font-size_body: 1.7rem
+$font-size_body--phones-and-below: $font-size_body - 0.2rem
+$font-size_article: $font-size_body
+$font-size_article__h2: $font-size_article + 0.4rem
+$font-size_article__h2--tablets-and-above: $font-size_article + 0.6rem
+$font-size_article__h3: $font-size_article
+$font-size_article__ins: $font-size_article - 0.2rem
+$font-size_article__sup: $font-size_article - 0.5rem
+$font-size_article__footnotes: $font-size_article - 0.5rem
+$font-size_article__cite: $font-size_article - 0.2rem
+$font-size_article__figcaption: $font-size_article - 0.5rem
 
 // color
-$color_base__hue               : $HUE
-$color_base__saturation        : fibo(0, '%')
-$color_base__lightness         : fibo(-2, '%')
-$color_base                    : hsl($color_base__hue, $color_base__saturation, $color_base__lightness)
-$color_body__background__alpha : fibo(-3, '.')
-$color_body__background        : rgba($color_base, $color_body__background__alpha)
-$color_body__text              : #21272D
-$color_body__text--light       : #777
-$color_body-inner__background  : #fff
-$color_circle__text            : #fff
+$color_base__hue: $HUE
+$color_base__saturation: fibo(0, "%")
+$color_base__lightness: fibo(-2, "%")
+$color_base: hsl($color_base__hue, $color_base__saturation, $color_base__lightness)
+$color_body__background__alpha: fibo(-3, ".")
+$color_body__background: rgba($color_base, $color_body__background__alpha)
+$color_body__text: #21272d
+$color_body__text--light: #777777
+$color_body-inner__background: white
+$color_circle__text: white
 
 // breakpoints
-$break_all               : new-breakpoint(min-width 1px)
-$break_phones-and-below  : new-breakpoint(max-width 479px)
-$break_phones-and-above  : new-breakpoint(min-width 480px)
-$break_tablets-and-below : new-breakpoint(max-width 767px)
-$break_tablets-and-above : new-breakpoint(min-width 768px)
-$break_desktop-and-below : new-breakpoint(max-width 986px)
-$break_desktop-and-above : new-breakpoint(min-width 987px)
-
+$break_all: new-breakpoint(min-width 1px)
+$break_phones-and-below: new-breakpoint(max-width 479px)
+$break_phones-and-above: new-breakpoint(min-width 480px)
+$break_tablets-and-below: new-breakpoint(max-width 767px)
+$break_tablets-and-above: new-breakpoint(min-width 768px)
+$break_desktop-and-below: new-breakpoint(max-width 986px)
+$break_desktop-and-above: new-breakpoint(min-width 987px)
