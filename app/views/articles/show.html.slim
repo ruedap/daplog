@@ -7,6 +7,7 @@
 article
   time datetime=(@article.published_at) itemprop='datePublished' = @article.date
   h1 itemprop='name' == @article.title
+  a.link-to-github(href="https://github.com/ruedap/daplog/blob/master/app/articles/#{@article.filename}.md")
   section.article-body itemprop='articleBody' == @article.body
 nav role='navigation'
   = link_to 'home', root_path
