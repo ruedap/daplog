@@ -1,6 +1,6 @@
 # <span>Herokuアプリに独自ドメインを割り当てる</span><span>（ムームードメインの場合）</span>
 
-Herokuで作ったWebアプリに、自分で取得した独自ドメインを割り当てる方法について、今回はherokuコマンドから行ってみた。ちなみに、バリュードメインの場合は[こちら](/2011/05/15/ruby-heroku-web-app-value-domain)。
+Herokuで作ったWebアプリに、自分で取得した独自ドメインを割り当てる方法について、今回は`heroku`コマンドから行ってみた。ちなみに、バリュードメインの場合は[こちら](/2011/05/15/ruby-heroku-web-app-value-domain)。
 
 <!-- READMORE -->
 
@@ -18,7 +18,7 @@ Herokuで作ったWebアプリに、自分で取得した独自ドメインを�
 
 ## Heroku側の設定
 
-前回は、Herokuのアプリ管理ページからGUIベースでドメインを登録したけど、今回はターミナルからherokuコマンドを使って登録してみる。結果はどちらでやっても同じ。まず、`heroku addons:add`コマンドを使って、[Custom Domainsアドオン](http://addons.heroku.com/custom_domains)のBasicプランを利用するように設定する。
+前回は、Herokuのアプリ管理ページからGUIベースでドメインを登録したけど、今回はターミナルから`heroku`コマンドを使って登録してみる。結果はどちらでやっても同じ。まず、`heroku addons:add`コマンドを使って、[Custom Domainsアドオン](http://addons.heroku.com/custom_domains)のBasicプランを利用するように設定する。
 
 ~~~ sh
 $ heroku addons:add custom_domains:basic
