@@ -290,17 +290,21 @@ main > article
     +media($break_desktop-and-above)
       padding-top: 0
       font-size: fibo(-1, "rem")
-      $_tolerance: 10px
-      margin-bottom: fibo(2) + $_tolerance
+      margin-bottom: fibo(0) + 0px
       max-width: 877px
       span::after
         content: "\000a"
         white-space: pre-line
-      +article-break-mark(-1)
+  > .link-to-github
+    +media($break_desktop-and-above)
+      display: block
       &::before, &::after
-        top: 100%
         left: 50%
-        margin-top: fibo(2) / 2 - fibo(-1) / 2 + 0px
+      +article-break-mark(-1)
+      width: 0
+      height: fibo(-1) + 0px
+      $_tolerance: 10px
+      margin-bottom: fibo(0) + $_tolerance
   .article-body
     @extend %style_article_text-justify
     margin: 0 auto
