@@ -9,7 +9,7 @@ gem 'sass-rails', '4.0.0'
 gem 'uglifier', '2.2.1'
 gem 'coffee-rails', '4.0.0'
 gem 'jquery-rails', '3.0.4'
-gem 'jbuilder', '1.5.1'
+gem 'jbuilder', '1.5.2'
 gem 'slim', '2.0.0'
 gem 'slim-rails', '2.0.3'
 gem 'kramdown', '1.2.0'
@@ -37,7 +37,7 @@ group :development do
   gem 'binding_of_caller', '0.7.2'
   gem 'pry-rails', '0.3.2'
   gem 'foreman', '0.63.0'
-  gem 'guard-livereload', '1.4.0'
+  gem 'guard-livereload', '2.0.0'
   gem 'spring', '0.0.10'
 end
 
