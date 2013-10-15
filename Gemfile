@@ -38,7 +38,6 @@ group :development do
   gem 'pry-rails', '0.3.2'
   gem 'foreman', '0.63.0'
   gem 'guard-livereload', '2.0.0'
-  gem 'spring', '0.0.10'
 end
 
 group :test do
