@@ -5,7 +5,7 @@ ruby '2.0.0'
 gem 'unicorn', '4.6.3'
 
 gem 'rails', '4.0.0'
-gem 'sass-rails', '4.0.0'
+gem 'sass-rails', '4.0.1'
 gem 'uglifier', '2.2.1'
 gem 'coffee-rails', '4.0.0'
 gem 'jquery-rails', '3.0.4'
@@ -26,7 +26,7 @@ gem 'dm-redis-adapter', '0.8.4'
 
 group :production, :staging do
   gem 'rails_12factor', '0.0.2' # for Heroku assets precompile
-  gem 'newrelic_rpm', '3.6.7.159'
+  gem 'newrelic_rpm', '3.6.8.164'
 end
 
 group :development, :test do
@@ -38,7 +38,6 @@ group :development do
   gem 'pry-rails', '0.3.2'
   gem 'foreman', '0.63.0'
   gem 'guard-livereload', '2.0.0'
-  gem 'spring', '0.0.10'
 end
 
 group :test do
