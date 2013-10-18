@@ -150,3 +150,5 @@ $ git checkout 2-commercial
 * * *
 
 こんな感じで、まだ荒削りな香りがぷんぷんしますが、しばらく使っていて悪くなさそうなフォント管理方法な気がしたので、実例を交えて紹介してみました。
+
+<cite>[Mac ハンドブック：Font Book](http://support.apple.com/kb/HT2509?viewlocale=ja_JP)</cite>
