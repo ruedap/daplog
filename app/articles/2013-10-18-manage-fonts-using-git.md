@@ -137,7 +137,7 @@ $ git merge 2-commercial
 $ git push origin 3-personal
 ~~~
 
-共有(pull)する側のMacでは、普段のGitの時と同じようにcloneして該当するブランチに移動するだけです。
+共有(pull)する側のMacでは、普段のGitの時と同じようにcloneして該当するブランチに移動するだけです。これだけで元のMacと同じフォント環境をどこにでも再現できます。
 
 ~~~ sh
 $ cd ~/Library/Fonts
