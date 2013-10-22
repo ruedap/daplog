@@ -26,3 +26,6 @@
 
 # Ignore a coverage reports.
 /coverage
+
+# Ignore .sass-cache
+.sass-cache
