@@ -26,7 +26,7 @@ Font Awesome 4.0を使用する上で従来から大きく変わったのは主�
 <i class="fa fa-arrow-circle-right"></i> 4.0からの新しい書き方
 ~~~
 
-同じアイコンでも上記のように[3.2](http://fontawesome.io/3.2.1/icon/circle-arrow-right/)と[4.0](http://fontawesome.io/icon/arrow-circle-right/)で名称自体が変わっているものもあり、プレフィックスも変わり、さらに、常に付ける必要のあるベースクラス`fa`が追加されました。
+同じアイコンでも上記のように[3.2](http://fontawesome.io/3.2.1/icon/circle-arrow-right/)と[4.0](http://fontawesome.io/icon/arrow-circle-right/)で[名称自体が変わっているもの](https://github.com/FortAwesome/Font-Awesome/wiki/Upgrading-from-3.2.1-to-4)もあり、プレフィックスも変わり、さらに、常に付ける必要のあるベースクラス`fa`が追加されました。
 
 昨日リリースした[Font Awesome Workflow for Alfred 2](https://github.com/ruedap/alfred2-font-awesome-workflow)のバージョン1.0.0では、それらの変更に対応しているため、こちらも後方互換性が無くなっています。Font Awesome 3.2を使用する場合は[古いバージョン](https://github.com/ruedap/alfred2-font-awesome-workflow/releases/tag/0.3.0)を利用してください。
 
