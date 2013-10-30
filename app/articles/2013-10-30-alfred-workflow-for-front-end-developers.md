@@ -60,7 +60,7 @@
 
 [![Encode/Decode](/assets/2013/10/30/alfred-workflow-for-front-end-developers-05.png)](https://github.com/willfarrell/alfred-encode-decode-workflow)
 
-[Encode/Decode](https://github.com/willfarrell/alfred-encode-decode-workflow)は、HTML/URL/Base64のエンコード・デコード結果を一覧表示し、選択した項目の値をクリップボードにコピーできる。上記キャプチャ画像のアイコンが表示されてないのは不具合っぽいけど、使用上は特に問題なし。
+[Encode/Decode](https://github.com/willfarrell/alfred-encode-decode-workflow)は、HTML/URL/Base64のエンコード・デコード結果を一覧表示し、選択した項目の値をクリップボードにコピーできる。上記キャプチャ画像でアイコンが表示されていないのは不具合っぽいけど、使用上は特に問題なし。
 
 
 ## パッケージマネージャーを検索
