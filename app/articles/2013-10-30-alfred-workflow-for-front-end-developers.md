@@ -7,7 +7,7 @@
 <cite>[Automating Front-end Workflow // Speaker Deck](https://speakerdeck.com/addyosmani/automating-front-end-workflow?slide=148)</cite>
 <cite>[Hidden Productivity Secrets With Alfred \| Smashing Coding](http://coding.smashingmagazine.com/2013/10/25/hidden-productivity-secrets-with-alfred/)</cite>
 
-<small>上の各記事で取り上げられている拙作のFont Awesome Workflowについては、既にバージョンが古くなってしまっているので、もしダウンロードする場合は[最新版をこちらから](https://github.com/ruedap/alfred2-font-awesome-workflow)</small>
+<small>上の各ページで取り上げられている拙作のFont Awesome Workflowについては、既にバージョンが古くなってしまっているので、もしダウンロードする場合は[最新版をこちらから](https://github.com/ruedap/alfred2-font-awesome-workflow)</small>
 
 というわけで、その辺りの情報をベースにしつつ、自分でも使っていて便利だと思うAlfred Workflowを、主に**フロントエンド開発者向けのものに絞って紹介**してみる。
 
