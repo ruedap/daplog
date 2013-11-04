@@ -239,4 +239,4 @@ setting--admin__title-img
 - [Experimenting with component-based HTML/CSS naming and patterns](https://gist.github.com/juno/6666298)
 - [Fifty Shades of BEM — Le ministère de l'intégration](http://blog.kaelig.fr/post/48196348743/fifty-shades-of-bem)
 - [Almost Profound — Sass 3.3 @at-root & BEM!](http://blog.unakravets.com/post/64113156740/sass-3-3-at-root-bem)
-- [Objects in Space — Objects in Space — Medium](https://medium.com/objects-in-space/f6f404727)
+- [A style-guide for modular SASS development using SMACSS and BEM. — Medium](https://medium.com/objects-in-space/f6f404727)
