@@ -11,7 +11,7 @@ module ApplicationHelper
     if description
       truncate(strip_tags(description).strip.gsub(/\n/, ''), length: 130)
     else
-      'できればググってもでてこないようなことだけをかきたいけれど'
+      'Commit Every Day, Blog Every Week'
     end
   end
 
