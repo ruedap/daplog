@@ -6,14 +6,14 @@ gem 'unicorn', '4.6.3'
 
 gem 'rails', '4.0.1'
 gem 'sass-rails', '4.0.1'
-gem 'uglifier', '2.2.1'
+gem 'uglifier', '2.3.0'
 gem 'coffee-rails', '4.0.1'
 gem 'jquery-rails', '3.0.4'
 gem 'jbuilder', '1.5.2'
-gem 'slim', '2.0.0'
+gem 'slim', '2.0.2'
 gem 'slim-rails', '2.0.3'
 gem 'kramdown', '1.2.0'
-gem 'rouge', '1.0.0'
+gem 'rouge', '1.1.0'
 gem 'bourbon', '3.1.8'
 gem 'neat', '1.4.0'
 gem 'redis', '3.0.5'
@@ -26,7 +26,7 @@ gem 'dm-redis-adapter', '0.8.4'
 
 group :production, :staging do
   gem 'rails_12factor', '0.0.2' # for Heroku assets precompile
-  gem 'newrelic_rpm', '3.6.8.164'
+  gem 'newrelic_rpm', '3.6.8.168'
 end
 
 group :development, :test do
