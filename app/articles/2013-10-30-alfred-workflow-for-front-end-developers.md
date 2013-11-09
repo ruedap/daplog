@@ -9,7 +9,7 @@
 
 <small>上の各ページで取り上げられている拙作のFont Awesome Workflowについては、既にバージョンが古くなってしまっているので、もしダウンロードする場合は[最新版をこちらから](https://github.com/ruedap/alfred2-font-awesome-workflow)</small>
 
-というわけで、その辺りの情報をベースにしつつ、自分でも使っていて便利だと思うAlfred Workflowを、主に**フロントエンド開発者向けのものに絞って紹介**してみる。
+というわけで、その辺りの情報をベースにしつつ、自分でも使っていて便利だと思うAlfred Workflowを、主に**フロントエンド開発者向け**のものに絞って紹介してみる。
 
 
 ## Alfred Workflowとは
