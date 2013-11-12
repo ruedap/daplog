@@ -46,4 +46,5 @@ group :test do
   gem 'guard-rspec' # TODO: dm-redis-adapter dependency
   gem 'terminal-notifier-guard', '1.5.3'
   gem 'coveralls', '0.7.0', require: false
+  gem 'simplecov', '0.8.1', require: false
 end
