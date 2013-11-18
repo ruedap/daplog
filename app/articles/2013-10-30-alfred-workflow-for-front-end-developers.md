@@ -16,7 +16,7 @@
 
 最初に、そもそもAlfred Workflowをよく知らない人に向けて、[Font Awesome Workflow](https://github.com/ruedap/alfred2-font-awesome-workflow)を例に紹介。まず、以下のスクリーンキャスト（GIFアニメ）を見てもらうと良さそう。
 
-[![screencast.gif](https://github.com/ruedap/alfred2-font-awesome-workflow/raw/master/screenshots/screencast.gif)](https://github.com/ruedap/alfred2-font-awesome-workflow#font-awesome-workflow-for-alfred-2)
+[![screencast.gif](https://raw.github.com/ruedap/alfred2-font-awesome-workflow/9cd5455b437df1cf71e6fc9ab3a020483448154f/screenshots/screencast.gif)](https://github.com/ruedap/alfred2-font-awesome-workflow)
 
 [Font Awesome](http://fontawesome.io/icons/)という370種類のアイコンフォントをHTMLで手軽に使えるフリーの素材集があって、そのアイコンフォントをインクリメンタルサーチした上で、選択したアイコンのCSS用のクラス名を最前面のアプリ（エディタ）に自動でペーストする、というのが上のWorkflowで、基本的に多くのWorkflowがこれと同じような流れの動作をする。つまり、
 
