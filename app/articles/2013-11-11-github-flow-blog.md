@@ -131,9 +131,9 @@
 
 自分の場合は出先でブログを書いたりすることはまず無いけれど、CLIを使わずに更新する方法がある・いつもとは別の選択肢がある、というのは悪いことでは無さそう。
 
-今回作ってみたブログ環境はこんな感じで運用している真っ最中で、絶賛試行錯誤中。
-
 * * *
+
+今回作ってみたブログ環境はこんな感じで運用している真っ最中で、絶賛試行錯誤中。
 
 ちなみに、GitHub Flowを使ってブログを更新するフローというのは、自分が参加している[QNYPという会社のブログ](http://blog.qnyp.com/)でも既に実践していて、[以前書いた記事](http://blog.qnyp.com/2013/05/28/pull-request-for-github-beginners/)の中でもそのやりかたをキャプチャ付きで軽く触れている。ここでは[Middlemanを使っていて](http://blog.qnyp.com/2013/05/21/middleman-sync/)、フロー的に複数人で[Pull Request上での記事レビュー](http://blog.qnyp.com/images/2013-05/pull-request-for-github-beginners-10.png)も行っているので、より実際のGitHub Flowに近い流れになっている。こちらの環境はS3で、デプロイ方法も違うので待ち時間は少ない。
 
