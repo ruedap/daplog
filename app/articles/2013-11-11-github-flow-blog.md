@@ -122,8 +122,8 @@
 
 さらに前述の通り、やろうと思えば、ゼロの状態から新しい記事を書いてstagingブランチでコミットする、ということもWeb上だけから行うことが可能。例えば[この記事](/2013/09/25/continuous-deployment-to-heroku-from-travis-ci)や[この記事](/2013/10/01/vim-sass-convert)はWeb UIだけを使って書かれたもので、以下のIssueを先に作って記事を下書きし、それを元にWeb上でブランチを切ってコミットを行っている。ログから違いはわからないけど。
 
-- [2013-09-25-continuous-deployment-to-heroku-from-travis-ci.md · Issue #16 · ruedap/daplog](https://github.com/ruedap/daplog/issues/16)
-- [2013-10-01-vim-sass-convert.md · Issue #23 · ruedap/daplog](https://github.com/ruedap/daplog/issues/23)
+- [2013-09-25-continuous-deployment-to-heroku-from-travis-ci.md · Issue #16](https://github.com/ruedap/daplog/issues/16)
+- [2013-10-01-vim-sass-convert.md · Issue #23](https://github.com/ruedap/daplog/issues/23)
 
 ただ、画像を直接コミットする方法はまだ無いようなので、画像を使った記事を書く場合は何らかの外部サービスと連携する必要がありそう。一番簡単なのはDropboxかな。
 
