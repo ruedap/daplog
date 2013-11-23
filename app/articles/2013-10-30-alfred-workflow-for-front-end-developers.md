@@ -1,6 +1,6 @@
 # <span>フロントエンド開発者向けの</span><span>Alfred Workflow</span>
 
-1ヶ月前に、Web開発者にオススメな[Alfred](http://www.alfredapp.com/)用のWorkflowをまとめた[GitHubリポジトリ](https://github.com/zenorocha/alfred-workflows)が2,000 starsを超える人気を博していて、その中に自作の[Font Awesome Workflow](https://github.com/ruedap/alfred2-font-awesome-workflow)も選ばれていて、それをきっかけに開発者向けのWorkflowが盛り上がっていることを知った。
+1ヶ月前に、Web開発者にオススメな[Alfred](http://www.alfredapp.com/)用のWorkflowをまとめた[GitHubリポジトリ](https://github.com/zenorocha/alfred-workflows/blob/04b145b65ec1ca808500590143f5fffc2987a167/README.md)が2,000 starsを超える人気を博していて、その中に自作の[Font Awesome Workflow](https://github.com/ruedap/alfred2-font-awesome-workflow)も選ばれていて、それをきっかけに開発者向けのWorkflowが盛り上がっていることを知った。
 
 つい最近だと、Googleのエンジニアで著名な[Addy Osmani](https://github.com/addyosmani)がプレゼンで紹介していたり、フロントエンド向け情報サイトとして有名な[Smashing Magazine](http://www.smashingmagazine.com/)が特集記事にしていた。
 
