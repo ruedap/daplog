@@ -26,7 +26,7 @@ gem 'dm-redis-adapter', '0.8.4'
 
 group :production, :staging do
   gem 'rails_12factor', '0.0.2' # for Heroku assets precompile
-  gem 'newrelic_rpm', '3.6.8.168'
+  gem 'newrelic_rpm', '3.6.9.171'
 end
 
 group :development, :test do
