@@ -276,7 +276,7 @@ GEM
       polyglot
       polyglot (>= 0.3.1)
     tzinfo (0.3.38)
-    uglifier (2.3.0)
+    uglifier (2.3.1)
       execjs (>= 0.3.0)
       json (>= 1.8.0)
     unicorn (4.6.3)
@@ -322,5 +322,5 @@ DEPENDENCIES
   slim (= 2.0.2)
   slim-rails (= 2.0.3)
   terminal-notifier-guard (= 1.5.3)
-  uglifier (= 2.3.0)
+  uglifier (= 2.3.1)
   unicorn (= 4.6.3)
