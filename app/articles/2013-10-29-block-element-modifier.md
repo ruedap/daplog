@@ -17,7 +17,7 @@ BEMの方法論とMindBEMdingのルールについてはそれぞれの文書を
 
 ## MindBEMding
 
-[MindBEMding](http://csswizardry.com/2013/01/mindbemding-getting-your-head-round-bem-syntax/)は、そのBEMをCSSのクラス名に適用するために作られた規則で、CSS界隈でBEMと言った場合はこのMindBEMdingを指すことがほとんど。`Element`をアンダースコア2つ(`__`)、`Modifier`をハイフン2つ(`--`)で連結することでBEMの各要素を表現する。
+[MindBEMding](http://csswizardry.com/2013/01/mindbemding-getting-your-head-round-bem-syntax/)は、そのBEMをCSSのクラス名に適用するために作られた規則で、CSS界隈でBEMと言った場合はこのMindBEMdingを指すことが多い。`Element`をアンダースコア2つ(`__`)、`Modifier`をハイフン2つ(`--`)で連結することでBEMの各要素を表現する。
 
 ~~~ txt
 block
