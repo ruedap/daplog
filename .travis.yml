@@ -1,5 +1,5 @@
 language: ruby
-rvm: 2.0.0
+rvm: 2.1.0
 services:
 - redis-server
 bundler_args: --without development production staging
@@ -17,6 +17,6 @@ deploy:
     master: daplog
     staging: daplog-staging
   on:
-    rvm: 2.0.0
+    rvm: 2.1.0
   run:
   - rake redis:rebuild
