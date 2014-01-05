@@ -13,7 +13,7 @@ gem 'jbuilder', '1.5.2'
 gem 'slim', '2.0.2'
 gem 'slim-rails', '2.0.3'
 gem 'kramdown', '1.2.0'
-gem 'rouge', '1.1.0'
+gem 'rouge', '1.3.0'
 gem 'bourbon', '3.1.8'
 gem 'neat', '1.5.0'
 gem 'redis', '3.0.6'
@@ -41,7 +41,7 @@ group :development do
 end
 
 group :test do
-  gem 'rspec-rails', '2.14.0'
+  gem 'rspec-rails', '2.14.1'
   gem 'capybara', '2.2.0'
   gem 'guard-rspec' # TODO: dm-redis-adapter dependency
   gem 'terminal-notifier-guard', '1.5.3'
