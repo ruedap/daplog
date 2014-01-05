@@ -41,7 +41,7 @@ group :development do
 end
 
 group :test do
-  gem 'rspec-rails', '2.14.0'
+  gem 'rspec-rails', '2.14.1'
   gem 'capybara', '2.2.0'
   gem 'guard-rspec' # TODO: dm-redis-adapter dependency
   gem 'terminal-notifier-guard', '1.5.3'
