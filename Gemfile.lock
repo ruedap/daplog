@@ -280,7 +280,7 @@ GEM
     uglifier (2.3.1)
       execjs (>= 0.3.0)
       json (>= 1.8.0)
-    unicorn (4.7.0)
+    unicorn (4.8.1)
       kgio (~> 2.6)
       rack
       raindrops (~> 0.7)
@@ -324,4 +324,4 @@ DEPENDENCIES
   slim-rails (= 2.1.0)
   terminal-notifier-guard (= 1.5.3)
   uglifier (= 2.3.1)
-  unicorn (= 4.7.0)
+  unicorn (= 4.8.1)
