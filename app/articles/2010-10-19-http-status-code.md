@@ -11,4 +11,4 @@
 
 * * *
 
-<cite>[Webを支える技術 -HTTP、URI、HTML、そしてREST](http://www.amazon.co.jp/dp/4774142042/ruedap-22)</cite>
+<cite>[Webを支える技術 -HTTP、URI、HTML、そしてREST](http://www.amazon.co.jp/o/ASIN/4774142042/ruedap-22/)</cite>

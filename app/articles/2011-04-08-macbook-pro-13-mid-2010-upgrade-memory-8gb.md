@@ -24,7 +24,7 @@ MacBook Proのメモリーを交換するには、本体を開ける必要があ
 
 [![](/assets/2011/04/08/macbook-pro-13-mid-2010-upgrade-memory-8gb-02.png)](/assets/2011/04/08/macbook-pro-13-mid-2010-upgrade-memory-8gb-02.png)
 
-<cite>[Amazon.co.jp： VESSEL 精密ドライバーセット TD-56: DIY・工具](http://www.amazon.co.jp/dp/B000CED236)</cite>
+<cite>[Amazon.co.jp： VESSEL 精密ドライバーセット TD-56: DIY・工具](http://www.amazon.co.jp/o/ASIN/B000CED236)</cite>
 
 実際に使うのは、この6本のうちの00番の1本（上記画像の手前の赤いやつ）だけなので、もっとコストを落としたい場合は、単品で買うのがいいかもしれない。というわけで、今回必要になったブツの合計金額は、9,658円。
 
