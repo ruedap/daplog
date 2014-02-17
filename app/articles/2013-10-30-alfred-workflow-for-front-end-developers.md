@@ -1,11 +1,14 @@
 # <span>フロントエンド開発者向けの</span><span>Alfred Workflow</span>
 
-1ヶ月前に、Web開発者にオススメな[Alfred](http://www.alfredapp.com/)用のWorkflowをまとめた[GitHubリポジトリ](https://github.com/zenorocha/alfred-workflows/blob/04b145b65ec1ca808500590143f5fffc2987a167/README.md)が2,000 starsを超える人気を博していて、その中に自作の[Font Awesome Workflow](https://github.com/ruedap/alfred2-font-awesome-workflow)も選ばれていて、それをきっかけに開発者向けのWorkflowが盛り上がっていることを知った。
+1ヶ月前に、Web開発者にオススメな[Alfred](http://www.alfredapp.com/)用のWorkflowをまとめた[GitHubリポジトリ](https://github.com/zenorocha/alfred-workflows/blob/04b145b65ec1ca808500590143f5fffc2987a167/README.md)が2,000 starsを超える人気を博していて、その中に自作の[Font Awesome Workflow](https://github.com/ruedap/alfred2-font-awesome-workflow)も選ばれていて、それをきっかけに開発者向けのWorkflowが盛り上がっていることを知った。[^1]
+
+[^1]: このリポジトリは更新が遅く、各Workflow作者の最新バージョンを反映していない問題があったため、Font Awesome Workflowでは[こちらから削除依頼を出してリストから消してもらいました](https://github.com/zenorocha/alfred-workflows/pull/45)。そのため現在は掲載されていません。
 
 つい最近だと、Googleのエンジニアで著名な[Addy Osmani](https://github.com/addyosmani)がプレゼンで紹介していたり、フロントエンド向け情報サイトとして有名な[Smashing Magazine](http://www.smashingmagazine.com/)が特集記事にしていた。
 
-<cite>[Automating Front-end Workflow // Speaker Deck](https://speakerdeck.com/addyosmani/automating-front-end-workflow?slide=148)</cite>
-<cite>[Hidden Productivity Secrets With Alfred \| Smashing Coding](http://coding.smashingmagazine.com/2013/10/25/hidden-productivity-secrets-with-alfred/)</cite>
+- [Automating Front-end Workflow // Speaker Deck](https://speakerdeck.com/addyosmani/automating-front-end-workflow?slide=148)
+    - [上記の資料のプレゼン動画でFont Awesome Workflowが紹介されている部分](http://www.youtube.com/watch?v=1OAfGm_cI6Y#t=2414)
+- [Hidden Productivity Secrets With Alfred \| Smashing Coding](http://coding.smashingmagazine.com/2013/10/25/hidden-productivity-secrets-with-alfred/)
 
 <small>上の各ページで取り上げられている拙作のFont Awesome Workflowについては、既にバージョンが古くなってしまっているので、もしダウンロードする場合は[最新版をこちらから](https://github.com/ruedap/alfred2-font-awesome-workflow)</small>
 
