@@ -4,7 +4,9 @@
 
 - [Atomcasts Syntax Theme](https://atom.io/packages/atomcasts-syntax)
 
-[![less](https://raw.github.com/ruedap/atomcasts-syntax/a5833445ebfe86be22d058d8df007eb38f56aee9/screenshots/less.png)](https://atom.io/packages/atomcasts-syntax)
+[![scss](https://raw.github.com/ruedap/atomcasts-syntax/master/screenshots/scss.png)](https://atom.io/packages/atomcasts-syntax)
+
+[![erb](https://raw.github.com/ruedap/atomcasts-syntax/master/screenshots/erb.png)](https://atom.io/packages/atomcasts-syntax)
 
 RailsCastsのテーマを正確に再現したものではなく、だいぶオレオレな配色になっている。また、ちゃんと動作確認までできているファイルタイプはまだ少ないけど、自分が普段使うファイルタイプは自分で使っていきながら徐々に対応していく予定。基本的に[vim-mode](https://github.com/atom/vim-mode)でAtomを使っているので、vim-modeらしい装飾とかにできたらいいなぁと思ってる。
 
