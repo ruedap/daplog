@@ -31,7 +31,7 @@ group :production, :staging do
 end
 
 group :development, :test do
-  gem 'better_errors', '1.0.1'
+  gem 'better_errors', '1.1.0'
 end
 
 group :development do

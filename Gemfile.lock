@@ -29,7 +29,7 @@ GEM
     arel (4.0.2)
     atomic (1.1.14)
     bcrypt-ruby (3.1.2)
-    better_errors (1.0.1)
+    better_errors (1.1.0)
       coderay (>= 1.0.0)
       erubis (>= 2.6.6)
     binding_of_caller (0.7.2)
@@ -299,7 +299,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  better_errors (= 1.0.1)
+  better_errors (= 1.1.0)
   binding_of_caller (= 0.7.2)
   bourbon (= 3.1.8)
   browser (= 0.4.1)
