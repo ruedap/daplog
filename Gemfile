@@ -5,7 +5,7 @@ ruby '2.1.1'
 gem 'unicorn', '4.8.2'
 
 gem 'rails', '4.0.4'
-gem 'sass', '3.2.15'
+gem 'sass', '3.2.16'
 gem 'sass-rails', '4.0.2'
 gem 'uglifier', '2.3.1'
 gem 'coffee-rails', '4.0.1'
