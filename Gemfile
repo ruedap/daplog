@@ -24,6 +24,7 @@ gem 'browser', '0.4.1'
 gem 'redis-objects', '0.9.0'
 gem 'dm-core', '1.2.1'
 gem 'dm-redis-adapter', '0.8.4'
+gem 'therubyracer', '0.12.1' # for Heroku
 
 group :production, :staging do
   gem 'rails_12factor', '0.0.2' # for Heroku assets precompile
