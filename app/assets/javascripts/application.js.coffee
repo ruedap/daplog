@@ -1,8 +1,8 @@
 #= require jquery
 #= require jquery_ujs
-#= require_tree .
+#= require examples
 
-jQuery ->
+$ ->
 
   $(window).scroll ->
     _scrollTop = $(this).scrollTop()
