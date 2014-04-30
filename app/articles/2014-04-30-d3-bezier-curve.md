@@ -86,3 +86,5 @@ _interpolation = (points) ->
 ~~~
 
 さきほどは文字列を渡していた`interpolate`の引数に関数を渡すと、その関数の引数（上記では`points`）に折れ線グラフの座標を含んだ配列が渡されるので、そのデータを元に自分が描きたい曲線を、SVGのpath要素のd属性（3次ベジェ曲線）の文字列を組み立てることで実現している。
+
+今回の記事に載せた[コードの全文はこちら](https://github.com/ruedap/daplog/blob/master/app/assets/javascripts/examples/eg20140430.js.coffee)。
