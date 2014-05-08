@@ -322,6 +322,8 @@ main > article
       margin-bottom: fibo(0) + $_tolerance
   .article-body
     @extend %style_article_text-justify
+    // Fix browser reload bug
+    font-size: $font-size_body
     margin: 0 auto
     line-height: 1.8
     max-width: 699px
