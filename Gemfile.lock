@@ -299,7 +299,7 @@ GEM
     uglifier (2.3.1)
       execjs (>= 0.3.0)
       json (>= 1.8.0)
-    unicorn (4.8.2)
+    unicorn (4.8.3)
       kgio (~> 2.6)
       rack
       raindrops (~> 0.7)
@@ -345,4 +345,4 @@ DEPENDENCIES
   terminal-notifier-guard (= 1.5.3)
   therubyracer (= 0.12.1)
   uglifier (= 2.3.1)
-  unicorn (= 4.8.2)
+  unicorn (= 4.8.3)
