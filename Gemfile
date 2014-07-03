@@ -28,7 +28,7 @@ gem 'therubyracer', '0.12.1' # for Heroku
 
 group :production, :staging do
   gem 'rails_12factor', '0.0.2' # for Heroku assets precompile
-  gem 'newrelic_rpm', '3.6.9.171'
+  gem 'newrelic_rpm', '3.9.0.229'
 end
 
 group :development, :test do
