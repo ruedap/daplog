@@ -21,7 +21,7 @@ gem 'redis', '3.0.6'
 gem 'rack-rewrite', '1.4.01'
 gem 'coderay', '1.0.9'
 gem 'browser', '0.6.0'
-gem 'redis-objects', '0.9.0'
+gem 'redis-objects', '0.9.1'
 gem 'dm-core', '1.2.1'
 gem 'dm-redis-adapter', '0.8.4'
 gem 'therubyracer', '0.12.1' # for Heroku
