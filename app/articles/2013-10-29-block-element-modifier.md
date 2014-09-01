@@ -83,7 +83,7 @@ block--modifier__element
 
 ところで、もしかしたらHTML/CSSにおけるシングルクラスやマルチクラスという呼び方は聞き慣れないかもしれないけど、そのあたりの設計方法についてはこの記事が参考になる。
 
-<cite>[HTMLのセマンティックとフロントエンド構造について](http://enja.studiomohawk.com/2012/03/20/about-html-semantics-and-front-end-architecture/)</cite>
+<cite>[HTMLのセマンティックとフロントエンド構造について](http://article.enja.io/articles/about-html-semantics-and-front-end-architecture.html)</cite>
 
 上の記事の中で、[Nicolas Gallagher](https://github.com/necolas)氏は「CSSプリプロセッサの手助けがあったとしても私はマルチクラスを利用する方がよいと考えている」と、**クラスの組み合わせによる柔軟性を理由にマルチクラス設計を推奨**している。けれど、これは使う場面によると思っていて、自分の場合はシングルクラスの方が適していることが多い気がしている。理由は後述。
 
