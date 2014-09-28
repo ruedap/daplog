@@ -145,6 +145,8 @@ setting--admin__title-img
 
 現在RC1で正式版のリリースが近い[Sass 3.3](https://github.com/nex3/sass/blob/master/doc-src/SASS_CHANGELOG.md)では、**BEMで記述するのに適した新しい記法**が導入される予定。前述のSCSSでの記述例を、新しい記法で書くとこういう感じになる。
 
+<ins datetime="2014-09-28T15:34:00+09:00">Sass 3.3正式版では、RC1の記法から変更されたので詳しくは<a href="http://blog.sass-lang.com/posts/184094-sass-33-is-released">ドキュメント等</a>をご確認ください。</ins>
+
 ~~~ scss
 .block {
   width: 100px;
