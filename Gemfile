@@ -6,7 +6,7 @@ gem 'unicorn', '4.8.3'
 
 gem 'rails', '4.1.6'
 gem 'sass', '3.2.16'
-gem 'sass-rails', '4.0.3'
+gem 'sass-rails', '5.0.0.beta1'
 gem 'uglifier', '2.5.1'
 gem 'coffee-rails', '4.0.1'
 gem 'jquery-rails', '3.1.1'
