@@ -1,12 +1,12 @@
 source 'https://rubygems.org'
 
-ruby '2.1.2'
+ruby '2.1.3'
 
 gem 'unicorn', '4.8.3'
 
-gem 'rails', '4.1.4'
-gem 'sass', '3.2.16'
-gem 'sass-rails', '4.0.3'
+gem 'rails', '4.1.6'
+gem 'sass', '3.4.5'
+gem 'sass-rails', '5.0.0.beta1'
 gem 'uglifier', '2.5.1'
 gem 'coffee-rails', '4.0.1'
 gem 'jquery-rails', '3.1.1'
@@ -47,6 +47,6 @@ group :test do
   gem 'capybara', '2.2.0'
   gem 'guard-rspec' # TODO: dm-redis-adapter dependency
   gem 'terminal-notifier-guard', '1.5.3'
-  gem 'coveralls', '0.7.0', require: false
+  gem 'coveralls', '0.7.1', require: false
   gem 'simplecov', '0.8.1', require: false
 end
