@@ -4,7 +4,7 @@ ruby '2.1.4'
 
 gem 'unicorn', '4.8.3'
 
-gem 'rails', '4.1.6'
+gem 'rails', '4.1.7'
 gem 'sass', '3.4.5'
 gem 'sass-rails', '5.0.0.beta1'
 gem 'uglifier', '2.5.1'
