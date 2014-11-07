@@ -27,7 +27,7 @@ gem 'dm-redis-adapter', '0.8.4'
 gem 'therubyracer', '0.12.1' # for Heroku
 
 group :production, :staging do
-  gem 'rails_12factor', '0.0.2' # for Heroku assets precompile
+  gem 'rails_12factor', '0.0.3' # for Heroku assets precompile
   gem 'newrelic_rpm', '3.9.6.257'
 end
 
