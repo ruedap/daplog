@@ -1,0 +1,8 @@
+@function strip-units($value) {
+    @return $value / ($value * 0 + 1);
+}
+
+@function rem-to-px($rem) {
+  @return (strip-units($rem) * 10) * 1px;
+}
+
