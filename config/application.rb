@@ -32,8 +32,5 @@ module Daplog
     config.generators do |g|
       g.test_framework = 'rspec'
     end
-
-    # dapicons
-    config.assets.paths << Rails.root.join('app', 'assets', 'fonts', 'dapicons')
   end
 end
