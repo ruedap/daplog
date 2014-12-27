@@ -18,15 +18,13 @@ html(lang='ja' itemscope itemtype="#{yield :itemtype}")
     - if content_for? :canonical
       = yield :canonical
   body
-    .body-inner
-      header role='banner'
-        h1
-          .logo-bg
-          a href='/'
-            = image_tag('logo.svg', alt: blog_title, title: blog_title, class: 'logo')
-            span = blog_title
-      main role='main'
-        == yield
-      footer role='contentinfo'
-        a href='http://ruedap.com' ルエダップコム
+    header.Header role='banner'
+      h1
+        a href='/'
+          = image_tag('logo.svg', alt: blog_title, title: blog_title, class: 'logo')
+          span = blog_title
+    main.Main role='main'
+      == yield
+    footer.Footer role='contentinfo'
+      a href='http://ruedap.com' ルエダップコム
     == render 'shared/google_analytics'
