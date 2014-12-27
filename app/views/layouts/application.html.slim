@@ -10,11 +10,6 @@ html(lang='ja' itemscope itemtype="#{yield :itemtype}")
     == render 'layouts/twitter_cards'
     title = blog_title(article_title(@article))
     == stylesheet_link_tag 'application', media: 'all'
-    == stylesheet_link_tag "fibonacci-#{@hue}", media: 'all'
-    - if content_for? :gradient
-      = yield :gradient
-    - if browser.windows? && browser.chrome?
-      == stylesheet_link_tag 'shame-win-chrome', media: 'all'
     == javascript_include_tag 'application'
     == csrf_meta_tags
     == favicon_link_tag "favicon-#{@hue}.ico"
