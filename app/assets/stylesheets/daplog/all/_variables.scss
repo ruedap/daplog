@@ -1,6 +1,30 @@
 
+// Color
+// ===========================================================================
+
 $color-body: #21272d;
 $bgcolor-body: #fff;
+
+$color-link: #87b249;
+$color-link-hover: lighten($color-link, 20%);
+$color-link-focus: $color-link-hover;
+$color-link-active: lighten($color-link, 10%);
+$color-link-visited: grayscale($color-link);
+
+// Font
+// ===========================================================================
+
+$font-family-gothic: "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+$font-family-helvetica: "Helvetica Neue", Helvetica, Arial, $font-family-gothic;
+$font-family-lucida: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", $font-family-gothic;
+$font-family-avenir: "Avenir Next", "Avenir", $font-family-helvetica;
+$font-family-montserrat: "Montserrat", $font-family-avenir;
+$font-family-mono: Consolas, "Liberation Mono", Courier, "Hiragino Kaku Gothic ProN", Meiryo, monospace;
+
+$font-size-medium: 1.4rem;
+
+// Media queries
+// ===========================================================================
 
 $mq-min-width-mobile: null;
 $mq-min-width-tablet: 768px;

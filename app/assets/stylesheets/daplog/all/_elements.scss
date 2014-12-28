@@ -1,0 +1,21 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+// 1. Fix Chrome bug https://code.google.com/p/chromium/issues/detail?id=319623
+body {
+  font-family: $font-family-helvetica;
+  font-size: strip-units($font-size-medium) * 1em; // 1
+  text-size-adjust: 100%;
+  color: $color-body;
+}
+
+a {
+  @include link-colors($color-link, $color-link-hover, $color-link-active, $color-link-visited, $color-link-focus);
+}
