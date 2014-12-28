@@ -18,10 +18,10 @@ html(lang='ja' itemscope itemtype="#{yield :itemtype}")
     - if content_for? :canonical
       = yield :canonical
   body
-    header.Header role='banner'
-      h1.Container
-        a href='/'
-          = image_tag('logo.svg', alt: blog_title, title: blog_title, class: 'logo')
+    header.Header(role='banner')
+      h1.Header-heading.Container
+        a(href='/')
+          = image_tag('logo.svg', alt: blog_title, title: blog_title, class: 'Header-logo')
           span = blog_title
     main.Main role='main'
       == yield
