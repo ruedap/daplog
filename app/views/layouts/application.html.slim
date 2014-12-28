@@ -20,9 +20,10 @@ html(lang='ja' itemscope itemtype="#{yield :itemtype}")
   body
     header.Header(role='banner')
       h1.Header-heading.Container
-        a(href='/')
-          = image_tag('logo.svg', alt: blog_title, title: blog_title, class: 'Header-logo')
-          span = blog_title
+        a.Header-logoLink(href='/')
+          .Header-title = blog_title
+          .Header-logo
+            = render('layouts/logo_svg.erb')
     main.Main role='main'
       == yield
     footer.Footer role='contentinfo'
