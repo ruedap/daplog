@@ -12,7 +12,6 @@ html {
 body {
   font-family: $font-family-helvetica;
   font-size: strip-units($font-size-medium) * 1em; // 1
-  text-size-adjust: 100%;
   color: $color-body;
   background-color: $bgcolor-body;
 }
