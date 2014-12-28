@@ -1,3 +1,23 @@
 
 $color-body: #21272d;
 $bgcolor-body: #fff;
+
+$mq-min-width-mobile: null;
+$mq-min-width-tablet: 768px;
+$mq-min-width-desktop: 992px;
+
+$mq-min-breakpoints: (
+  mobile:  $mq-min-width-mobile,
+  tablet:  $mq-min-width-tablet,
+  desktop: $mq-min-width-desktop
+);
+
+$mq-max-width-mobile: $mq-min-width-tablet - 1px;
+$mq-max-width-tablet: $mq-min-width-desktop - 1px;
+$mq-max-width-desktop: null;
+
+$mq-max-breakpoints: (
+  mobile:  $mq-max-width-mobile,
+  tablet:  $mq-max-width-tablet,
+  desktop: $mq-max-width-desktop
+);

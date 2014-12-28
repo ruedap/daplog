@@ -1,0 +1,36 @@
+@mixin u-cf {
+  &:before,
+  &:after {
+    content: " ";
+    display: table;
+  }
+
+  &:after {
+    clear: both;
+  }
+}
+
+.u-cf {
+  @include u-cf;
+}
+
+@mixin u-nbfc {
+  overflow: hidden !important;
+}
+
+.u-nbfc {
+  @include u-nbfc;
+}
+
+.u-nbfcAlt {
+  display: table-cell !important;
+  width: 10000px !important;
+}
+
+.u-floatLeft {
+  float: left !important;
+}
+
+.u-floatRight {
+  float: right !important;
+}
