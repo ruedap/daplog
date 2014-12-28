@@ -36,6 +36,27 @@
   @include font-smoothing;
   font-family: $font-family-fjalla;
   letter-spacing: 0.1em;
-  font-size: 2.1rem;
+  font-size: fibo(xsmall, rem);
   fill: #fff;
+}
+
+.Article-title {
+  @include font-smoothing;
+  margin-right: auto;
+  margin-bottom: fibo(medium, px);
+  margin-left: auto;
+  max-width: 877px;
+  font-family: $font-family-crimson;
+  font-size: fibo(small, rem);
+  font-weight: normal;
+  text-align: center;
+  line-height: 1.618;
+
+  // TODO: 877px
+  @include mq(tablet) {
+    span::after {
+      content: "\000a";
+      white-space: pre-line;
+    }
+  }
 }

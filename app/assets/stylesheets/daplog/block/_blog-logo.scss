@@ -1,30 +1,30 @@
 .BlogLogo {
   display: block;
   width: 100%;
+}
 
-  #BlogLogo-illust {
-    stroke: rgba(#fff, 0.6);
-  }
+#BlogLogo-illust {
+  stroke: rgba(#fff, 0.6);
+}
 
+#BlogLogo-caption {
+  stroke: rgba(#fff, 0.7);
+}
+
+#BlogLogo-iconPhone {
+  stroke: rgba(#fff, 0.8);
+}
+
+#BlogLogo-textPhoneNumber {
+  stroke: rgba(#fff, 0.9);
+}
+
+@include mq(null, mobile) {
+  #BlogLogo-textEinsteins,
+  #BlogLogo-textPhoneNumber,
+  #BlogLogo-iconPhone,
   #BlogLogo-caption {
-    stroke: rgba(#fff, 0.7);
-  }
-
-  #BlogLogo-iconPhone {
-    stroke: rgba(#fff, 0.8);
-  }
-
-  #BlogLogo-textPhoneNumber {
-    stroke: rgba(#fff, 0.9);
-  }
-
-  @include mq(null, mobile) {
-    #BlogLogo-textEinsteins,
-    #BlogLogo-textPhoneNumber,
-    #BlogLogo-iconPhone,
-    #BlogLogo-caption {
-      stroke: none;
-      fill: rgba(#fff, 0.8);
-    }
+    stroke: none;
+    fill: rgba(#fff, 0.8);
   }
 }

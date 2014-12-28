@@ -2,7 +2,35 @@
 // Fibonacci
 // ===========================================================================
 
-$fibonacci: 1 1 2 3 5 8 13 21 34 55 89 144 233 377 610 987 1597 2584 4181;
+// fibonacci: 1 1 2 3 5 8 13 21 34 55 89 144 233 377 610 987 1597 2584 4181
+$fibonacci-map: (
+  xxxxxxlarge: 1597,
+  xxxxxlarge: 987,
+  xxxxlarge: 610,
+  xxxlarge: 377,
+  xxlarge: 233,
+  xlarge: 144,
+  large: 89,
+  medium: 55,
+  small: 34,
+  xsmall: 21,
+  xxsmall: 13,
+  xxxsmall: 8,
+  xxxxsmall: 5,
+  xxxxxsmall: 3
+);
+
+@function fibo($size-name, $unit: null) {
+  $size: map-get($fibonacci-map, $size-name);
+
+  @if $unit == px {
+    @return $size + 0px;
+  } @else if $unit == rem {
+    @return ($size / 10) + 0rem;
+  } @else {
+    @return $size;
+  }
+}
 
 
 // Color
@@ -22,6 +50,11 @@ $color-link-visited: grayscale($color-link);
 // Font
 // ===========================================================================
 
+@font-face {
+  font-family: "YuMin";
+  src: local("YuMincho"), local("Yu Mincho"), local("游明朝");
+}
+
 $font-family-gothic: "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
 $font-family-helvetica: "Helvetica Neue", Helvetica, Arial, $font-family-gothic;
 $font-family-lucida: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", $font-family-gothic;
@@ -29,6 +62,9 @@ $font-family-avenir: "Avenir Next", "Avenir", $font-family-helvetica;
 $font-family-fjalla: "Fjalla One", "Helvetica Neue", Helvetica, Arial, sans-serif;
 $font-family-montserrat: "Montserrat", $font-family-avenir;
 $font-family-mono: Consolas, "Liberation Mono", Courier, "Hiragino Kaku Gothic ProN", Meiryo, monospace;
+
+$font-family-georgia: Georgia, Cambria, "Times New Roman", Times, serif;
+$font-family-crimson: "Crimson Text", "YuMin", "Hiragino Mincho ProN", "Hiragino Mincho Pro", "MS PMincho", $font-family-georgia;
 
 $font-size-medium: 1.4rem;
 
