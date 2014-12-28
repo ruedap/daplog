@@ -19,11 +19,12 @@ html(lang='ja' itemscope itemtype="#{yield :itemtype}")
       = yield :canonical
   body
     header.Header(role='banner')
-      h1.Header-heading.Container
-        a.Header-logoLink(href='/')
-          .Header-title= blog_title
-          .Header-logo
-            = render('layouts/logo_svg.erb')
+      .Header-container.Container
+        h1.Header-heading
+          a.Header-logoLink(href='/')
+            .Header-logoSpacer= blog_title
+            .Header-logo
+              = render('layouts/logo_svg.erb')
     main.Main(role='main')
       .Main-container.Container
         == yield

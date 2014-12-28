@@ -1,6 +1,13 @@
 
-.Header-heading {
+.Header-container {
   background-color: $bgcolor-content;
+}
+
+.Header-heading {
+  // 1 / 1.618 = 0.618
+  // (987px * 0.618) - (987px / 2) = 117px
+  // 117 / 987 = 0.118541033
+  padding-bottom: 11.854%;
 }
 
 .Header-logoLink {
@@ -9,13 +16,13 @@
   width: 100%;
 }
 
-.Header-title {
+.Header-logoSpacer {
   position: relative;
   display: block;
   margin-top: -50%;
   width: 100%;
   padding-bottom: 100%;
-  font-size: 0px;
+  font-size: 0;
 }
 
 .Header-logo {

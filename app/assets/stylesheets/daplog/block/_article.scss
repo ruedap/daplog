@@ -1,0 +1,41 @@
+
+.Article {
+}
+
+.Article-datetimeContainer {
+  display: block;
+  position: absolute;
+  max-width: $max-width-Container;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  pointer-events: none;
+}
+
+.Article-datetimeSpacer {
+  display: block;
+  position: relative;
+  width: 100%;
+  padding-bottom: 61.8%;
+  font-size: 0;
+}
+
+.Article-datetimeSVG {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.Article-datetimeSVGCircle {
+  fill: rgba(63,24,83,0.34);  // TODO
+}
+
+.Article-datetimeSVGText {
+  @include font-smoothing;
+  font-family: $font-family-fjalla;
+  letter-spacing: 0.1em;
+  font-size: 2.1rem;
+  fill: #fff;
+}

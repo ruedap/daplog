@@ -1,4 +1,10 @@
 
+// Fibonacci
+// ===========================================================================
+
+$fibonacci: 1 1 2 3 5 8 13 21 34 55 89 144 233 377 610 987 1597 2584 4181;
+
+
 // Color
 // ===========================================================================
 
@@ -20,6 +26,7 @@ $font-family-gothic: "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
 $font-family-helvetica: "Helvetica Neue", Helvetica, Arial, $font-family-gothic;
 $font-family-lucida: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", $font-family-gothic;
 $font-family-avenir: "Avenir Next", "Avenir", $font-family-helvetica;
+$font-family-fjalla: "Fjalla One", "Helvetica Neue", Helvetica, Arial, sans-serif;
 $font-family-montserrat: "Montserrat", $font-family-avenir;
 $font-family-mono: Consolas, "Liberation Mono", Courier, "Hiragino Kaku Gothic ProN", Meiryo, monospace;
 
@@ -29,7 +36,10 @@ $font-size-medium: 1.4rem;
 // Size
 // ===========================================================================
 
-$max-width-Container: 987px;
+$width-base: 987px;
+$max-width-Container: $width-base;
+
+
 
 // Media queries
 // ===========================================================================

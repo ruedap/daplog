@@ -4,9 +4,11 @@
   = content_for :canonical
     == tag :link, rel: 'canonical', href: @canonical
 
-article
-  time datetime=(@article.published_at) itemprop='datePublished' = @article.date
-  h1 itemprop='name' == @article.title
+article.Article
+  .Article-datetimeContainer
+    time.Article-datetimeSpacer(datetime=@article.published_at itemprop='datePublished')= @article.date
+    = render(partial: 'articles/datetime_svg.erb', locals: { article_date: @article.date })
+  h1.Article-title(itemprop='name')== @article.title
   a.link-to-github(href="https://github.com/ruedap/daplog/blob/master/app/articles/#{@article.filename}.md")
   section.article-body itemprop='articleBody' == @article.body
 nav role='navigation'
