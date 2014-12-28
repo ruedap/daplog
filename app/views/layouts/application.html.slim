@@ -19,7 +19,7 @@ html(lang='ja' itemscope itemtype="#{yield :itemtype}")
       = yield :canonical
   body
     header.Header role='banner'
-      h1
+      h1.Container
         a href='/'
           = image_tag('logo.svg', alt: blog_title, title: blog_title, class: 'logo')
           span = blog_title

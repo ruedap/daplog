@@ -11,6 +11,7 @@ $color-link-focus: $color-link-hover;
 $color-link-active: lighten($color-link, 10%);
 $color-link-visited: grayscale($color-link);
 
+
 // Font
 // ===========================================================================
 
@@ -22,6 +23,12 @@ $font-family-montserrat: "Montserrat", $font-family-avenir;
 $font-family-mono: Consolas, "Liberation Mono", Courier, "Hiragino Kaku Gothic ProN", Meiryo, monospace;
 
 $font-size-medium: 1.4rem;
+
+
+// Size
+// ===========================================================================
+
+$max-width-Container: 987px;
 
 // Media queries
 // ===========================================================================
