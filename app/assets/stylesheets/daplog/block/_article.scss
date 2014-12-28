@@ -60,3 +60,35 @@
     }
   }
 }
+
+.Article-githubLink {
+  display: block;
+  position: relative;
+  margin-right: auto;
+  margin-bottom: fibo(medium, px) + 10px;
+  margin-left: auto;
+  width: fibo(small, px) * 2;
+  height: fibo(small, px);
+
+  &::before,
+  &::after {
+    display: block;
+    position: absolute;
+    content: "";
+    background-color: rgba(63,24,83,0.34);  // TODO
+    width: fibo(small, px);
+    height: fibo(small, px);
+    left: 50%;
+    margin: 0;
+    padding: 0;
+    border-radius: 100%;
+    transform-origin: center center;
+    transform: translate(-50%, 0);
+  }
+  &::before {
+    margin-left: fibo(small, px) / 3;
+  }
+  &::after {
+    margin-left: -(fibo(small, px) / 3);
+  }
+}
