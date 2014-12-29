@@ -168,6 +168,22 @@
   }
 }
 
+%ArticleBody-code {
+  code, kbd {
+    @include font-smoothing(false);
+    white-space: pre;
+    word-wrap: break-word;
+    font-family: $font-family-mono;
+    font-size: 79%;
+    margin: 0 0.2em;
+    padding: 0 0.4em;
+    vertical-align: 0.1em;
+    background-color: #f2f2f2;
+    border: 1px solid rgba(gray, 0.4);
+    border-radius: 2px;
+  }
+}
+
 %ArticleBody-bookCoverLink {
   .book-cover-link {
     text-align: right;
@@ -194,6 +210,7 @@
   @extend %ArticleBody-blockquote;
   @extend %ArticleBody-pre;
   @extend %ArticleBody-highlight;
+  @extend %ArticleBody-code;
   @extend %ArticleBody-bookCoverLink;
   @include font-smoothing;
 
