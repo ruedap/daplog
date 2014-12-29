@@ -68,6 +68,23 @@
   }
 }
 
+%ArticleBody-hr {
+  > hr {
+    $_height: fibo(medium, px);
+    @include style-article-section-mark(xxsmall) {
+      &::before,
+      &::after {
+        top: ($_height / 2) - (fibo(xxsmall, px) / 2);
+      }
+    }
+    position: relative;
+    border: none;
+    display: block;
+    width: 100%;
+    height: $_height;
+  }
+}
+
 %ArticleBody-figure {
   figure {
     display: block;
@@ -171,6 +188,7 @@
   @extend %ArticleBody-p;
   @extend %ArticleBody-strong;
   @extend %ArticleBody-list;
+  @extend %ArticleBody-hr;
   @extend %ArticleBody-figure;
   @extend %ArticleBody-cite;
   @extend %ArticleBody-blockquote;
