@@ -32,6 +32,7 @@ $fibonacci-map: (
   }
 }
 
+$ratio-golden: 1.618;
 
 // Color
 // ===========================================================================
@@ -58,6 +59,7 @@ $color-link-visited: grayscale($color-link);
 $font-family-gothic: "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
 $font-family-helvetica: "Helvetica Neue", Helvetica, Arial, $font-family-gothic;
 $font-family-lucida: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", $font-family-gothic;
+
 $font-family-avenir: "Avenir Next", "Avenir", $font-family-helvetica;
 $font-family-fjalla: "Fjalla One", "Helvetica Neue", Helvetica, Arial, sans-serif;
 $font-family-montserrat: "Montserrat", $font-family-avenir;
@@ -67,6 +69,7 @@ $font-family-georgia: Georgia, Cambria, "Times New Roman", Times, serif;
 $font-family-crimson: "Crimson Text", "YuMin", "Hiragino Mincho ProN", "Hiragino Mincho Pro", "MS PMincho", $font-family-georgia;
 
 $font-size-medium: 1.4rem;
+$font-size-ArticleBody: 1.7rem;
 
 
 // Size

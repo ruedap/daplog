@@ -10,6 +10,7 @@ article.Article
     = render(partial: 'articles/datetime_svg.erb', locals: { article_date: @article.date })
   h1.Article-title(itemprop='name')== @article.title
   a.Article-githubLink(href="https://github.com/ruedap/daplog/blob/master/app/articles/#{@article.filename}.md")
-  section.article-body itemprop='articleBody' == @article.body
+  section.Article-body.ArticleBody(itemprop='articleBody')== @article.body
+
 nav role='navigation'
   = link_to 'home', root_path
