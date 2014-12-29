@@ -27,6 +27,8 @@ $fibonacci-map: (
     @return $size + 0px;
   } @else if $unit == rem {
     @return ($size / 10) + 0rem;
+  } @else if $unit == alpha {
+    @return ($size / 100);
   } @else {
     @return $size;
   }
@@ -37,14 +39,17 @@ $ratio-golden: 1.618;
 // Color
 // ===========================================================================
 
+$color-brand: rgb(63,24,83);
+
 $color-body: #21272d;
-$bgcolor-body: rgba(44,24,83,0.13);
+$bgcolor-body: rgba($color-brand, fibo(xxsmall, alpha));
 $bgcolor-content: #fff;
 
-$color-link: #87b249;
-$color-link-hover: lighten($color-link, 20%);
+
+$color-link: rgba($color-brand, fibo(medium, alpha));
+$color-link-hover: rgba($color-brand, fibo(small, alpha));
 $color-link-focus: $color-link-hover;
-$color-link-active: lighten($color-link, 10%);
+$color-link-active: rgba($color-brand, fibo(xsmall, alpha));
 $color-link-visited: grayscale($color-link);
 
 
