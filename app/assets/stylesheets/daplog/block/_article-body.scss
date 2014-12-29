@@ -55,7 +55,7 @@
     margin-top: 1em;
     margin-bottom: 1em;
     padding-left: 2.5em;
-    font-size: $font-size-ArticleBodySmall;
+    font-size: $font-size-small-ArticleBody;
   }
 
   ul {
@@ -67,12 +67,30 @@
   }
 }
 
+%ArticleBody-figure {
+  figure {
+    display: block;
+    margin: 1.5em auto;
+    padding: 0;
+    text-align: center;
+    img {
+      max-width: 100%;
+      display: block;
+      margin: 0 auto;
+    }
+    figcaption {
+      font-size: $font-size-xsmall-ArticleBody;
+      margin: 0.5em 0;
+    }
+  }
+}
+
 %ArticleBody-cite {
   > p > cite {
     display: block;
     font-weight: normal;
     font-style: normal;
-    font-size: $font-size-ArticleBodySmall;
+    font-size: $font-size-medium-ArticleBody;
     margin-left: 1em;
     &::before {
       @include dapicons;
@@ -130,6 +148,7 @@
   @extend %ArticleBody-p;
   @extend %ArticleBody-strong;
   @extend %ArticleBody-list;
+  @extend %ArticleBody-figure;
   @extend %ArticleBody-cite;
   @extend %ArticleBody-pre;
   @extend %ArticleBody-highlight;
@@ -137,7 +156,7 @@
   @include font-smoothing;
 
   font-family: $font-family-lucida;
-  font-size: $font-size-ArticleBody;
+  font-size: $font-size-medium-ArticleBody;
   line-height: 1.8;
 
   @include mq(tablet) {
