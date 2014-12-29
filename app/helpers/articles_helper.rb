@@ -1,6 +1,6 @@
 module ArticlesHelper
   def generate_article_list(articles)
-    content_tag :ul, class: 'article-list' do
+    content_tag :ul, class: 'ArticleList' do
       article_year = ''
       articles.each do |a|
         path = a.url
@@ -8,12 +8,13 @@ module ArticlesHelper
         html = ''
         unless article_year == year
           article_year = year
-          html << content_tag(:li, article_year, class: 'L Y article-list__year')
+          html << content_tag(:li, article_year, class: 'ArticleList-item ArticleList-yearHeading')
         end
-        html << content_tag(:li, class: 'L') do
+        html << content_tag(:li, class: 'ArticleList-item') do
           title = generate_time_tag(a)
-          title << content_tag(:b, strip_tags(a.title), class: 'T')
-          link_to(title, path)
+          title << ' '
+          title << content_tag(:span, strip_tags(a.title), class: 'ArtcileList-title u-textTruncate')
+          link_to(title, path, class: 'ArticleList-itemLink')
         end
         concat html.html_safe
       end
@@ -21,11 +22,15 @@ module ArticlesHelper
   end
 
   def generate_time_tag(article)
+    year = article.date[0..3]
     month = article.date[5..6]
     day = article.date[8..9]
-    html = content_tag(:span, month, class: 'M')
-    html << content_tag(:span, day, class: 'D')
-    content_tag(:time, html, datetime: article.published_at)
+    html = content_tag(:span, year, class: 'ArticleList-year')
+    html << content_tag(:span, '.', class: 'ArticleList-dot')
+    html << content_tag(:span, month, class: 'ArticleList-month')
+    html << content_tag(:span, '.', class: 'ArticleList-dot')
+    html << content_tag(:span, day, class: 'ArticleList-day')
+    content_tag(:time, html, datetime: article.published_at, class: 'ArticleList-time')
   end
 
   def article_title(article)
