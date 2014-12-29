@@ -37,6 +37,21 @@
   > p {
     margin-top: 1em;
     margin-bottom: 1em;
+
+    > a {
+      word-wrap: break-word;
+    }
+  }
+}
+
+%ArticleBody-img {
+  > p {
+    > img,
+    > a > img {
+      max-width: 100%;
+      display: block;
+      margin: fibo(small, px) auto;
+    }
   }
 }
 
@@ -202,6 +217,7 @@
   @extend %ArticleBody-heading;
   @extend %ArticleBody-justify;
   @extend %ArticleBody-p;
+  @extend %ArticleBody-img;
   @extend %ArticleBody-strong;
   @extend %ArticleBody-list;
   @extend %ArticleBody-hr;
