@@ -11,6 +11,5 @@ article.Article
   h1.Article-title(itemprop='name')== @article.title
   a.Article-githubLink(href="https://github.com/ruedap/daplog/blob/master/app/articles/#{@article.filename}.md")
   section.Article-body.ArticleBody(itemprop='articleBody')== @article.body
-
-nav role='navigation'
-  = link_to 'home', root_path
+  nav.Article-nav(role='navigation')
+    = link_to('home', root_path, class: 'Article-navLink')
