@@ -78,9 +78,9 @@
 }
 
 .Article-navLink {
-  @include dapicons;
   $_hover: rgba($color-brand, fibo(medium, alpha));
   @include link-colors(#fff, $_hover, $_hover, #fff, #fff);
+  @include dapicons;
   @include font-smoothing;
   display: block;
   margin: auto;

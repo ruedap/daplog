@@ -29,5 +29,6 @@ html(lang='ja' itemscope itemtype="#{yield :itemtype}")
       .Main-container.Container
         == yield
     footer.Footer(role='contentinfo')
-      a(href='http://ruedap.com') ルエダップコム
+      .Footer-container.Container
+        = render('layouts/footer_svg.erb')
     == render('shared/google_analytics')

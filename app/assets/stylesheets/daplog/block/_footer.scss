@@ -3,3 +3,29 @@
   display: block;
   position: relative;
 }
+
+.Footer-container {
+  background-image: linear-gradient(rgba($color-brand, fibo(small, alpha)) 0, rgba($color-brand, fibo(medium, alpha)) 100%);
+
+  @include mq(tablet) {
+    &::before {
+      @include dapicons;
+      content: "ruedap";
+      position: absolute;
+      top: fibo(xxxlarge, px);
+      left: 50%;
+      font-size: fibo(medium, rem);
+      color: rgba($color-brand, fibo(xsmall, alpha));
+      transform: translate(-50%, -100%);
+    }
+  }
+}
+
+#Footer-circle {
+  fill: rgba(#fff, fibo(medium, alpha));
+  transition: fill 0.3s;
+
+  &:hover {
+    fill: rgba(#fff, fibo(large, alpha));
+  }
+}
