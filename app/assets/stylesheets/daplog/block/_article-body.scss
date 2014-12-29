@@ -45,7 +45,7 @@
     font-weight: normal;
     font-style: normal;
     padding: 0.1em;
-    background-image: linear-gradient(transparent 0, transparent 60%, rgba(83,83,24,0.13) 60%, rgba(83,83,24,0.13) 100%); // TODO color
+    background-image: linear-gradient(transparent 0, transparent 60%, rgba(83,83,24,0.13) 60%, rgba(83,83,24,0.13) 100%); // TODO: color
   }
 }
 
@@ -55,7 +55,7 @@
     margin-top: 1em;
     margin-bottom: 1em;
     padding-left: 2.5em;
-    font-size: 1.5rem;
+    font-size: $font-size-ArticleBodySmall;
   }
 
   ul {
@@ -64,6 +64,23 @@
 
   ol {
     list-style-type: decimal;
+  }
+}
+
+%ArticleBody-cite {
+  > p > cite {
+    display: block;
+    font-weight: normal;
+    font-style: normal;
+    font-size: $font-size-ArticleBodySmall;
+    margin-left: 1em;
+    &::before {
+      @include dapicons;
+      font-size: 89%;
+      color: rgba(63,24,83,0.55);  // TODO: color
+      content: "cite";
+      margin-right: 0.6em;
+    }
   }
 }
 
@@ -113,6 +130,7 @@
   @extend %ArticleBody-p;
   @extend %ArticleBody-strong;
   @extend %ArticleBody-list;
+  @extend %ArticleBody-cite;
   @extend %ArticleBody-pre;
   @extend %ArticleBody-highlight;
   @extend %ArticleBody-bookCoverLink;

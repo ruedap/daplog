@@ -1,0 +1,34 @@
+@mixin style-article-section-mark($size-name) {
+  display: block;
+  position: relative;
+  margin-right: auto;
+  margin-left: auto;
+  height: fibo($size-name, px);
+
+  &::before,
+  &::after {
+    display: block;
+    position: absolute;
+    content: "";
+    background-color: rgba(63,24,83,0.21);  // TODO: color
+    width: fibo($size-name, px);
+    height: fibo($size-name, px);
+    top: 0;
+    left: 50%;
+    margin: 0;
+    padding: 0;
+    border-radius: 100%;
+    transform-origin: center center;
+    transform: translate(-50%, 0);
+  }
+
+  $_margin-left: fibo($size-name, px) / 3;
+  &::before {
+    margin-left: $_margin-left;
+  }
+  &::after {
+    margin-left: -($_margin-left);
+  }
+
+  @content;
+}
