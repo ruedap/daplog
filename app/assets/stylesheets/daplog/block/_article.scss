@@ -29,7 +29,7 @@
 }
 
 .Article-datetimeSVGCircle {
-  fill: rgba($color-brand, 0.34);  // TODO: color
+  fill: rgba($color-brand, fibo(small, alpha));  // TODO: color
 }
 
 .Article-datetimeSVGText {

@@ -10,7 +10,7 @@
     display: block;
     position: absolute;
     content: "";
-    background-color: rgba(63,24,83,0.21);  // TODO: color
+    background-color: rgba($color-brand, fibo(xsmall, alpha));  // TODO: color
     width: fibo($size-name, px);
     height: fibo($size-name, px);
     top: 0;
