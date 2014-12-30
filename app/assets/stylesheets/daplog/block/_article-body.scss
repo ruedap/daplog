@@ -3,13 +3,6 @@
   word-wrap: break-word;
   text-align: justify;
   text-justify: distribute;
-  // > ul > li,
-  // > ol > li,
-  // > p > ins,
-  // > p > cite,
-  // > .footnotes {
-  //   text-align: left;
-  // }
 }
 
 %ArticleBody-heading {
@@ -69,9 +62,10 @@
 %ArticleBody-list {
   > ul,
   > ol {
-    margin-top: 1em;
-    margin-bottom: 1em;
     font-size: $font-size-small-ArticleBody;
+    margin-bottom: 1em;
+    margin-top: 1em;
+    text-align: left; // overwrite justify
   }
 
   ul {
@@ -138,6 +132,7 @@
     font-style: normal;
     font-size: $font-size-small-ArticleBody;
     margin-left: 1em;
+    text-align: left; // overwrite justify
   }
 }
 
@@ -166,6 +161,7 @@
     font-size: $font-size-small-ArticleBody;
     line-height: $ratio-golden;
     color: rgba($color-brand, fibo(large, alpha));
+    text-align: left; // overwrite justify
     text-decoration: none;
 
     &::before {
@@ -176,6 +172,19 @@
 
   > p > small {
     color: rgba($color-body, fibo(medium, alpha));
+  }
+}
+
+%ArticleBody-footnotes {
+  > .footnotes {
+    color: #777;
+    font-size: $font-size-xsmall-ArticleBody;
+    margin-top: fibo(medium, px);
+    line-height: $ratio-golden;
+
+    p {
+      margin: 0.5em 0;
+    }
   }
 }
 
@@ -251,6 +260,7 @@
   @extend %ArticleBody-cite;
   @extend %ArticleBody-blockquote;
   @extend %ArticleBody-small;
+  @extend %ArticleBody-footnotes;
   @extend %ArticleBody-pre;
   @extend %ArticleBody-highlight;
   @extend %ArticleBody-code;
