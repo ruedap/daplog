@@ -81,7 +81,13 @@
 }
 
 .Article-nav {
-  padding: fibo(xxlarge, px) 0;
+  margin-top: fibo(xlarge, px);
+  padding-bottom: fibo(xlarge, px);
+
+  @include mq(tablet) {
+    margin-top: fibo(xxlarge, px);
+    padding-bottom: fibo(xxlarge, px);
+  }
 }
 
 .Article-navLink {
