@@ -63,8 +63,7 @@ $color-link-visited: grayscale($color-link);
 
 $font-family-gothic: "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
 $font-family-helvetica: "Helvetica Neue", Helvetica, Arial, $font-family-gothic;
-$font-family-lucida: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", $font-family-gothic;
-
+$font-family-lucida: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", $font-family-helvetica;
 $font-family-avenir: "Avenir Next", "Avenir", $font-family-helvetica;
 $font-family-fjalla: "Fjalla One", "Helvetica Neue", Helvetica, Arial, sans-serif;
 $font-family-montserrat: "Montserrat", $font-family-avenir;
