@@ -2,6 +2,7 @@
 @import url(http://fonts.googleapis.com/css?family=Fjalla+One:400&text=1234567890.);
 
 @import "normalize";
+@import "_rouge";
 
 @import "daplog/all/_reset";
 @import "daplog/all/_variables";
@@ -19,5 +20,4 @@
 @import "daplog/block/_article-body";
 @import "daplog/block/_footer";
 
-// @import "rouge";
 // @import "rails_env";
