@@ -25,6 +25,12 @@
     margin-bottom: fibo(small, px);
     font-size: 2.3rem;
   }
+
+  > h3 {
+    margin-top: fibo(medium, px);
+    margin-bottom: fibo(xsmall, px);
+    font-size: 2.0rem;
+  }
 }
 
 %ArticleBody-p {
