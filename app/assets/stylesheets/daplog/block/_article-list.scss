@@ -32,7 +32,7 @@
   @include link-colors(
     #fff,
     rgba($color-brand, fibo(medium, alpha)),
-    #fff,
+    rgba($color-brand, fibo(small, alpha)),
     rgba($color-brand, fibo(medium, alpha)),
     #fff);
   background-color: #fff;
