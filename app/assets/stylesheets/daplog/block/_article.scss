@@ -65,11 +65,13 @@
 .Article-githubLink {
   @include style-article-section-mark(xsmall);
   width: fibo(xsmall, px) * 2;
+  height: fibo(xsmall, px);
   margin-bottom: fibo(small, px) + 10px;
 
   @include mq(tablet) {
     @include style-article-section-mark(small);
     width: fibo(small, px) * 2;
+    height: fibo(small, px);
     margin-bottom: fibo(medium, px) + 10px;
   }
 }

@@ -17,6 +17,7 @@
   > h3 {
     color: rgba($color-brand, fibo(large, alpha));  // TODO: color
     font-weight: normal;
+    line-height: $ratio-golden;
     text-align: center;
   }
 
@@ -28,7 +29,7 @@
       }
     }
     margin-top: fibo(xlarge, px);
-    margin-bottom: fibo(medium, px);
+    margin-bottom: fibo(small, px);
     font-size: 2.3rem;
   }
 }
