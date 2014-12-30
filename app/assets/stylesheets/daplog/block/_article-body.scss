@@ -238,6 +238,45 @@
   }
 }
 
+%ArticleBody-table {
+  table {
+    $_border-color: rgba($color-brand, fibo(xxsmall, alpha));
+    margin: fibo(small, px) auto;
+    width: 100%;
+    background-color: white;
+    border-spacing: 0;
+    border: 1px solid $_border-color;
+    border-collapse: separate;
+    border-left: 0;
+
+    th, td {
+      font-size: 1.3rem;
+      padding: 0.5em 1em;
+      text-align: left;
+      vertical-align: top;
+      border-top: 1px solid $_border-color;
+      border-left: 1px solid $_border-color;
+    }
+
+    th {
+      background-color: $_border-color;
+      font-weight: normal;
+    }
+
+    caption + thead tr:first-child th,
+    caption + tbody tr:first-child th,
+    caption + tbody tr:first-child td,
+    colgroup + thead tr:first-child th,
+    colgroup + tbody tr:first-child th,
+    colgroup + tbody tr:first-child td,
+    thead:first-child tr:first-child th,
+    tbody:first-child tr:first-child th,
+    tbody:first-child tr:first-child td {
+      border-top: 0;
+    }
+  }
+}
+
 %ArticleBody-bookCoverLink {
   .book-cover-link {
     text-align: right;
@@ -272,6 +311,7 @@
   @extend %ArticleBody-pre;
   @extend %ArticleBody-highlight;
   @extend %ArticleBody-code;
+  @extend %ArticleBody-table;
   @extend %ArticleBody-bookCoverLink;
   @include font-smoothing;
 
