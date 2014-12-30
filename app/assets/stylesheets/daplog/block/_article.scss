@@ -42,15 +42,17 @@
   margin-right: auto;
   margin-bottom: fibo(medium, px);
   margin-left: auto;
+  width: 90%;
   max-width: 877px;
   font-family: $font-family-crimson;
-  font-size: fibo(small, rem);
+  font-size: fibo(xsmall, rem);
   font-weight: normal;
   text-align: center;
   line-height: 1.618;
 
   // TODO: 877px
   @include mq(tablet) {
+    font-size: fibo(small, rem);
     span::after {
       content: "\000a";
       white-space: pre-line;
