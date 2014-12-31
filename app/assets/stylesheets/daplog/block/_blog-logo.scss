@@ -3,27 +3,27 @@
   width: 100%;
 }
 
-#BlogLogo-illust {
+.BlogLogo-illustGroup {
   stroke: rgba(#fff, 0.6);
 }
 
-#BlogLogo-caption {
+.BlogLogo-caption {
   stroke: rgba(#fff, 0.7);
 }
 
-#BlogLogo-iconPhone {
+.BlogLogo-iconPhone {
   stroke: rgba(#fff, 0.8);
 }
 
-#BlogLogo-textPhoneNumber {
+.BlogLogo-textPhoneNumberGroup {
   stroke: rgba(#fff, 0.9);
 }
 
 @include mq(null, mobile) {
-  #BlogLogo-textEinsteins,
-  #BlogLogo-textPhoneNumber,
-  #BlogLogo-iconPhone,
-  #BlogLogo-caption {
+  .BlogLogo-textEinsteinsGroup,
+  .BlogLogo-textPhoneNumberGroup,
+  .BlogLogo-iconPhone,
+  .BlogLogo-caption {
     stroke: none;
     fill: rgba(#fff, 0.8);
   }
