@@ -36,5 +36,9 @@
   width: 100%;
   height: auto;
   border-radius: 100%;
-  background-color: rgba($color-brand, fibo(small, alpha)); // TODO: color
+  background-color: rgba($color-brand, fibo(xxsmall, alpha)); // TODO: color
+  background-image: radial-gradient(
+    rgba($color-brand, fibo(xxsmall, alpha)),
+    rgba($color-brand, fibo(small, alpha))
+  ); // TODO: color
 }
