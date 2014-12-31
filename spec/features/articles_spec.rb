@@ -6,20 +6,23 @@ feature '記事一覧の表示' do
     visit root_path
 
     expect(page).to have_title(blog_title)
+    expect(page).to have_css('.Header-logoSpacer', text: blog_title)
+    expect(page).to have_css('.BlogLogo title', text: "Einstein's Phone Number")
+    expect(page).to have_css('.Footer svg title', text: 'ruedap.com')
 
-    expect(page).to have_css('h1', text: blog_title)
-    expect(page).to have_css('footer', text: 'ルエダップコム')
+    expect(page).to have_css('.ArticleList-yearHeading', text: '2010')
+    expect(page).not_to have_css('.ArticleList-yearHeading', text: '2011')
+    expect(page).not_to have_css('.ArticleList-yearHeading', text: '2012')
+    expect(page).not_to have_css('.ArticleList-yearHeading', text: '2013')
+    expect(page).not_to have_css('.ArticleList-yearHeading', text: '2014')
 
-    expect(page).to have_css('li.article-list__year', text: '2010')
-    expect(page).not_to have_css('li.article-list__year', text: '2011')
-    expect(page).not_to have_css('li.article-list__year', text: '2012')
-    expect(page).not_to have_css('li.article-list__year', text: '2013')
-
-    expect(page).to have_css('b', text: 'MacPortsのインストール')
-    expect(page).to have_css('b', text: 'VimperatorのfでMigemo絞り込み')
-    expect(page).to have_css('b', text: 'Vimperatorのfで表示するヒントのフォントサイズを大きくする')
-    expect(page).not_to have_css('b', text: 'VimperatorでMacVimをset editorするためにmvimを導入')
-    expect(page).not_to have_css('b', text: '宇多田ヒカル大好き専用「ウタダヒカループ」を作ってみた')
+    expect(page).to have_css('.ArtcileList-title', text: 'MacPortsのインストール')
+    expect(page).to have_css('.ArtcileList-title', text: 'VimperatorのfでMigemo絞り込み')
+    expect(page).to have_css('.ArtcileList-title', text: 'Vimperatorのfで表示するヒントのフォントサイズを大きくする')
+    expect(page).not_to have_css('.ArtcileList-title', text: 'VimperatorでMacVimをset editorするためにmvimを導入')
+    expect(page).not_to have_css('.ArtcileList-title', text: '宇多田ヒカル大好き専用「ウタダヒカループ」を作ってみた')
+    expect(page).not_to have_css('.ArtcileList-title', text: 'イマココ')
+    expect(page).not_to have_css('.ArtcileList-title', text: '風立ちぬ')
   end
 
   scenario '記事一覧を表示する（全件）' do
@@ -27,22 +30,23 @@ feature '記事一覧の表示' do
     visit root_path
 
     expect(page).to have_title(blog_title)
+    expect(page).to have_css('.Header-logoSpacer', text: blog_title)
+    expect(page).to have_css('.BlogLogo title', text: "Einstein's Phone Number")
+    expect(page).to have_css('.Footer svg title', text: 'ruedap.com')
 
-    expect(page).to have_css('h1', text: blog_title)
-    expect(page).to have_css('footer', text: 'ルエダップコム')
+    expect(page).to have_css('.ArticleList-yearHeading', text: '2010')
+    expect(page).to have_css('.ArticleList-yearHeading', text: '2011')
+    expect(page).not_to have_css('.ArticleList-yearHeading', text: '2012')
+    expect(page).to have_css('.ArticleList-yearHeading', text: '2013')
+    expect(page).to have_css('.ArticleList-yearHeading', text: '2014')
 
-    expect(page).to have_css('li.article-list__year', text: '2010')
-    expect(page).to have_css('li.article-list__year', text: '2011')
-    expect(page).to have_css('li.article-list__year', text: '2013')
-    expect(page).not_to have_css('li.article-list__year', text: '2012')
-
-    expect(page).to have_css('b', text: 'MacPortsのインストール')
-    expect(page).to have_css('b', text: 'VimperatorのfでMigemo絞り込み')
-    expect(page).to have_css('b', text: 'Vimperatorのfで表示するヒントのフォントサイズを大きくする')
-    expect(page).to have_css('b', text: 'VimperatorでMacVimをset editorするためにmvimを導入')
-    expect(page).to have_css('b', text: '宇多田ヒカル大好き専用「ウタダヒカループ」を作ってみた')
-    expect(page).to have_css('b', text: 'イマココ')
-    expect(page).not_to have_css('b', text: '風立ちぬ いざ生きめやも')
+    expect(page).to have_css('.ArtcileList-title', text: 'MacPortsのインストール')
+    expect(page).to have_css('.ArtcileList-title', text: 'VimperatorのfでMigemo絞り込み')
+    expect(page).to have_css('.ArtcileList-title', text: 'Vimperatorのfで表示するヒントのフォントサイズを大きくする')
+    expect(page).to have_css('.ArtcileList-title', text: 'VimperatorでMacVimをset editorするためにmvimを導入')
+    expect(page).to have_css('.ArtcileList-title', text: '宇多田ヒカル大好き専用「ウタダヒカループ」を作ってみた')
+    expect(page).to have_css('.ArtcileList-title', text: 'イマココ')
+    expect(page).not_to have_css('.ArtcileList-title', text: '風立ちぬ')
   end
 end
 
@@ -53,13 +57,13 @@ feature '記事詳細の表示' do
     click_link 'MacPortsのインストール'
 
     expect(page).to have_title(blog_title)
+    expect(page).to have_css('.Header-logoSpacer', text: blog_title)
+    expect(page).to have_css('.BlogLogo title', text: "Einstein's Phone Number")
+    expect(page).to have_css('.Footer svg title', text: 'ruedap.com')
+    expect(page).not_to have_css('.ArticleList')
 
-    expect(page).to have_css('h1', text: blog_title)
-    expect(page).to have_css('footer', text: 'ルエダップコム')
-    expect(page).not_to have_css('li.article-list__year', text: '2010')
-
-    expect(page).to have_css('h1', text: 'MacPortsのインストール')
-    expect(page).to have_css('section.article-body > p', text: 'いろいろインストールするのに便利なMacPortsをインストールする。')
+    expect(page).to have_css('.Article-title', text: 'MacPortsのインストール')
+    expect(page).to have_css('.ArticleBody p', text: 'いろいろインストールするのに便利なMacPortsをインストールする。')
   end
 end
 
