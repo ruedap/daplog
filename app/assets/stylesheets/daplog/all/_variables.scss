@@ -1,0 +1,112 @@
+
+// Fibonacci
+// ===========================================================================
+
+// fibonacci: 1 1 2 3 5 8 13 21 34 55 89 144 233 377 610 987 1597 2584 4181
+$fibonacci-map: (
+  xxxxxxlarge: 1597,
+  xxxxxlarge: 987,
+  xxxxlarge: 610,
+  xxxlarge: 377,
+  xxlarge: 233,
+  xlarge: 144,
+  large: 89,
+  medium: 55,
+  small: 34,
+  xsmall: 21,
+  xxsmall: 13,
+  xxxsmall: 8,
+  xxxxsmall: 5,
+  xxxxxsmall: 3
+);
+
+@function fibo($size-name, $unit: null) {
+  $size: map-get($fibonacci-map, $size-name);
+
+  @if $unit == px {
+    @return $size + 0px;
+  } @else if $unit == rem {
+    @return ($size / 10) + 0rem;
+  } @else if $unit == alpha {
+    @return ($size / 100);
+  } @else {
+    @return $size;
+  }
+}
+
+$ratio-golden: 1.618;
+
+// Color
+// ===========================================================================
+
+$color-brand: rgb(24,63,83);
+
+$color-body: #21272d;
+$bgcolor-body: rgba($color-brand, fibo(xxsmall, alpha));
+$bgcolor-content: #fff;
+
+
+$color-link: rgba($color-brand, fibo(medium, alpha));
+$color-link-hover: rgba($color-brand, fibo(small, alpha));
+$color-link-focus: $color-link-hover;
+$color-link-active: rgba($color-brand, fibo(xsmall, alpha));
+$color-link-visited: grayscale($color-link);
+
+
+// Font
+// ===========================================================================
+
+@font-face {
+  font-family: "YuMin";
+  src: local("YuMincho"), local("Yu Mincho"), local("游明朝");
+}
+
+$font-family-gothic: "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+$font-family-helvetica: "Helvetica Neue", Helvetica, Arial, $font-family-gothic;
+$font-family-lucida: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", $font-family-helvetica;
+$font-family-avenir: "Avenir Next", "Avenir", $font-family-helvetica;
+$font-family-fjalla: "Fjalla One", "Helvetica Neue", Helvetica, Arial, sans-serif;
+$font-family-montserrat: "Montserrat", $font-family-avenir;
+$font-family-mono: Consolas, "Liberation Mono", Courier, "Hiragino Kaku Gothic ProN", Meiryo, monospace;
+
+$font-family-georgia: Georgia, Cambria, "Times New Roman", Times, serif;
+$font-family-crimson: "Crimson Text", "YuMin", "Hiragino Mincho ProN", "Hiragino Mincho Pro", "MS PMincho", $font-family-georgia;
+$font-family-android: Roboto, "Droid Sans";
+
+$font-size-medium: 1.4rem;
+
+$font-size-medium-ArticleBody: 1.7rem;
+$font-size-small-ArticleBody: 1.5rem;
+$font-size-xsmall-ArticleBody: 1.2rem;
+
+
+// Size
+// ===========================================================================
+
+$width-base: 987px;
+$max-width-Container: $width-base;
+
+
+
+// Media queries
+// ===========================================================================
+
+$mq-min-width-mobile: null;
+$mq-min-width-tablet: 768px;
+$mq-min-width-desktop: 992px;
+
+$mq-min-breakpoints: (
+  mobile:  $mq-min-width-mobile,
+  tablet:  $mq-min-width-tablet,
+  desktop: $mq-min-width-desktop
+);
+
+$mq-max-width-mobile: $mq-min-width-tablet - 1px;
+$mq-max-width-tablet: $mq-min-width-desktop - 1px;
+$mq-max-width-desktop: null;
+
+$mq-max-breakpoints: (
+  mobile:  $mq-max-width-mobile,
+  tablet:  $mq-max-width-tablet,
+  desktop: $mq-max-width-desktop
+);

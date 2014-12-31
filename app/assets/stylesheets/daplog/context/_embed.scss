@@ -1,0 +1,15 @@
+.twitter-tweet,
+iframe[src*='instagram.com'] {
+  display: block;
+  margin: 30px auto !important;
+}
+
+iframe[src*='instagram.com'] {
+  width: 282px;
+  height: 327px;
+
+  @include mq(tablet) {
+    width: 612px;
+    height: 710px;
+  }
+}

@@ -1,0 +1,44 @@
+
+.Header-container {
+  background-color: $bgcolor-content;
+}
+
+.Header-heading {
+  // 1 / 1.618 = 0.618
+  // (987px * 0.618) - (987px / 2) = 117px
+  // 117 / 987 = 0.118541033
+  padding-bottom: 11.854%;
+}
+
+.Header-logoLink {
+  position: relative;
+  display: block;
+  width: 100%;
+}
+
+.Header-logoSpacer {
+  position: relative;
+  display: block;
+  margin-top: -50%;
+  width: 100%;
+  padding-bottom: 100%;
+  font-size: 0;
+}
+
+.Header-logo {
+  position: absolute;
+  display: block;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  width: 100%;
+  height: auto;
+  border-radius: 100%;
+  background-color: rgba($color-brand, fibo(xxsmall, alpha)); // TODO: color
+  background-image: radial-gradient(
+    rgba($color-brand, fibo(xxsmall, alpha)),
+    rgba($color-brand, fibo(small, alpha))
+  ); // TODO: color
+}

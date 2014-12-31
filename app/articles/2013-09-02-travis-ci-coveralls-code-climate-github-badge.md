@@ -5,7 +5,7 @@
 そんなわけで[少々テストを書いた](https://github.com/ruedap/alfred2-font-awesome-workflow/blob/master/workflow/test/font_awesome_test.rb)上で、Mountain Lion以前に入っている*Ruby 1.8.7*と、Mavericks以降に入る*Ruby 2.0.0*の両方で常に動作確認しておくようにしたいと考えて、まず[Travis CI](http://travis-ci.com/)を、その後[Coveralls](https://coveralls.io/)と[Code Climate](https://codeclimate.com/)を導入した。この記事はその備忘録。
 
 [![Build Status](https://travis-ci.org/ruedap/alfred2-font-awesome-workflow.png?branch=master)](https://travis-ci.org/ruedap/alfred2-font-awesome-workflow) [![Coverage Status](https://coveralls.io/repos/ruedap/alfred2-font-awesome-workflow/badge.png)](https://coveralls.io/r/ruedap/alfred2-font-awesome-workflow) [![Code Climate](https://codeclimate.com/github/ruedap/alfred2-font-awesome-workflow.png)](https://codeclimate.com/github/ruedap/alfred2-font-awesome-workflow)
-{: .inline .center }
+{: .ArtcleBody-inlineImage .u-textCenter }
 
 それらを導入すると、こんなかんじのバッジを表示できる。GitHubでよく見かけるやつ。今回使ったサービスはどれも、**オープンソースなら無料**で使わせてもらえる。でら感謝。
 

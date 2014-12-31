@@ -1,0 +1,111 @@
+
+.Article-datetimeContainer {
+  display: block;
+  position: absolute;
+  max-width: $max-width-Container;
+  width: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  pointer-events: none;
+}
+
+.Article-datetimeSpacer {
+  display: block;
+  position: relative;
+  width: 100%;
+  padding-bottom: 61.8%;
+  font-size: 0;
+}
+
+.Article-datetimeSVG {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.Article-datetimeSVGCircle {
+  fill: rgba($color-brand, fibo(small, alpha));  // TODO: color
+}
+
+.Article-datetimeSVGText {
+  @include font-smoothing;
+  font-family: $font-family-fjalla;
+  letter-spacing: 0.1em;
+  font-size: fibo(xsmall, rem);
+  fill: #fff;
+}
+
+.Article-title {
+  @include font-smoothing;
+  margin-right: auto;
+  margin-bottom: fibo(small, px);
+  margin-left: auto;
+  width: 90%;
+  max-width: 877px;
+  font-family: $font-family-crimson;
+  font-size: fibo(xsmall, rem);
+  font-weight: normal;
+  text-align: center;
+  line-height: 1.618;
+
+  // TODO: 877px
+  @include mq(tablet) {
+    margin-bottom: fibo(medium, px);
+    font-size: fibo(small, rem);
+
+    span::after {
+      content: "\000a";
+      white-space: pre-line;
+    }
+  }
+}
+
+.Article-githubLink {
+  @include style-article-section-mark(xsmall);
+  width: fibo(xsmall, px) * 2;
+  height: fibo(xsmall, px);
+  margin-bottom: fibo(small, px) + 10px;
+
+  @include mq(tablet) {
+    @include style-article-section-mark(small);
+    width: fibo(small, px) * 2;
+    height: fibo(small, px);
+    margin-bottom: fibo(medium, px) + 10px;
+  }
+}
+
+.Article-body {
+  margin: 0 auto;
+  max-width: 699px;
+  width: 90%;
+}
+
+.Article-nav {
+  margin-top: fibo(xlarge, px);
+  padding-bottom: fibo(xlarge, px);
+
+  @include mq(tablet) {
+    margin-top: fibo(xxlarge, px);
+    padding-bottom: fibo(xxlarge, px);
+  }
+}
+
+.Article-navLink {
+  $_hover: rgba($color-brand, fibo(medium, alpha));
+  @include link-colors(#fff, $_hover, $_hover, #fff, #fff);
+  @include dapicons;
+  @include font-smoothing;
+  display: block;
+  margin: auto;
+  width: fibo(medium, px);
+  height: fibo(medium, px);
+  line-height: fibo(medium, px);
+  text-align: center;
+  text-decoration: none;
+  font-size: 2.6rem;
+  background-color: rgba($color-brand, fibo(xsmall, alpha));
+  border-radius: 100%;
+}
