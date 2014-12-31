@@ -30,5 +30,7 @@ html(lang='ja' itemscope itemtype="#{yield :itemtype}")
         == yield
     footer.Footer(role='contentinfo')
       .Footer-container.Container
-        = render('layouts/footer_svg.erb')
+        h1.Footer-heading
+          .Footer-logoSpacer ルエダップコム
+          = render('layouts/footer_svg.erb')
     == render('shared/google_analytics')

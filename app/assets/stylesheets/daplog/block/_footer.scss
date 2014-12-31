@@ -29,3 +29,27 @@
     fill: rgba(#fff, fibo(large, alpha));
   }
 }
+
+.Footer-heading {
+  position: relative;
+}
+
+.Footer-logoSpacer {
+  display: block;
+  font-size: 0;
+  padding-bottom: 114.387%; // 1129 / 987 = 1.143870314
+  position: relative;
+  width: 100%;
+}
+
+.Footer-logo {
+  position: absolute;
+  display: block;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  width: 100%;
+  height: auto;
+}
