@@ -24,7 +24,7 @@ html(lang='ja' itemscope itemtype="#{yield :itemtype}")
           a.Header-logoLink(href='/')
             .Header-logoSpacer= blog_title
             .Header-logo
-              = render('layouts/logo_svg.erb')
+              = image_tag('common/blog-logo.svg', class: 'BlogLogo', alt: blog_title)
     main.Main(role='main')
       .Main-container.Container
         == yield

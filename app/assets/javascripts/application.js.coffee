@@ -1,8 +1,10 @@
 #= require jquery
 #= require jquery_ujs
-#= require examples
+#= require vendor/desvg
 
 $ ->
+
+  deSVG('.BlogLogo', true)
 
   $(window).scroll ->
     _scrollTop = $(this).scrollTop()
