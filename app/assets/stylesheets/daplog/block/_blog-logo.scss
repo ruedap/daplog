@@ -3,22 +3,6 @@
   width: 100%;
 }
 
-.BlogLogo-illustGroup {
-  stroke: rgba(#fff, 0.6);
-}
-
-.BlogLogo-caption {
-  stroke: rgba(#fff, 0.7);
-}
-
-.BlogLogo-iconPhone {
-  stroke: rgba(#fff, 0.8);
-}
-
-.BlogLogo-textPhoneNumberGroup {
-  stroke: rgba(#fff, 0.9);
-}
-
 @include mq(null, mobile) {
   .BlogLogo-textEinsteinsGroup,
   .BlogLogo-textPhoneNumberGroup,

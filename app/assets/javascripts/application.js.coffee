@@ -1,13 +1,13 @@
 #= require jquery
 #= require jquery_ujs
+#= require vendor/desvg
+#= require vendor/d3
 #= require examples
 
 $ ->
 
-  $(window).scroll ->
-    _scrollTop = $(this).scrollTop()
-    return if _scrollTop > 0
-    $('.logo-bg').css('margin-top', parseInt(_scrollTop / 3) + 'px')
+  deSVG('.BlogLogo')
+  deSVG('.Footer-logo')
 
   $('a[href^="#"]').click ->
     _id = $(this).attr('href')
