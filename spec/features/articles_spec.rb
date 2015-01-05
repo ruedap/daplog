@@ -5,10 +5,11 @@ feature '記事一覧の表示' do
     Kazetachinu.create_articles(3)
     visit root_path
 
-    expect(page).to have_title(blog_title)
-    expect(page).to have_css('.Header-logoSpacer', text: blog_title)
-    expect(page).to have_css('.BlogLogo title', text: "Einstein's Phone Number")
-    expect(page).to have_css('.Footer svg title', text: 'ruedap.com')
+    expect(page).to have_title('アインシュタインの電話番号')
+    expect(page).to have_css('.Header-logoSpacer', text: 'アインシュタインの電話番号')
+    expect(page).to have_css('.BlogLogo')
+    expect(page).to have_css('.Footer-logoSpacer', text: 'ルエダップコム')
+    expect(page).to have_css('.Footer-logo')
 
     expect(page).to have_css('.ArticleList-yearHeading', text: '2010')
     expect(page).not_to have_css('.ArticleList-yearHeading', text: '2011')
@@ -29,10 +30,11 @@ feature '記事一覧の表示' do
     Article.rebuild!
     visit root_path
 
-    expect(page).to have_title(blog_title)
-    expect(page).to have_css('.Header-logoSpacer', text: blog_title)
-    expect(page).to have_css('.BlogLogo title', text: "Einstein's Phone Number")
-    expect(page).to have_css('.Footer svg title', text: 'ruedap.com')
+    expect(page).to have_title('アインシュタインの電話番号')
+    expect(page).to have_css('.Header-logoSpacer', text: 'アインシュタインの電話番号')
+    expect(page).to have_css('.BlogLogo')
+    expect(page).to have_css('.Footer-logoSpacer', text: 'ルエダップコム')
+    expect(page).to have_css('.Footer-logo')
 
     expect(page).to have_css('.ArticleList-yearHeading', text: '2010')
     expect(page).to have_css('.ArticleList-yearHeading', text: '2011')
@@ -56,10 +58,11 @@ feature '記事詳細の表示' do
     visit root_path
     click_link 'MacPortsのインストール'
 
-    expect(page).to have_title(blog_title)
-    expect(page).to have_css('.Header-logoSpacer', text: blog_title)
-    expect(page).to have_css('.BlogLogo title', text: "Einstein's Phone Number")
-    expect(page).to have_css('.Footer svg title', text: 'ruedap.com')
+    expect(page).to have_title('アインシュタインの電話番号')
+    expect(page).to have_css('.Header-logoSpacer', text: 'アインシュタインの電話番号')
+    expect(page).to have_css('.BlogLogo')
+    expect(page).to have_css('.Footer-logoSpacer', text: 'ルエダップコム')
+    expect(page).to have_css('.Footer-logo')
     expect(page).not_to have_css('.ArticleList')
 
     expect(page).to have_css('.Article-title', text: 'MacPortsのインストール')
