@@ -1,6 +1,8 @@
 #= require jquery
 #= require jquery_ujs
 #= require vendor/desvg
+#= require vendor/d3
+#= require examples
 
 $ ->
 
