@@ -6,11 +6,6 @@ $ ->
 
   deSVG('.BlogLogo', true)
 
-  $(window).scroll ->
-    _scrollTop = $(this).scrollTop()
-    return if _scrollTop > 0
-    $('.logo-bg').css('margin-top', parseInt(_scrollTop / 3) + 'px')
-
   $('a[href^="#"]').click ->
     _id = $(this).attr('href')
     _id = _id.replace('#', '')
