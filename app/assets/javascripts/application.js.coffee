@@ -6,7 +6,8 @@
 
 $ ->
 
-  deSVG('.BlogLogo', true)
+  deSVG('.BlogLogo')
+  deSVG('.Footer-logo')
 
   $('a[href^="#"]').click ->
     _id = $(this).attr('href')

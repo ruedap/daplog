@@ -32,5 +32,5 @@ html(lang='ja' itemscope itemtype="#{yield :itemtype}")
       .Footer-container.Container
         h1.Footer-heading
           .Footer-logoSpacer ルエダップコム
-          = render('layouts/footer_svg.erb')
+          = image_tag('common/footer-logo.svg', class: 'Footer-logo', alt: 'ルエダップコム')
     == render('shared/google_analytics')
