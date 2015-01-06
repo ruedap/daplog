@@ -20,7 +20,7 @@ module ApplicationHelper
   end
 
   def blog_ogp_image
-    image_url("ogp-#{@hue}.png")
+    image_url("ogp.png")
   end
 
   private
