@@ -1,7 +1,6 @@
 // ============================================================================
-// 全体で使用するミックスインを定義します。
+// allやblockに属さない場合の定義をここで行います。
 // ============================================================================
 
-@import "mixins/_base";
-@import "mixins/_dapicons";
-@import "mixins/_styles";
+@import "daplog/context/_embed";
+@import "daplog/context/_rouge";

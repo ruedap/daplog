@@ -1,3 +1,7 @@
+// ============================================================================
+// 全体で使用する変数を定義します。
+// ============================================================================
+
 
 // Fibonacci
 // ===========================================================================
@@ -36,15 +40,14 @@ $fibonacci-map: (
 
 $ratio-golden: 1.618;
 
+
 // Color
 // ===========================================================================
 
 $color-brand: rgb(24,63,83);
-
 $color-body: #21272d;
 $bgcolor-body: rgba($color-brand, fibo(xxsmall, alpha));
 $bgcolor-content: #fff;
-
 
 $color-link: rgba($color-brand, fibo(medium, alpha));
 $color-link-hover: rgba($color-brand, fibo(small, alpha));
@@ -68,7 +71,6 @@ $font-family-avenir: "Avenir Next", "Avenir", $font-family-helvetica;
 $font-family-fjalla: "Fjalla One", "Helvetica Neue", Helvetica, Arial, sans-serif;
 $font-family-montserrat: "Montserrat", $font-family-avenir;
 $font-family-mono: Consolas, "Liberation Mono", Courier, "Hiragino Kaku Gothic ProN", Meiryo, monospace;
-
 $font-family-georgia: Georgia, Cambria, "Times New Roman", Times, serif;
 $font-family-crimson: "Crimson Text", "YuMin", "Hiragino Mincho ProN", "Hiragino Mincho Pro", "MS PMincho", $font-family-georgia;
 $font-family-android: Roboto, "Droid Sans";
@@ -85,7 +87,6 @@ $font-size-xsmall-ArticleBody: 1.2rem;
 
 $width-base: 987px;
 $max-width-Container: $width-base;
-
 
 
 // Media queries

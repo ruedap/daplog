@@ -1,3 +1,7 @@
+// ============================================================================
+// アイコンフォント`dapicons`を使用するためのミックスインを定義します。
+// ============================================================================
+
 @font-face {
   font-family: "dapicons";
   src: asset-url("dapicons.eot");
@@ -5,7 +9,6 @@
   font-weight: normal;
   font-style: normal;
 }
-
 
 @mixin dapicons {
   @include font-smoothing(false);
