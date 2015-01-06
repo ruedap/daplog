@@ -2,7 +2,6 @@
 // 全体で使用する変数を定義します。
 // ============================================================================
 
-
 // Fibonacci
 // ===========================================================================
 
@@ -40,7 +39,6 @@ $fibonacci-map: (
 
 $ratio-golden: 1.618;
 
-
 // Color
 // ===========================================================================
 
@@ -54,7 +52,6 @@ $color-link-hover: rgba($color-brand, fibo(small, alpha));
 $color-link-focus: $color-link-hover;
 $color-link-active: rgba($color-brand, fibo(xsmall, alpha));
 $color-link-visited: grayscale($color-link);
-
 
 // Font
 // ===========================================================================
@@ -81,13 +78,11 @@ $font-size-medium-ArticleBody: 1.7rem;
 $font-size-small-ArticleBody: 1.5rem;
 $font-size-xsmall-ArticleBody: 1.2rem;
 
-
 // Size
 // ===========================================================================
 
 $width-base: 987px;
 $max-width-Container: $width-base;
-
 
 // Media queries
 // ===========================================================================
