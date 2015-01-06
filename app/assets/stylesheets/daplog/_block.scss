@@ -1,0 +1,13 @@
+// ============================================================================
+// ブロック（コンポーネント）単位で1ブロック＝1ファイルごとに定義します。
+// そのブロックのモディファイアも同じファイル内に定義します。
+// ============================================================================
+
+@import "daplog/block/_container";
+@import "daplog/block/_header";
+@import "daplog/block/_blog-logo";
+@import "daplog/block/_main";
+@import "daplog/block/_footer";
+@import "daplog/block/_article-list";
+@import "daplog/block/_article";
+@import "daplog/block/_article-body";
