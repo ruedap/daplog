@@ -1,6 +1,4 @@
 = content_for :itemtype
   = 'http://schema.org/WebPage'
-= content_for :gradient
-  == stylesheet_link_tag "gradient-#{@hue}", media: 'all'
 
-== generate_article_list(@articles)
+== article_list(@articles)

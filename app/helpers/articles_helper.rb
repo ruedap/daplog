@@ -1,5 +1,5 @@
 module ArticlesHelper
-  def generate_article_list(articles)
+  def article_list(articles)
     content_tag :ul, class: 'ArticleList' do
       article_year = ''
       articles.each do |a|
