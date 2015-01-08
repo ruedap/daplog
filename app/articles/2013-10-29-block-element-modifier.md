@@ -74,7 +74,7 @@ block--modifier__element
     <div class="block__element block__element--modifier"></div>
 </div>
 <div class="block block--modifier">
-    <div class="block__element block--modifier__element"></div>
+    <div class="block__element"></div>
 </div>
 ~~~
 
