@@ -3,11 +3,11 @@
 // そのブロックのモディファイアも同じファイル内に定義します。
 // ============================================================================
 
-@import "block/_container";
-@import "block/_header";
-@import "block/_blog-logo";
-@import "block/_main";
-@import "block/_footer";
-@import "block/_article-list";
-@import "block/_article";
-@import "block/_article-body";
+@import "blocks/container";
+@import "blocks/header";
+@import "blocks/blog-logo";
+@import "blocks/main";
+@import "blocks/footer";
+@import "blocks/article-list";
+@import "blocks/article";
+@import "blocks/article-body";

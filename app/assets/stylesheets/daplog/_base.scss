@@ -2,9 +2,9 @@
 // アプリ全体で使用する、または、アプリ全体に影響する定義です。
 // ============================================================================
 
-@import "all/_reset";
-@import "all/_variables";
-@import "all/_functions";
-@import "all/_mixins";
-@import "all/_utilities";
-@import "all/_elements";
+@import "base/reset";
+@import "base/variables";
+@import "base/functions";
+@import "base/mixins";
+@import "base/utilities";
+@import "base/elements";
