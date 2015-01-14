@@ -20,15 +20,3 @@
     -moz-osx-font-smoothing: auto;
   }
 }
-
-@mixin mq($min-name, $max-name: null) {
-  $media-query: mq-get-media-query($min-name, $max-name);
-
-  @if $media-query {
-    @media #{$media-query} {
-      @content;
-    }
-  } @else {
-    @content;
-  }
-}
