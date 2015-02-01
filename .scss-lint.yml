@@ -4,7 +4,13 @@ scss_files: 'app/assets/stylesheets/**/*.scss'
 
 linters:
 
-  # 1つのルールセット内でのプロパティの重複定義を許可しない
+  # 1つのルールセット内でのプロパティの宣言順を守る
+  # 宣言順: (1) @extend (2) ブロックを含まない@include (3) プロパティ
+  #         (4) ブロックを含む@include (5) ネストしたルールセット
+  DeclarationOrder:
+    enabled: true
+
+  # 1つのルールセット内でのプロパティの重複宣言を許可しない
   DuplicateProperty:
     enabled: true
 
