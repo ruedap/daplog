@@ -13,10 +13,10 @@
 
 @mixin font-smoothing($enable: true) {
   @if $enable {
-    -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
   } @else {
-    -webkit-font-smoothing: subpixel-antialiased;
     -moz-osx-font-smoothing: auto;
+    -webkit-font-smoothing: subpixel-antialiased;
   }
 }
