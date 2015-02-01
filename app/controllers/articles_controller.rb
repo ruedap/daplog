@@ -45,7 +45,11 @@ class ArticlesController < ApplicationController
 
     redirect_to("/#{article.url}", status: 301) and return if article
 
-    render(file: "#{Rails.root}/public/404.html", status: 404, layout: false,
-      content_type: 'text/html')
+    render(
+      file: "#{Rails.root}/public/404.html",
+      status: 404,
+      layout: false,
+      content_type: 'text/html'
+    )
   end
 end
