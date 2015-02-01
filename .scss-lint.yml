@@ -36,6 +36,13 @@ linters:
     # 1行のブロックの場合は空行で空けても空けなくてもよい
     ignore_single_line_blocks: true
 
+  # 色の16進数が省略可能な場合の指定方法を統一する
+  HexLength:
+    enabled: true
+    # good: `color: #fff;`
+    #  bad: `color: #ffffff;`
+    style: short
+
   NameFormat:
     enabled: true
     convention: '^[a-z_][-a-zA-Z0-9_]*$'

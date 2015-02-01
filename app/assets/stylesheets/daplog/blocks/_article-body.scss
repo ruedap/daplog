@@ -208,9 +208,9 @@
 %ArticleBody-highlight {
   .highlight {
     @include font-smoothing(false);
-    background-color: #ffffff;
-    border: 3px solid #eeeeee;
-    box-shadow: inset 0 0 0 1px #cccccc;
+    background-color: #fff;
+    border: 3px solid #eee;
+    box-shadow: inset 0 0 0 1px #ccc;
     display: block;
     font-family: $font-family-mono;
     font-size: 79%;
@@ -249,7 +249,7 @@
     $_border-color: rgba($color-brand, fibo(xxsmall, alpha));
     margin: fibo(small, px) auto;
     width: 100%;
-    background-color: #ffffff;
+    background-color: #fff;
     border-spacing: 0;
     border: 1px solid $_border-color;
     border-collapse: separate;
