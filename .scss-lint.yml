@@ -74,6 +74,15 @@ linters:
   MergeableSelector:
     force_nesting: false
 
+  # ベンダープレフィックスを手動で書かない
+  VendorPrefixes:
+    enabled: true
+    # Autoprefixerが自動で付けるプロパティ等を対象とする
+    # https://github.com/causes/scss-lint/blob/master/data/prefixed-identifiers/base.txt
+    identifier_list: base
+    include: []
+    exclude: []
+
   # ゼロには単位を付けない
   # good: `0` bad: `0px`
   ZeroUnit:
