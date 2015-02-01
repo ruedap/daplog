@@ -6,9 +6,9 @@
 // ============================================================================
 
 %ArticleBody-justify {
-  word-wrap: break-word;
   text-align: justify;
   text-justify: distribute;
+  word-wrap: break-word;
 }
 
 %ArticleBody-heading {
@@ -21,9 +21,9 @@
   }
 
   > h2 {
-    margin-top: fibo(xlarge, px);
-    margin-bottom: fibo(small, px);
     font-size: 2.3rem;
+    margin-bottom: fibo(small, px);
+    margin-top: fibo(xlarge, px);
 
     @include style-article-section-mark(xsmall) {
       &::before,
@@ -34,16 +34,16 @@
   }
 
   > h3 {
-    margin-top: fibo(medium, px);
-    margin-bottom: fibo(xsmall, px);
     font-size: 2rem;
+    margin-bottom: fibo(xsmall, px);
+    margin-top: fibo(medium, px);
   }
 }
 
 %ArticleBody-p {
   > p {
-    margin-top: 1em;
     margin-bottom: 1em;
+    margin-top: 1em;
 
     > a {
       word-wrap: break-word;
@@ -56,9 +56,9 @@
     // scss-lint:disable SelectorDepth
     > img,
     > a > img {
-      max-width: 100%;
       display: block;
       margin: fibo(small, px) auto;
+      max-width: 100%;
     }
   }
 }
@@ -66,10 +66,10 @@
 %ArticleBody-strong {
   strong,
   em {
-    font-weight: normal;
-    font-style: normal;
-    padding: 0.1em;
     background-image: linear-gradient(transparent 0, transparent 60%, rgba($color-brand, fibo(xxsmall, alpha)) 60%, rgba($color-brand, fibo(xxsmall, alpha)) 100%); // TODO: color
+    font-style: normal;
+    font-weight: normal;
+    padding: 0.1em;
   }
 }
 
@@ -83,24 +83,24 @@
   }
 
   ul {
-    padding-left: 2.5em;
     list-style-type: disc;
+    padding-left: 2.5em;
   }
 
   ol {
-    padding-left: 2.5em;
     list-style-type: decimal;
+    padding-left: 2.5em;
   }
 }
 
 %ArticleBody-hr {
   > hr {
     $_height: fibo(medium, px);
-    position: relative;
     border: 0;
     display: block;
-    width: 100%;
     height: $_height;
+    position: relative;
+    width: 100%;
 
     @include style-article-section-mark(xxsmall) {
       &::before,
@@ -119,9 +119,9 @@
     text-align: center;
 
     img {
-      max-width: 100%;
       display: block;
       margin: 0 auto;
+      max-width: 100%;
     }
 
     figcaption {
@@ -134,9 +134,9 @@
 %ArticleBody-citeIcon {
   &::before {
     @include dapicons;
-    font-size: 89%;
     color: rgba($color-brand, fibo(medium, alpha));  // TODO: color
     content: "cite";
+    font-size: 89%;
     margin-right: 0.6em;
   }
 }
@@ -145,9 +145,9 @@
   > p > cite {
     @extend %ArticleBody-citeIcon;
     display: block;
-    font-weight: normal;
-    font-style: normal;
     font-size: $font-size-small-ArticleBody;
+    font-style: normal;
+    font-weight: normal;
     margin-left: 1em;
     text-align: left; // overwrite justify
   }
@@ -155,18 +155,18 @@
 
 %ArticleBody-blockquote {
   blockquote {
+    border-left: 6px solid rgba($color-brand, fibo(xsmall, alpha));  // TODO: color
+    color: rgba($color-brand, fibo(large, alpha));  // TODO: color
+    font-size: $font-size-small-ArticleBody;
     margin: 2em 0;
     padding: 0 1.5em;
-    border-left: 6px solid rgba($color-brand, fibo(xsmall, alpha));  // TODO: color
-    font-size: $font-size-small-ArticleBody;
-    color: rgba($color-brand, fibo(large, alpha));  // TODO: color
 
     cite {
       @extend %ArticleBody-citeIcon;
-      font-size: 1.3rem;
       display: block;
-      text-align: right;
+      font-size: 1.3rem;
       font-style: normal;
+      text-align: right;
     }
   }
 }
@@ -174,10 +174,10 @@
 %ArticleBody-small {
   > p > small,
   > p > ins {
+    color: rgba($color-brand, fibo(large, alpha));
     display: inline-block;
     font-size: $font-size-small-ArticleBody;
     line-height: $ratio-golden;
-    color: rgba($color-brand, fibo(large, alpha));
     text-align: left; // overwrite justify
     text-decoration: none;
 
@@ -196,8 +196,8 @@
   > .footnotes {
     color: #777;
     font-size: $font-size-xsmall-ArticleBody;
-    margin-top: fibo(medium, px);
     line-height: $ratio-golden;
+    margin-top: fibo(medium, px);
 
     p {
       margin: 0.5em 0;
@@ -219,9 +219,9 @@
     line-height: $ratio-golden;
     margin-bottom: 1em;
     margin-top: 1em;
+    overflow: auto;
     overflow-x: auto;
     overflow-y: hidden;
-    overflow: auto;
     padding: 13px;
     white-space: pre;
     word-wrap: normal;
@@ -232,38 +232,38 @@
   code,
   kbd {
     @include font-smoothing(false);
-    white-space: pre;
-    word-wrap: break-word;
+    background-color: #f2f2f2;
+    border: 1px solid rgba(#808080, 0.4);
+    border-radius: 2px;
     font-family: $font-family-mono;
     font-size: 79%;
     margin: 0 0.2em;
     padding: 0 0.4em;
     vertical-align: 0.1em;
-    background-color: #f2f2f2;
-    border: 1px solid rgba(#808080, 0.4);
-    border-radius: 2px;
+    white-space: pre;
+    word-wrap: break-word;
   }
 }
 
 %ArticleBody-table {
   table {
     $_border-color: rgba($color-brand, fibo(xxsmall, alpha));
-    margin: fibo(small, px) auto;
-    width: 100%;
     background-color: #fff;
-    border-spacing: 0;
     border: 1px solid $_border-color;
     border-collapse: separate;
     border-left: 0;
+    border-spacing: 0;
+    margin: fibo(small, px) auto;
+    width: 100%;
 
     th,
     td {
+      border-left: 1px solid $_border-color;
+      border-top: 1px solid $_border-color;
       font-size: 1.3rem;
       padding: 0.5em 1em;
       text-align: left;
       vertical-align: top;
-      border-top: 1px solid $_border-color;
-      border-left: 1px solid $_border-color;
     }
 
     th {
@@ -288,14 +288,14 @@
 
 %ArticleBody-bookCoverLink {
   .book-cover-link {
-    text-align: right;
     display: block;
     float: right;
     padding: 0.5em 0 0.5em 1.5em;
+    text-align: right;
 
     > img {
-      width: 90px;
       margin: 0 !important;
+      width: 90px;
 
       @include mq(tablet) {
         width: 150px;

@@ -15,11 +15,11 @@ iframe[src*='instagram.com'] {
 // ============================================================================
 
 iframe[src*='instagram.com'] {
-  width: 282px;
   height: 327px;
+  width: 282px;
 
   @include mq(tablet) {
-    width: 612px;
     height: 710px;
+    width: 612px;
   }
 }

@@ -4,23 +4,23 @@
 
 @font-face {
   font-family: "dapicons";
+  font-style: normal;
+  font-weight: normal;
   src: asset-url("dapicons.eot");
   src: asset-url("dapicons.eot?#iefix") format("embedded-opentype"), asset-url("dapicons.woff") format("woff"), asset-url("dapicons.ttf") format("truetype"), asset-url("dapicons.svg#dapicons") format("svg");
-  font-weight: normal;
-  font-style: normal;
 }
 
 @mixin dapicons {
   @include font-smoothing(false);
   font-family: "dapicons";
-  speak: none;
   font-feature-settings: "liga", "dlig";
-  text-rendering: optimizeLegibility;
   font-style: normal;
-  font-weight: normal;
   font-variant: normal;
-  text-transform: none;
+  font-weight: normal;
   line-height: 1;
+  speak: none;
+  text-rendering: optimizeLegibility;
+  text-transform: none;
 }
 
 .dapicons {

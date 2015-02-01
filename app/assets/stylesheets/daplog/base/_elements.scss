@@ -16,10 +16,10 @@ html {
 
 // 1. Fix Chrome bug https://code.google.com/p/chromium/issues/detail?id=319623
 body {
+  background-color: $bgcolor-body;
+  color: $color-body;
   font-family: $font-family-helvetica;
   font-size: strip-units($font-size-medium) * 1em; // 1
-  color: $color-body;
-  background-color: $bgcolor-body;
 }
 
 a {

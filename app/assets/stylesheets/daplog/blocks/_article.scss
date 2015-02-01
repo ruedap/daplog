@@ -7,29 +7,29 @@
 
 .Article-datetimeContainer {
   display: block;
-  position: absolute;
-  max-width: $max-width-Container;
-  width: 100%;
-  top: 0;
   left: 0;
-  right: 0;
   margin: auto;
+  max-width: $max-width-Container;
   pointer-events: none;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 100%;
 }
 
 .Article-datetimeSpacer {
   display: block;
+  font-size: 0;
+  padding-bottom: 61.8%;
   position: relative;
   width: 100%;
-  padding-bottom: 61.8%;
-  font-size: 0;
 }
 
 .Article-datetimeSVG {
   display: block;
+  left: 0;
   position: absolute;
   top: 0;
-  left: 0;
 }
 
 .Article-datetimeSVGCircle {
@@ -38,29 +38,29 @@
 
 .Article-datetimeSVGText {
   @include font-smoothing;
-  font-family: $font-family-fjalla;
-  letter-spacing: 0.1em;
-  font-size: fibo(xsmall, rem);
   fill: #fff;
+  font-family: $font-family-fjalla;
+  font-size: fibo(xsmall, rem);
+  letter-spacing: 0.1em;
 }
 
 .Article-title {
   @include font-smoothing;
-  margin-right: auto;
-  margin-bottom: fibo(small, px);
-  margin-left: auto;
-  width: 90%;
-  max-width: 877px;
   font-family: $font-family-crimson;
   font-size: fibo(xsmall, rem);
   font-weight: normal;
-  text-align: center;
   line-height: 1.618;
+  margin-bottom: fibo(small, px);
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 877px;
+  text-align: center;
+  width: 90%;
 
   // TODO: 877px
   @include mq(tablet) {
-    margin-bottom: fibo(medium, px);
     font-size: fibo(small, rem);
+    margin-bottom: fibo(medium, px);
 
     span::after {
       content: "\000a";
@@ -71,15 +71,15 @@
 
 .Article-githubLink {
   @include style-article-section-mark(xsmall);
-  width: fibo(xsmall, px) * 2;
   height: fibo(xsmall, px);
   margin-bottom: fibo(small, px) + 10px;
+  width: fibo(xsmall, px) * 2;
 
   @include mq(tablet) {
     @include style-article-section-mark(small);
-    width: fibo(small, px) * 2;
     height: fibo(small, px);
     margin-bottom: fibo(medium, px) + 10px;
+    width: fibo(small, px) * 2;
   }
 }
 
@@ -104,14 +104,14 @@
   @include link-colors(#fff, $_hover, $_hover, #fff, #fff);
   @include dapicons;
   @include font-smoothing;
-  display: block;
-  margin: auto;
-  width: fibo(medium, px);
-  height: fibo(medium, px);
-  line-height: fibo(medium, px);
-  text-align: center;
-  text-decoration: none;
-  font-size: 2.6rem;
   background-color: rgba($color-brand, fibo(xsmall, alpha));
   border-radius: 100%;
+  display: block;
+  font-size: 2.6rem;
+  height: fibo(medium, px);
+  line-height: fibo(medium, px);
+  margin: auto;
+  text-align: center;
+  text-decoration: none;
+  width: fibo(medium, px);
 }

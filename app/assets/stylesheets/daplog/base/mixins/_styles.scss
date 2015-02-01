@@ -4,25 +4,25 @@
 
 @mixin style-article-section-mark($size-name) {
   display: block;
-  position: relative;
-  margin-right: auto;
   margin-left: auto;
+  margin-right: auto;
+  position: relative;
 
   &::before,
   &::after {
-    display: block;
-    position: absolute;
-    content: "";
     background-color: rgba($color-brand, fibo(xsmall, alpha));  // TODO: color
-    width: fibo($size-name, px);
+    border-radius: 100%;
+    content: "";
+    display: block;
     height: fibo($size-name, px);
-    top: 0;
     left: 50%;
     margin: 0;
     padding: 0;
-    border-radius: 100%;
-    transform-origin: center center;
+    position: absolute;
+    top: 0;
     transform: translate(-50%, 0);
+    transform-origin: center center;
+    width: fibo($size-name, px);
   }
 
   $_margin-left: fibo($size-name, px) / 3;

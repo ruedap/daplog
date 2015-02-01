@@ -47,13 +47,7 @@ linters:
     enabled: true
     convention: '^[a-z_][-a-zA-Z0-9_]*$'
 
-  SelectorFormat:
-    enabled: true
-    convention: '^[a-zA-Z0-9][-a-zA-Z0-9]*$'
-    # クラス名がSUIT CSSの命名規則に準拠するための正規表現
-    # https://github.com/suitcss/suit/blob/master/doc/naming-conventions.md
-    class_convention: '^([A-Z]|u-|is-)[-a-zA-Z0-9]*$'
-
+  # プロパティのソート順を統一する
   PropertySortOrder:
     enabled: true
     # プロパティのソート順をアルファベット順にする
@@ -62,6 +56,13 @@ linters:
     ignore_unspecified: false
     # プロパティ間の空行を許可しない
     separate_groups: false
+
+  SelectorFormat:
+    enabled: true
+    convention: '^[a-zA-Z0-9][-a-zA-Z0-9]*$'
+    # クラス名がSUIT CSSの命名規則に準拠するための正規表現
+    # https://github.com/suitcss/suit/blob/master/doc/naming-conventions.md
+    class_convention: '^([A-Z]|u-|is-)[-a-zA-Z0-9]*$'
 
   # 小数点の時のゼロを省略しない
   # good: `0.5`
