@@ -11,6 +11,12 @@ linters:
     #  bad: `border: none;`
     convention: zero
 
+  # カラーキーワードの使用を許可しない
+  # good: `color: #ffffff;`
+  #  bad: `color: white;`
+  ColorKeyword:
+    enabled: true
+
   # 1つのルールセット内でのプロパティの宣言順を守る
   # 宣言順: (1) @extend
   #         (2) ブロックを含まない@include
