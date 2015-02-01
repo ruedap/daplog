@@ -97,7 +97,7 @@
   > hr {
     $_height: fibo(medium, px);
     position: relative;
-    border: none;
+    border: 0;
     display: block;
     width: 100%;
     height: $_height;

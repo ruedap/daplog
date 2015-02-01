@@ -4,6 +4,13 @@ scss_files: 'app/assets/stylesheets/**/*.scss'
 
 linters:
 
+  # borderプロパティの指定方法を統一する
+  BorderZero:
+    enabled: true
+    # good: `border: 0;`
+    #  bad: `border: none;`
+    convention: zero
+
   # 1つのルールセット内でのプロパティの宣言順を守る
   # 宣言順: (1) @extend
   #         (2) ブロックを含まない@include
