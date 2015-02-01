@@ -43,6 +43,13 @@ linters:
     # good: `@import foo/bar` bad: `@import foo/bar.scss`
     filename_extension: false
 
+  Indentation:
+    enabled: true
+    # インデントは空白文字
+    character: space
+    # インデントは2文字分
+    width: 2
+
   Comment:
     enabled: false
 
