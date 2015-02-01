@@ -91,6 +91,22 @@ linters:
   Comment:
     enabled: false
 
+  # セレクタに要素を含まない
+  QualifyingElement:
+    enabled: true
+    # 属性セレクタの場合は許可する
+    # good: `[href="foo"] {}`
+    #       `a[href="foo"] {}`
+    allow_element_with_attribute: true
+    # クラスセレクタの場合は許可しない
+    # good: `.foo {}`
+    #  bad: `a.foo {}`
+    allow_element_with_class: false
+    # IDセレクタの場合は許可しない
+    # good: `#foo {}`
+    #  bad: `a#foo {}`
+    allow_element_with_id: false
+
   # セレクター（ネスト）の深さを制限する
   # good: `.one .two .three {}`
   #  bad: `.one .two .three .four {}`
