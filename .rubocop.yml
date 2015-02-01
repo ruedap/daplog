@@ -1,0 +1,34 @@
+# This is the default configuration file with all checking enabled. It is also
+# the configuration used to check the rubocop source code.
+# See: https://github.com/bbatsov/rubocop/blob/master/config/default.yml
+
+AllCops:
+  Exclude:
+    - 'bin/**/*'
+    - 'db/**/*'
+    - 'spec/**/*'
+    - 'vendor/**/*'
+  RunRailsCops: true
+
+# Use only ascii symbols in comments.
+Style/AsciiComments:
+  Enabled: false
+
+# Multi-line method chaining should be done with leading dots.
+Style/DotPosition:
+  SupportedStyles:
+    - leading
+
+Style/StringLiterals:
+  SupportedStyles:
+    - single_quotes
+
+# Disable trailing blank lines due to app/models/*.rb contains trailing blank line for annotation comments.
+Style/TrailingBlankLines:
+  Enabled: false
+
+Style/TrailingComma:
+  Enabled: false
+
+Metrics/LineLength:
+  Enabled: false
