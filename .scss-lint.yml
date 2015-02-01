@@ -17,12 +17,12 @@ linters:
   ColorKeyword:
     enabled: true
 
-  # 1つのルールセット内でのプロパティの宣言順を守る
-  # 宣言順: (1) @extend
-  #         (2) ブロックを含まない@include
-  #         (3) プロパティ
-  #         (4) ブロックを含む@include
-  #         (5) ネストしたルールセット
+  # 1つのルールセット内でのプロパティの宣言順を以下のように統一する
+  # (1) @extend
+  # (2) ブロックを含まない@include
+  # (3) プロパティ
+  # (4) ブロックを含む@include
+  # (5) ネストしたルールセット
   DeclarationOrder:
     enabled: true
 
@@ -43,24 +43,25 @@ linters:
     #  bad: `color: #ffffff;`
     style: short
 
+  # 変数、関数、ミックスイン、プレースホルダーセレクタの命名規則を統一する
   NameFormat:
     enabled: true
-    convention: '^[a-z_][-a-zA-Z0-9_]*$'
+    convention: '^[a-zA-Z_][-a-zA-Z0-9_]*$'
 
   # プロパティのソート順を統一する
   PropertySortOrder:
     enabled: true
     # プロパティのソート順をアルファベット順にする
     order: null
-    # 仕様化されてないプロパティもソート順を守る
+    # 仕様化されてないプロパティもソート順を統一する
     ignore_unspecified: false
     # プロパティ間の空行を許可しない
     separate_groups: false
 
-  # セレクターの命名規則を統一する
+  # セレクタの命名規則を統一する
   SelectorFormat:
     enabled: true
-    convention: '^[a-zA-Z0-9][-a-zA-Z0-9]*$'
+    convention: '^[a-zA-Z][-a-zA-Z0-9]*$'
     # クラス名はSUIT CSSの命名規則に準拠、`c-`プレフィックスは独自拡張
     # https://github.com/suitcss/suit/blob/master/doc/naming-conventions.md
     class_convention: '^([A-Z]|u-|is-|c-)[-a-zA-Z0-9]*$'
@@ -83,6 +84,7 @@ linters:
     #  bad: `@import "foo/bar.scss";`
     filename_extension: false
 
+  # インデントのルールを統一する
   Indentation:
     enabled: true
     # インデントは空白文字
@@ -109,7 +111,7 @@ linters:
     #  bad: `a#foo {}`
     allow_element_with_id: false
 
-  # セレクター（ネスト）の深さを制限する
+  # セレクタ（ネスト）の深さを制限する
   # good: `.one .two .three {}`
   #  bad: `.one .two .three .four {}`
   SelectorDepth:
@@ -119,7 +121,7 @@ linters:
   Shorthand:
     enabled: false
 
-  # セレクタは1行に1つだけ書くようにする
+  # セレクタは1行に1つだけ指定する
   # good: ```
   #       .foo p,
   #       h1.bar {
