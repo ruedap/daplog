@@ -8,7 +8,7 @@
 
 [^1]: 以前は無かった気がするけど…もしかして最初からあったのかな？
 
-<p class="dapicons" style="display: block; text-align: center; font-size: 3em; margin: 1.3em 0; color: #777;">ruedap</p>
+<p class="u-dapicons" style="display: block; text-align: center; font-size: 3em; margin: 1.3em 0; color: #777;">ruedap</p>
 
 上のはその[IcoMoon](http://icomoon.io/app/)を使って作ったリガチャなアイコンフォントで、Twitter等での自分のアバターアイコンをフォント化したもの。このブログのフッター部分でも使っているけど、たとえば上記ではHTML部分は以下のようになっている。[^2] `ruedap`の部分がリガチャ。
 
@@ -20,7 +20,7 @@
 
 `dapicons`というCSSクラスにリガチャで必要なスタイル設定が記述されているんだけど、IcoMoonがリガチャなフォントファイルの生成に加えて、それらも自動で作ってくれる。
 
-<p class="dapicons" style="display: block; text-align: center; font-size: 3em; margin: 1.3em 0; color: #777;">home</p>
+<p class="u-dapicons" style="display: block; text-align: center; font-size: 3em; margin: 1.3em 0; color: #777;">home</p>
 
 他に、この記事の末尾にある*ホームに戻るボタン*もリガチャアイコンで、HTML部分は以下のようになっている。こちらはさらに簡潔で、スタイルの適用はCSS側で行っているので、HTML上は何の変哲もないかんじに。`home`の部分がリガチャ。`i`タグとかも不要。
 

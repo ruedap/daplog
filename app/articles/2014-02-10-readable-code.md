@@ -1,6 +1,6 @@
 # <span>リーダブルコードを読み終えて、</span><span>ノンデザイナーズ・デザインブックを読み返す</span>
 
-<a href="http://www.amazon.co.jp/o/ASIN/4873115655/ruedap-22/" class="book-cover-link"><img src="http://ecx.images-amazon.com/images/I/51MgH8Jmr3L._CR2,2,352,498_.jpg" alt="リーダブルコード"></a>
+<a href="http://www.amazon.co.jp/o/ASIN/4873115655/ruedap-22/" class="c-bookCover"><img src="http://ecx.images-amazon.com/images/I/51MgH8Jmr3L._CR2,2,352,498_.jpg" alt="リーダブルコード"></a>
 
 今年のテーマは、積ん読を減らすことにした。良さそうな本があったりセールがあったりするとついつい買ってしまって、それである程度満足して読まないまま、というパターンにハマっていることが、AmazonのKindle日本上陸以降の自分の買い方で一目瞭然になってきたからである。ゆゆしき事態。
 
@@ -47,7 +47,7 @@
 
 ## 伝える
 
-<a href="http://www.amazon.co.jp/o/ASIN/4839928401/ruedap-22/" class="book-cover-link"><img src="http://ecx.images-amazon.com/images/I/41nvddaG9BL.jpg" alt="ノンデザイナーズ・デザインブック"></a>
+<a href="http://www.amazon.co.jp/o/ASIN/4839928401/ruedap-22/" class="c-bookCover"><img src="http://ecx.images-amazon.com/images/I/41nvddaG9BL.jpg" alt="ノンデザイナーズ・デザインブック"></a>
 
 リーダブルコードが発売されて話題になったのは2年くらい前だったと思うけど、今はもちろん、今後も色褪せない良書なのは間違いなさそう。その内容は、コードを書くときだけでなく、前述のとおりいろいろな場面で当てはめることができる。つまるところそれは「何かを伝えるという行為」であれば、何にでも応用の効くことなのかもしれない。
 

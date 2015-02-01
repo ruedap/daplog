@@ -57,12 +57,13 @@ linters:
     # プロパティ間の空行を許可しない
     separate_groups: false
 
+  # セレクターの命名規則を統一する
   SelectorFormat:
     enabled: true
     convention: '^[a-zA-Z0-9][-a-zA-Z0-9]*$'
-    # クラス名がSUIT CSSの命名規則に準拠するための正規表現
+    # クラス名はSUIT CSSの命名規則に準拠、`c-`プレフィックスは独自拡張
     # https://github.com/suitcss/suit/blob/master/doc/naming-conventions.md
-    class_convention: '^([A-Z]|u-|is-)[-a-zA-Z0-9]*$'
+    class_convention: '^([A-Z]|u-|is-|c-)[-a-zA-Z0-9]*$'
 
   # 小数点の時のゼロを省略しない
   # good: `0.5`

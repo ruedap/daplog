@@ -1,0 +1,17 @@
+// ============================================================================
+// font-smoothingプロパティを使用するためのユーティリティを定義します。
+// ============================================================================
+
+@mixin u-fontSmoothing($enable: true) {
+  @if $enable {
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+  } @else {
+    -moz-osx-font-smoothing: auto;
+    -webkit-font-smoothing: subpixel-antialiased;
+  }
+}
+
+.u-fontSmoothing {
+  @include u-fontSmoothing;
+}

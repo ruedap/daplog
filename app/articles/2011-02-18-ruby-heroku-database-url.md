@@ -14,25 +14,25 @@ Herokuアプリを作って色々試している頃に、`heroku config:clear`[^
 
 ## Twitterのログ
 
-<blockquote class="twitter-tweet"><p>herokuのconfigでENVのDATABASE_URLを消しちゃってDB使えない状態になったんだけど、この値を再取得する方法ってあるのかな？</p>&mdash; ルエダップ (@ruedap) <a href="https://twitter.com/ruedap/statuses/36437283116687361">February 12, 2011</a></blockquote>
+<blockquote class="c-tweet"><p>herokuのconfigでENVのDATABASE_URLを消しちゃってDB使えない状態になったんだけど、この値を再取得する方法ってあるのかな？</p>&mdash; ルエダップ (@ruedap) <a href="https://twitter.com/ruedap/statuses/36437283116687361">February 12, 2011</a></blockquote>
 
-<blockquote class="twitter-tweet"><p>SHARED_DATABASE_URLが残ってたりしないかな RT <a href="https://twitter.com/ruedap">@ruedap</a>: herokuのconfigでENVのDATABASE_URLを消しちゃってDB使えない状態になったんだけど、この値を再取得する方法ってあるのかな？</p>&mdash; Junya Ogu®a (@junya) <a href="https://twitter.com/junya/statuses/36438834086412288">February 12, 2011</a></blockquote>
+<blockquote class="c-tweet"><p>SHARED_DATABASE_URLが残ってたりしないかな RT <a href="https://twitter.com/ruedap">@ruedap</a>: herokuのconfigでENVのDATABASE_URLを消しちゃってDB使えない状態になったんだけど、この値を再取得する方法ってあるのかな？</p>&mdash; Junya Ogu®a (@junya) <a href="https://twitter.com/junya/statuses/36438834086412288">February 12, 2011</a></blockquote>
 
-<blockquote class="twitter-tweet"><p><a href="https://twitter.com/junya">@junya</a> レスポンスありがとうございます。deprecateなheroku config:clearを発動しちゃったんで綺麗サッパリ消えちゃて・・ｗ</p>&mdash; ルエダップ (@ruedap) <a href="https://twitter.com/ruedap/statuses/36439838085484544">February 12, 2011</a></blockquote>
+<blockquote class="c-tweet"><p><a href="https://twitter.com/junya">@junya</a> レスポンスありがとうございます。deprecateなheroku config:clearを発動しちゃったんで綺麗サッパリ消えちゃて・・ｗ</p>&mdash; ルエダップ (@ruedap) <a href="https://twitter.com/ruedap/statuses/36439838085484544">February 12, 2011</a></blockquote>
 
-<blockquote class="twitter-tweet"><p><a href="https://twitter.com/ruedap">@ruedap</a> なるほど〜。IRCかチケットで聞けばすぐに再設定してくれそうですけど、アプリ作り直したほうが簡単かもですね。 http://bit.ly/hAN7VL</p>&mdash; Junya Ogu®a (@junya) <a href="https://twitter.com/junya/statuses/36440193863122944">February 12, 2011</a></blockquote>
+<blockquote class="c-tweet"><p><a href="https://twitter.com/ruedap">@ruedap</a> なるほど〜。IRCかチケットで聞けばすぐに再設定してくれそうですけど、アプリ作り直したほうが簡単かもですね。 http://bit.ly/hAN7VL</p>&mdash; Junya Ogu®a (@junya) <a href="https://twitter.com/junya/statuses/36440193863122944">February 12, 2011</a></blockquote>
 
-<blockquote class="twitter-tweet"><p><a href="https://twitter.com/ruedap">@ruedap</a> heroku consoleでコンソールつないで、YAML::load(open(&#39;config/database.yml&#39;, &#39;r&#39;).read)で情報とれるかも・・・？</p>&mdash; Satoshi Ebisawa ☃ (@satococoa) <a href="https://twitter.com/satococoa/statuses/36442019895320576">February 12, 2011</a></blockquote>
+<blockquote class="c-tweet"><p><a href="https://twitter.com/ruedap">@ruedap</a> heroku consoleでコンソールつないで、YAML::load(open(&#39;config/database.yml&#39;, &#39;r&#39;).read)で情報とれるかも・・・？</p>&mdash; Satoshi Ebisawa ☃ (@satococoa) <a href="https://twitter.com/satococoa/statuses/36442019895320576">February 12, 2011</a></blockquote>
 
-<blockquote class="twitter-tweet"><p><a href="https://twitter.com/satococoa">@satococoa</a> ありがとうございます。Sinatra+DataMapperで使っててymlファイルとか作ってないんですー。もし作ってたらconsoleから取れるんですね〜惜しいことしたｗ 今後の参考にさせてもらいます！</p>&mdash; ルエダップ (@ruedap) <a href="https://twitter.com/ruedap/statuses/36443382213509120">February 12, 2011</a></blockquote>
+<blockquote class="c-tweet"><p><a href="https://twitter.com/satococoa">@satococoa</a> ありがとうございます。Sinatra+DataMapperで使っててymlファイルとか作ってないんですー。もし作ってたらconsoleから取れるんですね〜惜しいことしたｗ 今後の参考にさせてもらいます！</p>&mdash; ルエダップ (@ruedap) <a href="https://twitter.com/ruedap/statuses/36443382213509120">February 12, 2011</a></blockquote>
 
-<blockquote class="twitter-tweet"><p><a href="https://twitter.com/ruedap">@ruedap</a> config/database.ymlって、herokuは勝手に上書き or 作成していると思ったんですが、だめでしたか〜、ドンマイです！</p>&mdash; Satoshi Ebisawa ☃ (@satococoa) <a href="https://twitter.com/satococoa/statuses/36443619254607872">February 12, 2011</a></blockquote>
+<blockquote class="c-tweet"><p><a href="https://twitter.com/ruedap">@ruedap</a> config/database.ymlって、herokuは勝手に上書き or 作成していると思ったんですが、だめでしたか〜、ドンマイです！</p>&mdash; Satoshi Ebisawa ☃ (@satococoa) <a href="https://twitter.com/satococoa/statuses/36443619254607872">February 12, 2011</a></blockquote>
 
-<blockquote class="twitter-tweet"><p><a href="https://twitter.com/satococoa">@satococoa</a> あ、そうなんですか！ {&quot;production&quot;=&gt;nil} が返ってきました。yml自体は自動生成されてるんですねー勉強になりました！</p>&mdash; ルエダップ (@ruedap) <a href="https://twitter.com/ruedap/statuses/36444960580440064">February 12, 2011</a></blockquote>
+<blockquote class="c-tweet"><p><a href="https://twitter.com/satococoa">@satococoa</a> あ、そうなんですか！ {&quot;production&quot;=&gt;nil} が返ってきました。yml自体は自動生成されてるんですねー勉強になりました！</p>&mdash; ルエダップ (@ruedap) <a href="https://twitter.com/ruedap/statuses/36444960580440064">February 12, 2011</a></blockquote>
 
-<blockquote class="twitter-tweet"><p><a href="https://twitter.com/satococoa">@satococoa</a> <a href="https://twitter.com/ruedap">@ruedap</a> その手があったかと思ってRailsアプリで試してみましたが、config:clearのタイミングでdatabase.ymlも更新されてしまい設定情報は空になっていました。残念。</p>&mdash; Junya Ogu®a (@junya) <a href="https://twitter.com/junya/statuses/36444928280109056">February 12, 2011</a></blockquote>
+<blockquote class="c-tweet"><p><a href="https://twitter.com/satococoa">@satococoa</a> <a href="https://twitter.com/ruedap">@ruedap</a> その手があったかと思ってRailsアプリで試してみましたが、config:clearのタイミングでdatabase.ymlも更新されてしまい設定情報は空になっていました。残念。</p>&mdash; Junya Ogu®a (@junya) <a href="https://twitter.com/junya/statuses/36444928280109056">February 12, 2011</a></blockquote>
 
-<blockquote class="twitter-tweet"><p><a href="https://twitter.com/junya">@junya</a> <a href="https://twitter.com/satococoa">@satococoa</a> なるほどー… たぶん僕みたいなミスがあるからconfig:clearはdeprecateになったんでしょうねｗ 以後気をつけよう.. ありがとうございます</p>&mdash; ルエダップ (@ruedap) <a href="https://twitter.com/ruedap/statuses/36446363038257152">February 12, 2011</a></blockquote>
+<blockquote class="c-tweet"><p><a href="https://twitter.com/junya">@junya</a> <a href="https://twitter.com/satococoa">@satococoa</a> なるほどー… たぶん僕みたいなミスがあるからconfig:clearはdeprecateになったんでしょうねｗ 以後気をつけよう.. ありがとうございます</p>&mdash; ルエダップ (@ruedap) <a href="https://twitter.com/ruedap/statuses/36446363038257152">February 12, 2011</a></blockquote>
 
 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 

@@ -133,7 +133,7 @@
 
 %ArticleBody-citeIcon {
   &::before {
-    @include dapicons;
+    @include u-dapicons;
     color: rgba($color-brand, fibo(medium, alpha));  // TODO: color
     content: "cite";
     font-size: 89%;
@@ -193,6 +193,7 @@
 }
 
 %ArticleBody-footnotes {
+  // scss-lint:disable SelectorFormat
   > .footnotes {
     color: #777;
     font-size: $font-size-xsmall-ArticleBody;
@@ -206,8 +207,9 @@
 }
 
 %ArticleBody-highlight {
+  // scss-lint:disable SelectorFormat
   .highlight {
-    @include font-smoothing(false);
+    @include u-fontSmoothing(false);
     background-color: #fff;
     border: 3px solid #eee;
     box-shadow: inset 0 0 0 1px #ccc;
@@ -231,7 +233,7 @@
 %ArticleBody-code {
   code,
   kbd {
-    @include font-smoothing(false);
+    @include u-fontSmoothing(false);
     background-color: #f2f2f2;
     border: 1px solid rgba(#808080, 0.4);
     border-radius: 2px;
@@ -286,24 +288,6 @@
   }
 }
 
-%ArticleBody-bookCoverLink {
-  .book-cover-link {
-    display: block;
-    float: right;
-    padding: 0.5em 0 0.5em 1.5em;
-    text-align: right;
-
-    > img {
-      margin: 0 !important;
-      width: 90px;
-
-      @include mq(tablet) {
-        width: 150px;
-      }
-    }
-  }
-}
-
 // Block
 // ============================================================================
 
@@ -323,8 +307,7 @@
   @extend %ArticleBody-highlight;
   @extend %ArticleBody-code;
   @extend %ArticleBody-table;
-  @extend %ArticleBody-bookCoverLink;
-  @include font-smoothing;
+  @include u-fontSmoothing;
 
   font-family: $font-family-lucida;
   font-size: $font-size-medium-ArticleBody;

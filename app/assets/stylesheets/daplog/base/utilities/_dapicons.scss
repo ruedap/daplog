@@ -1,5 +1,5 @@
 // ============================================================================
-// アイコンフォント`dapicons`を使用するためのミックスインを定義します。
+// アイコンフォント`dapicons`を使用するためのユーティリティを定義します。
 // ============================================================================
 
 @font-face {
@@ -10,8 +10,8 @@
   src: asset-url("dapicons.eot?#iefix") format("embedded-opentype"), asset-url("dapicons.woff") format("woff"), asset-url("dapicons.ttf") format("truetype"), asset-url("dapicons.svg#dapicons") format("svg");
 }
 
-@mixin dapicons {
-  @include font-smoothing(false);
+@mixin u-dapicons {
+  @include u-fontSmoothing(false);
   font-family: "dapicons";
   font-feature-settings: "liga", "dlig";
   font-style: normal;
@@ -23,6 +23,6 @@
   text-transform: none;
 }
 
-.dapicons {
-  @include dapicons;
+.u-dapicons {
+  @include u-dapicons;
 }

@@ -15,7 +15,7 @@
 
   @include mq(tablet) {
     &::before {
-      @include dapicons;
+      @include u-dapicons;
       color: rgba($color-brand, fibo(xsmall, alpha));
       content: "ruedap";
       font-size: fibo(medium, rem);

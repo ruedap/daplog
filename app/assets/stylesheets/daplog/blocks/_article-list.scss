@@ -10,7 +10,7 @@
 }
 
 .ArticleList-item {
-  @include font-smoothing;
+  @include u-fontSmoothing;
   font-size: 1.4rem;
   line-height: fibo(small, px);
   margin-bottom: 1px;
