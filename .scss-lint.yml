@@ -8,6 +8,12 @@ linters:
   DuplicateProperty:
     enabled: true
 
+  # ブロック間を空行で空ける
+  EmptyLineBetweenBlocks:
+    enabled: true
+    # 1行のブロックの場合は空行で空けても空けなくてもよい
+    ignore_single_line_blocks: true
+
   NameFormat:
     enabled: true
     convention: '^[a-z_][-a-zA-Z0-9_]*$'

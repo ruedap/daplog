@@ -26,9 +26,11 @@
   }
 
   $_margin-left: fibo($size-name, px) / 3;
+
   &::before {
     margin-left: $_margin-left;
   }
+
   &::after {
     margin-left: -($_margin-left);
   }

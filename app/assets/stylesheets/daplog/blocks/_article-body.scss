@@ -27,6 +27,7 @@
         top: -(fibo(xlarge, px) / 2);
       }
     }
+
     margin-top: fibo(xlarge, px);
     margin-bottom: fibo(small, px);
     font-size: 2.3rem;
@@ -94,12 +95,14 @@
 %ArticleBody-hr {
   > hr {
     $_height: fibo(medium, px);
+
     @include style-article-section-mark(xxsmall) {
       &::before,
       &::after {
         top: ($_height / 2) - (fibo(xxsmall, px) / 2);
       }
     }
+
     position: relative;
     border: none;
     display: block;
@@ -114,11 +117,13 @@
     margin: 1.5em auto;
     padding: 0;
     text-align: center;
+
     img {
       max-width: 100%;
       display: block;
       margin: 0 auto;
     }
+
     figcaption {
       font-size: $font-size-xsmall-ArticleBody;
       margin: 0.5em 0;
