@@ -67,3 +67,8 @@ linters:
 
   MergeableSelector:
     force_nesting: false
+
+  # ゼロには単位を付けない
+  # good: `0` bad: `0px`
+  ZeroUnit:
+    enabled: true

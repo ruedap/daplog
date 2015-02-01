@@ -23,6 +23,7 @@ $fibonacci-map: (
   xxxxxsmall: 3
 );
 
+// scss-lint:disable ZeroUnit
 @function fibo($size-name, $unit: null) {
   $size: map-get($fibonacci-map, $size-name);
 
@@ -36,6 +37,7 @@ $fibonacci-map: (
     @return $size;
   }
 }
+// scss-lint:enable ZeroUnit
 
 $ratio-golden: 1.618;
 
