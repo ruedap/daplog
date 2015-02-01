@@ -13,7 +13,7 @@ guard 'livereload' do
   watch(%r{app/articles/.+\.md$})
 end
 
-guard 'rspec', :version => 2, spring: true do
+guard 'rspec', version: 2, spring: true do
   watch(%r{^spec/.+_spec\.rb$})
   watch(%r{^lib/(.+)\.rb$})     { |m| "spec/lib/#{m[1]}_spec.rb" }
   watch('spec/spec_helper.rb')  { "spec" }
