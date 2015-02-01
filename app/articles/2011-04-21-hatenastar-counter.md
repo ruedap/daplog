@@ -83,7 +83,7 @@ star_count = json['star_count']
 
 あとWebサービスを広く使ってもらうための重要そうな要素にプロモーションがある。これは[Nekostgram](http://nekostagram.heroku.com/)の時に目の当たりにしたのだけど、*Twitter上でものすごい勢いでRTが連鎖していくバイラル効果*は恐ろしいものがあり、あれを引き起こせると、個人が作ったちっぽけなWebサービスでも、まったくお金を掛けずに広く告知できるというのを実感した。幸運なことに今回は、既に多くの有名な方々にツイートやはてブをしてもらえており、中でもはてな社長のid:jkondoさんにこのWebサービスについてツイートしてもらえたので、幸先の良いスタートを切れた気がする。
 
-<blockquote class="twitter-tweet"><p>なんか出てる / はてなスターカウンター http://htn.to/ngZ2En</p>&mdash; 近藤淳也 (@jkondo) <a href="https://twitter.com/jkondo/statuses/60929113678032896">April 21, 2011</a></blockquote>
+<blockquote class="c-tweet"><p>なんか出てる / はてなスターカウンター http://htn.to/ngZ2En</p>&mdash; 近藤淳也 (@jkondo) <a href="https://twitter.com/jkondo/statuses/60929113678032896">April 21, 2011</a></blockquote>
 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 この[はてなスターカウンター](http://hatenastar.heroku.com/)が多くの人に使ってもらえると嬉しい。ぽぽぽぽーん！

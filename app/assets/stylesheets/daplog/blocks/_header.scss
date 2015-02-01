@@ -17,34 +17,34 @@
 }
 
 .Header-logoLink {
-  position: relative;
   display: block;
+  position: relative;
   width: 100%;
 }
 
 .Header-logoSpacer {
-  position: relative;
   display: block;
-  margin-top: -50%;
-  width: 100%;
-  padding-bottom: 100%;
   font-size: 0;
+  margin-top: -50%;
+  padding-bottom: 100%;
+  position: relative;
+  width: 100%;
 }
 
 .Header-logo {
-  position: absolute;
-  display: block;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  margin: auto;
-  width: 100%;
-  height: auto;
-  border-radius: 100%;
   background-color: rgba($color-brand, fibo(xxsmall, alpha)); // TODO: color
   background-image: radial-gradient(
     rgba($color-brand, fibo(xxsmall, alpha)),
     rgba($color-brand, fibo(small, alpha))
   ); // TODO: color
+  border-radius: 100%;
+  bottom: 0;
+  display: block;
+  height: auto;
+  left: 0;
+  margin: auto;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 100%;
 }

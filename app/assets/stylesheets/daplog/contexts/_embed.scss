@@ -5,8 +5,7 @@
 // Twitter
 // ============================================================================
 
-.twitter-tweet,
-iframe[src*='instagram.com'] {
+.c-tweet {
   display: block;
   margin: 30px auto !important;
 }
@@ -14,12 +13,14 @@ iframe[src*='instagram.com'] {
 // Instagram
 // ============================================================================
 
-iframe[src*='instagram.com'] {
-  width: 282px;
+.c-instagram {
+  display: block;
   height: 327px;
+  margin: 30px auto !important;
+  width: 282px;
 
   @include mq(tablet) {
-    width: 612px;
     height: 710px;
+    width: 612px;
   }
 }

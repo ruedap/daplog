@@ -222,7 +222,7 @@ setting--admin__title-img
 
 追伸、先程のペライチサイトのCSSは、ブロック数も少ないので1つのSassファイルに全部書いているけど、ページ数の多いWebサービスなどでは、ブロック単位でSassファイルを分けるようにしている。こうしておくと見通しが良くなるし、**ファイル名＝ブロック名**になるので、数が増えた時にうっかりブロック名を重複させてしまうミスを防止できそう。
 
-<blockquote class="twitter-tweet"><p>BEMのBlock一覧表、実際はこんなかんじ。ここさえ被らなければどれだけスタイル定義が多くても安心。そもそもファイル単位だから被るわけナス。Blockという粒度がちょうどいい感じで、この点だけでも個人的にはBEM使う価値がある <a href="http://t.co/oyfbJpeHZw">pic.twitter.com/oyfbJpeHZw</a></p>&mdash; ルエダップ (@ruedap) <a href="https://twitter.com/ruedap/statuses/388348442306551808">October 10, 2013</a></blockquote>
+<blockquote class="c-tweet"><p>BEMのBlock一覧表、実際はこんなかんじ。ここさえ被らなければどれだけスタイル定義が多くても安心。そもそもファイル単位だから被るわけナス。Blockという粒度がちょうどいい感じで、この点だけでも個人的にはBEM使う価値がある <a href="http://t.co/oyfbJpeHZw">pic.twitter.com/oyfbJpeHZw</a></p>&mdash; ルエダップ (@ruedap) <a href="https://twitter.com/ruedap/statuses/388348442306551808">October 10, 2013</a></blockquote>
 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 結局のところ、BEMがどうこうというよりも、より壊れにくいCSSの書き方を求めていて、BEMの書き方は今のところそれに最も合致していたということかもしれない。**CSSはとても脆い**ので恐る恐る触るくらいがちょうどいい。百鬼夜行していいのは妖怪だけ。

@@ -10,7 +10,7 @@
 }
 
 .ArticleList-item {
-  @include font-smoothing;
+  @include u-fontSmoothing;
   font-size: 1.4rem;
   line-height: fibo(small, px);
   margin-bottom: 1px;
@@ -40,7 +40,8 @@
     rgba($color-brand, fibo(medium, alpha)),
     rgba($color-brand, fibo(small, alpha)),
     rgba($color-brand, fibo(medium, alpha)),
-    #fff);
+    #fff
+  );
   background-color: #fff;
   display: block;
   font-family: $font-family-lucida;
@@ -68,16 +69,16 @@
 }
 
 .ArticleList-time {
-  float: left;
   background-color: #fff;
   display: block;
+  float: left;
 }
 
 .ArticleList-month,
 .ArticleList-day,
 .ArticleList-title {
-  text-align: center;
   height: fibo(small, px);
+  text-align: center;
 
   @include mq(tablet) {
     height: fibo(medium, px);
@@ -86,10 +87,10 @@
 
 .ArticleList-month,
 .ArticleList-day {
+  display: none;
   font-family: $font-family-fjalla;
   letter-spacing: 0.1em;
   width: fibo(medium, px);
-  display: none;
 
   @include mq(tablet) {
     display: inline-block;

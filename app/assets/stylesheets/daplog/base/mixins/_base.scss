@@ -10,13 +10,3 @@
   @if $hover   { &:hover   { color: $hover; } }
   @if $active  { &:active  { color: $active; } }
 }
-
-@mixin font-smoothing($enable: true) {
-  @if $enable {
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-  } @else {
-    -webkit-font-smoothing: subpixel-antialiased;
-    -moz-osx-font-smoothing: auto;
-  }
-}

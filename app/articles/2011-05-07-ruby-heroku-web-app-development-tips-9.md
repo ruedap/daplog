@@ -51,7 +51,7 @@ Herokuのプラットフォームは、AWSのEC2およびEBSを利用したサ�
 
 - <time datetime="2011-04-21T11:00:00+09:00">21日 11時頃</time>
   <p>障害当日の11時頃に「はてなスターカウンター」をリリースしました。ここからホッテントリに一瞬入るまでの拡散の仕方は前述の通りです。</p>
-  <blockquote class="twitter-tweet"><p>作ってみた!! / はてなスターカウンター <a href="http://t.co/PyqctTh">http://t.co/PyqctTh</a></p>&mdash; ルエダップ (@ruedap) <a href="https://twitter.com/ruedap/statuses/60883945562177536">April 21, 2011</a></blockquote>
+  <blockquote class="c-tweet"><p>作ってみた!! / はてなスターカウンター <a href="http://t.co/PyqctTh">http://t.co/PyqctTh</a></p>&mdash; ルエダップ (@ruedap) <a href="https://twitter.com/ruedap/statuses/60883945562177536">April 21, 2011</a></blockquote>
 
 - <time datetime="2011-04-21T17:00:00+09:00">21日 17時頃</time>
   <p>Herokuの障害発生について知ったのはTwitterで、AWSに障害が起きたっぽいこと、Herokuアプリ（サイト）に接続しづらくなっていること、などHerokuユーザーのツイートが自分のタイムラインに流れてきました。この時点で、自分が公開・運用していた4つのHerokuアプリはどれも正常動作しているように見え、少なくとも各HerokuアプリのWebサイトへはすべて接続できました。なので、障害は一部の環境だけに起きているものではないかとこの時は思っていました。</p>
@@ -61,47 +61,47 @@ Herokuのプラットフォームは、AWSのEC2およびEBSを利用したサ�
 
 - <time datetime="2011-04-21T19:00:00+09:00">21日 19時頃</time>
   <p>はてなスターカウンター以外の自分のHerokuアプリ（サイト）にも接続しづらいことを確認し、さらにherokuコマンドによるデプロイやDBへの接続に失敗するようになったことで、それがAWSの障害によるアクセス不能であることをちゃんと理解しました。ここに至るまではすぐ直るだろうと想像していました。</p>
-  <blockquote class="twitter-tweet"><p>ありゃーアクセス伸びてないと思ったらHerokuさんダウンしてたのかw サービス公開日に落ちるとは運が悪い 無料で使ってるから贅沢言えないけどw</p>&mdash; ルエダップ (@ruedap) <a href="https://twitter.com/ruedap/statuses/61011684847919104">April 21, 2011</a></blockquote>
+  <blockquote class="c-tweet"><p>ありゃーアクセス伸びてないと思ったらHerokuさんダウンしてたのかw サービス公開日に落ちるとは運が悪い 無料で使ってるから贅沢言えないけどw</p>&mdash; ルエダップ (@ruedap) <a href="https://twitter.com/ruedap/statuses/61011684847919104">April 21, 2011</a></blockquote>
 
 - <time datetime="2011-04-21T21:00:00+09:00">21日 21時頃</time>
   <p>自分のHerokuアプリへの接続がしづらくなってから3時間ほど経過しました。接続しづらいというより、ほとんど出来ないに近かったです。この時点で既に「障害時間が長い」と感じていました。まさかこれの約20倍の障害時間になるとはこの時知る由もなかったのです…</p>
-  <blockquote class="twitter-tweet"><p>Herokuさんの障害長いなー 修正加えられない</p>&mdash; ルエダップ (@ruedap) <a href="https://twitter.com/ruedap/statuses/61038185827938304">April 21, 2011</a></blockquote>
+  <blockquote class="c-tweet"><p>Herokuさんの障害長いなー 修正加えられない</p>&mdash; ルエダップ (@ruedap) <a href="https://twitter.com/ruedap/statuses/61038185827938304">April 21, 2011</a></blockquote>
 
 - <time datetime="2011-04-21T23:00:00+09:00">21日 23時頃</time>
   <p>前述のとおり、ホッテントリ入りしたこの時間帯には、はてなスターカウンターのサイトへの接続は不可能になっていました。</p>
-  <blockquote class="twitter-tweet"><p>はてなスターカウンター、せっかくホッテントリに入れたのに、Herokuさんが落ちてる…ｗ 悲しすぎる / はてなブックマーク - 人気エントリー http://goo.gl/Y1np</p>&mdash; ルエダップ (@ruedap) <a href="https://twitter.com/ruedap/statuses/61074061224198144">April 21, 2011</a></blockquote>
+  <blockquote class="c-tweet"><p>はてなスターカウンター、せっかくホッテントリに入れたのに、Herokuさんが落ちてる…ｗ 悲しすぎる / はてなブックマーク - 人気エントリー http://goo.gl/Y1np</p>&mdash; ルエダップ (@ruedap) <a href="https://twitter.com/ruedap/statuses/61074061224198144">April 21, 2011</a></blockquote>
 
 - <time datetime="2011-04-22T01:00:00+09:00">22日 1時頃</time>
   <p>Twitterのエゴサーチで、はてなスターカウンターサイトの接続不能への不満の声を目撃したのはこのあたりでした。ちなみに「思い」は「重い」の誤字です。</p>
-  <blockquote class="twitter-tweet"><p>やっぱそうだよね、はてなスターカウンター自体が思いと思うよね..w すみませんすみません</p>&mdash; ルエダップ (@ruedap) <a href="https://twitter.com/ruedap/statuses/61095052524531712">April 21, 2011</a></blockquote>
+  <blockquote class="c-tweet"><p>やっぱそうだよね、はてなスターカウンター自体が思いと思うよね..w すみませんすみません</p>&mdash; ルエダップ (@ruedap) <a href="https://twitter.com/ruedap/statuses/61095052524531712">April 21, 2011</a></blockquote>
 
 - <time datetime="2011-04-22T01:00:00+09:00">22日 1時頃</time>
   <p>全く改善しそうにもなかったので、改めてTwitter上で謝罪しました。 自分の[ブログ記事](/2011/04/21/hatenastar-counter)にもその旨の謝罪文を掲載しました。</p>
-  <blockquote class="twitter-tweet"><p>はてなスターカウンターを利用していただいている方へ。使用しているサーバー(Heroku)自体の障害で、はてなスターカウンターが表示しづらい・できない状態が続いています。ご迷惑をおかけしてすみません。</p>&mdash; ルエダップ (@ruedap) <a href="https://twitter.com/ruedap/statuses/61095736284160000">April 21, 2011</a></blockquote>
+  <blockquote class="c-tweet"><p>はてなスターカウンターを利用していただいている方へ。使用しているサーバー(Heroku)自体の障害で、はてなスターカウンターが表示しづらい・できない状態が続いています。ご迷惑をおかけしてすみません。</p>&mdash; ルエダップ (@ruedap) <a href="https://twitter.com/ruedap/statuses/61095736284160000">April 21, 2011</a></blockquote>
 
 - <time datetime="2011-04-22T08:00:00+09:00">22日 8時頃</time>
   <p>翌日早朝、まだ直ってないことにガッカリして、別のPaaSへの乗り換え検討の愚痴をこぼしたり。</p>
-  <blockquote class="twitter-tweet"><p>自分もこれを機会にCloudFoundry触ってみようかな</p>&mdash; ルエダップ (@ruedap) <a href="https://twitter.com/ruedap/statuses/61206566950551552">April 21, 2011</a></blockquote>
+  <blockquote class="c-tweet"><p>自分もこれを機会にCloudFoundry触ってみようかな</p>&mdash; ルエダップ (@ruedap) <a href="https://twitter.com/ruedap/statuses/61206566950551552">April 21, 2011</a></blockquote>
 
 - <time datetime="2011-04-22T11:00:00+09:00">22日 11時頃</time>
   <p>さらに愚痴っぽいツイート。「無料で使わせてもらってるから贅沢は言えない」と言っていた障害発生初期の頃の余裕はもう微塵も残っていませんでしたｗ HerokuをHeorkuと打ち間違えている辺りにも余裕の無さが伺えます。</p>
-  <blockquote class="twitter-tweet"><p>Heorku未だに全然ダメだ 今回の機会損失とモチベーション損失は大きい</p>&mdash; ルエダップ (@ruedap) <a href="https://twitter.com/ruedap/statuses/61247245676331010">April 22, 2011</a></blockquote>
+  <blockquote class="c-tweet"><p>Heorku未だに全然ダメだ 今回の機会損失とモチベーション損失は大きい</p>&mdash; ルエダップ (@ruedap) <a href="https://twitter.com/ruedap/statuses/61247245676331010">April 22, 2011</a></blockquote>
 
 - <time datetime="2011-04-22T14:00:00+09:00">22日 14時頃</time>
   <p>ここでようやくサイトへの接続の方は復旧への兆しを見せはじめました。ただし、herokuコマンドによるデプロイやDBへの接続はまだ不可能でした。</p>
-  <blockquote class="twitter-tweet"><p>はてなスターカウンター、Heroku復旧後は今のところ安定動作してるみたいです。公開後ほぼ丸一日アクセスしづらい状態になってしまってご迷惑をおかけしました http://goo.gl/0Gh4j</p>&mdash; ルエダップ (@ruedap) <a href="https://twitter.com/ruedap/statuses/61302438094831617">April 22, 2011</a></blockquote>
+  <blockquote class="c-tweet"><p>はてなスターカウンター、Heroku復旧後は今のところ安定動作してるみたいです。公開後ほぼ丸一日アクセスしづらい状態になってしまってご迷惑をおかけしました http://goo.gl/0Gh4j</p>&mdash; ルエダップ (@ruedap) <a href="https://twitter.com/ruedap/statuses/61302438094831617">April 22, 2011</a></blockquote>
 
 - <time datetime="2011-04-22T23:00:00+09:00">22日 23時頃</time>
   <p>その日の夜になっても、herokuコマンドによるデプロイやDBへの接続はまだ不可能でした。</p>
-  <blockquote class="twitter-tweet"><p>HerokuはDBがまだつながんないなあ</p>&mdash; ルエダップ (@ruedap) <a href="https://twitter.com/ruedap/statuses/61433115050123264">April 22, 2011</a></blockquote>
+  <blockquote class="c-tweet"><p>HerokuはDBがまだつながんないなあ</p>&mdash; ルエダップ (@ruedap) <a href="https://twitter.com/ruedap/statuses/61433115050123264">April 22, 2011</a></blockquote>
 
 - <time datetime="2011-04-23T02:00:00+09:00">23日 2時頃</time>
   <p>自分のHeroku製Twitter Botが障害の影響で動いてなかったことにこの時気づきました。</p>
-  <blockquote class="twitter-tweet"><p>あー、チャップリンbotも87日ほどちゃんと稼動してたのに、昨日はつぶやけてなかったんだなぁ</p>&mdash; ルエダップ (@ruedap) <a href="https://twitter.com/ruedap/statuses/61475269621452800">April 22, 2011</a></blockquote>
+  <blockquote class="c-tweet"><p>あー、チャップリンbotも87日ほどちゃんと稼動してたのに、昨日はつぶやけてなかったんだなぁ</p>&mdash; ルエダップ (@ruedap) <a href="https://twitter.com/ruedap/statuses/61475269621452800">April 22, 2011</a></blockquote>
 
 - <time datetime="2011-04-24T01:00:00+09:00">24日 1時頃</time>
   <p>日付が24日に変わっても、herokuコマンドによるデプロイやDBへの接続はまだ不安定でした。</p>
-  <blockquote class="twitter-tweet"><p>Herokuまたdb:pullに失敗するようになった 長引くなあ</p>&mdash; ルエダップ (@ruedap) <a href="https://twitter.com/ruedap/statuses/61819160698691584">April 23, 2011</a></blockquote>
+  <blockquote class="c-tweet"><p>Herokuまたdb:pullに失敗するようになった 長引くなあ</p>&mdash; ルエダップ (@ruedap) <a href="https://twitter.com/ruedap/statuses/61819160698691584">April 23, 2011</a></blockquote>
 
 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 

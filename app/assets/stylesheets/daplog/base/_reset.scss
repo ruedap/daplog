@@ -26,6 +26,7 @@ button {
 
 button:focus {
   outline: 1px dotted;
+  // scss-lint:disable DuplicateProperty
   outline: 5px auto -webkit-focus-ring-color;
 }
 
