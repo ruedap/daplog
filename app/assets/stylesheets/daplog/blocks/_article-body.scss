@@ -53,6 +53,7 @@
 
 %ArticleBody-img {
   > p {
+    // scss-lint:disable SelectorDepth
     > img,
     > a > img {
       max-width: 100%;
@@ -268,6 +269,7 @@
       font-weight: normal;
     }
 
+    // scss-lint:disable SelectorDepth
     caption + thead tr:first-child th,
     caption + tbody tr:first-child th,
     caption + tbody tr:first-child td,

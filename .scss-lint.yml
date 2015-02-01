@@ -5,8 +5,11 @@ scss_files: 'app/assets/stylesheets/**/*.scss'
 linters:
 
   # 1つのルールセット内でのプロパティの宣言順を守る
-  # 宣言順: (1) @extend (2) ブロックを含まない@include (3) プロパティ
-  #         (4) ブロックを含む@include (5) ネストしたルールセット
+  # 宣言順: (1) @extend
+  #         (2) ブロックを含まない@include
+  #         (3) プロパティ
+  #         (4) ブロックを含む@include
+  #         (5) ネストしたルールセット
   DeclarationOrder:
     enabled: true
 
@@ -40,19 +43,22 @@ linters:
     # プロパティ間の空行を許可しない
     separate_groups: false
 
+  # 小数点の時のゼロを省略しない
+  # good: `0.5`
+  #  bad: `.5`
   LeadingZero:
     enabled: true
-    # 小数点の時のゼロを省略しない
-    # good: `0.5` bad: `.5`
     style: include_zero
 
   ImportPath:
     enabled: true
     # インポート文のパス指定にパーシャル名のアンダースコアを含まない
-    # good: `@import "foo/bar";` bad: `@import "foo/_bar";`
+    # good: `@import "foo/bar";`
+    #  bad: `@import "foo/_bar";`
     leading_underscore: false
     # インポート文のパス指定に拡張子を含まない
-    # good: `@import "foo/bar";` bad: `@import "foo/bar.scss";`
+    # good: `@import "foo/bar";`
+    #  bad: `@import "foo/bar.scss";`
     filename_extension: false
 
   Indentation:
@@ -64,6 +70,13 @@ linters:
 
   Comment:
     enabled: false
+
+  # セレクター（ネスト）の深さを制限する
+  # good: `.one .two .three {}`
+  #  bad: `.one .two .three .four {}`
+  SelectorDepth:
+    enabled: true
+    max_depth: 3
 
   Shorthand:
     enabled: false
@@ -81,7 +94,8 @@ linters:
     force_nesting: false
 
   # 整数に不要な小数点を付けない
-  # good: `1px` bad: `1.0px`
+  # good: `1px`
+  #  bad: `1.0px`
   UnnecessaryMantissa:
     enabled: true
 
@@ -95,6 +109,7 @@ linters:
     exclude: []
 
   # ゼロに単位を付けない
-  # good: `0` bad: `0px`
+  # good: `0`
+  #  bad: `0px`
   ZeroUnit:
     enabled: true
