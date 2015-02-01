@@ -3,6 +3,11 @@
 scss_files: 'app/assets/stylesheets/**/*.scss'
 
 linters:
+
+  # 1つのルールセット内でのプロパティの重複定義を許可しない
+  DuplicateProperty:
+    enabled: true
+
   NameFormat:
     enabled: true
     convention: '^[a-z_][-a-zA-Z0-9_]*$'
