@@ -1,0 +1,57 @@
+
+# SCSS-Lintの対象ファイル
+scss_files: 'app/assets/stylesheets/**/*.scss'
+
+linters:
+  NameFormat:
+    enabled: true
+    convention: '^[a-z_][-a-zA-Z0-9_]*$'
+
+  SelectorFormat:
+    enabled: true
+    convention: '^[a-zA-Z0-9][-a-zA-Z0-9]*$'
+    # クラス名がSUIT CSSの命名規則に準拠するための正規表現
+    # https://github.com/suitcss/suit/blob/master/doc/naming-conventions.md
+    class_convention: '^([A-Z]|u-|is-)[-a-zA-Z0-9]*$'
+
+  PropertySortOrder:
+    enabled: true
+    # プロパティのソート順をアルファベット順にする
+    order: null
+    # 仕様化されてないプロパティもソート順を守る
+    ignore_unspecified: false
+    # プロパティ間の空行を許可しない
+    separate_groups: false
+
+  LeadingZero:
+    enabled: true
+    # 小数点の時のゼロを省略しない
+    # good: `0.5` bad: `.5`
+    style: include_zero
+
+  ImportPath:
+    enabled: true
+    # インポート文のパス指定にパーシャル名のアンダースコアを含まない
+    # good: `@import foo/bar` bad: `@import foo/_bar`
+    leading_underscore: false
+    # インポート文のパス指定に拡張子を含まない
+    # good: `@import foo/bar` bad: `@import foo/bar.scss`
+    filename_extension: false
+
+  Comment:
+    enabled: false
+
+  Shorthand:
+    enabled: false
+
+  SpaceAfterComma:
+    enabled: false
+
+  SpaceBeforeBrace:
+    allow_single_line_padding: true
+
+  StringQuotes:
+    style: double_quotes
+
+  MergeableSelector:
+    force_nesting: false

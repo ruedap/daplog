@@ -34,6 +34,7 @@ end
 
 group :development, :test do
   gem 'better_errors', '1.1.0'
+  gem 'scss-lint', '0.33.0'
 end
 
 group :development do
