@@ -49,10 +49,10 @@ linters:
   ImportPath:
     enabled: true
     # インポート文のパス指定にパーシャル名のアンダースコアを含まない
-    # good: `@import foo/bar` bad: `@import foo/_bar`
+    # good: `@import "foo/bar";` bad: `@import "foo/_bar";`
     leading_underscore: false
     # インポート文のパス指定に拡張子を含まない
-    # good: `@import foo/bar` bad: `@import foo/bar.scss`
+    # good: `@import "foo/bar";` bad: `@import "foo/bar.scss";`
     filename_extension: false
 
   Indentation:
@@ -80,6 +80,11 @@ linters:
   MergeableSelector:
     force_nesting: false
 
+  # 整数に不要な小数点を付けない
+  # good: `1px` bad: `1.0px`
+  UnnecessaryMantissa:
+    enabled: true
+
   # ベンダープレフィックスを手動で書かない
   VendorPrefixes:
     enabled: true
@@ -89,7 +94,7 @@ linters:
     include: []
     exclude: []
 
-  # ゼロには単位を付けない
+  # ゼロに単位を付けない
   # good: `0` bad: `0px`
   ZeroUnit:
     enabled: true
