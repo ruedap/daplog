@@ -101,6 +101,20 @@ linters:
   Shorthand:
     enabled: false
 
+  # セレクタは1行に1つだけ書くようにする
+  # good: ```
+  #       .foo p,
+  #       h1.bar {
+  #       }
+  #       ```
+  #  bad: ```
+  #       .foo p, h1.bar {
+  #       }
+  #
+  #       ```
+  SingleLinePerSelector:
+    enabled: true
+
   SpaceAfterComma:
     enabled: false
 

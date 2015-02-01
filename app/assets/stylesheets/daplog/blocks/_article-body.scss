@@ -229,7 +229,8 @@
 }
 
 %ArticleBody-code {
-  code, kbd {
+  code,
+  kbd {
     @include font-smoothing(false);
     white-space: pre;
     word-wrap: break-word;
@@ -255,7 +256,8 @@
     border-collapse: separate;
     border-left: 0;
 
-    th, td {
+    th,
+    td {
       font-size: 1.3rem;
       padding: 0.5em 1em;
       text-align: left;
