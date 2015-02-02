@@ -21,7 +21,7 @@
 // Instagram
 // ============================================================================
 
-.c-instagram {
+iframe[src*="instagram.com"] {
   display: block;
   height: 327px;
   margin: 30px auto !important;

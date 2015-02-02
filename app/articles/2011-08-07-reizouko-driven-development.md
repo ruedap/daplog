@@ -12,7 +12,7 @@
 <blockquote class="c-tweet"><p>冷蔵庫の前面をホワイトボード替わりに使うボッチ専用ライフハック http://instagr.am/p/HmejU/</p>&mdash; ルエダップ (@ruedap) <a href="https://twitter.com/ruedap/statuses/91306630242779137">July 14, 2011</a></blockquote>
 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-<iframe class="c-instagram" src="//instagram.com/p/HmejU/embed/" frameborder="0" scrolling="no" allowtransparency="true"></iframe>
+<iframe src="//instagram.com/p/HmejU/embed/" frameborder="0" scrolling="no" allowtransparency="true"></iframe>
 
 今回は、フロントエンドにはFlashを採用し、サーバーサイドは[Node.js](http://nodejs.jp/)と[Socket.io](http://socket.io/)を採用しました。今まで一貫して[SinatraとSlimとSassを使ってきた](/2011/05/09/ruby-heroku-web-app-development-tips-matome)ので、新しい技術を理解するまでに結構ハマりました。また、フロントエンドも今までに比べると結構インタラクティブな作りなので、従来の[EvernoteにTODOをリストアップする](/2011/05/19/webservice-specification-sheet-evernote-memo)だけでは画面構成などが把握しきれないこともあり、上の画像のように*冷蔵庫の前面をホワイトボード替わりに*[^1]使って、具体的な画面構成や演出を何度も書き殴りました。
 
