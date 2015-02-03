@@ -44,7 +44,7 @@ linters:
     enabled: true
 
   # 色の値を指定するときは必ず変数を使用する
-  # TODO: scss-lint 0.33.0 では指定しても有効になってないかも
+  # FIXME: scss-lint 0.33.0 では指定しても有効になってないかも
   ColorVariable:
     enabled: true
 
@@ -122,7 +122,7 @@ linters:
     enabled: true
 
   # !important宣言を許可しない
-  # TODO: scss-lint 0.33.0 では指定しても有効になってないかも
+  # FIXME: scss-lint 0.33.0 では指定しても有効になってないかも
   ImportantRule:
     enabled: true
 
@@ -142,7 +142,7 @@ linters:
   Indentation:
     enabled: true
     # ネストされてないルールセットの自由なインデントを許可しない
-    # TODO: scss-lint 0.33.0 では指定しても有効になってないかも
+    # FIXME: scss-lint 0.33.0 では指定しても有効になってないかも
     allow_non_nested_indentation: false
     # インデントは空白文字
     character: space
@@ -159,7 +159,7 @@ linters:
   # 同じセレクタは1つにまとめる
   MergeableSelector:
     enabled: true
-    # 子セレクタも必ずネストを使ってまとめる
+    # 子・子孫セレクタも必ずネストを使ってまとめる
     force_nesting: true
 
   # 変数、関数、ミックスイン、プレースホルダーセレクタの命名規則を統一する
@@ -176,10 +176,13 @@ linters:
   PlaceholderInExtend:
     enabled: true
 
-  # FIXME
+  # 宣言ブロック内でのプロパティの宣言数を制限する
+  # FIXME: scss-lint 0.33.0 では指定しても有効になってないかも
   PropertyCount:
     enabled: true
+    # ネストされた宣言は含まない
     include_nested: false
+    # プロパティの宣言数は最大10個
     max_properties: 10
 
   # プロパティのソート順を統一する
