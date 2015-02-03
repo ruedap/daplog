@@ -190,10 +190,16 @@ linters:
     enabled: true
     # プロパティのソート順をアルファベット順にする
     order: null
-    # 仕様化されてないプロパティもソート順を統一する
+    # 仕様化されてないプロパティもソート順の統一に含む
     ignore_unspecified: false
-    # プロパティ間の空行を許可しない
+    # 視覚的なグループを目的としたプロパティ間の空行を許可しない
     separate_groups: false
+
+  # 未知のプロパティ名を警告する（ベンダープレフィックスのプロパティは含まない）
+  PropertySpelling:
+    enabled: true
+    # 未知ではないプロパティ名の指定
+    extra_properties: []
 
   # セレクタの命名規則を統一する
   SelectorFormat:
