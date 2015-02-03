@@ -42,6 +42,9 @@ linters:
   Compass::*:
     enabled: false
 
+  DebugStatement:
+    enabled: true
+
   # 1つのルールセット内でのプロパティの宣言順を以下のように統一する
   # (1) @extend
   # (2) ブロックを含まない@include
