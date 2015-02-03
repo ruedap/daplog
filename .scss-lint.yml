@@ -73,6 +73,12 @@ linters:
   EmptyRule:
     enabled: true
 
+  # ファイル最終行の改行が存在するかを統一する
+  FinalNewline:
+    enabled: true
+    # ファイル最終行の改行が存在するようにする
+    present: true
+
   # 色の16進数が省略可能な場合の指定方法を統一する
   # (good) color: #fff;
   #  (bad) color: #ffffff;
