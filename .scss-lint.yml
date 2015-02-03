@@ -32,6 +32,12 @@ linters:
   ColorVariable:
     enabled: true
 
+  # コメントは必ずSCSSコメントを使用する
+  # good: `// コメントです。`
+  #  bad: `/* コメントです。 */`
+  Comment:
+    enabled: true
+
   # 1つのルールセット内でのプロパティの宣言順を以下のように統一する
   # (1) @extend
   # (2) ブロックを含まない@include
@@ -106,9 +112,6 @@ linters:
     character: space
     # インデントは2文字分
     width: 2
-
-  Comment:
-    enabled: false
 
   # セレクタに要素を含まない
   QualifyingElement:
