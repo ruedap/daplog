@@ -157,6 +157,10 @@ linters:
     enabled: true
     max_depth: 3
 
+  # @extendの対象をプレースホルダーセレクタのみに制限する
+  PlaceholderInExtend:
+    enabled: true
+
   # プロパティのソート順を統一する
   PropertySortOrder:
     enabled: true
