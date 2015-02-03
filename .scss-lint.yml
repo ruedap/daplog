@@ -3,7 +3,10 @@
 # 対象ファイル
 scss_files: 'app/assets/stylesheets/**/*.scss'
 
+# 各Linterの詳細は公式ドキュメントを参照
+# https://github.com/causes/scss-lint/blob/master/lib/scss_lint/linter/README.md
 linters:
+
   # bangキーワードの記述方法を統一する
   # (good) color: #000 !important;
   #  (bad) color: #000!important;
@@ -138,6 +141,12 @@ linters:
     enabled: true
     style: include_zero
 
+  # 同じセレクタは1つにまとめる
+  MergeableSelector:
+    enabled: true
+    # 子セレクタも必ずネストを使ってまとめる
+    force_nesting: true
+
   # 変数、関数、ミックスイン、プレースホルダーセレクタの命名規則を統一する
   NameFormat:
     enabled: true
@@ -206,9 +215,6 @@ linters:
 
   StringQuotes:
     style: double_quotes
-
-  MergeableSelector:
-    force_nesting: false
 
   # 整数に不要な小数点を付けない
   # (good) 1px
