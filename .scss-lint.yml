@@ -28,7 +28,7 @@ linters:
     enabled: true
 
   # 色を指定するときは必ず変数を使用する
-  # TODO: scss-lint 0.33.0 ではtrueを指定しても有効になってないかも
+  # TODO: scss-lint 0.33.0 では指定しても有効になってないかも
   ColorVariable:
     enabled: true
 
@@ -104,9 +104,32 @@ linters:
     enabled: true
 
   # !important宣言を許可しない
-  # TODO: scss-lint 0.33.0 ではtrueを指定しても有効になってないかも
+  # TODO: scss-lint 0.33.0 では指定しても有効になってないかも
   ImportantRule:
     enabled: true
+
+  # インポート文の記述方法を統一する
+  ImportPath:
+    enabled: true
+    # インポート文のパス指定にパーシャル名のアンダースコアを含まない
+    # (good) @import "foo/bar";
+    #  (bad) @import "foo/_bar";
+    leading_underscore: false
+    # インポート文のパス指定に拡張子を含まない
+    # (good) @import "foo/bar";
+    #  (bad) @import "foo/bar.scss";
+    filename_extension: false
+
+  # インデントのルールを統一する
+  Indentation:
+    enabled: true
+    # ネストされてないルールセットの自由なインデントを許可しない
+    # TODO: scss-lint 0.33.0 では指定しても有効になってないかも
+    allow_non_nested_indentation: false
+    # インデントは空白文字
+    character: space
+    # インデントは2文字分
+    width: 2
 
   # 変数、関数、ミックスイン、プレースホルダーセレクタの命名規則を統一する
   NameFormat:
@@ -137,25 +160,6 @@ linters:
   LeadingZero:
     enabled: true
     style: include_zero
-
-  ImportPath:
-    enabled: true
-    # インポート文のパス指定にパーシャル名のアンダースコアを含まない
-    # (good) @import "foo/bar";
-    #  (bad) @import "foo/_bar";
-    leading_underscore: false
-    # インポート文のパス指定に拡張子を含まない
-    # (good) @import "foo/bar";
-    #  (bad) @import "foo/bar.scss";
-    filename_extension: false
-
-  # インデントのルールを統一する
-  Indentation:
-    enabled: true
-    # インデントは空白文字
-    character: space
-    # インデントは2文字分
-    width: 2
 
   # セレクタに要素を含まない
   QualifyingElement:
