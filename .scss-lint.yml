@@ -1,14 +1,24 @@
+# SCSS-Lint 0.33.0
 
-# SCSS-Lintの対象ファイル
+# 対象ファイル
 scss_files: 'app/assets/stylesheets/**/*.scss'
 
 linters:
+  # bangキーワードの記述方法を統一する
+  # good: `color: #000 !important;`
+  #  bad: `color: #000!important;`
+  BangFormat:
+    enabled: true
+    # ！記号の前にスペースを空ける
+    space_before_bang: true
+    # ！記号の後にスペースを空けない
+    space_after_bang: false
 
   # borderプロパティの指定方法を統一する
+  # good: `border: 0;`
+  #  bad: `border: none;`
   BorderZero:
     enabled: true
-    # good: `border: 0;`
-    #  bad: `border: none;`
     convention: zero
 
   # カラーキーワードの使用を許可しない
@@ -37,10 +47,10 @@ linters:
     ignore_single_line_blocks: true
 
   # 色の16進数が省略可能な場合の指定方法を統一する
+  # good: `color: #fff;`
+  #  bad: `color: #ffffff;`
   HexLength:
     enabled: true
-    # good: `color: #fff;`
-    #  bad: `color: #ffffff;`
     style: short
 
   # 変数、関数、ミックスイン、プレースホルダーセレクタの命名規則を統一する
