@@ -201,14 +201,6 @@ linters:
     # 未知ではないプロパティ名の指定
     extra_properties: []
 
-  # セレクタの命名規則を統一する
-  SelectorFormat:
-    enabled: true
-    convention: '^[a-zA-Z][-a-zA-Z0-9]*$'
-    # クラス名はSUIT CSSの命名規則に準拠、`c-`プレフィックスは独自拡張
-    # https://github.com/suitcss/suit/blob/master/doc/naming-conventions.md
-    class_convention: '^([A-Z]|u-|is-|c-)[-a-zA-Z0-9]*$'
-
   # セレクタに要素セレクタを含まない
   QualifyingElement:
     enabled: true
@@ -232,8 +224,19 @@ linters:
     enabled: true
     max_depth: 3
 
+  # セレクタの命名規則を統一する
+  SelectorFormat:
+    enabled: true
+    convention: '^[a-zA-Z][-a-zA-Z0-9]*$'
+    # クラス名はSUIT CSSの命名規則に準拠、`c-`プレフィックスは独自拡張
+    # https://github.com/suitcss/suit/blob/master/doc/naming-conventions.md
+    class_convention: '^([A-Z]|u-|is-|c-)[-a-zA-Z0-9]*$'
+
+  # 値の指定でショートハンド記法が使える場合は使用する
+  # (good) margin: 1px;
+  #  (bad) margin: 1px 1px 1px 1px;
   Shorthand:
-    enabled: false
+    enabled: true
 
   # セレクタは1行に1つだけ指定する
   # (good) .foo p,
