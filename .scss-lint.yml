@@ -5,25 +5,25 @@ scss_files: 'app/assets/stylesheets/**/*.scss'
 
 linters:
   # bangキーワードの記述方法を統一する
-  # good: `color: #000 !important;`
-  #  bad: `color: #000!important;`
+  # (good) color: #000 !important;
+  #  (bad) color: #000!important;
   BangFormat:
     enabled: true
-    # ！記号の前にスペースを空ける
+    # 「!」記号の前にスペースを空ける
     space_before_bang: true
-    # ！記号の後にスペースを空けない
+    # 「!」記号の後にスペースを空けない
     space_after_bang: false
 
   # borderプロパティの指定方法を統一する
-  # good: `border: 0;`
-  #  bad: `border: none;`
+  # (good) border: 0;
+  #  (bad) border: none;
   BorderZero:
     enabled: true
     convention: zero
 
   # カラーキーワードの使用を許可しない
-  # good: `color: #008000;`
-  #  bad: `color: green;`
+  # (good) color: #008000;
+  #  (bad) color: green;
   ColorKeyword:
     enabled: true
 
@@ -33,8 +33,8 @@ linters:
     enabled: true
 
   # コメントは必ずSCSSコメントを使用する
-  # good: `// コメントです。`
-  #  bad: `/* コメントです。 */`
+  # (good) // コメントです。
+  #  (bad) /* コメントです。 */
   Comment:
     enabled: true
 
@@ -74,8 +74,8 @@ linters:
     enabled: true
 
   # 色の16進数が省略可能な場合の指定方法を統一する
-  # good: `color: #fff;`
-  #  bad: `color: #ffffff;`
+  # (good) color: #fff;
+  #  (bad) color: #ffffff;
   HexLength:
     enabled: true
     style: short
@@ -104,8 +104,8 @@ linters:
     class_convention: '^([A-Z]|u-|is-|c-)[-a-zA-Z0-9]*$'
 
   # 小数点の時のゼロを省略しない
-  # good: `0.5`
-  #  bad: `.5`
+  # (good) 0.5
+  #  (bad) .5
   LeadingZero:
     enabled: true
     style: include_zero
@@ -113,12 +113,12 @@ linters:
   ImportPath:
     enabled: true
     # インポート文のパス指定にパーシャル名のアンダースコアを含まない
-    # good: `@import "foo/bar";`
-    #  bad: `@import "foo/_bar";`
+    # (good) @import "foo/bar";
+    #  (bad) @import "foo/_bar";
     leading_underscore: false
     # インポート文のパス指定に拡張子を含まない
-    # good: `@import "foo/bar";`
-    #  bad: `@import "foo/bar.scss";`
+    # (good) @import "foo/bar";
+    #  (bad) @import "foo/bar.scss";
     filename_extension: false
 
   # インデントのルールを統一する
@@ -133,21 +133,21 @@ linters:
   QualifyingElement:
     enabled: true
     # 属性セレクタの場合は許可する
-    # good: `[href="foo"] {}`
-    #       `a[href="foo"] {}`
+    # (good) [href="foo"] {}
+    #        a[href="foo"] {}
     allow_element_with_attribute: true
     # クラスセレクタの場合は許可しない
-    # good: `.foo {}`
-    #  bad: `a.foo {}`
+    # (good) .foo {}
+    #  (bad) a.foo {}
     allow_element_with_class: false
     # IDセレクタの場合は許可しない
-    # good: `#foo {}`
-    #  bad: `a#foo {}`
+    # (good) #foo {}
+    #  (bad) a#foo {}
     allow_element_with_id: false
 
   # セレクタ（ネスト）の深さを制限する
-  # good: `.one .two .three {}`
-  #  bad: `.one .two .three .four {}`
+  # (good) .one .two .three {}
+  #  (bad) .one .two .three .four {}
   SelectorDepth:
     enabled: true
     max_depth: 3
@@ -156,16 +156,13 @@ linters:
     enabled: false
 
   # セレクタは1行に1つだけ指定する
-  # good: ```
-  #       .foo p,
-  #       h1.bar {
-  #       }
-  #       ```
-  #  bad: ```
-  #       .foo p, h1.bar {
-  #       }
-  #
-  #       ```
+  # (good) .foo p,
+  #        h1.bar {
+  #          ...
+  #        }
+  #  (bad) .foo p, h1.bar {
+  #          ...
+  #        }
   SingleLinePerSelector:
     enabled: true
 
@@ -182,8 +179,8 @@ linters:
     force_nesting: false
 
   # 整数に不要な小数点を付けない
-  # good: `1px`
-  #  bad: `1.0px`
+  # (good) 1px
+  #  (bad) 1.0px
   UnnecessaryMantissa:
     enabled: true
 
@@ -197,7 +194,7 @@ linters:
     exclude: []
 
   # ゼロに単位を付けない
-  # good: `0`
-  #  bad: `0px`
+  # (good) 0
+  #  (bad) 0px
   ZeroUnit:
     enabled: true
