@@ -103,6 +103,11 @@ linters:
   IdSelector:
     enabled: true
 
+  # !important宣言を許可しない
+  # TODO: scss-lint 0.33.0 ではtrueを指定しても有効になってないかも
+  ImportantRule:
+    enabled: true
+
   # 変数、関数、ミックスイン、プレースホルダーセレクタの命名規則を統一する
   NameFormat:
     enabled: true
