@@ -84,6 +84,7 @@ linters:
   #  (bad) color: #ffffff;
   HexLength:
     enabled: true
+    # 省略する
     style: short
 
   # 変数、関数、ミックスイン、プレースホルダーセレクタの命名規則を統一する
