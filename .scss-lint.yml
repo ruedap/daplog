@@ -45,7 +45,7 @@ linters:
   DebugStatement:
     enabled: true
 
-  # 1つのルールセット内でのプロパティの宣言順を以下のように統一する
+  # 1つのルールセット内でのプロパティの宣言順を以下で統一する
   # (1) @extend
   # (2) ブロックを含まない@include
   # (3) プロパティ
@@ -57,6 +57,11 @@ linters:
   # 1つのルールセット内でのプロパティの重複宣言を許可しない
   DuplicateProperty:
     enabled: true
+
+  # @elseステートメントを直前の波カッコと同じ行に記述する
+  ElsePlacement:
+    enabled: true
+    style: same_line
 
   # ブロック間を空行で空ける
   EmptyLineBetweenBlocks:
