@@ -3,6 +3,19 @@
 # 対象ファイル
 scss_files: 'app/assets/stylesheets/**/*.scss'
 
+# 用語説明
+#
+# .foo {
+#   color: #fff;
+# }
+#
+# .foo         - セレクタ
+# 波カッコ部分 - 宣言ブロック
+# color: #fff; - 宣言
+# color        - プロパティ
+# #fff         - 値
+# 上記すべて   - ルールセット
+
 # 各Linterの詳細は公式ドキュメントを参照
 # https://github.com/causes/scss-lint/blob/master/lib/scss_lint/linter/README.md
 linters:
@@ -17,20 +30,20 @@ linters:
     # 「!」記号の後にスペースを空けない
     space_after_bang: false
 
-  # borderプロパティの指定方法を統一する
+  # borderプロパティの値がゼロの時の指定方法を統一する
   # (good) border: 0;
   #  (bad) border: none;
   BorderZero:
     enabled: true
     convention: zero
 
-  # カラーキーワードの使用を許可しない
+  # カラーキーワードの値の使用を許可しない
   # (good) color: #008000;
   #  (bad) color: green;
   ColorKeyword:
     enabled: true
 
-  # 色を指定するときは必ず変数を使用する
+  # 色の値を指定するときは必ず変数を使用する
   # TODO: scss-lint 0.33.0 では指定しても有効になってないかも
   ColorVariable:
     enabled: true
@@ -48,7 +61,7 @@ linters:
   DebugStatement:
     enabled: true
 
-  # 1つのルールセット内でのプロパティの宣言順を以下で統一する
+  # 宣言ブロック内での宣言順を以下で統一する
   # (1) @extend
   # (2) ブロックを含まない@include
   # (3) プロパティ
@@ -57,7 +70,7 @@ linters:
   DeclarationOrder:
     enabled: true
 
-  # 1つのルールセット内でのプロパティの重複宣言を許可しない
+  # 宣言ブロック内でのプロパティの重複を許可しない
   DuplicateProperty:
     enabled: true
 
@@ -66,13 +79,15 @@ linters:
     enabled: true
     style: same_line
 
-  # ブロック間を空行で空ける
+  # ルールセット間を空行で空ける
   EmptyLineBetweenBlocks:
     enabled: true
-    # 1行のブロックの場合は空行で空けても空けなくてもよい
+    # 宣言ブロックが1行の場合はルールセット間を空行で空けても空けなくてもよい
     ignore_single_line_blocks: true
 
-  # 空のルールセットを許可しない
+  # 宣言の記述されていない空のルールセットを許可しない
+  #  (bad) .foo {
+  #        }
   EmptyRule:
     enabled: true
 
@@ -82,21 +97,21 @@ linters:
     # ファイル最終行の改行が存在するようにする
     present: true
 
-  # 色の16進数が省略可能な場合の指定方法を統一する
+  # 色の16進数の値が省略可能な場合の記述方法を統一する
   # (good) color: #fff;
   #  (bad) color: #ffffff;
   HexLength:
     enabled: true
-    # 省略する
+    # 省略可能な場合は省略する
     style: short
 
-  # 色の16進数に含まれるアルファベットの大文字・小文字を統一する
+  # 色の16進数の値に含まれるアルファベットの大文字・小文字を統一する
   HexNotation:
     enabled: true
     # 小文字で統一する
     style: lowercase
 
-  # 色の16進数の指定がvalidかをチェックする
+  # 色の16進数の値がvalidかをチェックする
   # (good) color: #fff;
   #  (bad) color: #ff;
   HexValidation:
@@ -111,7 +126,7 @@ linters:
   ImportantRule:
     enabled: true
 
-  # インポート文の記述方法を統一する
+  # インポート文の指定方法を統一する
   ImportPath:
     enabled: true
     # インポート文のパス指定にパーシャル名のアンダースコアを含まない
@@ -134,7 +149,7 @@ linters:
     # インデントは2文字分
     width: 2
 
-  # 小数点の時のゼロを省略しない
+  # 小数点の値のゼロを省略しない
   # (good) 0.5
   #  (bad) .5
   LeadingZero:
@@ -161,6 +176,12 @@ linters:
   PlaceholderInExtend:
     enabled: true
 
+  # FIXME
+  PropertyCount:
+    enabled: true
+    include_nested: false
+    max_properties: 10
+
   # プロパティのソート順を統一する
   PropertySortOrder:
     enabled: true
@@ -179,7 +200,7 @@ linters:
     # https://github.com/suitcss/suit/blob/master/doc/naming-conventions.md
     class_convention: '^([A-Z]|u-|is-|c-)[-a-zA-Z0-9]*$'
 
-  # セレクタに要素を含まない
+  # セレクタに要素セレクタを含まない
   QualifyingElement:
     enabled: true
     # 属性セレクタの場合は許可する
@@ -225,7 +246,7 @@ linters:
   StringQuotes:
     style: double_quotes
 
-  # 整数に不要な小数点を付けない
+  # 値の整数に不要な小数点を付けない
   # (good) 1px
   #  (bad) 1.0px
   UnnecessaryMantissa:
@@ -240,7 +261,7 @@ linters:
     include: []
     exclude: []
 
-  # ゼロに単位を付けない
+  # 値のゼロに単位を付けない
   # (good) 0
   #  (bad) 0px
   ZeroUnit:
