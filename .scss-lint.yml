@@ -22,9 +22,14 @@ linters:
     convention: zero
 
   # カラーキーワードの使用を許可しない
-  # good: `color: #ffffff;`
-  #  bad: `color: white;`
+  # good: `color: #008000;`
+  #  bad: `color: green;`
   ColorKeyword:
+    enabled: true
+
+  # 色を指定するときは必ず変数を使用する
+  # TODO: scss-lint 0.33.0 ではtrueを指定しても有効になってないかも
+  ColorVariable:
     enabled: true
 
   # 1つのルールセット内でのプロパティの宣言順を以下のように統一する
