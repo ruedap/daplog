@@ -99,6 +99,10 @@ linters:
   HexValidation:
     enabled: true
 
+  # IDセレクタの使用を許可しない
+  IdSelector:
+    enabled: true
+
   # 変数、関数、ミックスイン、プレースホルダーセレクタの命名規則を統一する
   NameFormat:
     enabled: true
