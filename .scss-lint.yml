@@ -38,6 +38,10 @@ linters:
   Comment:
     enabled: true
 
+  # Compassの使用を前提としたLinterを無効にする
+  Compass::*:
+    enabled: false
+
   # 1つのルールセット内でのプロパティの宣言順を以下のように統一する
   # (1) @extend
   # (2) ブロックを含まない@include
