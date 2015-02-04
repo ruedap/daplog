@@ -297,7 +297,11 @@ linters:
     enabled: true
     spaces: 0
 
+  # 文字列のクォーテーションはダブルクォーテーションを使用する
+  # (good) content: "hello";
+  #  (bad) content: 'hello';
   StringQuotes:
+    enabled: true
     style: double_quotes
 
   # 値の整数に不要な小数点を付けない
