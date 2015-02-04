@@ -323,6 +323,18 @@ linters:
   UnnecessaryMantissa:
     enabled: true
 
+  # 省略できる親セレクタ参照は記述しない
+  # (good) .foo {
+  #          > .bar {
+  #          }
+  #        }
+  #  (bad) .foo {
+  #          & > .bar {
+  #          }
+  #        }
+  UnnecessaryParentReference:
+    enabled: true
+
   # ベンダープレフィックスを手動で書かない
   VendorPrefixes:
     enabled: true
