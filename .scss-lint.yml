@@ -290,6 +290,13 @@ linters:
     #        .foobar { margin: 1px; }
     allow_single_line_padding: true
 
+  # 丸括弧の内側にスペースを入れない
+  # (good) color: rgba(0, 0, 0, 0);
+  #  (bad) color: rgba( 0, 0, 0, 0 );
+  SpaceBetweenParens:
+    enabled: true
+    spaces: 0
+
   StringQuotes:
     style: double_quotes
 
