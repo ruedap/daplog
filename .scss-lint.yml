@@ -311,6 +311,12 @@ linters:
   TrailingSemicolon:
     enabled: true
 
+  # 小数点以下の省略できるゼロを省略する
+  # (good) 0.5em
+  #  (bad) 0.50em
+  TrailingZero:
+    enabled: true
+
   # 値の整数に不要な小数点を付けない
   # (good) 1px
   #  (bad) 1.0px
