@@ -238,7 +238,14 @@ linters:
   Shorthand:
     enabled: true
 
-  # セレクタは1行に1つだけ指定する
+  # 宣言ブロック内のプロパティは1行につき1つのみの記述に制限する
+  SingleLinePerProperty:
+    enabled: true
+    # ルールセットを1行で書く場合は複数指定を許容する
+    # (good) .foo { margin: 1px; color: red; }
+    allow_single_line_rule_sets: true
+
+  # セレクタは1行につき1つのみ指定する
   # (good) .foo p,
   #        h1.bar {
   #          ...
