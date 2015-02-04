@@ -335,6 +335,12 @@ linters:
   UnnecessaryParentReference:
     enabled: true
 
+  # URLの指定にプロトコルとドメイン名を含まない
+  # (good) background: url("assets/image.png");
+  #  (bad) background: url("https://example.com/assets/image.png");
+  UrlFormat:
+    enabled: true
+
   # ベンダープレフィックスを手動で書かない
   VendorPrefixes:
     enabled: true
