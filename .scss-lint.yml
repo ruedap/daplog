@@ -54,10 +54,7 @@ linters:
   Comment:
     enabled: true
 
-  # Compassの使用を前提としたLinterを無効にする
-  Compass::*:
-    enabled: false
-
+  # FIXME
   DebugStatement:
     enabled: true
 
@@ -355,7 +352,7 @@ linters:
       - color
       - font-family
 
-  # ベンダープレフィックスを手動で書かない
+  # ベンダープレフィックスの記述を避ける
   VendorPrefixes:
     enabled: true
     # Autoprefixerが自動で付けるプロパティ等を対象とする
@@ -364,8 +361,12 @@ linters:
     include: []
     exclude: []
 
-  # 値のゼロに単位を付けない
+  # ゼロに単位を付けない
   # (good) 0
   #  (bad) 0px
   ZeroUnit:
     enabled: true
+
+  # Compassの使用を前提としたLinterを無効にする
+  Compass::*:
+    enabled: false
