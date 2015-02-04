@@ -341,6 +341,12 @@ linters:
   UrlFormat:
     enabled: true
 
+  # URLの指定にクォーテーションを付ける
+  # (good) background: url("assets/image.png");
+  #  (bad) background: url(assets/image.png);
+  UrlQuotes:
+    enabled: true
+
   # ベンダープレフィックスを手動で書かない
   VendorPrefixes:
     enabled: true
