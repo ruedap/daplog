@@ -256,11 +256,18 @@ linters:
   SingleLinePerSelector:
     enabled: true
 
-  # コンマの後にスペースを入れる
+  # コンマの後にスペースを1つ入れる
   # (good) color: rgba(0, 0, 0, 0);
   #  (bad) color: rgba(0,0,0,0);
   SpaceAfterComma:
     enabled: true
+
+  # プロパティのコロンの後にスペースを1つ入れる
+  # (good) margin: 0;
+  #  (bad) margin:0;
+  SpaceAfterPropertyColon:
+    enabled: true
+    style: one_space
 
   SpaceBeforeBrace:
     allow_single_line_padding: true
