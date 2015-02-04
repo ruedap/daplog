@@ -269,6 +269,12 @@ linters:
     enabled: true
     style: one_space
 
+  # プロパティとコロンの間にスペースを入れない
+  # (good) margin: 0;
+  #  (bad) margin : 0;
+  SpaceAfterPropertyName:
+    enabled: true
+
   SpaceBeforeBrace:
     allow_single_line_padding: true
 
