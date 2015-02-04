@@ -256,8 +256,11 @@ linters:
   SingleLinePerSelector:
     enabled: true
 
+  # コンマの後にスペースを入れる
+  # (good) color: rgba(0, 0, 0, 0);
+  #  (bad) color: rgba(0,0,0,0);
   SpaceAfterComma:
-    enabled: false
+    enabled: true
 
   SpaceBeforeBrace:
     allow_single_line_padding: true
