@@ -304,6 +304,13 @@ linters:
     enabled: true
     style: double_quotes
 
+  # 宣言末尾のセミコロンは省略せずスペースも空けない
+  # (good) color: #fff;
+  #  (bad) color: #fff
+  #  (bad) color: #fff ;
+  TrailingSemicolon:
+    enabled: true
+
   # 値の整数に不要な小数点を付けない
   # (good) 1px
   #  (bad) 1.0px
