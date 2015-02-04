@@ -275,7 +275,19 @@ linters:
   SpaceAfterPropertyName:
     enabled: true
 
+  # セレクタと波カッコの間にスペースを1つ入れる
+  # (good) p {
+  #          ...
+  #        }
+  #  (bad) p{
+  #          ...
+  #        }
   SpaceBeforeBrace:
+    enabled: true
+    style: space
+    # ルールセットを1行で書く場合は複数スペースを許容する
+    # (good) .foo    { margin: 1px; }
+    #        .foobar { margin: 1px; }
     allow_single_line_padding: true
 
   StringQuotes:
