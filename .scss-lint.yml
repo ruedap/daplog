@@ -347,6 +347,14 @@ linters:
   UrlQuotes:
     enabled: true
 
+  # 指定したプロパティの値は変数を使うようにする
+  # FIXME: scss-lint 0.33.0 では指定しても有効になってないかも
+  VariableForProperty:
+    enabled: true
+    properties:
+      - color
+      - font-family
+
   # ベンダープレフィックスを手動で書かない
   VendorPrefixes:
     enabled: true
