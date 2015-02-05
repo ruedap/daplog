@@ -2,10 +2,12 @@
 // 全体で使用する関数を定義します。
 // ============================================================================
 
+// 単位を取り除く
 @function strip-units($value) {
   @return $value / ($value * 0 + 1);
 }
 
+// remからpxへの変換
 @function rem-to-px($rem) {
   @return (strip-units($rem) * 10) * 1px;
 }
