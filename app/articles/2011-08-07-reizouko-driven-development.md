@@ -6,10 +6,10 @@
 
 ## 冷蔵庫の前面をホワイトボード替わりに
 
-<blockquote class="c-tweet"><p>よし、6月はFlashを使ったWebサービスをつくってみよう 決めた</p>&mdash; ルエダップ (@ruedap) <a href="https://twitter.com/ruedap/statuses/75217719842177026">May 30, 2011</a></blockquote>
+<blockquote class="twitter-tweet"><p>よし、6月はFlashを使ったWebサービスをつくってみよう 決めた</p>&mdash; ルエダップ (@ruedap) <a href="https://twitter.com/ruedap/statuses/75217719842177026">May 30, 2011</a></blockquote>
 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-<blockquote class="c-tweet"><p>冷蔵庫の前面をホワイトボード替わりに使うボッチ専用ライフハック http://instagr.am/p/HmejU/</p>&mdash; ルエダップ (@ruedap) <a href="https://twitter.com/ruedap/statuses/91306630242779137">July 14, 2011</a></blockquote>
+<blockquote class="twitter-tweet"><p>冷蔵庫の前面をホワイトボード替わりに使うボッチ専用ライフハック http://instagr.am/p/HmejU/</p>&mdash; ルエダップ (@ruedap) <a href="https://twitter.com/ruedap/statuses/91306630242779137">July 14, 2011</a></blockquote>
 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 <iframe src="//instagram.com/p/HmejU/embed/" frameborder="0" scrolling="no" allowtransparency="true"></iframe>

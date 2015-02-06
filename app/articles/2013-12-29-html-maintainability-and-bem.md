@@ -2,15 +2,15 @@
 
 BEMに関するこのあたりの考え方や期待感は、2014年でもう少し突っ込んで取り組みたい所存。Twitterへのツイートをブログ記事にする省エネ投稿。
 
-<blockquote class="c-tweet" lang="en"><p>BEMのような一意性制約のある命名ルールの利点として、最近はHTML上に割り振られるクラス名はCSS以外でも使われるので、CSSのみではなくそのプロジェクト全体で考えた時のメンテナンス性や堅牢性があがるというのがあると思ってるんだけど、どうだろね。この部分への言及あんま見かけない</p>&mdash; ルエダップ (@ruedap) <a href="https://twitter.com/ruedap/statuses/417164071582982144">December 29, 2013</a></blockquote>
+<blockquote class="twitter-tweet" lang="en"><p>BEMのような一意性制約のある命名ルールの利点として、最近はHTML上に割り振られるクラス名はCSS以外でも使われるので、CSSのみではなくそのプロジェクト全体で考えた時のメンテナンス性や堅牢性があがるというのがあると思ってるんだけど、どうだろね。この部分への言及あんま見かけない</p>&mdash; ルエダップ (@ruedap) <a href="https://twitter.com/ruedap/statuses/417164071582982144">December 29, 2013</a></blockquote>
 
-<blockquote class="c-tweet" lang="en"><p>JS用は別のクラス名に分けるとしても、それ以外にもサーバーサイドで動的に生成する場合（Railsで言うヘルパー）とか、結合テストから参照する場合とか、ABテスト用の場合とか。そういう色々な場所に散らばってるのをメンテナンスする時に一意なクラス名だと検索しやすくてミスも起きにくい</p>&mdash; ルエダップ (@ruedap) <a href="https://twitter.com/ruedap/statuses/417165609156096001">December 29, 2013</a></blockquote>
+<blockquote class="twitter-tweet" lang="en"><p>JS用は別のクラス名に分けるとしても、それ以外にもサーバーサイドで動的に生成する場合（Railsで言うヘルパー）とか、結合テストから参照する場合とか、ABテスト用の場合とか。そういう色々な場所に散らばってるのをメンテナンスする時に一意なクラス名だと検索しやすくてミスも起きにくい</p>&mdash; ルエダップ (@ruedap) <a href="https://twitter.com/ruedap/statuses/417165609156096001">December 29, 2013</a></blockquote>
 
-<blockquote class="c-tweet" lang="en"><p>BEMにすることでテスタビリティがあがる、とまで言うと言い過ぎかもしれないけど、だいたいそんな方向性を感じてる。「適用するのはすごくだるい作業だけど、運用レベルでの安心度がアップする」みたいなのは、RSpec書いてる時の感じにちょっと似てるかもしれない</p>&mdash; ルエダップ (@ruedap) <a href="https://twitter.com/ruedap/statuses/417167111169921025">December 29, 2013</a></blockquote>
+<blockquote class="twitter-tweet" lang="en"><p>BEMにすることでテスタビリティがあがる、とまで言うと言い過ぎかもしれないけど、だいたいそんな方向性を感じてる。「適用するのはすごくだるい作業だけど、運用レベルでの安心度がアップする」みたいなのは、RSpec書いてる時の感じにちょっと似てるかもしれない</p>&mdash; ルエダップ (@ruedap) <a href="https://twitter.com/ruedap/statuses/417167111169921025">December 29, 2013</a></blockquote>
 
-<blockquote class="c-tweet" lang="en"><p>RSpecほど安心感は得られず、BEMのダルさは一人前だから、現状ではまだ損してる感じだけど…今後に期待</p>&mdash; ルエダップ (@ruedap) <a href="https://twitter.com/ruedap/statuses/417167265969090560">December 29, 2013</a></blockquote>
+<blockquote class="twitter-tweet" lang="en"><p>RSpecほど安心感は得られず、BEMのダルさは一人前だから、現状ではまだ損してる感じだけど…今後に期待</p>&mdash; ルエダップ (@ruedap) <a href="https://twitter.com/ruedap/statuses/417167265969090560">December 29, 2013</a></blockquote>
 
-<blockquote class="c-tweet" lang="en"><p>「HTMLが壊れた」「CSSが崩れた」というのがもっと機械的に手軽に検知出来るようになってほしい。サーバーサイドのテスト環境のすごい発達具合を見てると、フロントエンドのここらへんは未だに泥臭くて人間様がチマチマやってるかんじ</p>&mdash; ルエダップ (@ruedap) <a href="https://twitter.com/ruedap/statuses/417169131637460992">December 29, 2013</a></blockquote>
+<blockquote class="twitter-tweet" lang="en"><p>「HTMLが壊れた」「CSSが崩れた」というのがもっと機械的に手軽に検知出来るようになってほしい。サーバーサイドのテスト環境のすごい発達具合を見てると、フロントエンドのここらへんは未だに泥臭くて人間様がチマチマやってるかんじ</p>&mdash; ルエダップ (@ruedap) <a href="https://twitter.com/ruedap/statuses/417169131637460992">December 29, 2013</a></blockquote>
 
 * * *
 

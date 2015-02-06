@@ -13,7 +13,7 @@
 
 自分の場合、Webサービスを作るときに書くものは「仕様書」などと呼べるようなちゃんとしたシロモノではなく、Evernoteに思いついたことをどんどんリストアップしていくだけ。いわゆるTODOリストですね。
 
-<blockquote class="c-tweet"><p>この考察は面白い。自分の場合、仕様書はEvernoteにリスト形式で書き殴ってるだけだなー　 個人でWebサービスを超高速でつくる人たちの作り方を考察。 │ モノづくりブログ 株式会社8bitのスタッフブログです http://bit.ly/j6QHsd</p>&mdash; ルエダップ (@ruedap) <a href="https://twitter.com/ruedap/statuses/70930749334896640">May 18, 2011</a></blockquote>
+<blockquote class="twitter-tweet"><p>この考察は面白い。自分の場合、仕様書はEvernoteにリスト形式で書き殴ってるだけだなー　 個人でWebサービスを超高速でつくる人たちの作り方を考察。 │ モノづくりブログ 株式会社8bitのスタッフブログです http://bit.ly/j6QHsd</p>&mdash; ルエダップ (@ruedap) <a href="https://twitter.com/ruedap/statuses/70930749334896640">May 18, 2011</a></blockquote>
 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 Evernoteを使っている理由は、PCを触ってる時と、iPhoneしか持ってない時（外出時）のどちらでもすぐにメモれて、なおかつ自動で同期が取れるからで、自分の場合は外出時に何かを思いつくことが多い。なので主にiPhoneでメモった（追記した）のを、PC利用時（Webサービス制作時）に参照・整理整頓するスタイル。それで、自分の中でいつも重視しているのは、そのリストアップした項目を優先すべき順序に並び替え、Webサービスの初回リリースまでにやることとそれ以降の作業で良いこととを「線引き」すること。これが一番重要だと思っていて、リストがどんどん増えていくのでこれをやらないとなかなかリリースできなくなる。そういった「Webサービスをリリースまで持っていくことの難しさ」などについては、以下の記事で詳しく触れているので参考までに。

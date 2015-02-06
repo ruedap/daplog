@@ -9,7 +9,7 @@
 
 この項目は、Rubyのパパ “Matz” こと、[まつもとゆきひろ](http://ja.wikipedia.org/wiki/%E3%81%BE%E3%81%A4%E3%82%82%E3%81%A8%E3%82%86%E3%81%8D%E3%81%B2%E3%82%8D)さんのこのツイートを見てもらうと一番伝わると思ったので、まずはそのツイートを引用させてもらいます。
 
-<blockquote class="c-tweet"><p>それ、なんてHeroku？ RT <a href="https://twitter.com/hojamaka">@hojamaka</a>: Rubyのコードをレンサバにポイっと置いただけでWEBページ閲覧できるようになればPHPに大勝利できると思うんだよなー</p>&mdash; Yukihiro Matsumoto (@yukihiro_matz) <a href="https://twitter.com/yukihiro_matz/statuses/43532616317534208">March 4, 2011</a></blockquote>
+<blockquote class="twitter-tweet"><p>それ、なんてHeroku？ RT <a href="https://twitter.com/hojamaka">@hojamaka</a>: Rubyのコードをレンサバにポイっと置いただけでWEBページ閲覧できるようになればPHPに大勝利できると思うんだよなー</p>&mdash; Yukihiro Matsumoto (@yukihiro_matz) <a href="https://twitter.com/yukihiro_matz/statuses/43532616317534208">March 4, 2011</a></blockquote>
 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 PHPの[デプロイ](http://e-words.jp/w/E38387E38397E383ADE382A4.html)の簡単さと比較して、Rubyはデプロイが難しいという指摘に対して、まつもとさんはPHP並みに簡単にデプロイできるものとして「Heroku」を挙げています。Rubyの生みの親が名前を挙げるくらいですから、Herokuのデプロイが簡単な部類に入るということは、言い切って間違いなさそうです。ただ、個人的な感想をぶっちゃけると、初心者が使うことを考えた場合、HerokuをもってしてもまだPHPほど簡単だとは言えないと思いました。しかし同時に、こういった場合の「簡単」という単語には2つの意味があるとも思いました。

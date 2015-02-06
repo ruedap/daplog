@@ -62,7 +62,7 @@
 
 このように、Webサービスの制作行程を細分化し、その課題ごとにブログを書けば、*小さい目標が連続することになり、その1つ1つをクリアしていく*ことになる。それをコツコツ続けていけば、高確率でWebサービスの公開まで持っていけると思うし、毎日ブログを更新するという明確な目標があるので、実現に向けて取り組みやすい。実際自分はこの方法でWebサービスを公開まで持っていけたと思っている。
 
-<blockquote class="c-tweet"><p>最初から多くのことを成し遂げようとして極端な努力をすると、たちまちのうちに全てを放棄することになる。</p>&mdash; チャーリー・チャップリン (@chaplin_bot) <a href="https://twitter.com/chaplin_bot/statuses/55782078062665728">April 7, 2011</a></blockquote>
+<blockquote class="twitter-tweet"><p>最初から多くのことを成し遂げようとして極端な努力をすると、たちまちのうちに全てを放棄することになる。</p>&mdash; チャーリー・チャップリン (@chaplin_bot) <a href="https://twitter.com/chaplin_bot/statuses/55782078062665728">April 7, 2011</a></blockquote>
 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 
@@ -85,7 +85,7 @@
 
 昨日、毎日ブログを更新し続けていて良かったことが1つ増えた。[@func09](http://twitter.com/#!/func09)さんと直接お会いして話をする機会を得られた。
 
-<blockquote class="c-tweet"><p>随分前のトラックバックを整理してたら、知った名前のブログがあるなぁと思ったらネコスタグラム作った人だった。ぬこかわいいよぬこ http://bit.ly/e6IeG2</p>&mdash; Mitsuru Haga (@func09) <a href="https://twitter.com/func09/statuses/55806111298764801">April 7, 2011</a></blockquote>
+<blockquote class="twitter-tweet"><p>随分前のトラックバックを整理してたら、知った名前のブログがあるなぁと思ったらネコスタグラム作った人だった。ぬこかわいいよぬこ http://bit.ly/e6IeG2</p>&mdash; Mitsuru Haga (@func09) <a href="https://twitter.com/func09/statuses/55806111298764801">April 7, 2011</a></blockquote>
 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 func09さんは前述の[Webサービスの記事](http://www.func09.com/wordpress/archives/1151)や[1時間でツイッターサービスの記事](http://kray.jp/blog/twitter_service_in_1hours/)、[Rails3の書き方の記事](http://kray.jp/blog/url_reference_for_rails3/)など、ホッテントリの常連さんで、自分は2年ほど前からfunc09さんのブログを購読していて知っていた。また、Nekostagramを作ったときに使ったSinatraの存在を知ったのも、[func09さんのSinatra入門記事](http://www.func09.com/wordpress/archives/764)だったので、個人的には結構影響を受けているブロガー・プログラマーさんだった。その方から直接「エンジニアとして共通点がありそうなので会って話をしてみたい」と言われたのでふたつ返事でOKして、昨日実際に会ってお話ししてきた。

@@ -20,7 +20,7 @@
 
 まずは[これ](http://twitter.com/chaplin_bot)が完成品。喜劇王[チャップリン](http://ja.wikipedia.org/wiki/%E3%83%81%E3%83%A3%E3%83%BC%E3%83%AB%E3%82%BA%E3%83%BB%E3%83%81%E3%83%A3%E3%83%83%E3%83%97%E3%83%AA%E3%83%B3)の名言をツイートする全自動Twitter Bot。この記事を通して完成するのはこのレベルのTwitter Botで、黙々と1日1回つぶやくだけ。
 
-<blockquote class="c-tweet"><p>人生に必要なものは、勇気と想像力とほんの少しのお金だ。</p>&mdash; チャーリー・チャップリン (@chaplin_bot) <a href="https://twitter.com/chaplin_bot/statuses/29181947871764480">January 23, 2011</a></blockquote>
+<blockquote class="twitter-tweet"><p>人生に必要なものは、勇気と想像力とほんの少しのお金だ。</p>&mdash; チャーリー・チャップリン (@chaplin_bot) <a href="https://twitter.com/chaplin_bot/statuses/29181947871764480">January 23, 2011</a></blockquote>
 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 <cite>[チャーリー・チャップリン (chaplin_bot) on Twitter](http://twitter.com/chaplin_bot)</cite>
@@ -446,7 +446,7 @@ $ git push heroku master
 
 これで、さきほどcronアドオンのSelectボタンを押した時間の24時間後から、毎日cron処理（Rakefile）が走って自動でツイートされる。本当にツイートされるかどうかを確認するには、1日待ってみるしかない。果報は寝て待て。
 
-<blockquote class="c-tweet"><p>私の最高傑作は次回作だ。</p>&mdash; チャーリー・チャップリン (@chaplin_bot) <a href="https://twitter.com/chaplin_bot/statuses/30641519614500864">January 27, 2011</a></blockquote>
+<blockquote class="twitter-tweet"><p>私の最高傑作は次回作だ。</p>&mdash; チャーリー・チャップリン (@chaplin_bot) <a href="https://twitter.com/chaplin_bot/statuses/30641519614500864">January 27, 2011</a></blockquote>
 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 このcronアドオンについて、さらに詳しい情報はこちらの記事を参照されたし。

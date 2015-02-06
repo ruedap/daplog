@@ -15,7 +15,7 @@
 
 なかなかGitHubに公開できなかった理由は、恥ずかしながらこれ…。
 
-<blockquote class="c-tweet"><p>リポジトリの中にはpsdやらaiやらもコミットされてて、このままGitHubにプッシュしたらたぶんまずい。Herokuからpullするとpsdもaiも落ちてくるんだよなーｗ .gitignore書く前にコミットしちゃったやつってどう消すの？</p>&mdash; ルエダップ (@ruedap) <a href="https://twitter.com/ruedap/statuses/42569240515067904">March 1, 2011</a></blockquote>
+<blockquote class="twitter-tweet"><p>リポジトリの中にはpsdやらaiやらもコミットされてて、このままGitHubにプッシュしたらたぶんまずい。Herokuからpullするとpsdもaiも落ちてくるんだよなーｗ .gitignore書く前にコミットしちゃったやつってどう消すの？</p>&mdash; ルエダップ (@ruedap) <a href="https://twitter.com/ruedap/statuses/42569240515067904">March 1, 2011</a></blockquote>
 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 このツイートに対して、いくつか方法を教えていただいたのだけど（ありがとうございます）、理解出来ないのもあったりして、Gitの入門書を買ってちゃんと勉強する必要があるなぁというのを痛感した次第でありんす。今回は結局どうしたかというと、強行突破してみた。複数人開発でこんなことしたら追放されそうけど、1人でしか使ってないからまぁ。
