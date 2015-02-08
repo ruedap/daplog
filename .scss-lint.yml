@@ -106,6 +106,8 @@ linters:
   HexNotation:
     enabled: true
     # 小文字で統一する
+    # (good) color: #dbdbdb;
+    #  (bad) color: #DBDBDB;
     style: lowercase
 
   # 色の16進数の値がvalidかをチェックする
