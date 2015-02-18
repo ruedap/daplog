@@ -5,12 +5,6 @@
 // Variable, Mixin, Placeholder
 // ============================================================================
 
-%ArticleBody-justify {
-  text-align: justify;
-  text-justify: distribute;
-  word-wrap: break-word;
-}
-
 %ArticleBody-heading {
   > h2,
   > h3 {
@@ -293,7 +287,6 @@
 
 .ArticleBody {
   @extend %ArticleBody-heading;
-  @extend %ArticleBody-justify;
   @extend %ArticleBody-p;
   @extend %ArticleBody-img;
   @extend %ArticleBody-strong;
