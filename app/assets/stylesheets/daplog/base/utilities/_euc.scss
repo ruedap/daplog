@@ -1,0 +1,319 @@
+/*! euc.css v0.0.0 | MIT License */
+
+$euc-prefix: "u-" !default;
+$euc-important: true !default;
+
+@mixin euc-rule-set($snippet, $property, $value) {
+  .#{$euc-prefix}#{$snippet} {
+    @if $euc-important {
+      #{$property}: #{$value} !important;
+    } @else {
+      #{$property}: #{$value};
+    }
+  }
+}
+
+// source: https://github.com/emmetio/emmet/blob/master/lib/snippets.json
+// --------------------------------------------------------------------------
+//                   | snippet   | property               | value
+// --------------------------------------------------------------------------
+@include euc-rule-set( pos-s     , position               , static );
+@include euc-rule-set( pos-a     , position               , absolute );
+@include euc-rule-set( pos-r     , position               , relative );
+@include euc-rule-set( pos-f     , position               , fixed );
+// @include euc-rule-set( t-a       , top                    , auto );
+@include euc-rule-set( t-0       , top                    , 0 );
+// @include euc-rule-set( r-a       , right                  , auto );
+@include euc-rule-set( r-0       , right                  , 0 );
+// @include euc-rule-set( b-a       , bottom                 , auto );
+@include euc-rule-set( b-0       , bottom                 , 0 );
+// @include euc-rule-set( l-a       , left                   , auto );
+@include euc-rule-set( l-0       , left                   , 0 );
+// @include euc-rule-set( z-a       , z-index                , auto );
+// @include euc-rule-set( z-0       , z-index                , 0 );
+// @include euc-rule-set( fl-n      , float                  , none );
+@include euc-rule-set( fl-l      , float                  , left );
+@include euc-rule-set( fl-r      , float                  , right );
+// @include euc-rule-set( cl-n      , clear                  , none );
+// @include euc-rule-set( cl-l      , clear                  , left );
+// @include euc-rule-set( cl-r      , clear                  , right );
+@include euc-rule-set( cl-b      , clear                  , both );
+@include euc-rule-set( d-n       , display                , none );
+@include euc-rule-set( d-b       , display                , block );
+// @include euc-rule-set( d-f       , display                , flex );
+// @include euc-rule-set( d-if      , display                , inline-flex );
+@include euc-rule-set( d-i       , display                , inline );
+@include euc-rule-set( d-ib      , display                , inline-block );
+// @include euc-rule-set( d-li      , display                , list-item );
+// @include euc-rule-set( d-ri      , display                , run-in );
+// @include euc-rule-set( d-cp      , display                , compact );
+@include euc-rule-set( d-tb      , display                , table );
+// @include euc-rule-set( d-itb     , display                , inline-table );
+// @include euc-rule-set( d-tbcp    , display                , table-caption );
+// @include euc-rule-set( d-tbcl    , display                , table-column );
+// @include euc-rule-set( d-tbclg   , display                , table-column-group );
+// @include euc-rule-set( d-tbhg    , display                , table-header-group );
+// @include euc-rule-set( d-tbfg    , display                , table-footer-group );
+@include euc-rule-set( d-tbr     , display                , table-row );
+// @include euc-rule-set( d-tbrg    , display                , table-row-group );
+@include euc-rule-set( d-tbc     , display                , table-cell );
+// @include euc-rule-set( d-rb      , display                , ruby );
+// @include euc-rule-set( d-rbb     , display                , ruby-base );
+// @include euc-rule-set( d-rbbg    , display                , ruby-base-group );
+// @include euc-rule-set( d-rbt     , display                , ruby-text );
+// @include euc-rule-set( d-rbtg    , display                , ruby-text-group );
+// @include euc-rule-set( v-v       , visibility             , visible );
+// @include euc-rule-set( v-h       , visibility             , hidden );
+// @include euc-rule-set( v-c       , visibility             , collapse );
+// @include euc-rule-set( ov-v      , overflow               , visible );
+@include euc-rule-set( ov-h      , overflow               , hidden );
+// @include euc-rule-set( ov-s      , overflow               , scroll );
+// @include euc-rule-set( ov-a      , overflow               , auto );
+// @include euc-rule-set( ovx-v     , overflow-x             , visible );
+// @include euc-rule-set( ovx-h     , overflow-x             , hidden );
+// @include euc-rule-set( ovx-s     , overflow-x             , scroll );
+// @include euc-rule-set( ovx-a     , overflow-x             , auto );
+// @include euc-rule-set( ovy-v     , overflow-y             , visible );
+// @include euc-rule-set( ovy-h     , overflow-y             , hidden );
+// @include euc-rule-set( ovy-s     , overflow-y             , scroll );
+// @include euc-rule-set( ovy-a     , overflow-y             , auto );
+// @include euc-rule-set( ovs-a     , overflow-style         , auto );
+// @include euc-rule-set( ovs-s     , overflow-style         , scrollbar );
+// @include euc-rule-set( ovs-p     , overflow-style         , panner );
+// @include euc-rule-set( ovs-m     , overflow-style         , move );
+// @include euc-rule-set( ovs-mq    , overflow-style         , marquee );
+// @include euc-rule-set( zoo       , zoom                   , 1 );
+// @include euc-rule-set( zm        , zoom                   , 1 );
+// @include euc-rule-set( cp-a      , clip                   , auto );
+@include euc-rule-set( bxz-cb    , box-sizing             , content-box );
+@include euc-rule-set( bxz-bb    , box-sizing             , border-box );
+// @include euc-rule-set( bxsh-n    , box-shadow             , none );
+// @include euc-rule-set( m-a       , margin                 , auto );
+@include euc-rule-set( m-0       , margin                 , 0 );
+// @include euc-rule-set( mt-a      , margin-top             , auto );
+@include euc-rule-set( mt-0      , margin-top             , 0 );
+// @include euc-rule-set( mr-a      , margin-right           , auto );
+@include euc-rule-set( mr-0      , margin-right           , 0 );
+// @include euc-rule-set( mb-a      , margin-bottom          , auto );
+@include euc-rule-set( mb-0      , margin-bottom          , 0 );
+// @include euc-rule-set( ml-a      , margin-left            , auto );
+@include euc-rule-set( ml-0      , margin-left            , 0 );
+// @include euc-rule-set( p-0       , padding                , 0 );
+// @include euc-rule-set( pt-0      , padding-top            , 0 );
+// @include euc-rule-set( pr-0      , padding-right          , 0 );
+// @include euc-rule-set( pb-0      , padding-bottom         , 0 );
+// @include euc-rule-set( pl-0      , padding-left           , 0 );
+@include euc-rule-set( w-a       , width                  , auto );
+// @include euc-rule-set( w-0       , width                  , 0 );
+// @include euc-rule-set( h-a       , height                 , auto );
+// @include euc-rule-set( h-0       , height                 , 0 );
+// @include euc-rule-set( maw-n     , max-width              , none );
+@include euc-rule-set( maw-100p  , max-width              , 100% );
+// @include euc-rule-set( mah-n     , max-height             , none );
+// @include euc-rule-set( mah-100p  , max-height             , 100% );
+// @include euc-rule-set( miw-0     , min-width              , 0 );
+// @include euc-rule-set( mih-0     , min-height             , 0 );
+// @include euc-rule-set( ori-l     , orientation            , landscape );
+// @include euc-rule-set( ori-p     , orientation            , portrait );
+// @include euc-rule-set( ol-n      , outline                , none );
+// @include euc-rule-set( olw-tn    , outline-width          , thin );
+// @include euc-rule-set( olw-m     , outline-width          , medium );
+// @include euc-rule-set( olw-tc    , outline-width          , thick );
+// @include euc-rule-set( ols-n     , outline-style          , none );
+// @include euc-rule-set( ols-dt    , outline-style          , dotted );
+// @include euc-rule-set( ols-ds    , outline-style          , dashed );
+// @include euc-rule-set( ols-s     , outline-style          , solid );
+// @include euc-rule-set( ols-db    , outline-style          , double );
+// @include euc-rule-set( ols-g     , outline-style          , groove );
+// @include euc-rule-set( ols-r     , outline-style          , ridge );
+// @include euc-rule-set( ols-i     , outline-style          , inset );
+// @include euc-rule-set( ols-o     , outline-style          , outset );
+// @include euc-rule-set( olc-i     , outline-color          , invert );
+@include euc-rule-set( bfv-h     , backface-visibility    , hidden );
+// @include euc-rule-set( bfv-v     , backface-visibility    , visible );
+// @include euc-rule-set( bd-n      , border                 , none );
+// @include euc-rule-set( bd-0      , border                 , 0 );
+// @include euc-rule-set( bdbk-c    , border-break           , close );
+// @include euc-rule-set( bdcl-c    , border-collapse        , collapse );
+// @include euc-rule-set( bdcl-s    , border-collapse        , separate );
+// @include euc-rule-set( bdc-t     , border-color           , transparent );
+// @include euc-rule-set( bdi-n     , border-image           , none );
+// @include euc-rule-set( bds-n     , border-style           , none );
+// @include euc-rule-set( bds-h     , border-style           , hidden );
+// @include euc-rule-set( bds-dt    , border-style           , dotted );
+// @include euc-rule-set( bds-ds    , border-style           , dashed );
+// @include euc-rule-set( bds-s     , border-style           , solid );
+// @include euc-rule-set( bds-db    , border-style           , double );
+// @include euc-rule-set( bds-w     , border-style           , wave );
+// @include euc-rule-set( bds-g     , border-style           , groove );
+// @include euc-rule-set( bds-r     , border-style           , ridge );
+// @include euc-rule-set( bds-i     , border-style           , inset );
+// @include euc-rule-set( bds-o     , border-style           , outset );
+// @include euc-rule-set( bdt-n     , border-top             , none );
+// @include euc-rule-set( bdt-0     , border-top             , 0 );
+// @include euc-rule-set( bdtc-t    , border-top-color       , transparent );
+// @include euc-rule-set( bdr-n     , border-right           , none );
+// @include euc-rule-set( bdr-0     , border-right           , 0 );
+// @include euc-rule-set( bdrc-t    , border-right-color     , transparent );
+// @include euc-rule-set( bdb-n     , border-bottom          , none );
+// @include euc-rule-set( bdb-0     , border-bottom          , 0 );
+// @include euc-rule-set( bdbc-t    , border-bottom-color    , transparent );
+// @include euc-rule-set( bdl-n     , border-left            , none );
+// @include euc-rule-set( bdl-0     , border-left            , 0 );
+// @include euc-rule-set( bdlc-t    , border-left-color      , transparent );
+// @include euc-rule-set( bg-n      , background             , none );
+// @include euc-rule-set( bgc-t     , background-color       , transparent );
+// @include euc-rule-set( bgi-n     , background-image       , none );
+// @include euc-rule-set( bgr-n     , background-repeat      , no-repeat );
+// @include euc-rule-set( bgr-x     , background-repeat      , repeat-x );
+// @include euc-rule-set( bgr-y     , background-repeat      , repeat-y );
+// @include euc-rule-set( bgr-sp    , background-repeat      , space );
+// @include euc-rule-set( bgr-rd    , background-repeat      , round );
+// @include euc-rule-set( bga-f     , background-attachment  , fixed );
+// @include euc-rule-set( bga-s     , background-attachment  , scroll );
+// @include euc-rule-set( bgsz-a    , background-size        , auto );
+// @include euc-rule-set( bgsz-ct   , background-size        , contain );
+// @include euc-rule-set( bgsz-cv   , background-size        , cover );
+@include euc-rule-set( c-i       , color                  , inherit ); // euc.css original
+// @include euc-rule-set( tbl-a     , table-layout           , auto );
+// @include euc-rule-set( tbl-f     , table-layout           , fixed );
+// @include euc-rule-set( lis-n     , list-style             , none );
+// @include euc-rule-set( lisp-i    , list-style-position    , inside );
+// @include euc-rule-set( lisp-o    , list-style-position    , outside );
+// @include euc-rule-set( list-n    , list-style-type        , none );
+// @include euc-rule-set( list-d    , list-style-type        , disc );
+// @include euc-rule-set( list-c    , list-style-type        , circle );
+// @include euc-rule-set( list-s    , list-style-type        , square );
+// @include euc-rule-set( list-dc   , list-style-type        , decimal );
+// @include euc-rule-set( list-dclz , list-style-type        , decimal-leading-zero );
+// @include euc-rule-set( list-lr   , list-style-type        , lower-roman );
+// @include euc-rule-set( list-ur   , list-style-type        , upper-roman );
+// @include euc-rule-set( lisi-n    , list-style-image       , none );
+// @include euc-rule-set( va-sup    , vertical-align         , super );
+@include euc-rule-set( va-t      , vertical-align         , top );
+// @include euc-rule-set( va-tt     , vertical-align         , text-top );
+@include euc-rule-set( va-m      , vertical-align         , middle );
+@include euc-rule-set( va-bl     , vertical-align         , baseline );
+@include euc-rule-set( va-b      , vertical-align         , bottom );
+// @include euc-rule-set( va-tb     , vertical-align         , text-bottom );
+// @include euc-rule-set( va-sub    , vertical-align         , sub );
+@include euc-rule-set( ta-l      , text-align             , left );
+@include euc-rule-set( ta-c      , text-align             , center );
+@include euc-rule-set( ta-r      , text-align             , right );
+// @include euc-rule-set( ta-j      , text-align             , justify );
+@include euc-rule-set( td-n      , text-decoration        , none );
+@include euc-rule-set( td-u      , text-decoration        , underline );
+// @include euc-rule-set( td-o      , text-decoration        , overline );
+// @include euc-rule-set( td-l      , text-decoration        , line-through );
+// @include euc-rule-set( te-n      , text-emphasis          , none );
+// @include euc-rule-set( te-ac     , text-emphasis          , accent );
+// @include euc-rule-set( te-dt     , text-emphasis          , dot );
+// @include euc-rule-set( te-c      , text-emphasis          , circle );
+// @include euc-rule-set( te-ds     , text-emphasis          , disc );
+// @include euc-rule-set( te-b      , text-emphasis          , before );
+// @include euc-rule-set( te-a      , text-emphasis          , after );
+// @include euc-rule-set( ti-9999   , text-indent            , -9999px ); // Emmet: ti-
+@include euc-rule-set( tov-e     , text-overflow          , ellipsis );
+// @include euc-rule-set( tov-c     , text-overflow          , clip );
+// @include euc-rule-set( tt-n      , text-transform         , none );
+// @include euc-rule-set( tt-c      , text-transform         , capitalize );
+// @include euc-rule-set( tt-u      , text-transform         , uppercase );
+// @include euc-rule-set( tt-l      , text-transform         , lowercase );
+// @include euc-rule-set( tsh-n     , text-shadow            , none );
+// @include euc-rule-set( whs-nm    , white-space            , normal );  // Emmet: whs:n
+// @include euc-rule-set( whs-p     , white-space            , pre );
+@include euc-rule-set( whs-nw    , white-space            , nowrap );
+// @include euc-rule-set( whs-pw    , white-space            , pre-wrap );
+// @include euc-rule-set( whs-pl    , white-space            , pre-line );
+// @include euc-rule-set( wob-nm    , word-break             , normal );  // Emmet: wob:n
+// @include euc-rule-set( wob-k     , word-break             , keep-all );
+// @include euc-rule-set( wob-ba    , word-break             , break-all );
+@include euc-rule-set( wow-nm    , word-wrap              , normal );
+// @include euc-rule-set( wow-n     , word-wrap              , none );
+// @include euc-rule-set( wow-u     , word-wrap              , unrestricted );
+// @include euc-rule-set( wow-s     , word-wrap              , suppress );
+@include euc-rule-set( wow-b     , word-wrap              , break-word );
+// @include euc-rule-set( lts-nm    , letter-spacing         , normal );  // Emmet: lts:n
+// @include euc-rule-set( fw-nm     , font-weight            , normal );  // Emmet: fw:n
+// @include euc-rule-set( fw-b      , font-weight            , bold );
+// @include euc-rule-set( fw-br     , font-weight            , bolder );
+// @include euc-rule-set( fw-lr     , font-weight            , lighter );
+// @include euc-rule-set( fs-nm     , font-style             , normal );  // Emmet: fs:n
+// @include euc-rule-set( fs-i      , font-style             , italic );
+// @include euc-rule-set( fs-o      , font-style             , oblique );
+// @include euc-rule-set( ff-s      , font-family            , serif );
+// @include euc-rule-set( ff-ss     , font-family            , sans-serif );
+// @include euc-rule-set( ff-c      , font-family            , cursive );
+// @include euc-rule-set( ff-f      , font-family            , fantasy );
+// @include euc-rule-set( ff-m      , font-family            , monospace );
+// @include euc-rule-set( ff-a      , font-family            , 'Arial, "Helvetica Neue", Helvetica, sans-serif' );
+// @include euc-rule-set( ff-t      , font-family            , '"Times New Roman", Times, Baskerville, Georgia, serif' );
+// @include euc-rule-set( ff-v      , font-family            , 'Verdana, Geneva, sans-serif' );
+// @include euc-rule-set( rsz-n     , resize                 , none );
+// @include euc-rule-set( rsz-b     , resize                 , both );
+// @include euc-rule-set( rsz-h     , resize                 , horizontal );
+// @include euc-rule-set( rsz-v     , resize                 , vertical );
+// @include euc-rule-set( cur-a     , cursor                 , auto );
+// @include euc-rule-set( cur-d     , cursor                 , default );
+// @include euc-rule-set( cur-c     , cursor                 , crosshair );
+// @include euc-rule-set( cur-ha    , cursor                 , hand );
+// @include euc-rule-set( cur-he    , cursor                 , help );
+// @include euc-rule-set( cur-m     , cursor                 , move );
+// @include euc-rule-set( cur-p     , cursor                 , pointer );
+// @include euc-rule-set( cur-t     , cursor                 , text );
+// @include euc-rule-set( fxd-r     , flex-direction         , row );
+// @include euc-rule-set( fxd-rr    , flex-direction         , row-reverse );
+// @include euc-rule-set( fxd-c     , flex-direction         , column );
+// @include euc-rule-set( fxd-cr    , flex-direction         , column-reverse );
+// @include euc-rule-set( fxw-n     , flex-wrap              , nowrap );
+// @include euc-rule-set( fxw-w     , flex-wrap              , wrap );
+// @include euc-rule-set( fxw-wr    , flex-wrap              , wrap-reverse );
+// @include euc-rule-set( jc-fs     , justify-content        , flex-start );
+// @include euc-rule-set( jc-fe     , justify-content        , flex-end );
+// @include euc-rule-set( jc-c      , justify-content        , center );
+// @include euc-rule-set( jc-sb     , justify-content        , space-between );
+// @include euc-rule-set( jc-sa     , justify-content        , space-around );
+// @include euc-rule-set( ai-fs     , align-items            , flex-start );
+// @include euc-rule-set( ai-fe     , align-items            , flex-end );
+// @include euc-rule-set( ai-c      , align-items            , center );
+// @include euc-rule-set( ai-b      , align-items            , baseline );
+// @include euc-rule-set( ai-s      , align-items            , stretch );
+// @include euc-rule-set( ac-fs     , align-content          , flex-start );
+// @include euc-rule-set( ac-fe     , align-content          , flex-end );
+// @include euc-rule-set( ac-c      , align-content          , center );
+// @include euc-rule-set( ac-sb     , align-content          , space-between );
+// @include euc-rule-set( ac-sa     , align-content          , space-around );
+// @include euc-rule-set( ac-s      , align-content          , stretch );
+// @include euc-rule-set( as-a      , align-self             , auto );
+// @include euc-rule-set( as-fs     , align-self             , flex-start );
+// @include euc-rule-set( as-fe     , align-self             , flex-end );
+// @include euc-rule-set( as-c      , align-self             , center );
+// @include euc-rule-set( as-b      , align-self             , baseline );
+// @include euc-rule-set( as-s      , align-self             , stretch );
+// @include euc-rule-set( pgbb-au   , page-break-before      , auto );
+// @include euc-rule-set( pgbb-al   , page-break-before      , always );
+// @include euc-rule-set( pgbb-l    , page-break-before      , left );
+// @include euc-rule-set( pgbb-r    , page-break-before      , right );
+// @include euc-rule-set( pgbi-au   , page-break-inside      , auto );
+// @include euc-rule-set( pgbi-av   , page-break-inside      , avoid );
+// @include euc-rule-set( pgba-au   , page-break-after       , auto );
+// @include euc-rule-set( pgba-al   , page-break-after       , always );
+// @include euc-rule-set( pgba-l    , page-break-after       , left );
+// @include euc-rule-set( pgba-r    , page-break-after       , right );
+// @include euc-rule-set( wfsm-a    , -webkit-font-smoothing , antialiased );
+// @include euc-rule-set( wfsm-s    , -webkit-font-smoothing , subpixel-antialiased );
+// @include euc-rule-set( wfsm-sa   , -webkit-font-smoothing , subpixel-antialiased );
+// @include euc-rule-set( wfsm-n    , -webkit-font-smoothing , none );
+
+// TODO:
+// .u-hiddenVisually
+// .u-cf
+// .u-nbfcAlt
+// .u-linkClean
+// .u-linkComplex
+// .u-linkBlock
+// .u-posAbsoluteCenter
+// .u-posFixed
+// .u-sizeXXX
+// .u-textKern
+// .u-textTruncate
