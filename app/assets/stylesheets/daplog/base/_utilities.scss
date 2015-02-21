@@ -12,4 +12,23 @@
 @import "utilities/text";
 @import "utilities/font-smoothing";
 @import "utilities/dapicons";
+
+$euc-available-snippet-list: (
+  pos-s, pos-a, pos-r, pos-f,              // position
+  t-0, r-0, b-0, l-0,                      // top, right, bottom, left
+  fl-l, fl-r, cl-b,                        // float, clear
+  d-n, d-b, d-i, d-ib, d-tb, d-tbr, d-tbc, // display
+  ov-h,                                    // overflow
+  bxz-cb, bxz-bb,                          // box-sizing
+  m-0, mt-0, mr-0, mb-0, ml-0,             // margin
+  w-a, maw-100p,                           // width
+  bfv-h,                                   // backface-visibility
+  c-i,                                     // color
+  va-t, va-m, va-bl, va-b,                 // vertical-align
+  ta-l, ta-c, ta-r,                        // text-align
+  td-n, td-u,                              // text-decoration
+  tov-e,                                   // text-overflow
+  whs-nw,                                  // white-space
+  wow-nm, wow-b,                           // word-break
+);
 @import "utilities/euc";
