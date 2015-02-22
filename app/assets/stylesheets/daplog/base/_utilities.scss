@@ -16,19 +16,23 @@
 $euc-available-snippet-list: (
   pos-s, pos-a, pos-r, pos-f,              // position
   t-0, r-0, b-0, l-0,                      // top, right, bottom, left
-  fl-l, fl-r, cl-b,                        // float, clear
+  fl-n, fl-l, fl-r, cl-l, cl-r, cl-b, cf   // float, clear, clearfix
   d-n, d-b, d-i, d-ib, d-tb, d-tbr, d-tbc, // display
   ov-h,                                    // overflow
   bxz-cb, bxz-bb,                          // box-sizing
-  m-0, mt-0, mr-0, mb-0, ml-0,             // margin
-  w-a, maw-100p,                           // width
-  bfv-h,                                   // backface-visibility
-  c-i,                                     // color
+  m-0, mt-0, mr-a, mr-0, mb-0, ml-a, ml-0, // margin
+  p-0, pt-0, pr-0, pb-0, pl-0,             // padding
+  w-a, w-100p, maw-100p,                   // width, max-width
   va-t, va-m, va-bl, va-b,                 // vertical-align
-  ta-l, ta-c, ta-r,                        // text-align
+  ta-l, ta-c, ta-r, ta-j,                  // text-align
   td-n, td-u,                              // text-decoration
-  tov-e,                                   // text-overflow
+  tt-u, tt-l,                              // text-transform
   whs-nw,                                  // white-space
-  wow-nm, wow-b,                           // word-break
+  wow-bw,                                  // word-wrap
+  fw-nm, fw-b, fw-l,                       // font-weight
+  fs-nm, fs-i,                             // font-style
+  wfsm-a, wfsm-sa,                         // -webkit-font-smoothing
+  c-i,                                     // color
 );
+// TODO: truncate, kern, hiddenVisually, linkClean
 @import "utilities/euc";

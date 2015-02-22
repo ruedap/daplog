@@ -1,4 +1,4 @@
-/*! euc.css v0.0.1 | Emmet-like Utility Classes | MIT License */
+/*! euc.css v0.0.2 | Emmet-like Utility Classes | MIT License */
 
 $euc-available-snippet-list: (all) !default;
 $euc-prefix: "u-" !default;
@@ -107,7 +107,6 @@ $euc-prefix: "u-" !default;
 @include euc( bxz-cb    , box-sizing             , content-box );
 @include euc( bxz-bb    , box-sizing             , border-box );
 @include euc( bxsh-n    , box-shadow             , none );
-@include euc( m-a       , margin                 , auto );
 @include euc( m-0       , margin                 , 0 );
 @include euc( mt-0      , margin-top             , 0 );
 @include euc( mr-a      , margin-right           , auto );
@@ -190,7 +189,6 @@ $euc-prefix: "u-" !default;
 @include euc( bgsz-a    , background-size        , auto );
 @include euc( bgsz-ct   , background-size        , contain );
 @include euc( bgsz-cv   , background-size        , cover );
-@include euc( c-i       , color                  , inherit ); // euc.css original
 @include euc( tbl-a     , table-layout           , auto );
 @include euc( tbl-f     , table-layout           , fixed );
 @include euc( lis-n     , list-style             , none );
@@ -249,7 +247,7 @@ $euc-prefix: "u-" !default;
 @include euc( wow-n     , word-wrap              , none );
 @include euc( wow-u     , word-wrap              , unrestricted );
 @include euc( wow-s     , word-wrap              , suppress );
-@include euc( wow-b     , word-wrap              , break-word );
+@include euc( wow-bw    , word-wrap              , break-word );
 @include euc( lts-nm    , letter-spacing         , normal );  // Emmet: lts:n
 @include euc( fw-nm     , font-weight            , normal );  // Emmet: fw:n
 @include euc( fw-b      , font-weight            , bold );
@@ -319,3 +317,12 @@ $euc-prefix: "u-" !default;
 @include euc( wfsm-a    , -webkit-font-smoothing , antialiased );
 @include euc( wfsm-sa   , -webkit-font-smoothing , subpixel-antialiased );
 @include euc( wfsm-n    , -webkit-font-smoothing , none );
+
+
+// -------------------------------- These snippets are not included in Emmet.
+@include euc( fw-l      , font-weight            , 200 );
+@include euc( c-i       , color                  , inherit );
+@include euc( cf ) { // clearfix
+  &:before, &:after { content: " "; display: table; }
+  &:after { clear: both; }
+}
