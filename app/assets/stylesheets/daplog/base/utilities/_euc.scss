@@ -1,12 +1,18 @@
-/*! euc.css v0.0.3 | Emmet-like Utility Classes | MIT License */
+/*! euc.css v0.0.4 | Emmet-like Utility Classes | MIT License */
 
-$euc-available-snippet-list: (all) !default;
+$euc-available-snippet-list: ("!all") !default;
 $euc-prefix: "u-" !default;
+$euc-important: true !default;
+
+$euc-important-string: " !important";
+@if $euc-important == false {
+  $euc-important-string: "";
+}
 
 @function euc-available-snippet($snippet) {
   @if length($euc-available-snippet-list) == 0 {
     @return false;
-  } @else if nth($euc-available-snippet-list, 1) == all {
+  } @else if nth($euc-available-snippet-list, 1) == "!all" {
     @return true;
   } @else {
     @each $available-snippet in $euc-available-snippet-list {
@@ -39,7 +45,7 @@ $euc-prefix: "u-" !default;
 @mixin euc($snippet, $property: null, $value: null) {
   @if $property and $value {
     @include euc-rule-set($snippet) {
-      #{$property}: #{$value} !important;
+      #{$property}: #{$value}#{$euc-important-string};
     }
   } @else {
     @include euc-rule-set($snippet) { @content; }
