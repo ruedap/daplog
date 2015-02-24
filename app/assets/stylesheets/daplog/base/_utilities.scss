@@ -34,5 +34,5 @@ $euc-available-snippet-list: (
   wfsm-a, wfsm-sa,                         // -webkit-font-smoothing
   c-i,                                     // color
 );
-// TODO: truncate, kern, hiddenVisually, linkClean
+// TODO: width, margin, padding, truncate, kern, hiddenVisually, linkClean
 @import "utilities/euc";
