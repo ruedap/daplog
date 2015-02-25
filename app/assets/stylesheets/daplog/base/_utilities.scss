@@ -14,25 +14,30 @@
 @import "utilities/dapicons";
 
 $euc-available-snippet-list: (
-  pos-s, pos-a, pos-r, pos-f,              // position
-  t-0, r-0, b-0, l-0,                      // top, right, bottom, left
-  fl-n, fl-l, fl-r, cl-l, cl-r, cl-b, cf   // float, clear, clearfix
-  d-n, d-b, d-i, d-ib, d-tb, d-tbr, d-tbc, // display
-  ov-h,                                    // overflow
-  bxz-cb, bxz-bb,                          // box-sizing
-  m-0, mt-0, mr-a, mr-0, mb-0, ml-a, ml-0, // margin
-  p-0, pt-0, pr-0, pb-0, pl-0,             // padding
-  w-a, w-100p, maw-100p,                   // width, max-width
-  va-t, va-m, va-bl, va-b,                 // vertical-align
-  ta-l, ta-c, ta-r, ta-j,                  // text-align
-  td-n, td-u,                              // text-decoration
-  tt-u, tt-l,                              // text-transform
-  whs-nw,                                  // white-space
-  wow-bw,                                  // word-wrap
-  fw-nm, fw-b, fw-l,                       // font-weight
-  fs-nm, fs-i,                             // font-style
-  wfsm-a, wfsm-sa,                         // -webkit-font-smoothing
-  c-i,                                     // color
+  pos-s, pos-a, pos-r, pos-f,                     // position
+  t-0, r-0, b-0, l-0,                             // top, right, bottom, left
+  fl-n, fl-l, fl-r, cl-l, cl-r, cl-b, cf          // float, clear, clearfix
+  d-n, d-b, d-i, d-ib, d-tb, d-tbr, d-tbc,        // display
+  ov-h,                                           // overflow
+  bxz-cb, bxz-bb,                                 // box-sizing
+  m-0, mt-0, mr-a, mr-0, mb-0, ml-a, ml-0,        // margin
+  p-0, pt-0, pr-0, pb-0, pl-0,                    // padding
+  w-a, w-100p, maw-100p,                          // width, max-width
+  va-t, va-m, va-bl, va-b,                        // vertical-align
+  ta-l, ta-c, ta-r, ta-j,                         // text-align
+  td-n, td-u,                                     // text-decoration
+  tt-u, tt-l,                                     // text-transform
+  whs-nw,                                         // white-space
+  wow-bw,                                         // word-wrap
+  fw-nm, fw-b, fw-l,                              // font-weight
+  fs-nm, fs-i,                                    // font-style
+  fz-xxs, fz-xs, fz-s, fz-m, fz-l, fz-xl, fz-xxl, // font-size
+  fz-sr, fz-lr,                                   // font-size
+  fz-10, fz-11, fz-12, fz-13, fz-14, fz-15,       // font-size
+  fz-16, fz-17, fz-18, fz-19, fz-20,              // font-size
+  ff-s, ff-ss, ff-m, ff-a, ff-t, ff-v,            // font-family
+  wfsm-a, wfsm-sa,                                // -webkit-font-smoothing
+  c-i,                                            // color
 );
 // TODO: width, margin, padding, truncate, kern, hiddenVisually, linkClean
 @import "utilities/euc";

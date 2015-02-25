@@ -1,4 +1,4 @@
-/*! euc.css v0.0.4 | Emmet-like Utility Classes | MIT License */
+/*! euc.css v0.0.5 | Emmet-like Utility Classes | MIT License */
 
 $euc-available-snippet-list: ("!all") !default;
 $euc-prefix: "u-" !default;
@@ -30,7 +30,7 @@ $euc-important-string: " !important";
   }
 }
 
-@mixin euc-block-declaration($snippet) {
+@mixin euc-multiple-declaration($snippet) {
   @if euc-available-snippet($snippet) {
     @include euc($snippet) { @content; }
   }
@@ -202,6 +202,7 @@ $euc-single-declaration-list: (
     ( bgsz-a    , background-size        , auto ),
     ( bgsz-ct   , background-size        , contain ),
     ( bgsz-cv   , background-size        , cover ),
+    ( c-i       , color                  , inherit ),    // ^1
     ( tbl-a     , table-layout           , auto ),
     ( tbl-f     , table-layout           , fixed ),
     ( lis-n     , list-style             , none ),
@@ -240,7 +241,7 @@ $euc-single-declaration-list: (
     ( te-b      , text-emphasis          , before ),
     ( te-a      , text-emphasis          , after ),
     ( ti-0      , text-indent            , 0 ),
-    ( ti-9999   , text-indent            , -9999px ),  // Emmet: ti-
+    ( ti-9999   , text-indent            , -9999px ),    // Emmet: ti-
     ( tov-e     , text-overflow          , ellipsis ),
     ( tov-c     , text-overflow          , clip ),
     ( tt-n      , text-transform         , none ),
@@ -248,12 +249,12 @@ $euc-single-declaration-list: (
     ( tt-u      , text-transform         , uppercase ),
     ( tt-l      , text-transform         , lowercase ),
     ( tsh-n     , text-shadow            , none ),
-    ( whs-nm    , white-space            , normal ),   // Emmet: whs:n
+    ( whs-nm    , white-space            , normal ),     // Emmet: whs:n
     ( whs-p     , white-space            , pre ),
     ( whs-nw    , white-space            , nowrap ),
     ( whs-pw    , white-space            , pre-wrap ),
     ( whs-pl    , white-space            , pre-line ),
-    ( wob-nm    , word-break             , normal ),   // Emmet: wob:n
+    ( wob-nm    , word-break             , normal ),     // Emmet: wob:n
     ( wob-k     , word-break             , keep-all ),
     ( wob-ba    , word-break             , break-all ),
     ( wow-nm    , word-wrap              , normal ),
@@ -261,10 +262,11 @@ $euc-single-declaration-list: (
     ( wow-u     , word-wrap              , unrestricted ),
     ( wow-s     , word-wrap              , suppress ),
     ( wow-bw    , word-wrap              , break-word ),
-    ( lts-nm    , letter-spacing         , normal ),   // Emmet: lts:n
-    ( fw-nm     , font-weight            , normal ),   // Emmet: fw:n
+    ( lts-nm    , letter-spacing         , normal ),     // Emmet: lts:n
+    ( fw-nm     , font-weight            , normal ),     // Emmet: fw:n
     ( fw-b      , font-weight            , bold ),
     ( fw-br     , font-weight            , bolder ),
+    ( fw-l      , font-weight            , 200 ),        // ^1
     ( fw-lr     , font-weight            , lighter ),
     ( fw-100    , font-weight            , 100 ),
     ( fw-200    , font-weight            , 200 ),
@@ -275,11 +277,20 @@ $euc-single-declaration-list: (
     ( fw-700    , font-weight            , 700 ),
     ( fw-800    , font-weight            , 800 ),
     ( fw-900    , font-weight            , 900 ),
-    ( fs-nm     , font-style             , normal ),   // Emmet: fs:n
+    ( fs-nm     , font-style             , normal ),     // Emmet: fs:n
     ( fs-i      , font-style             , italic ),
     ( fs-o      , font-style             , oblique ),
-    ( fv-nm     , font-variant           , normal ),   // Emmet: fv:n
+    ( fv-nm     , font-variant           , normal ),     // Emmet: fv:n
     ( fv-sc     , font-variant           , small-caps ),
+    ( fz-xxs    , font-size              , xx-small ),   // ^1
+    ( fz-xs     , font-size              , x-small ),    // ^1
+    ( fz-sr     , font-size              , smaller ),    // ^1
+    ( fz-s      , font-size              , small ),      // ^1
+    ( fz-m      , font-size              , medium ),     // ^1
+    ( fz-l      , font-size              , large ),      // ^1
+    ( fz-lr     , font-size              , larger ),     // ^1
+    ( fz-xl     , font-size              , x-large ),    // ^1
+    ( fz-xxl    , font-size              , xx-large ),   // ^1
     ( fz-10     , font-size              , 10px ),
     ( fz-11     , font-size              , 11px ),
     ( fz-12     , font-size              , 12px ),
@@ -343,17 +354,11 @@ $euc-single-declaration-list: (
     ( wfsm-a    , -webkit-font-smoothing , antialiased ),
     ( wfsm-sa   , -webkit-font-smoothing , subpixel-antialiased ),
     ( wfsm-n    , -webkit-font-smoothing , none ),
-    ( c-i       , color                  , inherit ),  // ^1
-    ( fw-l      , font-weight            , 200 ),      // ^1
-    ( fz-xxs    , font-size              , xx-small ), // ^1
-    ( fz-xs     , font-size              , x-small ),  // ^1
-    ( fz-sr     , font-size              , smaller ),  // ^1
-    ( fz-s      , font-size              , small ),    // ^1
-    ( fz-m      , font-size              , medium ),   // ^1
-    ( fz-l      , font-size              , large ),    // ^1
-    ( fz-lr     , font-size              , larger ),   // ^1
-    ( fz-xl     , font-size              , x-large ),  // ^1
-    ( fz-xxl    , font-size              , xx-large ), // ^1
+    ( obf-f     , object-fit             , fill ),       // ^1
+    ( obf-ct    , object-fit             , contain ),    // ^1
+    ( obf-cv    , object-fit             , cover ),      // ^1
+    ( obf-n     , object-fit             , none ),       // ^1
+    ( obf-sd    , object-fit             , scale-down ), // ^1
 // ^1 Not included in Emmet.
 ) !default;
 
@@ -361,7 +366,7 @@ $euc-single-declaration-list: (
   @include euc-single-declaration(nth($l, 1), nth($l, 2), nth($l, 3));
 }
 
-@include euc-block-declaration(cf) {
+@include euc-multiple-declaration(cf) {
   &:before, &:after { content: " "; display: table; }
   &:after { clear: both; }
 }
