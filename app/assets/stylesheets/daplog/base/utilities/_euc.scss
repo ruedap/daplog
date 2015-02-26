@@ -1,12 +1,52 @@
-/*! euc.css v0.0.5 | Emmet-like Utility Classes | MIT License */
+/*! euc.css v0.0.6 | Emmet-like Utility Classes | MIT License */
 
 $euc-available-snippet-list: ("!all") !default;
 $euc-prefix: "u-" !default;
 $euc-important: true !default;
+$euc-alternative-colors: false !default;
+
+$euc-color-white:   white   !default;
+$euc-color-silver:  silver  !default;
+$euc-color-gray:    gray    !default;
+$euc-color-black:   black   !default;
+$euc-color-navy:    navy    !default;
+$euc-color-blue:    blue    !default;
+$euc-color-aqua:    aqua    !default;
+$euc-color-teal:    teal    !default;
+$euc-color-olive:   olive   !default;
+$euc-color-green:   green   !default;
+$euc-color-lime:    lime    !default;
+$euc-color-yellow:  yellow  !default;
+$euc-color-orange:  orange  !default;
+$euc-color-red:     red     !default;
+$euc-color-maroon:  maroon  !default;
+$euc-color-fuchsia: fuchsia !default;
+$euc-color-purple:  purple  !default;
 
 $euc-important-string: " !important";
 @if $euc-important == false {
   $euc-important-string: "";
+}
+
+@if $euc-alternative-colors {
+  // https://github.com/mrmrs/colors
+  $euc-color-white:   #ffffff;
+  $euc-color-silver:  #dddddd;
+  $euc-color-gray:    #aaaaaa;
+  $euc-color-black:   #111111;
+  $euc-color-navy:    #001f3f;
+  $euc-color-blue:    #0074d9;
+  $euc-color-aqua:    #7fdbff;
+  $euc-color-teal:    #39cccc;
+  $euc-color-olive:   #3d9970;
+  $euc-color-green:   #2ecc40;
+  $euc-color-lime:    #01ff70;
+  $euc-color-yellow:  #ffdc00;
+  $euc-color-orange:  #ff851b;
+  $euc-color-red:     #ff4136;
+  $euc-color-maroon:  #85144b;
+  $euc-color-fuchsia: #f012be;
+  $euc-color-purple:  #b10dc9;
 }
 
 @function euc-available-snippet($snippet) {
@@ -55,310 +95,345 @@ $euc-important-string: " !important";
 $euc-single-declaration-list: (
 // source: https://github.com/emmetio/emmet/blob/master/lib/snippets.json
 // --------------------------------------------------------------------------
-//  | snippet   | property               | value
+//  | snippet     | property               | value
 // --------------------------------------------------------------------------
-    ( pos-s     , position               , static ),
-    ( pos-a     , position               , absolute ),
-    ( pos-r     , position               , relative ),
-    ( pos-f     , position               , fixed ),
-    ( t-a       , top                    , auto ),
-    ( t-0       , top                    , 0 ),
-    ( r-a       , right                  , auto ),
-    ( r-0       , right                  , 0 ),
-    ( b-a       , bottom                 , auto ),
-    ( b-0       , bottom                 , 0 ),
-    ( l-a       , left                   , auto ),
-    ( l-0       , left                   , 0 ),
-    ( z-a       , z-index                , auto ),
-    ( z-0       , z-index                , 0 ),
-    ( fl-n      , float                  , none ),
-    ( fl-l      , float                  , left ),
-    ( fl-r      , float                  , right ),
-    ( cl-n      , clear                  , none ),
-    ( cl-l      , clear                  , left ),
-    ( cl-r      , clear                  , right ),
-    ( cl-b      , clear                  , both ),
-    ( d-n       , display                , none ),
-    ( d-b       , display                , block ),
-    ( d-f       , display                , flex ),
-    ( d-if      , display                , inline-flex ),
-    ( d-i       , display                , inline ),
-    ( d-ib      , display                , inline-block ),
-    ( d-li      , display                , list-item ),
-    ( d-ri      , display                , run-in ),
-    ( d-cp      , display                , compact ),
-    ( d-tb      , display                , table ),
-    ( d-itb     , display                , inline-table ),
-    ( d-tbcp    , display                , table-caption ),
-    ( d-tbcl    , display                , table-column ),
-    ( d-tbclg   , display                , table-column-group ),
-    ( d-tbhg    , display                , table-header-group ),
-    ( d-tbfg    , display                , table-footer-group ),
-    ( d-tbr     , display                , table-row ),
-    ( d-tbrg    , display                , table-row-group ),
-    ( d-tbc     , display                , table-cell ),
-    ( d-rb      , display                , ruby ),
-    ( d-rbb     , display                , ruby-base ),
-    ( d-rbbg    , display                , ruby-base-group ),
-    ( d-rbt     , display                , ruby-text ),
-    ( d-rbtg    , display                , ruby-text-group ),
-    ( v-v       , visibility             , visible ),
-    ( v-h       , visibility             , hidden ),
-    ( v-c       , visibility             , collapse ),
-    ( ov-v      , overflow               , visible ),
-    ( ov-h      , overflow               , hidden ),
-    ( ov-s      , overflow               , scroll ),
-    ( ov-a      , overflow               , auto ),
-    ( ovx-v     , overflow-x             , visible ),
-    ( ovx-h     , overflow-x             , hidden ),
-    ( ovx-s     , overflow-x             , scroll ),
-    ( ovx-a     , overflow-x             , auto ),
-    ( ovy-v     , overflow-y             , visible ),
-    ( ovy-h     , overflow-y             , hidden ),
-    ( ovy-s     , overflow-y             , scroll ),
-    ( ovy-a     , overflow-y             , auto ),
-    ( bxz-cb    , box-sizing             , content-box ),
-    ( bxz-bb    , box-sizing             , border-box ),
-    ( bxsh-n    , box-shadow             , none ),
-    ( m-0       , margin                 , 0 ),
-    ( mt-0      , margin-top             , 0 ),
-    ( mr-a      , margin-right           , auto ),
-    ( mr-0      , margin-right           , 0 ),
-    ( mb-0      , margin-bottom          , 0 ),
-    ( ml-a      , margin-left            , auto ),
-    ( ml-0      , margin-left            , 0 ),
-    ( p-0       , padding                , 0 ),
-    ( pt-0      , padding-top            , 0 ),
-    ( pr-0      , padding-right          , 0 ),
-    ( pb-0      , padding-bottom         , 0 ),
-    ( pl-0      , padding-left           , 0 ),
-    ( w-a       , width                  , auto ),
-    ( w-0       , width                  , 0 ),
-    ( w-100p    , width                  , 100% ),
-    ( h-a       , height                 , auto ),
-    ( h-0       , height                 , 0 ),
-    ( h-100p    , height                 , 100% ),
-    ( maw-n     , max-width              , none ),
-    ( maw-100p  , max-width              , 100% ),
-    ( mah-n     , max-height             , none ),
-    ( mah-100p  , max-height             , 100% ),
-    ( miw-0     , min-width              , 0 ),
-    ( mih-0     , min-height             , 0 ),
-    ( ol-n      , outline                , none ),
-    ( olw-tn    , outline-width          , thin ),
-    ( olw-m     , outline-width          , medium ),
-    ( olw-tc    , outline-width          , thick ),
-    ( ols-n     , outline-style          , none ),
-    ( ols-dt    , outline-style          , dotted ),
-    ( ols-ds    , outline-style          , dashed ),
-    ( ols-s     , outline-style          , solid ),
-    ( ols-db    , outline-style          , double ),
-    ( ols-g     , outline-style          , groove ),
-    ( ols-r     , outline-style          , ridge ),
-    ( ols-i     , outline-style          , inset ),
-    ( ols-o     , outline-style          , outset ),
-    ( olc-i     , outline-color          , invert ),
-    ( bfv-h     , backface-visibility    , hidden ),
-    ( bfv-v     , backface-visibility    , visible ),
-    ( bd-n      , border                 , none ),
-    ( bd-0      , border                 , 0 ),
-    ( bdcl-c    , border-collapse        , collapse ),
-    ( bdcl-s    , border-collapse        , separate ),
-    ( bdc-t     , border-color           , transparent ),
-    ( bdi-n     , border-image           , none ),
-    ( bds-n     , border-style           , none ),
-    ( bds-h     , border-style           , hidden ),
-    ( bds-dt    , border-style           , dotted ),
-    ( bds-ds    , border-style           , dashed ),
-    ( bds-s     , border-style           , solid ),
-    ( bds-db    , border-style           , double ),
-    ( bds-w     , border-style           , wave ),
-    ( bds-g     , border-style           , groove ),
-    ( bds-r     , border-style           , ridge ),
-    ( bds-i     , border-style           , inset ),
-    ( bds-o     , border-style           , outset ),
-    ( bdt-n     , border-top             , none ),
-    ( bdt-0     , border-top             , 0 ),
-    ( bdtc-t    , border-top-color       , transparent ),
-    ( bdr-n     , border-right           , none ),
-    ( bdr-0     , border-right           , 0 ),
-    ( bdrc-t    , border-right-color     , transparent ),
-    ( bdb-n     , border-bottom          , none ),
-    ( bdb-0     , border-bottom          , 0 ),
-    ( bdbc-t    , border-bottom-color    , transparent ),
-    ( bdl-n     , border-left            , none ),
-    ( bdl-0     , border-left            , 0 ),
-    ( bdlc-t    , border-left-color      , transparent ),
-    ( bg-n      , background             , none ),
-    ( bgc-t     , background-color       , transparent ),
-    ( bgi-n     , background-image       , none ),
-    ( bgr-n     , background-repeat      , no-repeat ),
-    ( bgr-x     , background-repeat      , repeat-x ),
-    ( bgr-y     , background-repeat      , repeat-y ),
-    ( bgr-sp    , background-repeat      , space ),
-    ( bgr-rd    , background-repeat      , round ),
-    ( bga-f     , background-attachment  , fixed ),
-    ( bga-s     , background-attachment  , scroll ),
-    ( bgsz-a    , background-size        , auto ),
-    ( bgsz-ct   , background-size        , contain ),
-    ( bgsz-cv   , background-size        , cover ),
-    ( c-i       , color                  , inherit ),    // ^1
-    ( tbl-a     , table-layout           , auto ),
-    ( tbl-f     , table-layout           , fixed ),
-    ( lis-n     , list-style             , none ),
-    ( lisp-i    , list-style-position    , inside ),
-    ( lisp-o    , list-style-position    , outside ),
-    ( list-n    , list-style-type        , none ),
-    ( list-d    , list-style-type        , disc ),
-    ( list-c    , list-style-type        , circle ),
-    ( list-s    , list-style-type        , square ),
-    ( list-dc   , list-style-type        , decimal ),
-    ( list-dclz , list-style-type        , decimal-leading-zero ),
-    ( list-lr   , list-style-type        , lower-roman ),
-    ( list-ur   , list-style-type        , upper-roman ),
-    ( lisi-n    , list-style-image       , none ),
-    ( va-sup    , vertical-align         , super ),
-    ( va-t      , vertical-align         , top ),
-    ( va-tt     , vertical-align         , text-top ),
-    ( va-m      , vertical-align         , middle ),
-    ( va-bl     , vertical-align         , baseline ),
-    ( va-b      , vertical-align         , bottom ),
-    ( va-tb     , vertical-align         , text-bottom ),
-    ( va-sub    , vertical-align         , sub ),
-    ( ta-l      , text-align             , left ),
-    ( ta-c      , text-align             , center ),
-    ( ta-r      , text-align             , right ),
-    ( ta-j      , text-align             , justify ),
-    ( td-n      , text-decoration        , none ),
-    ( td-u      , text-decoration        , underline ),
-    ( td-o      , text-decoration        , overline ),
-    ( td-l      , text-decoration        , line-through ),
-    ( te-n      , text-emphasis          , none ),
-    ( te-ac     , text-emphasis          , accent ),
-    ( te-dt     , text-emphasis          , dot ),
-    ( te-c      , text-emphasis          , circle ),
-    ( te-ds     , text-emphasis          , disc ),
-    ( te-b      , text-emphasis          , before ),
-    ( te-a      , text-emphasis          , after ),
-    ( ti-0      , text-indent            , 0 ),
-    ( ti-9999   , text-indent            , -9999px ),    // Emmet: ti-
-    ( tov-e     , text-overflow          , ellipsis ),
-    ( tov-c     , text-overflow          , clip ),
-    ( tt-n      , text-transform         , none ),
-    ( tt-c      , text-transform         , capitalize ),
-    ( tt-u      , text-transform         , uppercase ),
-    ( tt-l      , text-transform         , lowercase ),
-    ( tsh-n     , text-shadow            , none ),
-    ( whs-nm    , white-space            , normal ),     // Emmet: whs:n
-    ( whs-p     , white-space            , pre ),
-    ( whs-nw    , white-space            , nowrap ),
-    ( whs-pw    , white-space            , pre-wrap ),
-    ( whs-pl    , white-space            , pre-line ),
-    ( wob-nm    , word-break             , normal ),     // Emmet: wob:n
-    ( wob-k     , word-break             , keep-all ),
-    ( wob-ba    , word-break             , break-all ),
-    ( wow-nm    , word-wrap              , normal ),
-    ( wow-n     , word-wrap              , none ),
-    ( wow-u     , word-wrap              , unrestricted ),
-    ( wow-s     , word-wrap              , suppress ),
-    ( wow-bw    , word-wrap              , break-word ),
-    ( lts-nm    , letter-spacing         , normal ),     // Emmet: lts:n
-    ( fw-nm     , font-weight            , normal ),     // Emmet: fw:n
-    ( fw-b      , font-weight            , bold ),
-    ( fw-br     , font-weight            , bolder ),
-    ( fw-l      , font-weight            , 200 ),        // ^1
-    ( fw-lr     , font-weight            , lighter ),
-    ( fw-100    , font-weight            , 100 ),
-    ( fw-200    , font-weight            , 200 ),
-    ( fw-300    , font-weight            , 300 ),
-    ( fw-400    , font-weight            , 400 ),
-    ( fw-500    , font-weight            , 500 ),
-    ( fw-600    , font-weight            , 600 ),
-    ( fw-700    , font-weight            , 700 ),
-    ( fw-800    , font-weight            , 800 ),
-    ( fw-900    , font-weight            , 900 ),
-    ( fs-nm     , font-style             , normal ),     // Emmet: fs:n
-    ( fs-i      , font-style             , italic ),
-    ( fs-o      , font-style             , oblique ),
-    ( fv-nm     , font-variant           , normal ),     // Emmet: fv:n
-    ( fv-sc     , font-variant           , small-caps ),
-    ( fz-xxs    , font-size              , xx-small ),   // ^1
-    ( fz-xs     , font-size              , x-small ),    // ^1
-    ( fz-sr     , font-size              , smaller ),    // ^1
-    ( fz-s      , font-size              , small ),      // ^1
-    ( fz-m      , font-size              , medium ),     // ^1
-    ( fz-l      , font-size              , large ),      // ^1
-    ( fz-lr     , font-size              , larger ),     // ^1
-    ( fz-xl     , font-size              , x-large ),    // ^1
-    ( fz-xxl    , font-size              , xx-large ),   // ^1
-    ( fz-10     , font-size              , 10px ),
-    ( fz-11     , font-size              , 11px ),
-    ( fz-12     , font-size              , 12px ),
-    ( fz-13     , font-size              , 13px ),
-    ( fz-14     , font-size              , 14px ),
-    ( fz-15     , font-size              , 15px ),
-    ( fz-16     , font-size              , 16px ),
-    ( fz-17     , font-size              , 17px ),
-    ( fz-18     , font-size              , 18px ),
-    ( fz-19     , font-size              , 19px ),
-    ( fz-20     , font-size              , 20px ),
-    ( ff-s      , font-family            , serif ),
-    ( ff-ss     , font-family            , sans-serif ),
-    ( ff-c      , font-family            , cursive ),
-    ( ff-f      , font-family            , fantasy ),
-    ( ff-m      , font-family            , monospace ),
-    ( ff-a      , font-family            , 'Arial, "Helvetica Neue", Helvetica, sans-serif' ),
-    ( ff-t      , font-family            , '"Times New Roman", Times, Baskerville, Georgia, serif' ),
-    ( ff-v      , font-family            , 'Verdana, Geneva, sans-serif' ),
-    ( rsz-n     , resize                 , none ),
-    ( rsz-b     , resize                 , both ),
-    ( rsz-h     , resize                 , horizontal ),
-    ( rsz-v     , resize                 , vertical ),
-    ( cur-a     , cursor                 , auto ),
-    ( cur-d     , cursor                 , default ),
-    ( cur-c     , cursor                 , crosshair ),
-    ( cur-ha    , cursor                 , hand ),
-    ( cur-he    , cursor                 , help ),
-    ( cur-m     , cursor                 , move ),
-    ( cur-p     , cursor                 , pointer ),
-    ( cur-t     , cursor                 , text ),
-    ( fxd-r     , flex-direction         , row ),
-    ( fxd-rr    , flex-direction         , row-reverse ),
-    ( fxd-c     , flex-direction         , column ),
-    ( fxd-cr    , flex-direction         , column-reverse ),
-    ( fxw-n     , flex-wrap              , nowrap ),
-    ( fxw-w     , flex-wrap              , wrap ),
-    ( fxw-wr    , flex-wrap              , wrap-reverse ),
-    ( jc-fs     , justify-content        , flex-start ),
-    ( jc-fe     , justify-content        , flex-end ),
-    ( jc-c      , justify-content        , center ),
-    ( jc-sb     , justify-content        , space-between ),
-    ( jc-sa     , justify-content        , space-around ),
-    ( ai-fs     , align-items            , flex-start ),
-    ( ai-fe     , align-items            , flex-end ),
-    ( ai-c      , align-items            , center ),
-    ( ai-b      , align-items            , baseline ),
-    ( ai-s      , align-items            , stretch ),
-    ( ac-fs     , align-content          , flex-start ),
-    ( ac-fe     , align-content          , flex-end ),
-    ( ac-c      , align-content          , center ),
-    ( ac-sb     , align-content          , space-between ),
-    ( ac-sa     , align-content          , space-around ),
-    ( ac-s      , align-content          , stretch ),
-    ( as-a      , align-self             , auto ),
-    ( as-fs     , align-self             , flex-start ),
-    ( as-fe     , align-self             , flex-end ),
-    ( as-c      , align-self             , center ),
-    ( as-b      , align-self             , baseline ),
-    ( as-s      , align-self             , stretch ),
-    ( wfsm-a    , -webkit-font-smoothing , antialiased ),
-    ( wfsm-sa   , -webkit-font-smoothing , subpixel-antialiased ),
-    ( wfsm-n    , -webkit-font-smoothing , none ),
-    ( obf-f     , object-fit             , fill ),       // ^1
-    ( obf-ct    , object-fit             , contain ),    // ^1
-    ( obf-cv    , object-fit             , cover ),      // ^1
-    ( obf-n     , object-fit             , none ),       // ^1
-    ( obf-sd    , object-fit             , scale-down ), // ^1
+    ( pos-s       , position               , static ),
+    ( pos-a       , position               , absolute ),
+    ( pos-r       , position               , relative ),
+    ( pos-f       , position               , fixed ),
+    ( t-a         , top                    , auto ),
+    ( t-0         , top                    , 0 ),
+    ( r-a         , right                  , auto ),
+    ( r-0         , right                  , 0 ),
+    ( b-a         , bottom                 , auto ),
+    ( b-0         , bottom                 , 0 ),
+    ( l-a         , left                   , auto ),
+    ( l-0         , left                   , 0 ),
+    ( z-a         , z-index                , auto ),
+    ( z-0         , z-index                , 0 ),
+    ( fl-n        , float                  , none ),
+    ( fl-l        , float                  , left ),
+    ( fl-r        , float                  , right ),
+    ( cl-n        , clear                  , none ),
+    ( cl-l        , clear                  , left ),
+    ( cl-r        , clear                  , right ),
+    ( cl-b        , clear                  , both ),
+    ( d-n         , display                , none ),
+    ( d-b         , display                , block ),
+    ( d-f         , display                , flex ),
+    ( d-if        , display                , inline-flex ),
+    ( d-i         , display                , inline ),
+    ( d-ib        , display                , inline-block ),
+    ( d-li        , display                , list-item ),
+    ( d-ri        , display                , run-in ),
+    ( d-cp        , display                , compact ),
+    ( d-tb        , display                , table ),
+    ( d-itb       , display                , inline-table ),
+    ( d-tbcp      , display                , table-caption ),
+    ( d-tbcl      , display                , table-column ),
+    ( d-tbclg     , display                , table-column-group ),
+    ( d-tbhg      , display                , table-header-group ),
+    ( d-tbfg      , display                , table-footer-group ),
+    ( d-tbr       , display                , table-row ),
+    ( d-tbrg      , display                , table-row-group ),
+    ( d-tbc       , display                , table-cell ),
+    ( d-rb        , display                , ruby ),
+    ( d-rbb       , display                , ruby-base ),
+    ( d-rbbg      , display                , ruby-base-group ),
+    ( d-rbt       , display                , ruby-text ),
+    ( d-rbtg      , display                , ruby-text-group ),
+    ( v-v         , visibility             , visible ),
+    ( v-h         , visibility             , hidden ),
+    ( v-c         , visibility             , collapse ),
+    ( ov-v        , overflow               , visible ),
+    ( ov-h        , overflow               , hidden ),
+    ( ov-s        , overflow               , scroll ),
+    ( ov-a        , overflow               , auto ),
+    ( ovx-v       , overflow-x             , visible ),
+    ( ovx-h       , overflow-x             , hidden ),
+    ( ovx-s       , overflow-x             , scroll ),
+    ( ovx-a       , overflow-x             , auto ),
+    ( ovy-v       , overflow-y             , visible ),
+    ( ovy-h       , overflow-y             , hidden ),
+    ( ovy-s       , overflow-y             , scroll ),
+    ( ovy-a       , overflow-y             , auto ),
+    ( bxz-cb      , box-sizing             , content-box ),
+    ( bxz-bb      , box-sizing             , border-box ),
+    ( bxsh-n      , box-shadow             , none ),
+    ( m-0         , margin                 , 0 ),
+    ( mt-0        , margin-top             , 0 ),
+    ( mr-a        , margin-right           , auto ),
+    ( mr-0        , margin-right           , 0 ),
+    ( mb-0        , margin-bottom          , 0 ),
+    ( ml-a        , margin-left            , auto ),
+    ( ml-0        , margin-left            , 0 ),
+    ( p-0         , padding                , 0 ),
+    ( pt-0        , padding-top            , 0 ),
+    ( pr-0        , padding-right          , 0 ),
+    ( pb-0        , padding-bottom         , 0 ),
+    ( pl-0        , padding-left           , 0 ),
+    ( w-a         , width                  , auto ),
+    ( w-0         , width                  , 0 ),
+    ( w-100p      , width                  , 100% ),
+    ( h-a         , height                 , auto ),
+    ( h-0         , height                 , 0 ),
+    ( h-100p      , height                 , 100% ),
+    ( maw-n       , max-width              , none ),
+    ( maw-100p    , max-width              , 100% ),
+    ( mah-n       , max-height             , none ),
+    ( mah-100p    , max-height             , 100% ),
+    ( miw-0       , min-width              , 0 ),
+    ( mih-0       , min-height             , 0 ),
+    ( ol-n        , outline                , none ),
+    ( olw-tn      , outline-width          , thin ),
+    ( olw-m       , outline-width          , medium ),
+    ( olw-tc      , outline-width          , thick ),
+    ( ols-n       , outline-style          , none ),
+    ( ols-dt      , outline-style          , dotted ),
+    ( ols-ds      , outline-style          , dashed ),
+    ( ols-s       , outline-style          , solid ),
+    ( ols-db      , outline-style          , double ),
+    ( ols-g       , outline-style          , groove ),
+    ( ols-r       , outline-style          , ridge ),
+    ( ols-i       , outline-style          , inset ),
+    ( ols-o       , outline-style          , outset ),
+    ( olc-i       , outline-color          , invert ),
+    ( bfv-h       , backface-visibility    , hidden ),
+    ( bfv-v       , backface-visibility    , visible ),
+    ( bd-n        , border                 , none ),
+    ( bd-0        , border                 , 0 ),
+    ( bdcl-c      , border-collapse        , collapse ),
+    ( bdcl-s      , border-collapse        , separate ),
+    ( bdc-t       , border-color           , transparent ),
+    ( bdi-n       , border-image           , none ),
+    ( bds-n       , border-style           , none ),
+    ( bds-h       , border-style           , hidden ),
+    ( bds-dt      , border-style           , dotted ),
+    ( bds-ds      , border-style           , dashed ),
+    ( bds-s       , border-style           , solid ),
+    ( bds-db      , border-style           , double ),
+    ( bds-w       , border-style           , wave ),
+    ( bds-g       , border-style           , groove ),
+    ( bds-r       , border-style           , ridge ),
+    ( bds-i       , border-style           , inset ),
+    ( bds-o       , border-style           , outset ),
+    ( bdt-n       , border-top             , none ),
+    ( bdt-0       , border-top             , 0 ),
+    ( bdtc-t      , border-top-color       , transparent ),
+    ( bdr-n       , border-right           , none ),
+    ( bdr-0       , border-right           , 0 ),
+    ( bdrc-t      , border-right-color     , transparent ),
+    ( bdb-n       , border-bottom          , none ),
+    ( bdb-0       , border-bottom          , 0 ),
+    ( bdbc-t      , border-bottom-color    , transparent ),
+    ( bdl-n       , border-left            , none ),
+    ( bdl-0       , border-left            , 0 ),
+    ( bdlc-t      , border-left-color      , transparent ),
+    ( bg-n        , background             , none ),
+    ( bgc-t       , background-color       , transparent ),
+    ( bgc-white   , background-color       , $euc-color-white ),   // ^1
+    ( bgc-silver  , background-color       , $euc-color-silver ),  // ^1
+    ( bgc-gray    , background-color       , $euc-color-gray ),    // ^1
+    ( bgc-black   , background-color       , $euc-color-black ),   // ^1
+    ( bgc-navy    , background-color       , $euc-color-navy ),    // ^1
+    ( bgc-blue    , background-color       , $euc-color-blue ),    // ^1
+    ( bgc-aqua    , background-color       , $euc-color-aqua ),    // ^1
+    ( bgc-teal    , background-color       , $euc-color-teal ),    // ^1
+    ( bgc-olive   , background-color       , $euc-color-olive ),   // ^1
+    ( bgc-green   , background-color       , $euc-color-green ),   // ^1
+    ( bgc-lime    , background-color       , $euc-color-lime ),    // ^1
+    ( bgc-yellow  , background-color       , $euc-color-yellow ),  // ^1
+    ( bgc-orange  , background-color       , $euc-color-orange ),  // ^1
+    ( bgc-red     , background-color       , $euc-color-red ),     // ^1
+    ( bgc-maroon  , background-color       , $euc-color-maroon ),  // ^1
+    ( bgc-fuchsia , background-color       , $euc-color-fuchsia ), // ^1
+    ( bgc-purple  , background-color       , $euc-color-purple ),  // ^1
+    ( bgi-n       , background-image       , none ),
+    ( bgr-n       , background-repeat      , no-repeat ),
+    ( bgr-x       , background-repeat      , repeat-x ),
+    ( bgr-y       , background-repeat      , repeat-y ),
+    ( bgr-sp      , background-repeat      , space ),
+    ( bgr-rd      , background-repeat      , round ),
+    ( bga-f       , background-attachment  , fixed ),
+    ( bga-s       , background-attachment  , scroll ),
+    ( bgsz-a      , background-size        , auto ),
+    ( bgsz-ct     , background-size        , contain ),
+    ( bgsz-cv     , background-size        , cover ),
+    ( c-i         , color                  , inherit ),            // ^1
+    ( c-cc        , color                  , currentcolor ),       // ^1
+    ( c-white     , color                  , $euc-color-white ),   // ^1
+    ( c-silver    , color                  , $euc-color-silver ),  // ^1
+    ( c-gray      , color                  , $euc-color-gray ),    // ^1
+    ( c-black     , color                  , $euc-color-black ),   // ^1
+    ( c-navy      , color                  , $euc-color-navy ),    // ^1
+    ( c-blue      , color                  , $euc-color-blue ),    // ^1
+    ( c-aqua      , color                  , $euc-color-aqua ),    // ^1
+    ( c-teal      , color                  , $euc-color-teal ),    // ^1
+    ( c-olive     , color                  , $euc-color-olive ),   // ^1
+    ( c-green     , color                  , $euc-color-green ),   // ^1
+    ( c-lime      , color                  , $euc-color-lime ),    // ^1
+    ( c-yellow    , color                  , $euc-color-yellow ),  // ^1
+    ( c-orange    , color                  , $euc-color-orange ),  // ^1
+    ( c-red       , color                  , $euc-color-red ),     // ^1
+    ( c-maroon    , color                  , $euc-color-maroon ),  // ^1
+    ( c-fuchsia   , color                  , $euc-color-fuchsia ), // ^1
+    ( c-purple    , color                  , $euc-color-purple ),  // ^1
+    ( tbl-a       , table-layout           , auto ),
+    ( tbl-f       , table-layout           , fixed ),
+    ( lis-n       , list-style             , none ),
+    ( lisp-i      , list-style-position    , inside ),
+    ( lisp-o      , list-style-position    , outside ),
+    ( list-n      , list-style-type        , none ),
+    ( list-d      , list-style-type        , disc ),
+    ( list-c      , list-style-type        , circle ),
+    ( list-s      , list-style-type        , square ),
+    ( list-dc     , list-style-type        , decimal ),
+    ( list-dclz   , list-style-type        , decimal-leading-zero ),
+    ( list-lr     , list-style-type        , lower-roman ),
+    ( list-ur     , list-style-type        , upper-roman ),
+    ( lisi-n      , list-style-image       , none ),
+    ( va-sup      , vertical-align         , super ),
+    ( va-t        , vertical-align         , top ),
+    ( va-tt       , vertical-align         , text-top ),
+    ( va-m        , vertical-align         , middle ),
+    ( va-bl       , vertical-align         , baseline ),
+    ( va-b        , vertical-align         , bottom ),
+    ( va-tb       , vertical-align         , text-bottom ),
+    ( va-sub      , vertical-align         , sub ),
+    ( ta-l        , text-align             , left ),
+    ( ta-c        , text-align             , center ),
+    ( ta-r        , text-align             , right ),
+    ( ta-j        , text-align             , justify ),
+    ( td-n        , text-decoration        , none ),
+    ( td-u        , text-decoration        , underline ),
+    ( td-o        , text-decoration        , overline ),
+    ( td-l        , text-decoration        , line-through ),
+    ( te-n        , text-emphasis          , none ),
+    ( te-ac       , text-emphasis          , accent ),
+    ( te-dt       , text-emphasis          , dot ),
+    ( te-c        , text-emphasis          , circle ),
+    ( te-ds       , text-emphasis          , disc ),
+    ( te-b        , text-emphasis          , before ),
+    ( te-a        , text-emphasis          , after ),
+    ( ti-0        , text-indent            , 0 ),
+    ( ti-9999     , text-indent            , -9999px ),            // Emmet: ti-
+    ( tov-e       , text-overflow          , ellipsis ),
+    ( tov-c       , text-overflow          , clip ),
+    ( tt-n        , text-transform         , none ),
+    ( tt-c        , text-transform         , capitalize ),
+    ( tt-u        , text-transform         , uppercase ),
+    ( tt-l        , text-transform         , lowercase ),
+    ( tsh-n       , text-shadow            , none ),
+    ( whs-nm      , white-space            , normal ),             // Emmet: whs:n
+    ( whs-p       , white-space            , pre ),
+    ( whs-nw      , white-space            , nowrap ),
+    ( whs-pw      , white-space            , pre-wrap ),
+    ( whs-pl      , white-space            , pre-line ),
+    ( wob-nm      , word-break             , normal ),             // Emmet: wob:n
+    ( wob-k       , word-break             , keep-all ),
+    ( wob-ba      , word-break             , break-all ),
+    ( wow-nm      , word-wrap              , normal ),
+    ( wow-n       , word-wrap              , none ),
+    ( wow-u       , word-wrap              , unrestricted ),
+    ( wow-s       , word-wrap              , suppress ),
+    ( wow-bw      , word-wrap              , break-word ),
+    ( lts-nm      , letter-spacing         , normal ),             // Emmet: lts:n
+    ( fw-nm       , font-weight            , normal ),             // Emmet: fw:n
+    ( fw-b        , font-weight            , bold ),
+    ( fw-br       , font-weight            , bolder ),
+    ( fw-l        , font-weight            , 200 ),                // ^1
+    ( fw-lr       , font-weight            , lighter ),
+    ( fw-100      , font-weight            , 100 ),
+    ( fw-200      , font-weight            , 200 ),
+    ( fw-300      , font-weight            , 300 ),
+    ( fw-400      , font-weight            , 400 ),
+    ( fw-500      , font-weight            , 500 ),
+    ( fw-600      , font-weight            , 600 ),
+    ( fw-700      , font-weight            , 700 ),
+    ( fw-800      , font-weight            , 800 ),
+    ( fw-900      , font-weight            , 900 ),
+    ( fs-nm       , font-style             , normal ),             // Emmet: fs:n
+    ( fs-i        , font-style             , italic ),
+    ( fs-o        , font-style             , oblique ),
+    ( fv-nm       , font-variant           , normal ),             // Emmet: fv:n
+    ( fv-sc       , font-variant           , small-caps ),
+    ( fz-xxs      , font-size              , xx-small ),           // ^1
+    ( fz-xs       , font-size              , x-small ),            // ^1
+    ( fz-s        , font-size              , small ),              // ^1
+    ( fz-m        , font-size              , medium ),             // ^1
+    ( fz-l        , font-size              , large ),              // ^1
+    ( fz-xl       , font-size              , x-large ),            // ^1
+    ( fz-xxl      , font-size              , xx-large ),           // ^1
+    ( fz-sr       , font-size              , smaller ),            // ^1
+    ( fz-lr       , font-size              , larger ),             // ^1
+    ( fz-10       , font-size              , 10px ),
+    ( fz-11       , font-size              , 11px ),
+    ( fz-12       , font-size              , 12px ),
+    ( fz-13       , font-size              , 13px ),
+    ( fz-14       , font-size              , 14px ),
+    ( fz-15       , font-size              , 15px ),
+    ( fz-16       , font-size              , 16px ),
+    ( fz-17       , font-size              , 17px ),
+    ( fz-18       , font-size              , 18px ),
+    ( fz-19       , font-size              , 19px ),
+    ( fz-20       , font-size              , 20px ),
+    ( ff-s        , font-family            , serif ),
+    ( ff-ss       , font-family            , sans-serif ),
+    ( ff-c        , font-family            , cursive ),
+    ( ff-f        , font-family            , fantasy ),
+    ( ff-m        , font-family            , monospace ),
+    ( ff-a        , font-family            , 'Arial, "Helvetica Neue", Helvetica, sans-serif' ),
+    ( ff-t        , font-family            , '"Times New Roman", Times, Baskerville, Georgia, serif' ),
+    ( ff-v        , font-family            , 'Verdana, Geneva, sans-serif' ),
+    ( rsz-n       , resize                 , none ),
+    ( rsz-b       , resize                 , both ),
+    ( rsz-h       , resize                 , horizontal ),
+    ( rsz-v       , resize                 , vertical ),
+    ( cur-a       , cursor                 , auto ),
+    ( cur-d       , cursor                 , default ),
+    ( cur-c       , cursor                 , crosshair ),
+    ( cur-ha      , cursor                 , hand ),
+    ( cur-he      , cursor                 , help ),
+    ( cur-m       , cursor                 , move ),
+    ( cur-p       , cursor                 , pointer ),
+    ( cur-t       , cursor                 , text ),
+    ( fxd-r       , flex-direction         , row ),
+    ( fxd-rr      , flex-direction         , row-reverse ),
+    ( fxd-c       , flex-direction         , column ),
+    ( fxd-cr      , flex-direction         , column-reverse ),
+    ( fxw-n       , flex-wrap              , nowrap ),
+    ( fxw-w       , flex-wrap              , wrap ),
+    ( fxw-wr      , flex-wrap              , wrap-reverse ),
+    ( jc-fs       , justify-content        , flex-start ),
+    ( jc-fe       , justify-content        , flex-end ),
+    ( jc-c        , justify-content        , center ),
+    ( jc-sb       , justify-content        , space-between ),
+    ( jc-sa       , justify-content        , space-around ),
+    ( ai-fs       , align-items            , flex-start ),
+    ( ai-fe       , align-items            , flex-end ),
+    ( ai-c        , align-items            , center ),
+    ( ai-b        , align-items            , baseline ),
+    ( ai-s        , align-items            , stretch ),
+    ( ac-fs       , align-content          , flex-start ),
+    ( ac-fe       , align-content          , flex-end ),
+    ( ac-c        , align-content          , center ),
+    ( ac-sb       , align-content          , space-between ),
+    ( ac-sa       , align-content          , space-around ),
+    ( ac-s        , align-content          , stretch ),
+    ( as-a        , align-self             , auto ),
+    ( as-fs       , align-self             , flex-start ),
+    ( as-fe       , align-self             , flex-end ),
+    ( as-c        , align-self             , center ),
+    ( as-b        , align-self             , baseline ),
+    ( as-s        , align-self             , stretch ),
+    ( wfsm-a      , -webkit-font-smoothing , antialiased ),
+    ( wfsm-sa     , -webkit-font-smoothing , subpixel-antialiased ),
+    ( wfsm-n      , -webkit-font-smoothing , none ),
+    ( obf-f       , object-fit             , fill ),               // ^1
+    ( obf-ct      , object-fit             , contain ),            // ^1
+    ( obf-cv      , object-fit             , cover ),              // ^1
+    ( obf-n       , object-fit             , none ),               // ^1
+    ( obf-sd      , object-fit             , scale-down ),         // ^1
 // ^1 Not included in Emmet.
 ) !default;
 
