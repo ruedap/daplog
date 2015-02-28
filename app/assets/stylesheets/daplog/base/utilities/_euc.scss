@@ -1,9 +1,21 @@
-/*! euc.css v0.0.6 | Emmet-like Utility Classes | MIT License */
+/*! euc.css v0.0.7 | Emmet-like Utility Classes | MIT License */
 
-$euc-available-snippet-list: ("!all") !default;
 $euc-prefix: "u-" !default;
 $euc-important: true !default;
 $euc-alternative-colors: false !default;
+$euc-available-snippet-list: ("!all") !default;
+
+$euc-margin-xs: 0.2rem !default;
+$euc-margin-sm: 0.5rem !default;
+$euc-margin-md: 1.0rem !default;
+$euc-margin-lg: 2.0rem !default;
+$euc-margin-xl: 4.0rem !default;
+
+$euc-padding-xs: 0.2rem !default;
+$euc-padding-sm: 0.5rem !default;
+$euc-padding-md: 1.0rem !default;
+$euc-padding-lg: 2.0rem !default;
+$euc-padding-xl: 4.0rem !default;
 
 $euc-color-white:   white   !default;
 $euc-color-silver:  silver  !default;
@@ -22,11 +34,6 @@ $euc-color-red:     red     !default;
 $euc-color-maroon:  maroon  !default;
 $euc-color-fuchsia: fuchsia !default;
 $euc-color-purple:  purple  !default;
-
-$euc-important-string: " !important";
-@if $euc-important == false {
-  $euc-important-string: "";
-}
 
 @if $euc-alternative-colors {
   // https://github.com/mrmrs/colors
@@ -47,6 +54,11 @@ $euc-important-string: " !important";
   $euc-color-maroon:  #85144b;
   $euc-color-fuchsia: #f012be;
   $euc-color-purple:  #b10dc9;
+}
+
+$euc-important-string: "";
+@if $euc-important {
+  $euc-important-string: " !important";
 }
 
 @function euc-available-snippet($snippet) {
@@ -91,6 +103,9 @@ $euc-important-string: " !important";
     @include euc-rule-set($snippet) { @content; }
   }
 }
+
+// Single declaration list
+// --------------------------------------------------------------------------
 
 $euc-single-declaration-list: (
 // source: https://github.com/emmetio/emmet/blob/master/lib/snippets.json
@@ -161,17 +176,67 @@ $euc-single-declaration-list: (
     ( bxz-bb      , box-sizing             , border-box ),
     ( bxsh-n      , box-shadow             , none ),
     ( m-0         , margin                 , 0 ),
+    ( m-xs        , margin                 , $euc-margin-xs ),     // ^1
+    ( m-sm        , margin                 , $euc-margin-sm ),     // ^1
+    ( m-md        , margin                 , $euc-margin-md ),     // ^1
+    ( m-lg        , margin                 , $euc-margin-lg ),     // ^1
+    ( m-xl        , margin                 , $euc-margin-xl ),     // ^1
     ( mt-0        , margin-top             , 0 ),
+    ( mt-xs       , margin-top             , $euc-margin-xs ),     // ^1
+    ( mt-sm       , margin-top             , $euc-margin-sm ),     // ^1
+    ( mt-md       , margin-top             , $euc-margin-md ),     // ^1
+    ( mt-lg       , margin-top             , $euc-margin-lg ),     // ^1
+    ( mt-xl       , margin-top             , $euc-margin-xl ),     // ^1
     ( mr-a        , margin-right           , auto ),
     ( mr-0        , margin-right           , 0 ),
+    ( mr-xs       , margin-right           , $euc-margin-xs ),     // ^1
+    ( mr-sm       , margin-right           , $euc-margin-sm ),     // ^1
+    ( mr-md       , margin-right           , $euc-margin-md ),     // ^1
+    ( mr-lg       , margin-right           , $euc-margin-lg ),     // ^1
+    ( mr-xl       , margin-right           , $euc-margin-xl ),     // ^1
     ( mb-0        , margin-bottom          , 0 ),
+    ( mb-xs       , margin-bottom          , $euc-margin-xs ),     // ^1
+    ( mb-sm       , margin-bottom          , $euc-margin-sm ),     // ^1
+    ( mb-md       , margin-bottom          , $euc-margin-md ),     // ^1
+    ( mb-lg       , margin-bottom          , $euc-margin-lg ),     // ^1
+    ( mb-xl       , margin-bottom          , $euc-margin-xl ),     // ^1
     ( ml-a        , margin-left            , auto ),
     ( ml-0        , margin-left            , 0 ),
+    ( ml-xs       , margin-left            , $euc-margin-xs ),     // ^1
+    ( ml-sm       , margin-left            , $euc-margin-sm ),     // ^1
+    ( ml-md       , margin-left            , $euc-margin-md ),     // ^1
+    ( ml-lg       , margin-left            , $euc-margin-lg ),     // ^1
+    ( ml-xl       , margin-left            , $euc-margin-xl ),     // ^1
     ( p-0         , padding                , 0 ),
+    ( p-xs        , padding                , $euc-padding-xs ),    // ^1
+    ( p-sm        , padding                , $euc-padding-sm ),    // ^1
+    ( p-md        , padding                , $euc-padding-md ),    // ^1
+    ( p-lg        , padding                , $euc-padding-lg ),    // ^1
+    ( p-xl        , padding                , $euc-padding-xl ),    // ^1
     ( pt-0        , padding-top            , 0 ),
+    ( pt-xs       , padding-top            , $euc-padding-xs ),    // ^1
+    ( pt-sm       , padding-top            , $euc-padding-sm ),    // ^1
+    ( pt-md       , padding-top            , $euc-padding-md ),    // ^1
+    ( pt-lg       , padding-top            , $euc-padding-lg ),    // ^1
+    ( pt-xl       , padding-top            , $euc-padding-xl ),    // ^1
     ( pr-0        , padding-right          , 0 ),
+    ( pr-xs       , padding-right          , $euc-padding-xs ),    // ^1
+    ( pr-sm       , padding-right          , $euc-padding-sm ),    // ^1
+    ( pr-md       , padding-right          , $euc-padding-md ),    // ^1
+    ( pr-lg       , padding-right          , $euc-padding-lg ),    // ^1
+    ( pr-xl       , padding-right          , $euc-padding-xl ),    // ^1
     ( pb-0        , padding-bottom         , 0 ),
+    ( pb-xs       , padding-bottom         , $euc-padding-xs ),    // ^1
+    ( pb-sm       , padding-bottom         , $euc-padding-sm ),    // ^1
+    ( pb-md       , padding-bottom         , $euc-padding-md ),    // ^1
+    ( pb-lg       , padding-bottom         , $euc-padding-lg ),    // ^1
+    ( pb-xl       , padding-bottom         , $euc-padding-xl ),    // ^1
     ( pl-0        , padding-left           , 0 ),
+    ( pl-xs       , padding-left           , $euc-padding-xs ),    // ^1
+    ( pl-sm       , padding-left           , $euc-padding-sm ),    // ^1
+    ( pl-md       , padding-left           , $euc-padding-md ),    // ^1
+    ( pl-lg       , padding-left           , $euc-padding-lg ),    // ^1
+    ( pl-xl       , padding-left           , $euc-padding-xl ),    // ^1
     ( w-a         , width                  , auto ),
     ( w-0         , width                  , 0 ),
     ( w-100p      , width                  , 100% ),
@@ -186,7 +251,7 @@ $euc-single-declaration-list: (
     ( mih-0       , min-height             , 0 ),
     ( ol-n        , outline                , none ),
     ( olw-tn      , outline-width          , thin ),
-    ( olw-m       , outline-width          , medium ),
+    ( olw-md      , outline-width          , medium ),
     ( olw-tc      , outline-width          , thick ),
     ( ols-n       , outline-style          , none ),
     ( ols-dt      , outline-style          , dotted ),
@@ -359,9 +424,9 @@ $euc-single-declaration-list: (
     ( fv-sc       , font-variant           , small-caps ),
     ( fz-xxs      , font-size              , xx-small ),           // ^1
     ( fz-xs       , font-size              , x-small ),            // ^1
-    ( fz-s        , font-size              , small ),              // ^1
-    ( fz-m        , font-size              , medium ),             // ^1
-    ( fz-l        , font-size              , large ),              // ^1
+    ( fz-sm       , font-size              , small ),              // ^1
+    ( fz-md       , font-size              , medium ),             // ^1
+    ( fz-lg       , font-size              , large ),              // ^1
     ( fz-xl       , font-size              , x-large ),            // ^1
     ( fz-xxl      , font-size              , xx-large ),           // ^1
     ( fz-sr       , font-size              , smaller ),            // ^1
@@ -441,7 +506,20 @@ $euc-single-declaration-list: (
   @include euc-single-declaration(nth($l, 1), nth($l, 2), nth($l, 3));
 }
 
-@include euc-multiple-declaration(cf) {
+// Multiple declaration list
+// --------------------------------------------------------------------------
+
+// Clearfix (Contain floats)
+@include euc-multiple-declaration( cf ) {
   &:before, &:after { content: " "; display: table; }
   &:after { clear: both; }
+}
+
+// Text truncation (ellipsis)
+@include euc-multiple-declaration( elps ) {
+  max-width: 100%;
+  overflow: hidden !important;
+  text-overflow: ellipsis !important;
+  white-space: nowrap !important;
+  word-wrap: normal !important;
 }
