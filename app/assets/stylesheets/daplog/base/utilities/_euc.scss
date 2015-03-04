@@ -1,9 +1,15 @@
-/*! euc.css v0.0.8 | Emmet-like Utility Classes | MIT License */
+/*! euc.css v0.0.9 | Emmet-like Utility Classes | MIT License */
 
 $euc-prefix: "u-" !default;
 $euc-important: true !default;
 $euc-alternative-colors: false !default;
 $euc-available-snippet-list: ("!all") !default;
+
+$euc-font-size-xs: x-small !default;
+$euc-font-size-sm: small   !default;
+$euc-font-size-md: medium  !default;
+$euc-font-size-lg: large   !default;
+$euc-font-size-xl: x-large !default;
 
 $euc-margin-xs: 0.2rem !default;
 $euc-margin-sm: 0.5rem !default;
@@ -422,13 +428,11 @@ $euc-single-declaration-list: (
     ( fs-o        , font-style             , oblique ),
     ( fv-nm       , font-variant           , normal ),             // Emmet: fv:n
     ( fv-sc       , font-variant           , small-caps ),
-    ( fz-xxs      , font-size              , xx-small ),           // ^1
-    ( fz-xs       , font-size              , x-small ),            // ^1
-    ( fz-sm       , font-size              , small ),              // ^1
-    ( fz-md       , font-size              , medium ),             // ^1
-    ( fz-lg       , font-size              , large ),              // ^1
-    ( fz-xl       , font-size              , x-large ),            // ^1
-    ( fz-xxl      , font-size              , xx-large ),           // ^1
+    ( fz-xs       , font-size              , $euc-font-size-xs ),  // ^1
+    ( fz-sm       , font-size              , $euc-font-size-sm ),  // ^1
+    ( fz-md       , font-size              , $euc-font-size-md ),  // ^1
+    ( fz-lg       , font-size              , $euc-font-size-lg ),  // ^1
+    ( fz-xl       , font-size              , $euc-font-size-xl ),  // ^1
     ( fz-sr       , font-size              , smaller ),            // ^1
     ( fz-lr       , font-size              , larger ),             // ^1
     ( fz-10       , font-size              , 10px ),
