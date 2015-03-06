@@ -13,7 +13,7 @@
 @import "utilities/font-smoothing";
 @import "utilities/dapicons";
 
-$euc-available-snippet-list: (
+$emma-available-snippet-list: (
   pos-s, pos-a, pos-r, pos-f,                     // position
   t-0, r-0, b-0, l-0,                             // top, right, bottom, left
   fl-n, fl-l, fl-r, cl-l, cl-r, cl-b, cf          // float, clear, clearfix
@@ -40,4 +40,4 @@ $euc-available-snippet-list: (
   c-i,                                            // color
 );
 // TODO: width, margin, padding, truncate, kern, hiddenVisually, linkClean
-@import "utilities/euc.scss";
+@import "utilities/emma.scss";
