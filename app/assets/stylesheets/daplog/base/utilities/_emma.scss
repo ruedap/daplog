@@ -1,15 +1,21 @@
-/*! Emma.css v0.0.10 | Emmet-like utility classes | MIT License */
+/*! Emma.css v0.0.11 | Emmet-like utility classes | MIT License */
 
 $emma-prefix: "u-" !default;
 $emma-important: true !default;
 $emma-alternative-colors: false !default;
 $emma-available-snippet-list: ("!all") !default;
 
-$emma-font-size-xs: x-small !default;
-$emma-font-size-sm: small   !default;
-$emma-font-size-md: medium  !default;
-$emma-font-size-lg: large   !default;
-$emma-font-size-xl: x-large !default;
+$emma-font-size-xs: x-small  !default;
+$emma-font-size-sm: small    !default;
+$emma-font-size-md: medium   !default;
+$emma-font-size-lg: large    !default;
+$emma-font-size-xl: x-large  !default;
+$emma-font-size-h1: 2.0rem   !default;
+$emma-font-size-h2: 1.5rem   !default;
+$emma-font-size-h3: 1.25rem  !default;
+$emma-font-size-h4: 1.0rem   !default;
+$emma-font-size-h5: 0.875rem !default;
+$emma-font-size-h6: 0.75rem  !default;
 
 $emma-margin-xs: 0.2rem !default;
 $emma-margin-sm: 0.5rem !default;
@@ -446,6 +452,12 @@ $emma-single-declaration-list: (
     ( fz-18       , font-size              , 18px ),
     ( fz-19       , font-size              , 19px ),
     ( fz-20       , font-size              , 20px ),
+    ( fz-h1       , font-size              , $emma-font-size-h1 ),  // ^1
+    ( fz-h2       , font-size              , $emma-font-size-h2 ),  // ^1
+    ( fz-h3       , font-size              , $emma-font-size-h3 ),  // ^1
+    ( fz-h4       , font-size              , $emma-font-size-h4 ),  // ^1
+    ( fz-h5       , font-size              , $emma-font-size-h5 ),  // ^1
+    ( fz-h6       , font-size              , $emma-font-size-h6 ),  // ^1
     ( ff-s        , font-family            , serif ),
     ( ff-ss       , font-family            , sans-serif ),
     ( ff-c        , font-family            , cursive ),
@@ -526,17 +538,25 @@ $emma-single-declaration-list: (
 // --------------------------------------------------------------------------
 
 // Clearfix (Contain floats)
-@include emma-multiple-declaration( cf ) {
+%emma-cf {
   &:before, &:after { content: " "; display: table; }
   &:after { clear: both; }
 }
+@include emma-multiple-declaration( cf ) { @extend %emma-cf; }
 
 // Text truncation (ellipsis)
-@include emma-multiple-declaration( elps ) {
+%emma-ttr {
   max-width: 100%;
   overflow: hidden !important;
   text-overflow: ellipsis !important;
   white-space: nowrap !important;
   word-wrap: normal !important;
 }
+@include emma-multiple-declaration( ttr ) { @extend %emma-ttr; }
 
+// List reset
+%emma-lir {
+  list-style: none;
+  padding-left: 0;
+}
+@include emma-multiple-declaration( lir ) { @extend %emma-lir; }
