@@ -1,4 +1,4 @@
-/*! Emma.css v0.0.11 | Emmet-like utility classes | MIT License */
+/*! Emma.css v0.0.12 | Emmet-like utility classes | MIT License */
 
 $emma-prefix: "u-" !default;
 $emma-important: true !default;
@@ -138,6 +138,10 @@ $emma-single-declaration-list: (
     ( l-0         , left                   , 0 ),
     ( z-a         , z-index                , auto ),
     ( z-0         , z-index                , 0 ),
+    ( z-1         , z-index                , 1 ),
+    ( z-2         , z-index                , 2 ),
+    ( z-3         , z-index                , 3 ),
+    ( z-4         , z-index                , 4 ),
     ( fl-n        , float                  , none ),
     ( fl-l        , float                  , left ),
     ( fl-r        , float                  , right ),
@@ -251,6 +255,7 @@ $emma-single-declaration-list: (
     ( pl-xl       , padding-left           , $emma-padding-xl ),    // ^1
     ( w-a         , width                  , auto ),
     ( w-0         , width                  , 0 ),
+    ( w-50p       , width                  , 50% ),
     ( w-100p      , width                  , 100% ),
     ( h-a         , height                 , auto ),
     ( h-0         , height                 , 0 ),
@@ -333,6 +338,11 @@ $emma-single-declaration-list: (
     ( bgr-rd      , background-repeat      , round ),
     ( bga-f       , background-attachment  , fixed ),
     ( bga-s       , background-attachment  , scroll ),
+    ( bgp-t       , background-position    , top ),                 // ^1
+    ( bgp-r       , background-position    , right ),               // ^1
+    ( bgp-b       , background-position    , bottom ),              // ^1
+    ( bgp-l       , background-position    , left ),                // ^1
+    ( bgp-c       , background-position    , center ),              // ^1
     ( bgsz-a      , background-size        , auto ),
     ( bgsz-ct     , background-size        , contain ),
     ( bgsz-cv     , background-size        , cover ),
@@ -560,3 +570,14 @@ $emma-single-declaration-list: (
   padding-left: 0;
 }
 @include emma-multiple-declaration( lir ) { @extend %emma-lir; }
+
+// Absolute center
+%emma-abc {
+  bottom: 0;
+  display: table;
+  left: 0;
+  margin: auto;
+  right: 0;
+  top: 0;
+}
+@include emma-multiple-declaration( abc ) { @extend %emma-abc; }
