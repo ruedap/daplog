@@ -1,7 +1,8 @@
-/*! Emma.css v0.0.13 | Emmet-like utility classes | MIT License */
+/*! Emma.css v0.0.14 | Emmet-like utility classes | MIT License */
 
 $emma-prefix: "u-" !default;
 $emma-important: true !default;
+$emma-validation: true !default;
 $emma-alternative-colors: false !default;
 $emma-available-snippet-list: ("!all") !default;
 
@@ -584,13 +585,18 @@ $emma-single-declaration-list: (
 
 // Multiple declaration list
 // --------------------------------------------------------------------------
+$emma-multiple-declaration-list: (
+  cf,
+  tet,
+  lir,
+  abc,
+) !default;
 
 // Clearfix (Contain floats)
 %emma-cf {
   &:before, &:after { content: " "; display: table; }
   &:after { clear: both; }
 }
-@include emma-multiple-declaration( cf ) { @extend %emma-cf; }
 
 // Text truncation (ellipsis)
 %emma-tet {
@@ -600,14 +606,12 @@ $emma-single-declaration-list: (
   white-space: nowrap !important;
   word-wrap: normal !important;
 }
-@include emma-multiple-declaration( tet ) { @extend %emma-tet; }
 
 // List reset
 %emma-lir {
   list-style: none;
   padding-left: 0;
 }
-@include emma-multiple-declaration( lir ) { @extend %emma-lir; }
 
 // Absolute center
 %emma-abc {
@@ -618,4 +622,30 @@ $emma-single-declaration-list: (
   right: 0;
   top: 0;
 }
-@include emma-multiple-declaration( abc ) { @extend %emma-abc; }
+
+@each $l in $emma-multiple-declaration-list {
+  @include emma-multiple-declaration($l) { @extend %emma-#{$l}; }
+}
+
+// Validation
+// --------------------------------------------------------------------------
+
+@if $emma-validation and length($emma-available-snippet-list) != 0 and nth($emma-available-snippet-list, 1) != "!all" {
+  $invalid-snippet-list: ();
+  @each $snippet in $emma-available-snippet-list {
+    $invalid: true;
+    @each $single-declaration in $emma-single-declaration-list {
+      @if $snippet == nth($single-declaration, 1) { $invalid: false; }
+    }
+    @each $multiple-declaration in $emma-multiple-declaration-list {
+      @if $snippet == $multiple-declaration { $invalid: false; }
+    }
+    @if $invalid {
+      $invalid-snippet-list: append($invalid-snippet-list, $snippet, comma);
+    }
+  }
+
+  @if length($invalid-snippet-list) != 0 {
+    @error "Invalid available snippet names: #{$invalid-snippet-list}";
+  }
+}
