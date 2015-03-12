@@ -1,4 +1,4 @@
-/*! Emma.css v0.0.12 | Emmet-like utility classes | MIT License */
+/*! Emma.css v0.0.13 | Emmet-like utility classes | MIT License */
 
 $emma-prefix: "u-" !default;
 $emma-important: true !default;
@@ -287,6 +287,23 @@ $emma-single-declaration-list: (
     ( bdcl-c      , border-collapse        , collapse ),
     ( bdcl-s      , border-collapse        , separate ),
     ( bdc-t       , border-color           , transparent ),
+    ( bdc-white   , border-color           , $emma-color-white ),   // ^1
+    ( bdc-silver  , border-color           , $emma-color-silver ),  // ^1
+    ( bdc-gray    , border-color           , $emma-color-gray ),    // ^1
+    ( bdc-black   , border-color           , $emma-color-black ),   // ^1
+    ( bdc-navy    , border-color           , $emma-color-navy ),    // ^1
+    ( bdc-blue    , border-color           , $emma-color-blue ),    // ^1
+    ( bdc-aqua    , border-color           , $emma-color-aqua ),    // ^1
+    ( bdc-teal    , border-color           , $emma-color-teal ),    // ^1
+    ( bdc-olive   , border-color           , $emma-color-olive ),   // ^1
+    ( bdc-green   , border-color           , $emma-color-green ),   // ^1
+    ( bdc-lime    , border-color           , $emma-color-lime ),    // ^1
+    ( bdc-yellow  , border-color           , $emma-color-yellow ),  // ^1
+    ( bdc-orange  , border-color           , $emma-color-orange ),  // ^1
+    ( bdc-red     , border-color           , $emma-color-red ),     // ^1
+    ( bdc-maroon  , border-color           , $emma-color-maroon ),  // ^1
+    ( bdc-fuchsia , border-color           , $emma-color-fuchsia ), // ^1
+    ( bdc-purple  , border-color           , $emma-color-purple ),  // ^1
     ( bdi-n       , border-image           , none ),
     ( bds-n       , border-style           , none ),
     ( bds-h       , border-style           , hidden ),
@@ -299,6 +316,16 @@ $emma-single-declaration-list: (
     ( bds-r       , border-style           , ridge ),
     ( bds-i       , border-style           , inset ),
     ( bds-o       , border-style           , outset ),
+    ( bdw-0       , border-width           , 0 ),
+    ( bdw-1       , border-width           , 1px ),
+    ( bdtw-0      , border-top-width       , 0 ),
+    ( bdtw-1      , border-top-width       , 1px ),
+    ( bdrw-0      , border-right-width     , 0 ),
+    ( bdrw-1      , border-right-width     , 1px ),
+    ( bdbw-0      , border-bottom-width    , 0 ),
+    ( bdbw-1      , border-bottom-width    , 1px ),
+    ( bdlw-0      , border-left-width      , 0 ),
+    ( bdlw-1      , border-left-width      , 1px ),
     ( bdt-n       , border-top             , none ),
     ( bdt-0       , border-top             , 0 ),
     ( bdtc-t      , border-top-color       , transparent ),
@@ -403,7 +430,7 @@ $emma-single-declaration-list: (
     ( te-b        , text-emphasis          , before ),
     ( te-a        , text-emphasis          , after ),
     ( ti-0        , text-indent            , 0 ),
-    ( ti-9999     , text-indent            , -9999px ),             // Emmet: ti-
+    ( ti--9999    , text-indent            , -9999px ),             // Emmet: ti-
     ( tov-e       , text-overflow          , ellipsis ),
     ( tov-c       , text-overflow          , clip ),
     ( tt-n        , text-transform         , none ),
@@ -523,6 +550,17 @@ $emma-single-declaration-list: (
     ( ac-sb       , align-content          , space-between ),
     ( ac-sa       , align-content          , space-around ),
     ( ac-s        , align-content          , stretch ),
+    ( ord--1      , order                  , -1 ),
+    ( ord-0       , order                  , 0 ),
+    ( ord-1       , order                  , 1 ),
+    ( ord-2       , order                  , 2 ),
+    ( ord-3       , order                  , 3 ),
+    ( ord-4       , order                  , 4 ),
+    ( ord-9999    , order                  , 9999 ),
+    ( fx-n        , flex                   , none ),
+    ( fx-1_1_a    , flex                   , "1 1 auto" ),          // ^1
+    ( fx-1_0_a    , flex                   , "1 0 auto" ),          // ^1
+    ( fx-1_1_1    , flex                   , "1 1 1px" ),           // ^1
     ( as-a        , align-self             , auto ),
     ( as-fs       , align-self             , flex-start ),
     ( as-fe       , align-self             , flex-end ),
@@ -555,14 +593,14 @@ $emma-single-declaration-list: (
 @include emma-multiple-declaration( cf ) { @extend %emma-cf; }
 
 // Text truncation (ellipsis)
-%emma-ttr {
+%emma-tet {
   max-width: 100%;
   overflow: hidden !important;
   text-overflow: ellipsis !important;
   white-space: nowrap !important;
   word-wrap: normal !important;
 }
-@include emma-multiple-declaration( ttr ) { @extend %emma-ttr; }
+@include emma-multiple-declaration( tet ) { @extend %emma-tet; }
 
 // List reset
 %emma-lir {

@@ -38,6 +38,8 @@ $emma-available-snippet-list: (
   ff-s, ff-ss, ff-m, ff-a, ff-t, ff-v,            // font-family
   wfsm-a, wfsm-sa,                                // -webkit-font-smoothing
   c-i,                                            // color
+  d-f, fxd-c, fxw-w, ai-fs, ai-fe, ai-c, ai-b,    // flexbox
+  ai-s, ord--1, ord-9999, jc-c,                   // flexbox
 );
 // TODO: width, margin, padding, truncate, kern, hiddenVisually, linkClean
 @import "utilities/emma.scss";
