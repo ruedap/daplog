@@ -1,4 +1,4 @@
-/*! Emma.css v0.0.14 | Emmet-like utility classes | MIT License */
+/*! Emma.css v0.0.15 | Emmet-like utility classes | MIT License */
 
 $emma-prefix: "u-" !default;
 $emma-important: true !default;
@@ -256,7 +256,20 @@ $emma-single-declaration-list: (
     ( pl-xl       , padding-left           , $emma-padding-xl ),    // ^1
     ( w-a         , width                  , auto ),
     ( w-0         , width                  , 0 ),
+    ( w-1p        , width                  , 1% ),
+    ( w-10p       , width                  , 10% ),
+    ( w-20p       , width                  , 20% ),
+    ( w-25p       , width                  , 25% ),
+    ( w-30p       , width                  , 30% ),
+    ( w-33p       , width                  , 33% ),
+    ( w-40p       , width                  , 40% ),
     ( w-50p       , width                  , 50% ),
+    ( w-60p       , width                  , 60% ),
+    ( w-66p       , width                  , 66% ),
+    ( w-70p       , width                  , 70% ),
+    ( w-75p       , width                  , 75% ),
+    ( w-80p       , width                  , 80% ),
+    ( w-90p       , width                  , 90% ),
     ( w-100p      , width                  , 100% ),
     ( h-a         , height                 , auto ),
     ( h-0         , height                 , 0 ),
