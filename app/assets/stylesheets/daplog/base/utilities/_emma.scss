@@ -1,4 +1,4 @@
-/*! Emma.css v0.0.15 | Emmet-like utility classes | MIT License */
+/*! Emma.css v0.0.16 | Emmet-like utility classes | MIT License */
 
 $emma-prefix: "u-" !default;
 $emma-important: true !default;
@@ -17,6 +17,12 @@ $emma-font-size-h3: 1.25rem  !default;
 $emma-font-size-h4: 1.0rem   !default;
 $emma-font-size-h5: 0.875rem !default;
 $emma-font-size-h6: 0.75rem  !default;
+
+$emma-line-height-xs: 1.2 !default;
+$emma-line-height-sm: 1.4 !default;
+$emma-line-height-md: 1.6 !default;
+$emma-line-height-lg: 1.8 !default;
+$emma-line-height-xl: 2.0 !default;
 
 $emma-margin-xs: 0.2rem !default;
 $emma-margin-sm: 0.5rem !default;
@@ -143,6 +149,8 @@ $emma-single-declaration-list: (
     ( z-2         , z-index                , 2 ),
     ( z-3         , z-index                , 3 ),
     ( z-4         , z-index                , 4 ),
+    ( z-5         , z-index                , 5 ),
+    ( z-6         , z-index                , 6 ),
     ( fl-n        , float                  , none ),
     ( fl-l        , float                  , left ),
     ( fl-r        , float                  , right ),
@@ -452,6 +460,20 @@ $emma-single-declaration-list: (
     ( tt-u        , text-transform         , uppercase ),
     ( tt-l        , text-transform         , lowercase ),
     ( tsh-n       , text-shadow            , none ),
+    ( lh-nm       , line-height            , normal ),
+    ( lh-i        , line-height            , inherit ),
+    ( lh-0        , line-height            , 0 ),
+    ( lh-1        , line-height            , 1 ),
+    ( lh-2        , line-height            , 2 ),
+    ( lh-3        , line-height            , 3 ),
+    ( lh-4        , line-height            , 4 ),
+    ( lh-5        , line-height            , 5 ),
+    ( lh-6        , line-height            , 6 ),
+    ( lh-xs       , line-height            , $emma-line-height-xs ),
+    ( lh-sm       , line-height            , $emma-line-height-sm ),
+    ( lh-md       , line-height            , $emma-line-height-md ),
+    ( lh-lg       , line-height            , $emma-line-height-lg ),
+    ( lh-xl       , line-height            , $emma-line-height-xl ),
     ( whs-nm      , white-space            , normal ),              // Emmet: whs:n
     ( whs-p       , white-space            , pre ),
     ( whs-nw      , white-space            , nowrap ),
@@ -570,6 +592,8 @@ $emma-single-declaration-list: (
     ( ord-2       , order                  , 2 ),
     ( ord-3       , order                  , 3 ),
     ( ord-4       , order                  , 4 ),
+    ( ord-5       , order                  , 5 ),
+    ( ord-6       , order                  , 6 ),
     ( ord-9999    , order                  , 9999 ),
     ( fx-n        , flex                   , none ),
     ( fx-1_1_a    , flex                   , "1 1 auto" ),          // ^1
