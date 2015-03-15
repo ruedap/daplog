@@ -1,4 +1,4 @@
-/*! Emma.css 0.0.19 | Emmet-like utility classes | MIT License */
+/*! Emma.css 0.0.20 | Emmet-like utility classes | MIT License */
 
 $emma-prefix: "u-" !default;
 $emma-important: true !default;
@@ -341,14 +341,39 @@ $emma-single-declaration-list: (
     ( bds-o       , border-style           , outset ),
     ( bdw-0       , border-width           , 0 ),
     ( bdw-1       , border-width           , 1px ),
+    ( bdw-2       , border-width           , 2px ),
+    ( bdw-3       , border-width           , 3px ),
+    ( bdw-4       , border-width           , 4px ),
+    ( bdw-5       , border-width           , 5px ),
+    ( bdw-6       , border-width           , 6px ),
     ( bdtw-0      , border-top-width       , 0 ),
     ( bdtw-1      , border-top-width       , 1px ),
+    ( bdtw-2      , border-top-width       , 2px ),
+    ( bdtw-3      , border-top-width       , 3px ),
+    ( bdtw-4      , border-top-width       , 4px ),
+    ( bdtw-5      , border-top-width       , 5px ),
+    ( bdtw-6      , border-top-width       , 6px ),
     ( bdrw-0      , border-right-width     , 0 ),
     ( bdrw-1      , border-right-width     , 1px ),
+    ( bdrw-2      , border-right-width     , 2px ),
+    ( bdrw-3      , border-right-width     , 3px ),
+    ( bdrw-4      , border-right-width     , 4px ),
+    ( bdrw-5      , border-right-width     , 5px ),
+    ( bdrw-6      , border-right-width     , 6px ),
     ( bdbw-0      , border-bottom-width    , 0 ),
     ( bdbw-1      , border-bottom-width    , 1px ),
+    ( bdbw-2      , border-bottom-width    , 2px ),
+    ( bdbw-3      , border-bottom-width    , 3px ),
+    ( bdbw-4      , border-bottom-width    , 4px ),
+    ( bdbw-5      , border-bottom-width    , 5px ),
+    ( bdbw-6      , border-bottom-width    , 6px ),
     ( bdlw-0      , border-left-width      , 0 ),
     ( bdlw-1      , border-left-width      , 1px ),
+    ( bdlw-2      , border-left-width      , 2px ),
+    ( bdlw-3      , border-left-width      , 3px ),
+    ( bdlw-4      , border-left-width      , 4px ),
+    ( bdlw-5      , border-left-width      , 5px ),
+    ( bdlw-6      , border-left-width      , 6px ),
     ( bdt-n       , border-top             , none ),
     ( bdt-0       , border-top             , 0 ),
     ( bdtc-t      , border-top-color       , transparent ),
@@ -366,12 +391,12 @@ $emma-single-declaration-list: (
     ( bdlc-t      , border-left-color      , transparent ),
     ( bdlc-cc     , border-left-color      , currentColor ),        // ^1
     ( bdrs-0      , border-radius          , 0 ),
-    ( bdrs-1      , border-radius          , 1 ),
-    ( bdrs-2      , border-radius          , 2 ),
-    ( bdrs-3      , border-radius          , 3 ),
-    ( bdrs-4      , border-radius          , 4 ),
-    ( bdrs-5      , border-radius          , 5 ),
-    ( bdrs-6      , border-radius          , 6 ),
+    ( bdrs-1      , border-radius          , 1px ),
+    ( bdrs-2      , border-radius          , 2px ),
+    ( bdrs-3      , border-radius          , 3px ),
+    ( bdrs-4      , border-radius          , 4px ),
+    ( bdrs-5      , border-radius          , 5px ),
+    ( bdrs-6      , border-radius          , 6px ),
     ( bdrs-100p   , border-radius          , 100% ),
     ( bg-n        , background             , none ),
     ( bgc-t       , background-color       , transparent ),
@@ -705,4 +730,3 @@ $emma-multiple-declaration-list: (
     @error "Invalid available snippet names: #{$invalid-snippet-list}";
   }
 }
-
