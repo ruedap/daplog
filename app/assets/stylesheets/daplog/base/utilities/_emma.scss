@@ -1,4 +1,4 @@
-/*! Emma.css 0.0.17 | Emmet-like utility classes | MIT License */
+/*! Emma.css 0.0.18 | Emmet-like utility classes | MIT License */
 
 $emma-prefix: "u-" !default;
 $emma-important: true !default;
@@ -309,6 +309,7 @@ $emma-single-declaration-list: (
     ( bdcl-c      , border-collapse        , collapse ),
     ( bdcl-s      , border-collapse        , separate ),
     ( bdc-t       , border-color           , transparent ),
+    ( bdc-cc      , border-color           , currentColor ),        // ^1
     ( bdc-white   , border-color           , $emma-color-white ),   // ^1
     ( bdc-silver  , border-color           , $emma-color-silver ),  // ^1
     ( bdc-gray    , border-color           , $emma-color-gray ),    // ^1
@@ -351,17 +352,22 @@ $emma-single-declaration-list: (
     ( bdt-n       , border-top             , none ),
     ( bdt-0       , border-top             , 0 ),
     ( bdtc-t      , border-top-color       , transparent ),
+    ( bdtc-cc     , border-top-color       , currentColor ),        // ^1
     ( bdr-n       , border-right           , none ),
     ( bdr-0       , border-right           , 0 ),
     ( bdrc-t      , border-right-color     , transparent ),
+    ( bdrc-cc     , border-right-color     , currentColor ),        // ^1
     ( bdb-n       , border-bottom          , none ),
     ( bdb-0       , border-bottom          , 0 ),
     ( bdbc-t      , border-bottom-color    , transparent ),
+    ( bdbc-cc     , border-bottom-color    , currentColor ),        // ^1
     ( bdl-n       , border-left            , none ),
     ( bdl-0       , border-left            , 0 ),
     ( bdlc-t      , border-left-color      , transparent ),
+    ( bdlc-cc     , border-left-color      , currentColor ),        // ^1
     ( bg-n        , background             , none ),
     ( bgc-t       , background-color       , transparent ),
+    ( bgc-cc      , background-color       , currentColor ),        // ^1
     ( bgc-white   , background-color       , $emma-color-white ),   // ^1
     ( bgc-silver  , background-color       , $emma-color-silver ),  // ^1
     ( bgc-gray    , background-color       , $emma-color-gray ),    // ^1
@@ -396,7 +402,6 @@ $emma-single-declaration-list: (
     ( bgsz-ct     , background-size        , contain ),
     ( bgsz-cv     , background-size        , cover ),
     ( c-i         , color                  , inherit ),             // ^1
-    ( c-cc        , color                  , currentcolor ),        // ^1
     ( c-white     , color                  , $emma-color-white ),   // ^1
     ( c-silver    , color                  , $emma-color-silver ),  // ^1
     ( c-gray      , color                  , $emma-color-gray ),    // ^1
