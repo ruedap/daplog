@@ -1,4 +1,4 @@
-/*! Emma.css v0.0.16 | Emmet-like utility classes | MIT License */
+/*! Emma.css 0.0.17 | Emmet-like utility classes | MIT License */
 
 $emma-prefix: "u-" !default;
 $emma-important: true !default;
@@ -616,17 +616,21 @@ $emma-single-declaration-list: (
 // ^1 Not included in Emmet.
 ) !default;
 
-@each $l in $emma-single-declaration-list {
-  @include emma-single-declaration(nth($l, 1), nth($l, 2), nth($l, 3));
+@each $item in $emma-single-declaration-list {
+  @include emma-single-declaration(nth($item, 1), nth($item, 2), nth($item, 3));
 }
 
 // Multiple declaration list
 // --------------------------------------------------------------------------
+
 $emma-multiple-declaration-list: (
-  cf,
-  tet,
-  lir,
-  abc,
+// --------------------------------------------------------------------------
+//  | snippet     | extended selector
+// --------------------------------------------------------------------------
+    ( cf          , "%emma-cf" ),
+    ( tet         , "%emma-tet" ),
+    ( lir         , "%emma-lir" ),
+    ( abc         , "%emma-abc" ),
 ) !default;
 
 // Clearfix (Contain floats)
@@ -660,8 +664,10 @@ $emma-multiple-declaration-list: (
   top: 0;
 }
 
-@each $l in $emma-multiple-declaration-list {
-  @include emma-multiple-declaration($l) { @extend %emma-#{$l}; }
+@each $item in $emma-multiple-declaration-list {
+  @include emma-multiple-declaration(nth($item, 1)) {
+    @extend #{nth($item, 2)};
+  }
 }
 
 // Validation
@@ -675,7 +681,7 @@ $emma-multiple-declaration-list: (
       @if $snippet == nth($single-declaration, 1) { $invalid: false; }
     }
     @each $multiple-declaration in $emma-multiple-declaration-list {
-      @if $snippet == $multiple-declaration { $invalid: false; }
+      @if $snippet == nth($multiple-declaration, 1) { $invalid: false; }
     }
     @if $invalid {
       $invalid-snippet-list: append($invalid-snippet-list, $snippet, comma);

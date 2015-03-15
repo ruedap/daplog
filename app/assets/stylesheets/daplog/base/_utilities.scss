@@ -13,6 +13,12 @@
 @import "utilities/font-smoothing";
 @import "utilities/dapicons";
 
+$emma-prefix: "uu-";
+$emma-important: false;
+$emma-alternative-colors: true;
+$emma-font-size-xs: 1.2rem;
+$emma-font-size-sm: 1.5rem;
+$emma-font-size-md: 1.7rem;
 $emma-available-snippet-list: (
   pos-s, pos-a, pos-r, pos-f,                      // position
   t-0, r-0, b-0, l-0,                              // top, right, bottom, left
@@ -40,5 +46,4 @@ $emma-available-snippet-list: (
   d-f, fxd-c, fxw-w, ai-fs, ai-fe, ai-c, ai-b,     // flexbox
   ai-s, ord--1, ord-9999, jc-c,                    // flexbox
 );
-// TODO: width, margin, padding, truncate, kern, hiddenVisually, linkClean
 @import "utilities/emma.scss";
