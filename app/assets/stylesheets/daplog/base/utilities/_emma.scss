@@ -1,4 +1,4 @@
-/*! Emma.css 0.0.18 | Emmet-like utility classes | MIT License */
+/*! Emma.css 0.0.19 | Emmet-like utility classes | MIT License */
 
 $emma-prefix: "u-" !default;
 $emma-important: true !default;
@@ -365,6 +365,14 @@ $emma-single-declaration-list: (
     ( bdl-0       , border-left            , 0 ),
     ( bdlc-t      , border-left-color      , transparent ),
     ( bdlc-cc     , border-left-color      , currentColor ),        // ^1
+    ( bdrs-0      , border-radius          , 0 ),
+    ( bdrs-1      , border-radius          , 1 ),
+    ( bdrs-2      , border-radius          , 2 ),
+    ( bdrs-3      , border-radius          , 3 ),
+    ( bdrs-4      , border-radius          , 4 ),
+    ( bdrs-5      , border-radius          , 5 ),
+    ( bdrs-6      , border-radius          , 6 ),
+    ( bdrs-100p   , border-radius          , 100% ),
     ( bg-n        , background             , none ),
     ( bgc-t       , background-color       , transparent ),
     ( bgc-cc      , background-color       , currentColor ),        // ^1
@@ -697,3 +705,4 @@ $emma-multiple-declaration-list: (
     @error "Invalid available snippet names: #{$invalid-snippet-list}";
   }
 }
+
