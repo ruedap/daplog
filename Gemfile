@@ -27,7 +27,7 @@ gem 'dm-core', '1.2.1'
 gem 'dm-redis-adapter', '0.8.4'
 gem 'therubyracer', '0.12.1' # for Heroku
 gem 'scss-lint', '0.33.0', require: false
-gem 'emma-css-rails', '0.1.0.0'
+gem 'emma-css-rails', '0.2.0.0'
 
 group :production, :staging do
   gem 'rails_12factor', '0.0.3' # for Heroku assets precompile
