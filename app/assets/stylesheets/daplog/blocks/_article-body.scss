@@ -221,11 +221,15 @@
     padding: 13px;
     white-space: pre;
     word-wrap: normal;
+
+    code {
+      font-family: $font-family-mono;
+    }
   }
 }
 
 %ArticleBody-code {
-  code,
+  p > code,
   kbd {
     @include u-fontSmoothing(false);
     background-color: #f2f2f2;
