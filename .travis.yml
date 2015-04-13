@@ -1,5 +1,7 @@
 language: ruby
 rvm: 2.1.4
+cache: bundler
+sudo: false
 services:
 - redis-server
 before_install: "gem install bundler --version '>= 1.5.1'"
