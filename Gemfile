@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-ruby '2.1.4'
+ruby '2.1.8'
 
 gem 'unicorn', '4.8.3'
 
