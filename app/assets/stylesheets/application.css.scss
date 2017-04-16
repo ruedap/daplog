@@ -10,3 +10,16 @@
 @import "daplog/base";
 @import "daplog/blocks";
 @import "daplog/contexts";
+
+#foo{}
+a.Bar   {
+    margin : 0 0 0;
+	backgrounds:url(https://example.com/assets/image.png) ;
+  & > { color: red; }
+  content: 'foo'! important;
+  -webkit-border-radius: 0px .500em;
+  border: none solid rgba(0,0,0,0); /* baz */
+  @extend #foo;
+
+  border: 1.0px  solid #ffffFF
+}
