@@ -116,4 +116,9 @@ typings/
 # DynamoDB Local files
 .dynamodb/
 
+# React
+build/
+
+# Firebase
+.firebase
 
