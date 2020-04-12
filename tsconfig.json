@@ -1,5 +1,7 @@
 {
   "compilerOptions": {
+    // https://create-react-app.dev/docs/importing-a-component/#absolute-imports
+    "baseUrl": "src",
     "target": "es5",
     "lib": [
       "dom",

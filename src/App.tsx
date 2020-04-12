@@ -1,5 +1,5 @@
 import React from 'react';
-import Header from './components/molecules/header'
+import Header from 'components/molecules/header'
 import './App.css';
 import styled from 'styled-components'
 

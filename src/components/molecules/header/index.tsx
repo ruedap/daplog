@@ -1,6 +1,6 @@
 import React from 'react'
 // import styled from 'styled-components'
-import HeaderLogo from '../../atoms/header_logo'
+import HeaderLogo from 'components/atoms/header_logo'
 
 const Header = () => (
   <HeaderLogo />
