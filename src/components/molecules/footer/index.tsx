@@ -1,6 +1,7 @@
 import React from 'react'
+import FooterLogo from 'components/atoms/footer_logo'
 import styled from 'styled-components'
-import { mixins } from 'styles/abstractions'
+import * as a from 'styles/abstractions'
 
 const Root = styled.footer`
   display: block;
@@ -8,17 +9,19 @@ const Root = styled.footer`
 `
 
 const Container = styled.div`
-  ${mixins.container}
+  ${a.mixins.container}
   background-image: linear-gradient(rgba(24,63,83,0.34) 0, rgba(24,63,83,0.55) 100%);
 
+  /* TODO: タブレット以下では非表示にする */
   &::before {
-    ${mixins.dapicons}
+    ${a.mixins.dapicons}
     color: rgba(24,63,83,0.21);
     content: "ruedap";
     font-size: 5.5rem;
     left: 50%;
     position: absolute;
     top: 377px;
+    transform: translate(-50%, -100%);
   }
 `
 
@@ -36,7 +39,7 @@ const LogoSpacer = styled.div`
   width: 100%;
 `
 
-const Logo = styled.div`
+const Logo = styled(FooterLogo)`
   bottom: 0;
   display: block;
   height: auto;
@@ -45,7 +48,6 @@ const Logo = styled.div`
   position: absolute;
   right: 0;
   top: 0;
-  width: 100%;
 `
 
 const Footer = () => (
