@@ -9,6 +9,7 @@ const Inner = styled.div`
 `
 
 const Heading = styled.h1`
+  margin: 0;
   padding-bottom: 11.854%;
 `
 
