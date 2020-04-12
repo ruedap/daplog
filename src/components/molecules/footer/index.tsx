@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import { ContainerMixin, DapiconsMixin } from 'styles/abstractions'
+import { mixins } from 'styles/abstractions'
 
 const Root = styled.footer`
   display: block;
@@ -8,11 +8,11 @@ const Root = styled.footer`
 `
 
 const Container = styled.div`
-  ${ContainerMixin}
+  ${mixins.container}
   background-image: linear-gradient(rgba(24,63,83,0.34) 0, rgba(24,63,83,0.55) 100%);
 
   &::before {
-    ${DapiconsMixin}
+    ${mixins.dapicons}
     color: rgba(24,63,83,0.21);
     content: "ruedap";
     font-size: 5.5rem;

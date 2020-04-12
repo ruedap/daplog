@@ -1,13 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import 'normalize.css';
-import 'styles/basics.css';
+import 'styles/fonts.css';
+import GlobalStyle from 'styles/basics';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 
 ReactDOM.render(
   <React.StrictMode>
     <App />
+    <GlobalStyle />
   </React.StrictMode>,
   document.getElementById('root')
 );

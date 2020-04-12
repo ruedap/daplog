@@ -1,3 +1,10 @@
+@import url(http://fonts.googleapis.com/css?family=Crimson+Text:400&subset=latin);
+@import url(http://fonts.googleapis.com/css?family=Fjalla+One:400&text=1234567890.);
+
+@font-face {
+  font-family: "YuMin";
+  src: local("YuMincho"), local("Yu Mincho"), local("游明朝");
+}
 
 @font-face {
   font-family: "dapicons";
@@ -5,8 +12,4 @@
   font-weight: normal;
   src: url("./fonts/dapicons/dapicons.eot");
   src: url("./fonts/dapicons/dapicons.eot?#iefix") format("embedded-opentype"), url("./fonts/dapicons/dapicons.woff") format("woff"), url("./fonts/dapicons/dapicons.ttf") format("truetype"), url("./fonts/dapicons/dapicons.svg#dapicons") format("svg");
-}
-
-body {
-  background-color: rgba(24,63,83,0.13);
 }
