@@ -1,5 +1,5 @@
 import { createGlobalStyle } from 'styled-components'
-import * as a from './abstractions'
+import styles from 'styles'
 
 const GlobalStyle = createGlobalStyle`
   html {
@@ -14,9 +14,9 @@ const GlobalStyle = createGlobalStyle`
   }
 
   body {
-    background-color: ${a.bgColors.body};
-    color: ${a.colors.body};
-    font-family: ${a.fonts.family.helvetica};
+    background-color: ${styles.bgColors.body};
+    color: ${styles.colors.body};
+    font-family: ${styles.fonts.family.helvetica};
     /* TODO */
     /* Fix Chrome bug https://code.google.com/p/chromium/issues/detail?id=319623 */
     /* font-size: strip-units($font-size-medium) * 1em; */

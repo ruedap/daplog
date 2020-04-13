@@ -1,7 +1,7 @@
 import React from 'react'
 import FooterLogo from 'components/atoms/footer_logo'
 import styled from 'styled-components'
-import * as a from 'styles/abstractions'
+import styles from 'styles'
 
 const Root = styled.footer`
   display: block;
@@ -9,12 +9,12 @@ const Root = styled.footer`
 `
 
 const Container = styled.div`
-  ${a.mixins.container}
+  ${styles.mixins.container}
   background-image: linear-gradient(rgba(24,63,83,0.34) 0, rgba(24,63,83,0.55) 100%);
 
   /* TODO: タブレット以下では非表示にする */
   &::before {
-    ${a.mixins.dapicons}
+    ${styles.mixins.dapicons}
     color: rgba(24,63,83,0.21);
     content: "ruedap";
     font-size: 5.5rem;

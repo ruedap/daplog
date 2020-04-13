@@ -1,10 +1,10 @@
 import React from 'react'
 import styled from 'styled-components'
 import HeaderLogo from 'components/atoms/header_logo'
-import { mixins } from 'styles/abstractions'
+import styles from 'styles'
 
 const Inner = styled.div`
-  ${mixins.container}
+  ${styles.mixins.container}
   background-color: #fff;
 `
 
