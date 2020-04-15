@@ -1,12 +1,15 @@
+import CSS from 'csstype'
 import { css } from 'styled-components'
 
-export const colors: any = {}
-colors.brand = 'rgb(24, 63, 83)'
-colors.body = '#21272d'
+export class Colors {
+  static readonly brand: CSS.ColorProperty = 'rgb(24, 63, 83)'
+  static readonly body: CSS.Color = '#21272d'
 
-export const bgColors: any = {}
-bgColors.body = 'rgba(24,63,83,0.13)'
-bgColors.content = '#fff'
+  static Bg = class {
+    static readonly body: CSS.BackgroundColorProperty = 'rgba(24,63,83,0.13)'
+    static readonly content: CSS.Color = '#fff'
+  }
+}
 
 export const sizes: any = {}
 sizes.maxWidth = {}

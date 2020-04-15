@@ -14,8 +14,8 @@ const GlobalStyle = createGlobalStyle`
   }
 
   body {
-    background-color: ${styles.bgColors.body};
-    color: ${styles.colors.body};
+    background-color: ${styles.Colors.Bg.body};
+    color: ${styles.Colors.body};
     font-family: ${styles.fonts.family.helvetica};
     /* TODO */
     /* Fix Chrome bug https://code.google.com/p/chromium/issues/detail?id=319623 */
