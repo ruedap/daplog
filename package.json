@@ -21,9 +21,10 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    "build": "yarn run json && react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "json": "processmd ./src/articles/**/*.md --stdout --outputDir ./public/api/articles > ./public/api/articles.json"
   },
   "eslintConfig": {
     "extends": "react-app"

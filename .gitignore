@@ -118,6 +118,7 @@ typings/
 
 # React
 build/
+public/api/*
 
 # Firebase
 .firebase
