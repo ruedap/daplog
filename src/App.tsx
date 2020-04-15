@@ -1,11 +1,11 @@
 import React from 'react';
-import Header from 'components/molecules/header'
-import Footer from 'components/molecules/footer'
+import Articles from 'components/pages/articles'
+import Article from 'components/pages/article'
 
 const App = () => (
   <>
-    <Header />
-    <Footer />
+    {/* <Articles /> */}
+    <Article />
   </>
 );
 
