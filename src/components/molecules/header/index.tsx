@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import styled from 'styled-components'
 import HeaderLogo from 'components/atoms/header_logo'
 import styles from 'styles'
@@ -13,7 +14,7 @@ const Heading = styled.h1`
   padding-bottom: 11.854%;
 `
 
-const LogoLink = styled.a.attrs({href: '/'})`
+const LogoLink = styled(Link)`
   display: block;
   position: relative;
   width: 100%;
@@ -48,7 +49,7 @@ const Header = () => (
   <header>
     <Inner>
       <Heading>
-        <LogoLink>
+        <LogoLink to="/">
           <LogoSpacer />
           <LogoOuter>
             <HeaderLogo />

@@ -55,7 +55,10 @@ const Footer = () => (
     <Container>
       <Heading>
         <LogoSpacer>ルエダップコム</LogoSpacer>
-        <Logo />
+        {/* TODO: リンクの範囲 */}
+        <a href="https://ruedap.com">
+          <Logo />
+        </a>
       </Heading>
     </Container>
   </Root>
