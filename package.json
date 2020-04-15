@@ -21,10 +21,12 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "yarn run json && react-scripts build",
+    "build": "npm run json && react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "json": "processmd ./src/articles/**/*.md --stdout --outputDir ./public/api/articles > ./public/api/articles.json"
+    "clean": "rimraf public/api/ && mkdir public/api/",
+    "json": "npm run clean && processmd ./src/articles/**/*.md --stdout --outputDir ./public/api/articles > ./public/api/articles.json",
+    "deploy": "npm run build && firebase deploy"
   },
   "eslintConfig": {
     "extends": "react-app"
