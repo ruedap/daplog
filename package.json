@@ -26,7 +26,9 @@
     "eject": "react-scripts eject",
     "clean": "rimraf public/api/ && mkdir public/api/",
     "json": "npm run clean && processmd ./src/articles/**/*.md --stdout --outputDir ./public/api/articles > ./public/api/articles.json",
-    "deploy": "npm run build && firebase deploy"
+    "deploy": "npm run build && firebase deploy",
+    "lint": "eslint --ext .js,.ts,.tsx,.jsx ./src",
+    "lint:fix": "eslint --fix --ext .js,.ts,.tsx,.jsx ./src"
   },
   "eslintConfig": {
     "extends": "react-app"
