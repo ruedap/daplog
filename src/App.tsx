@@ -14,7 +14,7 @@ const App = () => (
         <Articles />
       </Route>
 
-      <Route path="/:year/:month/:day/:title">
+      <Route exact path="/:year/:month/:day/:title">
         <Article />
       </Route>
     </Switch>
