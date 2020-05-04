@@ -1,17 +1,29 @@
 export type TArticlesJson = Readonly<{
-  fileMap: TArticles,
+  fileMap: TArticlesList,
   sourceFileArray: string[],
 }>
 
-type TArticles = Readonly<{
-  [key:string]: TArticle,
+type TArticlesList = Readonly<{
+  [key:string]: TArticlesItem,
 }>
 
-export type TArticle = Readonly<{
+export type TArticlesItem = Readonly<{
   title: string,
   dir: string,
   base: string,
   ext: string,
   sourceBase: string,
   sourceExt: string,
+}>
+
+export type TArticleJson = TArticlesItem & Readonly<{
+  bodyContent: string,
+  bodyHtml: string,
+}>
+
+export type TArticleParams = Readonly<{
+  year: string,
+  month: string,
+  day: string,
+  title: string
 }>
