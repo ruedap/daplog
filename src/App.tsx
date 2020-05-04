@@ -10,13 +10,8 @@ import Article from 'components/pages/article'
 const App = () => (
   <Router>
     <Switch>
-      <Route exact path="/">
-        <Articles />
-      </Route>
-
-      <Route exact path="/:year/:month/:day/:title">
-        <Article />
-      </Route>
+      <Route exact path="/" component={Articles} />
+      <Route exact path="/:year/:month/:day/:title" component={Article}/ >
     </Switch>
   </Router>
 );
