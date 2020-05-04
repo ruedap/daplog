@@ -1,18 +1,27 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
+import { ArticlesRepository } from 'repositories'
+import { TArticle } from 'types'
 import Header from 'components/molecules/header'
 import Footer from 'components/molecules/footer'
-import { ArticlesRepository } from 'repositories'
 
 const Articles = () => {
+  const [articles, setArticles] = useState<TArticle[]>([])
+
   useEffect(() => {
-    ArticlesRepository.list().then((data) => console.log(data))
+    ArticlesRepository.list().then(
+      (data) => setArticles(Object.values(data.fileMap).reverse())
+    )
   }, [])
 
   return (
     <>
       <Header />
-      <Link to="/2020/04/16/chaplin">articles</Link>
+      {
+        articles.map((article, i) =>
+          <Link key={i} to="/2020/04/16/chaplin">{article.title}</Link>
+        )
+      }
       <Footer />
     </>
   )

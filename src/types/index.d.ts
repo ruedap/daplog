@@ -7,7 +7,7 @@ type TArticles = Readonly<{
   [key:string]: TArticle,
 }>
 
-type TArticle = Readonly<{
+export type TArticle = Readonly<{
   title: string,
   dir: string,
   base: string,
