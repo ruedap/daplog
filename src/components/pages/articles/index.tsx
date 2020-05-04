@@ -4,7 +4,7 @@ import { ArticlesRepository } from 'repositories'
 import { TArticle } from 'types'
 import Header from 'components/molecules/header'
 import Footer from 'components/molecules/footer'
-import { stripHtmlTags } from 'utils/text'
+import { stripHtmlTags, normalizeArticlePath } from 'utils/string'
 
 const Articles = () => {
   const [articles, setArticles] = useState<TArticle[]>([])
@@ -20,7 +20,7 @@ const Articles = () => {
       <Header />
       {
         articles.map((article, i) =>
-          <Link key={i} to="/2020/04/16/chaplin">{stripHtmlTags(article.title)}</Link>
+          <Link key={i} to={normalizeArticlePath(article.base, article.ext)}>{stripHtmlTags(article.title)}</Link>
         )
       }
       <Footer />
