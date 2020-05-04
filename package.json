@@ -1,11 +1,16 @@
 {
-  "name": "learn-starter",
+  "name": "daplog",
   "version": "0.1.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "build": "npm run json && next build",
+    "clean": "rimraf public/api/ && mkdir public/api/",
+    "json": "npm run clean && processmd ./articles/**/*.md --stdout --outputDir ./public/api/articles > ./public/api/articles.json",
+    "deploy": "npm run build && firebase deploy",
+    "lint": "eslint --ext .js,.ts,.tsx,.jsx ./src",
+    "lint:fix": "eslint --fix --ext .js,.ts,.tsx,.jsx ./src"
   },
   "dependencies": {
     "next": "9.3.5",
