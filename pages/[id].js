@@ -1,5 +1,5 @@
 import Layout from '@components/templates/layout'
-import { getAllArticleIds, getArticleData } from '@lib/articles'
+import { getAllArticleIds, getArticleData } from '@utils/articles'
 
 export async function getStaticPaths() {
   const paths = getAllArticleIds()

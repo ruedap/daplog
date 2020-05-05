@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import Link from 'next/link'
-import { getSortedArticlesData } from '@lib/articles'
+import { getSortedArticlesData } from '@utils/articles'
 
 export async function getStaticProps() {
   const allArticlesData = getSortedArticlesData()
