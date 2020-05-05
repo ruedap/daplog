@@ -4,7 +4,13 @@ import matter from 'gray-matter'
 import remark from 'remark'
 import html from 'remark-html'
 
-const PATH = 'articles'
+type TMatterResultData = {
+  id: string
+  date: string
+  title: string
+}
+
+const PATH = 'src/articles'
 const articlesDirectory = path.join(process.cwd(), PATH)
 
 export function getSortedArticlesData() {
@@ -17,7 +23,7 @@ export function getSortedArticlesData() {
 
     return {
       id,
-      ...matterResult.data
+      ...(matterResult.data as TMatterResultData)
     }
   })
 
@@ -55,7 +61,7 @@ export function getAllArticleIds() {
   })
 }
 
-export async function getArticleData(id) {
+export async function getArticleData(id: string) {
   const fullPath = path.join(articlesDirectory, `${id}.md`)
   const fileContents = fs.readFileSync(fullPath, 'utf8')
   const matterResult = matter(fileContents)
@@ -68,6 +74,6 @@ export async function getArticleData(id) {
   return {
     id,
     contentHtml,
-    ...matterResult.data
+    ...(matterResult.data as TMatterResultData)
   }
 }

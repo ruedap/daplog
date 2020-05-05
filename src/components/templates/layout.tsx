@@ -1,7 +1,13 @@
 import Head from 'next/head'
 import styles from './layout.module.scss'
 
-const Layout = ({ children, home }) => {
+const Layout = ({
+  children,
+  home
+}: {
+  children: React.ReactNode
+  home?: boolean
+}) => {
   return (
     <>
       <Head>

@@ -1,17 +1,26 @@
+import { GetStaticProps } from 'next'
 import Head from 'next/head'
 import Link from 'next/link'
-import { getSortedArticlesData } from '@utils/articles'
+import { getSortedArticlesData } from '@src/utils/articles'
 
-export async function getStaticProps() {
+export const getStaticProps: GetStaticProps = async () => {
   const allArticlesData = getSortedArticlesData()
   return {
     props: {
-      allArticlesData: allArticlesData
+      allArticlesData
     }
   }
 }
 
-export default function Home({ allArticlesData }) {
+export default function Home({
+  allArticlesData
+}: {
+  allArticlesData: {
+    date: string
+    title: string
+    id: string
+  }[]
+}) {
   return (
     <>
       <Head>
