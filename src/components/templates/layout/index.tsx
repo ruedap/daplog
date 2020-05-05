@@ -5,16 +5,22 @@ import styles from './styles.module.scss'
 
 const Layout = ({
   children,
-  home
+  title
 }: {
   children: React.ReactNode
-  home?: boolean
+  title?: string
 }) => {
   return (
     <>
       <Head>
+        { title ? (
+          <title>{`${title} - アインシュタインの電話番号`}</title>
+        ) : (
+          <title>アインシュタインの電話番号</title>
+        )}
         <link rel="icon" href="/images/favicon.ico" />
       </Head>
+
       <Header />
       <div className={styles.container}>{children}</div>
       <Footer />

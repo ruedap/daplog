@@ -4,7 +4,16 @@ import Link from 'next/link'
 import { getSortedArticlesData } from '@src/utils/articles'
 import Layout from '@src/components/templates/layout'
 
-export default function Home({
+export const getStaticProps: GetStaticProps = async () => {
+  const allArticlesData = getSortedArticlesData()
+  return {
+    props: {
+      allArticlesData
+    }
+  }
+}
+
+const Home = ({
   allArticlesData
 }: {
   allArticlesData: {
@@ -12,7 +21,7 @@ export default function Home({
     title: string
     id: string
   }[]
-}) {
+}) => {
   return (
     <>
       <Head>
@@ -34,11 +43,4 @@ export default function Home({
   )
 }
 
-export const getStaticProps: GetStaticProps = async () => {
-  const allArticlesData = getSortedArticlesData()
-  return {
-    props: {
-      allArticlesData
-    }
-  }
-}
+export default Home
