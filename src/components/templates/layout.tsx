@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import Header from '@src/components/molecules/header'
 import styles from './layout.module.scss'
 
 const Layout = ({
@@ -13,6 +14,7 @@ const Layout = ({
       <Head>
         <link rel="icon" href="/images/favicon.ico" />
       </Head>
+      <Header />
       <div className={styles.container}>{children}</div>
     </>
   )
