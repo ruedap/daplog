@@ -25,7 +25,10 @@
     "sass": "^1.26.5"
   },
   "devDependencies": {
+    "@types/node": "^13.13.4",
+    "@types/react": "^16.9.34",
     "processmd": "^4.5.0",
-    "rimraf": "^3.0.2"
+    "rimraf": "^3.0.2",
+    "typescript": "^3.8.3"
   }
 }
