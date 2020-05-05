@@ -20,7 +20,7 @@ export default function Home({ allArticlesData }) {
 
       <main>
         <h1 className="title">
-          Welcome to <Link href="/posts/first-post"><a>Next.js!</a></Link>
+          Welcome to <Link href="/"><a>Next.js!</a></Link>
         </h1>
         
         <ul className="">
