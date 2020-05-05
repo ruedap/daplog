@@ -1,0 +1,31 @@
+{
+  "name": "daplog",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev -p 3333",
+    "start": "next build && next start -p 3334",
+    "build": "npm run json && next build",
+    "clean": "rimraf public/api/ && mkdir public/api/",
+    "json": "npm run clean && processmd ./articles/**/*.md --stdout --outputDir ./public/api/articles > ./public/api/articles.json",
+    "deploy": "npm run build && firebase deploy",
+    "lint": "eslint --ext .js,.ts,.tsx,.jsx ./src",
+    "lint:fix": "eslint --fix --ext .js,.ts,.tsx,.jsx ./src"
+  },
+  "dependencies": {
+    "classnames": "^2.2.6",
+    "date-fns": "^2.12.0",
+    "gray-matter": "^4.0.2",
+    "next": "9.3.5",
+    "normalize.css": "^8.0.1",
+    "react": "16.13.1",
+    "react-dom": "16.13.1",
+    "remark": "^12.0.0",
+    "remark-html": "^11.0.1",
+    "sass": "^1.26.5"
+  },
+  "devDependencies": {
+    "processmd": "^4.5.0",
+    "rimraf": "^3.0.2"
+  }
+}
