@@ -26,11 +26,9 @@ export default function Home({ allArticlesData }) {
         <ul className="">
           {allArticlesData.map(({ id, date, title }) => (
             <li className="" key={id}>
-              {title}
-              <br />
-              {id}
-              <br />
-              {date}
+              <Link href="[id]" as={`${id}`}>
+                <a>{date} {title}</a>
+              </Link>
             </li>
           ))}
         </ul>
