@@ -12,7 +12,7 @@ export const getStaticPaths: GetStaticPaths = async () => {
 }
 
 export const getStaticProps: GetStaticProps = async ({ params }) => {
-  const articleData = await getArticleData(params.id as string)
+  const articleData = getArticleData(params.id as string)
   return {
     props: {
       articleData
@@ -36,9 +36,7 @@ const Article = ({
       <br />
       {articleData.id}
       <br />
-      {articleData.date}
-      <br />
-      <Time dateString={articleData.date} />
+      <Time date={articleData.date} />
       <div dangerouslySetInnerHTML={{ __html: articleData.contentHtml }} />
     </Layout>
   )
