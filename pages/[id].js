@@ -1,6 +1,7 @@
 import Head from 'next/head'
-import Layout from '@components/templates/layout'
 import { getAllArticleIds, getArticleData } from '@utils/articles'
+import Layout from '@components/templates/layout'
+import Time from '@components/atoms/time'
 
 export async function getStaticPaths() {
   const paths = getAllArticleIds()
@@ -32,6 +33,7 @@ export default function Article({ articleData }) {
         <br />
         {articleData.date}
         <br />
+        <Time dateString={articleData.date} />
         <div dangerouslySetInnerHTML={{ __html: articleData.contentHtml }} />
       </Layout>
     </>
