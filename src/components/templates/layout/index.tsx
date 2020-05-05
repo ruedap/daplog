@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import Header from '@src/components/molecules/header'
-import styles from './layout.module.scss'
+import Footer from '@src/components/molecules/footer'
+import styles from './styles.module.scss'
 
 const Layout = ({
   children,
@@ -16,6 +17,7 @@ const Layout = ({
       </Head>
       <Header />
       <div className={styles.container}>{children}</div>
+      <Footer />
     </>
   )
 }
