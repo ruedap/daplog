@@ -1,13 +1,5 @@
-import he from 'he'
-
 export const stripHtmlTags = (htmlStr: string): string => {
   return htmlStr.replace(/(<([^>]+)>)/ig, '')
-}
-
-export const getTitleHtml = (htmlStr: string): string => {
-  const r = htmlStr.match(/<h1>(.+)<\/h1>/)
-  if (!Array.isArray(r)) { throw new Error ('invalid argument')}
-  return r[1]
 }
 
 const removeExt = (str: string, ext: string = '.md'): string => {

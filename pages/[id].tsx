@@ -27,17 +27,14 @@ const Article = ({
     id: string
     title: string
     date: string
-    contentHtml: string
+    body: string
   }
 }) => {
   return (
     <Layout title={articleData.title}>
-      {articleData.title}
-      <br />
-      {articleData.id}
-      <br />
+      <h1 dangerouslySetInnerHTML={{ __html: articleData.title }} />
       <Time date={articleData.date} />
-      <div dangerouslySetInnerHTML={{ __html: articleData.contentHtml }} />
+      <div dangerouslySetInnerHTML={{ __html: articleData.body }} />
     </Layout>
   )
 }

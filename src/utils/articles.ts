@@ -2,27 +2,28 @@ import fs from 'fs'
 import path from 'path'
 import remark from 'remark'
 import html from 'remark-html'
-import { stripHtmlTags, getTitleHtml, id2DateString } from '@src/utils/string'
+import { stripHtmlTags, id2DateString } from '@src/utils/string'
 import { TArticleItem } from '@src/types'
 
 const PATH = 'src/articles'
 const articlesDirectory = path.join(process.cwd(), PATH)
 
+const readContents = (id: string) => {
+  const fullPath = path.join(articlesDirectory, `${id}.md`)
+  const fileContents = fs.readFileSync(fullPath, 'utf8')
+  return fileContents
+}
+
 export const getSortedArticleList = () => {
   const fileNames = fs.readdirSync(articlesDirectory)
   const allArticlesData = fileNames.map(fileName => {
     const id = fileName.replace(/\.md$/, '')
-    const fullPath = path.join(articlesDirectory, fileName)
-    const fileContents = fs.readFileSync(fullPath, 'utf8')
+    const fileContents = readContents(id)
     const contentHtml = markdown2Html(fileContents)
-    const title = stripHtmlTags(getTitleHtml(contentHtml))
+    const title = stripHtmlTags(splitTitleAndBody(contentHtml).title)
     const date = id2DateString(id)
 
-    return {
-      id,
-      date,
-      title
-    } as TArticleItem
+    return { id, date, title } as TArticleItem
   })
   
   // TODO: sort
@@ -42,25 +43,26 @@ export function getAllArticleIds() {
 }
 
 export function getArticleData(id: string) {
-  const fullPath = path.join(articlesDirectory, `${id}.md`)
-  const fileContents = fs.readFileSync(fullPath, 'utf8')
+  const fileContents = readContents(id)
   const contentHtml = markdown2Html(fileContents)
-  const title = getTitleHtml(contentHtml)
+  const title = splitTitleAndBody(contentHtml).title
+  const body = splitTitleAndBody(contentHtml).body
   const date = id2DateString(id)
 
-  return {
-    id,
-    title,
-    date,
-    contentHtml,
-  }
+  return { id, title, date, body }
 }
 
-const markdown2Html = (markdownString: string): string => {
+const markdown2Html = (markdownStr: string): string => {
   const processedContent = remark()
     .use(html)
-    .processSync(markdownString)
-  const contentHtml = processedContent.toString()
+    .processSync(markdownStr)
   
-  return contentHtml
+  return processedContent.toString()
+}
+
+const splitTitleAndBody = (htmlStr: string) => {
+  const r = htmlStr.match(/<h1>(.+)<\/h1>([\s\S]*)/)
+  if (!Array.isArray(r)) { throw new Error ('invalid argument')}
+
+  return { title: r[1], body: r[2]}
 }
