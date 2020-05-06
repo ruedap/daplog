@@ -5,12 +5,8 @@
   "scripts": {
     "dev": "next dev -p 3333",
     "start": "next build && next start -p 3334",
-    "build": "npm run json && next build",
-    "clean": "rimraf public/api/ && mkdir public/api/",
-    "json": "npm run clean && processmd ./articles/**/*.md --stdout --outputDir ./public/api/articles > ./public/api/articles.json",
-    "deploy": "npm run build && firebase deploy",
-    "lint": "eslint --ext .js,.ts,.tsx,.jsx ./src",
-    "lint:fix": "eslint --fix --ext .js,.ts,.tsx,.jsx ./src"
+    "build": "npm run test && next build",
+    "test": "jest"
   },
   "dependencies": {
     "classnames": "^2.2.6",
@@ -25,10 +21,31 @@
     "sass": "^1.26.5"
   },
   "devDependencies": {
+    "@types/jest": "25.2.1",
     "@types/node": "^13.13.4",
     "@types/react": "^16.9.34",
-    "processmd": "^4.5.0",
-    "rimraf": "^3.0.2",
+    "jest": "25.4.0",
+    "ts-jest": "25.4.0",
     "typescript": "^3.8.3"
+  },
+  "jest": {
+    "moduleNameMapper": {
+      "^@src/(.+)": "<rootDir>/src/$1"
+    },
+    "moduleFileExtensions": [
+      "ts",
+      "js"
+    ],
+    "transform": {
+      "^.+\\.ts$": "ts-jest"
+    },
+    "globals": {
+      "ts-jest": {
+        "tsConfig": "tsconfig.json"
+      }
+    },
+    "testMatch": [
+      "**/tests/**/*.test.ts"
+    ]
   }
 }
