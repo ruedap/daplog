@@ -1,3 +1,4 @@
+import React from 'react'
 import { GetStaticProps } from 'next'
 import Link from 'next/link'
 import { format, parseISO } from 'date-fns'
@@ -15,38 +16,55 @@ export const getStaticProps: GetStaticProps = async () => {
   }
 }
 
-const Date = ({ date }: { date: string }) => {
-  const d = parseISO(date)
+const Time = ({ dateString }: { dateString: string }) => {
+  const d = parseISO(dateString)
   const year = format(d, 'yyyy')
   const month = format(d, 'MM')
   const day = format(d, 'dd')
   return (
-    <>
+    <time dateTime={d.toISOString()}>
       <span>{year}</span>
+      <span>.</span>
       <span>{month}</span>
+      <span>.</span>
       <span>{day}</span>
-    </>
+    </time>
   )
 }
 
 const Home = ({ articleList }: { articleList: TArticleItem[] }) => {
+  let beforeYear = 3000
+  const isNewYear = (year: number) => {
+    const r = beforeYear > year
+    beforeYear = year
+    return r
+  }
+
   return (
     <Layout>
-      <ul className="">
-        {articleList.map(({ id, date, title }) => {
-          const url = id2Url(id)
-          return (
-            <li className="" key={id}>
-              <Link href="[year]/[month]/[date]/[title]" as={url}>
-                <a>
-                  <Date date={date} />
-                  <span>{title}</span>
-                </a>
-              </Link>
-            </li>
-          )
-        })}
-      </ul>
+      <div className="Container">
+        <ul className="ArticleList">
+          {articleList.map(({ id, date, title }) => {
+            const url = id2Url(id)
+            const year = parseISO(date).getFullYear()
+            return (
+              <React.Fragment key={id}>
+                { isNewYear(year) && (
+                  <li>{year}</li>
+                )}
+                <li className="">
+                  <Link href="[year]/[month]/[date]/[title]" as={url}>
+                    <a>
+                      <Time dateString={date} />
+                      <span>{title}</span>
+                    </a>
+                  </Link>
+                </li>
+              </React.Fragment>
+            )
+          })}
+        </ul>
+      </div>
     </Layout>
   )
 }
