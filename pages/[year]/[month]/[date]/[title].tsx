@@ -12,7 +12,8 @@ export const getStaticPaths: GetStaticPaths = async () => {
 }
 
 export const getStaticProps: GetStaticProps = async ({ params }) => {
-  const articleData = getArticleData(params.id as string)
+  const id = `${params.year}-${params.month}-${params.date}-${params.title}`
+  const articleData = getArticleData(id)
   return {
     props: {
       articleData

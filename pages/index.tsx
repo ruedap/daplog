@@ -4,6 +4,7 @@ import { format, parseISO } from 'date-fns'
 import { getSortedArticleList } from '@src/utils/articles'
 import Layout from '@src/components/templates/layout'
 import { TArticleItem } from '@src/types'
+import { id2Url } from '@src/utils/string'
 
 export const getStaticProps: GetStaticProps = async () => {
   const articleList = getSortedArticleList()
@@ -32,16 +33,19 @@ const Home = ({ articleList }: { articleList: TArticleItem[] }) => {
   return (
     <Layout>
       <ul className="">
-        {articleList.map(({ id, date, title }) => (
-          <li className="" key={id}>
-            <Link href="[id]" as={`${id}`}>
-              <a>
-                <Date date={date} />
-                <span>{title}</span>
-              </a>
-            </Link>
-          </li>
-        ))}
+        {articleList.map(({ id, date, title }) => {
+          const url = id2Url(id)
+          return (
+            <li className="" key={id}>
+              <Link href="[year]/[month]/[date]/[title]" as={url}>
+                <a>
+                  <Date date={date} />
+                  <span>{title}</span>
+                </a>
+              </Link>
+            </li>
+          )
+        })}
       </ul>
     </Layout>
   )
