@@ -1,10 +1,10 @@
 import { GetStaticProps, GetStaticPaths } from 'next'
-import { getAllArticleIds, getArticleData } from '@src/utils/articles'
+import { getAllArticlePathParams, getArticleData } from '@src/utils/articles'
 import Layout from '@src/components/templates/layout'
 import Time from '@src/components/atoms/time'
 
 export const getStaticPaths: GetStaticPaths = async () => {
-  const paths = getAllArticleIds()
+  const paths = getAllArticlePathParams()
   return {
     paths,
     fallback: false

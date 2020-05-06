@@ -2,8 +2,8 @@ import fs from 'fs'
 import path from 'path'
 import remark from 'remark'
 import html from 'remark-html'
-import { stripHtmlTags, id2DateString } from '@src/utils/string'
-import { TArticleItem } from '@src/types'
+import { stripHtmlTags, id2DateString, fileName2Id, id2Prams } from '@src/utils/string'
+import { TArticleItem, TArticlePath } from '@src/types'
 
 const PATH = 'src/articles'
 const articlesDirectory = path.join(process.cwd(), PATH)
@@ -17,7 +17,7 @@ const readContents = (id: string) => {
 
 export const getSortedArticleList = (fileNames = articleFileNames) => {
   const allArticlesData = fileNames.map(fileName => {
-    const id = fileName.replace(/\.md$/, '')
+    const id = fileName2Id(fileName)
     const fileContents = readContents(id)
     const contentHtml = markdown2Html(fileContents)
     const title = stripHtmlTags(splitTitleAndBody(contentHtml).title)
@@ -30,13 +30,11 @@ export const getSortedArticleList = (fileNames = articleFileNames) => {
   return allArticlesData.reverse()
 }
 
-export function getAllArticleIds(fileNames = articleFileNames) {
+export function getAllArticlePathParams(fileNames = articleFileNames) {
   return fileNames.map(fileName => {
-    return {
-      params: {
-        id: fileName.replace(/\.md$/, '')
-      }
-    }
+    const id = fileName2Id(fileName)
+    const params = id2Prams(id)
+    return { params }
   })
 }
 
