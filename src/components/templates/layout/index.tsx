@@ -2,6 +2,7 @@ import Head from 'next/head'
 import Header from '@src/components/molecules/header'
 import Footer from '@src/components/molecules/footer'
 import styles from './styles.module.scss'
+import { BLOG_NAME } from '@src/utils/constants'
 
 const Layout = ({
   children,
@@ -14,9 +15,9 @@ const Layout = ({
     <>
       <Head>
         { title ? (
-          <title>{`${title} - アインシュタインの電話番号`}</title>
+          <title>{`${title} - ${BLOG_NAME}`}</title>
         ) : (
-          <title>アインシュタインの電話番号</title>
+          <title>{BLOG_NAME}</title>
         )}
         <link rel="icon" href="/images/favicon.ico" />
       </Head>

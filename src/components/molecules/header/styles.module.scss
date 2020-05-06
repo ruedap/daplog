@@ -1,0 +1,42 @@
+@import "@src/styles/_abstractions";
+
+.inner {
+  @include a-container;
+  background-color: #fff;
+}
+
+.heading {
+  margin: 0;
+  padding-bottom: 11.854%;
+}
+
+.logoLink {
+  display: block;
+  position: relative;
+  width: 100%;
+}
+
+.logoSpacer {
+  display: block;
+  font-size: 0;
+  margin-top: -50%;
+  padding-bottom: 100%;
+  position: relative;
+  width: 100%;
+}
+
+.logoOuter {
+  // TODO: custom properties
+  background-color: rgba(24,63,83,0.13);
+  background-image: radial-gradient(rgba(24,63,83,0.13), rgba(24,63,83,0.34));
+  border-radius: 100%;
+  bottom: 0;
+  display: block;
+  height: auto;
+  left: 0;
+  margin: auto;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 100%;
+}
