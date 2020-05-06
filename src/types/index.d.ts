@@ -3,3 +3,10 @@ export type TArticleItem = Readonly<{
   date: string
   title: string
 }>
+
+export type TArticlePath = Readonly<{
+  year: string
+  month: string
+  date: string
+  title: string
+}>

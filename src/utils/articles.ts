@@ -7,6 +7,7 @@ import { TArticleItem } from '@src/types'
 
 const PATH = 'src/articles'
 const articlesDirectory = path.join(process.cwd(), PATH)
+const articleFileNames = fs.readdirSync(articlesDirectory)
 
 const readContents = (id: string) => {
   const fullPath = path.join(articlesDirectory, `${id}.md`)
@@ -14,8 +15,7 @@ const readContents = (id: string) => {
   return fileContents
 }
 
-export const getSortedArticleList = () => {
-  const fileNames = fs.readdirSync(articlesDirectory)
+export const getSortedArticleList = (fileNames = articleFileNames) => {
   const allArticlesData = fileNames.map(fileName => {
     const id = fileName.replace(/\.md$/, '')
     const fileContents = readContents(id)
@@ -30,9 +30,7 @@ export const getSortedArticleList = () => {
   return allArticlesData.reverse()
 }
 
-export function getAllArticleIds() {
-  const fileNames = fs.readdirSync(articlesDirectory)
-
+export function getAllArticleIds(fileNames = articleFileNames) {
   return fileNames.map(fileName => {
     return {
       params: {
