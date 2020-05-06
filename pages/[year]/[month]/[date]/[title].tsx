@@ -1,5 +1,6 @@
 import { GetStaticProps, GetStaticPaths } from 'next'
 import { getAllArticlePathParams, getArticleData } from '@src/utils/articles'
+import { stripHtmlTags } from '@src/utils/string'
 import Layout from '@src/components/templates/layout'
 import Time from '@src/components/atoms/time'
 
@@ -32,7 +33,7 @@ const Article = ({
   }
 }) => {
   return (
-    <Layout title={articleData.title}>
+    <Layout title={ stripHtmlTags(articleData.title) }>
       <h1 dangerouslySetInnerHTML={{ __html: articleData.title }} />
       <Time date={articleData.date} />
       <div dangerouslySetInnerHTML={{ __html: articleData.body }} />
