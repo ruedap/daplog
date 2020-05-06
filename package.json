@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "next dev -p 3333",
     "start": "next build && next start -p 3334",
-    "build": "npm run json && next build",
+    "build": "npm run test && next build",
     "clean": "rimraf public/api/ && mkdir public/api/",
     "json": "npm run clean && processmd ./articles/**/*.md --stdout --outputDir ./public/api/articles > ./public/api/articles.json",
     "deploy": "npm run build && firebase deploy",
