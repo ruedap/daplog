@@ -1,14 +1,19 @@
-
 :root {
-  // Colors
+  // Color
+  --b-rgb-base: 24, 63, 83;
+  --b-color-key1: rgba(var(--b-rgb-base), 0.13);
+  --b-color-key2: rgba(var(--b-rgb-base), 0.21);
+  --b-color-key3: rgba(var(--b-rgb-base), 0.34);
+  --b-color-key4: rgba(var(--b-rgb-base), 0.55);
+
   --b-color-body: #21272d;
-  --b-bgColor-body: rgba(24, 63, 83, 0.13);
+  --b-bgColor-body: var(--b-color-key1);
   --b-bgColor-content: #fff;
   
-  // Sizes
+  // Size
   --b-maxWidth-container: 987px;
   
-  
+  // Font
   --b-fontFamily-gothic: "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
   --b-fontFamily-helvetica: "Helvetica Neue", Helvetica, Arial, var(--b-fontFamily-gothic)
 }
