@@ -1,10 +1,12 @@
+@import "./abstractions";
+
 :root {
   // Color
   --b-rgb-base: 24, 63, 83;
-  --b-color-key1: rgba(var(--b-rgb-base), 0.13);
-  --b-color-key2: rgba(var(--b-rgb-base), 0.21);
-  --b-color-key3: rgba(var(--b-rgb-base), 0.34);
-  --b-color-key4: rgba(var(--b-rgb-base), 0.55);
+  --b-color-key1: rgba(var(--b-rgb-base), #{a-fibo(2xs, alpha)});
+  --b-color-key2: rgba(var(--b-rgb-base), #{a-fibo(xs, alpha)});
+  --b-color-key3: rgba(var(--b-rgb-base), #{a-fibo(sm, alpha)});
+  --b-color-key4: rgba(var(--b-rgb-base), #{a-fibo(md, alpha)});
 
   --b-color-body: #21272d;
   --b-bgColor-body: var(--b-color-key1);
