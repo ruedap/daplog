@@ -5,3 +5,21 @@
   margin-right: auto;
   max-width: var(--b-maxWidth-container);
 }
+
+@mixin a-fontSmoothing {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+}
+
+@mixin a-dapicons {
+  @include a-fontSmoothing();
+  font-family: "dapicons";
+  font-feature-settings: "liga", "dlig";
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  line-height: 1;
+  speak: none;
+  text-rendering: optimizeLegibility;
+  text-transform: none;
+}

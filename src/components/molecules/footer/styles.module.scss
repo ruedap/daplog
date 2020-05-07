@@ -10,7 +10,7 @@
   background-image: linear-gradient(var(--b-color-key3) 0, var(--b-color-key4) 100%);
   /* TODO: タブレット以下では非表示にする */
   &::before {
-    // ${styles.mixins.dapicons}
+    @include a-dapicons;
     color: var(--b-color-key2) ;
     content: "ruedap";
     font-size: 5.5rem;
