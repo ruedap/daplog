@@ -1,4 +1,14 @@
 
 :root {
-  --b-sizes-maxWidth-container: 987px;
+  // Colors
+  --b-color-body: #21272d;
+  --b-bgColor-body: rgba(24, 63, 83, 0.13);
+  --b-bgColor-content: #fff;
+  
+  // Sizes
+  --b-maxWidth-container: 987px;
+  
+  
+  --b-fontFamily-gothic: "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+  --b-fontFamily-helvetica: "Helvetica Neue", Helvetica, Arial, var(--b-fontFamily-gothic)
 }

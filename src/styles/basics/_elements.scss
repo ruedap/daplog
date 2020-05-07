@@ -1,0 +1,18 @@
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+body {
+  background-color: var(--b-bgColor-body);
+  color:  var(--b-color-body);
+  font-family: var(--b-fontFamily-helvetica);
+  font-size: 1.4rem;
+}
+a {
+  // @include link-colors($color-link, $color-link-hover, $color-link-active, $color-link-visited, $color-link-focus);
+}

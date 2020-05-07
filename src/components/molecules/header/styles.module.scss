@@ -26,9 +26,9 @@
 }
 
 .logoOuter {
+  background-color: var(--b-bgColor-body);
   // TODO: custom properties
-  background-color: rgba(24,63,83,0.13);
-  background-image: radial-gradient(rgba(24,63,83,0.13), rgba(24,63,83,0.34));
+  background-image: radial-gradient(var(--b-bgColor-body), rgba(24,63,83,0.34));
   border-radius: 100%;
   bottom: 0;
   display: block;
