@@ -1,10 +1,11 @@
+@import '@src/styles/_abstractions';
+
 .Root {
-  opacity: 1;
+  opacity: a-fibo(md, alpha);
   transition: opacity 0.3s;
 
   &:hover {
-    opacity: 0.5;
-
+    opacity: a-fibo(lg, alpha);
   }
 }
 
