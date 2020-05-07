@@ -23,3 +23,66 @@
   text-rendering: optimizeLegibility;
   text-transform: none;
 }
+
+@mixin a-linkColors(
+  $normal: null,
+  $hover: null,
+  $active: null,
+  $visited: null,
+  $focus: null
+) {
+  @if $normal {
+    color: $normal;
+  }
+  @if $hover {
+    &:hover {
+      color: $hover;
+    }
+  }
+  @if $active {
+    &:active {
+      color: $active;
+    }
+  }
+  @if $visited {
+    &:visited {
+      color: $visited;
+    }
+  }
+  @if $focus {
+    &:focus {
+      color: $focus;
+    }
+  }
+}
+
+@mixin a-ellipsis($lines) {
+  @supports (-webkit-line-clamp: $lines) {
+    display: -webkit-box;
+    overflow: hidden;
+    -webkit-line-clamp: $lines;
+    /*! autoprefixer: ignore next */
+    -webkit-box-orient: vertical;
+  }
+  @supports not (-webkit-line-clamp: $lines) {
+    display: block;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+}
+
+$a-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px
+);
+
+@mixin a-mq-up($breakpoint) {
+  $b: map-get($a-breakpoints, $breakpoint);
+  @media (min-width: $b) {
+    @content;
+  }
+}

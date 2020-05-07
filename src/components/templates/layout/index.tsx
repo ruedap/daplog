@@ -23,7 +23,13 @@ const Layout = ({
       </Head>
 
       <Header />
-      <main className={styles.container}>{children}</main>
+
+      <main>
+        <div className={styles.container}>
+          {children}
+        </div>
+      </main>
+
       <Footer />
     </>
   )

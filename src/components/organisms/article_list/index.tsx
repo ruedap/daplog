@@ -1,5 +1,6 @@
 import React from 'react'
 import Link from 'next/link'
+import cn from 'classnames'
 import { TArticleItem } from '@src/types'
 import styles from './styles.module.scss'
 import { id2Url } from '@src/utils/string'
@@ -10,14 +11,14 @@ const Time = ({ dateString }: { dateString: string }) => {
   const d = parseISO(dateString)
   const year = format(d, 'yyyy')
   const month = format(d, 'MM')
-  const day = format(d, 'dd')
+  const date = format(d, 'dd')
   return (
-    <time dateTime={d.toISOString()}>
-      <span>{year}</span>
-      <span>.</span>
-      <span>{month}</span>
-      <span>.</span>
-      <span>{day}</span>
+    <time dateTime={d.toISOString()} className={styles.time}>
+      <span className={styles.year}>{year}</span>
+      <span className={styles.dot}>.</span>
+      <span className={styles.month}>{month}</span>
+      <span className={styles.dot}>.</span>
+      <span className={styles.date}>{date}</span>
     </time>
   )
 }
@@ -42,13 +43,13 @@ const ArticleList = ({
         return (
           <React.Fragment key={id}>
             { isNewYear(year) && (
-              <li>{year}</li>
+              <li className={cn(styles.item, styles.yearHeading)}>{year}</li>
             )}
-            <li className="">
+            <li className={styles.item}>
               <Link href="[year]/[month]/[date]/[title]" as={url}>
-                <a>
+                <a className={styles.itemLink}>
                   <Time dateString={date} />
-                  <span>{title}</span>
+                  <span className={styles.title}>{title}</span>
                 </a>
               </Link>
             </li>

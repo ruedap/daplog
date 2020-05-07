@@ -1,3 +1,117 @@
+@import '@src/styles/_abstractions';
+
 .Root {
-  color: red;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+  list-style: none;
+  color: #fff;
+}
+
+.item {
+  @include a-fontSmoothing;
+  font-size: 1.4rem;
+  line-height: a-fibo(sm, px);
+  margin-bottom: 1px;
+
+  @include a-mq-up(md) {
+    font-size: 1.8rem;
+    line-height: a-fibo(md, px);
+  }
+}
+
+.itemLink {
+  @include a-linkColors(
+    #fff,
+    rgba(var(--b-rgb-base), a-fibo(md, alpha)),
+    rgba(var(--b-rgb-base), a-fibo(sm, alpha)),
+    rgba(var(--b-rgb-base), a-fibo(md, alpha)),
+    #fff
+  );
+  background-color: #fff;
+  display: block;
+  font-family: var(--b-fontFamily-lucida);
+  text-decoration: none;
+  width: 100%;
+
+  &:hover {
+    .month {
+      background-color: rgba(var(--b-rgb-base), 0.26);
+    }
+
+    .date {
+      background-color: rgba(var(--b-rgb-base), 0.3);
+    }
+
+    .title {
+      background-color: rgba(var(--b-rgb-base), 0.34);
+    }
+  }
+}
+
+
+.yearHeading {
+  background-color: rgba(var(--b-rgb-base), a-fibo(sm, alpha));
+  color: rgba(var(--b-rgb-base), a-fibo(lg, alpha));
+  font-family: var(--b-fontFamily-fjalla);
+  height: a-fibo(sm, px);
+  letter-spacing: 0.1em;
+  text-align: center;
+
+  @include a-mq-up(md) {
+    height: a-fibo(md, px);
+  }
+}
+
+.year,
+.dot {
+  display: none;
+}
+
+.time {
+  background-color: #fff;
+  display: block;
+  float: left;
+}
+
+.month,
+.date,
+.title {
+  height: a-fibo(sm, px);
+
+  @include a-mq-up(md) {
+    height: a-fibo(md, px);
+  }
+}
+
+.month,
+.date {
+  display: none;
+  font-family: var(--b-fontFamily-fjalla);
+  letter-spacing: 0.1em;
+  width: a-fibo(md, px);
+  text-align: center;
+
+  @include a-mq-up(md) {
+    display: inline-block;
+  }
+}
+
+.month {
+  background-color: rgba(var(--b-rgb-base), 0.34);
+}
+
+.date {
+  background-color: rgba(var(--b-rgb-base), 0.38);
+}
+
+.title {
+  @include a-ellipsis(1);
+  background-color: rgba(var(--b-rgb-base), 0.42);
+  display: block;
+  padding: 0 21px;
+
+  @include a-mq-up(md) {
+    margin-left: (a-fibo(md, px) * 2);
+  }
 }
