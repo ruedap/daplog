@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import { TArticleData } from '@src/types'
 import Time from '@src/components/atoms/time'
+import TimeSvg from '@src/components/atoms/time_svg'
 import styles from './styles.module.scss'
 
 const githubLink = (id: string) => {
@@ -15,7 +16,7 @@ const Article = ({ articleData }: { articleData: TArticleData }) => {
         <div className={styles.datetimeSpacer}>
           <Time date={articleData.date} />
         </div>
-        {/* TODO: TimeSVG tag */}
+        <TimeSvg date={articleData.date} />
       </div>
       <h1 className={styles.title} dangerouslySetInnerHTML={{ __html: articleData.title }} />
       <a className={styles.githubLink} href={githubLink(articleData.id)} />
