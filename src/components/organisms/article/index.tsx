@@ -19,7 +19,7 @@ const Article = ({ articleData }: { articleData: TArticleData }) => {
         <TimeSvg date={articleData.date} />
       </div>
       <h1 className={styles.title} dangerouslySetInnerHTML={{ __html: articleData.title }} />
-      <a className={styles.githubLink} href={githubLink(articleData.id)} />
+      <a className={styles.githubLink} href={githubLink(articleData.id)} target="_blank" />
       <section className={styles.body} dangerouslySetInnerHTML={{ __html: articleData.body }} />
       <nav className={styles.nav}>
         <Link href="/">
