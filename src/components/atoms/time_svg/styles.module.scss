@@ -1,0 +1,20 @@
+@import '@src/styles/_abstractions';
+
+.datetimeSVG {
+  display: block;
+  left: 0;
+  position: absolute;
+  top: 0;
+}
+
+.datetimeSVGCircle {
+  fill: rgba(var(--b-rgb-base), a-fibo(sm, alpha));
+}
+
+.datetimeSVGText {
+  @include a-fontSmoothing;
+  fill: #fff;
+  font-family: var(--b-fontFamily-fjalla);
+  font-size: a-fibo(xs, rem);
+  letter-spacing: 0.1em;
+}

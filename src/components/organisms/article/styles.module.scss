@@ -20,27 +20,6 @@
   width: 100%;
 }
 
-.datetimeSVG {
-  display: block;
-  left: 0;
-  position: absolute;
-  top: 0;
-}
-
-/*
-.datetimeSVGCircle {
-  fill: rgba($color-brand, fibo(small, alpha));  // TODO: color
-}
-
-.datetimeSVGText {
-  @include u-fontSmoothing;
-  fill: #fff;
-  font-family: $font-family-fjalla;
-  font-size: fibo(xsmall, rem);
-  letter-spacing: 0.1em;
-}
-*/
-
 .title {
   @include a-fontSmoothing;
   font-family: var(--b-fontFamily-crimson);
