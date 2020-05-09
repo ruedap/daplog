@@ -23,10 +23,10 @@
 .itemLink {
   @include a-linkColors(
     #fff,
-    rgba(var(--b-rgb-base), a-fibo(md, alpha)),
     rgba(var(--b-rgb-base), a-fibo(sm, alpha)),
     rgba(var(--b-rgb-base), a-fibo(md, alpha)),
-    #fff
+    rgba(var(--b-rgb-base), a-fibo(md, alpha)),
+    rgba(var(--b-rgb-base), a-fibo(lg, alpha)),
   );
   background-color: #fff;
   display: block;

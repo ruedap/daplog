@@ -12,6 +12,12 @@
   --b-bgColor-body: var(--b-color-key1);
   --b-bgColor-content: #fff;
   
+  --b-color-link: rgba(var(--b-rgb-base), #{a-fibo(md, alpha)});
+  --b-color-link-visited: rgba(var(--b-rgb-base), #{a-fibo(lg, alpha)});
+  --b-color-link-focus: rgba(var(--b-rgb-base), #{a-fibo(sm, alpha)});
+  --b-color-link-hover: rgba(var(--b-rgb-base), #{a-fibo(sm, alpha)});
+  --b-color-link-active: rgba(var(--b-rgb-base), #{a-fibo(xs, alpha)});
+  
   // Size
   --b-maxWidth-container: 987px;
   --b-ratio-golden: 1.618;

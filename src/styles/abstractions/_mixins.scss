@@ -31,14 +31,14 @@
 }
 
 @mixin a-linkColors(
-  $normal: null,
+  $link: null,
+  $visited: null,
+  $focus: null,
   $hover: null,
   $active: null,
-  $visited: null,
-  $focus: null
 ) {
-  @if $normal {
-    color: $normal;
+  @if $link {
+    color: $link;
   }
   @if $visited {
     &:visited {

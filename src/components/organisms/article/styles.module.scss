@@ -79,7 +79,8 @@
 
 .navLink {
   $_hover: rgba(var(--b-rgb-base), a-fibo(md, alpha));
-  @include a-linkColors(#fff, $_hover, $_hover, #fff, #fff);
+  $_active: rgba(var(--b-rgb-base), a-fibo(lg, alpha));
+  @include a-linkColors(#fff, #fff, $_hover, $_hover, $_active);
   @include a-dapicons;
   @include a-fontSmoothing;
   background-color: rgba(var(--b-rgb-base), a-fibo(xs, alpha));

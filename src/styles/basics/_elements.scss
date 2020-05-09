@@ -17,6 +17,11 @@ body {
 }
 
 a {
-  // TODO
-  // @include link-colors($color-link, $color-link-hover, $color-link-active, $color-link-visited, $color-link-focus);
+  @include a-linkColors(
+    var(--b-color-link),
+    var(--b-color-link-visited),
+    var(--b-color-link-focus),
+    var(--b-color-link-hover),
+    var(--b-color-link-active),
+  )
 }
