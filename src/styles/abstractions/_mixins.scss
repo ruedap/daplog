@@ -6,13 +6,19 @@
   max-width: var(--b-maxWidth-container);
 }
 
-@mixin a-fontSmoothing {
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-font-smoothing: antialiased;
+@mixin a-fontSmoothing($enable: true) {
+  @if $enable {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  } @else {
+    -webkit-font-smoothing: subpixel-antialiased;
+    -moz-osx-font-smoothing: auto;
+  }
 }
 
+
 @mixin a-dapicons {
-  @include a-fontSmoothing();
+  @include a-fontSmoothing;
   font-family: "dapicons";
   font-feature-settings: "liga", "dlig";
   font-style: normal;
