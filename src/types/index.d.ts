@@ -10,3 +10,7 @@ export type TArticlePath = Readonly<{
   date: string
   title: string
 }>
+
+export type TArticleData = TArticleItem & Readonly<{
+  body: string
+}>

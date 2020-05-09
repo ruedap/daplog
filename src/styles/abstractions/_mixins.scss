@@ -1,0 +1,130 @@
+
+@mixin a-container {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: var(--b-maxWidth-container);
+}
+
+@mixin a-fontSmoothing($enable: true) {
+  @if $enable {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  } @else {
+    -webkit-font-smoothing: subpixel-antialiased;
+    -moz-osx-font-smoothing: auto;
+  }
+}
+
+
+@mixin a-dapicons {
+  @include a-fontSmoothing;
+  font-family: "dapicons";
+  font-feature-settings: "liga", "dlig";
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  line-height: 1;
+  speak: none;
+  text-rendering: optimizeLegibility;
+  text-transform: none;
+}
+
+@mixin a-linkColors(
+  $link: null,
+  $visited: null,
+  $focus: null,
+  $hover: null,
+  $active: null,
+) {
+  @if $link {
+    color: $link;
+  }
+  @if $visited {
+    &:visited {
+      color: $visited;
+    }
+  }
+  @if $focus {
+    &:focus {
+      color: $focus;
+    }
+  }
+  @if $hover {
+    &:hover {
+      color: $hover;
+    }
+  }
+  @if $active {
+    &:active {
+      color: $active;
+    }
+  }
+}
+
+@mixin a-ellipsis($lines) {
+  @supports (-webkit-line-clamp: $lines) {
+    display: -webkit-box;
+    overflow: hidden;
+    -webkit-line-clamp: $lines;
+    /*! autoprefixer: ignore next */
+    -webkit-box-orient: vertical;
+  }
+  @supports not (-webkit-line-clamp: $lines) {
+    display: block;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+}
+
+$a-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px
+);
+
+@mixin a-mq-up($breakpoint) {
+  $b: map-get($a-breakpoints, $breakpoint);
+  @media (min-width: $b) {
+    @content;
+  }
+}
+
+@mixin a-articleSectionMark($size-name) {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+
+  &::before,
+  &::after {
+    background-color: rgba(var(--b-rgb-base), a-fibo(xs, alpha));  // TODO: color
+    border-radius: 100%;
+    content: "";
+    display: block;
+    height: a-fibo($size-name, px);
+    left: 50%;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 0;
+    transform: translate(-50%, 0);
+    transform-origin: center center;
+    width: a-fibo($size-name, px);
+  }
+
+  $_margin-left: a-fibo($size-name, px) / 3;
+
+  &::before {
+    margin-left: $_margin-left;
+  }
+
+  &::after {
+    margin-left: -($_margin-left);
+  }
+
+  @content;
+}
