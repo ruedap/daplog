@@ -2,8 +2,9 @@ import fs from 'fs'
 import path from 'path'
 import remark from 'remark'
 import html from 'remark-html'
+import highlight from 'remark-highlight.js'
 import { stripHtmlTags, id2DateString, fileName2Id, id2Prams } from '@src/utils/string'
-import { TArticleItem, TArticlePath } from '@src/types'
+import { TArticleItem } from '@src/types'
 
 const PATH = 'src/articles'
 const articlesDirectory = path.join(process.cwd(), PATH)
@@ -50,6 +51,7 @@ export function getArticleData(id: string) {
 
 const markdown2Html = (markdownStr: string): string => {
   const processedContent = remark()
+    .use(highlight)
     .use(html)
     .processSync(markdownStr)
   
