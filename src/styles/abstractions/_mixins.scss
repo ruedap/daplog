@@ -34,16 +34,6 @@
   @if $normal {
     color: $normal;
   }
-  @if $hover {
-    &:hover {
-      color: $hover;
-    }
-  }
-  @if $active {
-    &:active {
-      color: $active;
-    }
-  }
   @if $visited {
     &:visited {
       color: $visited;
@@ -52,6 +42,16 @@
   @if $focus {
     &:focus {
       color: $focus;
+    }
+  }
+  @if $hover {
+    &:hover {
+      color: $hover;
+    }
+  }
+  @if $active {
+    &:active {
+      color: $active;
     }
   }
 }
@@ -85,4 +85,40 @@ $a-breakpoints: (
   @media (min-width: $b) {
     @content;
   }
+}
+
+@mixin a-articleSectionMark($size-name) {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+
+  &::before,
+  &::after {
+    background-color: rgba(var(--b-rgb-base), a-fibo(xs, alpha));  // TODO: color
+    border-radius: 100%;
+    content: "";
+    display: block;
+    height: a-fibo($size-name, px);
+    left: 50%;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 0;
+    transform: translate(-50%, 0);
+    transform-origin: center center;
+    width: a-fibo($size-name, px);
+  }
+
+  $_margin-left: a-fibo($size-name, px) / 3;
+
+  &::before {
+    margin-left: $_margin-left;
+  }
+
+  &::after {
+    margin-left: -($_margin-left);
+  }
+
+  @content;
 }
