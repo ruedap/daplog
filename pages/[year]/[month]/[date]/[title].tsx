@@ -1,8 +1,9 @@
 import { GetStaticProps, GetStaticPaths } from 'next'
 import { getAllArticlePathParams, getArticleData } from '@src/utils/articles'
 import { stripHtmlTags } from '@src/utils/string'
+import { TArticleData } from '@src/types'
 import Layout from '@src/components/templates/layout'
-import Time from '@src/components/atoms/time'
+import Article from '@src/components/organisms/article'
 
 export const getStaticPaths: GetStaticPaths = async () => {
   const paths = getAllArticlePathParams()
@@ -22,23 +23,12 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
   }
 }
 
-const Article = ({
-  articleData
-}: {
-  articleData: {
-    id: string
-    title: string
-    date: string
-    body: string
-  }
-}) => {
+const ArticlePage = ({ articleData }: { articleData: TArticleData }) => {
   return (
     <Layout title={ stripHtmlTags(articleData.title) }>
-      <h1 dangerouslySetInnerHTML={{ __html: articleData.title }} />
-      <Time date={articleData.date} />
-      <div dangerouslySetInnerHTML={{ __html: articleData.body }} />
+      <Article articleData={articleData} />
     </Layout>
   )
 }
 
-export default Article
+export default ArticlePage

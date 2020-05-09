@@ -13,7 +13,7 @@ export const getStaticProps: GetStaticProps = async () => {
   }
 }
 
-const Home = ({ articleList }: { articleList: TArticleItem[] }) => {
+const HomePage = ({ articleList }: { articleList: TArticleItem[] }) => {
   return (
     <Layout>
       <div className="Container">
@@ -23,4 +23,4 @@ const Home = ({ articleList }: { articleList: TArticleItem[] }) => {
   )
 }
 
-export default Home
+export default HomePage
