@@ -184,17 +184,18 @@ $_fontSize-xs: 1.2rem;
 }
 
 @mixin _footnotes {
+  // TODO: Move to extras.scss
   // scss-lint:disable SelectorFormat
-  > .footnotes {
-    color: #777;
-    font-size: $_fontSize-xs;
-    line-height: var(--b-ratio-golden);
-    margin-top: a-fibo(md, px);
+  // > .footnotes {
+  //   color: #777;
+  //   font-size: $_fontSize-xs;
+  //   line-height: var(--b-ratio-golden);
+  //   margin-top: a-fibo(md, px);
 
-    p {
-      margin: 0.5em 0;
-    }
-  }
+  //   p {
+  //     margin: 0.5em 0;
+  //   }
+  // }
 }
 
 @mixin _highlight {

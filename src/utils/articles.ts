@@ -3,6 +3,7 @@ import path from 'path'
 import remark from 'remark'
 import html from 'remark-html'
 import highlight from 'remark-highlight.js'
+import footnotes from 'remark-footnotes'
 import { stripHtmlTags, id2DateString, fileName2Id, id2Prams } from '@src/utils/string'
 import { TArticleItem } from '@src/types'
 
@@ -51,6 +52,7 @@ export function getArticleData(id: string) {
 
 const markdown2Html = (markdownStr: string): string => {
   const processedContent = remark()
+    .use(footnotes, {inlineNotes: true})
     .use(highlight)
     .use(html)
     .processSync(markdownStr)

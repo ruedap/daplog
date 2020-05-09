@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import cn from 'classnames'
 import { TArticleData } from '@src/types'
 import Time from '@src/components/atoms/time'
 import TimeSvg from '@src/components/atoms/time_svg'
@@ -20,7 +21,7 @@ const Article = ({ articleData }: { articleData: TArticleData }) => {
       </div>
       <h1 className={styles.title} dangerouslySetInnerHTML={{ __html: articleData.title }} />
       <a className={styles.githubLink} href={githubLink(articleData.id)} target="_blank" />
-      <section className={styles.body} dangerouslySetInnerHTML={{ __html: articleData.body }} />
+      <section className={cn(styles.body, 'e-articleBody')} dangerouslySetInnerHTML={{ __html: articleData.body }} />
       <nav className={styles.nav}>
         <Link href="/">
           <a className={styles.navLink}>home</a>
