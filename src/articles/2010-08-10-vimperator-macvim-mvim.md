@@ -16,7 +16,7 @@ chmod u+x mvim
 set editor=set editor='/usr/bin/mvim -f'
 ~~~
 
-* * *
+---
 
 <cite>[MacVimをいれたら、mvimコマンドもいれるべし - namutakaの日記](http://d.hatena.ne.jp/namutaka/20100419/1271694518)</cite>
 <cite>[Vimperatorの外部エディタでmacvim-kaoriyaを使う - vimまっしぐら★ - vimグループ](http://vim.g.hatena.ne.jp/tokorom/20090728/1248807395)</cite>

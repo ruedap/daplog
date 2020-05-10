@@ -17,6 +17,6 @@ $ sudo port -d sync
 $ export PATH=/opt/local/bin:/opt/local/sbin:$PATH
 ~~~
 
-* * *
+---
 
 <cite>[SnowLeopardにMacPortsをインストール \| soi33.org](http://blog.soi33.org/?p=17)</cite>

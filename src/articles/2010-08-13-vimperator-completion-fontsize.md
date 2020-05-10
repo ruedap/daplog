@@ -47,6 +47,6 @@ hi Filter color: #06E; font-weight: bold; " 補完リストでマッチしたテ
 
 フォント（ちいさい文字）周りはこれである程度満足できる状態になった。
 
-* * *
+---
 
 <cite>[うちのvimperator設定を晒してみる Ver.2.0 - Vivre Revive](http://d.hatena.ne.jp/lillilife/20090423/1240489978)</cite>
