@@ -14,3 +14,11 @@ export type TArticlePath = Readonly<{
 export type TArticleData = TArticleItem & Readonly<{
   body: string
 }>
+
+export type TMetaTags = Readonly<{
+  title: string
+  description: string
+  keywords: string[]
+  image: string
+  url: string
+}>
