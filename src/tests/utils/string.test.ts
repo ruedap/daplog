@@ -1,5 +1,6 @@
 import { id2Prams, generateMetaTags } from '@src/utils/string'
 import { TArticlePath, TMetaTags } from '@src/types'
+import { BLOG_NAME } from '@src/utils/constants'
 
 describe('id2Prams', () => {
     const id = '2000-01-01-aaa-bbb-ccc'
@@ -13,7 +14,7 @@ describe('id2Prams', () => {
 
 describe('generateMetaTags', () => {
     const expected: TMetaTags = {
-        title: 'アインシュタインの電話番号',
+        title: BLOG_NAME,
         description: 'Commit Every Day, Blog Every Week',
         keywords: [],
         image: 'https://blog.ruedap.com/images/ogp.png',
@@ -34,7 +35,7 @@ describe('generateMetaTags', () => {
             url: 'https://blog.ruedap.com/2011/08/11/uhloop'
         } as TMetaTags
         const e = Object.assign({}, args, {
-            title: `記事のタイトル - アインシュタインの電話番号`
+            title: `記事のタイトル - ${BLOG_NAME}`
         })
         const r: TMetaTags = generateMetaTags(args)
         expect(r).toEqual(e)
@@ -45,7 +46,7 @@ describe('generateMetaTags', () => {
             title: '記事のタイトル2',
         }
         const e = Object.assign({}, expected, {
-            title: `記事のタイトル2 - アインシュタインの電話番号`
+            title: `記事のタイトル2 - ${BLOG_NAME}`
         })
         const r: TMetaTags = generateMetaTags(args)
         expect(r).toEqual(e)
