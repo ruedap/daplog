@@ -1,4 +1,5 @@
-import { TArticlePath } from '@src/types'
+import { TArticlePath, TMetaTags } from '@src/types'
+import { BLOG_NAME } from '@src/utils/constants'
 
 export const stripHtmlTags = (htmlStr: string): string => {
   return htmlStr.replace(/(<([^>]+)>)/ig, '')
@@ -19,4 +20,14 @@ export const id2Prams = (id: string): TArticlePath => {
 
 export const id2DateString = (id: string):string => {
   return id.slice(0, 10)
+}
+
+export const generateMetaTags = (metaTags?: Partial<TMetaTags>): TMetaTags => {
+  return {
+    title: metaTags?.title ? `${stripHtmlTags(metaTags.title)} - ${BLOG_NAME}` : BLOG_NAME,
+    description: metaTags?.description ?? 'Commit Every Day, Blog Every Week',
+    keywords: metaTags?.keywords ?? [],
+    image: metaTags?.image ?? 'https://blog.ruedap.com/images/ogp.png',
+    url: metaTags?.url ?? 'https://blog.ruedap.com',
+  } as TMetaTags
 }
