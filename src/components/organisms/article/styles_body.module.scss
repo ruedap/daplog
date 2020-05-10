@@ -202,7 +202,7 @@ $_fontSize-xs: 1.2rem;
   // scss-lint:disable SelectorFormat
   > pre {
     @include a-fontSmoothing(false);
-    background-color: #fff;
+    background-color: #f8f8f8;
     border: 3px solid #eee;
     box-shadow: inset 0 0 0 1px #ccc;
     padding: 1px;
@@ -219,20 +219,21 @@ $_fontSize-xs: 1.2rem;
     // word-wrap: normal;
 
     > code {
-      // color: red;
-      padding: 8px 13px;
+      display: block;
+      padding: 0.7em 1.4em 0.9em;
       font-family: var(--b-fontFamily-mono);
-      font-size: 1.3rem;
       // font-size: 79%;
+      font-size: 1.3rem;
       font-style: normal;
       font-weight: normal;
       line-height: var(--b-ratio-golden);
+      overflow-x: auto;
     }
   }
 }
 
 @mixin _code {
-  p > code,
+  :not(pre) code,
   kbd {
     @include a-fontSmoothing(false);
     background-color: #f2f2f2;
@@ -270,6 +271,12 @@ $_fontSize-xs: 1.2rem;
     }
 
     th {
+      // TODO: hide header
+      &:empty {
+        height: 4px;
+        padding: 0;
+      }
+
       background-color: $_border-color;
       font-weight: normal;
     }
