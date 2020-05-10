@@ -1,6 +1,6 @@
 import { GetStaticProps, GetStaticPaths } from 'next'
 import { getAllArticlePathParams, getArticleData } from '@src/utils/articles'
-import { stripHtmlTags } from '@src/utils/string'
+import { stripHtmlTags, generateMetaTags, id2Url } from '@src/utils/string'
 import { TArticleData } from '@src/types'
 import Layout from '@src/components/templates/layout'
 import Article from '@src/components/organisms/article'
@@ -24,8 +24,13 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
 }
 
 const ArticlePage = ({ articleData }: { articleData: TArticleData }) => {
+  const title = stripHtmlTags(articleData.title)
+  const description = stripHtmlTags(articleData.body).replace(/\r?\n/g, '').slice(0, 500)
+  const url = `https://blog.ruedap.com/${id2Url(articleData.id)}`
+  const metaTags = generateMetaTags({ title, description, url });
+
   return (
-    <Layout title={ stripHtmlTags(articleData.title) }>
+    <Layout metaTags={metaTags}>
       <Article articleData={articleData} />
     </Layout>
   )

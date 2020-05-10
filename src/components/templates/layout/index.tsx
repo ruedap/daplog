@@ -1,26 +1,19 @@
-import Head from 'next/head'
+import Head from '@src/components/atoms/head'
 import Header from '@src/components/molecules/header'
 import Footer from '@src/components/molecules/footer'
+import { TMetaTags } from '@src/types'
 import styles from './styles.module.scss'
-import { BLOG_NAME } from '@src/utils/constants'
 
 const Layout = ({
+  metaTags,
   children,
-  title
 }: {
+  metaTags: TMetaTags
   children: React.ReactNode
-  title?: string
 }) => {
   return (
     <>
-      <Head>
-        { title ? (
-          <title>{`${title} - ${BLOG_NAME}`}</title>
-        ) : (
-          <title>{BLOG_NAME}</title>
-        )}
-        <link rel="icon" href="/images/favicon.ico" />
-      </Head>
+      <Head metaTags={metaTags} />
 
       <Header />
 
