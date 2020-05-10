@@ -18,7 +18,7 @@
 
 
 @mixin a-dapicons {
-  @include a-fontSmoothing;
+  @include a-fontSmoothing(false);
   font-family: "dapicons";
   font-feature-settings: "liga", "dlig";
   font-style: normal;

@@ -17,6 +17,6 @@ set hintmatching=custom
 
 動作が結構重くなるので、バックスラッシュ検索をデフォルトにして、Migemoの方を何か足したときにMigemo検索、としたいところ。
 
-* * *
+---
 
 <cite>[Vimpeartor の導入を考えている人へ - orz blog](http://d.hatena.ne.jp/masa138/20091012/1255357640)</cite>

@@ -29,6 +29,6 @@ $ sudo port install git-core +doc +gitweb +svn +bash_completion
 
 どちらも、インストールには結構時間かかる。
 
-* * *
+---
 
 <cite>[せっかちな人のための git 入門 - git をインストールし、共同で開発できる環境を整えるまで](http://blog.champierre.com/archives/670)</cite>
