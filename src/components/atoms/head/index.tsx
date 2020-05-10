@@ -4,6 +4,7 @@ import { TMetaTags } from '@src/types'
 const Head = ({ metaTags }: { metaTags: TMetaTags }) => {
   return (
     <NextHead>
+      <meta charSet="utf-8" />
       <title>{metaTags.title}</title>
       <meta property="og:title" content={metaTags.title} />
       <meta property="og:description" content={metaTags.description} />
