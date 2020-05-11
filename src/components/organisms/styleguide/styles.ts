@@ -24,12 +24,15 @@ const cssHover = css`
 `
 
 export const cssBounce = keyframes`
-  from {
-    transform: scale(1.01);
-  }
-  to {
-    transform: scale(0.99);
-  }
+  from { transform: scale(1.01); }
+  to { transform: scale(0.99); }
+`
+
+export const cssShake = keyframes`
+  10%, 90% { transform: translateY(-1px); }
+  20%, 80% { transform: translateY(2px); }
+  30%, 50%, 70% { transform: translateY(-4px); }
+  40%, 60% { transform: translateY(4px); }
 `
 
 const Tag1 = styled.div`
