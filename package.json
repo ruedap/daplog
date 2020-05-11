@@ -6,6 +6,7 @@
     "dev": "next dev -p 3333",
     "start": "next build && next start -p 3334",
     "build": "npm run test && next build",
+    "deploy": "npm run build && next export && firebase deploy",
     "test": "jest"
   },
   "dependencies": {
