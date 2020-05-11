@@ -47,13 +47,13 @@ const Tag2 = styled.div`
   }
 `
 
-const Tag3 = styled.div`
+const Tag3 = styled.div<{animation: Keyframes}>`
   ${cssBase};
   ${cssHover};
   & code {
     background-color: linen;
   }
-  animation: ${(props : { animation: Keyframes }) => props.animation} 0.2s infinite ease-in-out alternate;
+  animation: ${({animation}) => animation} 0.2s infinite ease-in-out alternate;
 `
 
 const Styled = {
