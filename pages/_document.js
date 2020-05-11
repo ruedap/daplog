@@ -2,8 +2,15 @@
 import React from 'react'
 import Document, { Html, Head, Main, NextScript } from 'next/document'
 import { GA_TRACKING_ID } from '@src/utils/gtag'
+import { extractCritical } from '@emotion/server'
 
 export default class extends Document {
+  static getInitialProps({ renderPage }) {
+    const page = renderPage()
+    const styles = extractCritical(page.html)
+    return { ...page, ...styles }
+  }
+
   render() {
     return (
       // TODO: i18n
@@ -25,6 +32,10 @@ export default class extends Document {
             });
           `,
             }}
+          />
+          <style
+            data-emotion-css={this.props.ids.join(' ')}
+            dangerouslySetInnerHTML={{ __html: this.props.css }}
           />
         </Head>
         <body>
