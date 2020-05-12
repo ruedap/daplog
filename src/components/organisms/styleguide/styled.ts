@@ -2,7 +2,7 @@ import { keyframes, css } from '@emotion/react'
 import { Keyframes } from '@emotion/serialize/types'
 import styled from '@emotion/styled'
 
-const cssBase = css`
+const base = css`
   background-color: white;
   color: cornflowerblue;
   border: 1px solid lightgreen;
@@ -14,7 +14,7 @@ const cssBase = css`
   padding: 1rem 0.5rem;
 `
 
-const cssHover = css`
+const hover = css`
   &:hover {
     color: white;
     background-color: lightgray;
@@ -23,12 +23,12 @@ const cssHover = css`
   }
 `
 
-export const cssBounce = keyframes`
+const bounce = keyframes`
   from { transform: scale(1.01); }
   to { transform: scale(0.99); }
 `
 
-export const cssShake = keyframes`
+const shake = keyframes`
   10%, 90% { transform: translateY(-1px); }
   20%, 80% { transform: translateY(2px); }
   30%, 50%, 70% { transform: translateY(-4px); }
@@ -36,20 +36,20 @@ export const cssShake = keyframes`
 `
 
 const Tag1 = styled.div`
-  ${cssBase};
+  ${base};
 `
 
 const Tag2 = styled.div`
-  ${cssBase};
-  ${cssHover};
+  ${base};
+  ${hover};
   & code {
     background-color: linen;
   }
 `
 
 const Tag3 = styled.div<{animation: Keyframes}>`
-  ${cssBase};
-  ${cssHover};
+  ${base};
+  ${hover};
   & code {
     background-color: linen;
   }
@@ -57,6 +57,8 @@ const Tag3 = styled.div<{animation: Keyframes}>`
 `
 
 const Styled = {
+  bounce,
+  shake,
   Tag1,
   Tag2,
   Tag3,

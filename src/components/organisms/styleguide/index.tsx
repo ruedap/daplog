@@ -1,4 +1,4 @@
-import Styled, { cssBounce, cssShake } from './styles'
+import Styled from './styled'
 
 const Styleguide = () => {
   return (
@@ -7,8 +7,8 @@ const Styleguide = () => {
       <Styled.Tag2>
         With <code>:hover</code>.
       </Styled.Tag2>
-      <Styled.Tag3 animation={cssBounce}>Let's bounce.</Styled.Tag3>
-      <Styled.Tag3 animation={cssShake}>Let's shake.</Styled.Tag3>
+      <Styled.Tag3 animation={Styled.bounce}>Let's bounce.</Styled.Tag3>
+      <Styled.Tag3 animation={Styled.shake}>Let's shake.</Styled.Tag3>
     </>
   )
 }
