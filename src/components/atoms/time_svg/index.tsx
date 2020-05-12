@@ -1,13 +1,13 @@
-import styles from './styles.module.scss'
+import Styled from './styled'
 
 const TimeSvg = ({ date }) => {
   return (
-    <svg className={styles.datetimeSVG} version="1.1" viewBox="0 0 987 610">
-      <circle className={styles.datetimeSVGCircle} cx={173} cy={377} r={116} />
-      <text className={styles.datetimeSVGText} x={173} y={377} textAnchor="middle" dy={7} stroke="none">
+    <Styled.Svg version="1.1" viewBox="0 0 987 610">
+      <Styled.Circle cx={173} cy={377} r={116} />
+      <Styled.Text x={173} y={377} textAnchor="middle" dy={7} stroke="none">
         { date.replace(/-/g, '.') }
-      </text>
-    </svg>
+      </Styled.Text>
+    </Styled.Svg>
   )
 }
 
