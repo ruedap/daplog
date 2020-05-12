@@ -1,19 +1,19 @@
 import FooterLogo from '@src/components/atoms/footer_logo'
-import styles from './styles.module.scss'
+import Styled from './styled'
 import { PORTFOLIO_SITE_NAME } from '@src/utils/constants'
 
 const Footer = () => {
   return (
-    <footer className={styles.Root}>
-      <div className={styles.container}>
-        <div className={styles.heading}>
-          <div className={styles.logoSpacer}>{PORTFOLIO_SITE_NAME}</div>
-          <a className={styles.logo} href="https://ruedap.com" target="_blank">
+    <Styled.Root>
+      <Styled.Container>
+        <Styled.Heading>
+          <Styled.LogoSpacer>{PORTFOLIO_SITE_NAME}</Styled.LogoSpacer>
+          <Styled.LogoLink href="https://ruedap.com" target="_blank">
             <FooterLogo />
-          </a>
-        </div>
-      </div>
-    </footer>
+          </Styled.LogoLink>
+        </Styled.Heading>
+      </Styled.Container>
+    </Styled.Root>
   )
 }
 
