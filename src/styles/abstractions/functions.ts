@@ -24,8 +24,9 @@ export const fibo = (sizeName: TSizeName, unit?: TUnit): string => {
 
   switch (unit) {
     case 'px':
-    case 'rem':
       return `${size}${unit}`
+    case 'rem':
+      return `${size / 10}${unit}`
     case 'alpha':
       return `${size / 100}`
     default:

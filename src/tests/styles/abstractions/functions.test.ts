@@ -13,7 +13,7 @@ describe('fibo', () => {
 
     test(`should return '2rem'.`, () => {
         const r = fibo('6xs', 'rem')
-        expect(r).toEqual('2rem')
+        expect(r).toEqual('0.2rem')
     });
 
     test(`should return '1.44'.`, () => {
