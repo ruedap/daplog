@@ -1,7 +1,7 @@
 import { PORTFOLIO_SITE_NAME } from '@src/utils/constants'
-import styles from './styles.module.scss'
+import Styled from './styled'
 
 // TODO: inline svg
-const FooterLogo = () => <img src="/images/common/footer-logo.svg" className={styles.Root} alt={PORTFOLIO_SITE_NAME} />
+const FooterLogo = () => <Styled.Img src="/images/common/footer-logo.svg" alt={PORTFOLIO_SITE_NAME} />
 
 export default FooterLogo
