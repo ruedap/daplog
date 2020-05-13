@@ -34,7 +34,7 @@
   },
   "jest": {
     "moduleNameMapper": {
-      "^@src/(.+)": "<rootDir>/src/$1"
+      "^@/(.+)": "<rootDir>/$1"
     },
     "moduleFileExtensions": [
       "ts",

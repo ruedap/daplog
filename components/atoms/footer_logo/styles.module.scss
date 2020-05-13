@@ -1,0 +1,20 @@
+@import '@/styles/_abstractions';
+
+.Root {
+  opacity: a-fibo(md, alpha);
+  transition: opacity 0.3s;
+
+  &:hover {
+    opacity: a-fibo(lg, alpha);
+  }
+}
+
+// TODO: inline svg
+// .footer_logo_svg__circle {
+//   cursor: pointer;
+//   fill: rgba(255,255,255,0.55);
+//   transition: fill 0.3s;
+//   &:hover {
+//     fill: rgba(255,255,255,0.89);
+//   }
+// }
