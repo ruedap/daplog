@@ -14,7 +14,7 @@
     "date-fns": "^2.12.0",
     "gray-matter": "^4.0.2",
     "he": "^1.2.0",
-    "next": "9.3.6",
+    "next": "9.4.0",
     "normalize.css": "^8.0.1",
     "react": "16.13.1",
     "react-dom": "16.13.1",
@@ -34,7 +34,7 @@
   },
   "jest": {
     "moduleNameMapper": {
-      "^@src/(.+)": "<rootDir>/src/$1"
+      "^@/(.+)": "<rootDir>/$1"
     },
     "moduleFileExtensions": [
       "ts",

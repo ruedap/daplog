@@ -1,9 +1,9 @@
 import { GetStaticProps, GetStaticPaths } from 'next'
-import { getAllArticlePathParams, getArticleData } from '@src/utils/articles'
-import { stripHtmlTags, generateMetaTags, id2Url } from '@src/utils/string'
-import { TArticleData } from '@src/types'
-import Layout from '@src/components/templates/layout'
-import Article from '@src/components/organisms/article'
+import { getAllArticlePathParams, getArticleData } from '@/utils/articles'
+import { stripHtmlTags, generateMetaTags, id2Url } from '@/utils/string'
+import { TArticleData } from '@/types'
+import Layout from '@/components/templates/layout'
+import Article from '@/components/organisms/article'
 
 export const getStaticPaths: GetStaticPaths = async () => {
   const paths = getAllArticlePathParams()
