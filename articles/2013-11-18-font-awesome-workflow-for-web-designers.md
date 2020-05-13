@@ -4,7 +4,7 @@
 
 <figure>
 <a href="/images/2013/11/18/font-awesome-workflow-for-web-designers-01.gif">
-<img src="/images/2013/11/18/font-awesome-workflow-for-web-designers-01.gif" alt="Illustrator CC上でアイコンフォントをペーストしている動作例">
+<img loading="lazy" src="/images/2013/11/18/font-awesome-workflow-for-web-designers-01.gif" alt="Illustrator CC上でアイコンフォントをペーストしている動作例">
 <figcaption>Illustrator CC上でアイコンフォントをペーストしている動作例</figcaption>
 </a>
 </figure>

@@ -28,7 +28,7 @@
 
 <figure>
 <a href="/images/2013/11/11/github-flow-blog-02.png">
-<img src="/images/2013/11/11/github-flow-blog-02.png" alt="GitHub Flow Blog Workflow">
+<img loading="lazy" src="/images/2013/11/11/github-flow-blog-02.png" alt="GitHub Flow Blog Workflow">
 <figcaption>Pull RequestとCIを使ったGitHub Flowなブログ環境</figcaption>
 </a>
 </figure>
@@ -114,7 +114,7 @@
 
 <figure>
 <a href="/images/2013/11/11/github-flow-blog-03.png">
-<img src="/images/2013/11/11/github-flow-blog-03.png" alt="Edit">
+<img loading="lazy" src="/images/2013/11/11/github-flow-blog-03.png" alt="Edit">
 <figcaption>GitHub Web UIの編集画面</figcaption>
 </a>
 </figure>

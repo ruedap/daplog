@@ -2,7 +2,7 @@
 
 <figure>
 <a href="https://github.com/ruedap/alfred2-font-awesome-workflow">
-<img src="/images/2013/10/25/alfred-workflow-for-font-awesome-4-01.png" alt="Font Awesome Workflow for Alfred 2">
+<img loading="lazy" src="/images/2013/10/25/alfred-workflow-for-font-awesome-4-01.png" alt="Font Awesome Workflow for Alfred 2">
 <figcaption>Font Awesome Workflow for Alfred 2</figcaption>
 </a>
 </figure>
