@@ -22,7 +22,8 @@
     "remark-footnotes": "^1.0.0",
     "remark-highlight.js": "^6.0.0",
     "remark-html": "^11.0.1",
-    "sass": "^1.26.5"
+    "sass": "^1.26.5",
+    "styled-components": "^5.1.0"
   },
   "devDependencies": {
     "@types/jest": "25.2.1",
