@@ -79,7 +79,7 @@ describe('ellipsis', () => {
 
 describe('mq.up', () => {
     test(`should return same styles.`, () => {
-        const styles = css`color: blue`
+        const styles = css`color: blue;`
         const actual = mq.up.md(css`
     color: red;
     margin-top: 20px;
@@ -92,7 +92,7 @@ describe('mq.up', () => {
     color: red;
     margin-top: 20px;
     font-size: 13px;
-    color: blue
+    color: blue;
 
   }
 `.join('')
@@ -101,6 +101,40 @@ describe('mq.up', () => {
 })
 
 describe('articleSectionMark', () => {
+    test(`should return same styles.`, () => {
+        const actual = articleSectionMark('sm').join('')
+        const expected = css`
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  &::before,
+  &::after {
+    background-color: rgba(var(--b-rgb-base), 0.21);
+    border-radius: 100%;
+    content: '';
+    display: block;
+    height: 34px;
+    left: 50%;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 0;
+    transform: translate(-50%, 0);
+    transform-origin: center center;
+    width: 34px;
+  }
+  &::before {
+    margin-left: 11.333333333333334px;
+  }
+  &::after {
+    margin-left: -11.333333333333334px;
+  }
+  
+`.join('')
+        expect(actual).toEqual(expected)
+    });
+
     test(`should return same styles.`, () => {
         const styles = css`
   color: red;

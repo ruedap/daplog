@@ -103,7 +103,7 @@ export const mq = {
 
 export const articleSectionMark = (
   sizeName: TSizeName,
-  cssprop: FlattenSimpleInterpolation
+  cssprop?: FlattenSimpleInterpolation
 ) => {
   const marginLeft = `${Number(fibo(sizeName)) / 3}px`;
   return css`
