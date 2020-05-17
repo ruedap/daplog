@@ -5,7 +5,6 @@ import * as gtag from '@/utils/gtag'
 import Styles from '@/styles'
 import '@/styles/normalize.scss'
 import '@/styles/highlightjs.scss'
-import '@/styles/custom_properties.scss'
 import '@/styles/fonts.scss'
 import '@/styles/extras.scss'
 
@@ -20,6 +19,7 @@ const theme: DefaultTheme = {
 export default function App({ Component, pageProps }: AppProps) {
   return (
     <ThemeProvider theme={theme}>
+      <Styles.CustomProperties />
       <Styles.Elements />
       <Component {...pageProps} />
     </ThemeProvider>
