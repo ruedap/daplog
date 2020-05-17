@@ -69,7 +69,7 @@ const Title = styled.h1`
   text-align: center;
   width: 90%;
 
-  ${Styles.mixins.mq.up.md(css`
+  ${Styles.mq.up.md(css`
     font-size: ${Styles.funcs.fibo('sm', 'rem')};
     margin-bottom: ${Styles.funcs.fibo('md', 'px')};
 
@@ -86,7 +86,7 @@ const GitHubLink = styled.a`
   margin-bottom: calc(${Styles.funcs.fibo('sm', 'px')} + 10px);
   width: calc(${Styles.funcs.fibo('xs', 'px')} * 2);
 
-  ${Styles.mixins.mq.up.md(css`
+  ${Styles.mq.up.md(css`
     ${Styles.mixins.articleSectionMark('sm')}
     height: ${Styles.funcs.fibo('sm', 'px')};
     margin-bottom: calc(${Styles.funcs.fibo('md', 'px')} + 10px);
@@ -123,7 +123,7 @@ const Nav = styled.nav`
   margin-top: ${Styles.funcs.fibo('xl', 'px')};
   padding-bottom: ${Styles.funcs.fibo('xl', 'px')};
 
-  ${Styles.mixins.mq.up.md(css`
+  ${Styles.mq.up.md(css`
     margin-top: ${Styles.funcs.fibo('xl2', 'px')};
     padding-bottom: ${Styles.funcs.fibo('xl2', 'px')};
   `)}

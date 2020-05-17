@@ -12,7 +12,7 @@ export const base = css`
   font-size: ${fontSize_md};
   line-height: 1.8;
 
-  ${Styles.mixins.mq.up.md(css`
+  ${Styles.mq.up.md(css`
     line-height: 2;
   `)}
 `
@@ -329,7 +329,7 @@ export const bookCover = css`
       margin: 0 !important;
       width: 90px;
 
-      ${Styles.mixins.mq.up.md(css`
+      ${Styles.mq.up.md(css`
         width: 150px;
       `)}
     }

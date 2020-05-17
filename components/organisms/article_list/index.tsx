@@ -77,7 +77,7 @@ const Item = styled.li`
   line-height: ${Styles.funcs.fibo('sm', 'px')};
   margin-bottom: 1px;
 
-  ${Styles.mixins.mq.up.md(css`
+  ${Styles.mq.up.md(css`
     font-size: 1.8rem;
     line-height: ${Styles.funcs.fibo('md', 'px')};
   `)}
@@ -91,7 +91,7 @@ const YearHeading = styled(Item)`
   letter-spacing: 0.1em;
   text-align: center;
 
-  ${Styles.mixins.mq.up.md(css`
+  ${Styles.mq.up.md(css`
     height: ${Styles.funcs.fibo('md', 'px')};
   `)}
 `
@@ -111,7 +111,7 @@ const Dot = Year
 const _ItemLineBase = styled.span`
   height: ${Styles.funcs.fibo('sm', 'px')};
 
-  ${Styles.mixins.mq.up.md(css`
+  ${Styles.mq.up.md(css`
     height: ${Styles.funcs.fibo('md', 'px')};
   `)}
 `
@@ -122,7 +122,7 @@ const Title = styled(_ItemLineBase)`
   display: block;
   padding: 0 21px;
 
-  ${Styles.mixins.mq.up.md(css`
+  ${Styles.mq.up.md(css`
     margin-left: calc(${Styles.funcs.fibo('md', 'px')} * 2);
   `)}
 `
@@ -135,7 +135,7 @@ const _ItemLineMonthAndDate = styled(_ItemLineBase)`
   width: ${Styles.funcs.fibo('md', 'px')};
   text-align: center;
 
-  ${Styles.mixins.mq.up.md(css`
+  ${Styles.mq.up.md(css`
     display: inline-block;
   `)}
 `

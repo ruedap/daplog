@@ -1,4 +1,9 @@
-import { fontSmoothing, linkColors, ellipsis, mq, articleSectionMark } from '@/styles/abstractions/mixins'
+import {
+  fontSmoothing,
+  linkColors,
+  ellipsis,
+  articleSectionMark,
+} from '@/styles/abstractions/mixins'
 import { fibo } from '@/styles/abstractions/funcs'
 import { css } from 'styled-components'
 
@@ -73,29 +78,6 @@ describe('ellipsis', () => {
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
-  }
-`.join('')
-        expect(actual).toEqual(expected)
-    });
-})
-
-describe('mq.up', () => {
-    test(`should return same styles.`, () => {
-        const styles = css`color: blue;`
-        const actual = mq.up.md(css`
-    color: red;
-    margin-top: 20px;
-    font-size: 13px;
-    ${styles}
-`).join('')
-        const expected = css`
-  @media (min-width: 768px) {
-    
-    color: red;
-    margin-top: 20px;
-    font-size: 13px;
-    color: blue;
-
   }
 `.join('')
         expect(actual).toEqual(expected)

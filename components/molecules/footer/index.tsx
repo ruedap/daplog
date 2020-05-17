@@ -20,7 +20,7 @@ export default Footer
 
 import styled, { css } from 'styled-components'
 import Styles from '@/styles'
-const mq = Styles.mixins.mq
+const mq = Styles.mq
 
 const Root = styled.footer`
   display: block;
