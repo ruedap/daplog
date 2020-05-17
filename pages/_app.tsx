@@ -6,7 +6,6 @@ import Styles from '@/styles'
 import '@/styles/normalize.scss'
 import '@/styles/highlightjs.scss'
 import '@/styles/fonts.scss'
-import '@/styles/extras.scss'
 
 Router.events.on('routeChangeComplete', url => gtag.pageview(url))
 
