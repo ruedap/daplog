@@ -6,9 +6,10 @@ const Head = ({ metaTags }: { metaTags: TMetaTags }) => {
     <NextHead>
       <meta charSet="utf-8" />
       <title>{metaTags.title}</title>
+      <meta name="description" content={metaTags.description} />
+      <meta name="keywords" content={metaTags.keywords.join(',')} />
       <meta property="og:title" content={metaTags.title} />
       <meta property="og:description" content={metaTags.description} />
-      <meta name="keywords" content={metaTags.keywords.join(',')} />
       <meta property="og:site_name" content={metaTags.title} />
       <meta property="og:type" content="blog" />
       <meta property="og:image" content={metaTags.image} />
