@@ -317,3 +317,39 @@ export const table = (() => {
       }
     }
 `})()
+
+export const bookCover = css`
+  .e-bookCover {
+    display: block;
+    float: right;
+    padding: 0.5em 0 0.5em 1.5em;
+    text-align: right;
+
+    > img {
+      margin: 0 !important;
+      width: 90px;
+
+      ${Styles.mixins.mq.up.md(css`
+        width: 150px;
+      `)}
+    }
+  }
+`
+
+export const embed = css`
+  .e-embed-instagram {
+    display: flex;
+    height: 354px;
+    margin: 0 auto 2em;
+  }
+
+  twitter-widget.twitter-tweet {
+    margin: 1.4em auto !important;
+  }
+`
+
+export const dapicons = css`
+  .e-dapicons {
+    ${Styles.mixins.dapicons}
+  }
+`

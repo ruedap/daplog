@@ -113,6 +113,10 @@ const Body = styled.section`
   ${Styled.highlight}
   ${Styled.code}
   ${Styled.table}
+  /* extra styles */
+  ${Styled.bookCover}
+  ${Styled.embed}
+  ${Styled.dapicons}
 `
 
 const Nav = styled.nav`
