@@ -18,7 +18,7 @@ const Article = ({ articleData }: { articleData: TArticleData }) => {
         <TimeSvg date={articleData.date} />
       </TimeContainer>
       <Title dangerouslySetInnerHTML={{ __html: articleData.title }} />
-      <GitHubLink href={githubLink(articleData.id)} target="_blank" />
+      <GitHubLink href={githubLink(articleData.id)} target="_blank" rel="noopener noreferrer" />
       <Body className="e-articleBody" dangerouslySetInnerHTML={{ __html: articleData.body }} />
       <Nav>
         <Link href="/" passHref>

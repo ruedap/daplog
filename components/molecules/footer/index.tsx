@@ -7,7 +7,7 @@ const Footer = () => {
       <Container>
         <Heading>
           <LogoSpacer>{PORTFOLIO_SITE_NAME}</LogoSpacer>
-          <LogoLink href="https://ruedap.com" target="_blank">
+          <LogoLink href="https://ruedap.com">
             <FooterLogo />
           </LogoLink>
         </Heading>
