@@ -2,7 +2,6 @@ import Head from '@/components/atoms/head'
 import Header from '@/components/molecules/header'
 import Footer from '@/components/molecules/footer'
 import { TMetaTags } from '@/types'
-import styles from './styles.module.scss'
 
 const Layout = ({
   metaTags,
@@ -18,9 +17,9 @@ const Layout = ({
       <Header />
 
       <main>
-        <div className={styles.container}>
+        <Container>
           {children}
-        </div>
+        </Container>
       </main>
 
       <Footer />
@@ -29,3 +28,11 @@ const Layout = ({
 }
 
 export default Layout
+
+import styled from 'styled-components'
+import Styles from '@/styles'
+
+const Container = styled.div`
+  ${Styles.mixins.container}
+  background-color: var(--b-bgColor-content);
+`

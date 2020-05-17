@@ -16,18 +16,22 @@
     "he": "^1.2.0",
     "next": "9.4.0",
     "normalize.css": "^8.0.1",
+    "polished": "^3.6.3",
     "react": "16.13.1",
     "react-dom": "16.13.1",
     "remark": "^12.0.0",
     "remark-footnotes": "^1.0.0",
     "remark-highlight.js": "^6.0.0",
     "remark-html": "^11.0.1",
-    "sass": "^1.26.5"
+    "sass": "^1.26.5",
+    "styled-components": "^5.1.0"
   },
   "devDependencies": {
     "@types/jest": "25.2.1",
     "@types/node": "^13.13.4",
     "@types/react": "^16.9.34",
+    "@types/styled-components": "^5.1.0",
+    "babel-plugin-styled-components": "^1.10.7",
     "jest": "25.4.0",
     "ts-jest": "25.4.0",
     "typescript": "^3.8.3"
