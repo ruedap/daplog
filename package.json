@@ -2,12 +2,19 @@
   "name": "daplog",
   "version": "0.1.0",
   "private": true,
+  "engines": {
+    "node": "10"
+  },
+  "main": "firebaseFunctions.js",
   "scripts": {
     "dev": "next dev -p 3333",
-    "start": "next build && next start -p 3334",
-    "build": "npm run test && next build",
-    "deploy": "npm run build && next export && firebase deploy",
-    "test": "jest"
+    "start": "next start -p 3334",
+    "build": "next build",
+    "test": "jest",
+    "serve": "npm run build && firebase emulators:start --only functions,hosting",
+    "shell": "npm run build && firebase functions:shell",
+    "deploy": "firebase deploy --only functions,hosting",
+    "logs": "firebase functions:log"
   },
   "dependencies": {
     "classnames": "^2.2.6",
