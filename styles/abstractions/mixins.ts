@@ -1,6 +1,6 @@
 import { css, FlattenSimpleInterpolation } from 'styled-components'
 import { TSizeName } from '@/types/styled'
-import { fibo } from '@/styles/abstractions/functions'
+import { fibo } from '@/styles/abstractions/funcs'
 
 export const container = css`
   display: block;
