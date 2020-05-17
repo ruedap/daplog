@@ -1,4 +1,5 @@
 import { fontSmoothing, linkColors, ellipsis, mq, articleSectionMark } from '@/styles/abstractions/mixins'
+import { fibo } from '@/styles/abstractions/funcs'
 import { css } from 'styled-components'
 
 // const stripIndent = (str) => str.replace(/^ +/gm, '').replace(/\r?\n/g, '')
@@ -49,8 +50,9 @@ describe('linkColors', () => {
     });
 
     test(`should return same styles.`, () => {
-        const actual = linkColors('#336699', 'black', 'green', 'pink', '#000').join('')
-        const expected = css`color: #336699;&:visited { color: black; }&:focus { color: green; }&:hover { color: pink; }&:active { color: #000; }`.join('')
+        const color = `rgba(var(--b-rgb-base), ${fibo('sm', 'alpha')})`
+        const actual = linkColors('#336699', 'black', color, 'pink', '#000').join('')
+        const expected = css`color: #336699;&:visited { color: black; }&:focus { color: rgba(var(--b-rgb-base), 0.34); }&:hover { color: pink; }&:active { color: #000; }`.join('')
         expect(actual).toEqual(expected)
     });
 })
