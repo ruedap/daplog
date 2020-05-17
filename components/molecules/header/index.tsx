@@ -6,7 +6,7 @@ const Header = () => {
     <header>
       <Inner>
         <Heading>
-          <Link href="/">
+          <Link href="/" passHref>
             <LogoLink>
               <LogoSpacer />
               <LogoOuter>
