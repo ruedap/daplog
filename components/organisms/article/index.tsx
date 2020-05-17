@@ -33,6 +33,7 @@ export default Article
 
 import styled, { css } from 'styled-components'
 import Styles from '@/styles'
+import * as Styled from './styled'
 
 const TimeContainer = styled.div`
   display: block;
@@ -97,6 +98,21 @@ const Body = styled.section`
   margin: 0 auto;
   max-width: 699px;
   width: 90%;
+  ${Styled.base}
+  ${Styled.heading}
+  ${Styled.p}
+  ${Styled.img}
+  ${Styled.strong}
+  ${Styled.list}
+  ${Styled.hr}
+  ${Styled.figure}
+  ${Styled.cite}
+  ${Styled.blockquote}
+  ${Styled.small}
+  ${Styled.footnotes}
+  ${Styled.highlight}
+  ${Styled.code}
+  ${Styled.table}
 `
 
 const Nav = styled.nav`
