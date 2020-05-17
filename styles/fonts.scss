@@ -1,8 +1,9 @@
-@import url(https://fonts.googleapis.com/css?family=Crimson+Text:400&subset=latin);
-@import url(https://fonts.googleapis.com/css?family=Fjalla+One:400&text=1234567890.);
+@import url(https://fonts.googleapis.com/css?family=Crimson+Text:400&subset=latin&display=swap);
+@import url(https://fonts.googleapis.com/css?family=Fjalla+One:400&text=1234567890.&display=swap);
 
 @font-face {
   font-family: "YuMin";
+  font-display: swap;
   src: local("YuMincho"), local("Yu Mincho"), local("游明朝");
 }
 
@@ -10,6 +11,7 @@
   font-family: "dapicons";
   font-style: normal;
   font-weight: normal;
+  font-display: swap;
   src: url("/fonts/dapicons/dapicons.eot");
   src: url("/fonts/dapicons/dapicons.eot?#iefix") format("embedded-opentype"), url("/fonts/dapicons/dapicons.woff") format("woff"), url("/fonts/dapicons/dapicons.ttf") format("truetype"), url("/fonts/dapicons/dapicons.svg#dapicons") format("svg");
 }
