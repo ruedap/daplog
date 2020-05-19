@@ -1,5 +1,6 @@
 import fs from 'fs'
 import path from 'path'
+import iconv from 'iconv-lite'
 import remark from 'remark'
 import html from 'remark-html'
 import highlight from 'remark-highlight.js'
@@ -14,7 +15,12 @@ const articleFileNames = fs.readdirSync(articlesDirectory)
 const readContents = (id: string) => {
   const fullPath = path.join(articlesDirectory, `${id}.md`)
   const fileContents = fs.readFileSync(fullPath, 'utf8')
-  return fileContents
+  return convertUTF8(fileContents)
+}
+
+export const convertUTF8 = (content: string) => {
+  // TODO: Why?
+  return iconv.decode(iconv.encode(content, 'utf8'), 'utf8')
 }
 
 export const getSortedArticleList = (fileNames = articleFileNames) => {

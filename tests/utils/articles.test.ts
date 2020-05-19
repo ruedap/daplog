@@ -1,4 +1,4 @@
-import { getAllArticlePathParams } from '@/utils/articles'
+import { getAllArticlePathParams, convertUTF8 } from '@/utils/articles'
 import { TArticlePath } from '@/types'
 
 describe('getAllArticlePathParams', () => {
@@ -17,5 +17,13 @@ describe('getAllArticlePathParams', () => {
     test('should return params array.', () => {
         const r: { params: TArticlePath }[] = getAllArticlePathParams(fileNames)
         expect(r).toEqual(expectedPathParams)
+    });
+})
+
+describe('convertUTF8', () => {
+    test('should return utf8 string.', () => {
+        const actual = convertUTF8('あいうえお')
+        const expected = 'あいうえお'
+        expect(actual).toEqual(expected)
     });
 })
