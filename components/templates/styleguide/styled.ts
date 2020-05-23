@@ -1,3 +1,5 @@
+export * from './_styled_tag4'
+
 import styled, { css, keyframes, Keyframes } from 'styled-components'
 
 export const Title = styled.h1`
