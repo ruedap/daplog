@@ -1,3 +1,6 @@
+// To solve the issue: https://github.com/DefinitelyTyped/DefinitelyTyped/issues/31245
+/// <reference types="styled-components/cssprop" />
+
 import { AppProps } from 'next/app'
 import Router from 'next/router'
 import { ThemeProvider, DefaultTheme } from 'styled-components'
