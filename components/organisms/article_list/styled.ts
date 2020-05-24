@@ -41,7 +41,6 @@ export const Dot = Year
 
 // FIXME: `Warning: Prop `className` did not match. Server: "styled__Time-sc-5t8qkb-4 ennoTY" Client: "styled-sc-5t8qkb-4 gbbMlh"`
 export const Time = (rc) => styled(rc)`
-  color: red;
   background-color: #fff;
   display: block;
   float: left;
