@@ -1,4 +1,4 @@
-import styled, { css } from 'styled-components'
+import styled, { css, AnyStyledComponent } from 'styled-components'
 import Styles from '@/styles'
 
 export const Root = styled.ul`
@@ -40,7 +40,8 @@ export const Year = styled.span`
 export const Dot = Year
 
 // FIXME: `Warning: Prop `className` did not match. Server: "styled__Time-sc-5t8qkb-4 ennoTY" Client: "styled-sc-5t8qkb-4 gbbMlh"`
-export const Time = (Time) => styled(Time)`
+type TTime = ({ dateString, className }: { dateString: string; className?: string | undefined; }) => JSX.Element
+export const Time = (Time: TTime) => styled(Time)`
   background-color: #fff;
   display: block;
   float: left;
@@ -87,7 +88,7 @@ export const Date = styled(_ItemLineMonthAndDate)`
   background-color: rgba(var(--b-rgb-base), 0.38);
 `
 
-export const ItemLink = (Month, Date, Title) => styled.a`
+export const ItemLink = (Month: AnyStyledComponent, Date: AnyStyledComponent, Title: AnyStyledComponent) => styled.a`
   ${Styles.mixins.linkColors(
     '#fff',
     `rgba(var(--b-rgb-base), ${Styles.funcs.fibo('sm', 'alpha')})`,
