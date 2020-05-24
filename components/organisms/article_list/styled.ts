@@ -40,7 +40,7 @@ export const Year = styled.span`
 export const Dot = Year
 
 // FIXME: `Warning: Prop `className` did not match. Server: "styled__Time-sc-5t8qkb-4 ennoTY" Client: "styled-sc-5t8qkb-4 gbbMlh"`
-export const Time = (rc) => styled(rc)`
+export const Time = (Time) => styled(Time)`
   background-color: #fff;
   display: block;
   float: left;
@@ -87,7 +87,7 @@ export const Date = styled(_ItemLineMonthAndDate)`
   background-color: rgba(var(--b-rgb-base), 0.38);
 `
 
-export const ItemLink = styled.a`
+export const ItemLink = (Month, Date, Title) => styled.a`
   ${Styles.mixins.linkColors(
     '#fff',
     `rgba(var(--b-rgb-base), ${Styles.funcs.fibo('sm', 'alpha')})`,
@@ -102,21 +102,15 @@ export const ItemLink = styled.a`
   width: 100%;
 
   &:hover {
-    /* FIXME: nested selector */
-    /* ${Month} { */
-    .sc-month {
+    ${Month} {
       background-color: rgba(var(--b-rgb-base), 0.26);
     }
 
-    /* FIXME: nested selector */
-    /* ${Date} { */
-    .sc-date {
+    ${Date} {
       background-color: rgba(var(--b-rgb-base), 0.3);
     }
 
-    /* FIXME: nested selector */
-    /* ${Title} { */
-    .sc-title {
+    ${Title} {
       background-color: rgba(var(--b-rgb-base), 0.34);
     }
   }
