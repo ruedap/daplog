@@ -14,9 +14,9 @@ const Time = ({ dateString, className }: { dateString: string, className?: strin
     <time dateTime={d.toISOString()} className={className}>
       <Styled.Year>{year}</Styled.Year>
       <Styled.Dot>.</Styled.Dot>
-      <Styled.Month className="sc-month">{month}</Styled.Month>
+      <Styled.Month>{month}</Styled.Month>
       <Styled.Dot>.</Styled.Dot>
-      <Styled.Date className="sc-date">{date}</Styled.Date>
+      <Styled.Date>{date}</Styled.Date>
     </time>
   )
 }
@@ -34,6 +34,7 @@ const ArticleList = ({
   }
   
   const StyledTime = Styled.Time(Time)
+  const StyledItemLink = Styled.ItemLink(Styled.Month, Styled.Date, Styled.Title)
 
   return (
     <Styled.Root>
@@ -47,10 +48,10 @@ const ArticleList = ({
             )}
             <Styled.Item>
               <Link href="[year]/[month]/[date]/[title]" passHref as={url}>
-                <Styled.ItemLink>
+                <StyledItemLink>
                   <StyledTime dateString={date} />
-                  <Styled.Title className="sc-title">{title}</Styled.Title>
-                </Styled.ItemLink>
+                  <Styled.Title>{title}</Styled.Title>
+                </StyledItemLink>
               </Link>
             </Styled.Item>
           </React.Fragment>
