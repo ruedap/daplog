@@ -9,6 +9,7 @@ const Styleguide = () => {
       <FooBar />
       <FooBarTag4 />
       <Styled.Title>Styleguide</Styled.Title>
+      <div css={Styled.prop}>This is css prop</div>
       <Styled.Tag1>Cool Styles</Styled.Tag1>
       <Styled.Tag2>
         With <code>:hover</code>.

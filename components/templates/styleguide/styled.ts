@@ -28,6 +28,11 @@ const hover = css`
   }
 `
 
+export const prop = css`
+  font-size: 200%;
+  color: indigo;
+`
+
 export const bounce = keyframes`
   from {
     transform: scale(1.01);
