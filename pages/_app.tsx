@@ -11,16 +11,16 @@ Router.events.on('routeChangeComplete', url => gtag.pageview(url))
 
 const theme: DefaultTheme = {
   colors: {
-    primary: 'skyblue',
-  },
+    primary: 'skyblue'
+  }
 }
 
-export default function App({ Component, pageProps }: AppProps) {
+export default function App ({ Component, pageProps }: AppProps) {
   return (
-    <ThemeProvider theme={theme}>
+    <ThemeProvider theme={ theme }>
       <Styles.CustomProperties />
       <Styles.Elements />
-      <Component {...pageProps} />
+      <Component { ...pageProps } />
     </ThemeProvider>
   )
 }

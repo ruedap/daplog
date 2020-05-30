@@ -14,13 +14,13 @@ const Article = ({ articleData }: { articleData: TArticleData }) => {
     <article>
       <Styled.TimeContainer>
         <Styled.TimeSpacer>
-          <Time date={articleData.date} />
+          <Time date={ articleData.date } />
         </Styled.TimeSpacer>
-        <TimeSvg date={articleData.date} />
+        <TimeSvg date={ articleData.date } />
       </Styled.TimeContainer>
-      <Styled.Title dangerouslySetInnerHTML={{ __html: articleData.title }} />
-      <Styled.GitHubLink href={githubLink(articleData.id)} target="_blank" rel="noopener noreferrer" />
-      <Styled.Body className="e-articleBody" dangerouslySetInnerHTML={{ __html: articleData.body }} />
+      <Styled.Title dangerouslySetInnerHTML={ { __html: articleData.title } } />
+      <Styled.GitHubLink href={ githubLink(articleData.id) } target="_blank" rel="noopener noreferrer" />
+      <Styled.Body className="e-articleBody" dangerouslySetInnerHTML={ { __html: articleData.body } } />
       <Styled.Nav>
         <Link href="/" passHref>
           <Styled.NavLink>home</Styled.NavLink>

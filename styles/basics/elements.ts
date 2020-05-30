@@ -26,7 +26,7 @@ export default createGlobalStyle`
       'var(--b-color-link-visited)',
       'var(--b-color-link-focus)',
       'var(--b-color-link-hover)',
-      'var(--b-color-link-active)',
+      'var(--b-color-link-active)'
     )}
   }
 `

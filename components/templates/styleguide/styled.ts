@@ -1,6 +1,6 @@
-export * from './_styled_tag4'
-
 import styled, { css, keyframes, Keyframes } from 'styled-components'
+
+export * from './_styled_tag4'
 
 export const Title = styled.h1`
   font-size: 4rem;
@@ -22,7 +22,7 @@ const base = css`
 
 const hover = css`
   &:hover {
-    color: ${({theme}) => theme.colors.primary};
+    color: ${({ theme }) => theme.colors.primary};
     border-color: aqua;
     box-shadow: -15px -15px 0 0 aqua, -30px -30px 0 0 cornflowerblue;
   }
@@ -67,5 +67,5 @@ export const Tag3 = styled.div<{ animation: Keyframes }>`
   & code {
     background-color: linen;
   }
-  animation: ${({ animation }) => animation } 0.2s infinite ease-in-out alternate;
+  animation: ${({ animation }) => animation} 0.2s infinite ease-in-out alternate;
 `

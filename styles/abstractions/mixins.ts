@@ -41,14 +41,14 @@ export const linkColors = (
   visited?: string,
   focus?: string,
   hover?: string,
-  active?: string,
+  active?: string
 ) => {
   let result = ''
-  if (link)    { result += `color: ${link};` }
+  if (link) { result += `color: ${link};` }
   if (visited) { result += `&:visited { color: ${visited}; }` }
-  if (focus)   { result += `&:focus { color: ${focus}; }` }
-  if (hover)   { result += `&:hover { color: ${hover}; }` }
-  if (active)  { result += `&:active { color: ${active}; }` }
+  if (focus) { result += `&:focus { color: ${focus}; }` }
+  if (hover) { result += `&:hover { color: ${hover}; }` }
+  if (active) { result += `&:active { color: ${active}; }` }
   return css`${result}`
 }
 
@@ -71,7 +71,7 @@ export const articleSectionMark = (
   sizeName: TFiboSizeName,
   cssprop?: FlattenSimpleInterpolation
 ) => {
-  const marginLeft = `${Number(fibo(sizeName)) / 3}px`;
+  const marginLeft = `${Number(fibo(sizeName)) / 3}px`
   return css`
   display: block;
   margin-left: auto;

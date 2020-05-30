@@ -27,11 +27,11 @@ const ArticlePage = ({ articleData }: { articleData: TArticleData }) => {
   const title = stripHtmlTags(articleData.title)
   const description = stripHtmlTags(articleData.body).replace(/\r?\n/g, '').slice(0, 500)
   const url = `https://blog.ruedap.com/${id2Url(articleData.id)}`
-  const metaTags = generateMetaTags({ title, description, url });
+  const metaTags = generateMetaTags({ title, description, url })
 
   return (
-    <Layout metaTags={metaTags}>
-      <Article articleData={articleData} />
+    <Layout metaTags={ metaTags }>
+      <Article articleData={ articleData } />
     </Layout>
   )
 }

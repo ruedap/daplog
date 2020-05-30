@@ -16,7 +16,7 @@ const fiboMap = {
   xs3: 8,
   xs4: 5,
   xs5: 3,
-  xs6: 2,
+  xs6: 2
 } as const
 
 export const fibo = (sizeName: TFiboSizeName, unit?: TFiboUnit): string => {

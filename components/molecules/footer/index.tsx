@@ -7,7 +7,7 @@ const Footer = () => {
     <Styled.Root>
       <Styled.Container>
         <Styled.Heading>
-          <Styled.LogoSpacer>{PORTFOLIO_SITE_NAME}</Styled.LogoSpacer>
+          <Styled.LogoSpacer>{ PORTFOLIO_SITE_NAME }</Styled.LogoSpacer>
           <Styled.LogoLink href="https://ruedap.com">
             <FooterLogo />
           </Styled.LogoLink>
