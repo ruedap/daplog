@@ -120,7 +120,8 @@ export const hr = (() => {
         }
       `)}
     }
-`})()
+`
+})()
 
 export const figure = css`
   figure {
@@ -316,7 +317,8 @@ export const table = (() => {
         border-top: 0;
       }
     }
-`})()
+`
+})()
 
 export const bookCover = css`
   .e-bookCover {

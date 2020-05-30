@@ -6,20 +6,20 @@ import * as Styled from './styled'
 
 const Layout = ({
   metaTags,
-  children,
+  children
 }: {
   metaTags: TMetaTags
   children: React.ReactNode
 }) => {
   return (
     <>
-      <Head metaTags={metaTags} />
+      <Head metaTags={ metaTags } />
 
       <Header />
 
       <main>
         <Styled.Container>
-          {children}
+          { children }
         </Styled.Container>
       </main>
 

@@ -13,12 +13,12 @@ const Time = ({ dateString, className }: { dateString: string, className?: strin
   const month = format(d, 'MM')
   const date = format(d, 'dd')
   return (
-    <time dateTime={d.toISOString()} className={className}>
-      <Styled.Year>{year}</Styled.Year>
+    <time dateTime={ d.toISOString() } className={ className }>
+      <Styled.Year>{ year }</Styled.Year>
       <Styled.Dot>.</Styled.Dot>
-      <StyledMonth>{month}</StyledMonth>
+      <StyledMonth>{ month }</StyledMonth>
       <Styled.Dot>.</Styled.Dot>
-      <StyledDate>{date}</StyledDate>
+      <StyledDate>{ date }</StyledDate>
     </time>
   )
 }
@@ -37,25 +37,25 @@ const ArticleList = ({
 
   return (
     <Styled.Root>
-      {articleList.map(({ id, date, title }) => {
+      { articleList.map(({ id, date, title }) => {
         const url = id2Url(id)
         const year = parseISO(date).getFullYear()
         return (
-          <React.Fragment key={id}>
+          <React.Fragment key={ id }>
             { isNewYear(year) && (
-              <Styled.YearHeading>{year}</Styled.YearHeading>
-            )}
+              <Styled.YearHeading>{ year }</Styled.YearHeading>
+            ) }
             <Styled.Item>
-              <Link href="[year]/[month]/[date]/[title]" passHref as={url}>
+              <Link href="[year]/[month]/[date]/[title]" passHref as={ url }>
                 <StyledItemLink>
-                  <StyledTime dateString={date} />
-                  <StyledTitle>{title}</StyledTitle>
+                  <StyledTime dateString={ date } />
+                  <StyledTitle>{ title }</StyledTitle>
                 </StyledItemLink>
               </Link>
             </Styled.Item>
           </React.Fragment>
         )
-      })}
+      }) }
     </Styled.Root>
   )
 }
@@ -115,7 +115,7 @@ const StyledItemLink = styled.a`
     `rgba(var(--b-rgb-base), ${Styles.funcs.fibo('sm', 'alpha')})`,
     `rgba(var(--b-rgb-base), ${Styles.funcs.fibo('md', 'alpha')})`,
     `rgba(var(--b-rgb-base), ${Styles.funcs.fibo('md', 'alpha')})`,
-    `rgba(var(--b-rgb-base), ${Styles.funcs.fibo('lg', 'alpha')})`,
+    `rgba(var(--b-rgb-base), ${Styles.funcs.fibo('lg', 'alpha')})`
   )}
   background-color: #fff;
   display: block;

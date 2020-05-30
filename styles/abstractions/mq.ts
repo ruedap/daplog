@@ -1,11 +1,11 @@
 import { css, FlattenSimpleInterpolation } from 'styled-components'
 
 type TBreakpoints = Readonly<{
-  xs: number,
-  sm: number,
-  md: number,
-  lg: number,
-  xl: number,
+  xs: number
+  sm: number
+  md: number
+  lg: number
+  xl: number
 }>
 
 const breakpoints: TBreakpoints = {
@@ -13,15 +13,15 @@ const breakpoints: TBreakpoints = {
   sm: 576,
   md: 768,
   lg: 992,
-  xl: 1200,
+  xl: 1200
 } as const
 
 type TBreakpointObject = Readonly<Record<
-  keyof TBreakpoints,
-  (cssprop: FlattenSimpleInterpolation) => FlattenSimpleInterpolation
+keyof TBreakpoints,
+(cssprop: FlattenSimpleInterpolation) => FlattenSimpleInterpolation
 >>
 
-export const up: TBreakpointObject = Object.keys(breakpoints).reduce(
+export const up: TBreakpointObject = Object.keys(breakpoints).reduce<any>(
   (acc, cur) => {
     acc[cur] = (cssprop: FlattenSimpleInterpolation) => css`
     @media (min-width: ${breakpoints[cur]}px) {
@@ -29,5 +29,5 @@ export const up: TBreakpointObject = Object.keys(breakpoints).reduce(
     }
   `
     return acc
-  }, <any>{}
+  }, {}
 )
