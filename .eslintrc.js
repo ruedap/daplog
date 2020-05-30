@@ -22,7 +22,8 @@ module.exports = {
   ],
   plugins: [
     '@typescript-eslint',
-    'react'
+    'react',
+    'react-hooks'
   ],
   settings: {
     react: {
@@ -44,6 +45,7 @@ module.exports = {
       allowMultiline: true,
       children: true
     }],
-    'react/jsx-indent': ['error', 2, { indentLogicalExpressions: true }]
+    'react/jsx-indent': ['error', 2, { indentLogicalExpressions: true }],
+    'react-hooks/rules-of-hooks': 'error'
   }
 }
