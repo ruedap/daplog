@@ -40,6 +40,7 @@ module.exports = {
     'no-new': ['off'],
     'react/prop-types': ['off'],
     'no-console': ['warn'],
+    'react/react-in-jsx-scope': 'off',
     'react/jsx-curly-spacing': ['error', {
       when: 'always',
       allowMultiline: true,
