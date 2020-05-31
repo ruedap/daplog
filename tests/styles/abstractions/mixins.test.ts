@@ -49,7 +49,7 @@ describe('linkColors', () => {
   })
 
   test('should return same styles.', () => {
-    const actual = linkColors('#336699', 'black', null, 'pink').join('')
+    const actual = linkColors('#336699', 'black', undefined, 'pink').join('')
     const expected = css`color: #336699;&:visited { color: black; }&:hover { color: pink; }`.join('')
     expect(actual).toEqual(expected)
   })
