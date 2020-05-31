@@ -2,6 +2,7 @@ import { Index2 } from './index2'
 import { FooBar, FooBarTag4 } from './_foo_bar'
 import styled, { css, keyframes, Keyframes } from 'styled-components'
 import { StyledTag4 } from './_styled_tag4'
+import { useSetAppState, useAppState } from '@/hooks/app_state'
 
 const hover = css`
   &:hover {
@@ -17,6 +18,8 @@ const prop = css`
 `
 
 const Styleguide = () => {
+  const setAppState = useSetAppState()
+  console.log(useAppState())
   return (
     <>
       <Index2 />
@@ -31,6 +34,12 @@ const Styleguide = () => {
       <StyledTag3 animation={ bounce }>Let&apos;s bounce.</StyledTag3>
       <StyledTag3 animation={ shake }>Let&apos;s shake.</StyledTag3>
       <StyledTag4>This is Styled.Tag4</StyledTag4>
+      <button onClick={ () => setAppState({ themeName: 'dark' }) }>
+        dark mode
+      </button>
+      <button onClick={ () => setAppState({ themeName: 'light' }) }>
+        light mode
+      </button>
     </>
   )
 }
@@ -90,4 +99,5 @@ const StyledTag3 = styled.div<{ animation: Keyframes }>`
     background-color: linen;
   }
   animation: ${({ animation }) => animation} 0.2s infinite ease-in-out alternate;
+  content: "${({ theme }) => theme.colors.primary}";
 `
