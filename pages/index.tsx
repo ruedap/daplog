@@ -17,9 +17,9 @@ export const getStaticProps: GetStaticProps = async () => {
 const HomePage = ({ articleList }: { articleList: TArticleItem[] }) => {
   const metaTags = generateMetaTags()
   return (
-    <Layout metaTags={metaTags}>
+    <Layout metaTags={ metaTags }>
       <div className="Container">
-        <ArticleList articleList={articleList} />
+        <ArticleList articleList={ articleList } />
       </div>
     </Layout>
   )

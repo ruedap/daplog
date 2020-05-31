@@ -5,14 +5,14 @@ import { GA_TRACKING_ID } from '@/utils/gtag'
 import { ServerStyleSheet } from 'styled-components'
 
 export default class extends Document {
-  static async getInitialProps(ctx) {
+  static async getInitialProps (ctx) {
     const sheet = new ServerStyleSheet()
     const originalRenderPage = ctx.renderPage
 
     try {
       ctx.renderPage = () =>
         originalRenderPage({
-          enhanceApp: App => props => sheet.collectStyles(<App {...props} />),
+          enhanceApp: App => props => sheet.collectStyles(<App { ...props } />)
         })
 
       const initialProps = await Document.getInitialProps(ctx)
@@ -20,28 +20,28 @@ export default class extends Document {
         ...initialProps,
         styles: (
           <>
-            {initialProps.styles}
-            {sheet.getStyleElement()}
+            { initialProps.styles }
+            { sheet.getStyleElement() }
           </>
-        ),
+        )
       }
     } finally {
       sheet.seal()
     }
   }
 
-  render() {
+  render () {
     return (
       // TODO: i18n
       <Html lang="ja-JP">
         <Head>
-          {/* Global Site Tag (gtag.js) - Google Analytics */}
+          { /* Global Site Tag (gtag.js) - Google Analytics */ }
           <script
             async
-            src={`https://www.googletagmanager.com/gtag/js?id=${GA_TRACKING_ID}`}
+            src={ `https://www.googletagmanager.com/gtag/js?id=${GA_TRACKING_ID}` }
           />
           <script
-            dangerouslySetInnerHTML={{
+            dangerouslySetInnerHTML={ {
               __html: `
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
@@ -49,8 +49,8 @@ export default class extends Document {
             gtag('config', '${GA_TRACKING_ID}', {
               page_path: window.location.pathname,
             });
-          `,
-            }}
+          `
+            } }
           />
         </Head>
         <body>

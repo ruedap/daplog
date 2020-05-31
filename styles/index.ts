@@ -9,7 +9,7 @@ const Styles = {
   mixins,
   mq,
   CustomProperties,
-  Elements,
+  Elements
 } as const
 
 export default Styles

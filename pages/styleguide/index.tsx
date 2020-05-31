@@ -5,7 +5,7 @@ import Styleguide from '@/components/templates/styleguide'
 const StyleguidePage = () => {
   const metaTags = generateMetaTags()
   return (
-    <Layout metaTags={metaTags}>
+    <Layout metaTags={ metaTags }>
       <Styleguide />
     </Layout>
   )

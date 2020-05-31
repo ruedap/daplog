@@ -27,12 +27,12 @@ export const getSortedArticleList = (fileNames = articleFileNames) => {
 
     return { id, date, title } as TArticleItem
   })
-  
+
   // TODO: sort
   return allArticlesData.reverse()
 }
 
-export function getAllArticlePathParams(fileNames = articleFileNames) {
+export function getAllArticlePathParams (fileNames = articleFileNames) {
   return fileNames.map(fileName => {
     const id = fileName2Id(fileName)
     const params = id2Prams(id)
@@ -40,7 +40,7 @@ export function getAllArticlePathParams(fileNames = articleFileNames) {
   })
 }
 
-export function getArticleData(id: string) {
+export function getArticleData (id: string) {
   const fileContents = readContents(id)
   const contentHtml = markdown2Html(fileContents)
   const title = splitTitleAndBody(contentHtml).title
@@ -52,17 +52,17 @@ export function getArticleData(id: string) {
 
 const markdown2Html = (markdownStr: string): string => {
   const processedContent = remark()
-    .use(footnotes, {inlineNotes: true})
+    .use(footnotes, { inlineNotes: true })
     .use(highlight)
     .use(html)
     .processSync(markdownStr)
-  
+
   return processedContent.toString()
 }
 
 const splitTitleAndBody = (htmlStr: string) => {
   const r = htmlStr.match(/<h1>(.+)<\/h1>([\s\S]*)/)
-  if (!Array.isArray(r)) { throw new Error ('invalid argument')}
+  if (!Array.isArray(r)) { throw new Error('invalid argument') }
 
-  return { title: r[1], body: r[2]}
+  return { title: r[1], body: r[2] }
 }
