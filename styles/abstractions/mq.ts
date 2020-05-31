@@ -1,11 +1,7 @@
 import { css, FlattenSimpleInterpolation } from 'styled-components'
 
 type TBreakpoints = Readonly<{
-  xs: number
-  sm: number
-  md: number
-  lg: number
-  xl: number
+  [key: string]: number
 }>
 
 const breakpoints: TBreakpoints = {
