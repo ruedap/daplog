@@ -27,13 +27,13 @@ describe('generateMetaTags', () => {
   })
 
   test('should return meta tags based on the full args.', () => {
-    const args = {
+    const args: TMetaTags = {
       title: '記事のタイトル',
       description: '記事の本文',
       keywords: ['keword1', 'keword2'],
       image: 'https://blog.ruedap.com/images/2011/08/11/uhloop-01.png',
       url: 'https://blog.ruedap.com/2011/08/11/uhloop'
-    } as TMetaTags
+    }
     const e = Object.assign({}, args, {
       title: `記事のタイトル - ${BLOG_NAME}`
     })

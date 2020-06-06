@@ -15,7 +15,7 @@ export const fileName2Id = (fileName: string): string => {
 
 export const id2Prams = (id: string): TArticlePath => {
   const a = id2Url(id).split('/')
-  return { year: a[0], month: a[1], date: a[2], title: a[3] } as TArticlePath
+  return { year: a[0], month: a[1], date: a[2], title: a[3] }
 }
 
 export const id2DateString = (id: string): string => {
@@ -29,5 +29,5 @@ export const generateMetaTags = (metaTags?: Partial<TMetaTags>): TMetaTags => {
     keywords: metaTags?.keywords ?? [],
     image: metaTags?.image ?? 'https://blog.ruedap.com/images/ogp.png',
     url: metaTags?.url ?? 'https://blog.ruedap.com'
-  } as TMetaTags
+  }
 }
