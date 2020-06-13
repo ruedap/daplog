@@ -2,14 +2,14 @@ import { css } from 'styled-components'
 import { rgba } from 'polished'
 import Styles from '@/styles'
 
-const fontSize_md = '1.7rem'
-const fontSize_sm = '1.5rem'
-const fontSize_xs = '1.2rem'
+const fontSizeMd = '1.7rem'
+const fontSizeSm = '1.5rem'
+const fontSizeXs = '1.2rem'
 
 export const base = css`
   ${Styles.mixins.fontSmoothing()}
   font-family: var(--b-fontFamily-lucida);
-  font-size: ${fontSize_md};
+  font-size: ${fontSizeMd};
   line-height: 1.8;
 
   ${Styles.mq.up.md(css`
@@ -86,7 +86,7 @@ export const strong = css`
 export const list = css`
   > ul,
   > ol {
-    font-size: ${fontSize_sm};
+    font-size: ${fontSizeSm};
     margin-bottom: 1em;
     margin-top: 1em;
     text-align: left; /* overwrite justify */
@@ -137,7 +137,7 @@ export const figure = css`
     }
 
     figcaption {
-      font-size: ${fontSize_xs};
+      font-size: ${fontSizeXs};
       margin: 0.5em 0;
     }
   }
@@ -157,7 +157,7 @@ export const cite = css`
   > p > cite {
     ${citeIcon}
     display: block;
-    font-size: ${fontSize_sm};
+    font-size: ${fontSizeSm};
     font-style: normal;
     font-weight: normal;
     margin-left: 1em;
@@ -169,7 +169,7 @@ export const blockquote = css`
   blockquote {
     border-left: 6px solid rgba(var(--b-rgb-base), ${Styles.funcs.fibo('xs', 'alpha')});
     color: rgba(var(--b-rgb-base), ${Styles.funcs.fibo('lg', 'alpha')});
-    font-size: ${fontSize_sm};
+    font-size: ${fontSizeSm};
     margin: 2em 0;
     padding: 0 1.5em;
 
@@ -188,7 +188,7 @@ export const small = css`
   > p > ins {
     color: rgba(var(--b-rgb-base), ${Styles.funcs.fibo('lg', 'alpha')});
     display: inline-block;
-    font-size: ${fontSize_sm};
+    font-size: ${fontSizeSm};
     line-height: var(--b-ratio-golden);
     text-align: left; /* overwrite justify */
     text-decoration: none;
@@ -207,7 +207,7 @@ export const small = css`
 export const footnotes = css`
   > .footnotes {
     color: #777;
-    font-size: ${fontSize_xs};
+    font-size: ${fontSizeXs};
     line-height: var(--b-ratio-golden);
     margin-top: ${Styles.funcs.fibo('md', 'px')};
 
