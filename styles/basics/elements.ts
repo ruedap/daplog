@@ -1,5 +1,5 @@
 import { createGlobalStyle } from 'styled-components'
-import { linkColors } from '../abstractions/mixins'
+import { linkColors } from '../abstracts/mixins'
 
 export default createGlobalStyle`
   html {

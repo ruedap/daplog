@@ -1,6 +1,6 @@
-import * as funcs from './abstractions/funcs'
-import * as mixins from './abstractions/mixins'
-import * as mq from './abstractions/mq'
+import * as funcs from './abstracts/funcs'
+import * as mixins from './abstracts/mixins'
+import * as mq from './abstracts/mq'
 import CustomProperties from './basics/custom_properties'
 import Elements from './basics/elements'
 

@@ -1,4 +1,4 @@
-import { fibo } from '@/styles/abstractions/funcs'
+import { fibo } from '@/styles/abstracts/funcs'
 
 describe('fibo', () => {
   test('should return \'1597\'.', () => {

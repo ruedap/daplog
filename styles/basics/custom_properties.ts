@@ -1,5 +1,5 @@
 import { createGlobalStyle } from 'styled-components'
-import { fibo } from '../abstractions/funcs'
+import { fibo } from '../abstracts/funcs'
 
 export default createGlobalStyle`
   :root {

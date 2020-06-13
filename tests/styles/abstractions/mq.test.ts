@@ -1,4 +1,4 @@
-import * as mq from '@/styles/abstractions/mq'
+import * as mq from '@/styles/abstracts/mq'
 import { css } from 'styled-components'
 
 describe('mq.up', () => {
