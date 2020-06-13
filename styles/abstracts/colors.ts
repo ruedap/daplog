@@ -101,7 +101,6 @@ export const colorsDark: Colors = {
       body: baseColors.white
     },
     bg: {
-      body: baseColors.key[1],
       content: baseColors.black
     }
   } as const)

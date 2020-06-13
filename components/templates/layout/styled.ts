@@ -3,5 +3,5 @@ import Styles from '@/styles'
 
 export const Container = styled.div`
   ${Styles.mixins.container}
-  background-color: var(--b-bgColor-content);
+  background-color: ${({ theme }) => theme.colors.bg.content};
 `
