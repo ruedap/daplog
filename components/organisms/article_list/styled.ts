@@ -1,4 +1,4 @@
-import styled, { css, AnyStyledComponent } from 'styled-components'
+import styled, { css } from 'styled-components'
 import Styles from '@/styles'
 
 export const Root = styled.ul`

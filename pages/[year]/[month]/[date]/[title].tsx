@@ -16,7 +16,7 @@ export const getStaticPaths: GetStaticPaths = async () => {
 
 export const getStaticProps: GetStaticProps = async ({ params }) => {
   const p = params as ParsedUrlQuery
-  const id = `${p.year}-${p.month}-${p.date}-${p.title}`
+  const id = `${String(p.year)}-${String(p.month)}-${String(p.date)}-${String(p.title)}`
   const articleData = getArticleData(id)
   return {
     props: {

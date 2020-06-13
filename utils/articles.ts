@@ -17,19 +17,19 @@ const readContents = (id: string) => {
   return fileContents
 }
 
-export const getSortedArticleList = (fileNames = articleFileNames) => {
+export const getSortedArticleList = (fileNames = articleFileNames): TArticleItem[] => {
   const allArticlesData = fileNames.map(fileName => {
     const id = fileName2Id(fileName)
     const fileContents = readContents(id)
     const contentHtml = markdown2Html(fileContents)
     const title = stripHtmlTags(splitTitleAndBody(contentHtml).title)
     const date = id2DateString(id)
-
-    return { id, date, title } as TArticleItem
-  })
+    const result: TArticleItem = { id, date, title }
+    return result
+  }).reverse()
 
   // TODO: sort
-  return allArticlesData.reverse()
+  return allArticlesData
 }
 
 export function getAllArticlePathParams (fileNames = articleFileNames) {
