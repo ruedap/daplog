@@ -1,6 +1,6 @@
 import { createContext, Dispatch, SetStateAction, useState } from 'react'
 import { ThemeProvider } from 'styled-components'
-import { lightTheme, darkTheme } from '@/styles/app_theme'
+import { lightTheme, darkTheme } from '@/styles/theme'
 
 interface AppState {
   // TODO: Add null

@@ -1,4 +1,4 @@
-export interface AppTheme {
+export interface Theme {
   colors: {
     primary: string
   }
@@ -16,7 +16,7 @@ export interface AppTheme {
   }
 }
 
-export const lightTheme: AppTheme = {
+export const lightTheme: Theme = {
   colors: {
     primary: 'skyblue'
   },
@@ -34,7 +34,7 @@ export const lightTheme: AppTheme = {
   }
 } as const
 
-export const darkTheme: AppTheme = {
+export const darkTheme: Theme = {
   ...lightTheme,
   colors: {
     primary: 'pink'
@@ -42,5 +42,5 @@ export const darkTheme: AppTheme = {
 } as const
 
 declare module 'styled-components' {
-  interface DefaultTheme extends AppTheme {}
+  interface DefaultTheme extends Theme {}
 }
