@@ -19,7 +19,6 @@ const prop = css`
 
 const Styleguide = () => {
   const setAppState = useSetAppState()
-  console.log(useAppState())
   return (
     <>
       <Index2 />
