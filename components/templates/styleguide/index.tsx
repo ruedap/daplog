@@ -2,11 +2,11 @@ import { Index2 } from './index2'
 import { FooBar, FooBarTag4 } from './_foo_bar'
 import styled, { css, keyframes, Keyframes } from 'styled-components'
 import { StyledTag4 } from './_styled_tag4'
-import { useSetAppState, useAppState } from '@/hooks/app_state'
+import { useSetAppState } from '@/hooks/app_state'
 
 const hover = css`
   &:hover {
-    color: ${({ theme }) => theme.colors.primary};
+    color: ${({ theme }) => theme.colors.text.body};
     border-color: aqua;
     box-shadow: -15px -15px 0 0 aqua, -30px -30px 0 0 cornflowerblue;
   }
@@ -48,7 +48,7 @@ export default Styleguide
 const StyledTitle = styled.h1`
   font-size: 4rem;
   margin: 0;
-  color: ${({ theme }) => theme.colors.primary};
+  color: ${({ theme }) => theme.colors.text.body};
 `
 
 const base = css`
@@ -98,5 +98,5 @@ const StyledTag3 = styled.div<{ animation: Keyframes }>`
     background-color: linen;
   }
   animation: ${({ animation }) => animation} 0.2s infinite ease-in-out alternate;
-  content: "${({ theme }) => theme.colors.primary}";
+  content: "${({ theme }) => theme.colors.text.body}";
 `

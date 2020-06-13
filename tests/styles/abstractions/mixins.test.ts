@@ -3,8 +3,8 @@ import {
   linkColors,
   ellipsis,
   articleSectionMark
-} from '@/styles/abstractions/mixins'
-import { fibo } from '@/styles/abstractions/funcs'
+} from '@/styles/abstracts/mixins'
+import { fibo } from '@/styles/abstracts/funcs'
 import { css } from 'styled-components'
 
 // const stripIndent = (str) => str.replace(/^ +/gm, '').replace(/\r?\n/g, '')

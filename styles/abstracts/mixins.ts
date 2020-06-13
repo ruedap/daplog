@@ -1,6 +1,6 @@
 import { css, FlattenSimpleInterpolation } from 'styled-components'
 import { TFiboSizeName } from '@/types/styled'
-import { fibo } from '@/styles/abstractions/funcs'
+import { fibo } from '@/styles/abstracts/funcs'
 
 export const container = css`
   display: block;
