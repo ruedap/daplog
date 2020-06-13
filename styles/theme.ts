@@ -1,4 +1,4 @@
-import { colors, Colors } from './abstracts/colors'
+import { colors, colorsDark, Colors } from './abstracts/colors'
 
 export interface Theme {
   colors: Colors
@@ -33,7 +33,19 @@ export const lightTheme: Theme = {
 } as const
 
 export const darkTheme: Theme = {
-  ...lightTheme
+  colors: colorsDark,
+  sizes: {
+    font: {
+      XS: 12,
+      SM: 14,
+      MD: 16,
+      LG: 18,
+      XL: 20
+    },
+    width: {
+      CONTENT: 1000
+    }
+  }
 } as const
 
 declare module 'styled-components' {

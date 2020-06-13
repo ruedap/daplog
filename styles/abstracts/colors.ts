@@ -1,4 +1,5 @@
 import { fibo } from './funcs'
+import { merge } from 'lodash-es'
 
 const baseAlphas = {
   xs2: fibo('xs2', 'alpha'),
@@ -92,4 +93,16 @@ export const colors: Colors = {
     warning: baseColors.orange,
     danger: baseColors.red
   }
+} as const
+
+export const colorsDark: Colors = {
+  ...merge<any, Colors, any>({}, colors, {
+    text: {
+      body: baseColors.white
+    },
+    bg: {
+      body: baseColors.key[1],
+      content: baseColors.black
+    }
+  } as const)
 } as const
