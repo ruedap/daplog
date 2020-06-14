@@ -70,11 +70,13 @@ const StyledTime = styled(Time)`
 
 /* month, date, title */
 const _StyledItemLineBase = styled.span`
-  height: ${Styles.funcs.fibo('sm', 'px')};
+  ${({ theme }) => css`
+    height: ${Styles.funcs.fibo('sm', 'px')};
 
-  ${Styles.mq.up.md(css`
-    height: ${Styles.funcs.fibo('md', 'px')};
-  `)}
+    ${theme.mq.up.md} {
+      height: ${Styles.funcs.fibo('md', 'px')};
+    }
+  `}
 `
 
 const StyledTitle = styled(_StyledItemLineBase)`
@@ -84,23 +86,25 @@ const StyledTitle = styled(_StyledItemLineBase)`
     display: block;
     padding: 0 21px;
 
-    ${Styles.mq.up.md(css`
+    ${theme.mq.up.md} {
       margin-left: calc(${Styles.funcs.fibo('md', 'px')} * 2);
-    `)}
+    }
   `}
 `
 
 /* month, date */
 const _StyledItemLineMonthAndDate = styled(_StyledItemLineBase)`
-  display: none;
-  font-family: var(--b-fontFamily-fjalla);
-  letter-spacing: 0.1em;
-  width: ${Styles.funcs.fibo('md', 'px')};
-  text-align: center;
+  ${({ theme }) => css`
+    display: none;
+    font-family: var(--b-fontFamily-fjalla);
+    letter-spacing: 0.1em;
+    width: ${Styles.funcs.fibo('md', 'px')};
+    text-align: center;
 
-  ${Styles.mq.up.md(css`
-    display: inline-block;
-  `)}
+    ${theme.mq.up.md} {
+      display: inline-block;
+    }
+  `}
 `
 
 const StyledMonth = styled(_StyledItemLineMonthAndDate)`
