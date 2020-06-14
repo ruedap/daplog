@@ -47,6 +47,7 @@ export const Title = styled.h1`
   `)}
 `
 
+// TODO: mq.up.md: `Styles.mixins.articleSectionMark('sm')`
 export const GitHubLink = styled.a`
   ${Styles.mixins.articleSectionMark('xs')}
   height: ${Styles.funcs.fibo('xs', 'px')};
@@ -54,7 +55,6 @@ export const GitHubLink = styled.a`
   width: calc(${Styles.funcs.fibo('xs', 'px')} * 2);
 
   ${Styles.mq.up.md(css`
-    ${Styles.mixins.articleSectionMark('sm')}
     height: ${Styles.funcs.fibo('sm', 'px')};
     margin-bottom: calc(${Styles.funcs.fibo('md', 'px')} + 10px);
     width: calc(${Styles.funcs.fibo('sm', 'px')} * 2);
