@@ -22,16 +22,18 @@ export const Item = styled.li`
 `
 
 export const YearHeading = styled(Item)`
-  background-color: rgba(var(--b-rgb-base), ${Styles.funcs.fibo('sm', 'alpha')});
-  color: rgba(var(--b-rgb-base), ${Styles.funcs.fibo('lg', 'alpha')});
-  font-family: var(--b-fontFamily-fjalla);
-  height: ${Styles.funcs.fibo('sm', 'px')};
-  letter-spacing: 0.1em;
-  text-align: center;
+  ${({ theme }) => css`
+    background-color: ${theme.colors.key[3]};
+    color: ${theme.colors.key[5]};
+    font-family: var(--b-fontFamily-fjalla);
+    height: ${Styles.funcs.fibo('sm', 'px')};
+    letter-spacing: 0.1em;
+    text-align: center;
 
-  ${Styles.mq.up.md(css`
-    height: ${Styles.funcs.fibo('md', 'px')};
-  `)}
+    ${Styles.mq.up.md(css`
+      height: ${Styles.funcs.fibo('md', 'px')};
+    `)}
+  `}
 `
 
 export const Year = styled.span`

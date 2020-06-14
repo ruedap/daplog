@@ -9,22 +9,27 @@ export const Root = styled.footer`
 `
 
 export const Container = styled.div`
-  ${Styles.mixins.container};
-  background-image: linear-gradient(var(--b-color-key3) 0, var(--b-color-key4) 100%);
-  ${
-    mq.up.lg(css`
-      &::before {
-        ${Styles.mixins.dapicons};
-        color: var(--b-color-key2);
-        content: "ruedap";
-        font-size: 5.5rem;
-        left: 50%;
-        position: absolute;
-        top: 377px;
-        transform: translate(-50%, -100%);
-      }
-    `)
-  }
+  ${({ theme }) => css`
+    ${Styles.mixins.container};
+    background-image: linear-gradient(
+      ${theme.colors.key[3]} 0,
+      ${theme.colors.key[4]} 100%
+    );
+    ${
+      mq.up.lg(css`
+        &::before {
+          ${Styles.mixins.dapicons};
+          color: ${theme.colors.key[2]};
+          content: "ruedap";
+          font-size: 5.5rem;
+          left: 50%;
+          position: absolute;
+          top: 377px;
+          transform: translate(-50%, -100%);
+        }
+      `)
+    }
+  `}
 `
 
 export const Heading = styled.div`

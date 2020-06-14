@@ -1,24 +1,8 @@
 import { createGlobalStyle } from 'styled-components'
-import { fibo } from '../abstracts/funcs'
 
 export default createGlobalStyle`
   :root {
     /* Color */
-    --b-rgb-base: 24, 63, 83;
-    --b-color-key1: rgba(var(--b-rgb-base), ${fibo('xs2', 'alpha')});
-    --b-color-key2: rgba(var(--b-rgb-base), ${fibo('xs', 'alpha')});
-    --b-color-key3: rgba(var(--b-rgb-base), ${fibo('sm', 'alpha')});
-    --b-color-key4: rgba(var(--b-rgb-base), ${fibo('md', 'alpha')});
-
-    --b-color-body: #21272d;
-    --b-bgColor-body: var(--b-color-key1);
-    --b-bgColor-content: #fff;
-    
-    --b-color-link: rgba(var(--b-rgb-base), ${fibo('md', 'alpha')});
-    --b-color-link-visited: rgba(var(--b-rgb-base), ${fibo('lg', 'alpha')});
-    --b-color-link-focus: rgba(var(--b-rgb-base), ${fibo('sm', 'alpha')});
-    --b-color-link-hover: rgba(var(--b-rgb-base), ${fibo('sm', 'alpha')});
-    --b-color-link-active: rgba(var(--b-rgb-base), ${fibo('xs', 'alpha')});
     
     /* Size */
     --b-maxWidth-container: 987px;

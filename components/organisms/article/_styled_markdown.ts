@@ -20,7 +20,7 @@ export const base = css`
 export const heading = css`
   > h2,
   > h3 {
-    color: rgba(var(--b-rgb-base), ${Styles.funcs.fibo('lg', 'alpha')});
+    color: ${({ theme }) => theme.colors.key[5]};
     font-weight: normal;
     line-height: var(--b-ratio-golden);
     text-align: center;
@@ -68,19 +68,22 @@ export const img = css`
   }
 `
 
+// TODO: redundant css
 export const strong = css`
-  strong,
-  em {
-    background-image: linear-gradient(
-      transparent 0,
-      transparent 60%,
-      rgba(var(--b-rgb-base), ${Styles.funcs.fibo('xs2', 'alpha')}) 60%,
-      rgba(var(--b-rgb-base), ${Styles.funcs.fibo('xs2', 'alpha')}) 100%
-    );
-    font-style: normal;
-    font-weight: normal;
-    padding: 0.1em;
-  }
+  ${({ theme }) => css`
+    strong,
+    em {
+      background-image: linear-gradient(
+        transparent 0,
+        transparent 60%,
+        ${theme.colors.key[1]} 60%,
+        ${theme.colors.key[2]} 100%
+      );
+      font-style: normal;
+      font-weight: normal;
+      padding: 0.1em;
+    }
+  `}
 `
 
 export const list = css`
@@ -146,7 +149,7 @@ export const figure = css`
 const citeIcon = css`
   &::before {
     ${Styles.mixins.dapicons}
-    color: rgba(var(--b-rgb-base), ${Styles.funcs.fibo('md', 'alpha')});
+    color: ${({ theme }) => theme.colors.key[4]};
     content: "cite";
     font-size: 89%;
     margin-right: 0.6em;
@@ -165,43 +168,49 @@ export const cite = css`
   }
 `
 
+// TODO: redundant css
 export const blockquote = css`
-  blockquote {
-    border-left: 6px solid rgba(var(--b-rgb-base), ${Styles.funcs.fibo('xs', 'alpha')});
-    color: rgba(var(--b-rgb-base), ${Styles.funcs.fibo('lg', 'alpha')});
-    font-size: ${fontSizeSm};
-    margin: 2em 0;
-    padding: 0 1.5em;
+  ${({ theme }) => css`
+    blockquote {
+      border-left: 6px solid ${theme.colors.key[2]};
+      color: ${theme.colors.key[5]};
+      font-size: ${fontSizeSm};
+      margin: 2em 0;
+      padding: 0 1.5em;
 
-    cite {
-      ${citeIcon}
-      display: block;
-      font-size: 1.3rem;
-      font-style: normal;
-      text-align: right;
+      cite {
+        ${citeIcon}
+        display: block;
+        font-size: 1.3rem;
+        font-style: normal;
+        text-align: right;
+      }
     }
-  }
+  `}
 `
 
+// TODO: redundant css
 export const small = css`
-  > p > small,
-  > p > ins {
-    color: rgba(var(--b-rgb-base), ${Styles.funcs.fibo('lg', 'alpha')});
-    display: inline-block;
-    font-size: ${fontSizeSm};
-    line-height: var(--b-ratio-golden);
-    text-align: left; /* overwrite justify */
-    text-decoration: none;
+  ${({ theme }) => css`
+    > p > small,
+    > p > ins {
+      color: ${theme.colors.key[5]};
+      display: inline-block;
+      font-size: ${fontSizeSm};
+      line-height: var(--b-ratio-golden);
+      text-align: left; /* overwrite justify */
+      text-decoration: none;
 
-    &::before {
-      content: "※";
-      margin-right: 0.3em;
+      &::before {
+        content: "※";
+        margin-right: 0.3em;
+      }
     }
-  }
 
-  > p > small {
-    color: rgba(var(--b-color-body), ${Styles.funcs.fibo('md', 'alpha')});
-  }
+    > p > small {
+      color: rgba(${theme.colors.text.body}, ${Styles.funcs.fibo('md', 'alpha')});
+    }
+  `}
 `
 
 export const footnotes = css`
@@ -273,7 +282,7 @@ export const code = css`
 `
 
 export const table = (() => {
-  const borderColor = `rgba(var(--b-rgb-base), ${Styles.funcs.fibo('xs2', 'alpha')})`
+  const borderColor = css`${({ theme }) => theme.colors.key[1]}`
   return css`
     table {
       background-color: #fff;

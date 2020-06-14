@@ -79,7 +79,7 @@ export const articleSectionMark = (
   position: relative;
   &::before,
   &::after {
-    background-color: rgba(var(--b-rgb-base), ${fibo('xs', 'alpha')});
+    background-color: ${({ theme }) => theme.colors.key[2]};
     border-radius: 100%;
     content: '';
     display: block;

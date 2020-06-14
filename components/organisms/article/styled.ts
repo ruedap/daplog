@@ -96,15 +96,12 @@ export const Nav = styled.nav`
   `)}
 `
 
-export const NavLink = (() => {
-  const _hover = `rgba(var(--b-rgb-base), ${Styles.funcs.fibo('md', 'alpha')})`
-  const _active = `rgba(var(--b-rgb-base), ${Styles.funcs.fibo('lg', 'alpha')})`
-
-  return styled.a`
-    ${Styles.mixins.linkColors('#fff', '#fff', _hover, _hover, _active)}
+export const NavLink = styled.a`
+  ${({ theme }) => css`
+    ${Styles.mixins.linkColors('#fff', '#fff', theme.colors.key[4], theme.colors.key[4], theme.colors.key[5])}
     ${Styles.mixins.fontSmoothing()}
     ${Styles.mixins.dapicons}
-    background-color: rgba(var(--b-rgb-base), ${Styles.funcs.fibo('xs', 'alpha')});
+    background-color: ${theme.colors.key[2]};
     border-radius: 100%;
     display: block;
     font-size: 2.6rem;
@@ -114,5 +111,5 @@ export const NavLink = (() => {
     margin: auto;
     text-align: center;
     text-decoration: none;
-  `
-})()
+  `}
+`
