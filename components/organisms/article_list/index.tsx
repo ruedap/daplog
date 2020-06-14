@@ -78,14 +78,16 @@ const _StyledItemLineBase = styled.span`
 `
 
 const StyledTitle = styled(_StyledItemLineBase)`
-  ${Styles.mixins.ellipsis(1)}
-  background-color: rgba(var(--b-rgb-base), 0.42);
-  display: block;
-  padding: 0 21px;
+  ${({ theme }) => css`
+    ${Styles.mixins.ellipsis(1)}
+    background-color: ${theme.ArticleList.title.colors.bg};
+    display: block;
+    padding: 0 21px;
 
-  ${Styles.mq.up.md(css`
-    margin-left: calc(${Styles.funcs.fibo('md', 'px')} * 2);
-  `)}
+    ${Styles.mq.up.md(css`
+      margin-left: calc(${Styles.funcs.fibo('md', 'px')} * 2);
+    `)}
+  `}
 `
 
 /* month, date */
@@ -102,38 +104,41 @@ const _StyledItemLineMonthAndDate = styled(_StyledItemLineBase)`
 `
 
 const StyledMonth = styled(_StyledItemLineMonthAndDate)`
-  background-color: rgba(var(--b-rgb-base), 0.34);
+  background-color: ${({ theme }) => theme.ArticleList.month.colors.bg};
 `
 
 const StyledDate = styled(_StyledItemLineMonthAndDate)`
-  background-color: rgba(var(--b-rgb-base), 0.38);
+  background-color: ${({ theme }) => theme.ArticleList.date.colors.bg};
 `
 
 const StyledItemLink = styled.a`
-  ${Styles.mixins.linkColors(
-    '#fff',
-    `rgba(var(--b-rgb-base), ${Styles.funcs.fibo('sm', 'alpha')})`,
-    `rgba(var(--b-rgb-base), ${Styles.funcs.fibo('md', 'alpha')})`,
-    `rgba(var(--b-rgb-base), ${Styles.funcs.fibo('md', 'alpha')})`,
-    `rgba(var(--b-rgb-base), ${Styles.funcs.fibo('lg', 'alpha')})`
-  )}
-  background-color: #fff;
-  display: block;
-  font-family: var(--b-fontFamily-lucida);
-  text-decoration: none;
-  width: 100%;
+  ${({ theme }) => css`
+    ${Styles.mixins.linkColors(
+      '#fff',
+      theme.colors.key[3],
+      theme.colors.key[4],
+      theme.colors.key[4],
+      theme.colors.key[5]
+    )}
 
-  &:hover {
-    ${StyledMonth} {
-      background-color: rgba(var(--b-rgb-base), 0.26);
-    }
+    background-color: #fff;
+    display: block;
+    font-family: var(--b-fontFamily-lucida);
+    text-decoration: none;
+    width: 100%;
 
-    ${StyledDate} {
-      background-color: rgba(var(--b-rgb-base), 0.3);
-    }
+    &:hover {
+      ${StyledMonth} {
+        background-color: ${theme.ArticleList.month.colors.hover.bg};
+      }
 
-    ${StyledTitle} {
-      background-color: rgba(var(--b-rgb-base), 0.34);
+      ${StyledDate} {
+        background-color: ${theme.ArticleList.date.colors.hover.bg};
+      }
+
+      ${StyledTitle} {
+        background-color: ${theme.ArticleList.title.colors.hover.bg};
+      }
     }
-  }
+  `}
 `

@@ -1,4 +1,4 @@
-import { css, FlattenSimpleInterpolation } from 'styled-components'
+import { css, CSSProp } from 'styled-components'
 import { TFiboSizeName } from '@/types/styled'
 import { fibo } from '@/styles/abstracts/funcs'
 
@@ -69,7 +69,7 @@ export const ellipsis = (lines: number) => css`
 
 export const articleSectionMark = (
   sizeName: TFiboSizeName,
-  cssprop?: FlattenSimpleInterpolation
+  cssprop?: CSSProp
 ) => {
   const marginLeft = `${Number(fibo(sizeName)) / 3}px`
   return css`
@@ -79,7 +79,7 @@ export const articleSectionMark = (
   position: relative;
   &::before,
   &::after {
-    background-color: rgba(var(--b-rgb-base), ${fibo('xs', 'alpha')});
+    background-color: ${({ theme }) => theme.colors.key[2]};
     border-radius: 100%;
     content: '';
     display: block;

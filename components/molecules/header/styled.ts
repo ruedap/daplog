@@ -1,4 +1,4 @@
-import styled from 'styled-components'
+import styled, { css } from 'styled-components'
 import Styles from '@/styles'
 
 export const Inner = styled.div`
@@ -27,16 +27,18 @@ export const LogoSpacer = styled.div`
 `
 
 export const LogoOuter = styled.div`
-  background-color: var(--b-bgColor-body);
-  background-image: radial-gradient(var(--b-bgColor-body), var(--b-color-key3));
-  border-radius: 100%;
-  bottom: 0;
-  display: block;
-  height: auto;
-  left: 0;
-  margin: auto;
-  position: absolute;
-  right: 0;
-  top: 0;
-  width: 100%;
+  ${({ theme }) => css`
+    background-color: ${theme.colors.bg.body};
+    background-image: radial-gradient(${theme.colors.bg.body}, ${theme.colors.key[3]});
+    border-radius: 100%;
+    bottom: 0;
+    display: block;
+    height: auto;
+    left: 0;
+    margin: auto;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 100%;
+  `}
 `

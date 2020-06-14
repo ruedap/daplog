@@ -31,13 +31,15 @@
     "styled-components": "^5.1.1"
   },
   "devDependencies": {
-    "@types/jest": "25.2.1",
+    "@types/jest": "26.0.0",
     "@types/lodash": "^4.14.155",
     "@types/node": "^13.13.4",
     "@types/react": "^16.9.34",
+    "@types/react-test-renderer": "^16.9.2",
     "@types/styled-components": "^5.1.0",
     "@typescript-eslint/eslint-plugin": "^3.0.2",
     "@typescript-eslint/parser": "^3.0.2",
+    "babel-jest": "^26.0.1",
     "babel-plugin-styled-components": "^1.10.7",
     "eslint": "^7.1.0",
     "eslint-config-standard-with-typescript": "^18.0.2",
@@ -48,8 +50,9 @@
     "eslint-plugin-react": "^7.20.0",
     "eslint-plugin-react-hooks": "^4.0.4",
     "eslint-plugin-standard": "^4.0.1",
-    "jest": "25.4.0",
-    "ts-jest": "25.4.0",
+    "jest": "26.0.1",
+    "jest-styled-components": "^7.0.2",
+    "react-test-renderer": "^16.13.1",
     "typescript": "^3.9.5"
   },
   "jest": {
@@ -58,10 +61,11 @@
     },
     "moduleFileExtensions": [
       "ts",
+      "tsx",
       "js"
     ],
     "transform": {
-      "^.+\\.ts$": "ts-jest"
+      "^.+\\.(ts|tsx)$": "babel-jest"
     },
     "globals": {
       "ts-jest": {
@@ -69,7 +73,7 @@
       }
     },
     "testMatch": [
-      "**/tests/**/*.test.ts"
+      "**/tests/**/*.test.(ts|tsx)"
     ]
   }
 }

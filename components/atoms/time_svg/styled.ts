@@ -9,7 +9,7 @@ export const Svg = styled.svg`
 `
 
 export const Circle = styled.circle`
-  fill: rgba(var(--b-rgb-base), ${Styles.funcs.fibo('sm', 'alpha')});
+  fill: ${({ theme }) => theme.colors.key[3]};
 `
 
 export const Text = styled.text`
