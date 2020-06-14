@@ -1,5 +1,5 @@
 import { fibo } from './funcs'
-import merge from 'lodash/merge'
+import { merge } from '@/libs'
 
 const baseAlphas = {
   xs2: fibo('xs2', 'alpha'),
