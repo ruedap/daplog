@@ -62,10 +62,11 @@
     },
     "moduleFileExtensions": [
       "ts",
+      "tsx",
       "js"
     ],
     "transform": {
-      "^.+\\.ts$": "ts-jest"
+      "^.+\\.(ts|tsx)$": "babel-jest"
     },
     "globals": {
       "ts-jest": {
@@ -73,7 +74,7 @@
       }
     },
     "testMatch": [
-      "**/tests/**/*.test.ts"
+      "**/tests/**/*.test.(ts|tsx)"
     ]
   }
 }

@@ -1,0 +1,156 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`articleSectionMark should return same styles. 1`] = `
+.c0 {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+}
+
+.c0::before,
+.c0::after {
+  background-color: rgba(24,63,83,0.21);
+  border-radius: 100%;
+  content: '';
+  display: block;
+  height: 34px;
+  left: 50%;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  top: 0;
+  -webkit-transform: translate(-50%,0);
+  -ms-transform: translate(-50%,0);
+  transform: translate(-50%,0);
+  -webkit-transform-origin: center center;
+  -ms-transform-origin: center center;
+  transform-origin: center center;
+  width: 34px;
+}
+
+.c0::before {
+  margin-left: 11.333333333333334px;
+}
+
+.c0::after {
+  margin-left: -11.333333333333334px;
+}
+
+<div
+  className="c0"
+/>
+`;
+
+exports[`articleSectionMark should return same styles. 2`] = `
+.c0 {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  color: #21272d;
+  margin-top: 20px;
+  font-size: 13px;
+}
+
+.c0::before,
+.c0::after {
+  background-color: rgba(24,63,83,0.21);
+  border-radius: 100%;
+  content: '';
+  display: block;
+  height: 55px;
+  left: 50%;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  top: 0;
+  -webkit-transform: translate(-50%,0);
+  -ms-transform: translate(-50%,0);
+  transform: translate(-50%,0);
+  -webkit-transform-origin: center center;
+  -ms-transform-origin: center center;
+  transform-origin: center center;
+  width: 55px;
+}
+
+.c0::before {
+  margin-left: 18.333333333333332px;
+}
+
+.c0::after {
+  margin-left: -18.333333333333332px;
+}
+
+<div
+  className="c0"
+/>
+`;
+
+exports[`linkColors should return same styles. 1`] = `
+.c0 {
+  color: #336699;
+}
+
+<div
+  className="c0"
+/>
+`;
+
+exports[`linkColors should return same styles. 2`] = `
+.c0 {
+  color: #336699;
+}
+
+.c0:visited {
+  color: black;
+}
+
+<div
+  className="c0"
+/>
+`;
+
+exports[`linkColors should return same styles. 3`] = `
+.c0 {
+  color: #336699;
+}
+
+.c0:visited {
+  color: black;
+}
+
+.c0:hover {
+  color: pink;
+}
+
+<div
+  className="c0"
+/>
+`;
+
+exports[`linkColors should return same styles. 4`] = `
+.c0 {
+  color: #336699;
+}
+
+.c0:visited {
+  color: black;
+}
+
+.c0:focus {
+  color: rgba(24,63,83,0.34);
+}
+
+.c0:hover {
+  color: pink;
+}
+
+.c0:active {
+  color: #000;
+}
+
+<div
+  className="c0"
+/>
+`;
