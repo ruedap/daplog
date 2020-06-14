@@ -23,42 +23,46 @@ export const TimeSpacer = styled.div`
 `
 
 export const Title = styled.h1`
-  ${Styles.mixins.fontSmoothing()}
-  font-family: var(--b-fontFamily-crimson);
-  font-size: ${Styles.funcs.fibo('xs', 'rem')};
-  font-weight: normal;
-  line-height: 1.618;
-  margin-top: 0;
-  margin-bottom: ${Styles.funcs.fibo('sm', 'px')};
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 877px;
-  text-align: center;
-  width: 90%;
+  ${({ theme }) => css`
+    ${Styles.mixins.fontSmoothing()}
+    font-family: var(--b-fontFamily-crimson);
+    font-size: ${Styles.funcs.fibo('xs', 'rem')};
+    font-weight: normal;
+    line-height: 1.618;
+    margin-top: 0;
+    margin-bottom: ${Styles.funcs.fibo('sm', 'px')};
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 877px;
+    text-align: center;
+    width: 90%;
 
-  ${Styles.mq.up.md(css`
-    font-size: ${Styles.funcs.fibo('sm', 'rem')};
-    margin-bottom: ${Styles.funcs.fibo('md', 'px')};
+    ${theme.mq.up.md} {
+      font-size: ${Styles.funcs.fibo('sm', 'rem')};
+      margin-bottom: ${Styles.funcs.fibo('md', 'px')};
 
-    span::after {
-      content: "\\000a";
-      white-space: pre-line;
+      span::after {
+        content: "\\000a";
+        white-space: pre-line;
+      }
     }
-  `)}
+  `}
 `
 
-// TODO: mq.up.md: `Styles.mixins.articleSectionMark('sm')`
 export const GitHubLink = styled.a`
-  ${Styles.mixins.articleSectionMark('xs')}
-  height: ${Styles.funcs.fibo('xs', 'px')};
-  margin-bottom: calc(${Styles.funcs.fibo('sm', 'px')} + 10px);
-  width: calc(${Styles.funcs.fibo('xs', 'px')} * 2);
+  ${({ theme }) => css`
+    ${Styles.mixins.articleSectionMark('xs')}
+    height: ${Styles.funcs.fibo('xs', 'px')};
+    margin-bottom: calc(${Styles.funcs.fibo('sm', 'px')} + 10px);
+    width: calc(${Styles.funcs.fibo('xs', 'px')} * 2);
 
-  ${Styles.mq.up.md(css`
-    height: ${Styles.funcs.fibo('sm', 'px')};
-    margin-bottom: calc(${Styles.funcs.fibo('md', 'px')} + 10px);
-    width: calc(${Styles.funcs.fibo('sm', 'px')} * 2);
-  `)}
+    ${theme.mq.up.md} {
+      ${Styles.mixins.articleSectionMark('sm')}
+      height: ${Styles.funcs.fibo('sm', 'px')};
+      margin-bottom: calc(${Styles.funcs.fibo('md', 'px')} + 10px);
+      width: calc(${Styles.funcs.fibo('sm', 'px')} * 2);
+    }
+  `}
 `
 
 export const Body = styled.section`
@@ -87,13 +91,15 @@ export const Body = styled.section`
 `
 
 export const Nav = styled.nav`
-  margin-top: ${Styles.funcs.fibo('xl', 'px')};
-  padding-bottom: ${Styles.funcs.fibo('xl', 'px')};
+  ${({ theme }) => css`
+    margin-top: ${Styles.funcs.fibo('xl', 'px')};
+    padding-bottom: ${Styles.funcs.fibo('xl', 'px')};
 
-  ${Styles.mq.up.md(css`
-    margin-top: ${Styles.funcs.fibo('xl2', 'px')};
-    padding-bottom: ${Styles.funcs.fibo('xl2', 'px')};
-  `)}
+    ${theme.mq.up.md} {
+      margin-top: ${Styles.funcs.fibo('xl2', 'px')};
+      padding-bottom: ${Styles.funcs.fibo('xl2', 'px')};
+    }
+  `}
 `
 
 export const NavLink = styled.a`

@@ -1,0 +1,36 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`mq.up should be match snapshot 1`] = `
+.c0 {
+  content: 'before';
+  content: 'after';
+}
+
+@media screen and (min-width:576px) {
+  .c0 {
+    content: 'sm';
+  }
+}
+
+@media screen and (min-width:768px) {
+  .c0 {
+    content: 'md';
+  }
+}
+
+@media screen and (min-width:992px) {
+  .c0 {
+    content: 'lg';
+  }
+}
+
+@media screen and (min-width:1200px) {
+  .c0 {
+    content: 'xl';
+  }
+}
+
+<div
+  className="c0"
+/>
+`;

@@ -7,14 +7,16 @@ const fontSizeSm = '1.5rem'
 const fontSizeXs = '1.2rem'
 
 export const base = css`
-  ${Styles.mixins.fontSmoothing()}
-  font-family: var(--b-fontFamily-lucida);
-  font-size: ${fontSizeMd};
-  line-height: 1.8;
+  ${({ theme }) => css`
+    ${Styles.mixins.fontSmoothing()}
+    font-family: var(--b-fontFamily-lucida);
+    font-size: ${fontSizeMd};
+    line-height: 1.8;
 
-  ${Styles.mq.up.md(css`
-    line-height: 2;
-  `)}
+    ${theme.mq.up.md} {
+      line-height: 2;
+    }
+  `}
 `
 
 export const heading = css`
@@ -340,9 +342,9 @@ export const bookCover = css`
       margin: 0 !important;
       width: 90px;
 
-      ${Styles.mq.up.md(css`
+      ${({ theme }) => theme.mq.up.md} {
         width: 150px;
-      `)}
+      }
     }
   }
 `

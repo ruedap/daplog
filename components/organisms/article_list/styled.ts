@@ -10,15 +10,17 @@ export const Root = styled.ul`
 `
 
 export const Item = styled.li`
-  ${Styles.mixins.fontSmoothing()}
-  font-size: 1.4rem;
-  line-height: ${Styles.funcs.fibo('sm', 'px')};
-  margin-bottom: 1px;
+  ${({ theme }) => css`
+    ${Styles.mixins.fontSmoothing()}
+    font-size: 1.4rem;
+    line-height: ${Styles.funcs.fibo('sm', 'px')};
+    margin-bottom: 1px;
 
-  ${Styles.mq.up.md(css`
-    font-size: 1.8rem;
-    line-height: ${Styles.funcs.fibo('md', 'px')};
-  `)}
+    ${theme.mq.up.md} {
+      font-size: 1.8rem;
+      line-height: ${Styles.funcs.fibo('md', 'px')};
+    }
+  `}
 `
 
 export const YearHeading = styled(Item)`
@@ -30,9 +32,9 @@ export const YearHeading = styled(Item)`
     letter-spacing: 0.1em;
     text-align: center;
 
-    ${Styles.mq.up.md(css`
+    ${theme.mq.up.md} {
       height: ${Styles.funcs.fibo('md', 'px')};
-    `)}
+    }
   `}
 `
 

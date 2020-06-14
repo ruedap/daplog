@@ -1,5 +1,6 @@
 import { merge } from '@/libs'
 import { colors_light, colors_dark } from './abstracts/_colors'
+import { mq } from './abstracts/_breakpoints'
 import { ArticleList_light } from './abstracts/components/_article_list'
 
 export const lightTheme = {
@@ -16,6 +17,7 @@ export const lightTheme = {
       CONTENT: 1000
     }
   },
+  mq,
   ArticleList: ArticleList_light
 } as const
 
