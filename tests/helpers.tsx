@@ -1,3 +1,4 @@
+import 'jest-styled-components'
 import renderer from 'react-test-renderer'
 import { ThemeProvider } from 'styled-components'
 import { lightTheme } from '@/styles/theme'
