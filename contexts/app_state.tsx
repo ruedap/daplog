@@ -1,4 +1,4 @@
-import { createContext, Dispatch, SetStateAction, useState } from 'react'
+import { createContext, Dispatch, SetStateAction, useState, useEffect } from 'react'
 import { ThemeProvider } from 'styled-components'
 import { lightTheme, darkTheme } from '@/styles/theme'
 
@@ -23,6 +23,14 @@ export const AppStateProvider = (props: {
   const [appState, setAppState] = useState<AppState>(
     props.initialAppState ?? initialAppState
   )
+
+  useEffect(() => {
+    const theme = appState.themeName === 'light' ? lightTheme : darkTheme
+    const root = document.documentElement
+    root.style.setProperty('--b-colors-text-body', theme.colors.text.body)
+    root.style.setProperty('--b-colors-bg-content', theme.colors.bg.content)
+  }, [appState])
+
   return (
     <AppStateContext.Provider value={ appState }>
       <SetAppStateContext.Provider value={ setAppState }>
