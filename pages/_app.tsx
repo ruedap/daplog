@@ -7,6 +7,7 @@ import { useAppState } from '@/hooks/app_state'
 import '@/styles/normalize.scss'
 import '@/styles/highlightjs.scss'
 import '@/styles/fonts.scss'
+import '@/styles/components.scss'
 
 Router.events.on('routeChangeComplete', url => gtag.pageview(url))
 

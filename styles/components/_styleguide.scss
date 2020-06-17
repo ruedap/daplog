@@ -1,0 +1,7 @@
+@use "~styles/theme";
+
+.c-Styleguide {
+  color: theme.$colors-text-body;
+  background-color: theme.$colors-bg-content;
+  border: 5px solid skyblue;
+}

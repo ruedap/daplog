@@ -39,6 +39,7 @@ const Styleguide = () => {
       <button onClick={ () => setAppState({ themeName: 'light' }) }>
         light mode
       </button>
+      <div className="c-Styleguide">This is .c-Styleguide</div>
     </>
   )
 }
