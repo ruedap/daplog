@@ -2,7 +2,7 @@ const pxToRem = (pxSize: number) => (baseFontSize: number = 16) => {
   return `${pxSize / baseFontSize}rem`
 }
 
-interface TUnits {
+export interface TUnits {
   (): number
   px: () => string
   rem: () => string
