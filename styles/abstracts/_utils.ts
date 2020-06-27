@@ -1,6 +1,6 @@
-const pxToRem = (pxSize: number) => (baseFontSize: number = 16) => {
-  return `${pxSize / baseFontSize}rem`
-}
+
+const pxToRem = (baseFontSize: number = 16) =>
+  (pxSize: number) => `${pxSize / baseFontSize}rem`
 
 export interface TUnits {
   (): number
@@ -8,9 +8,14 @@ export interface TUnits {
   rem: () => string
 }
 
-export const units = (value: number): TUnits => {
+const units = (value: number): TUnits => {
   const result = () => value
   result.px = () => `${value}px`
-  result.rem = () => pxToRem(value)()
+  result.rem = () => pxToRem()(value)
   return result
 }
+
+export const utils = {
+  units,
+  pxToRem: pxToRem()
+} as const

@@ -1,4 +1,4 @@
-import { units, TUnits } from './_utils'
+import { utils, TUnits } from './_utils'
 import Styles from '@/styles'
 
 type TFontSizes = Readonly<{
@@ -10,9 +10,9 @@ type TFontSizes = Readonly<{
 }>
 
 export const fontSizes: TFontSizes = {
-  xs: units(parseInt(Styles.funcs.fibo('xs'))),
-  sm: units(parseInt(Styles.funcs.fibo('sm'))),
-  md: units(parseInt(Styles.funcs.fibo('md'))),
-  lg: units(parseInt(Styles.funcs.fibo('lg'))),
-  xl: units(parseInt(Styles.funcs.fibo('xl')))
+  xs: utils.units(parseInt(Styles.funcs.fibo('xs'))),
+  sm: utils.units(parseInt(Styles.funcs.fibo('sm'))),
+  md: utils.units(parseInt(Styles.funcs.fibo('md'))),
+  lg: utils.units(parseInt(Styles.funcs.fibo('lg'))),
+  xl: utils.units(parseInt(Styles.funcs.fibo('xl')))
 } as const
