@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`utils.units() should be match snapshot 1`] = `
+.c0 {
+  line-height: 10;
+  font-size: 10px;
+  width: 0.625rem;
+}
+
+<div
+  className="c0"
+/>
+`;

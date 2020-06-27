@@ -12,12 +12,12 @@ export const Root = styled.ul`
 export const Item = styled.li`
   ${({ theme }) => css`
     ${Styles.mixins.fontSmoothing()}
-    font-size: 1.4rem;
+    font-size: ${theme.utils.pxToRem(14)};
     line-height: ${Styles.funcs.fibo('sm', 'px')};
     margin-bottom: 1px;
 
     ${theme.mq.up.md} {
-      font-size: 1.8rem;
+      font-size: ${theme.utils.pxToRem(18)};
       line-height: ${Styles.funcs.fibo('md', 'px')};
     }
   `}

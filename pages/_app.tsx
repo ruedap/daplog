@@ -4,9 +4,9 @@ import * as gtag from '@/utils/gtag'
 import Styles from '@/styles'
 import { AppStateProvider } from '@/contexts/app_state'
 import { useAppState } from '@/hooks/app_state'
-import '@/styles/normalize.scss'
-import '@/styles/highlightjs.scss'
-import '@/styles/fonts.scss'
+import '@/styles/basics_normalize.scss'
+import '@/styles/basics_highlightjs.scss'
+import '@/styles/basics_fonts.scss'
 import '@/styles/components.scss'
 
 Router.events.on('routeChangeComplete', url => gtag.pageview(url))

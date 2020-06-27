@@ -5,7 +5,6 @@ export default createGlobalStyle`
   ${({ theme }) => css`
     html {
       box-sizing: border-box;
-      font-size: 62.5%;
     }
 
     *,
@@ -18,7 +17,6 @@ export default createGlobalStyle`
       background-color: ${theme.colors.bg.body};
       color: ${theme.colors.text.body};
       font-family: var(--b-fontFamily-helvetica);
-      font-size: 1.4rem;
     }
 
     a {
