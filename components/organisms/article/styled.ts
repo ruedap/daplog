@@ -26,7 +26,7 @@ export const Title = styled.h1`
   ${({ theme }) => css`
     ${Styles.mixins.fontSmoothing()}
     font-family: var(--b-fontFamily-crimson);
-    font-size: ${Styles.funcs.fibo('xs', 'rem')};
+    font-size: ${theme.fontSizes.xs.rem};
     font-weight: normal;
     line-height: 1.618;
     margin-top: 0;
@@ -38,7 +38,7 @@ export const Title = styled.h1`
     width: 90%;
 
     ${theme.mq.up.md} {
-      font-size: ${Styles.funcs.fibo('sm', 'rem')};
+      font-size: ${theme.fontSizes.sm.rem};
       margin-bottom: ${Styles.funcs.fibo('md', 'px')};
 
       span::after {
@@ -110,7 +110,7 @@ export const NavLink = styled.a`
     background-color: ${theme.colors.key[2]};
     border-radius: 100%;
     display: block;
-    font-size: 2.6rem;
+    font-size: ${theme.utils.pxToRem(26)};
     width: ${Styles.funcs.fibo('md', 'px')};
     height: ${Styles.funcs.fibo('md', 'px')};
     line-height: ${Styles.funcs.fibo('md', 'px')};

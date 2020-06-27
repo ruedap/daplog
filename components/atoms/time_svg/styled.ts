@@ -1,4 +1,4 @@
-import styled from 'styled-components'
+import styled, { css } from 'styled-components'
 import Styles from '@/styles'
 
 export const Svg = styled.svg`
@@ -13,9 +13,11 @@ export const Circle = styled.circle`
 `
 
 export const Text = styled.text`
-  ${Styles.mixins.fontSmoothing()};
-  fill: #fff;
-  font-family: var(--b-fontFamily-fjalla);
-  font-size: ${Styles.funcs.fibo('xs', 'rem')};
-  letter-spacing: 0.1em;
+  ${({ theme }) => css`
+    ${Styles.mixins.fontSmoothing()};
+    fill: #fff;
+    font-family: var(--b-fontFamily-fjalla);
+    font-size: ${theme.fontSizes.xs.rem}; 
+    letter-spacing: 0.1em;
+  `}
 `

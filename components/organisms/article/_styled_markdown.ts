@@ -2,9 +2,9 @@ import { css } from 'styled-components'
 import { rgba } from 'polished'
 import Styles from '@/styles'
 
-const fontSizeMd = '1.7rem'
-const fontSizeSm = '1.5rem'
-const fontSizeXs = '1.2rem'
+const fontSizeMd = css`${({ theme }) => theme.utils.pxToRem(17)}`
+const fontSizeSm = css`${({ theme }) => theme.utils.pxToRem(15)}`
+const fontSizeXs = css`${({ theme }) => theme.utils.pxToRem(12)}`
 
 export const base = css`
   ${({ theme }) => css`
@@ -20,32 +20,36 @@ export const base = css`
 `
 
 export const heading = css`
-  > h2,
-  > h3 {
-    color: ${({ theme }) => theme.colors.key[5]};
-    font-weight: normal;
-    line-height: var(--b-ratio-golden);
-    text-align: center;
-  }
+  ${({ theme }) => css`
+    > h2,
+    > h3 {
+      color: ${({ theme }) => theme.colors.key[5]};
+      font-weight: normal;
+      line-height: var(--b-ratio-golden);
+      text-align: center;
+    }
 
-  > h2 {
-    font-size: 2.3rem;
-    margin-bottom: ${Styles.funcs.fibo('sm', 'px')};
-    margin-top: ${Styles.funcs.fibo('xl', 'px')};
+    > h2 {
+      font-size: ${theme.utils.pxToRem(23)};
+      margin-bottom: ${Styles.funcs.fibo('sm', 'px')};
+      margin-top: ${Styles.funcs.fibo('xl', 'px')};
 
-    ${Styles.mixins.articleSectionMark('xs', css`
-      &::before,
-      &::after {
-        top: calc((${Styles.funcs.fibo('xl', 'px')} / 2) * -1);
-      }
-    `)}
-  }
+      ${Styles.mixins.articleSectionMark('xs', css`
+        &::before,
+        &::after {
+          top: calc((${Styles.funcs.fibo('xl', 'px')} / 2) * -1);
+        }
+      `)}
+    }
 
-  > h3 {
-    font-size: 2rem;
-    margin-bottom: ${Styles.funcs.fibo('xs', 'px')};
-    margin-top: ${Styles.funcs.fibo('md', 'px')};
-  }
+    > h3 {
+      ${({ theme }) => css`
+        font-size: ${theme.utils.pxToRem(20)};
+        margin-bottom: ${Styles.funcs.fibo('xs', 'px')};
+        margin-top: ${Styles.funcs.fibo('md', 'px')};
+      `}
+    }
+  `}
 `
 
 export const p = css`
@@ -183,7 +187,7 @@ export const blockquote = css`
       cite {
         ${citeIcon}
         display: block;
-        font-size: 1.3rem;
+        font-size: ${theme.utils.pxToRem(13)};
         font-style: normal;
         text-align: right;
       }
@@ -237,33 +241,34 @@ export const footnotes = css`
 `
 
 export const highlight = css`
-  > pre {
-    ${Styles.mixins.fontSmoothing(false)}
-    background-color: #f8f8f8;
-    border: 3px solid #eee;
-    box-shadow: inset 0 0 0 1px #ccc;
-    padding: 1px;
-    display: block;
-    margin-bottom: 1em;
-    margin-top: 1em;
-    /* overflow: auto;
-    overflow-x: auto;
-    overflow-y: hidden;
-    padding: 13px;
-    white-space: pre;
-    word-wrap: normal; */
-
-    > code {
+  ${({ theme }) => css`
+    > pre { ${Styles.mixins.fontSmoothing(false)}
+      background-color: #f8f8f8;
+      border: 3px solid #eee;
+      box-shadow: inset 0 0 0 1px #ccc;
+      padding: 1px;
       display: block;
-      padding: 0.7em 1.4em 0.9em;
-      font-family: var(--b-fontFamily-mono);
-      font-size: 1.3rem;
-      font-style: normal;
-      font-weight: normal;
-      line-height: var(--b-ratio-golden);
+      margin-bottom: 1em;
+      margin-top: 1em;
+      /* overflow: auto;
       overflow-x: auto;
+      overflow-y: hidden;
+      padding: 13px;
+      white-space: pre;
+      word-wrap: normal; */
+
+      > code {
+        display: block;
+        padding: 0.7em 1.4em 0.9em;
+        font-family: var(--b-fontFamily-mono);
+        font-size: ${theme.utils.pxToRem(13)};
+        font-style: normal;
+        font-weight: normal;
+        line-height: var(--b-ratio-golden);
+        overflow-x: auto;
+      }
     }
-  }
+  `}
 `
 
 export const code = css`
@@ -286,48 +291,50 @@ export const code = css`
 export const table = (() => {
   const borderColor = css`${({ theme }) => theme.colors.key[1]}`
   return css`
-    table {
-      background-color: #fff;
-      border: 1px solid ${borderColor};
-      border-collapse: separate;
-      border-left: 0;
-      border-spacing: 0;
-      margin: ${Styles.funcs.fibo('sm', 'px')} auto;
-      width: 100%;
+    ${({ theme }) => css`
+      table {
+        background-color: #fff;
+        border: 1px solid ${borderColor};
+        border-collapse: separate;
+        border-left: 0;
+        border-spacing: 0;
+        margin: ${Styles.funcs.fibo('sm', 'px')} auto;
+        width: 100%;
 
-      th,
-      td {
-        border-left: 1px solid ${borderColor};
-        border-top: 1px solid ${borderColor};
-        font-size: 1.3rem;
-        padding: 0.5em 1em;
-        text-align: left;
-        vertical-align: top;
-      }
-
-      th {
-        /* TODO: hide header */
-        &:empty {
-          height: 4px;
-          padding: 0;
+        th,
+        td {
+          border-left: 1px solid ${borderColor};
+          border-top: 1px solid ${borderColor};
+          font-size: ${theme.utils.pxToRem(13)};
+          padding: 0.5em 1em;
+          text-align: left;
+          vertical-align: top;
         }
 
-        background-color: ${borderColor};
-        font-weight: normal;
-      }
+        th {
+          /* TODO: hide header */
+          &:empty {
+            height: 4px;
+            padding: 0;
+          }
 
-      caption + thead tr:first-child th,
-      caption + tbody tr:first-child th,
-      caption + tbody tr:first-child td,
-      colgroup + thead tr:first-child th,
-      colgroup + tbody tr:first-child th,
-      colgroup + tbody tr:first-child td,
-      thead:first-child tr:first-child th,
-      tbody:first-child tr:first-child th,
-      tbody:first-child tr:first-child td {
-        border-top: 0;
+          background-color: ${borderColor};
+          font-weight: normal;
+        }
+
+        caption + thead tr:first-child th,
+        caption + tbody tr:first-child th,
+        caption + tbody tr:first-child td,
+        colgroup + thead tr:first-child th,
+        colgroup + tbody tr:first-child th,
+        colgroup + tbody tr:first-child td,
+        thead:first-child tr:first-child th,
+        tbody:first-child tr:first-child th,
+        tbody:first-child tr:first-child td {
+          border-top: 0;
+        }
       }
-    }
+    `}
 `
 })()
 

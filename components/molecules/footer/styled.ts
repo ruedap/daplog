@@ -19,7 +19,7 @@ export const Container = styled.div`
         ${Styles.mixins.dapicons};
         color: ${theme.colors.key[2]};
         content: "ruedap";
-        font-size: 5.5rem;
+        font-size: ${theme.fontSizes.md.rem};
         left: 50%;
         position: absolute;
         top: 377px;
