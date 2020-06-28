@@ -1,4 +1,4 @@
-import FooterLogo from '@/components/atoms/footer_logo'
+import { FooterLogo } from '@/components/atoms/footer_logo'
 import { PORTFOLIO_SITE_NAME } from '@/utils/constants'
 import * as Styled from './styled'
 
