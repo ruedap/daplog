@@ -1,6 +1,6 @@
 import Head from '@/components/atoms/head'
 import Header from '@/components/molecules/header'
-import Footer from '@/components/molecules/footer'
+import { Footer } from '@/components/molecules/footer'
 import { TMetaTags } from '@/types'
 import * as Styled from './styled'
 
