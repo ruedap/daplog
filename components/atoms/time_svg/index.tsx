@@ -1,14 +1,36 @@
-import * as Styled from './styled'
+import styled, { css } from 'styled-components'
+import Styles from '@/styles'
 
-const TimeSvg = ({ date }: { date: string }) => {
+const Component = ({ date, className }: { date: string, className?: string }) => {
   return (
-    <Styled.Svg version="1.1" viewBox="0 0 987 610">
-      <Styled.Circle cx={ 173 } cy={ 377 } r={ 116 } />
-      <Styled.Text x={ 173 } y={ 377 } textAnchor="middle" dy={ 7 } stroke="none">
+    <svg version="1.1" viewBox="0 0 987 610" className={ className }>
+      <circle cx={ 173 } cy={ 377 } r={ 116 } className={ `${className}-circle` } />
+      <text x={ 173 } y={ 377 } textAnchor="middle" dy={ 7 } stroke="none" className={ `${className}-text` }>
         { date.replace(/-/g, '.') }
-      </Styled.Text>
-    </Styled.Svg>
+      </text>
+    </svg>
   )
 }
 
-export default TimeSvg
+export const StyledComponent = styled(Component)`
+  ${({ theme }) => css`
+    display: block;
+    left: 0;
+    position: absolute;
+    top: 0;
+    
+    &-circle {
+      fill: ${theme.colors.key[3]};
+    }
+    
+    &-text {
+      ${Styles.mixins.fontSmoothing()};
+      fill: #fff;
+      font-family: var(--b-fontFamily-fjalla);
+      font-size: ${theme.fontSizes.xs.rem}; 
+      letter-spacing: 0.1em;
+    }
+  `}
+`
+
+export const TimeSvg = StyledComponent

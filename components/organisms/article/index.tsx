@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import { TArticleData } from '@/types'
 import Time from '@/components/atoms/time'
-import TimeSvg from '@/components/atoms/time_svg'
+import { TimeSvg } from '@/components/atoms/time_svg'
 import * as Styled from './styled'
 
 const githubLink = (id: string) => {
