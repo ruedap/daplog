@@ -4,21 +4,21 @@ import { renderWithTheme } from '@/tests/helpers'
 
 describe('utils.units()', () => {
   it('should returns converted each value', () => {
-    const actual = utils.units(16)
+    const actual = utils.unitize(16)
     expect(actual()).toEqual(16)
     expect(actual.px()).toEqual('16px')
     expect(actual.rem()).toEqual('1rem')
   })
 
   it('should returns converted each value', () => {
-    const actual = utils.units(-100)
+    const actual = utils.unitize(-100)
     expect(actual()).toEqual(-100)
     expect(actual.px()).toEqual('-100px')
     expect(actual.rem()).toEqual('-6.25rem')
   })
 
   it('should be match snapshot', () => {
-    const u = utils.units(10)
+    const u = utils.unitize(10)
     const Styled = styled.div`
       line-height: ${u};
       font-size: ${u.px};
