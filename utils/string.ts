@@ -32,14 +32,12 @@ export const generateMetaTags = (metaTags?: Partial<TMetaTags>): TMetaTags => {
   }
 }
 
-const suitElementName = (
-  className: string | undefined,
-  elementName: string
-): string => {
-  const cn = className ?? '__UNDEFINED_CLASS_NAME__'
-  return `${cn}-${elementName}`
+const suitElementName = (blockName: string) => (elementName: string) => {
+  return `${blockName}-${elementName}`
 }
 
-export const suitNames = {
-  element: suitElementName
-} as const
+export const suitNames = (blockName: string) => {
+  return {
+    element: suitElementName(blockName)
+  } as const
+}

@@ -56,12 +56,9 @@ describe('generateMetaTags', () => {
 describe('utils.suitNames', () => {
   describe('element()', () => {
     it('should returns converted string', () => {
-      const { element } = suitNames
       const className = 'BlockName'
-      expect(element(className, 'elementName')).toEqual('BlockName-elementName')
-      expect(element(undefined, 'elementName')).toEqual(
-        '__UNDEFINED_CLASS_NAME__-elementName'
-      )
+      const { element } = suitNames(className)
+      expect(element('elementName')).toEqual('BlockName-elementName')
     })
   })
 })
