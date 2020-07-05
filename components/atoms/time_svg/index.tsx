@@ -1,9 +1,10 @@
 import styled, { css } from 'styled-components'
-import { suitNames } from '@/utils/string'
+import { suitNames, getStyledComponentsClassName } from '@/utils/string'
 import Styles from '@/styles'
 
 const Component = ({ date, className }: { date: string, className?: string }) => {
-  const { element } = suitNames(String(className))
+  const scClassName = getStyledComponentsClassName(String(className))
+  const { element } = suitNames(scClassName)
   return (
     <svg version="1.1" viewBox="0 0 987 610" className={ className }>
       <circle cx={ 173 } cy={ 377 } r={ 116 } className={ element('circle') } />

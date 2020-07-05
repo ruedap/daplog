@@ -4,7 +4,7 @@ import { Footer } from '@/components/molecules/footer'
 import { TMetaTags } from '@/types'
 import styled, { css } from 'styled-components'
 import Styles from '@/styles'
-import { suitNames } from '@/utils/string'
+import { suitNames, getStyledComponentsClassName } from '@/utils/string'
 
 const Component = ({
   metaTags,
@@ -15,7 +15,8 @@ const Component = ({
   children: React.ReactNode
   className?: string
 }) => {
-  const { element } = suitNames(String(className))
+  const scClassName = getStyledComponentsClassName(String(className))
+  const { element } = suitNames(scClassName)
 
   return (
     <>

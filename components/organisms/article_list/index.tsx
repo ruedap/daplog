@@ -1,7 +1,7 @@
 import React from 'react'
 import Link from 'next/link'
 import { TArticleItem } from '@/types'
-import { id2Url, suitNames } from '@/utils/string'
+import { id2Url, suitNames, getStyledComponentsClassName } from '@/utils/string'
 import { format, parseISO } from 'date-fns'
 import styled, { css } from 'styled-components'
 import Styles from '@/styles'
@@ -12,7 +12,8 @@ const Time = ({ dateString, className }: { dateString: string, className?: strin
   const year = format(d, 'yyyy')
   const month = format(d, 'MM')
   const date = format(d, 'dd')
-  const { element } = suitNames(String(className))
+  const scClassName = getStyledComponentsClassName(String(className))
+  const { element } = suitNames(scClassName)
   return (
     <time dateTime={ d.toISOString() } className={ className }>
       <span className={ element('year') }>{ year }</span>
@@ -92,7 +93,8 @@ const Component = ({
     beforeYear = year
     return r
   }
-  const { element } = suitNames(String(className))
+  const scClassName = getStyledComponentsClassName(String(className))
+  const { element, elementModifier } = suitNames(scClassName)
 
   return (
     <ul className={ className }>
@@ -102,8 +104,9 @@ const Component = ({
         return (
           <React.Fragment key={ id }>
             { isNewYear(year) && (
-              // TODO: modifier
-              <li className={ clsx(element('item'), element('yearHeading')) }>{ year }</li>
+              <li className={ elementModifier('item', 'yearHeading') }>
+                { year }
+              </li>
             ) }
             <li className={ element('item') }>
               <Link href="[year]/[month]/[date]/[title]" passHref as={ url }>
@@ -138,18 +141,18 @@ const StyledComponent = styled(Component)`
         font-size: ${theme.utils.pxToRem(18)};
         line-height: ${Styles.funcs.fibo('md', 'px')};
       }
-    }
-    
-    &-yearHeading {
-      background-color: ${theme.colors.key[3]};
-      color: ${theme.colors.key[5]};
-      font-family: var(--b-fontFamily-fjalla);
-      height: ${Styles.funcs.fibo('sm', 'px')};
-      letter-spacing: 0.1em;
-      text-align: center;
 
-      ${theme.mq.up.md} {
-        height: ${Styles.funcs.fibo('md', 'px')};
+      &--yearHeading {
+        background-color: ${theme.colors.key[3]};
+        color: ${theme.colors.key[5]};
+        font-family: var(--b-fontFamily-fjalla);
+        height: ${Styles.funcs.fibo('sm', 'px')};
+        letter-spacing: 0.1em;
+        text-align: center;
+
+        ${theme.mq.up.md} {
+          height: ${Styles.funcs.fibo('md', 'px')};
+        }
       }
     }
     
