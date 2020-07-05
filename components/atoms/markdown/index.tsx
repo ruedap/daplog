@@ -2,14 +2,23 @@ import styled, { css } from 'styled-components'
 import { rgba } from 'polished'
 import Styles from '@/styles'
 
-const Component = ({ className }: { className?: string}) =>
-  <div className={ className } />
+const Component = ({ body, className }: { body: string, className?: string}) =>
+  <div className={ className } dangerouslySetInnerHTML={ { __html: body } } />
 
 const fontSizeMd = css`${({ theme }) => theme.utils.pxToRem(17)}`
 const fontSizeSm = css`${({ theme }) => theme.utils.pxToRem(15)}`
 const fontSizeXs = css`${({ theme }) => theme.utils.pxToRem(12)}`
 const hrHeight = Styles.funcs.fibo('md', 'px')
 const tableBorderColor = css`${({ theme }) => theme.colors.key[1]}`
+const citeIcon = css`
+  &::before {
+    ${Styles.mixins.dapicons}
+    color: ${({ theme }) => theme.colors.key[4]};
+    content: "cite";
+    font-size: 89%;
+    margin-right: 0.6em;
+  }
+`
 
 const StyledComponent = styled(Component)`
   ${({ theme }) => css`
@@ -139,15 +148,6 @@ const StyledComponent = styled(Component)`
         font-size: ${fontSizeXs};
         margin: 0.5em 0;
       }
-    }
-    
-    /* citeIcon */
-    &::before {
-      ${Styles.mixins.dapicons}
-      color: ${({ theme }) => theme.colors.key[4]};
-      content: "cite";
-      font-size: 89%;
-      margin-right: 0.6em;
     }
 
     /* cite */
