@@ -2,8 +2,8 @@ import { GetStaticProps, GetStaticPaths } from 'next'
 import { getAllArticlePathParams, getArticleData } from '@/utils/articles'
 import { stripHtmlTags, generateMetaTags, id2Url } from '@/utils/string'
 import { TArticleData } from '@/types'
-import Layout from '@/components/templates/layout'
-import Article from '@/components/organisms/article'
+import { Layout } from '@/components/templates/layout'
+import { Article } from '@/components/organisms/article'
 import { ParsedUrlQuery } from 'querystring'
 
 export const getStaticPaths: GetStaticPaths = async () => {

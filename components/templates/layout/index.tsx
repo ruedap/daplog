@@ -1,26 +1,32 @@
-import Head from '@/components/atoms/head'
-import Header from '@/components/molecules/header'
-import Footer from '@/components/molecules/footer'
+import { Head } from '@/components/atoms/head'
+import { Header } from '@/components/molecules/header'
+import { Footer } from '@/components/molecules/footer'
 import { TMetaTags } from '@/types'
-import * as Styled from './styled'
+import styled, { css } from 'styled-components'
+import Styles from '@/styles'
+import { suitNames } from '@/utils/string'
 
-const Layout = ({
+const Component = ({
   metaTags,
-  children
+  children,
+  className
 }: {
   metaTags: TMetaTags
   children: React.ReactNode
+  className?: string
 }) => {
+  const { element } = suitNames(String(className))
+
   return (
     <>
       <Head metaTags={ metaTags } />
 
       <Header />
 
-      <main>
-        <Styled.Container>
+      <main className={ className }>
+        <div className={ element('container') }>
           { children }
-        </Styled.Container>
+        </div>
       </main>
 
       <Footer />
@@ -28,4 +34,14 @@ const Layout = ({
   )
 }
 
-export default Layout
+const StyledComponent = styled(Component)`
+  ${({ theme }) => css`
+  
+    &-container {
+      ${Styles.mixins.container}
+      background-color: ${theme.colors.bg.content};
+    }
+  `}
+`
+
+export const Layout = StyledComponent

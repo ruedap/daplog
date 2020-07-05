@@ -31,3 +31,13 @@ export const generateMetaTags = (metaTags?: Partial<TMetaTags>): TMetaTags => {
     url: metaTags?.url ?? 'https://blog.ruedap.com'
   }
 }
+
+const suitElementName = (blockName: string) => (elementName: string) => {
+  return `${blockName}-${elementName}`
+}
+
+export const suitNames = (blockName: string) => {
+  return {
+    element: suitElementName(blockName)
+  } as const
+}

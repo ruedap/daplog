@@ -1,7 +1,7 @@
 import NextHead from 'next/head'
 import { TMetaTags } from '@/types'
 
-const Head = ({ metaTags }: { metaTags: TMetaTags }) => {
+export const Head = ({ metaTags }: { metaTags: TMetaTags }) => {
   return (
     <NextHead>
       <meta charSet="utf-8" />
@@ -25,5 +25,3 @@ const Head = ({ metaTags }: { metaTags: TMetaTags }) => {
     </NextHead>
   )
 }
-
-export default Head

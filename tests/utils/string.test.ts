@@ -1,4 +1,4 @@
-import { id2Prams, generateMetaTags } from '@/utils/string'
+import { id2Prams, generateMetaTags, suitNames } from '@/utils/string'
 import { TArticlePath, TMetaTags } from '@/types'
 import { BLOG_NAME } from '@/utils/constants'
 
@@ -50,5 +50,15 @@ describe('generateMetaTags', () => {
     })
     const r: TMetaTags = generateMetaTags(args)
     expect(r).toEqual(e)
+  })
+})
+
+describe('utils.suitNames', () => {
+  describe('element()', () => {
+    it('should returns converted string', () => {
+      const className = 'BlockName'
+      const { element } = suitNames(className)
+      expect(element('elementName')).toEqual('BlockName-elementName')
+    })
   })
 })
