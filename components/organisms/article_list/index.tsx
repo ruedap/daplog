@@ -5,7 +5,7 @@ import { id2Url, suitNames } from '@/utils/string'
 import { format, parseISO } from 'date-fns'
 import styled, { css } from 'styled-components'
 import Styles from '@/styles'
-import cn from 'classnames'
+import clsx from 'clsx'
 
 const Time = ({ dateString, className }: { dateString: string, className?: string }) => {
   const d = parseISO(dateString)
@@ -17,11 +17,11 @@ const Time = ({ dateString, className }: { dateString: string, className?: strin
     <time dateTime={ d.toISOString() } className={ className }>
       <span className={ element('year') }>{ year }</span>
       <span className={ element('dot') }>.</span>
-      <span className={ cn(element('month'), 'sc-ArticleList-month') }>
+      <span className={ clsx(element('month'), 'sc-ArticleList-month') }>
         { month }
       </span>
       <span className={ element('dot') }>.</span>
-      <span className={ cn(element('date'), 'sc-ArticleList-date') }>
+      <span className={ clsx(element('date'), 'sc-ArticleList-date') }>
         { date }
       </span>
     </time>
@@ -103,13 +103,13 @@ const Component = ({
           <React.Fragment key={ id }>
             { isNewYear(year) && (
               // TODO: modifier
-              <li className={ cn(element('item'), element('yearHeading')) }>{ year }</li>
+              <li className={ clsx(element('item'), element('yearHeading')) }>{ year }</li>
             ) }
             <li className={ element('item') }>
               <Link href="[year]/[month]/[date]/[title]" passHref as={ url }>
                 <a className={ element('itemLink') }>
                   <TimeStyled dateString={ date } />
-                  <div className={ cn(element('title'), 'sc-ArticleList-title') }>{ title }</div>
+                  <div className={ clsx(element('title'), 'sc-ArticleList-title') }>{ title }</div>
                 </a>
               </Link>
             </li>
