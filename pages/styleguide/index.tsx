@@ -1,4 +1,4 @@
-import Layout from '@/components/templates/layout'
+import { Layout } from '@/components/templates/layout'
 import { generateMetaTags } from '@/utils/string'
 import Styleguide from '@/components/templates/styleguide'
 
