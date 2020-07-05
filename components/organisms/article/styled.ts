@@ -1,6 +1,5 @@
 import styled, { css } from 'styled-components'
 import Styles from '@/styles'
-import * as StyledMarkdown from './_styled_markdown'
 
 export const TimeContainer = styled.div`
   display: block;
@@ -69,25 +68,6 @@ export const Body = styled.section`
   margin: 0 auto;
   max-width: 699px;
   width: 90%;
-  ${StyledMarkdown.base}
-  ${StyledMarkdown.heading}
-  ${StyledMarkdown.p}
-  ${StyledMarkdown.img}
-  ${StyledMarkdown.strong}
-  ${StyledMarkdown.list}
-  ${StyledMarkdown.hr}
-  ${StyledMarkdown.figure}
-  ${StyledMarkdown.cite}
-  ${StyledMarkdown.blockquote}
-  ${StyledMarkdown.small}
-  ${StyledMarkdown.footnotes}
-  ${StyledMarkdown.highlight}
-  ${StyledMarkdown.code}
-  ${StyledMarkdown.table}
-  /* extra styles */
-  ${StyledMarkdown.bookCover}
-  ${StyledMarkdown.embed}
-  ${StyledMarkdown.dapicons}
 `
 
 export const Nav = styled.nav`
