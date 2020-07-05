@@ -56,11 +56,36 @@ describe('generateMetaTags', () => {
 })
 
 describe('utils.suitNames', () => {
+  describe('block()', () => {
+    it('should returns converted string', () => {
+      const className = 'BlockName'
+      const { block } = suitNames(className)
+      expect(block()).toEqual('BlockName')
+    })
+  })
+
+  describe('blockModifier()', () => {
+    it('should returns converted string', () => {
+      const className = 'BlockName'
+      const { blockModifier } = suitNames(className)
+      expect(blockModifier('modifierName')).toEqual('BlockName BlockName--modifierName')
+    })
+  })
+
   describe('element()', () => {
     it('should returns converted string', () => {
       const className = 'BlockName'
       const { element } = suitNames(className)
       expect(element('elementName')).toEqual('BlockName-elementName')
+    })
+  })
+
+  describe('elementModifier()', () => {
+    it('should returns converted string', () => {
+      const className = 'BlockName'
+      const { elementModifier } = suitNames(className)
+      expect(elementModifier('elementName', 'modifierName'))
+        .toEqual('BlockName-elementName BlockName-elementName--modifierName')
     })
   })
 })
