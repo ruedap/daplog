@@ -2,10 +2,11 @@ import { FooterLogo } from '@/components/atoms/footer_logo'
 import { PORTFOLIO_SITE_NAME } from '@/utils/constants'
 import styled, { css } from 'styled-components'
 import Styles from '@/styles'
-import { suitNames } from '@/utils/string'
+import { suitNames, getStyledComponentsClassName } from '@/utils/string'
 
 const Component = ({ className }: {className?: string}) => {
-  const { element } = suitNames(String(className))
+  const scClassName = getStyledComponentsClassName(String(className))
+  const { element } = suitNames(scClassName)
   return (
     <footer className={ className }>
       <div className={ element('container') }>

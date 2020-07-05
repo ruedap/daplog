@@ -32,12 +32,36 @@ export const generateMetaTags = (metaTags?: Partial<TMetaTags>): TMetaTags => {
   }
 }
 
+const suitBlockName = (blockName: string) => () => {
+  return blockName
+}
+
+const suitBlockModifierName = (blockName: string) => {
+  return (modifierName: string) => {
+    return `${blockName} ${blockName}--${modifierName}`
+  }
+}
+
 const suitElementName = (blockName: string) => (elementName: string) => {
   return `${blockName}-${elementName}`
 }
 
+const suitElementModifierName = (blockName: string) => {
+  return (elementName: string, modifierName: string) => {
+    return `${blockName}-${elementName} ${blockName}-${elementName}--${modifierName}`
+  }
+}
+
 export const suitNames = (blockName: string) => {
   return {
-    element: suitElementName(blockName)
+    block: suitBlockName(blockName),
+    blockModifier: suitBlockModifierName(blockName),
+    element: suitElementName(blockName),
+    elementModifier: suitElementModifierName(blockName)
   } as const
+}
+
+export const getStyledComponentsClassName = (className: string) => {
+  const array = className.split(' ')
+  return array.length > 1 ? array[1] : array[0]
 }

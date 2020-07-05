@@ -4,7 +4,7 @@ import Time from '@/components/atoms/time'
 import { TimeSvg } from '@/components/atoms/time_svg'
 import styled, { css } from 'styled-components'
 import Styles from '@/styles'
-import { suitNames } from '@/utils/string'
+import { suitNames, getStyledComponentsClassName } from '@/utils/string'
 import { Markdown } from '@/components/atoms/markdown'
 
 const githubLink = (id: string) => {
@@ -13,7 +13,8 @@ const githubLink = (id: string) => {
 }
 
 const Component = ({ articleData, className }: { articleData: TArticleData, className?: string }) => {
-  const { element } = suitNames(String(className))
+  const scClassName = getStyledComponentsClassName(String(className))
+  const { element } = suitNames(scClassName)
   return (
     <article className={ className }>
       <div className={ element('timeContainer') }>
