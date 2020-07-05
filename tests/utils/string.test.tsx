@@ -1,6 +1,8 @@
-import { id2Prams, generateMetaTags, suitNames } from '@/utils/string'
+import { id2Prams, generateMetaTags, suitNames, getStyledComponentsClassName } from '@/utils/string'
 import { TArticlePath, TMetaTags } from '@/types'
 import { BLOG_NAME } from '@/utils/constants'
+import renderer from 'react-test-renderer'
+import styled from 'styled-components'
 
 describe('id2Prams', () => {
   const id = '2000-01-01-aaa-bbb-ccc'
@@ -60,5 +62,29 @@ describe('utils.suitNames', () => {
       const { element } = suitNames(className)
       expect(element('elementName')).toEqual('BlockName-elementName')
     })
+  })
+})
+
+describe('getStyledComponentsClassName', () => {
+  test('should return styled-components\' class name', () => {
+    expect(getStyledComponentsClassName('')).toEqual('')
+    expect(getStyledComponentsClassName('foo')).toEqual('foo')
+    expect(getStyledComponentsClassName('foo bar')).toEqual('bar')
+    expect(getStyledComponentsClassName('foo bar baz')).toEqual('bar')
+  })
+
+  test('should be match snapshot', () => {
+    const Component = ({ className }: { className?: string}) => {
+      const scClassName = getStyledComponentsClassName(String(className))
+      return (
+        <div className={ scClassName }>foo</div>
+      )
+    }
+
+    const StyledComponent = styled(Component)`
+      color: red;
+    `
+    const actual = renderer.create(<StyledComponent className="foo bar" />)
+    expect(actual).toMatchSnapshot()
   })
 })

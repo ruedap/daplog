@@ -41,3 +41,8 @@ export const suitNames = (blockName: string) => {
     element: suitElementName(blockName)
   } as const
 }
+
+export const getStyledComponentsClassName = (className: string) => {
+  const array = className.split(' ')
+  return array.length > 1 ? array[1] : array[0]
+}
