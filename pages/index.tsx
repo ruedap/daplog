@@ -1,7 +1,7 @@
 import { GetStaticProps } from 'next'
 import { getSortedArticleList } from '@/utils/articles'
 import Layout from '@/components/templates/layout'
-import ArticleList from '@/components/organisms/article_list'
+import { ArticleList } from '@/components/organisms/article_list'
 import { TArticleItem } from '@/types'
 import { generateMetaTags } from '@/utils/string'
 
