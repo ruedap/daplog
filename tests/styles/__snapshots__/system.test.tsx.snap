@@ -1,0 +1,173 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`margin() $m should be matched snapshot 1`] = `
+.c0 {
+  margin: 0;
+}
+
+<div
+  className="c0"
+/>
+`;
+
+exports[`margin() $mb should be matched snapshot 1`] = `
+.c0 {
+  margin-bottom: 8px;
+}
+
+<div
+  className="c0"
+/>
+`;
+
+exports[`margin() $ml should be matched snapshot 1`] = `
+.c0 {
+  margin-left: 16px;
+}
+
+<div
+  className="c0"
+/>
+`;
+
+exports[`margin() $mr should be matched snapshot 1`] = `
+.c0 {
+  margin-right: 4px;
+}
+
+<div
+  className="c0"
+/>
+`;
+
+exports[`margin() $mt should be matched snapshot 1`] = `
+.c0 {
+  margin-top: 2px;
+}
+
+<div
+  className="c0"
+/>
+`;
+
+exports[`margin() $mx should be matched snapshot 1`] = `
+.c0 {
+  margin-left: 32px;
+  margin-right: 32px;
+}
+
+<div
+  className="c0"
+/>
+`;
+
+exports[`margin() $my should be matched snapshot 1`] = `
+.c0 {
+  margin-top: 32px;
+  margin-bottom: 32px;
+}
+
+<div
+  className="c0"
+/>
+`;
+
+exports[`margin() all props should be matched snapshot 1`] = `
+.c0 {
+  margin: 0;
+  margin-top: 0;
+  margin-right: 32px;
+  margin-bottom: 0;
+  margin-left: 32px;
+}
+
+<div
+  className="c0"
+/>
+`;
+
+exports[`padding() $p should be matched snapshot 1`] = `
+.c0 {
+  padding: 0;
+}
+
+<div
+  className="c0"
+/>
+`;
+
+exports[`padding() $pb should be matched snapshot 1`] = `
+.c0 {
+  padding-bottom: 8px;
+}
+
+<div
+  className="c0"
+/>
+`;
+
+exports[`padding() $pl should be matched snapshot 1`] = `
+.c0 {
+  padding-left: 16px;
+}
+
+<div
+  className="c0"
+/>
+`;
+
+exports[`padding() $pr should be matched snapshot 1`] = `
+.c0 {
+  padding-right: 4px;
+}
+
+<div
+  className="c0"
+/>
+`;
+
+exports[`padding() $pt should be matched snapshot 1`] = `
+.c0 {
+  padding-top: 2px;
+}
+
+<div
+  className="c0"
+/>
+`;
+
+exports[`padding() $px should be matched snapshot 1`] = `
+.c0 {
+  padding-left: 32px;
+  padding-right: 32px;
+}
+
+<div
+  className="c0"
+/>
+`;
+
+exports[`padding() $py should be matched snapshot 1`] = `
+.c0 {
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+<div
+  className="c0"
+/>
+`;
+
+exports[`padding() all props should be matched snapshot 1`] = `
+.c0 {
+  padding: 0;
+  padding-top: 0;
+  padding-right: 32px;
+  padding-bottom: 0;
+  padding-left: 32px;
+}
+
+<div
+  className="c0"
+/>
+`;
