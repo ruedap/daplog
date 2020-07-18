@@ -188,7 +188,7 @@ describe('padding()', () => {
         theme: { ...themeProps },
         $p: '0'
       }
-      const actual = margin(props)
+      const actual = padding(props)
       expect(actual).toEqual({ padding: '0' })
     })
 
@@ -209,7 +209,7 @@ describe('padding()', () => {
         theme: { ...themeProps },
         $pt: 'xs'
       }
-      const actual = margin(props)
+      const actual = padding(props)
       expect(actual).toEqual({ paddingTop: 2 })
     })
 
@@ -230,7 +230,7 @@ describe('padding()', () => {
         theme: { ...themeProps },
         $pr: 'sm'
       }
-      const actual = margin(props)
+      const actual = padding(props)
       expect(actual).toEqual({ paddingRight: 4 })
     })
 
@@ -251,7 +251,7 @@ describe('padding()', () => {
         theme: { ...themeProps },
         $pb: 'md'
       }
-      const actual = margin(props)
+      const actual = padding(props)
       expect(actual).toEqual({ paddingBottom: 8 })
     })
 
@@ -272,7 +272,7 @@ describe('padding()', () => {
         theme: { ...themeProps },
         $pl: 'lg'
       }
-      const actual = margin(props)
+      const actual = padding(props)
       expect(actual).toEqual({ paddingLeft: 16 })
     })
 
@@ -293,7 +293,7 @@ describe('padding()', () => {
         theme: { ...themeProps },
         $px: 'xl'
       }
-      const actual = margin(props)
+      const actual = padding(props)
       expect(actual).toEqual({ paddingLeft: 32, paddingRight: 32 })
     })
 
@@ -314,7 +314,7 @@ describe('padding()', () => {
         theme: { ...themeProps },
         $py: 'xl'
       }
-      const actual = margin(props)
+      const actual = padding(props)
       expect(actual).toEqual({ paddingTop: 32, paddingBottom: 32 })
     })
 
