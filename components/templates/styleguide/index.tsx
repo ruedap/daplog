@@ -3,6 +3,7 @@ import { FooBar, FooBarTag4 } from './_foo_bar'
 import styled, { css, keyframes, Keyframes } from 'styled-components'
 import { StyledTag4 } from './_styled_tag4'
 import { useSetAppState } from '@/hooks/app_state'
+import { space, SpaceProps, color, ColorProps } from '@/styles/system'
 
 const hover = css`
   &:hover {
@@ -24,7 +25,7 @@ const Styleguide = () => {
       <Index2 />
       <FooBar />
       <FooBarTag4 />
-      <StyledTitle>Styleguide</StyledTitle>
+      <StyledTitle my={ { sm: 0, md: 100 } } mb="sm" color="state.secondary" $color="foo">Styleguide</StyledTitle>
       <div css={ prop }>This is css prop</div>
       <StyledTag1>Cool Styles</StyledTag1>
       <StyledTag2>
@@ -46,10 +47,12 @@ const Styleguide = () => {
 
 export default Styleguide
 
-const StyledTitle = styled.h1`
+const StyledTitle = styled.h1<SpaceProps & ColorProps & { $color: string }>`
   font-size: 4rem;
-  margin: 0;
   color: ${({ theme }) => theme.colors.text.body};
+  content: "${({ $color }) => $color}";
+  ${space}
+  ${color}
 `
 
 const base = css`
