@@ -26,7 +26,7 @@ const Styleguide = () => {
       <FooBar />
       <FooBarTag4 />
       <StyledTitle $m="xs" $p="0">Styleguide</StyledTitle>
-      <div css={ prop }>This is css prop</div>
+      <div css={ prop } className="u-mt-xs u-px-lg">This is css prop</div>
       <StyledTag1>Cool Styles</StyledTag1>
       <StyledTag2>
         With <code>:hover</code>.
