@@ -73,6 +73,8 @@
       }
     },
     "testMatch": [
+      "**/components/**/*.test.(ts|tsx)",
+      "**/styles/**/*.test.(ts|tsx)",
       "**/tests/**/*.test.(ts|tsx)"
     ]
   }
