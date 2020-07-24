@@ -1,15 +1,16 @@
 import { margin, TMarginProps, padding, TPaddingProps } from '@/styles/system'
+import { utils } from '@/styles/abstracts/_utils'
 import styled, { ThemeProvider } from 'styled-components'
 import 'jest-styled-components'
 import renderer from 'react-test-renderer'
 
 const themeProps = {
   space: {
-    xs: 2,
-    sm: 4,
-    md: 8,
-    lg: 16,
-    xl: 32
+    xs: utils.unitize(2),
+    sm: utils.unitize(4),
+    md: utils.unitize(8),
+    lg: utils.unitize(16),
+    xl: utils.unitize(32)
   }
 }
 
@@ -47,7 +48,7 @@ describe('margin()', () => {
         $mt: 'xs'
       }
       const actual = margin(props)
-      expect(actual).toEqual({ marginTop: 2 })
+      expect(actual).toEqual({ marginTop: '2px' })
     })
 
     it('should be matched snapshot', () => {
@@ -68,7 +69,7 @@ describe('margin()', () => {
         $mr: 'sm'
       }
       const actual = margin(props)
-      expect(actual).toEqual({ marginRight: 4 })
+      expect(actual).toEqual({ marginRight: '4px' })
     })
 
     it('should be matched snapshot', () => {
@@ -89,7 +90,7 @@ describe('margin()', () => {
         $mb: 'md'
       }
       const actual = margin(props)
-      expect(actual).toEqual({ marginBottom: 8 })
+      expect(actual).toEqual({ marginBottom: '8px' })
     })
 
     it('should be matched snapshot', () => {
@@ -110,7 +111,7 @@ describe('margin()', () => {
         $ml: 'lg'
       }
       const actual = margin(props)
-      expect(actual).toEqual({ marginLeft: 16 })
+      expect(actual).toEqual({ marginLeft: '16px' })
     })
 
     it('should be matched snapshot', () => {
@@ -131,7 +132,7 @@ describe('margin()', () => {
         $mx: 'xl'
       }
       const actual = margin(props)
-      expect(actual).toEqual({ marginLeft: 32, marginRight: 32 })
+      expect(actual).toEqual({ marginLeft: '32px', marginRight: '32px' })
     })
 
     it('should be matched snapshot', () => {
@@ -152,7 +153,7 @@ describe('margin()', () => {
         $my: 'xl'
       }
       const actual = margin(props)
-      expect(actual).toEqual({ marginTop: 32, marginBottom: 32 })
+      expect(actual).toEqual({ marginTop: '32px', marginBottom: '32px' })
     })
 
     it('should be matched snapshot', () => {
@@ -210,7 +211,7 @@ describe('padding()', () => {
         $pt: 'xs'
       }
       const actual = padding(props)
-      expect(actual).toEqual({ paddingTop: 2 })
+      expect(actual).toEqual({ paddingTop: '2px' })
     })
 
     it('should be matched snapshot', () => {
@@ -231,7 +232,7 @@ describe('padding()', () => {
         $pr: 'sm'
       }
       const actual = padding(props)
-      expect(actual).toEqual({ paddingRight: 4 })
+      expect(actual).toEqual({ paddingRight: '4px' })
     })
 
     it('should be matched snapshot', () => {
@@ -252,7 +253,7 @@ describe('padding()', () => {
         $pb: 'md'
       }
       const actual = padding(props)
-      expect(actual).toEqual({ paddingBottom: 8 })
+      expect(actual).toEqual({ paddingBottom: '8px' })
     })
 
     it('should be matched snapshot', () => {
@@ -273,7 +274,7 @@ describe('padding()', () => {
         $pl: 'lg'
       }
       const actual = padding(props)
-      expect(actual).toEqual({ paddingLeft: 16 })
+      expect(actual).toEqual({ paddingLeft: '16px' })
     })
 
     it('should be matched snapshot', () => {
@@ -294,7 +295,7 @@ describe('padding()', () => {
         $px: 'xl'
       }
       const actual = padding(props)
-      expect(actual).toEqual({ paddingLeft: 32, paddingRight: 32 })
+      expect(actual).toEqual({ paddingLeft: '32px', paddingRight: '32px' })
     })
 
     it('should be matched snapshot', () => {
@@ -315,7 +316,7 @@ describe('padding()', () => {
         $py: 'xl'
       }
       const actual = padding(props)
-      expect(actual).toEqual({ paddingTop: 32, paddingBottom: 32 })
+      expect(actual).toEqual({ paddingTop: '32px', paddingBottom: '32px' })
     })
 
     it('should be matched snapshot', () => {
