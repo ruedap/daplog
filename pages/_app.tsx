@@ -4,6 +4,7 @@ import * as gtag from '@/utils/gtag'
 import Styles from '@/styles'
 import { AppStateProvider } from '@/contexts/app_state'
 import { useAppState } from '@/hooks/app_state'
+import { StyledBasicUtils } from '@/styles/basics/utils'
 import '@/styles/basics_normalize.scss'
 import '@/styles/basics_highlightjs.scss'
 import '@/styles/basics_fonts.scss'
@@ -18,6 +19,7 @@ export default function App ({ Component, pageProps }: AppProps) {
     <AppStateProvider initialAppState={ appState }>
       <Styles.CustomProperties />
       <Styles.Elements />
+      <StyledBasicUtils />
       <Component { ...pageProps } />
     </AppStateProvider>
   )

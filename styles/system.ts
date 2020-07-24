@@ -27,7 +27,7 @@ export interface TPaddingProps {
 export type TSpaceProps = TMarginProps & TPaddingProps
 
 const getThemeValue = (theme: TTheme) => (value: TSpaceValue) => {
-  return value === '0' ? '0' : theme.space[value]
+  return value === '0' ? '0' : theme.space[value].px()
 }
 
 export const margin = (props: any) => {

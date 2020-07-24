@@ -29,6 +29,10 @@ export const AppStateProvider = (props: {
     const root = document.documentElement
     root.style.setProperty('--b-colors-text-body', theme.colors.text.body)
     root.style.setProperty('--b-colors-bg-content', theme.colors.bg.content)
+
+    Object.entries(theme.space).forEach(([key, value]) => {
+      root.style.setProperty(`--theme-space-${key}`, value.px())
+    })
   }, [appState])
 
   return (
