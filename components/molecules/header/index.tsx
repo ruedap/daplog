@@ -1,7 +1,7 @@
 import styled, { css } from 'styled-components'
 import Styles from '@/styles'
 import Link from 'next/link'
-import HeaderLogo from '@/components/atoms/header_logo'
+import { HeaderLogo } from '@/components/atoms/header_logo'
 import { suitNames, getStyledComponentsClassName } from '@/utils/string'
 
 const Component = ({ className }: {className?: string}) => {

@@ -1,6 +1,6 @@
 import Link from 'next/link'
 import { TArticleData } from '@/types'
-import Time from '@/components/atoms/time'
+import { Time } from '@/components/atoms/time'
 import { TimeSvg } from '@/components/atoms/time_svg'
 import styled, { css } from 'styled-components'
 import Styles from '@/styles'
