@@ -9,7 +9,9 @@
     "deploy": "npm run build && next export && firebase deploy",
     "test": "jest",
     "lint": "eslint --ext .js,.ts,.tsx,.jsx .",
-    "analyze": "ANALYZE=true npm run build"
+    "analyze": "ANALYZE=true npm run build",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
   },
   "dependencies": {
     "@next/bundle-analyzer": "^9.4.4",
@@ -31,6 +33,11 @@
     "styled-components": "^5.1.1"
   },
   "devDependencies": {
+    "@babel/core": "^7.10.5",
+    "@storybook/addon-actions": "^5.3.19",
+    "@storybook/addon-links": "^5.3.19",
+    "@storybook/addons": "^5.3.19",
+    "@storybook/react": "^5.3.19",
     "@types/jest": "26.0.0",
     "@types/lodash": "^4.14.155",
     "@types/node": "^13.13.4",
@@ -40,6 +47,7 @@
     "@typescript-eslint/eslint-plugin": "^3.0.2",
     "@typescript-eslint/parser": "^3.0.2",
     "babel-jest": "^26.0.1",
+    "babel-loader": "^8.1.0",
     "babel-plugin-styled-components": "^1.10.7",
     "eslint": "^7.1.0",
     "eslint-config-standard-with-typescript": "^18.0.2",
