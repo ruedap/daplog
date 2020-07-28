@@ -11,7 +11,7 @@
     "lint": "eslint --ext .js,.ts,.tsx,.jsx .",
     "analyze": "ANALYZE=true npm run build",
     "storybook": "start-storybook -s ./public -p 6006",
-    "build-storybook": "build-storybook"
+    "build-storybook": "build-storybook -s ./public"
   },
   "dependencies": {
     "@next/bundle-analyzer": "^9.4.4",
