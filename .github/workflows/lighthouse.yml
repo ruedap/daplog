@@ -13,15 +13,23 @@ jobs:
       - name: Install Lighthouse
         run: sudo npm i -g lighthouse
 
-      - name: Run Lighthouse
+      - run: mkdir ./lighthouse/
+      - name: Run Lighthouse 1
         run: |
           lighthouse \
             --chrome-flags="--headless" \
-            --output html --output-path ./report.html \
+            --output html --output-path ./lighthouse/report-index.html \
             'https://blog.ruedap.com'
-
+      - name: Run Lighthouse 1
+        run: |
+          lighthouse \
+            --chrome-flags="--headless" \
+            --output html --output-path ./lighthouse/report-article.html \
+            'https://blog.ruedap.com/2010/08/01/vimperator-hint-font-size'
+            
       - name: Upload result
-        uses: actions/upload-artifact@master
+        uses: actions/upload-artifact@v2
         with:
           name: report
-          path: report.html
+          path: ./lighthouse/
+
