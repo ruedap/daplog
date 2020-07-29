@@ -1,0 +1,27 @@
+name: Lighthouse
+
+on:
+  schedule:
+    - cron: '*/10 * * * *'
+
+jobs:
+  test:
+    runs-on: ubuntu-18.04
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Install Lighthouse
+        run: sudo npm i -g lighthouse
+
+      - name: Run Lighthouse
+        run: |
+          lighthouse \
+            --chrome-flags="--headless" \
+            --output html --output-path ./report.html \
+            'https://blog.ruedap.com'
+
+      - name: Upload result
+        uses: actions/upload-artifact@master
+        with:
+          name: report
+          path: report.html
