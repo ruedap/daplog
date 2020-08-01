@@ -11,7 +11,12 @@
     "lint": "eslint --ext .js,.ts,.tsx,.jsx .",
     "analyze": "ANALYZE=true npm run build",
     "storybook": "start-storybook -s ./public -p 6006",
-    "build-storybook": "build-storybook -s ./public"
+    "build-storybook": "build-storybook -s ./public",
+    "lighthouse-mkdir": "make-dir ./.lighthouse/reports/",
+    "lighthouse-cmd": "npm run lighthouse-mkdir && lighthouse --chrome-flags='--headless' --output 'html,json,csv'",
+    "lighthouse-index": "npm run lighthouse-cmd -- --output-path ./.lighthouse/reports/index 'https://blog.ruedap.com'",
+    "lighthouse-article": "npm run lighthouse-cmd -- --output-path ./.lighthouse/reports/artile 'https://blog.ruedap.com/2010/08/01/vimperator-hint-font-size'",
+    "lighthouse": "npm run lighthouse-index && npm run lighthouse-article"
   },
   "dependencies": {
     "@next/bundle-analyzer": "^9.4.4",
