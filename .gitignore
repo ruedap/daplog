@@ -31,3 +31,6 @@ yarn-error.log*
 
 # firebase
 /.firebase/
+
+# lighthouse
+/.lighthouse/

@@ -2,7 +2,8 @@ name: Lighthouse
 
 on:
   schedule:
-    - cron: '0 0 * * *'
+    # 02:00 JST
+    - cron: '0 17 * * *'
 
 jobs:
   test:
@@ -13,23 +14,11 @@ jobs:
       - name: Install Lighthouse
         run: sudo npm i -g lighthouse
 
-      - run: mkdir ./lighthouse/
-      - name: Run Lighthouse 1
-        run: |
-          lighthouse \
-            --chrome-flags="--headless" \
-            --output html --output-path ./lighthouse/report-index.html \
-            'https://blog.ruedap.com'
-      - name: Run Lighthouse 2
-        run: |
-          lighthouse \
-            --chrome-flags="--headless" \
-            --output html --output-path ./lighthouse/report-article.html \
-            'https://blog.ruedap.com/2010/08/01/vimperator-hint-font-size'
-            
-      - name: Upload result
+      - name: Run Lighthouse
+        run: npm run lighthouse
+
+      - name: Upload Lighthouse reports
         uses: actions/upload-artifact@v2
         with:
-          name: lighthouse-report
-          path: ./lighthouse/
-
+          name: lighthouse-reports
+          path: ./.lighthouse/reports/
