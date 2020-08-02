@@ -4,15 +4,21 @@ on:
   schedule:
     # 02:00 JST
     - cron: '0 17 * * *'
+  push:
+    branches:
+      - master
 
 jobs:
-  test:
+  lighthouse:
     runs-on: ubuntu-18.04
     steps:
       - uses: actions/checkout@v2
 
       - name: Install Lighthouse
         run: sudo npm i -g lighthouse
+
+      - name: Install npm
+        run: npm i
 
       - name: Run Lighthouse
         run: npm run lighthouse
