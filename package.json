@@ -33,8 +33,8 @@
     "remark": "^12.0.0",
     "remark-footnotes": "^1.0.0",
     "remark-highlight.js": "^6.0.0",
-    "remark-html": "^11.0.1",
-    "sass": "^1.26.8",
+    "remark-html": "^12.0.0",
+    "sass": "^1.26.10",
     "styled-components": "^5.1.1"
   },
   "devDependencies": {
