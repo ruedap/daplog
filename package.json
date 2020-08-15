@@ -19,13 +19,13 @@
     "lighthouse": "npm run lighthouse-index && npm run lighthouse-article"
   },
   "dependencies": {
-    "@next/bundle-analyzer": "9.4.4",
+    "@next/bundle-analyzer": "9.5.2",
     "clsx": "1.1.1",
     "date-fns": "2.14.0",
     "gray-matter": "4.0.2",
     "he": "1.2.0",
     "lodash": "4.17.19",
-    "next": "9.4.4",
+    "next": "9.5.2",
     "normalize.css": "8.0.1",
     "polished": "3.6.5",
     "react": "16.13.1",
