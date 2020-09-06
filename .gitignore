@@ -34,3 +34,6 @@ yarn-error.log*
 
 # lighthouse
 /.lighthouse/
+
+# storybook
+/build-storybook.log
