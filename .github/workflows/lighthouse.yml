@@ -17,9 +17,6 @@ jobs:
       - name: Install Lighthouse
         run: sudo npm i -g lighthouse
 
-      - name: Install npm
-        run: npm i
-
       - name: Run Lighthouse
         run: npm run lighthouse
 
