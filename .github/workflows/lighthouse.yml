@@ -18,7 +18,7 @@ jobs:
         run: sudo npm i -g lighthouse
 
       - name: Install
-        run: sudo npm ci
+        run: npm ci
 
       - name: Run Lighthouse
         run: npm run lighthouse
