@@ -15,6 +15,8 @@
     "vrt:cap": "storycap --serverTimeout 60000 --captureTimeout 10000 --serverCmd 'http-server storybook-static --ci -p 6007' http://localhost:6007",
     "vrt:run": "reg-suit run",
     "vrt": "npm run build-storybook && npm run vrt:cap && npm run vrt:run",
+    "ci:vrt:config": "cpy ./regconfig.ci.json ./ --rename=regconfig.json",
+    "ci:vrt": "npm run ci:vrt:config && npm run vrt",
     "lighthouse-mkdir": "make-dir ./.lighthouse/reports/",
     "lighthouse-cmd": "npm run lighthouse-mkdir && lighthouse --chrome-flags='--headless' --output 'html,json,csv'",
     "lighthouse-index": "npm run lighthouse-cmd -- --output-path ./.lighthouse/reports/index 'https://blog.ruedap.com'",
