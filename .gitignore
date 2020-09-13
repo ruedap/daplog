@@ -37,5 +37,9 @@ yarn-error.log*
 
 # storybook
 /build-storybook.log
-.reg
 storybook-static/
+
+# VRT
+.reg
+regconfig.json
+__screenshots__/
