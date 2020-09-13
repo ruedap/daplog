@@ -12,6 +12,8 @@
     "analyze": "ANALYZE=true npm run build",
     "storybook": "start-storybook -s ./public -p 6006",
     "build-storybook": "build-storybook -s ./public",
+    "ci:storycap": "storycap --serverTimeout 60000 --captureTimeout 10000 --serverCmd 'npx http-server storybook-static --ci -p 6007' http://localhost:6007",
+    "ci:vrt": "reg-suit run",
     "lighthouse-mkdir": "make-dir ./.lighthouse/reports/",
     "lighthouse-cmd": "npm run lighthouse-mkdir && lighthouse --chrome-flags='--headless' --output 'html,json,csv'",
     "lighthouse-index": "npm run lighthouse-cmd -- --output-path ./.lighthouse/reports/index 'https://blog.ruedap.com'",
