@@ -1,0 +1,19 @@
+{
+  "core": {
+    "workingDir": ".reg",
+    "actualDir": ".__screenshots__",
+    "thresholdRate": 0,
+    "ximgdiff": {
+      "invocationType": "client"
+    }
+  },
+  "plugins": {
+    "reg-keygen-git-hash-plugin": {},
+    "reg-notify-github-plugin": {
+      "clientId": "$VRT_NOTIFY_GITHUB_CLIENT_ID"
+    },
+    "reg-publish-s3-plugin": {
+      "bucketName": "$VRT_PUBLISH_S3_BUCKET_NAME"
+    }
+  }
+}
