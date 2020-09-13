@@ -1,0 +1,19 @@
+{
+  "core": {
+    "workingDir": ".reg",
+    "actualDir": ".storycap/__screenshots__/actual",
+    "thresholdRate": 0,
+    "ximgdiff": {
+      "invocationType": "client"
+    }
+  },
+  "plugins": {
+    "reg-keygen-git-hash-plugin": {},
+    "reg-notify-github-plugin": {
+      "clientId": "$REG_NOTICE_CLIENT_ID"
+    },
+    "reg-publish-s3-plugin": {
+      "bucketName": "reg-publish-bucket-7f97ca8e-1d14-4ad7-9c51-1d5423ca5619"
+    }
+  }
+}
