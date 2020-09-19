@@ -14,9 +14,9 @@ const body = `
   <h4>h4 見出し</h4>
   <h5>h5 見出し</h5>
   <h6>h6 見出し</h6>
-  
+
   <p>Mattis curabitur penatibus pulvinar consequat taciti nunc aptent libero feugiat, vitae platea accumsan tristique ligula viverra sollicitudin dolor mollis est, tempor nibh hac netus adipiscing felis odio rutrum.</p>
-  
+
   <p>Mattis curabitur penatibus pulvinar <a href="#">consequat</a> taciti nunc aptent libero feugiat, vitae platea accumsan tristique ligula viverra sollicitudin dolor mollis est, tempor nibh hac netus adipiscing felis odio rutrum.</p>
 `
 

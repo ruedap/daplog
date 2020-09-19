@@ -43,3 +43,4 @@ storybook-static/
 .reg
 regconfig.json
 __screenshots__/
+.storycap/
