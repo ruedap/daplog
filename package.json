@@ -59,8 +59,8 @@
     "babel-jest": "26.3.0",
     "babel-loader": "8.1.0",
     "babel-plugin-styled-components": "1.11.1",
-    "cpy-cli": "3.1.1",
     "chromatic": "5.1.0",
+    "cpy-cli": "3.1.1",
     "eslint": "7.8.1",
     "eslint-config-standard-with-typescript": "19.0.1",
     "eslint-loader": "4.0.2",
@@ -79,7 +79,7 @@
     "reg-notify-github-plugin": "0.10.3",
     "reg-publish-s3-plugin": "0.10.3",
     "reg-suit": "0.10.3",
-    "storycap": "2.3.6",
+    "storycap": "^3.0.0",
     "typescript": "4.0.2"
   },
   "jest": {
