@@ -17,6 +17,7 @@
     "vrt:cap:before": "npm run vrt:cap -- --outDir .storycap/screenshots/before",
     "vrt:cap:after": "npm run vrt:cap -- --outDir .storycap/screenshots/after",
     "vrt:diff": "reg-cli .storycap/screenshots/after .storycap/screenshots/before .storycap/screenshots/diff --report .storycap/report.html --json .storycap/reg.json --matchingThreshold 0.1",
+    "vrt:save": "trash .storycap/screenshots/before/** && cpx '.storycap/screenshots/after/**/*' .storycap/screenshots/before",
     "vrt:report": "open .storycap/report.html",
     "vrt:check": "npm run vrt:cap:after && npm run vrt:diff || npm run vrt:report",
     "vrt:run": "reg-suit run",
