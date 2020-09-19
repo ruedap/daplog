@@ -75,6 +75,7 @@
     "jest-styled-components": "7.0.3",
     "make-dir-cli": "2.0.0",
     "react-test-renderer": "16.13.1",
+    "reg-cli": "^0.16.1",
     "reg-keygen-git-hash-plugin": "0.10.3",
     "reg-notify-github-plugin": "0.10.3",
     "reg-publish-s3-plugin": "0.10.3",
