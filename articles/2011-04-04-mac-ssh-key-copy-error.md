@@ -9,7 +9,7 @@ Mac OS Xの再インストール後、元々使っていたSSH公開鍵・秘密
 `git push`しようとしたら、こんな警告が出た。
 
 ~~~ sh
-$ git push nekostagram master
+$ git push origin master
 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 @         WARNING: UNPROTECTED PRIVATE KEY FILE!          @
 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
