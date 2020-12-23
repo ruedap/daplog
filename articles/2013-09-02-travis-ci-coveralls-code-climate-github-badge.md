@@ -1,13 +1,13 @@
 # <span>Travis CIとCoverallsとCode Climateを使って</span><span>GitHubリポジトリにバッジを付ける</span>
 
-先月に公開した超ニッチなツール[Font Awesome Workflow for Alfred 2](https://github.com/ruedap/alfred2-font-awesome-workflow)が意外と好評で、そこにオクラホマ州から[これOS X Mavericksで動いとらんぜよ](https://github.com/ruedap/alfred2-font-awesome-workflow/issues/1)とお便りが届いたりして、そいやテスト書いてにゃ〜からレガシーだぎゃ〜えびふりゃ〜、と名古屋県の僕は思った。
+先月に公開した超ニッチなツール[Font Awesome Workflow for Alfred 2](https://github.com/ruedap/alfred2-font-awesome-workflow)が意外と好評で、そこにオクラホマ州から[これOS X Mavericksで動いとらんよ](https://github.com/ruedap/alfred2-font-awesome-workflow/issues/1)とお便りが届いたりした。
 
 そんなわけで[少々テストを書いた](https://github.com/ruedap/alfred2-font-awesome-workflow/blob/master/workflow/test/font_awesome_test.rb)上で、Mountain Lion以前に入っている*Ruby 1.8.7*と、Mavericks以降に入る*Ruby 2.0.0*の両方で常に動作確認しておくようにしたいと考えて、まず[Travis CI](http://travis-ci.com/)を、その後[Coveralls](https://coveralls.io/)と[Code Climate](https://codeclimate.com/)を導入した。この記事はその備忘録。
 
 [![Build Status](https://travis-ci.org/ruedap/alfred2-font-awesome-workflow.png?branch=master)](https://travis-ci.org/ruedap/alfred2-font-awesome-workflow) [![Coverage Status](https://coveralls.io/repos/ruedap/alfred2-font-awesome-workflow/badge.png)](https://coveralls.io/r/ruedap/alfred2-font-awesome-workflow) [![Code Climate](https://codeclimate.com/github/ruedap/alfred2-font-awesome-workflow.png)](https://codeclimate.com/github/ruedap/alfred2-font-awesome-workflow)
 {: .ArtcleBody-inlineImage .u-textCenter }
 
-それらを導入すると、こんなかんじのバッジを表示できる。GitHubでよく見かけるやつ。今回使ったサービスはどれも、**オープンソースなら無料**で使わせてもらえる。でら感謝。
+それらを導入すると、こんなかんじのバッジを表示できる。GitHubでよく見かけるやつ。今回使ったサービスはどれも、**オープンソースなら無料**で使わせてもらえる。
 
 <!-- READMORE -->
 
@@ -157,6 +157,6 @@ Code Climate同様、チェック対象のGitHubリポジトリを指定する�
 
 ---
 
-今回は、とても小さなコードのほんの少しのテストのために、いくつもサービスを利用して大がかりとも言えそうな環境を作ったけど、小さいからこそカバー率を高めるのが容易で、臭いもまず醸さないので、簡単に高評価を得られて自己満足度が高い。個人で始めるなら、こういう小さなものから少しずつ試してみるのが良さそうだなぁと思った。どえりゃ〜。
+今回は、とても小さなコードのほんの少しのテストのために、いくつもサービスを利用して大がかりとも言えそうな環境を作ったけど、小さいからこそカバー率を高めるのが容易で、臭いもまず醸さないので、簡単に高評価を得られて自己満足度が高い。個人で始めるなら、こういう小さなものから少しずつ試してみるのが良さそうだなぁと思った。
 
 <cite>[ruedap/alfred2-font-awesome-workflow · GitHub](https://github.com/ruedap/alfred2-font-awesome-workflow)</cite>
