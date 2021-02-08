@@ -31,7 +31,7 @@
     "lighthouse": "npm run lighthouse-index && npm run lighthouse-article"
   },
   "dependencies": {
-    "@next/bundle-analyzer": "9.5.3",
+    "@next/bundle-analyzer": "9.5.5",
     "clsx": "1.1.1",
     "date-fns": "2.16.1",
     "gray-matter": "4.0.2",
