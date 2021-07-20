@@ -50,7 +50,7 @@
     "styled-components": "5.1.1"
   },
   "devDependencies": {
-    "@babel/core": "7.11.6",
+    "@babel/core": "7.14.8",
     "@storybook/addon-actions": "6.0.21",
     "@storybook/addon-links": "6.0.21",
     "@storybook/addons": "6.0.21",
@@ -64,7 +64,7 @@
     "@typescript-eslint/eslint-plugin": "4.1.0",
     "@typescript-eslint/parser": "4.1.0",
     "babel-jest": "26.3.0",
-    "babel-loader": "8.1.0",
+    "babel-loader": "8.2.2",
     "babel-plugin-styled-components": "1.11.1",
     "chromatic": "5.3.0",
     "cpx": "1.5.0",
