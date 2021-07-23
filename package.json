@@ -80,7 +80,7 @@
     "eslint-plugin-standard": "4.0.1",
     "http-server": "0.12.3",
     "jest": "26.0.0",
-    "jest-styled-components": "7.0.3",
+    "jest-styled-components": "7.0.5",
     "make-dir-cli": "2.0.0",
     "react-test-renderer": "16.13.1",
     "reg-cli": "0.16.3",
