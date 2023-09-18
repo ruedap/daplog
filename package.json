@@ -42,7 +42,7 @@
     "polished": "3.7.2",
     "react": "16.14.0",
     "react-dom": "16.14.0",
-    "remark": "13.0.0",
+    "remark": "15.0.1",
     "remark-footnotes": "2.0.0",
     "remark-highlight.js": "6.0.0",
     "remark-html": "13.0.2",
