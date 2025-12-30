@@ -9,6 +9,7 @@ import '@/styles/basics_normalize.scss'
 import '@/styles/basics_highlightjs.scss'
 import '@/styles/basics_fonts.scss'
 import '@/styles/components.scss'
+import '@/styles/tailwind.css'
 
 Router.events.on('routeChangeComplete', url => gtag.pageview(url))
 
