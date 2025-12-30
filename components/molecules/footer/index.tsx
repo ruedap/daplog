@@ -1,18 +1,15 @@
 import { FooterLogo } from '@/components/atoms/footer_logo'
 import { PORTFOLIO_SITE_NAME } from '@/utils/constants'
-import styled, { css } from 'styled-components'
-import Styles from '@/styles'
-import { suitNames, getStyledComponentsClassName } from '@/utils/string'
 
-const Component = ({ className }: {className?: string}) => {
-  const scClassName = getStyledComponentsClassName(String(className))
-  const { element } = suitNames(scClassName)
+const Footer = ({ className }: {className?: string}) => {
   return (
     <footer className={ className }>
-      <div className={ element('container') }>
-        <div className={ element('heading') }>
-          <div className={ element('logoSpacer') }>{ PORTFOLIO_SITE_NAME }</div>
-          <a href="https://ruedap.com" className={ element('logoLink') }>
+      <div className="max-w-container mx-auto bg-gradient-to-b from-key-3 to-key-4 lg:relative">
+        <div className="m-0 relative lg:before:content-['ruedap'] lg:before:absolute lg:before:text-key-2 lg:before:font-dapicons lg:before:text-md lg:before:top-[377px] lg:before:left-1/2 lg:before:-translate-x-1/2 lg:before:-translate-y-full lg:before:antialiased lg:before:leading-none">
+          <div className="block font-[0] w-full relative pb-[114.387%]">
+            { PORTFOLIO_SITE_NAME }
+          </div>
+          <a href="https://ruedap.com" className="block absolute top-0 bottom-0 left-0 right-0 m-auto h-auto">
             <FooterLogo />
           </a>
         </div>
@@ -21,58 +18,4 @@ const Component = ({ className }: {className?: string}) => {
   )
 }
 
-export const StyledComponent = styled(Component)`
-  ${({ theme }) => css`
-    display: block;
-    position: relative;
-  
-    &-container {
-      ${Styles.mixins.container};
-      background-image: linear-gradient(
-        ${theme.colors.key[3]} 0,
-        ${theme.colors.key[4]} 100%
-      );
-
-      ${theme.mq.up.lg} {
-        &::before {
-          ${Styles.mixins.dapicons};
-          color: ${theme.colors.key[2]};
-          content: "ruedap";
-          font-size: ${theme.fontSizes.md.rem};
-          left: 50%;
-          position: absolute;
-          top: 377px;
-          transform: translate(-50%, -100%);
-        }
-      }
-    }
-    
-    &-heading {
-      margin: 0;
-      position: relative;
-    }
-
-    &-logoSpacer {
-      display: block;
-      font-size: 0;
-      /* 1129 / 987 = 1.143870314 */
-      padding-bottom: 114.387%;
-      position: relative;
-      width: 100%;
-    }
-    
-    &-logoLink {
-      bottom: 0;
-      display: block;
-      height: auto;
-      left: 0;
-      margin: auto;
-      position: absolute;
-      right: 0;
-      top: 0;
-    }
-  `}
-  
-`
-
-export const Footer = StyledComponent
+export { Footer }
