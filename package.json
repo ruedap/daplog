@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev -p 3333",
-    "start": "next build && next start -p 3334",
+    "start": "NODE_OPTIONS=--openssl-legacy-provider next build && NODE_OPTIONS=--openssl-legacy-provider next start -p 3334",
     "build": "npm run test && NODE_OPTIONS=--openssl-legacy-provider next build",
     "deploy": "npm run build && next export && firebase deploy",
     "test": "jest",
