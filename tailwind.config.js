@@ -44,7 +44,7 @@ module.exports = {
     },
     extend: {
       maxWidth: {
-        container: '1000px'
+        container: '987px'
       },
       spacing: {
         xs: '2.1rem', // 21px / 10
