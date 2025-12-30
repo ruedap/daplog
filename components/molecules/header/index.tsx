@@ -1,20 +1,21 @@
-import styled, { css } from 'styled-components'
-import Styles from '@/styles'
 import Link from 'next/link'
 import { HeaderLogo } from '@/components/atoms/header_logo'
-import { suitNames, getStyledComponentsClassName } from '@/utils/string'
 
-const Component = ({ className }: {className?: string}) => {
-  const scClassName = getStyledComponentsClassName(String(className))
-  const { element } = suitNames(scClassName)
+const Header = ({ className }: {className?: string}) => {
   return (
-    <header>
-      <div className={ element('inner') }>
-        <div className={ element('heading') }>
+    <header className={className}>
+      <div className="max-w-[987px] mx-auto bg-white">
+        <div className="m-0 pb-[11.854%]">
           <Link href="/" passHref>
-            <a className={ element('logoLink') }>
-              <div className={ element('logoSpacer') } />
-              <div className={ element('logoOuter') }>
+            <a className="block relative w-full">
+              <div className="block font-[0] -mt-[50%] pb-[100%] relative w-full" />
+              <div
+                className="rounded-full bottom-0 block h-auto left-0 m-auto absolute right-0 top-0 w-full"
+                style={{
+                  backgroundImage: `radial-gradient(rgba(24, 63, 83, 0.13), rgba(24, 63, 83, 0.34))`,
+                  backgroundColor: `rgba(24, 63, 83, 0.13)`
+                }}
+              >
                 <HeaderLogo />
               </div>
             </a>
@@ -25,48 +26,4 @@ const Component = ({ className }: {className?: string}) => {
   )
 }
 
-const StyledComponent = styled(Component)`
-  ${({ theme }) => css`
-    &-inner {
-      ${Styles.mixins.container}
-      background-color: #fff;
-    }
-    
-    &-heading {
-      margin: 0;
-      padding-bottom: 11.854%;
-    }
-    
-    &-logoLink {
-      display: block;
-      position: relative;
-      width: 100%;
-    }
-    
-    &-logoSpacer {
-      display: block;
-      font-size: 0;
-      margin-top: -50%;
-      padding-bottom: 100%;
-      position: relative;
-      width: 100%;
-    }
-    
-    &-logoOuter {
-      background-color: ${theme.colors.bg.body};
-      background-image: radial-gradient(${theme.colors.bg.body}, ${theme.colors.key[3]});
-      border-radius: 100%;
-      bottom: 0;
-      display: block;
-      height: auto;
-      left: 0;
-      margin: auto;
-      position: absolute;
-      right: 0;
-      top: 0;
-      width: 100%;
-    }
-  `}
-`
-
-export const Header = StyledComponent
+export { Header }
