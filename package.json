@@ -36,7 +36,7 @@
     "date-fns": "2.23.0",
     "gray-matter": "4.0.3",
     "he": "1.2.0",
-    "lodash": "4.17.21",
+    "lodash": "4.17.23",
     "next": "10.0.0",
     "normalize.css": "8.0.1",
     "polished": "3.7.2",
